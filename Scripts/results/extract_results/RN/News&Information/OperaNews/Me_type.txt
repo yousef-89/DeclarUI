@@ -1,0 +1,58 @@
+Country & language label:
+This is a text label that describes the settings option for changing the app's country and language preferences.
+@@@Text Functional Component@@@
+
+Read news without the internet label:
+This is a text label that provides a subtitle or description for the offline reading feature.
+@@@Text Functional Component@@@
+
+Country & language settings row:
+This appears to be a list item or button combining an icon, text label, and navigation arrow that allows users to access the country and language settings screen.
+@@@TouchableOpacity Function Component@@@
+
+Offline reading download icon:
+This is an icon representing the offline reading download feature, typically used as a visual indicator within a list item.
+@@@Function Component@@@
+
+Opera News app branding:
+This image displays the app logo and title 'Opera News', serving as the header branding for the settings or profile page.
+@@@Function Component@@@
+
+Me tab button:
+This icon and text combination functions as a navigation tab button for the 'Me' or profile section of the application.
+@@@TouchableOpacity Function Component@@@
+
+Offline reading layers icon:
+This icon represents multiple pages or layers, likely used to indicate document stacking or content caching for offline access.
+@@@Function Component@@@
+
+Home tab button:
+This icon and text label acts as a navigation button taking users back to the home feed of the application.
+@@@TouchableOpacity Function Component@@@
+
+Blocked users label:
+This is a text label that describes the settings option for managing blocked users or accounts.
+@@@Text Functional Component@@@
+Memory card / chip icon:
+This appears to be a graphic icon or part of a touchable list item representing storage or data saving functionality, specifically related to offline reading.
+@@@Function Component@@@
+
+"Offline reading" label:
+This is a text label that indicates the title or primary description of the offline reading feature option in the settings menu.
+@@@Text Functional Component@@@
+
+"Automatic" label:
+This is a text label displaying the current setting value or status for the dark mode option.
+@@@Text Functional Component@@@
+
+App logo icon:
+This appears to be an image representing the Opera News application logo displayed at the top of the user profile or settings page.
+@@@Function Component@@@
+
+"Read it later" label:
+This is a text label indicating the title of the saved articles or bookmarks feature in the menu.
+@@@Text Functional Component@@@
+
+Settings gear icon:
+This appears to be an interactive button or icon that allows users to open the application settings menu when pressed.
+@@@TouchableOpacity Function Component@@@

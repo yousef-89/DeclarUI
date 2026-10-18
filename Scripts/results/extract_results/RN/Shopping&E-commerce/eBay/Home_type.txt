@@ -1,0 +1,85 @@
+Heart icon and "已保存" (Saved) button:
+This appears to be a clickable button or filter chip containing a heart icon and text indicating saved or favorite items, which likely allows users to view their saved listings or bookmarks.
+@@@TouchableOpacity Function Component@@@
+
+Product title and price text:
+This is a text container showing the product name ("Ottogi Jin Ramen Mild Noodles (Pack of 20)") and its price ("GBP 22.99"), providing key item details to the user.
+@@@Text Functional Component@@@
+
+Tag icon and "出售物品" (Selling) label:
+This is a navigation bar item combining a price tag icon and a label meaning "Selling", likely allowing users to view items they are currently selling or to start listing a new item.
+@@@View Function Component@@@
+
+Search bar component:
+This is a search input container featuring a magnifying glass icon, placeholder text ("搜索任何物品" meaning "Search for anything"), and a camera icon, allowing users to search the marketplace via text or visual search.
+@@@View Function Component@@@
+
+Hanger icon and "时尚" (Fashion) category button:
+This appears to be a selectable category filter button with a hanger icon and text meaning "Fashion", enabling users to quickly filter search results or browse products within the fashion category.
+@@@TouchableOpacity Function Component@@@
+
+Product title and price excerpt:
+This is a text block displaying part of a product's title and its price, used to show summary information for an item in a horizontal scroll or grid list.
+@@@Text Functional Component@@@
+
+Home icon and "主页" (Home) navigation button:
+This is a bottom tab bar item featuring a home icon and a label meaning "Home", which allows users to navigate back to the main landing page of the application.
+@@@View Function Component@@@
+
+Promotional banner description text:
+This is a descriptive text block stating "Celebrate eBay UK with big deals on brands from selected sellers.", providing details about a promotional discount or campaign.
+@@@Text Functional Component@@@
+
+Product image with favorite button overlay:
+This appears to be an image container displaying a product photo with a superimposed heart icon button, allowing users to view the item and quickly save or favorite it directly from the thumbnail.
+@@@Function Component@@@
+Magnifying glass and "搜索" (Search) label:
+This appears to be a button or icon representing search functionality, allowing users to initiate a search query.
+@@@TouchableOpacity Function Component@@@
+
+Notification bell and "通知" (Notifications) label:
+This appears to be a button or icon that allows users to view their notifications or alerts.
+@@@TouchableOpacity Function Component@@@
+
+User profile icon and "我的 eBay" (My eBay) label:
+This appears to be a navigation button that takes users to their personal profile or account management page.
+@@@TouchableOpacity Function Component@@@
+
+"Join the party with 15% off" text:
+This is a promotional header text that informs users about a special discount offer.
+@@@Text Functional Component@@@
+
+"Ends 21 July. Min spend £9.99. Max £75 off. T&Cs." text:
+This is a descriptive text providing the terms, conditions, and expiration details of the promotional offer.
+@@@Text Functional Component@@@
+
+"您最近浏览的物品" (Your recently viewed items) label:
+This is a section header text describing the list of items the user has recently viewed. Translation: "Your recently viewed items".
+@@@Text Functional Component@@@
+
+Ottogi Jin Ramen Mild Noodles product image:
+This is an image representing a specific product listing available for viewing or purchase.
+@@@Function Component@@@
+
+"Spiderman Push Pop for it Bubble Fidget T..." and price text:
+This is a text block displaying the product title and its corresponding price in GBP.
+@@@Text Functional Component@@@
+
+Rounded container view:
+This appears to be a container view used to wrap content or layout sections in the app interface.
+@@@View Function Component@@@
+"浏览全部" (Browse All) label:
+This is a text label that indicates users can tap to view all recently viewed items or a full list of related items. Translation: "Browse All".
+@@@Text Functional Component@@@
+
+"探索 (全新！)" (Explore (New!)) button:
+This appears to be a clickable pill-shaped button featuring an icon and text, allowing users to navigate to a new discovery or exploration section of the app.
+@@@TouchableOpacity Function Component@@@
+
+"Use code SIZZLE15" button:
+This is a prominent call-to-action button containing promotional coupon text, which likely copies the discount code to the clipboard or applies it directly to the user's cart.
+@@@TouchableOpacity Function Component@@@
+
+Shopping cart icon button:
+This is a circular button containing a shopping cart icon, which likely allows users to navigate to their shopping cart or bag to view added items.
+@@@TouchableOpacity Function Component@@@

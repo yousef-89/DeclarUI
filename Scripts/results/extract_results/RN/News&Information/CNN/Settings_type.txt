@@ -1,0 +1,66 @@
+You are currently viewing CNN in light mode. To switch to dark mode, adjust the display setting on your device. text label:
+This is a text label that provides informational instructions regarding the current app theme and how to change it via device display settings.
+@@@Text Functional Component@@@
+
+Recent apps/overview icon:
+This appears to be an icon button in the system status bar area representing the recent apps or multi-window navigation action.
+@@@TouchableOpacity Function Component@@@
+
+Battery icon:
+This is an indicator icon that displays the current device battery status and level.
+@@@Function Component@@@
+
+Android Notification Settings label:
+This is a text label that indicates a setting option for managing Android system notifications related to the app.
+@@@Text Functional Component@@@
+
+Bottom navigation bar:
+This is a bottom navigation menu containing icons and labels (Home, Elections, Watch, Settings) to allow users to switch between different main sections of the app.
+@@@View Function Component@@@
+
+Edition label:
+This is a header text label for the content edition setting, accompanied by its current selection value ("International").
+@@@Text Functional Component@@@
+
+Log In to your CNN Account label:
+This is a clickable text label or list item title that allows users to navigate to the login screen for their CNN account.
+@@@Text Functional Component@@@
+
+APP PREFERENCES header label:
+This is a section header text label that categorizes the preferences settings below it.
+@@@Text Functional Component@@@
+
+Enable 'This is CNN' setting item:
+This is a setting row containing title and subtitle descriptions along with a toggle switch to enable or disable the app open sound effect.
+@@@View Function Component@@@
+GENERAL label:
+This is a section header text label that categorizes the settings below it into general preferences.
+@@@Text Functional Component@@@
+
+Alerts label:
+This is a text label indicating the setting option for configuring alerts within the app.
+@@@Text Functional Component@@@
+
+Settings title with status bar:
+This appears to be a header bar component containing the screen title "Settings" and the device status bar information.
+@@@View Function Component@@@
+
+Saved Stories label and description:
+This is a text label block displaying the title "Saved Stories" and its descriptive text, informing users where to find their saved articles, videos, and audio.
+@@@Text Functional Component@@@
+
+SD card icon:
+This appears to be an icon representing storage or saved items data.
+@@@Function Component@@@
+
+Send Feedback label:
+This is a text label for a feedback option, likely allowing users to submit comments or report issues.
+@@@Text Functional Component@@@
+
+Create a free CNN Account label:
+This is a text label indicating an action option for users to register or sign up for a new CNN account.
+@@@Text Functional Component@@@
+
+ACCOUNT label:
+This is a section header text label that categorizes the account-related settings options below it.
+@@@Text Functional Component@@@

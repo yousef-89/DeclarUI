@@ -1,0 +1,73 @@
+LIVE UPDATES label:
+This is a text label indicating that the following content consists of live updates or breaking news coverage.
+@@@Text Functional Component@@@
+
+U.S. Politics category label:
+This is a text label representing a specific news category/section option in the navigation bar.
+@@@Text Functional Component@@@
+
+Minute-by-minute headline title (first variant):
+This is a text label displaying the headline title for a major news article or timeline feature.
+@@@Text Functional Component@@@
+
+Top News category label:
+This is a text label indicating the active top news section tab in the news category navigation bar.
+@@@Text Functional Component@@@
+
+Battery status icon:
+This is an icon representing the current battery level of the device in the status bar.
+@@@Function Component@@@
+
+Bottom navigation bar:
+This is a navigation bar component containing multiple tabs (Home, Elections, Watch, Settings) to switch between different main sections of the app.
+@@@View Function Component@@@
+
+Minute-by-minute headline title (second variant):
+This is a text label displaying the full title of the featured news article on the screen.
+@@@Text Functional Component@@@
+
+Business category label:
+This is a text label indicating a news category tab option in the horizontal navigation header.
+@@@Text Functional Component@@@
+
+Search icon button:
+This appears to be a pressable button with a magnifying glass icon that allows users to open the search interface.
+@@@TouchableOpacity Function Component@@@
+Map icon / placeholder:
+This appears to be a graphical image element displaying a map layout associated with a news story or article location.
+@@@Function Component@@@
+
+Map icon / placeholder:
+This appears to be a graphical image element displaying a map layout associated with a news story or article location.
+@@@Function Component@@@
+
+Analysis section label and title:
+This is a text label that indicates the news category ('ANALYSIS') and displays the headline of the analysis article.
+@@@Text Functional Component@@@
+
+Law enforcement / sniper image:
+This is an image associated with the news article, depicting security personnel or snipers on a roof during a breaking news event.
+@@@Function Component@@@
+
+Micro SD card icon:
+This icon resembles a micro SD card, which might be used as a graphical asset or a button icon representing storage features or media files.
+@@@Function Component@@@
+
+Video category label and title:
+This text indicates the video section category along with the title of the video content available for users to watch.
+@@@Text Functional Component@@@
+
+Live updates news headline text:
+This text displays a breaking news update headline regarding political events, providing a summary of the latest developments.
+@@@Text Functional Component@@@
+
+"Your CNN" navigation label:
+This is a text label used in the top navigation bar to allow users to filter news content personalized to their interests.
+@@@Text Functional Component@@@
+
+"World" navigation label:
+This is a text label in the top navigation bar that allows users to view international news stories and global updates.
+@@@Text Functional Component@@@
+"BUTLER FARM SHOW GROUNDS" label:
+This appears to be a text label overlaid on a map or image to indicate a specific geographic location or landmark relevant to the news story.
+@@@Text Functional Component@@@

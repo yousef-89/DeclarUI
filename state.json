@@ -1,0 +1,355 @@
+{
+    "EnglishLearningAppUI": {
+        "Conversation": 1,
+        "Home": 1,
+        "LessonDetail": 1,
+        "Search": 1,
+        "Speak": 1
+    },
+    "OnlineCourseAppUI": {
+        "AwesomeCourses": 1,
+        "CourseDetail": 1,
+        "EnrolledCourses": 1,
+        "Home": 1,
+        "Search": 1
+    },
+    "OnlineCourseMobileApp": {
+        "CourseDetail": 1,
+        "Discover": 1,
+        "Home": 1,
+        "MyCourses": 1,
+        "Search": 1
+    },
+    "OnlineTeachingSoftware": {
+        "CourseDetail": 1,
+        "Discover": 1,
+        "Favorites": 1,
+        "Notifications": 1,
+        "Statistics": 1
+    },
+    "WiseOnlineCourses": {
+        "CourseDetail": 1,
+        "Downloads": 1,
+        "Home": 1,
+        "Lessons": 1,
+        "MyList": 1
+    },
+    "musicAPP": {
+        "Albums": 1,
+        "AlbumsDetails": 1,
+        "Home": 1,
+        "PlaySong": 1,
+        "Songs": 1
+    },
+    "musicAPP2": {
+        "Explore": 1,
+        "NowPlaying": 1,
+        "Playlist": 1,
+        "Search": 1,
+        "Trending": 1
+    },
+    "ShortVideoApp": {
+        "Comments": 1,
+        "Discover": 1,
+        "Home": 1,
+        "Login": 1,
+        "Search": 1
+    },
+    "ShortVideoUI": {
+        "Comments": 1,
+        "Home": 1,
+        "Inbox": 1,
+        "Profile": 1,
+        "Share": 1
+    },
+    "SoundCloudiOSMusic": {
+        "Home": 1,
+        "Listen": 1,
+        "Player": 1,
+        "Profile": 1,
+        "Search": 1
+    },
+    "AlipayApp": {
+        "Home": 1,
+        "Profile": 1,
+        "Tickets": 1,
+        "Trade": 1,
+        "UtilityBills": 1
+    },
+    "Barclays": {
+        "Cards": 1,
+        "Help": 1,
+        "Home": 1,
+        "More": 1,
+        "StatementsandDocuments": 1
+    },
+    "CMBApp": {
+        "CreditCard": 1,
+        "CustomService": 1,
+        "Home": 1,
+        "Repayment": 1,
+        "SearchBranch": 1
+    },
+    "MetaTrader4": {
+        "Charts": 1,
+        "Objects": 1,
+        "QuoteAdvanced": 1,
+        "QuoteSimple": 1,
+        "Settings": 1
+    },
+    "PayPal": {
+        "Bitcoin": 1,
+        "Crypto": 1,
+        "Home": 1,
+        "Send": 1,
+        "Wallet": 1
+    },
+    "BreakingNews": {
+        "Home": 1,
+        "LogIn": 1,
+        "MoreDetails": 1,
+        "Notice": 1,
+        "Settings": 1
+    },
+    "CNN": {
+        "CreateAccont": 1,
+        "Elections": 1,
+        "Home": 1,
+        "LogIn": 1,
+        "Settings": 1
+    },
+    "MSNWeather": {
+        "Apps": 1,
+        "Home": 1,
+        "News": 1,
+        "PersonalCentral": 1,
+        "Settings": 1
+    },
+    "OperaNews": {
+        "Home": 1,
+        "Me": 1,
+        "NewOptions": 1,
+        "OfflineReading": 1,
+        "Settings": 1
+    },
+    "WeatherForecast": {
+        "AddLocations": 1,
+        "Details": 1,
+        "EditLocation": 1,
+        "Home": 1,
+        "Setting": 1
+    },
+    "CourseTaskManagerApp": {
+        "AddTask": 1,
+        "Calendar": 1,
+        "Classroom": 1,
+        "Discussion": 1,
+        "Home": 1
+    },
+    "FileManagerApp": {
+        "Connections": 1,
+        "ConnectToComputer": 1,
+        "HomeGrid": 1,
+        "HomeList": 1,
+        "Recents": 1
+    },
+    "TaskManagerApp": {
+        "AddTask": 1,
+        "AllTasks": 1,
+        "Calendar": 1,
+        "Home": 1,
+        "TaskDetails": 1
+    },
+    "TaskManagerApp-UI": {
+        "AddTask": 1,
+        "Board": 1,
+        "Dashboard": 1,
+        "Message": 1,
+        "Task": 1
+    },
+    "TaskManagerApp2": {
+        "AddTask": 1,
+        "Calendar": 1,
+        "Home": 1,
+        "Profile": 1,
+        "Statistics": 1
+    },
+    "Amazon": {
+        "Account": 1,
+        "Filter": 1,
+        "Home": 1,
+        "Orders": 1,
+        "Profile": 1
+    },
+    "eBay": {
+        "History": 1,
+        "Home": 1,
+        "Item": 1,
+        "Profile": 1,
+        "Search": 1
+    },
+    "IdleFishApp": {
+        "Categories": 1,
+        "Home": 1,
+        "JewelryCategory": 1,
+        "Sell": 1,
+        "Upload": 1
+    },
+    "TaobaoApp": {
+        "Cart": 1,
+        "Home": 1,
+        "Logistics": 1,
+        "Message": 1,
+        "Profile": 1
+    },
+    "VoucherCodes": {
+        "Account": 1,
+        "Details": 1,
+        "More": 1,
+        "Search": 1,
+        "Terms": 1
+    },
+    "SocialApp": {
+        "Homepage": 1,
+        "Messages": 1,
+        "Onboarding": 1,
+        "Profile": 1,
+        "SearchResult": 1
+    },
+    "SocialMessagingApp": {
+        "Chat": 1,
+        "Contacts": 1,
+        "Messages": 1,
+        "Profile": 1,
+        "Search": 1
+    },
+    "SocialSoftware": {
+        "Activity": 1,
+        "Feed": 1,
+        "Profile": 1,
+        "Search": 1,
+        "UserProfile": 1
+    },
+    "SocialSoftwareApp": {
+        "Chats": 1,
+        "Intro": 1,
+        "NewMessage": 1,
+        "People": 1,
+        "Profile": 1
+    },
+    "twitter": {
+        "Home": 1,
+        "Menu": 1,
+        "Profile": 1,
+        "Search": 1,
+        "Trends": 1
+    },
+    "airbnb": {
+        "Comments": 1,
+        "Details": 1,
+        "Reservation": 1,
+        "Search": 1,
+        "SearchCategory": 1
+    },
+    "booking": {
+        "Details": 1,
+        "Reservation": 1,
+        "Search": 1,
+        "Surroundings": 1,
+        "TypeDetails": 1
+    },
+    "GaodeMap": {
+        "GasInformation": 1,
+        "GasStationDetails": 1,
+        "Home": 1,
+        "TicketSearchResult": 1,
+        "TicketService": 1
+    },
+    "go_BOOK": {
+        "CreateAccount": 1,
+        "Home": 1,
+        "Login": 1,
+        "Notification": 1,
+        "Profile": 1,
+        "SearchResult": 1,
+        "Setting": 1
+    },
+    "xiecheng": {
+        "GroupDetails": 1,
+        "GroupTravel": 1,
+        "GroupTravelSearchResult": 1,
+        "Home": 1,
+        "Travel": 1
+    },
+    "Calculator": {
+        "ClearHistory": 1,
+        "DefaultView": 1,
+        "ExpandedView-ShowHistroy": 1,
+        "ExpandedView": 1,
+        "ShowHistory": 1
+    },
+    "file_manage": {
+        "Cleaner": 1,
+        "CloudStorage-ListView": 1,
+        "CloudStorage": 1,
+        "Files": 1,
+        "Homepage": 1,
+        "StorageDetails": 1
+    },
+    "PackageDelivery": {
+        "Home_Top_drawer_close": 1,
+        "Home_Top_drawer_open": 1,
+        "Parcel_center": 1,
+        "SendParcel_Delivery_method": 1,
+        "SendParcel_Parcel_size": 1
+    },
+    "pdf_translator": {
+        "home": 1,
+        "more": 1,
+        "search": 1,
+        "select": 1,
+        "sort": 1
+    },
+    "Quark": {
+        "Home": 1,
+        "News": 1,
+        "OnlineStorage": 1,
+        "Scanner": 1,
+        "Select": 1
+    },
+    "DingxiangDocter": {
+        "DiseaseDetail": 1,
+        "Home": 1,
+        "Profile": 1,
+        "Search": 1,
+        "SearchMedicineDisease": 1
+    },
+    "Fitbit": {
+        "Discovery": 1,
+        "EnvironmentSimulation": 1,
+        "FindFriend": 1,
+        "Friends": 1,
+        "Home": 1
+    },
+    "Headspace": {
+        "CalmMethods": 1,
+        "Explore": 1,
+        "Home": 1,
+        "Move": 1,
+        "Profile": 1
+    },
+    "Keep": {
+        "Home": 1,
+        "Profile": 1,
+        "SearchSports": 1,
+        "Sports": 1,
+        "Store": 1
+    },
+    "WebMD": {
+        "Home": 1,
+        "IdentifyResult": 1,
+        "PillIdentifier": 1,
+        "Reminder": 1,
+        "ResultDetail": 1
+    }
+}

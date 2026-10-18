@@ -1,0 +1,85 @@
+Transport category selector tabs:
+This component contains multiple selectable transport modes (Flight, Bus, Train, Launch) allowing users to switch between different booking categories.
+@@@View Function Component@@@
+
+Bottom navigation bar:
+This component provides main navigation tabs (Home, Notification, Ticket, History, Setting) to switch between different sections of the application.
+@@@View Function Component@@@
+
+Return Date container:
+This container displays the return date selection section with a placeholder text to help users book a return trip.
+@@@View Function Component@@@
+
+Flight tab selection header:
+This is a header section highlighting the selected Flight tab with an icon and label, allowing users to switch or view flight-related options.
+@@@View Function Component@@@
+
+Search button:
+This appears to be a primary call-to-action button that triggers the search process based on the user's entered criteria.
+@@@TouchableOpacity Function Component@@@
+
+Traveler & Class container:
+This container displays information regarding the number of travelers and seat class, allowing users to modify these options.
+@@@View Function Component@@@
+
+Journey Date and Time container:
+This container displays the selected journey date, day of the week, and departure time.
+@@@View Function Component@@@
+
+Form/Origin container:
+This container displays the departure location details including the country and airport name for ticket booking.
+@@@View Function Component@@@
+
+User profile avatar:
+This circular image displays the profile picture of the logged-in user.
+@@@Function Component@@@
+Filter icon button:
+This appears to be a button that likely allows users to open filtering and sorting options for search results.
+@@@TouchableOpacity Function Component@@@
+
+"To Switzerland" section:
+This is a container view displaying the destination location details and airport information.
+@@@View Function Component@@@
+
+Exchange icon button:
+This appears to be a button that likely allows users to swap the 'From' and 'To' locations for travel booking.
+@@@TouchableOpacity Function Component@@@
+
+"Flight & Bus" category selector:
+This section contains category icons and labels allowing users to switch between different modes of transportation like flights and buses.
+@@@View Function Component@@@
+
+"Journey Date" card:
+This is a container displaying the selected travel date, day of the week, and departure time.
+@@@View Function Component@@@
+
+"Bus & Train" category selector:
+This section contains transportation mode options allowing users to select between bus and train travel.
+@@@View Function Component@@@
+
+"Multi City" label:
+This is a text label indicating the "Multi City" trip option for booking flights or travel routes.
+@@@Text Functional Component@@@
+
+Radio button:
+This appears to be a radio button component used to select options such as trip types (One Way, Round Way, Multi City).
+@@@Pressable@@@
+
+Filter settings icon button:
+This appears to be a button that likely allows users to open advanced settings or filter preferences.
+@@@TouchableOpacity Function Component@@@
+Mosarraf H. / London, UK label:
+This is a text label displaying the user's profile name and location, indicating account details in the header area.
+@@@Text Functional Component@@@
+
+London, UK location button:
+This appears to be a pressable button showing the current location, which likely allows users to change or select their current city or region.
+@@@TouchableOpacity Function Component@@@
+
+Welcome to GoBook / Largest Online Ticket Destination label:
+These are text labels that display the welcome message and a subtitle describing the primary function of the app.
+@@@Text Functional Component@@@
+
+To / Switzerland / ZRH, Zurich Airport card:
+This is a container view representing the destination input field, displaying the selected destination country and airport code.
+@@@View Function Component@@@

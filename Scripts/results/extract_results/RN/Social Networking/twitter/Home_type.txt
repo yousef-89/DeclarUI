@@ -1,0 +1,89 @@
+Floating action button (FAB) icon:
+This appears to be a circular floating button with a plus and feather icon, which likely allows users to quickly compose a new post or tweet when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Floating action button duplicate icon:
+This appears to be a circular floating button with a plus and feather icon, which likely allows users to quickly compose a new post or tweet when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Sparkle icon:
+This appears to be a button with a sparkle symbol, likely used to switch the timeline view or access top/highlighted tweets and settings.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar image:
+This is a circular profile picture of a user, which likely displays the user's avatar and can be tapped to view their profile details.
+@@@Function Component@@@
+
+Post text snippet and metadata:
+This is a text block containing usernames, handles, and post content, which displays the text of a tweet and its associated metadata.
+@@@Text Functional Component@@@
+
+Rounded badge or container outline:
+This appears to be a subtle rounded border or container outline, likely used to group or highlight specific elements such as tags or interactive badges.
+@@@View Function Component@@@
+
+Navigation home icon:
+This is a home icon located in the bottom navigation bar, which likely allows users to return to the main home feed when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Post excerpt text:
+This is a text snippet displaying a portion of a user's tweet content along with metadata like usernames and timestamps.
+@@@Text Functional Component@@@
+
+App logo icon:
+This is a circular app logo/avatar icon, which likely serves as branding or a profile link in the top navigation bar.
+@@@Function Component@@@
+Profile picture image:
+This appears to be an avatar or profile picture of a user, typically used to visually represent the author of a post or comment.
+@@@Function Component@@@
+
+Profile picture image duplicate:
+This appears to be a smaller circular avatar or profile picture indicating a user profile, often used as part of threaded conversations or replies.
+@@@Function Component@@@
+
+Wifi icon:
+This is a network connectivity icon indicating the device's current connection status to a wireless network.
+@@@Function Component@@@
+
+Post text segment:
+This is a text snippet displaying part of a user's post content within a social media feed.
+@@@Text Functional Component@@@
+
+Share/Upload icon:
+This appears to be a button with an upload or share icon that likely allows users to share the post externally or send it via direct message.
+@@@TouchableOpacity Function Component@@@
+
+"Show this thread" label:
+This is a clickable text label that indicates users can expand or view the full thread of conversations or replies associated with the post.
+@@@Text Functional Component@@@
+
+Bell notification icon:
+This appears to be a notification bell icon, likely serving as a button to view notifications or alerts related to the user's account.
+@@@TouchableOpacity Function Component@@@
+
+Post text body paragraph:
+This is a block of text representing the main body of a post within the social media feed.
+@@@Text Functional Component@@@
+
+Post header and text snippet:
+This is a text section displaying the author's name, handle, timestamp, and a portion of their tweet or post content.
+@@@Text Functional Component@@@
+Tabitha Potter profile picture:
+This appears to be a user profile picture showing a circular image of the user, typically used to represent the author of a post or account owner.
+@@@Function Component@@@
+
+Like/Heart icon:
+This appears to be an interactive icon button that allows users to like or favorite a post, which typically updates the like count and highlights the heart when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Maximmilian profile picture:
+This appears to be a user profile picture showing a circular image of the user, typically used to represent the author of a post or account owner.
+@@@Function Component@@@
+
+Search icon:
+This appears to be a button or icon representing a search feature, which likely allows users to search for content, users, or topics within the app.
+@@@TouchableOpacity Function Component@@@
+
+Envelope/Messages icon:
+This appears to be a button representing direct messages or inbox, which likely navigates the user to their private messages or chat screen when tapped.
+@@@TouchableOpacity Function Component@@@

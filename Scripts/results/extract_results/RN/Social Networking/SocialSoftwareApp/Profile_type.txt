@@ -1,0 +1,112 @@
+Mute icon and label:
+This appears to be a button with a bell icon and "Mute" text, likely used to mute notifications for the current conversation or chat thread.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This is a navigation icon button used to return to the previous screen or close the current view.
+@@@TouchableOpacity Function Component@@@
+
+Bottom indicator bar:
+This is a visual indicator bar typically used at the bottom of iOS devices to represent the home indicator or safe area boundary.
+@@@View Function Component@@@
+
+Audio call icon:
+This appears to be a button with a phone receiver icon, likely used to initiate an audio call with the contact.
+@@@TouchableOpacity Function Component@@@
+
+Color setting icon:
+This is a circular colored indicator button likely used to open color theme selection options for the chat or profile.
+@@@TouchableOpacity Function Component@@@
+
+Thumbs-up emoji icon:
+This is an emoji button representing a quick reaction or default like icon for the chat conversation.
+@@@TouchableOpacity Function Component@@@
+
+Profile icon and label:
+This appears to be a button with a user profile icon, likely used to view or edit the user's profile information.
+@@@TouchableOpacity Function Component@@@
+
+Profile picture and name:
+This component displays a circular avatar image and contact name, representing the user profile in the chat details view.
+@@@View Function Component@@@
+
+"Create group" label:
+This is a text label indicating the option to create a new group chat with this contact and others.
+@@@Text Functional Component@@@
+"On" text:
+This is a text label displaying the current status of notifications, indicating that notifications are enabled.
+@@@Text Functional Component@@@
+
+Video call icon button:
+This appears to be a touchable button that likely allows users to initiate a video call with the contact.
+@@@TouchableOpacity Function Component@@@
+
+Video icon representation:
+This appears to be an icon component representing the video call feature.
+@@@Function Component@@@
+
+Audio call button and text:
+This appears to be a touchable button combined with text that likely allows users to initiate an audio call with the contact.
+@@@TouchableOpacity Function Component@@@
+
+Profile icon button:
+This appears to be a touchable button displaying a user icon that likely allows users to view or edit the contact's profile details.
+@@@TouchableOpacity Function Component@@@
+
+"Ignore Messages" label:
+This is a text label that describes the functionality for ignoring messages from the current contact or conversation.
+@@@Text Functional Component@@@
+
+Ignore messages icon button:
+This appears to be a touchable button that allows users to ignore messages from this conversation.
+@@@TouchableOpacity Function Component@@@
+
+"Notifications" label:
+This is a text label describing the notifications settings section for the conversation.
+@@@Text Functional Component@@@
+
+"9:41" time label:
+This is a text label displaying the current device time in the status bar.
+@@@Text Functional Component@@@
+"MORE ACTIONS" label:
+This text label serves as a section header to categorize the actions available within the conversation or chat settings.
+@@@Text Functional Component@@@
+
+Wifi icon:
+This status bar icon represents the current Wi-Fi network connection strength of the device.
+@@@Function Component@@@
+
+Profile picture:
+This circular image displays the profile picture of the contact, Martha Craig.
+@@@Function Component@@@
+
+Battery icon:
+This status bar icon indicates the current battery level and charging status of the device.
+@@@Function Component@@@
+
+"Search in Conversation" label:
+This text label describes the option to search for specific messages or content within the current conversation.
+@@@Text Functional Component@@@
+
+Group icon:
+This icon represents a group creation action, allowing users to start a group chat with multiple participants.
+@@@Function Component@@@
+
+Signal bars icon:
+This status bar icon indicates the current cellular network signal strength of the device.
+@@@Function Component@@@
+
+Magnifying glass icon:
+This icon represents a search action, allowing users to find specific messages or items within the conversation when clicked.
+@@@Function Component@@@
+
+Bell icon:
+This icon represents notification settings, allowing users to mute or unmute alerts for the conversation.
+@@@Function Component@@@
+Block label:
+This is a text label indicating the "Block" option within the settings menu, which users can tap to block the contact.
+@@@Text Functional Component@@@
+
+PRIVACY label:
+This is a section header text label that categorizes the following privacy-related settings options.
+@@@Text Functional Component@@@

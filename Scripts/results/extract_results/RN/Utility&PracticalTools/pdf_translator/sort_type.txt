@@ -1,0 +1,54 @@
+Sort by modal menu:
+This appears to be a modal dialog showing a list of sorting options for the PDF files, allowing the user to change the order by date, size, or name.
+@@@Modal@@@
+
+File item card:
+This component represents a single PDF file entry in a list, displaying the document icon, file name, date, size, and a menu button.
+@@@View Function Component@@@
+
+File item card:
+This component represents a single PDF file entry in a list, displaying the document icon, file name, date, size, and a menu button.
+@@@View Function Component@@@
+
+Time text label:
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This icon represents the Wi-Fi connection status in the device's status bar.
+@@@Function Component@@@
+
+Floating action button:
+This is a floating circular button with a plus icon, likely used to add new files or create new documents.
+@@@TouchableOpacity Function Component@@@
+
+Floating action button:
+This is a floating circular button with a plus icon, likely used to add new files or create new documents.
+@@@TouchableOpacity Function Component@@@
+
+File item card:
+This component represents a single PDF file entry in a list, displaying the document icon, file name, date, size, and a menu button.
+@@@View Function Component@@@
+
+Battery and signal indicators:
+These icons represent the battery level and cellular signal strength in the device's status bar.
+@@@StatusBar Android and iOS Component@@@
+Signal icon:
+This is a status bar indicator icon that displays the current cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Menu / Filter icon:
+This appears to be a button that likely allows users to open sorting or filtering options for the PDF files list.
+@@@TouchableOpacity Function Component@@@
+
+"PDF file management" label:
+This is a header text label that describes the current screen or view, indicating that the user is in the PDF file management section.
+@@@Text Functional Component@@@
+
+File item card:
+This container view represents an individual PDF file entry in the list, displaying the file icon, name, date, size, and more options button.
+@@@View Function Component@@@
+
+Search icon:
+This appears to be a button that allows users to open a search interface or search bar to find specific PDF files.
+@@@TouchableOpacity Function Component@@@

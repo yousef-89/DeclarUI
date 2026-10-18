@@ -1,0 +1,140 @@
+"Recently deleted" and item count text label:
+This text label displays the title of the folder or item category ("Recently deleted") along with the number of items it contains ("13 Items"), providing information to the user about the content.
+@@@Text Functional Component@@@
+
+Time display (9:41):
+This is a status bar text component that displays the current time on the device, typically positioned at the top left corner of the screen.
+@@@Text Functional Component@@@
+
+Status bar time digits:
+This component displays the numeric digits representing the current time in the status bar at the top of the screen.
+@@@Text Functional Component@@@
+
+User/profile picture icon:
+This is an image component that displays a thumbnail or avatar representing a person or user profile within a file list.
+@@@Function Component@@@
+
+"Select" label:
+This text label indicates a selectable option or button function, allowing users to initiate multi-selection mode for items on the screen.
+@@@Text Functional Component@@@
+
+Wi-Fi or connection status icon:
+This icon represents network connectivity or wireless status, typically used in navigation bars or status indicators to show the current connection state.
+@@@Function Component@@@
+
+Thumbnail image icon:
+This appears to be a thumbnail or image preview icon representing a specific file, photo, or album item within the app's file manager interface.
+@@@Function Component@@@
+
+PDF/Document file icon:
+This icon represents a document file type, specifically a PDF document, allowing users to quickly identify file formats in the list.
+@@@Function Component@@@
+
+"The Chainsmoker Closer" title and date label:
+This text label displays the title of a file or media item ("The Chainsmoker Closer") along with its creation or modification date ("28,Feb 2020").
+@@@Text Functional Component@@@
+
+Bar chart or analytics icon:
+This icon represents statistics, analytics, or data visualization, likely acting as a navigation button to view usage or storage metrics.
+@@@Function Component@@@
+Gear icon:
+This appears to be a button that likely allows users to open settings or configure preferences for the app.
+@@@TouchableOpacity Function Component@@@
+
+iTunes label:
+This is a text label displaying the title of the item ("iTunes") along with its item count, indicating the content category or folder name.
+@@@Text Functional Component@@@
+
+Home icon:
+This appears to be a navigation button that takes the user back to the home screen or main dashboard of the application.
+@@@TouchableOpacity Function Component@@@
+
+Grid layout icon:
+This appears to be a button that allows users to toggle the view mode of the file list between grid view and list view.
+@@@TouchableOpacity Function Component@@@
+
+Sort by Name label:
+This is a text label combined with a sorting icon indicating the current sorting method applied to the list of items.
+@@@Text Functional Component@@@
+
+Blue folder icon:
+This appears to be an image or icon representing a folder category, which users can tap to view its contents.
+@@@Function Component@@@
+
+Business management label:
+This is a text label that displays the name of the folder or item along with its date, providing details about the stored content.
+@@@Text Functional Component@@@
+
+Recent videos label:
+This is a text label that describes a category or section name ("Recent videos") along with the number of items it contains.
+@@@Text Functional Component@@@
+
+iTunes thumbnail preview image:
+This appears to be a thumbnail preview image representing the contents of the iTunes folder or album.
+@@@Function Component@@@
+Plant photoshoot text:
+This is a text label that displays the title and date of an item in the file list, indicating the name of the file or album and its last modified date.
+@@@Text Functional Component@@@
+
+iTunes folder thumbnail:
+This appears to be an image thumbnail representing a folder or collection of media files, such as music albums or tracks.
+@@@Function Component@@@
+
+Recently deleted folder icon:
+This appears to be an image icon representing a folder, likely used to categorize or display items that have been recently removed.
+@@@Function Component@@@
+
+Battery icon:
+This is a status bar icon indicating the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Select text:
+This appears to be a clickable text button that allows users to select multiple items in the list.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This is a status bar icon indicating the device's current Wi-Fi network connection status.
+@@@StatusBar Android and iOS Component@@@
+
+Plant photoshoot thumbnail:
+This appears to be an image thumbnail representing a specific photo or album related to plants.
+@@@Function Component@@@
+
+Clock icon:
+This appears to be a button or navigation tab icon that likely allows users to view recent history, timelines, or scheduled items.
+@@@TouchableOpacity Function Component@@@
+
+The Chainsmoker Closer thumbnail:
+This appears to be an image thumbnail representing a specific media file or album art, such as a song or video.
+@@@Function Component@@@
+
+Plus icon:
+This appears to be a button that allows users to add new items, files, or create new folders.
+@@@TouchableOpacity Function Component@@@
+Search button icon:
+This appears to be a button that likely allows users to initiate a search query within the app to find files or documents.
+@@@TouchableOpacity Function Component@@@
+
+Quotes item label and date:
+This is a text label displaying the item title and date, providing descriptive information about the specific document or folder.
+@@@Text Functional Component@@@
+
+Recent videos icon:
+This appears to be an icon representing a video folder, likely serving as a clickable button or visual indicator for video content.
+@@@TouchableOpacity Function Component@@@
+
+Quotes document icon:
+This appears to be an icon representing a text document or file, likely serving as a visual indicator or interactive button for text files.
+@@@TouchableOpacity Function Component@@@
+
+Home title label:
+This is a text label displaying the title of the current view ("Home"), indicating the user's location within the application navigation.
+@@@Text Functional Component@@@
+
+Statistics or analytics icon:
+This appears to be an icon representing analytics or storage statistics, likely acting as a navigation tab button at the bottom of the screen.
+@@@TouchableOpacity Function Component@@@
+
+Photos & video item label and item count:
+This is a text label displaying the folder name and the number of items it contains, providing descriptive information for the folder.
+@@@Text Functional Component@@@

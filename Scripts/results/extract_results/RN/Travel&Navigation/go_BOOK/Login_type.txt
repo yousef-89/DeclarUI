@@ -1,0 +1,54 @@
+"Or continue with" label:
+This is a text label serving as a visual divider, indicating alternative methods for signing in such as social login options.
+@@@Text Functional Component@@@
+
+Back arrow button:
+This appears to be a touchable icon button that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Email input field:
+This is a text input component that allows users to type and edit their email address for authentication.
+@@@TextInput@@@
+
+Password visibility toggle and Forget Password label:
+This image includes an eye icon used as a toggle button to show or hide the password and a text label for password recovery.
+@@@TouchableOpacity Function Component@@@
+
+"Sign in" title:
+This is a header text label that indicates the main purpose of the current screen, which is signing into the application.
+@@@Text Functional Component@@@
+
+"Continue with Apple" button:
+This is a touchable button that allows users to authenticate and sign into the app using their Apple ID.
+@@@TouchableOpacity Function Component@@@
+
+"Email" label:
+This is a text label that indicates the purpose of the corresponding input field below it.
+@@@Text Functional Component@@@
+
+"Remember me" label:
+This is a text label associated with a checkbox to indicate that the app should save the user's login session.
+@@@Text Functional Component@@@
+
+"Continue with Facebook" button:
+This is a touchable button that enables users to sign in quickly using their Facebook account credentials.
+@@@TouchableOpacity Function Component@@@
+"Continue with Google" button:
+This appears to be a clickable button that allows users to sign in or authenticate using their Google account.
+@@@TouchableOpacity Function Component@@@
+
+"Remember me" checkbox icon:
+This appears to be a touchable icon representing a checkbox to toggle the "Remember me" state for saving login credentials.
+@@@TouchableOpacity Function Component@@@
+
+"Password" text input field:
+This appears to be a secure text input field where users can enter and hide or show their password for logging in.
+@@@TextInput@@@
+
+"Continue with Facebook" button:
+This appears to be a clickable button that allows users to sign in or authenticate using their Facebook account.
+@@@TouchableOpacity Function Component@@@
+
+"Log in" button:
+This appears to be a primary action button that allows users to submit their credentials and log into the application.
+@@@TouchableOpacity Function Component@@@

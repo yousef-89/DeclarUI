@@ -1,0 +1,73 @@
+DOC TO PDF conversion option:
+This appears to be a clickable feature item showing a document conversion icon and label, which likely allows users to convert document files into PDF format when selected.
+@@@TouchableOpacity Function Component@@@
+
+9:41 time indicator:
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Travel plan file item:
+This is a list item representing a saved PDF document, showing the file icon, file name, date, and size, likely functioning as a selectable list entry.
+@@@flatlist-simple@@@
+
+DOC TO PDF conversion option alternative crop:
+This appears to be a clickable feature item showing a document conversion icon and label, which likely allows users to convert document files into PDF format when selected.
+@@@TouchableOpacity Function Component@@@
+
+Travel plan file item alternative crop:
+This is a list item representing a saved PDF document, showing the file icon, file name, date, and size, likely functioning as a selectable list entry.
+@@@flatlist-simple@@@
+
+DOC TO PDF conversion option partial view:
+This appears to be a portion of a clickable feature item showing a document conversion icon and label, which likely allows users to convert document files into PDF format when selected.
+@@@TouchableOpacity Function Component@@@
+
+Search icon:
+This appears to be a button with a magnifying glass icon that likely allows users to search for specific PDF files or content within the app.
+@@@TouchableOpacity Function Component@@@
+
+Travel plan file item third crop:
+This is a list item representing a saved PDF document, showing the file icon, file name, date, and size, likely functioning as a selectable list entry.
+@@@flatlist-simple@@@
+
+PDF file management title label:
+This is a header text label that describes the current screen, indicating that the user is viewing and managing PDF files.
+@@@Text Functional Component@@@
+Menu icon:
+This appears to be a button with a hamburger menu icon, likely used to open a navigation drawer or a menu with additional options.
+@@@TouchableOpacity Function Component@@@
+
+PDF file icon:
+This is an image representing a PDF document file type, commonly used to visually identify PDF files in a list.
+@@@Function Component@@@
+
+Cellular network signal bars icon:
+This is a status bar indicator showing the current cellular network signal strength on the device.
+@@@StatusBar Android and iOS Component@@@
+
+Battery level indicator:
+This is a status bar indicator showing the remaining battery percentage and status of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Plus action button:
+This is a floating action button with a plus icon, typically used to trigger creation flows, such as adding a new document or file.
+@@@TouchableOpacity Function Component@@@
+
+DOC TO PDF and IMG TO PDF options container:
+This is a modal or popup container displaying conversion tools options for users to select DOC-to-PDF or IMG-to-PDF features.
+@@@Modal@@@
+
+PDF file icon (blue variant):
+This is another instance of an image representing a PDF document file type used within file list items.
+@@@Function Component@@@
+
+Wi-Fi signal icon:
+This is a status bar indicator representing the current wireless network connectivity status.
+@@@StatusBar Android and iOS Component@@@
+
+Travel plan file list item card:
+This appears to be a list item component representing a single PDF file record, containing file metadata like name, date, and size, and likely implemented using a flat list or view container.
+@@@flatlist-simple@@@
+Modal overlay container:
+This appears to be a modal popup container that centers over the app content to display conversion options (DOC TO PDF and IMG TO PDF) when a user triggers a creation or conversion action.
+@@@Modal@@@

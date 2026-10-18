@@ -1,0 +1,77 @@
+One-click reselling card view:
+This appears to be a container view grouping information about a one-click reselling feature with title text and illustrative graphics.
+@@@View Function Component@@@
+
+Publish idle item banner:
+This appears to be an interactive promotional card/button that allows users to quickly publish items to sell, featuring title text, a descriptive subtitle, and an animated character graphic.
+@@@TouchableOpacity Function Component@@@
+
+Thumbnail image:
+This is an image component displaying a preview of a product or asset related to the listing feature.
+@@@Function Component@@@
+
+Chart display image:
+This is an image component displaying visual chart data for analytics or statistics previews.
+@@@Function Component@@@
+
+Close button:
+This appears to be a round button with an "X" icon that allows users to dismiss or close the current modal or overlay screen.
+@@@TouchableOpacity Function Component@@@
+
+User profile image:
+This is an image component showing a user's avatar or profile picture preview.
+@@@Function Component@@@
+
+Header title text ("来闲鱼 搞点钱!"):
+This is a bold title text that translates to "Come to Xianyu and make some money!", welcoming users and setting the app's monetization theme.
+@@@Text Functional Component@@@
+
+Show off good items card ("晒好物 / 只晒不卖的宝贝"):
+This appears to be an interactive card component that translates to "Show off good items / Items to show only, not for sell", allowing users to display non-for-sale collectibles.
+@@@TouchableOpacity Function Component@@@
+
+Chart preview image:
+This is an image component displaying a dashboard chart preview.
+@@@Function Component@@@
+"搞副业 闲置时间能换钱" (Side Hustle / Exchange idle time for money) container:
+This appears to be a clickable card or container that likely navigates users to a section dedicated to finding side hustles and monetizing spare time.
+@@@TouchableOpacity Function Component@@@
+
+User profile/activity preview image:
+This is an image component displaying a preview of users or activity scenes related to earning money on the platform.
+@@@Function Component@@@
+
+"高价帮卖 支持自己定价卖" (High-price assisted selling / Support setting your own price) card:
+This appears to be a clickable card that likely directs users to an assisted selling feature where they can set their own prices for items.
+@@@TouchableOpacity Function Component@@@
+
+"闲鱼回收 免费上门回收" (Idle Fish Recycling / Free door-to-door recycling) card:
+This is a clickable card component that likely navigates users to a recycling service page where they can request free door-to-door item pickup.
+@@@TouchableOpacity Function Component@@@
+
+Close button (X icon):
+This is a circular button featuring a close (X) icon, which likely allows users to dismiss or close the current modal or overlay view.
+@@@TouchableOpacity Function Component@@@
+
+"15万人在这赚钱" (150,000 people are making money here) label:
+This text label indicates the social proof statistic that a specific number of people are earning money through this feature (translation: "150,000 people are making money here").
+@@@Text Functional Component@@@
+
+User profile/activity preview image:
+This is an image component displaying a preview thumbnail of a user or activity scene within the earning section.
+@@@Function Component@@@
+
+Mascot illustration graphic:
+This is a decorative 3D mascot illustration representing the branding and theme of the side hustle section.
+@@@Function Component@@@
+
+"3亿人在闲鱼赚钱" (300 million people are making money on Idle Fish) label:
+This text label highlights the platform's user base and earning statistic (translation: "300 million people are making money on Idle Fish").
+@@@Text Functional Component@@@
+Yellow character icon:
+This is an illustrative image representing a cartoon character associated with the app's publishing feature, used for decorative purposes to enhance the visual appeal of the banner.
+@@@Function Component@@@
+
+User activity image:
+This image displays a thumbnail preview of users engaged in activities on the platform, likely part of a list or gallery showing real-life experiences and earnings.
+@@@Function Component@@@

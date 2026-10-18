@@ -1,0 +1,101 @@
+Pictureless Mode label:
+This is a text label displaying the setting option "Pictureless Mode," indicating to users that this feature can be toggled to disable images for saving data or bandwidth.
+@@@Text Functional Component@@@
+
+Battery status icon:
+This is a status bar icon representing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Signal network icon:
+This is a status bar icon indicating the current mobile network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+0 B saved label:
+This is a text label showing the amount of data saved, currently displaying "0 B saved" to inform the user about storage or data consumption.
+@@@Text Functional Component@@@
+
+End-user license agreement label:
+This is a text label representing a legal document link or title, informing users of the terms and conditions for using the application.
+@@@Text Functional Component@@@
+
+Auto label:
+This is a text label displaying the current status or value "Auto" for the reader mode setting.
+@@@Text Functional Component@@@
+
+Me tab button:
+This appears to be a navigation button with an icon and label for the "Me" profile tab, allowing users to switch to their personal profile or account settings view.
+@@@TouchableOpacity Function Component@@@
+
+Switch control component:
+This is a toggle switch used to enable or disable specific app settings, such as notifications or reader modes.
+@@@Switch@@@
+
+Messaging settings label:
+This is a text label describing the messaging settings sub-option, indicating that users can tap or configure messaging preferences here.
+@@@Text Functional Component@@@
+Reader mode label:
+This is a text label indicating a settings option that enables or customizes a reader mode for content display.
+@@@Text Functional Component@@@
+
+Terms label:
+This is a section header text label that groups related legal, policy, or terms-of-service options together.
+@@@Text Functional Component@@@
+
+Switch control:
+This is a toggle switch component that allows users to enable or disable specific settings or preferences, such as notifications or modes.
+@@@Switch@@@
+
+Settings title:
+This is a header text label that indicates the current screen is the Settings page, allowing users to understand their location in the app.
+@@@Text Functional Component@@@
+
+Clear cache label:
+This is a text label for an action option that allows users to clear stored temporary data or cache to free up storage space.
+@@@Text Functional Component@@@
+
+Home icon and label:
+This is a navigation button containing an icon and label that allows users to switch back to the home screen of the application.
+@@@TouchableOpacity Function Component@@@
+
+News notification settings label:
+This is a text label that describes a specific sub-option or configuration menu related to news notifications.
+@@@Text Functional Component@@@
+
+Disabled label:
+This is a status text label that indicates a particular feature or mode, such as "Pictureless Mode," is currently turned off or disabled.
+@@@Text Functional Component@@@
+
+Data section header:
+This is a section header text label that categorizes related settings and configurations under the "Data" category.
+@@@Text Functional Component@@@
+Data Saving label:
+This is a text label that displays the name of the setting option "Data Saving", indicating that users can manage their data usage preferences here.
+@@@Text Functional Component@@@
+
+Features label:
+This is a text label acting as a section header for the settings list, grouping features-related configurations together.
+@@@Text Functional Component@@@
+
+News notification label:
+This is a text label that indicates the setting item for enabling or disabling news notifications.
+@@@Text Functional Component@@@
+
+Black circular indicator:
+This appears to be a visual indicator or a status dot, possibly representing a notification dot, unread status, or a UI decorative point.
+@@@View Function Component@@@
+
+Privacy statement label:
+This is a text label that describes the menu option for viewing the app's privacy statement or policy.
+@@@Text Functional Component@@@
+
+Bottom home indicator bar:
+This is the system gesture navigation bar at the bottom of the screen, used for navigating home or switching apps.
+@@@View Function Component@@@
+
+Message label:
+This is a text label that indicates the setting item for messaging notifications or preferences.
+@@@Text Functional Component@@@
+
+Delete my data label:
+This is a text label that describes the action or menu option allowing users to request deletion of their personal data.
+@@@Text Functional Component@@@

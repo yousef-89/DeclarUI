@@ -1,0 +1,101 @@
+Manage location label:
+This is a text label that describes the functionality of the menu option, indicating that users can manage or add geographic locations.
+@@@Text Functional Component@@@
+
+Remove ads icon:
+This appears to be an icon button that likely allows users to purchase an ad-free version or view options to remove advertisements.
+@@@TouchableOpacity Function Component@@@
+
+Feedback and Suggestion label:
+This is a text label that indicates the menu option for users to send feedback, report issues, or provide suggestions to the developers.
+@@@Text Functional Component@@@
+
+27 degrees temperature label:
+This is a text label that displays the current weather temperature value in degrees.
+@@@Text Functional Component@@@
+
+ercast clouds label:
+This is a text label that describes the current weather condition, indicating that the skies are overcast with clouds.
+@@@Text Functional Component@@@
+
+ore details label:
+This is a text label that serves as a clickable link or button text to view more detailed weather information.
+@@@Text Functional Component@@@
+
+Phone/Device icon:
+This is an icon representing a mobile phone or device, likely used to indicate settings or features related to the device itself.
+@@@Function Component@@@
+
+SIM card or memory card icon:
+This is an icon representing a SIM card or storage card, likely used for data storage or network settings.
+@@@Function Component@@@
+
+Unit setting label and description:
+This is a container text block displaying the title and subtitle for configuring measurement units such as pressure, wind speed, and time format.
+@@@Text Functional Component@@@
+Setting header component:
+This appears to be a header bar displaying the title "SETTING" at the top of the app menu screen.
+@@@View Function Component@@@
+
+Weather widgets setting item:
+This is a menu row containing an icon, title, and subtitle description, likely serving as a clickable option to configure weather widgets on the phone screen.
+@@@TouchableOpacity Function Component@@@
+
+Notification toggle item:
+This menu item features a notification icon, a label, and a switch component allowing users to enable or disable notifications.
+@@@TouchableOpacity Function Component@@@
+
+Weather radar label:
+This is a text label indicating the "Weather radar" setting option within the menu.
+@@@Text Functional Component@@@
+
+SUN tab button:
+This appears to be a tab selection button labeled "SUN" used to view Sunday's forecast or settings.
+@@@TouchableOpacity Function Component@@@
+
+Hide background image toggle item:
+This is a menu row featuring an icon, label, and toggle switch to show or hide the background image.
+@@@TouchableOpacity Function Component@@@
+
+Report problem label:
+This text label describes the "Report problem" menu option, allowing users to submit bug reports or feedback.
+@@@Text Functional Component@@@
+
+Home label:
+This is a text label displaying "Home", describing the navigation option to return to the main home screen.
+@@@Text Functional Component@@@
+
+Forecast details text:
+This text block displays hourly forecast information such as "hours next" and time markers like "12:00 am".
+@@@Text Functional Component@@@
+Char text label:
+This appears to be a text label indicating a location or placeholder name in the app header.
+@@@Text Functional Component@@@
+
+Remove ads text label:
+This is a text label that indicates the menu option to remove advertisements within the app.
+@@@Text Functional Component@@@
+
+Temperature setting row:
+This is a settings item component containing an icon, title text, and a toggle switch for switching temperature units (F/C).
+@@@View Function Component@@@
+
+Lock screen setting row:
+This is a settings item component containing an icon, title text, and a switch to enable or disable lock screen features.
+@@@View Function Component@@@
+
+Status bar setting row:
+This is a settings item component containing an icon, title text, and a switch to toggle status bar visibility or behavior.
+@@@View Function Component@@@
+
+Home icon:
+This is an icon graphic representing the home section or main dashboard in the navigation menu.
+@@@Function Component@@@
+
+Weather radar icon:
+This is an icon graphic representing the weather radar feature in the settings menu.
+@@@Function Component@@@
+
+SETTING title label:
+This is a header text label that indicates the current screen is the app settings menu.
+@@@Text Functional Component@@@

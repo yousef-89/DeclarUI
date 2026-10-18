@@ -1,0 +1,124 @@
+"很棒" (Very good) label:
+This is a text label indicating the user rating description, meaning "Very good".
+@@@Text Functional Component@@@
+
+Location pin icon:
+This appears to be an icon representing geographic location, typically used alongside address text to indicate proximity or specific location details.
+@@@Function Component@@@
+
+"很棒" (Very good) label:
+This is a text label indicating the user rating description, meaning "Very good".
+@@@Text Functional Component@@@
+
+Location pin icon:
+This appears to be an icon representing geographic location, typically used alongside address text to indicate proximity or specific location details.
+@@@Function Component@@@
+
+Top search/filter bar container:
+This is a container view holding search filters, location, and date range information, likely functioning as a clickable button to modify search parameters.
+@@@TouchableOpacity Function Component@@@
+
+Hotel building image:
+This is an image representing the exterior view of the hotel property.
+@@@Function Component@@@
+
+"Genius" badge:
+This is a promotional badge representing the Booking.com Genius loyalty program level for the accommodation.
+@@@View Function Component@@@
+
+"烟台南山皇冠假日酒店" (Yantai Nanshan Crowne Plaza Hotel) label:
+This is a text label displaying the full name of the hotel.
+@@@Text Functional Component@@@
+
+"8.6" rating score badge:
+This is a rating badge displaying the user review score of 8.6 for the hotel.
+@@@View Function Component@@@
+"该价格在Booking.com上仅剩2间" (Only 2 rooms left at this price on Booking.com) label:
+This text label displays a warning or urgent message indicating limited availability at the current price, encouraging users to book quickly.
+@@@Text Functional Component@@@
+
+"烟台世茂希尔顿酒店" (Yantai Shimao Hilton Hotel) label:
+This text label displays the name of the hotel in the search results list.
+@@@Text Functional Component@@@
+
+"29条点评" (29 reviews) label:
+This text label shows the total number of user reviews for the hotel.
+@@@Text Functional Component@@@
+
+"含税费及其他费用" (Includes taxes and other charges) label:
+This text label informs the user that the displayed price includes all taxes and additional fees.
+@@@Text Functional Component@@@
+
+Filter icon:
+This icon represents a filter control button that likely allows users to refine their accommodation search based on various criteria such as price, amenities, or rating.
+@@@TouchableOpacity Function Component@@@
+
+Information banner text and close button:
+This container displays a notice regarding how commissions and commercial factors affect accommodation rankings, along with a close button to dismiss the banner.
+@@@View Function Component@@@
+
+"烟台孚利泰国际大酒店" (Yantai Fulita International Hotel) label:
+This text label displays the name of another hotel in the search results list.
+@@@Text Functional Component@@@
+
+"1间酒店客房" (1 hotel room) label:
+This text label indicates the number of hotel rooms selected or available for booking.
+@@@Text Functional Component@@@
+
+"可持续性认证" (Sustainability certification) label:
+This text label indicates that the hotel has obtained a sustainability or eco-friendly certification.
+@@@Text Functional Component@@@
+Hotel image:
+This is an image displaying the exterior and signage of Fulitai International Hotel, serving as a visual representation for the hotel listing.
+@@@Function Component@@@
+
+"40条点评" (40 reviews) label:
+This text label shows the total number of reviews for a hotel, translating to "40 reviews".
+@@@Text Functional Component@@@
+
+"24家住宿" (24 properties) label:
+This text label displays the total count of available accommodations or properties found matching the search criteria, translating to "24 properties".
+@@@Text Functional Component@@@
+
+"筛选" (Filter) label:
+This text label indicates the filter option, allowing users to narrow down search results based on various criteria, translating to "Filter".
+@@@Text Functional Component@@@
+
+"无需预付" (No prepayment required) label:
+This text label highlights a booking policy indicating that no upfront payment is needed for the reservation, translating to "No prepayment required".
+@@@Text Functional Component@@@
+
+"908元" (908 RMB) label:
+This text label displays the price of the hotel room per night in Chinese Yuan, translating to "908 RMB".
+@@@Text Functional Component@@@
+
+Cityscape image:
+This is a scenic image showing a cityscape view with hotels and buildings, used as a promotional or listing photo for accommodation options.
+@@@Function Component@@@
+
+"非常好 22条点评" (Very good, 22 reviews) label:
+This text label displays the rating status and the total number of reviews for a hotel, translating to "Very good, 22 reviews".
+@@@Text Functional Component@@@
+
+"排序" (Sort) label:
+This text label describes the sorting functionality, allowing users to order the search results by parameters like price, rating, etc., translating to "Sort".
+@@@Text Functional Component@@@
+707元 (707 RMB) price label:
+This is a text label displaying the price per night for the hotel accommodation (707 RMB).
+@@@Text Functional Component@@@
+
+2张床 (2 beds) label:
+This is a text label indicating the bed configuration for the hotel room (2 beds).
+@@@Text Functional Component@@@
+
+含税费及其他费用 (Includes taxes and other fees) label:
+This is a text label that informs users whether taxes and other additional fees are included in the displayed price.
+@@@Text Functional Component@@@
+
+1张床 (1 bed) label:
+This is a text label indicating the bed configuration for the hotel room (1 bed).
+@@@Text Functional Component@@@
+
+8.9 rating badge:
+This is a text component within a styled container displaying the hotel's review score (8.9).
+@@@Text Functional Component@@@

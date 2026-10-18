@@ -1,0 +1,74 @@
+Back button:
+This appears to be a clickable back icon button that allows users to return to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Sub task item container:
+This is a container view representing an individual sub-task entry, displaying its checkbox, title, date, and options menu.
+@@@View Function Component@@@
+
+Completed sub task item container:
+This is a container view representing a completed sub-task entry, displaying a checked state, strikethrough title, date, and options menu.
+@@@View Function Component@@@
+
+Header bar:
+This is a header section container containing the back button and the title for the current screen.
+@@@View Function Component@@@
+
+Time range label container:
+This is a container view displaying the scheduled time range for the task.
+@@@View Function Component@@@
+
+Task statistics section:
+This is a view container displaying a pie chart breakdown and color-coded status legends for task progress.
+@@@View Function Component@@@
+
+"Sub Task" section header:
+This is a text label indicating the section title for sub-tasks within the details view.
+@@@Text Functional Component@@@
+
+Status bar time:
+This is a text component displaying the current time in the device status bar.
+@@@Text Functional Component@@@
+
+Date label container:
+This is a container view displaying the scheduled date for the task.
+@@@View Function Component@@@
+Back icon:
+This appears to be a touchable button with an arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+"Task Details" title:
+This is a text label displaying the title of the current screen, indicating that the user is viewing the details of a specific task.
+@@@Text Functional Component@@@
+
+"User experience design" header:
+This is a text label displaying the main task name or heading for the task details.
+@@@Text Functional Component@@@
+
+"18-02-2022" date label:
+This is a text view styled as a badge or card representing the date of the task.
+@@@View Function Component@@@
+
+"9:00 AM-12:00 PM" time label:
+This is a text view styled as a badge or card representing the scheduled time range for the task.
+@@@View Function Component@@@
+
+Pie chart and legend view:
+This is a container view holding a graphical pie chart and its corresponding color-coded legend items to show task status breakdown.
+@@@View Function Component@@@
+
+"Description" section header:
+This is a text label representing the heading for the task description section.
+@@@Text Functional Component@@@
+
+Description text and "See more":
+This is a text component displaying the detailed description of the task with an interactive "See more" text button to expand the content.
+@@@Text Functional Component@@@
+
+"Sub Task" section header:
+This is a text label indicating the heading for the sub-tasks list section.
+@@@Text Functional Component@@@
+
+Sub task list item container:
+This is a view container representing an individual list item for a sub-task, including its checkbox, text details, and action menu.
+@@@View Function Component@@@

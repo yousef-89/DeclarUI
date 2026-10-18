@@ -1,0 +1,93 @@
+"Pitch 24 Creek Caravan Park" label:
+This is a text label displaying the title and details of the property, including location and pet-friendly status ("Ringstead狗友好" translates to "Ringstead dog-friendly").
+@@@Text Functional Component@@@
+
+Calendar icon:
+This appears to be an icon representing the calendar or cancellation policy timeline, visually indicating date-related information or booking duration.
+@@@Function Component@@@
+
+"8月3日前可免费取消订单。旅行规划有变，可获全额退款。" (Free cancellation before August 3rd. Travel plans changed, full refund available.) label:
+This is a text label that describes the cancellation policy and refund terms for the booking, providing important terms to the user.
+@@@Text Functional Component@@@
+
+"选择付款方式" (Select Payment Method) label:
+This is a section header text label that indicates the current area where users can choose their preferred payment method.
+@@@Text Functional Component@@@
+
+Property image:
+This is an image component displaying a preview photo of the property (a caravan with a wooden deck near the sea).
+@@@Function Component@@@
+
+"★ 480 (5)" label:
+This is a text label showing the average rating score (4.80) and the total number of reviews (5) for the property.
+@@@Text Functional Component@@@
+
+"编辑" (Edit) label:
+This is a text label acting as an action button to let users modify or edit their trip details such as dates or guest counts.
+@@@Text Functional Component@@@
+
+"9月2日至7日" (September 2nd to 7th) label:
+This is a text label displaying the selected dates for the user's trip itinerary.
+@@@Text Functional Component@@@
+
+"您的行程" (Your Itinerary) label:
+This is a section header text label that introduces the itinerary details section for the user's trip.
+@@@Text Functional Component@@@
+"房客人数" (Number of guests) label:
+This is a text label indicating the number of guests for the booking.
+@@@Text Functional Component@@@
+
+"编辑" (Edit) label:
+This is a text label indicating an action to edit the guest count or booking details.
+@@@Text Functional Component@@@
+
+"旅行规划有" (Travel planning has...) label:
+This is a text label displaying part of the travel planning and cancellation policy information.
+@@@Text Functional Component@@@
+
+Property image:
+This is an image displaying the exterior view of the listed property (caravan/chalet).
+@@@Function Component@@@
+
+"旅行规划有" (Travel planning has...) label:
+This is a text label displaying descriptive text related to travel planning or host details.
+@@@Text Functional Component@@@
+
+"超赞房东" (Superhost) label:
+This is a text label indicating that the property owner holds Superhost status.
+@@@Text Functional Component@@@
+
+Radio button icon:
+This appears to be a selection indicator button showing the currently selected payment method.
+@@@TouchableOpacity Function Component@@@
+
+"确认并付款" (Confirm and pay) label:
+This is a text label displaying the title of the checkout and payment confirmation page.
+@@@Text Functional Component@@@
+
+"现在支付部分费用" (Pay part now) label:
+This is a text label describing the partial payment option for the booking.
+@@@Text Functional Component@@@
+整套小木屋 (Entire wooden cabin) label:
+This is a text label indicating the property type, which translates to "Entire wooden cabin".
+@@@Text Functional Component@@@
+
+立即支付 ¥ 12,120.95 (Pay now ¥ 12,120.95) label:
+This is a text label displaying the payment option and total amount, translating to "Pay now ¥ 12,120.95".
+@@@Text Functional Component@@@
+
+今天需支付 ¥ 6,060.48，2024年8月18日支付 ¥ 6,060.47... (Pay ¥ 6,060.48 today, pay ¥ 6,060.47 on August 18, 2024...) label:
+This is a text label providing detailed payment breakdown and schedule for the split-payment option.
+@@@Text Functional Component@@@
+
+稍后再支付剩余的金额 (Pay the remaining amount later) label:
+This is a text label describing the split-payment policy, translating to "Pay the remaining amount later".
+@@@Text Functional Component@@@
+
+1位房客 (1 guest) label:
+This is a text label indicating the number of guests for the booking, translating to "1 guest".
+@@@Text Functional Component@@@
+
+日期 (Date) label:
+This is a text label indicating the section for selecting or viewing the booking dates, translating to "Date".
+@@@Text Functional Component@@@

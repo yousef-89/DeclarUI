@@ -1,0 +1,62 @@
+"湖区" (Lake area) icon and label:
+This appears to be a navigation or category button with an icon representing a lake/nature scene and the text label "湖区" (Lake area) below it, which likely allows users to filter or view listings located near lakes.
+@@@TouchableOpacity Function Component@@@
+
+"添加人数" (Add guests) label:
+This is a text label indicating the guest count filter or input field, prompting users to add the number of guests for their search.
+@@@Text Functional Component@@@
+
+"行程" (Trips) icon and label:
+This appears to be a bottom navigation tab item consisting of the Airbnb logo icon and the text label "行程" (Trips), which allows users to view their scheduled or past trips.
+@@@TouchableOpacity Function Component@@@
+
+"小木屋" (Cabins) icon and label:
+This appears to be a category selection button featuring a cabin icon and the text label "小木屋" (Cabins), which likely filters listings to show cabins or similar rustic accommodations.
+@@@TouchableOpacity Function Component@@@
+
+"消息" (Messages) icon and label:
+This is a bottom navigation tab item featuring a chat bubble icon and the text label "消息" (Messages), allowing users to access their inbox and view conversations with hosts.
+@@@TouchableOpacity Function Component@@@
+
+Content Card component:
+This appears to be a complex container card displaying a listing image carousel with indicator dots, property details text such as "在 X 学院参加训练" (Train at X Mansion) and host information, functioning as a clickable card to view full listing details.
+@@@View Function Component@@@
+
+Search Bar component:
+This is a search container bar at the top of the app featuring a search icon and multiple placeholder text fields like "任何地方" (Anywhere), "添加日期" (Add dates), and "添加人数" (Add guests) to help users initiate location and date-based searches.
+@@@View Function Component@@@
+
+"王牌" (Icons/Featured) icon and label:
+This appears to be a category selection button featuring a ticket-like icon with a star and the text label "王牌" (Icons/Featured), likely used to browse special featured experiences or unique properties.
+@@@TouchableOpacity Function Component@@@
+
+"我的" (Profile) icon and label:
+This is a bottom navigation tab item featuring a user profile icon and the text label "我的" (Profile), which allows users to view and manage their personal account settings and profile.
+@@@TouchableOpacity Function Component@@@
+Top search filter bar:
+This appears to be a search container bar at the top of the app that lets users enter location, dates, and number of guests for searching listings.
+@@@View Function Component@@@
+
+"心愿单" (Wishlist) label:
+This is a navigation label meaning "Wishlist" that describes the bottom tab item for users to view their saved or favorite listings.
+@@@Text Functional Component@@@
+
+"湖区" (Lake area) category icon and label:
+This is a touchable filter category item consisting of an icon and the label "湖区" (Lake area) that allows users to filter listings by specific geographical features or themes.
+@@@TouchableOpacity Function Component@@@
+
+"探索" (Explore) icon and label:
+This is a navigation tab item combining an icon and the label "探索" (Explore) which takes the user back to the main discovery and search screen.
+@@@TouchableOpacity Function Component@@@
+
+Listing card:
+This card component displays property images, pagination dots, sharing options, and details such as title and host information, allowing users to view listing summaries.
+@@@View Function Component@@@
+
+"魅力泳池" (Amazing pools) category icon and label:
+This is a touchable filter category item consisting of an icon and the label "魅力泳池" (Amazing pools) that allows users to filter listings featuring swimming pools.
+@@@TouchableOpacity Function Component@@@
+
+"海景民宿" (Beachfront B&B) category icon and label:
+This is a touchable filter category item combining an icon and the label "海景民宿" (Beachfront B&B) to filter listings located by the beach or offering ocean views.
+@@@TouchableOpacity Function Component@@@

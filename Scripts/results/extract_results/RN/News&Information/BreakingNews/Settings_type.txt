@@ -1,0 +1,112 @@
+"通知管理" (Notification Management) label:
+This is a text label that describes the functionality of the corresponding notification settings item, indicating that users can manage detailed notification preferences here.
+@@@Text Functional Component@@@
+
+Right arrow icon:
+This appears to be a clickable button or indicator pointing to the right, likely allowing users to navigate to a sub-menu or detail page for notification settings.
+@@@TouchableOpacity Function Component@@@
+
+Right arrow icon:
+This appears to be a clickable button or indicator pointing to the right, likely allowing users to navigate to a sub-menu or detail page for vibration settings.
+@@@TouchableOpacity Function Component@@@
+
+"登录并加入该社群" (Log in and join the community) label:
+This is a text label that provides a prompt or description below the registration button, encouraging users to log in and join the community group.
+@@@Text Functional Component@@@
+
+Vibration device icon:
+This appears to be an icon representing a mobile phone vibrating, visually indicating the vibration alert feature for notifications.
+@@@Function Component@@@
+
+"消息带图" (Messages with images) label:
+This is a text label describing the setting option that determines whether incoming messages should include image previews or thumbnails.
+@@@Text Functional Component@@@
+
+"震动提醒" (Vibration reminder) label:
+This is a text label that describes the functionality of the vibration alert switch, allowing users to enable or disable vibration feedback for notifications.
+@@@Text Functional Component@@@
+
+Right arrow icon:
+This appears to be a clickable button or indicator pointing to the right, likely allowing users to navigate to a sub-menu or detail page for language or regional settings.
+@@@TouchableOpacity Function Component@@@
+
+Notification bell with sound waves icon:
+This appears to be an icon of a bell with sound waves, visually representing the notification sound setting.
+@@@Function Component@@@
+
+Language/Translation icon:
+This appears to be an icon representing language translation or regional settings, visually indicating the feature used to change the country or language.
+@@@Function Component@@@
+Back arrow icon:
+This is a navigation icon button used to return to the previous screen when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"话题" (Topics) label:
+This is a text label that displays the name of a settings item, indicating navigation to topic-related settings.
+@@@Text Functional Component@@@
+
+"改变国家" (Change Country) label:
+This is a text label that describes a setting option allowing users to change their region or country.
+@@@Text Functional Component@@@
+
+"设置" (Settings) label:
+This is a text label that serves as the title of the screen, indicating that the current view is the settings page.
+@@@Text Functional Component@@@
+
+"通知声音" (Notification Sound) label:
+This is a text label that describes the setting option for controlling notification audio preferences.
+@@@Text Functional Component@@@
+
+Right arrow icon:
+This is an interactive navigation indicator button that signals to users that tapping the row will open a sub-menu or detail view.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar icon:
+This is an image component displaying a placeholder profile picture for the user account.
+@@@Function Component@@@
+
+"来源管理" (Source Management) label:
+This is a text label that describes a settings option for managing content sources or feeds.
+@@@Text Functional Component@@@
+
+"3G" network status label:
+This is a text label indicating the current mobile network connectivity type in the status bar.
+@@@Text Functional Component@@@
+"内容" (Content) label:
+This is a text label that categorizes the following settings section, indicating content-related preferences.
+@@@Text Functional Component@@@
+
+SIM card/Storage icon:
+This is an image icon representing data storage or memory card settings.
+@@@Function Component@@@
+
+Bell icon:
+This is an image icon used to represent notification settings or alert sounds.
+@@@Function Component@@@
+
+Navigation bar indicator / Home bar:
+This is a visual indicator bar at the bottom of the screen typically used for gesture navigation or home screen access in iOS/Android.
+@@@View Function Component@@@
+
+"消息" (Messages) label:
+This is a text label that categorizes the messaging or notification settings section.
+@@@Text Functional Component@@@
+
+Network/Nodes icon:
+This is an image icon representing network connections, community sources, or external management links.
+@@@Function Component@@@
+
+"8:36" time label:
+This is a text label displaying the current device time in the status bar.
+@@@Text Functional Component@@@
+
+Right arrow / Chevron button:
+This is a touchable arrow icon indicating that clicking it will navigate to a sub-menu or detail page.
+@@@TouchableOpacity Function Component@@@
+
+Switch toggle:
+This is a toggle switch component used to enable or disable settings like notification sounds or vibration alerts.
+@@@Switch@@@
+"注册" (Register) button:
+This appears to be a clickable button that allows users to sign up or register for an account within the app.
+@@@TouchableOpacity Function Component@@@

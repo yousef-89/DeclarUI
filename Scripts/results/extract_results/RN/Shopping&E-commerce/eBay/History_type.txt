@@ -1,0 +1,122 @@
+Image placeholder icon:
+This appears to be an image component used as a placeholder or thumbnail to display the product image within the purchase history list.
+@@@Function Component@@@
+
+"购买相似物品" (Buy similar items) button:
+This is a button that allows users to search for or purchase items similar to the one listed in their purchase history.
+@@@TouchableOpacity Function Component@@@
+
+Product title and price text:
+This text component displays the product title ("Pack of 5 | Ottogi Jin Ramen Noodle (Mild) 120g (Pack of 5)") and its price ("GBP 14.99"), providing key details about the purchased item.
+@@@Text Functional Component@@@
+
+Image placeholder icon:
+This appears to be an image component used as a thumbnail or placeholder for product imagery within a list item.
+@@@Function Component@@@
+
+"出售物品" (Selling items) icon and label:
+This component represents a navigation or action button with a tag icon and the label "出售物品" (Selling items), which likely directs users to a page where they can list items for sale.
+@@@TouchableOpacity Function Component@@@
+
+Date text label:
+This text label displays the purchase date ("2022年10月8日" / October 8, 2022), indicating when the transaction was completed.
+@@@Text Functional Component@@@
+
+"主页" (Home) icon and label:
+This is a navigation button featuring a home icon and the label "主页" (Home), which allows users to return to the main application dashboard or homepage.
+@@@TouchableOpacity Function Component@@@
+
+Shopping cart icon:
+This is a button displaying a shopping cart icon, which likely allows users to view the items currently in their shopping cart or proceed to checkout.
+@@@TouchableOpacity Function Component@@@
+
+Product price and date text:
+This text component displays the price ("GBP 3.99") and the order date ("2022年1月13日" / January 13, 2022), informing the user of the cost and transaction date for the purchased item.
+@@@Text Functional Component@@@
+"购买记录" (Purchase History) label:
+This is a text label that displays the title of the screen, indicating that users are viewing their past purchase records.
+@@@Text Functional Component@@@
+
+"购买相似物品" (Buy Similar Items) button:
+This appears to be a button that allows users to find and purchase similar items based on their previous order.
+@@@TouchableOpacity Function Component@@@
+
+"我的 eBay" (My eBay) tab icon and label:
+This is a navigation button consisting of an icon and text label that allows users to navigate to their personal eBay profile or account page.
+@@@TouchableOpacity Function Component@@@
+
+"包邮" (Free Shipping) label:
+This is a text label indicating that the item includes free shipping benefits for the buyer.
+@@@Text Functional Component@@@
+
+Large shopping trolley product image:
+This is an image component displaying the product being sold, which is a large shopping trolley with a 40L capacity and accessories.
+@@@Function Component@@@
+
+"通知" (Notifications) tab icon and label:
+This is a navigation button consisting of a bell icon and text label that allows users to view their notification alerts and messages.
+@@@TouchableOpacity Function Component@@@
+
+"缩小搜索范围" (Narrow Search Range) label:
+This is a text label that acts as a filter option or button functionality description allowing users to narrow down their search results.
+@@@Text Functional Component@@@
+
+Product details text (Knife Sharpening Steel Rod... / GBP 3.99 / 2022年1月13日):
+This text block displays the product title, price in GBP, and purchase date, providing essential details about the past order.
+@@@Text Functional Component@@@
+
+"搜索" (Search) tab icon and label:
+This is a navigation button consisting of a magnifying glass icon and text label that allows users to access the search functionality of the app.
+@@@TouchableOpacity Function Component@@@
+Large Lightweight Wheeled Shopping Trolley text block:
+This is a text component displaying the product title and its price, along with the purchase date.
+@@@Text Functional Component@@@
+
+Three dots icon button:
+This appears to be a button that likely opens a menu with additional options or settings when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"包邮" (Free Shipping) text label:
+This is a text label indicating that the item includes free shipping ("包邮" means free shipping in Chinese).
+@@@Text Functional Component@@@
+
+"再次购买" (Buy Again) button:
+This is a button that allows users to quickly reorder or purchase the same item again.
+@@@TouchableOpacity Function Component@@@
+
+Knife sharpening steel rod image:
+This is an image component displaying the product visual representation, showing a knife sharpening rod and demonstration usage.
+@@@Function Component@@@
+
+Search icon button:
+This appears to be an icon button representing a search action or magnifying glass feature.
+@@@TouchableOpacity Function Component@@@
+
+Date text label:
+This is a text label displaying a specific date in Chinese format (Year, Month, Day), indicating the transaction or order date.
+@@@Text Functional Component@@@
+
+Back arrow icon button:
+This appears to be a button with a left arrow icon, typically used to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Large Bamboo Chopping Board text block:
+This is a text component displaying the product title, price in GBP, shipping details, and the order date.
+@@@Text Functional Component@@@
+*(Note: No separate component images were provided in your prompt alongside the complete app screenshot. Below is an analysis of the key components visible in the provided app screenshot, following your exact format.)*
+
+"购买记录" (Purchase History) header title:
+This is a text label that displays the title of the current screen, indicating to the user that they are viewing their purchase history.
+@@@Text Functional Component@@@
+
+"查找" (Search) input placeholder:
+This appears to be a text input field that allows users to type keywords to search within their purchase history.
+@@@TextInput@@@
+
+"购买相似物品" (Buy Similar Items) button:
+This is a touchable button that allows users to quickly search for or navigate to similar items based on a previous purchase.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar icons and labels (主页, 我的 eBay, 搜索, 通知, 出售物品):
+These are interactive navigation elements at the bottom of the screen allowing users to switch between different main sections of the app (Home, My eBay, Search, Notifications, Selling).
+@@@TouchableOpacity Function Component@@@

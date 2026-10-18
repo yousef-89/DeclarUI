@@ -1,0 +1,112 @@
+Post content text:
+This is a text label displaying the body of a post or update, showing user thoughts or shared information within the app feed.
+@@@Text Functional Component@@@
+
+Heart icon:
+This appears to be an interactive button that likely allows users to like or favorite the post or content item.
+@@@TouchableOpacity Function Component@@@
+
+Camera/Share icon:
+This appears to be an interactive button that likely allows users to share the content or take/upload an image.
+@@@TouchableOpacity Function Component@@@
+
+Follow button:
+This is a clickable button that allows users to follow the profile or user account displayed on the screen.
+@@@Pressable@@@
+
+Home icon:
+This appears to be a navigation button that takes the user back to the home feed or main screen of the application.
+@@@TouchableOpacity Function Component@@@
+
+"threads.net" label:
+This is a text label displaying a web link or domain name associated with the user profile.
+@@@Text Functional Component@@@
+
+"Answers" label:
+This is a text label indicating a tab or section name for filtering replies or responses.
+@@@Text Functional Component@@@
+
+"2957 seguidores" (2957 followers) label:
+This is a text label displaying the follower count for the profile.
+@@@Text Functional Component@@@
+
+Search/Clock icon:
+This appears to be an interactive button that likely allows users to search or explore content within the app.
+@@@TouchableOpacity Function Component@@@
+Alisson Rochinski label:
+This is a text label displaying the profile owner's full name, serving as a primary heading on the profile page.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This is an icon representing the current Wi-Fi network connection status in the device's status bar.
+@@@Function Component@@@
+
+Battery icon:
+This is an icon indicating the current battery level and charging status of the mobile device in the status bar.
+@@@Function Component@@@
+
+9:41 time label:
+This is a text label displaying the current device time in the status bar.
+@@@Text Functional Component@@@
+
+Post stats and interaction icons:
+This is a view container grouping interaction icons (like repost and share) along with text displaying engagement metrics such as answers and likes count.
+@@@View Function Component@@@
+
+Chirps tab label:
+This is a text label indicating the current active content tab, displaying user posts or "chirps".
+@@@Text Functional Component@@@
+
+Avatar image:
+This is an image component displaying a user's avatar icon or profile picture.
+@@@Function Component@@@
+
+arochinski label:
+This is a text label showing the user's username handle on the profile screen.
+@@@Text Functional Component@@@
+
+User profile photo:
+This is an image component displaying the user's main profile picture.
+@@@Function Component@@@
+Heart icon:
+This appears to be a button that likely allows users to like a post or content item when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Share/Send icon:
+This appears to be a button that likely allows users to share the post or send it to someone via direct message.
+@@@TouchableOpacity Function Component@@@
+
+Profile icon:
+This appears to be a profile picture or avatar image, possibly representing the user or providing access to profile-related views.
+@@@Function Component@@@
+
+User profile outline icon:
+This appears to be a navigation or account icon, likely used to direct the user to their profile or settings page.
+@@@TouchableOpacity Function Component@@@
+
+Bio and email text:
+This is a text label displaying user bio information and contact email address.
+@@@Text Functional Component@@@
+
+Username text:
+This is a text label displaying the user handle/username.
+@@@Text Functional Component@@@
+
+Email suffix text:
+This is a text label displaying part of the user's email address.
+@@@Text Functional Component@@@
+
+Group of follower avatars:
+This appears to be a group of small profile picture thumbnails representing followers or mutual connections.
+@@@View Function Component@@@
+
+Follower avatar thumbnail:
+This appears to be a small profile picture thumbnail of an individual follower.
+@@@Function Component@@@
+User profile image:
+This appears to be an avatar image representing the user's profile picture, visually identifying the account owner on the profile page.
+@@@Function Component@@@
+
+"Voltar" (Back) label:
+This is a text label indicating a navigation action to return to the previous screen (translating "Voltar" from Portuguese to "Back").
+@@@Text Functional Component@@@

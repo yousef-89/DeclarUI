@@ -1,0 +1,85 @@
+"Related Result" label:
+This is a section header text label that indicates the category of search results displayed below it.
+@@@Text Functional Component@@@
+
+Back arrow icon:
+This appears to be a button that allows users to navigate back to the previous screen or page.
+@@@TouchableOpacity Function Component@@@
+
+"Related Result" section card image (right):
+This appears to be a profile card displaying a user image, name, and details within a touchable container.
+@@@TouchableOpacity Function Component@@@
+
+"Related Result" section card image (left):
+This appears to be a featured profile card displaying a user image, name, age, badges, and bio within a touchable container.
+@@@TouchableOpacity Function Component@@@
+
+"Running" interest tag:
+This is a tag or badge showing user interests, which can likely be clicked or serves as a descriptive label.
+@@@Text Functional Component@@@
+
+"Var" text:
+This is a text label displaying a user's name or a portion of it on a profile card.
+@@@Text Functional Component@@@
+
+"Ne" text:
+This is a text label displaying partial information or a heading on a profile card.
+@@@Text Functional Component@@@
+
+Profile card image (Mika Gracia):
+This appears to be a profile card featuring a user's picture, match percentage, name, age, and location.
+@@@TouchableOpacity Function Component@@@
+
+Profile card image (Gracy Logan):
+This appears to be a profile card featuring a user's picture, match percentage, name, age, and location.
+@@@TouchableOpacity Function Component@@@
+9:41 time label:
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Network, Wi-Fi, and battery icons:
+These icons represent the device's status bar indicators for connectivity and battery level.
+@@@StatusBar Android and iOS Component@@@
+
+"More About Gracia" section header:
+This is a section heading text that introduces additional details or related profiles about Gracia.
+@@@Text Functional Component@@@
+
+"Running" interest tag:
+This is a text label inside a pill-shaped container indicating a user's interest or hobby.
+@@@Text Functional Component@@@
+
+Featured user profile card 1:
+This is an image-based card component displaying a user's photo, name, age, match percentage, and bio.
+@@@ImageBackground@@@
+
+Featured user profile card 2:
+This is an image-based card component displaying a user's photo, name, age, and location.
+@@@ImageBackground@@@
+
+Featured user profile card 3:
+This is an image-based card component displaying a user's photo, name, age, and location, with a masked avatar area.
+@@@ImageBackground@@@
+
+Featured user profile card 4:
+This is an image-based card component displaying a user's photo, name, age, and location, with a masked avatar area.
+@@@ImageBackground@@@
+Search bar component:
+This appears to be a search input container with a placeholder and a search icon, allowing users to enter search queries to find profiles or content.
+@@@TextInput@@@
+
+"Hi the" text label:
+This is a text label displaying a greeting snippet from a user's bio description.
+@@@Text Functional Component@@@
+
+Profile card preview element:
+This appears to be a partial profile card container showing a user's photo and basic details for recommendation or matching results.
+@@@View Function Component@@@
+
+"Hi the" bio text label:
+This is a text label showing a portion of a user's self-introduction or bio.
+@@@Text Functional Component@@@
+
+Profile card container:
+This is a card view containing a user's background image, match percentage, and personal details, likely used as an interactive card element in a list or grid.
+@@@View Function Component@@@

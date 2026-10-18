@@ -1,0 +1,105 @@
+Gear icon:
+This appears to be a button with a gear icon, likely used to open the application's settings or configuration menu when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"Select" label:
+This is a text label that allows users to trigger a selection mode, enabling them to choose multiple items or files on the screen.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This is an icon representing network connectivity or Wi-Fi status, often used as part of the bottom navigation or status bar to indicate connection settings.
+@@@Function Component@@@
+
+"9:41" time display:
+This is a text display showing the current device time in the status bar.
+@@@Text Functional Component@@@
+
+List icon:
+This is an icon button used to toggle between different layout views, such as switching from a grid view to a list view for items.
+@@@TouchableOpacity Function Component@@@
+
+Clock icon:
+This is an icon button located in the bottom navigation bar, likely used to view recent history, timelines, or scheduled items.
+@@@TouchableOpacity Function Component@@@
+
+Folder card background:
+This is a container view representing a folder card that holds content, likely grouping related files or media together.
+@@@View Function Component@@@
+
+Home icon:
+This is an active navigation icon representing the home tab, indicating that the user is currently on the main screen.
+@@@Function Component@@@
+
+Grid preview container:
+This is a composite view displaying a 2x2 grid of thumbnail images and an add button, representing a collection folder containing multiple items.
+@@@View Function Component@@@
+Plus icon:
+This appears to be a button with a plus symbol that likely allows users to add new items, create folders, or upload content.
+@@@TouchableOpacity Function Component@@@
+
+Bar chart icon:
+This appears to be a navigation or statistical button that likely allows users to view analytics, charts, or usage statistics related to their stored files.
+@@@TouchableOpacity Function Component@@@
+
+Play button icon:
+This appears to be an image or thumbnail representation of a video folder, indicating media playback or video content category.
+@@@Function Component@@@
+
+Blue folder icon:
+This appears to be an image representing a media folder or category for organizing files, photos, or videos.
+@@@Function Component@@@
+
+"Home" label:
+This is a text label that serves as a header title indicating the current screen or main section of the application.
+@@@Text Functional Component@@@
+
+Dark folder icon:
+This appears to be an image representing a deleted or system folder category for organizing specific files.
+@@@Function Component@@@
+
+Signal bars icon:
+This appears to be part of the device's status bar representing the network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Search icon:
+This appears to be a button with a magnifying glass icon that likely allows users to search through their files and folders.
+@@@TouchableOpacity Function Component@@@
+
+Battery icon:
+This appears to be part of the device's status bar indicating the current battery level of the mobile device.
+@@@StatusBar Android and iOS Component@@@
+
+"Select" label:
+This is a text label that likely functions as a clickable action button allowing users to select multiple items or files for batch operations.
+@@@Text Functional Component@@@
+Image component:
+This is an image component displaying a photo of a person, likely representing a memory, album cover, or media item in the gallery.
+@@@Function Component@@@
+
+"Photos & videos" and "3471 Items" label:
+This is a text label indicating the category title and the number of items contained within this folder or collection.
+@@@Text Functional Component@@@
+
+Image component:
+This is an image component displaying a photo of plant leaves, serving as a visual preview for a specific photo collection or album.
+@@@Function Component@@@
+
+"Plant photoshoot" and "25,Feb 2020" label:
+This is a text label displaying the title of the photo album and the date it was created or updated.
+@@@Text Functional Component@@@
+
+Image component:
+This is an image component displaying a placeholder or preview area, likely part of a grid layout for photo albums.
+@@@Function Component@@@
+
+Image component:
+This is an image component displaying a folder thumbnail with a play icon, representing a video album or collection.
+@@@Function Component@@@
+
+"Name" sort button:
+This appears to be a button with an icon and text label that allows users to sort the displayed items by their name.
+@@@TouchableOpacity Function Component@@@
+
+"iTunes" and "27 Items" label:
+This is a text label showing the album name "iTunes" and the count of items stored inside this category.
+@@@Text Functional Component@@@

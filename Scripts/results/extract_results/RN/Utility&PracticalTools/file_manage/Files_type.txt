@@ -1,0 +1,101 @@
+Download text:
+This is a text label displaying the folder name "Download", indicating the contents or category of stored files.
+@@@Text Functional Component@@@
+
+6 items text:
+This is a text label showing the item count for the folder, providing users with metadata about the folder's contents.
+@@@Text Functional Component@@@
+
+Blue folder icon with heart:
+This appears to be an image or icon representing a favorited or special folder within the file management system.
+@@@Function Component@@@
+
+5 items [icon] 4.6 GB text:
+This is a text label displaying metadata including the item count, a separator icon, and the total storage size of the folder.
+@@@Text Functional Component@@@
+
+DCIM text:
+This is a text label displaying the folder name "DCIM", which typically contains device camera images and videos.
+@@@Text Functional Component@@@
+
+Alarms text:
+This is a text label displaying the folder name "Alarms", indicating the directory for alarm sounds or related files.
+@@@Text Functional Component@@@
+
+Orange folder icon with Files text:
+This is a navigation bar icon and label combination representing the "Files" tab, indicating the current active section of the app.
+@@@Function Component@@@
+
+23 items [icon] 98 MB text:
+This is a text label displaying detailed metadata for a folder, including the number of items and the total storage size.
+@@@Text Functional Component@@@
+
+23 items text:
+This is a text label showing the item count ("23 items") for a specific folder.
+@@@Text Functional Component@@@
+Clean icon:
+This appears to be a navigation tab button that likely allows users to switch to the clean-up section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Folder icon:
+This is an image icon representing a folder, typically used to display folder items in the file storage list.
+@@@Function Component@@@
+
+Backups label:
+This is a text label displaying the name of the folder, indicating that the directory contains backup files.
+@@@Text Functional Component@@@
+
+Documents label:
+This is a text label displaying the name of the folder, indicating that the directory contains document files.
+@@@Text Functional Component@@@
+
+Item label:
+This is a text label displaying metadata about the folder contents, such as the number of items inside.
+@@@Text Functional Component@@@
+
+Item label:
+This is a text label displaying metadata about the folder contents, such as the number of items inside.
+@@@Text Functional Component@@@
+
+Cloud icon:
+This appears to be a navigation tab button that likely allows users to access cloud storage features.
+@@@TouchableOpacity Function Component@@@
+
+Browser label:
+This is a text label displaying the name of the folder, indicating that the directory contains browser-related data.
+@@@Text Functional Component@@@
+
+Folder metadata label:
+This is a text label showing item count and storage size details for a folder in the file list.
+@@@Text Functional Component@@@
+Notifications label:
+This is a text label displaying the name of a folder or notification item in the file manager list.
+@@@Text Functional Component@@@
+
+Home navigation tab:
+This appears to be a button with an icon and label that allows users to navigate back to the home screen of the application.
+@@@TouchableOpacity Function Component@@@
+
+3 items and storage size label:
+This is a text label displaying metadata about a folder, specifically the number of items inside and the total storage size.
+@@@Text Functional Component@@@
+
+Android label:
+This is a text label displaying the folder name "Android" for the system directory entry in the storage list.
+@@@Text Functional Component@@@
+
+3 items and storage size label (Browser):
+This is a text label displaying the metadata (item count and storage size) for the Browser folder.
+@@@Text Functional Component@@@
+
+Folder icon with heart:
+This is an image/icon representing a folder that has been favorited or bookmarked by the user.
+@@@Function Component@@@
+
+Internal Storage label:
+This is a text label displaying the main title of the current directory screen ("Internal Storage").
+@@@Text Functional Component@@@
+
+Canva label:
+This is a text label displaying the folder name "Canva" in the file manager list.
+@@@Text Functional Component@@@

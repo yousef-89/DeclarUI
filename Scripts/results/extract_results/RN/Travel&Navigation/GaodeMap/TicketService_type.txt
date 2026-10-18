@@ -1,0 +1,151 @@
+"暑期百亿补贴" (Summer 10 Billion Subsidy) label:
+This is a text label indicating a special promotional campaign called "Summer 10 Billion Subsidy".
+@@@Text Functional Component@@@
+
+"威海市" (Weihai City) label:
+This is a text label displaying the departure city name, "Weihai City".
+@@@Text Functional Component@@@
+
+"东湖生态旅游... - 金色港湾" (East Lake Eco-Tourism... - Golden Bay) label:
+This is a text label showing a specific location or landmark name, with a truncated text style indicating it is a detailed address suggestion.
+@@@Text Functional Component@@@
+
+"武汉站" (Wuhan Station) label:
+This is a text label displaying the arrival railway station name, "Wuhan Station".
+@@@Text Functional Component@@@
+
+"威海站" (Weihai Station) label:
+This is a text label displaying the departure railway station name, "Weihai Station".
+@@@Text Functional Component@@@
+
+"查..." (Query/Search) label:
+This appears to be a truncated text label inside a button or tag, likely related to search or query functionality.
+@@@Text Functional Component@@@
+
+"订当日" (Book Same-Day) label:
+This is a text label indicating a button or option to quickly book a ticket for the same day.
+@@@Text Functional Component@@@
+
+Train image:
+This is an image showing a high-speed train, used as a visual illustration for train ticket booking.
+@@@Function Component@@@
+
+"立即购票" (Buy Now) button:
+This appears to be a button that allows users to immediately proceed to purchase a ticket for the selected route.
+@@@TouchableOpacity Function Component@@@
+"订票保障" (Booking Guarantee) container:
+This is a container view grouping text and icon elements related to ticket booking guarantees and safe travel options.
+@@@View Function Component@@@
+
+"周五" (Friday) label:
+This text label displays the day of the week, indicating the specific date context for ticket availability or scheduling.
+@@@Text Functional Component@@@
+
+"订当日" (Book Same Day) button:
+This appears to be a button that allows users to quickly select and book tickets for the current day.
+@@@TouchableOpacity Function Component@@@
+
+"明天" (Tomorrow) label:
+This text label indicates the date "tomorrow," showing the selected travel date for the ticket search.
+@@@Text Functional Component@@@
+
+"购票" (Buy Tickets) button:
+This is a primary action button that allows users to proceed with purchasing train tickets for the selected route and date.
+@@@TouchableOpacity Function Component@@@
+
+"武汉市" (Wuhan City) label:
+This text label displays the destination city name, "Wuhan City," indicating the arrival location for the journey.
+@@@Text Functional Component@@@
+
+"吃喝玩乐" (Food, Drink, and Entertainment) banner text:
+This text label highlights promotional offers and activities such as food, drinks, and entertainment for summer weekend deals.
+@@@Text Functional Component@@@
+
+"酒店预订" (Hotel Booking) card container:
+This container view groups text and icon elements that provide quick access to hotel reservation services with affordable and convenient options.
+@@@View Function Component@@@
+
+Train illustration image:
+This image displays a high-speed train graphic representing train travel and ticket promotional offers.
+@@@Function Component@@@
+"7.21" label:
+This is a text label displaying a specific date ("July 21"), likely used as a column header or date option for train ticket availability.
+@@@Text Functional Component@@@
+
+"7月19日" (July 19) label:
+This is a text label displaying a selected travel date ("July 19"), showing the current date selection for ticket queries.
+@@@Text Functional Component@@@
+
+"暑期火车票优惠订" (Summer Train Ticket Discount Booking) label:
+This is a text title label highlighting a promotional section for summer train ticket discounts and deals.
+@@@Text Functional Component@@@
+
+"高铁动车" (High-Speed Rail / EMU) label:
+This is a text label accompanying a checkbox option to filter search results specifically for high-speed rail and bullet trains.
+@@@Text Functional Component@@@
+
+"威海市 - 武汉市, 07.19出发, 约7时11分到达" (Weihai - Wuhan, Depart 07.19, Arrive in approx. 7h 11m) label:
+This is a descriptive text block detailing the route, departure date, and estimated travel duration for a specific train ticket listing.
+@@@Text Functional Component@@@
+
+"立即购票" (Book Now) label:
+This is a text label inside a button, indicating that clicking it will proceed to purchase or book the selected train ticket.
+@@@Text Functional Component@@@
+
+"查询" (Search) button:
+This appears to be a primary call-to-action button that allows users to submit their selected criteria and search for available train tickets.
+@@@TouchableOpacity Function Component@@@
+
+"订当日" (Book Same-Day) button:
+This appears to be a clickable button or quick-select tag that lets users quickly filter or select same-day ticket booking options.
+@@@TouchableOpacity Function Component@@@
+
+"高德" (Gaode / Amap) logo:
+This is an image/icon representing the brand name or logo of the application (Gaode/Amap).
+@@@Function Component@@@
+"领券中心" (Coupon Center) card:
+This appears to be a card container that groups together information and graphics related to grabbing discount coupons.
+@@@View Function Component@@@
+
+Fragmented navigation or title text:
+This is a text fragment representing part of a title or label, likely used to display descriptive information in the UI.
+@@@Text Functional Component@@@
+
+"领" (Claim) icon/button:
+This appears to be a graphical icon or button component representing a reward or coupon claim feature.
+@@@Function Component@@@
+
+Login promotion banner:
+This is a container view component that houses promotional text, a login button, and a close icon to encourage users to log in for official ticketing guarantees.
+@@@View Function Component@@@
+
+"7.20 周六" (July 20 Saturday) date tab:
+This appears to be a selectable date tab button used to filter or view train tickets for a specific day.
+@@@TouchableOpacity Function Component@@@
+
+"暑期火车票优惠订" (Summer Train Ticket Discount Booking) title:
+This is a section heading text label that highlights the current promotional category for discounted summer train tickets.
+@@@Text Functional Component@@@
+
+"火车票" (Train Ticket) tab:
+This is a tab navigation button that indicates the currently selected transport category for booking train tickets.
+@@@TouchableOpacity Function Component@@@
+
+"订当日" (Book Same-Day) button:
+This is a button that allows users to quickly select and book tickets for the current day.
+@@@TouchableOpacity Function Component@@@
+
+"学生票" (Student Ticket) label:
+This is a text label describing the student ticket option next to a selection checkbox.
+@@@Text Functional Component@@@
+Train interchange icon:
+This appears to be a clickable button or interactive icon that allows users to swap their departure and arrival cities for train tickets.
+@@@TouchableOpacity Function Component@@@
+
+"武汉市-国家网络安全..." (Wuhan City - National Cybersecurity...) label:
+This is a text label displaying a specific location or route suggestion, indicating a quick-selection tag for users.
+@@@Text Functional Component@@@
+
+"汽车票" (Bus Tickets) label:
+This is a text label indicating the tab category for bus tickets, allowing users to switch between different types of travel bookings.
+@@@Text Functional Component@@@

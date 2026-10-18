@@ -1,0 +1,50 @@
+Nirwna - OneDrive card:
+This appears to be a card container displaying a linked cloud storage account, its item count, storage size, and usage percentage with a progress bar.
+@@@View Function Component@@@
+
+Cloud Storage header title:
+This is a text label acting as the main title for the screen, indicating that the current view is for managing cloud storage accounts.
+@@@Text Functional Component@@@
+
+Dropbox card:
+This appears to be a card container showing information about a linked Dropbox account, including file counts, capacity, and current storage usage.
+@@@View Function Component@@@
+
+Header icons and title row:
+This appears to be a view container grouping the screen title and top action icons like the add button and menu/sorting options.
+@@@View Function Component@@@
+
+Files navigation item:
+This is a bottom navigation tab item consisting of a folder icon and label, used to navigate to the files management section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Clean navigation item:
+This is a bottom navigation tab item consisting of a broom icon and label, used to navigate to the storage cleaning feature.
+@@@TouchableOpacity Function Component@@@
+
+Dropbox storage card:
+This appears to be a card component representing a connected Dropbox storage account with details about items, storage capacity, and usage progress.
+@@@View Function Component@@@
+
+Cloud navigation item:
+This is an active bottom navigation tab item featuring a cloud icon and label, representing the current 'Cloud Storage' tab view.
+@@@TouchableOpacity Function Component@@@
+
+PIDT - OneDrive card:
+This appears to be a card container displaying a connected OneDrive account named PIDT, along with item details and a usage progress indicator.
+@@@View Function Component@@@
+Google Drive account item card:
+This component displays account information including the Google Drive icon, email address, storage usage details, and an options menu button within a container card.
+@@@View Function Component@@@
+
+Wi-Fi icon:
+This icon indicates the current Wi-Fi network connection status in the status bar at the top of the screen.
+@@@StatusBar Android and iOS Component@@@
+
+9:41 time label:
+This text label displays the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Home navigation tab:
+This component serves as a navigation button with an icon and label to take the user back to the home screen.
+@@@TouchableOpacity Function Component@@@

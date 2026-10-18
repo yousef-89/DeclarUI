@@ -1,0 +1,62 @@
+Payments label:
+This is a section header text label that categorizes the related payment options and transaction settings below it.
+@@@Text Functional Component@@@
+
+Account Settings label:
+This is a section header text label that categorizes account-related configuration options.
+@@@Text Functional Component@@@
+
+Payments and transactions list item:
+This appears to be a clickable row or list item that allows users to view their payment methods, history, and transaction details.
+@@@TouchableOpacity Function Component@@@
+
+Your Amazon Day list item:
+This appears to be a clickable row or list item that allows users to manage their designated delivery day preferences.
+@@@TouchableOpacity Function Component@@@
+
+Manage gift card balance list item:
+This appears to be a clickable row or list item that allows users to check, redeem, or manage their gift card balance.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This is a button containing an arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+In-Store Promo Wallet list item:
+This appears to be a clickable row or list item that allows users to view and manage their in-store promotional offers and digital wallet.
+@@@TouchableOpacity Function Component@@@
+
+Subscribe & Save list item:
+This appears to be a clickable row or list item that allows users to view and manage their subscription items and recurring deliveries.
+@@@TouchableOpacity Function Component@@@
+
+Orders label:
+This is a section header text label that categorizes the related order history and delivery preference options below it.
+@@@Text Functional Component@@@
+Search input bar:
+This appears to be a search input container with placeholder text, camera scan icon, and microphone icon, allowing users to type search queries or use alternative search inputs.
+@@@TextInput@@@
+
+"Your Orders" list item:
+This is a clickable list item component that allows users to navigate to the order history and manage or view their past purchases.
+@@@TouchableOpacity Function Component@@@
+
+"Contact Us" list item:
+This is a clickable list item component that directs users to customer support or help options when selected.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar:
+This is a bottom tab bar component with various icons (home, profile, cart, menu) allowing users to navigate quickly between main sections of the app.
+@@@View Function Component@@@
+
+"Customer Service" header label:
+This is a section header text label that indicates the category for customer service related options.
+@@@Text Functional Component@@@
+
+"Top up account" list item:
+This is a list item text component that represents an action or navigation option allowing users to add funds or top up their account balance.
+@@@Text Functional Component@@@
+
+"Shop with Points" list item:
+This is a list item text component representing an option that lets users utilize rewards points for shopping.
+@@@Text Functional Component@@@

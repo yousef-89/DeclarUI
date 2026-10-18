@@ -1,0 +1,89 @@
+5 items metadata label:
+This is a text label displaying item count and file size details for the favorite folder.
+@@@Text Functional Component@@@
+
+Signal strength icon:
+This is a status bar indicator showing cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Wi-Fi icon:
+This is a status bar indicator showing current wireless network connectivity.
+@@@StatusBar Android and iOS Component@@@
+
+31 item metadata label:
+This is a text label displaying item count and file size information for the Canva folder.
+@@@Text Functional Component@@@
+
+Download folder label:
+This is a text label indicating the name of the favorite download folder.
+@@@Text Functional Component@@@
+
+140Kb file size label:
+This is a text label indicating the file size of the recent spreadsheet file.
+@@@Text Functional Component@@@
+
+Favorite folders icon:
+This is an image/icon representing favorite folder items within the file manager.
+@@@Function Component@@@
+
+DSC2021084133.jpg filename label:
+This is a text label showing the filename of a recently accessed image.
+@@@Text Functional Component@@@
+
+2MB file size label:
+This is a text label indicating the file size of the recent image file.
+@@@Text Functional Component@@@
+Battery indicator icon:
+This appears to be a system status bar icon representing the device's battery level.
+@@@StatusBar Android and iOS Component@@@
+
+Time label ("9:41"):
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Search input container:
+This is a search bar container with a placeholder text, allowing users to type and search for folders or files.
+@@@TextInput@@@
+
+"Favorites" label:
+This is a text label that serves as a section header for the user's favorite folders or files.
+@@@Text Functional Component@@@
+
+Storage status card:
+This is a container view that displays internal storage usage details, including a percentage circle and storage statistics.
+@@@View Function Component@@@
+
+Blank spacer or bottom navigation container:
+This appears to be a layout view area near the bottom of the screen used for spacing or housing navigation elements.
+@@@View Function Component@@@
+
+"See All" label:
+This is a text button or label that allows users to view all items within the favorites or recent files section when pressed.
+@@@Text Functional Component@@@
+
+File icon 1:
+This is an image icon representing a file type, likely associated with a document or image in the recent files list.
+@@@Function Component@@@
+
+File icon 2:
+This is an image icon representing a file type, likely associated with a spreadsheet or document in the recent files list.
+@@@Function Component@@@
+Cloud Storage card view:
+This component displays the current usage percentage and details of cloud storage capacity within a card layout, helping users monitor their data consumption.
+@@@View Function Component@@@
+
+File Manager label:
+This is a text label that indicates the title of the current screen, informing users that they are viewing the file manager section.
+@@@Text Functional Component@@@
+
+Canva label:
+This is a text label displaying the name of a folder or file category ("Canva"), indicating specific content stored within the app.
+@@@Text Functional Component@@@
+
+See All button label:
+This is a text label acting as a clickable action to view the complete list of items in the favorites section.
+@@@TouchableOpacity Function Component@@@
+
+RKAKL2022.xlsx file label:
+This is a text label showing the filename of a spreadsheet document, indicating a specific file stored in the recent files section.
+@@@Text Functional Component@@@

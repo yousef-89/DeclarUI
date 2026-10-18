@@ -1,0 +1,77 @@
+Filter settings icon:
+This appears to be a button that allows users to open filter options to narrow down their search results.
+@@@TouchableOpacity Function Component@@@
+
+"海景民宿" (Seaview Homestay) category item:
+This is a category tab with an icon and text label that represents seaview homestays, allowing users to filter listings by this category.
+@@@View Function Component@@@
+
+Property card image container:
+This is an image container displaying photos of a property listing with pagination dots and a favorite button overlay.
+@@@Function Component@@@
+
+"漂亮" (Beautiful) review text fragment:
+This is a text label displaying a fragment of a user review describing the property as beautiful.
+@@@Text Functional Component@@@
+
+"探索" (Explore) tab label:
+This is a text label indicating the current active tab for exploring listings.
+@@@Text Functional Component@@@
+
+"我的" (Profile) tab item:
+This is a bottom navigation item consisting of an icon and text label that directs users to their personal profile page.
+@@@View Function Component@@@
+
+Search bar component:
+This is a search container holding input placeholders and a search icon for specifying location, dates, and number of guests.
+@@@View Function Component@@@
+
+"消息" (Messages) tab item:
+This is a bottom navigation item consisting of a chat bubble icon and text label that takes users to their messages and notifications.
+@@@View Function Component@@@
+
+"OMG 妙" (OMG Amazing) category label:
+This is a text label representing a unique or special category of listings, translating to "OMG Amazing".
+@@@Text Functional Component@@@
+"近滑雪场" (Nearby ski resort) label:
+This is a text label that describes a category of lodging near ski resorts, allowing users to filter accommodation options based on location.
+@@@Text Functional Component@@@
+
+"行程" (Itinerary) icon and label:
+This appears to be a navigation button with an icon and text label that likely directs users to their scheduled travel itineraries and bookings.
+@@@TouchableOpacity Function Component@@@
+
+"地图" (Map) button:
+This appears to be an interactive button with text and a map icon that allows users to switch from the list view to an interactive map view of the listings.
+@@@TouchableOpacity Function Component@@@
+
+Filter icon:
+This is a filter button containing an icon that likely opens a modal or panel for users to filter search results by various criteria such as price, amenities, and location.
+@@@TouchableOpacity Function Component@@@
+
+"显示总价" (Display total price) switch container:
+This is a setting container with a toggle switch that allows users to choose whether to display the total price including taxes and fees upfront.
+@@@Switch@@@
+
+Property description and price labels:
+This is a group of text labels that provide detailed information about the accommodation, including location ("UK Dorset", "Man O'War beach"), dates ("September 2-7"), reviews, and pricing ("¥2,424/night").
+@@@Text Functional Component@@@
+
+"心愿单" (Wishlist) label:
+This is a text label indicating the "Wishlist" tab in the bottom navigation bar, allowing users to view their saved and favorited properties.
+@@@Text Functional Component@@@
+
+"魅力泳池" (Amazing pools) label:
+This is a text label representing a category of properties featuring pools, allowing users to filter search results by this specific amenity.
+@@@Text Functional Component@@@
+
+"地图" (Map) button (duplicate):
+This appears to be an interactive button with text and a map icon that allows users to switch from the list view to an interactive map view of the listings.
+@@@TouchableOpacity Function Component@@@
+Ski resort icon:
+This appears to be an icon representing a category filter option for nearby ski resorts ("近滑雪场").
+@@@Function Component@@@
+
+"湖区" (Lake area) label:
+This is a text label that describes a specific category of accommodation located near lakes or waterfronts.
+@@@Text Functional Component@@@

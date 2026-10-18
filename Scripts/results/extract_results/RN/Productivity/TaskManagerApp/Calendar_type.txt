@@ -1,0 +1,97 @@
+02:00 PM text label:
+This is a text label displaying a specific time (02:00 PM), likely indicating a time slot in the daily schedule.
+@@@Text Functional Component@@@
+
+Dashboard redesign card component:
+This is a container view representing an individual task item, holding title, time range, progress bar, and completion percentage.
+@@@View Function Component@@@
+
+03:00 PM text label:
+This is a text label showing a specific time (03:00 PM), used as a marker on the vertical timeline.
+@@@Text Functional Component@@@
+
+February 2022 calendar view:
+This component displays a monthly calendar layout with day numbers and navigation controls, allowing users to select and view tasks by date.
+@@@View Function Component@@@
+
+Profile avatar image:
+This is an image component displaying the user's profile picture in the top left corner of the header.
+@@@Function Component@@@
+
+Dashboard redesign task info:
+This component groups the task's scheduled time range, details, and a progress bar representing task completion status.
+@@@View Function Component@@@
+
+Task item container:
+This appears to be a rounded container box or card component used to group task-related information and actions together.
+@@@View Function Component@@@
+
+Filter buttons (All, Ongoing, Completed):
+This is a set of interactive buttons or tabs allowing users to filter tasks by their status (All, Ongoing, or Completed).
+@@@TouchableOpacity Function Component@@@
+
+9:41 status bar time text:
+This is a text label displaying the current time (9:41) in the device's status bar.
+@@@Text Functional Component@@@
+01:00 PM label:
+This is a text label displaying a specific time slot on the schedule, helping users organize and track their daily tasks.
+@@@Text Functional Component@@@
+
+Today text:
+This is a text label representing part of the header title "Today's Task", indicating the current day's schedule view.
+@@@Text Functional Component@@@
+
+Calendar dates view:
+This is a horizontal container view holding the date selection strip for February 2022, allowing users to switch between different days.
+@@@View Function Component@@@
+
+Calendar icon:
+This is an icon representing the calendar tab in the bottom navigation bar, allowing users to view scheduled tasks by date.
+@@@Function Component@@@
+
+Wifi icon:
+This is a status bar indicator showing the current Wi-Fi network connection status of the device.
+@@@StatusBar Android and iOS Component@@@
+
+s Task text:
+This is a text label representing the remaining part of the header title "Today's Task", describing the overall page context.
+@@@Text Functional Component@@@
+
+Home icon:
+This is an icon representing the home tab in the bottom navigation bar, allowing users to navigate to the main dashboard.
+@@@Function Component@@@
+
+Bell icon:
+This is an icon representing the notifications tab in the bottom navigation bar, allowing users to view alerts and reminders.
+@@@Function Component@@@
+
+Plus button:
+This is a circular floating action button that likely allows users to add a new task or event to their schedule.
+@@@TouchableOpacity Function Component@@@
+10:00 AM text:
+This is a text label displaying a specific time slot (10:00 AM) on the schedule timeline.
+@@@Text Functional Component@@@
+
+Signal bars icon:
+This appears to be a status bar indicator showing cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+11:00 AM text:
+This is a text label displaying a specific time slot (11:00 AM) on the schedule timeline.
+@@@Text Functional Component@@@
+
+Gear icon:
+This is an interactive icon button that likely navigates the user to the app's settings screen.
+@@@TouchableOpacity Function Component@@@
+
+Landing page design card:
+This is a container view representing a specific scheduled task ("Landing page design"), including its time range, progress bar, and completion percentage.
+@@@View Function Component@@@
+
+Education app design card:
+This is a container view representing a specific scheduled task ("Education app design"), including its time range, progress bar, and completion percentage.
+@@@View Function Component@@@
+
+09:00 AM text:
+This is a text label displaying a specific time slot (09:00 AM) on the schedule timeline.
+@@@Text Functional Component@@@

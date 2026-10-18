@@ -1,0 +1,143 @@
+Profile picture:
+This appears to be an avatar image representing a user, typically used to display their profile picture within a chat list or contact item.
+@@@Function Component@@@
+
+Wi-Fi / Network status icon:
+This icon represents the device's internet connection status, commonly found in the status bar at the top of the mobile screen.
+@@@StatusBar Android and iOS Component@@@
+
+Chat name and preview text:
+This text layout displays a contact's name and their latest message preview, providing a summary of the conversation history.
+@@@Text Functional Component@@@
+
+Compass icon in a circle:
+This icon represents a navigation or explore tab button, allowing users to switch to the discover or browsing section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Battery icon:
+This icon indicates the remaining battery percentage and status of the mobile device, located in the system status bar.
+@@@StatusBar Android and iOS Component@@@
+
+Group chat / People tab icon:
+This icon represents a tab button for viewing groups, contacts, or community interactions within the app's bottom navigation bar.
+@@@TouchableOpacity Function Component@@@
+
+"View More" text:
+This is a text label that functions as a clickable link or button to expand more content or read additional details about an advertisement or section.
+@@@Text Functional Component@@@
+
+Story or active contacts horizontal list header:
+This component appears to be a horizontal scrolling list or container showing user avatars with online status indicators for viewing stories or quick chats.
+@@@flatlist-simple@@@
+
+Camera action button:
+This appears to be a circular button with a camera icon, likely allowing users to open the camera to take a photo or scan something.
+@@@TouchableOpacity Function Component@@@
+9:41 time indicator:
+This is a text display showing the current status bar time in the app header.
+@@@Text Functional Component@@@
+
+Martha's story thumbnail:
+This circular image displays a user's story profile picture, allowing users to view stories or status updates when tapped.
+@@@Function Component@@@
+
+Joshua's story thumbnail:
+This circular image displays a user's story profile picture, allowing users to view stories or status updates when tapped.
+@@@Function Component@@@
+
+"Your story" label:
+This text label indicates the user's own story section, prompting them to add or view their personal story.
+@@@Text Functional Component@@@
+
+"Karen Castillo" and message snippet:
+This text component shows a contact name and a truncated preview of the latest message from that chat.
+@@@Text Functional Component@@@
+
+Martin Randolph's profile picture:
+This circular image displays the profile picture of a specific contact in the chat list.
+@@@Function Component@@@
+
+Pixsellz ad icon:
+This image represents an ad or sponsored content logo associated with the business or item listed below.
+@@@Function Component@@@
+
+"Thu" date label:
+This text label shows the day of the week for the timestamp of the last message received from a contact.
+@@@Text Functional Component@@@
+
+"Joshua Lawrence" and message preview:
+This text component displays the name of a contact along with a snippet of their recent chat message.
+@@@Text Functional Component@@@
+Joshua profile avatar:
+This is a user profile image displayed in a circular frame, representing a contact in the stories or chat list.
+@@@Function Component@@@
+
+Signal bars icon:
+This is an indicator icon showing the current cellular network signal strength in the status bar.
+@@@Function Component@@@
+
+Andrew Parker profile avatar:
+This is a user profile image displayed in a circular frame, representing a contact in the stories or chat list.
+@@@Function Component@@@
+
+Pixsellz ad text block:
+This is a text component displaying the title, advertisement tag, and description for a sponsored post or ad in the chat list.
+@@@Text Functional Component@@@
+
+Pixsellz ad thumbnail:
+This is an image component displaying the logo or thumbnail image for the sponsored ad in the chat list.
+@@@Function Component@@@
+
+Add story button:
+This is a circular button with a plus icon that likely allows users to add or create a new story.
+@@@TouchableOpacity Function Component@@@
+
+Chat bubble icon:
+This is a tab bar icon representing the active chats section of the app.
+@@@Function Component@@@
+
+Maisy Humphrey chat snippet text:
+This is a text component displaying the contact's name and the latest message preview in the chat list.
+@@@Text Functional Component@@@
+
+Maisy Humphrey profile avatar:
+This is a user profile image displayed in a circular frame, representing a contact in the chat list.
+@@@Function Component@@@
+Checkmark icon:
+This appears to be an indicator icon showing that a message has been read or delivered successfully.
+@@@Function Component@@@
+
+Purple app icon with shapes:
+This appears to be a launcher or shortcut icon for a specific application or feature, representing visual or design tools.
+@@@Function Component@@@
+
+Checkmark icon:
+This appears to be an indicator icon showing that a message has been read or delivered successfully.
+@@@Function Component@@@
+
+Purple app icon with shapes:
+This appears to be a launcher or shortcut icon for a specific application or feature, representing visual or design tools.
+@@@Function Component@@@
+
+User profile picture:
+This is a circular avatar image displaying the profile picture of the user or a contact.
+@@@Function Component@@@
+
+"Ad" label:
+This is a text label indicating that the accompanying content is a sponsored advertisement.
+@@@Text Functional Component@@@
+
+Edit or compose icon:
+This appears to be a button that allows users to create a new message, chat, or compose content.
+@@@TouchableOpacity Function Component@@@
+
+Checkmark icon:
+This appears to be an indicator icon showing that a message has been read or delivered successfully.
+@@@Function Component@@@
+
+User profile picture:
+This is a circular avatar image displaying the profile picture of a contact.
+@@@Function Component@@@
+Pixsellz label:
+This is a text label displaying the name of the advertiser or chat contact ("Pixsellz").
+@@@Text Functional Component@@@

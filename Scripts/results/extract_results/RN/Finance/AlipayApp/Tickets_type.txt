@@ -1,0 +1,97 @@
+"剧场演出" (Theatre Performances) category item:
+This component serves as an entry button featuring an icon and text, allowing users to navigate to the theater performance section to browse and purchase tickets.
+@@@TouchableOpacity Function Component@@@
+
+"19.9元起优惠购票" (Discount tickets starting from 19.9 yuan) label:
+This is a promotional text element highlighting ticket discount details to attract users to the special offer.
+@@@Text Functional Component@@@
+
+"落凡尘" (Into the Mortal World) label:
+This text component displays the title of the movie "落凡尘" listed in the currently showing films section.
+@@@Text Functional Component@@@
+
+"新热预告" (New & Hot Trailers) label:
+This is a text label serving as a section title or tab header, allowing users to view newly released and popular movie trailers.
+@@@Text Functional Component@@@
+
+"默杀" (A Place Called Silence) label:
+This text component displays the title of the movie "默杀" in the movie recommendation list.
+@@@Text Functional Component@@@
+
+"立即加入" (Join Now) button:
+This is a call-to-action button that invites users to participate in the summer campaign or join the VIP membership program.
+@@@TouchableOpacity Function Component@@@
+
+"三周年" (3rd Anniversary) label:
+This is a text label displaying a trending keyword or placeholder search term related to the 3rd-anniversary campaign inside the search bar.
+@@@Text Functional Component@@@
+
+"搜索" (Search) button:
+This is an actionable button that allows users to submit their search query and browse for movies, cinemas, or shows.
+@@@TouchableOpacity Function Component@@@
+
+Movie poster card:
+This component displays an upcoming movie poster thumbnail with format badges (such as IMAX 2D), showcasing promotional visual content for a film.
+@@@Function Component@@@
+"音乐现场" (Live Music) Category Entry:
+This is an interactive navigation button consisting of an icon and a text label, allowing users to browse live music events and concerts.
+@@@TouchableOpacity Function Component@@@
+
+《默杀》 (A Place Called Silence) Movie Poster:
+This component displays a movie poster with layered informational badges ("IMAX 2D" format tag and "评分 9.3" rating score) positioned over the image.
+@@@ImageBackground@@@
+
+"沈腾 马丽" (Shen Teng, Ma Li) Actor Credits:
+This is a text label displaying the names of the lead actors appearing on the movie poster.
+@@@Text Functional Component@@@
+
+"想看" (Want to Watch) Tab Label:
+This is a navigation text label located in the bottom navigation bar, allowing users to view movies and shows they have saved to their watchlist.
+@@@Text Functional Component@@@
+
+Movie Card Component:
+This component serves as an interactive card container displaying the movie poster, format tags, and movie title, enabling users to tap and open the movie detail page.
+@@@TouchableOpacity Function Component@@@
+
+"脱口秀" (Stand-up Comedy / Talk Show) Label:
+This is a text label indicating the category for stand-up comedy and talk show ticket bookings.
+@@@Text Functional Component@@@
+
+"即将上映" (Coming Soon) Section Title:
+This is a section heading text label that categorizes upcoming movie releases for users to browse.
+@@@Text Functional Component@@@
+
+《神偷奶爸4》 (Despicable Me 4) Movie Poster:
+This component displays the movie's promotional artwork with overlay badges including the screening format ("IMAX 2D") and audience rating ("评分 9.2").
+@@@ImageBackground@@@
+
+"购票" (Buy Tickets) Button:
+This is an action button that allows users to quickly purchase tickets for the corresponding movie.
+@@@TouchableOpacity Function Component@@@
+"新片想看榜" (Upcoming Most Anticipated Movies) text:
+This is a section header label indicating the "Upcoming Most Anticipated Movies" list, serving as a tab or subheader for upcoming film rankings.
+@@@Text Functional Component@@@
+
+Movie poster thumbnail:
+This image component displays the poster for an upcoming movie, serving as a visual preview that users can view or tap to get more details about the film.
+@@@Function Component@@@
+
+Capsule action button:
+This is a standard mini-program capsule menu button with "more options" and "close" icons, typically used to trigger mini-program settings, sharing, or exiting the mini-app.
+@@@TouchableOpacity Function Component@@@
+
+"落凡尘" (Into the Mortal World) movie poster card:
+This component displays the movie poster along with format tags (中国巨幕 2D) and rating information (评分 9.5), which can be tapped to navigate to the movie's detail and showtime page.
+@@@Function Component@@@
+
+Promotional banner:
+This component displays an interactive advertising carousel banner promoting a summer VIP movie campaign, allowing users to tap to access special discount events.
+@@@Function Component@@@
+
+"淘麦VIP 电影演出优等生" promotional slogan:
+This is a text component displaying promotional copy highlighting Taomai VIP benefits for movies and shows.
+@@@Text Functional Component@@@
+
+"抓娃娃" (Successor) movie poster card:
+This component shows the movie poster with format details (IMAX 2D) and rating overlay (评分 9.5), functioning as a clickable movie card to view details and buy tickets.
+@@@Function Component@@@

@@ -1,0 +1,89 @@
+Search input bar:
+This appears to be an input field with a search icon and placeholder text, allowing users to type queries to search for friends or partners.
+@@@TextInput@@@
+
+Wi-Fi icon:
+This is a status bar icon representing the current Wi-Fi connection strength and status on the device.
+@@@StatusBar Android and iOS Component@@@
+
+Profile card with potential match badge:
+This is a detailed card container displaying a user profile image, name, age, and a tag indicating a potential match, likely implemented as a view containing interactive or visual elements.
+@@@View Function Component@@@
+
+"Outdoor" category button:
+This is a selectable pill-shaped button or tab labeled "Outdoor" used for filtering content or recommendations based on categories.
+@@@TouchableOpacity Function Component@@@
+
+Story/Profile avatar list item:
+This is a user story or profile avatar component displaying a circular profile image with a username and a status badge indicator.
+@@@View Function Component@@@
+
+"All" category button:
+This is a filter button or tab labeled "All" used to display all recommended profiles or content without category restrictions.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar crop/preview:
+This is an image view displaying a circular user profile picture.
+@@@Function Component@@@
+
+"Forging New Bonds and Friendships" heading:
+This is a title text label that introduces the main theme or purpose of the current discovery feed.
+@@@Text Functional Component@@@
+
+Natalie's profile avatar:
+This is a circular profile image component representing a user, typically tappable to view their full profile or story.
+@@@Function Component@@@
+Battery icon:
+This is a status bar indicator that displays the remaining battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Filter/Preferences icon:
+This appears to be a button that opens a filter or settings menu allowing users to adjust preferences or search criteria.
+@@@TouchableOpacity Function Component@@@
+
+Signal strength icon:
+This is a status bar indicator showing the current cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Menu icon:
+This appears to be a button that toggles the side navigation drawer or main application menu when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Bottom gesture indicator bar:
+This is a system indicator bar at the bottom of the screen used for gesture-based navigation or home indicator in iOS/Android devices.
+@@@View Function Component@@@
+
+Stories list section:
+This is a horizontal list showing user profile stories with a camera add button and story avatars.
+@@@flatlist-simple@@@
+
+Category filter button (All):
+This is a selectable pill-shaped button indicating the currently active category filter for content discovery.
+@@@TouchableOpacity Function Component@@@
+
+Category filter button (Anime):
+This is an inactive pill-shaped button used to filter content categories when tapped.
+@@@TouchableOpacity Function Component@@@
+
+User avatar image:
+This is a circular profile picture image representing a user's story or profile.
+@@@Function Component@@@
+Profile card preview image:
+This appears to be a recommendation profile card showing a user's photo with overlay badges and details, functioning as a clickable item to view full user profiles.
+@@@TouchableOpacity Function Component@@@
+
+Notification bell icon:
+This appears to be a clickable icon button that likely allows users to open their notifications panel or view recent alerts and updates.
+@@@TouchableOpacity Function Component@@@
+
+Time display text ("9:41"):
+This is a status bar text component that displays the current device time to the user.
+@@@Text Functional Component@@@
+
+"Photography" filter button:
+This appears to be a selectable category filter button that allows users to filter recommendations or content based on the "Photography" tag.
+@@@TouchableOpacity Function Component@@@
+
+Natalie's profile avatar:
+This appears to be a user story or profile avatar image, likely clickable to view Natalie's story, status, or detailed profile.
+@@@TouchableOpacity Function Component@@@

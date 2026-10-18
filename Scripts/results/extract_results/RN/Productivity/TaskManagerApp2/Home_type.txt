@@ -1,0 +1,70 @@
+Urgent label:
+This is a tag/label indicating the priority level of a task, helping users quickly identify urgent items in their task list.
+@@@Text Functional Component@@@
+
+Task category or filter label:
+This appears to be a category or filter button used to sort or view tasks belonging to a specific group.
+@@@TouchableOpacity Function Component@@@
+
+"On Going" task summary card:
+This is a card component that displays an overview of ongoing tasks, showing a relevant icon, category title, and the number of pending tasks. It likely acts as a button to navigate to the detailed ongoing task list.
+@@@TouchableOpacity Function Component@@@
+
+"On Going" task summary card (alternative view):
+This is another instance of the task summary card component highlighting ongoing tasks, styled with a distinct background and illustration to summarize task statistics.
+@@@TouchableOpacity Function Component@@@
+
+"Completed" task summary card:
+This is a task summary card component representing completed tasks, displaying the count of finished items and allowing users to view them in detail when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar:
+This is a bottom tab bar component containing multiple navigation icons and a central action button, allowing users to switch between different main sections of the app.
+@@@View Function Component@@@
+
+"Home" label:
+This is a text label associated with the bottom navigation bar, indicating the current active "Home" tab.
+@@@Text Functional Component@@@
+
+"Canceled" task summary card:
+This is a task summary card component displaying canceled tasks, showing an icon and the total count of canceled items with navigation capability.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar image:
+This is an avatar image representing the user's profile, typically displayed in the header area.
+@@@Function Component@@@
+
+"Cleaning Clothes" task item container:
+This is a task item component representing an individual task titled "Cleaning Clothes," complete with time details, category tags, and action options.
+@@@View Function Component@@@
+Completed task card component:
+This is a summary card displaying completed tasks, including an illustration, title, and task count. It likely acts as a touchable container to navigate to the detailed list of completed tasks.
+@@@TouchableOpacity Function Component@@@
+
+Canceled task card component:
+This is a summary card displaying canceled tasks, featuring an icon, title, and task count. It likely acts as a touchable container to view canceled tasks.
+@@@TouchableOpacity Function Component@@@
+
+Pending task card component:
+This is a summary card for pending tasks, showing a clock icon, title, and task count. It serves as an interactive card to navigate to pending task details.
+@@@TouchableOpacity Function Component@@@
+
+On-going task card component:
+This is a summary card for ongoing tasks, displaying a folder icon, title, and task count. It functions as an interactive button to view ongoing task items.
+@@@TouchableOpacity Function Component@@@
+
+Canceled task card component (duplicate):
+This is a summary card displaying canceled tasks, featuring an icon, title, and task count. It likely acts as a touchable container to view canceled tasks.
+@@@TouchableOpacity Function Component@@@
+
+"Hi, Steven" title and subtitle:
+This is a text container displaying a greeting message ("Hi, Steven") and a subtitle ("Let's make this day productive"), welcoming the user to the app.
+@@@Text Functional Component@@@
+
+"My Task" header label:
+This is a section heading text label indicating the "My Task" section of the dashboard.
+@@@Text Functional Component@@@
+
+Canceled task summary card:
+This is a summary card displaying canceled tasks, featuring an icon, title, and task count. It likely acts as a touchable container to view canceled tasks.
+@@@TouchableOpacity Function Component@@@

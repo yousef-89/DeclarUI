@@ -1,0 +1,101 @@
+99.3% 好评率 (99.3% Positive Review Rate) label:
+This text label displays the positive review percentage of the seller or product, indicating customer satisfaction.
+@@@Text Functional Component@@@
+
+预计在7月19日，星期五至7月20日，星期六之间送达 (Estimated delivery between Friday, July 19 and Saturday, July 20) label:
+This text label shows the estimated delivery date range for the product, helping buyers know when to expect their order.
+@@@Text Functional Component@@@
+
+每件 £22.99 (Each £22.99) label:
+This text label displays the unit price of the item in British Pounds.
+@@@Text Functional Component@@@
+
+搜索 (Search) icon and label:
+This appears to be a navigation button with a magnifying glass icon and the text label for search, allowing users to navigate to the search page or functionality.
+@@@TouchableOpacity Function Component@@@
+
+购物车 (Shopping Cart) icon:
+This appears to be a button with a shopping cart icon that likely allows users to view the contents of their shopping cart or add items to it.
+@@@TouchableOpacity Function Component@@@
+
+出售物品 (Selling Items) icon and label:
+This appears to be a navigation button with a price tag icon and text label, allowing users to access the listing or selling section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Ottogi Jin Ramen Mild Noodles (Pack of 20) title label:
+This text label displays the main title and description of the product being viewed.
+@@@Text Functional Component@@@
+
+65 and heart icon component:
+This appears to be an interactive button displaying the number of likes or favorites with a heart icon, allowing users to favorite or like the product.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This appears to be a back button that allows users to return to the previous screen or page in the application.
+@@@TouchableOpacity Function Component@@@
+Chat bubble icon:
+This appears to be a button that likely allows users to open a chat or send a message to the seller or customer support.
+@@@TouchableOpacity Function Component@@@
+
+"我的 eBay" (My eBay) label and profile icon:
+This is a button containing an icon and text representing the user profile section, allowing users to navigate to their account details and history on eBay.
+@@@TouchableOpacity Function Component@@@
+
+"1/1" label:
+This is a text indicator showing the current image index out of the total available product images.
+@@@Text Functional Component@@@
+
+"通知" (Notifications) label and bell icon:
+This is a button that likely allows users to view their notifications and alerts related to orders, messages, or saved searches.
+@@@TouchableOpacity Function Component@@@
+
+"NET WT : 120g SERVING SUGGESTION" label:
+This is a text label displaying product specifications regarding net weight and serving suggestions.
+@@@Text Functional Component@@@
+
+Barcode and manufacturing text:
+This is a text and graphical representation showing product details, manufacturer information, and a barcode for scanning.
+@@@Text Functional Component@@@
+
+"Free 3 day postage" label:
+This is a text label indicating the shipping method and estimated delivery time with free postage.
+@@@Text Functional Component@@@
+
+Website and packing details label:
+This is a text label showing the manufacturer's website and packaging specifications (e.g., "www.WaNaHong.co.uk Packing : 120g x 20").
+@@@Text Functional Component@@@
+
+"主页" (Home) label:
+This is a text label indicating the navigation tab for the home screen.
+@@@Text Functional Component@@@
+Store name and rating text:
+This text label displays the store name "Wa Na Hong Oriental Supermarket", its store ID, and a positive review percentage (99.3% 好评率, meaning 99.3% positive rating).
+@@@Text Functional Component@@@
+
+Share icon button:
+This appears to be a button that likely allows users to share the product page or details via other apps or links.
+@@@TouchableOpacity Function Component@@@
+
+Store logo image:
+This is an image component displaying the logo of the store, featuring Chinese characters "華南行" and the English name "WaNaHong".
+@@@Function Component@@@
+
+More options icon button:
+This appears to be a button that likely opens a menu with additional options and actions for the current page.
+@@@TouchableOpacity Function Component@@@
+
+Brand text:
+This text label displays the brand name "OTTOGI" in stylized font.
+@@@Text Functional Component@@@
+
+"车内" (In-cart/In-vehicle) tag:
+This is a text label inside a badge indicating the status or location of the item, translated as "In-cart".
+@@@Text Functional Component@@@
+
+"KOREAN STYLE INSTANT NOODLE!" text:
+This is a promotional text label describing the product style as Korean style instant noodles.
+@@@Text Functional Component@@@
+
+"物品" (Item/Goods) title:
+This is a text label serving as the navigation bar title, indicating the current page or section context, translated as "Item" or "Goods".
+@@@Text Functional Component@@@

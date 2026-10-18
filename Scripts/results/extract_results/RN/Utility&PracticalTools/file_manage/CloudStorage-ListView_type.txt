@@ -1,0 +1,93 @@
+Cloud icon:
+This appears to be an icon representing the "Cloud" navigation tab, which likely navigates users to the cloud storage management screen when pressed.
+@@@Function Component@@@
+
+Plus icon:
+This is a button that likely allows users to add a new cloud account or item when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Files icon and label:
+This appears to be a navigation tab item combining a folder icon and a text label "Files", which likely navigates the user to the local files management screen when pressed.
+@@@View Function Component@@@
+
+Cloud storage icon:
+This is a graphical icon representing cloud storage accounts in the list view, likely used as a visual indicator for different cloud services.
+@@@Function Component@@@
+
+Clean icon and label:
+This appears to be a navigation tab item combining a broom icon and a text label "Clean", which likely navigates the user to the storage cleaning and optimization screen when pressed.
+@@@View Function Component@@@
+
+Dropbox text label:
+This is a text label displaying the name of the cloud service ("Dropbox") in the account list.
+@@@Text Functional Component@@@
+
+Home icon and label:
+This appears to be a navigation tab item combining a home icon and a text label "Home", which likely navigates the user back to the main dashboard screen when pressed.
+@@@View Function Component@@@
+
+Time display (9:41):
+This is a status bar text component that displays the current device time in the top-left corner.
+@@@StatusBar Android and iOS Component@@@
+
+Nirwna - OneDrive item details:
+This is a text block displaying the account name ("Nirwna - OneDrive") and item/storage details, providing information about the connected cloud storage account.
+@@@Text Functional Component@@@
+PIDT - OneDrive item details:
+This is a text label displaying the item name and storage usage details for a cloud account entry within the list.
+@@@Text Functional Component@@@
+
+Orange cloud icon:
+This is an image component representing a specific cloud storage provider (likely a variant or custom cloud logo) for the storage item.
+@@@Function Component@@@
+
+Wi-Fi icon:
+This is an image/icon component representing network connectivity status in the status bar at the top of the screen.
+@@@Function Component@@@
+
+Kangxpukul@gmail.com label:
+This is a text label showing the email address associated with the connected Google Drive account entry in the storage list.
+@@@Text Functional Component@@@
+
+Google Drive icon:
+This is an image component representing the Google Drive cloud service provider logo.
+@@@Function Component@@@
+
+"2 items" label:
+This is a text label indicating the number of items contained within the specific cloud storage account.
+@@@Text Functional Component@@@
+
+Dropbox icon:
+This is an image component representing the Dropbox cloud storage provider logo.
+@@@Function Component@@@
+
+"Cloud Storage" title label:
+This is a text label displaying the main heading or title of the current screen.
+@@@Text Functional Component@@@
+
+Grid view icon:
+This is a button icon that likely allows users to toggle the layout view mode of the cloud storage list between grid and list formats.
+@@@TouchableOpacity Function Component@@@
+Cloud Storage title:
+This is a text label displaying the header "Cloud Storage" at the top of the screen to indicate the current section of the app.
+@@@Text Functional Component@@@
+
+Plus icon:
+This appears to be a button that likely allows users to add a new cloud storage account or integrate a new service.
+@@@TouchableOpacity Function Component@@@
+
+A-Z sort dropdown:
+This appears to be a button or interactive view that allows users to change the sorting order of the list.
+@@@TouchableOpacity Function Component@@@
+
+Layout toggle icon:
+This appears to be a button that allows users to toggle the view layout of the cloud storage items between a list and a grid.
+@@@TouchableOpacity Function Component@@@
+
+Cloud storage list:
+This is a list component displaying multiple cloud storage accounts with details such as item counts and storage usage.
+@@@flatlist-simple@@@
+
+Bottom navigation bar:
+This is a container view holding the bottom navigation items for switching between Home, Files, Cloud, and Clean sections.
+@@@View Function Component@@@

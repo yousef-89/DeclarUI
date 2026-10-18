@@ -1,0 +1,58 @@
+Battery icon:
+This appears to be a status bar indicator showing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Wifi icon:
+This appears to be a status bar indicator showing the wireless network connection status and signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Time display (9:41):
+This appears to be a status bar text indicating the current system time on the device.
+@@@Text Functional Component@@@
+
+"My parcels" tab item:
+This is a navigation tab containing an icon and label that allows users to switch to the "My parcels" view.
+@@@TouchableOpacity Function Component@@@
+
+"Send parcel" header title:
+This is a primary heading text that indicates the current screen or main feature name, which is "Send parcel".
+@@@Text Functional Component@@@
+
+"Parcel center" tab item:
+This is a navigation tab containing an icon and label that allows users to switch to the "Parcel center" view.
+@@@TouchableOpacity Function Component@@@
+
+Custom parcel card:
+This is a container view representing a specific parcel size option with an image and descriptive text, likely serving as a selectable option for the user.
+@@@TouchableOpacity Function Component@@@
+
+"Send parcel" active tab item:
+This is the currently selected navigation tab representing the active screen, containing an icon and label.
+@@@TouchableOpacity Function Component@@@
+
+Battery icon (duplicate):
+This appears to be a status bar indicator showing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+Small parcel option card:
+This appears to be a container view that groups together information about the small parcel size, including an illustration, title, dimensions, and description.
+@@@View Function Component@@@
+
+Large parcel option card:
+This appears to be a container view that groups together information about the large parcel size, including an illustration, title, dimensions, and description.
+@@@View Function Component@@@
+
+Home indicator bar:
+This is a system UI component at the bottom of iOS devices used for navigation, represented here as a visual indicator bar.
+@@@StatusBar Android and iOS Component@@@
+
+Medium parcel option card:
+This appears to be a container view that groups together information about the medium parcel size, including an illustration, title, dimensions, and description.
+@@@View Function Component@@@
+
+Signal strength icon:
+This is a status bar indicator icon that displays the current cellular network signal strength on the device.
+@@@StatusBar Android and iOS Component@@@
+
+"Parcel size" section header:
+This is a section heading text label that categorizes the list of parcel options below it.
+@@@Text Functional Component@@@

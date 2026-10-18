@@ -1,0 +1,51 @@
+Status bar area:
+This appears to be the system status bar showing the current time (11:28), Wi-Fi, and battery level (65%).
+@@@StatusBar Android and iOS Component@@@
+
+Quark logo:
+This is an image representing the brand logo for Quark, serving as a visual header on the home screen.
+@@@Function Component@@@
+
+Search input container:
+This is a search bar container that includes a text input area along with voice and camera icons for multi-modal searching.
+@@@View Function Component@@@
+
+"夸克日报" (Quark Daily) icon and label:
+This component combines an icon and a text label to represent and navigate to the Quark Daily feature when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"精选" (Featured) icon and label:
+This component combines an icon and a text label to represent and navigate to the Featured content section when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"夸克学习" (Quark Study) icon and label:
+This component combines an icon and a text label to represent and navigate to the Quark Study learning tools when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"夸克扫描王" (Quark Scanner) icon and label:
+This component combines an icon and a text label to represent and navigate to the Quark document scanning feature when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"夸克网盘" (Quark Cloud Drive) icon and label:
+This component combines an icon and a text label to represent and navigate to the cloud storage service when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"夸克文档" (Quark Documents) icon and label:
+This component combines an icon and a text label to represent and navigate to the document management tool when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"更多" (More) icon and label:
+This component combines an icon and a text label to open additional app shortcuts or features when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"省钱集市" (Money-saving Market) icon and label:
+This component combines an icon and a text label to navigate to deals, discounts, or shopping features when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"AI工具" (AI Tools) icon and label:
+This component combines an icon and a text label to access various artificial intelligence tools and features when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar:
+This is a bottom tab bar containing multiple interactive icons for navigating between primary sections or functions of the app.
+@@@View Function Component@@@

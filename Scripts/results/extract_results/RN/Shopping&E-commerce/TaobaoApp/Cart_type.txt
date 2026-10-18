@@ -1,0 +1,163 @@
+"降价" (Price Drop) button:
+This appears to be a filter or action button that likely allows users to view items in their cart that have had a price reduction.
+@@@TouchableOpacity Function Component@@@
+
+"重选" (Reselect) button:
+This is a button that allows users to reselect product specifications or variations when the current item's configuration is no longer available or needs to be changed.
+@@@TouchableOpacity Function Component@@@
+
+"淘宝马克思主义MKSZY>" (Taobao Marxism MKSZY >) label:
+This is a text label displaying the store name (Taobao Marxism MKSZY) with an arrow indicator, which likely navigates the user to the store's homepage when clicked.
+@@@Text Functional Component@@@
+
+"精武路1号越秀国际金..." (Jingwu Road No. 1 Yuexiu International Gold...) label:
+This is a text label showing the delivery address or location associated with the cart items.
+@@@Text Functional Component@@@
+
+"天猫NITORI家居官方旗舰店>" (Tmall NITORI Home Official Flagship Store >) label:
+This is a text label displaying the Tmall store name and a navigation arrow, indicating users can click to visit the store page.
+@@@Text Functional Component@@@
+
+"价格波动>" (Price Fluctuation >) label:
+This is a text label indicating that there are price changes for the item, and clicking it likely shows detailed price history or fluctuation information.
+@@@Text Functional Component@@@
+
+Product image and price view:
+This component displays a recommended product image along with its price (¥218), likely serving as a clickable item card for similar product recommendations.
+@@@View Function Component@@@
+
+"管理" (Manage) label:
+This is a text label representing the manage action, allowing users to enter an editing mode to select and delete or manage multiple cart items.
+@@@Text Functional Component@@@
+
+"常购" (Frequently Bought) button:
+This is a button that likely filters or displays items that the user frequently purchases, allowing for quick reordering.
+@@@TouchableOpacity Function Component@@@
+"即将售罄,34人抢购中" (Almost sold out, 34 people rushing to buy) label:
+This is a text label that indicates the current inventory and purchase urgency of the item, displaying the number of people competing to buy it.
+@@@Text Functional Component@@@
+
+"结算" (Checkout) button:
+This is a button that allows the user to proceed to the checkout screen to pay for the selected items in the shopping cart.
+@@@TouchableOpacity Function Component@@@
+
+"商品下架" (Item taken off shelves) image/label overlay:
+This appears to be an image component or view displaying a product image overlaid with a status indicating that the item has been taken off the shelves (no longer available).
+@@@Function Component@@@
+
+"跨店满减" (Cross-store discount) tag:
+This is a text label or promotional tag indicating that the product qualifies for cross-store discount promotions (e.g., spending a certain amount to get a discount across multiple stores).
+@@@Text Functional Component@@@
+
+Folder icon button:
+This is a button containing a folder icon, likely used to open a category, collection, or management folder for saved items or favorites.
+@@@TouchableOpacity Function Component@@@
+
+"消息" (Messages) label:
+This is a text label describing the messaging or chat tab, allowing users to navigate to their notifications or customer service chats.
+@@@Text Functional Component@@@
+
+"NITORI圆形舒柔质感抱枕" (NITORI round soft-textured throw pillow) label:
+This is a text label displaying the detailed product title/name, informing the user of the item's brand and description.
+@@@Text Functional Component@@@
+
+"首页" (Home) label:
+This is a text label for the bottom navigation bar, indicating the home screen destination.
+@@@Text Functional Component@@@
+
+Product image:
+This is an image component displaying a thumbnail of the round soft-textured throw pillow product.
+@@@Function Component@@@
+"购物车" (Shopping Cart) label:
+This is a text label displaying the title of the shopping cart along with the number of items inside, indicating the current page context. Translation: Shopping Cart (18).
+@@@Text Functional Component@@@
+
+"合计:¥0" (Total: ¥0) label:
+This is a text label showing the total calculated price for the selected items in the shopping cart. Translation: Total: ¥0.
+@@@Text Functional Component@@@
+
+T-shirt product image:
+This is an image component displaying the preview of a specific product (MKSZY vintage washed short-sleeve T-shirt) added to the shopping cart.
+@@@Function Component@@@
+
+Play icon and "逛逛" (Browse) label:
+This appears to be a navigation item with an icon and label that likely allows users to browse through recommended video content or feeds. Translation: Browse.
+@@@TouchableOpacity Function Component@@@
+
+"为你推荐更多同款" (Recommend more similar styles for you) label:
+This is a section header text label indicating that the items below are similar style recommendations based on the current product. Translation: Recommend more similar styles for you.
+@@@Text Functional Component@@@
+
+"假一赔四" (Guaranteed authentic with 4x compensation) label:
+This is a service guarantee tag text indicating the authenticity and consumer protection policy for the product. Translation: Guaranteed authentic with 4x compensation.
+@@@Text Functional Component@@@
+
+Search icon:
+This appears to be a button with a magnifying glass icon that likely allows users to search for items within the shopping cart or app.
+@@@TouchableOpacity Function Component@@@
+
+Black jacket product image:
+This is an image component displaying the preview of a recommended similar product (black jacket) available for purchase.
+@@@Function Component@@@
+
+"购物车(18)" (Shopping Cart (18)) header title label:
+This is a text label acting as the main title header of the screen, showing the current view name and item count. Translation: Shopping Cart (18).
+@@@Text Functional Component@@@
+Jacket image:
+This is an image representing a product (a black bomber jacket) shown in the shopping cart item list.
+@@@Function Component@@@
+
+"每300减30,可跨店" (Every 300 off 30, can be combined across stores) label:
+This text label indicates a promotional discount offer available for the items, showing that for every 300 currency units spent, a 30 unit discount is applied.
+@@@Text Functional Component@@@
+
+"假一赔四·极速退款·7天无理由退换" (Fake one compensate four, rapid refund, 7 days no reason return/exchange) label:
+This text label describes the after-sales service and guarantees provided by the merchant, such as authenticity guarantees and hassle-free returns.
+@@@Text Functional Component@@@
+
+"MKSZY 复古水洗做旧短袖T恤" (MKSZY vintage washed distressed short-sleeve T-shirt) label:
+This text label displays the product name and specific details for the T-shirt item in the cart.
+@@@Text Functional Component@@@
+
+"请重新选择商品规格" (Please re-select product specifications) label:
+This text label prompts the user that the previously selected specifications (such as size or color) are no longer valid or available, and they need to make a new selection.
+@@@Text Functional Component@@@
+
+T-shirt icon:
+This is an image representing a white T-shirt product displayed inside a product card.
+@@@Function Component@@@
+
+Cushion icon:
+This is an image representing a round cushion product displayed inside a merchant's cart section.
+@@@Function Component@@@
+
+Jacket image 2:
+This is an image representing another jacket product shown in the recommended products section.
+@@@Function Component@@@
+
+"x1" quantity badge:
+This is a small view/badge component displaying the quantity of the item (1) in the cart, which may also be interactive to change the quantity.
+@@@View Function Component@@@
+EVA 绫波丽[现货发售];S∨ (EVA Ayanami Rei [In-stock sale]; S) label:
+This is a text label displaying product specifications such as the character name, availability, and size options, with a dropdown arrow indicating that users can modify these specifications.
+@@@Text Functional Component@@@
+
+复古水洗做旧短袖T恤 (Vintage washed distressed short-sleeve T-shirt) label:
+This is a text label displaying the product title, indicating the description and style of the T-shirt being sold.
+@@@Text Functional Component@@@
+
+Man in jacket image:
+This is an image representing a style or recommendation photo associated with the product or related items.
+@@@Function Component@@@
+
+结算 (Checkout) button:
+This appears to be a button that allows users to proceed to the checkout screen to pay for the selected items in their shopping cart.
+@@@Button@@@
+
+商品下架 (Product taken off shelves) image:
+This image shows a product thumbnail with an overlay indicating that the item is no longer available or has been taken off the shelves.
+@@@Function Component@@@
+
+每300减30·3期免息·库存紧张 (Every 300 minus 30 · 3-installment interest-free · Low stock) label:
+This is a text label detailing promotional offers and inventory status, such as discounts per 300 spent, interest-free payment installments, and remaining stock warning.
+@@@Text Functional Component@@@

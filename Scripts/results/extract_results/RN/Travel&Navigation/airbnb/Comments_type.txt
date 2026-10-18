@@ -1,0 +1,77 @@
+"设施齐全 1" (Complete Facilities 1) button:
+This appears to be a selectable filter or tag button displaying a specific review category ("设施齐全", meaning "Complete facilities") along with its count, which users can click to view reviews related to this aspect.
+@@@TouchableOpacity Function Component@@@
+
+"总体评分" (Overall Rating) and rating bars:
+This container view groups the overall rating label and the breakdown bar chart representing the distribution of ratings from 1 to 5 stars.
+@@@View Function Component@@@
+
+"环境安静 3" (Quiet Environment 3) button:
+This appears to be a selectable filter or tag button displaying the review category ("环境安静", meaning "Quiet environment") and its count, allowing users to filter reviews by this criteria.
+@@@TouchableOpacity Function Component@@@
+
+"干净卫生 1" (Clean and Hygienic 1) button:
+This appears to be a selectable filter or tag button displaying the review category ("干净卫生", meaning "Clean and hygienic") and its count, allowing users to filter reviews by cleanliness feedback.
+@@@TouchableOpacity Function Component@@@
+
+"房东热情 1" (Warm Host 1) button:
+This appears to be a selectable filter or tag button displaying the review category ("房东热情", meaning "Warm host") and its count, enabling users to filter reviews focusing on host hospitality.
+@@@TouchableOpacity Function Component@@@
+
+"根据评分" (According to Rating) label:
+This is a text label indicating the sorting or filtering criteria used for the reviews.
+@@@Text Functional Component@@@
+
+Review content paragraph:
+This is a detailed text block displaying the user's review description translated as "Quiet and picturesque - I had a very pleasant stay here. The car is right by the beach, well-equipped, very comfortable. The park is very quiet, making it a good base for exploring the South Coast path, and very close to Weymouth too. The host is very friendly and communicative, thanks for being willing to answer questions, and suggesting local bars and walks. I will definitely stay here again and recommend it to anyone looking for a quiet break."
+@@@Text Functional Component@@@
+
+"位置优越 2" (Superior Location 2) button:
+This appears to be a selectable filter or tag button displaying the review category ("位置优越", meaning "Superior location") and its count, allowing users to filter reviews about the location.
+@@@TouchableOpacity Function Component@@@
+
+Decorative leaf icon and "这是爱彼迎上" (This is on Airbnb) text:
+This represents a decorative graphic element accompanied by a descriptive text label indicating a highlighted status or award on the platform (translation: "This is on Airbnb").
+@@@Function Component@@@
+"如实描述" (As described) label:
+This is a text label that indicates the rating category for "accuracy of description" (translation: "As Described") regarding the property listing.
+@@@Text Functional Component@@@
+
+"使用爱彼迎8年" (Using Airbnb for 8 years) label:
+This is a text label that shows how long the user has been using Airbnb (translation: "Using Airbnb for 8 years"), providing background information about the reviewer.
+@@@Text Functional Component@@@
+
+"最有帮助" (Most helpful) dropdown/filter button:
+This appears to be a button or interactive container that allows users to sort or filter reviews by helpfulness (translation: "Most Helpful").
+@@@TouchableOpacity Function Component@@@
+
+Leaf/branch decoration icon:
+This is an illustrative icon representing a leaf or branch decoration, often used alongside ratings or titles for aesthetic purposes.
+@@@Function Component@@@
+
+"5条评价" (5 reviews) label:
+This is a text label that displays the total number of reviews for the listing (translation: "5 Reviews").
+@@@Text Functional Component@@@
+
+Checkmark icon inside a circle:
+This is an icon representing verification or a positive rating attribute, indicating that the listing matches its description well.
+@@@Function Component@@@
+
+"推荐入住 2" (Recommended stay 2) filter button:
+This is a touchable button or filter chip that shows a review tag and its count (translation: "Recommended stay 2"), allowing users to filter reviews based on this category.
+@@@TouchableOpacity Function Component@@@
+
+"房客推荐" (Guest favorite) label:
+This is a text label that highlights a specific badge or title indicating that the property is a guest favorite (translation: "Guest Favorite").
+@@@Text Functional Component@@@
+
+Cleanliness section card:
+This is a container view that groups the cleanliness rating, score, and a related icon representing hygiene standards.
+@@@View Function Component@@@
+User avatar icon:
+This appears to be an image component displaying the profile picture of a user who left a review.
+@@@Function Component@@@
+
+"2024年4月" (April 2024) label:
+This is a text label indicating the date when the review was posted (April 2024).
+@@@Text Functional Component@@@

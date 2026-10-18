@@ -1,0 +1,175 @@
+"已收藏的新闻" (Collected News) label:
+This is a text label that describes a specific menu item, indicating that users can view their saved or bookmarked news articles here.
+@@@Text Functional Component@@@
+
+Black circle icon:
+This appears to be a status bar indicator or a notification dot, likely used to display status information or indicate unread items.
+@@@Function Component@@@
+
+Share network icon:
+This is an icon graphic representing sharing or network connections, likely used to visually indicate the "Share Application" feature in the settings list.
+@@@Function Component@@@
+
+Right arrow button 1:
+This is a navigational button with a right arrow icon, likely allowing users to tap and open the detailed settings page.
+@@@TouchableOpacity Function Component@@@
+
+List icon:
+This is an icon representing a list or menu items, likely used in the bottom navigation bar to switch to the news list view.
+@@@Function Component@@@
+
+Right arrow button 2:
+This is a navigational button with a right arrow icon, likely allowing users to tap and open the detailed settings page or related sub-menu.
+@@@TouchableOpacity Function Component@@@
+
+"公告" (Announcement) label:
+This is a text label that describes a menu item, indicating that users can tap here to view official announcements or updates from the app.
+@@@Text Functional Component@@@
+
+"新闻" (News) label:
+This is a text label indicating the "News" section, likely used in navigation tabs to guide users to the news feed.
+@@@Text Functional Component@@@
+
+"设置" (Settings) label:
+This is a text label that describes the settings menu item, indicating that users can access app configuration and preferences here.
+@@@Text Functional Component@@@
+"退出应用" (Exit Application) label:
+This is a text label that describes the functionality of the exit button, indicating that users can close or exit the application using this feature.
+@@@Text Functional Component@@@
+
+Right arrow navigation icon:
+This appears to be a button with a right arrow icon, which likely allows users to navigate to a submenu or detail page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Logo icon:
+This is an app logo graphic representing the brand identity ("BELOUD") and is typically used for branding or as a header element.
+@@@Function Component@@@
+
+Purple stacked cylinder icon:
+This is an illustrative icon representing topics or data lists, typically used alongside a list item to visually indicate content categories.
+@@@Function Component@@@
+
+"更多" (More) label:
+This is a text label that indicates additional options or a menu expansion feature, translated as "More".
+@@@Text Functional Component@@@
+
+Right arrow navigation icon:
+This appears to be a button with a right arrow icon, which likely allows users to navigate to a submenu or detail page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"同城" (Same City / Local) label:
+This is a text label indicating local content or services within the same city.
+@@@Text Functional Component@@@
+
+Right arrow navigation icon:
+This appears to be a button with a right arrow icon, which likely allows users to navigate to a submenu or detail page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Exit / Logout icon:
+This is an illustrative icon depicting a person exiting through a door, which serves as a visual indicator for the exit application feature.
+@@@Function Component@@@
+Siren icon:
+This appears to be an icon representing announcements or alerts, likely used alongside a notification label in the list.
+@@@Function Component@@@
+
+3G network indicator:
+This text/indicator displays the current network connection type (3G) in the status bar of the application.
+@@@Text Functional Component@@@
+
+Right arrow navigation icon:
+This appears to be a button or directional indicator that users can tap to navigate to a specific settings or detail sub-page.
+@@@TouchableOpacity Function Component@@@
+
+Purple bookmark icon:
+This is an icon representing bookmarked or saved items, typically used next to a label for saved news or articles.
+@@@Function Component@@@
+
+"支持我们" (Support Us) label:
+This is a text label indicating the "Support Us" feature, allowing users to view appreciation options, donate, or provide feedback.
+@@@Text Functional Component@@@
+
+"话题墙" (Topic Wall) label and group icon:
+This appears to be a navigation bar item representing the topic wall section, displaying a group icon and the label "Topic Wall".
+@@@View Function Component@@@
+
+"提醒" (Reminder) label:
+This is a text label indicating the "Reminder" section in the bottom navigation bar or notification settings.
+@@@Text Functional Component@@@
+
+Map location pin and region icon:
+This icon represents location-based services or local community features, matching the "同城" (Same City/Local) list item.
+@@@Function Component@@@
+
+"消息" (Messages) label:
+This is a text label describing the messages or chat feature, indicating where users can view their notifications and communications.
+@@@Text Functional Component@@@
+Right arrow icon:
+This appears to be an interactive indicator button located at the end of a list item, typically used to navigate to a detailed view or sub-page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+SD card icon:
+This is an image icon that visually represents a storage device or settings related to data management within the application interface.
+@@@Function Component@@@
+
+Shield/Bank building icon with a padlock:
+This is an icon representing security, data protection, or privacy policies within the application.
+@@@Function Component@@@
+
+Right arrow icon:
+This is another instance of a navigation arrow button typically used for list item navigation.
+@@@TouchableOpacity Function Component@@@
+
+Speech bubble chat icon:
+This is an icon representing messaging, chat, or communication features.
+@@@Function Component@@@
+
+Bell icon:
+This is an icon representing notifications, alerts, or announcements.
+@@@Function Component@@@
+
+"常见问题解答" (Frequently Asked Questions) label:
+This is a text label that describes the FAQ section, indicating where users can find answers to common questions.
+@@@Text Functional Component@@@
+
+Double square/layers icon:
+This is an icon that may represent duplicated items, background tasks, or multi-view options within the application.
+@@@Function Component@@@
+
+"隐私政策" (Privacy Policy) label:
+This is a text label indicating the privacy policy section, informing users about how their data is handled.
+@@@Text Functional Component@@@
+QA icons component:
+This is an icon graphic associated with the "Frequently Asked Questions" (常见问题解答) item, likely serving as a visual indicator for the help section.
+@@@Function Component@@@
+
+"分享应用" (Share Application) text label:
+This is a text label that displays "分享应用", indicating that users can tap to share the app with others.
+@@@Text Functional Component@@@
+
+"8:35" time display:
+This is a text label showing the current time ("8:35") in the status bar at the top of the screen.
+@@@Text Functional Component@@@
+
+Right arrow navigation icon (1):
+This appears to be a clickable button with a right arrow icon, likely used to navigate to a specific settings or detail sub-page when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Right arrow navigation icon (2):
+This appears to be a clickable button with a right arrow icon, likely used to navigate to a specific settings or detail sub-page when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Like and star rating icon:
+This is a decorative icon graphic representing a "Support Us" (支持我们) feature, combining a thumbs-up and surrounding stars.
+@@@Function Component@@@
+
+Settings gear icon:
+This is a decorative settings icon graphic that visualizes the "Settings" (设置) feature category.
+@@@Function Component@@@
+
+"我的话题" (My Topics) text label:
+This is a text label that displays "我的话题", indicating the section where users can view and manage their created or followed topics.
+@@@Text Functional Component@@@
+
+Right arrow navigation icon (3):
+This appears to be a clickable button with a right arrow icon, likely used to navigate to a specific settings or detail sub-page when pressed.
+@@@TouchableOpacity Function Component@@@

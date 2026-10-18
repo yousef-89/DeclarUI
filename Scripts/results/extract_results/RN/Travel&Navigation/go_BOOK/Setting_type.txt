@@ -1,0 +1,58 @@
+Profile card container:
+This appears to be a container view holding user profile information including a profile picture, name, role, and an edit button.
+@@@View Function Component@@@
+
+Back button:
+This appears to be a button with an arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Settings button:
+This appears to be a button with a gear icon that allows users to access settings options.
+@@@TouchableOpacity Function Component@@@
+
+"Notification" title:
+This is a text label that displays the header title of the screen, indicating the current section the user is viewing.
+@@@Text Functional Component@@@
+
+"Terms & Condition" label:
+This is a text label that describes a menu item linking to the terms and conditions page of the application.
+@@@Text Functional Component@@@
+
+"Payment Method" menu item:
+This appears to be a clickable list item that allows users to navigate to the payment methods configuration screen.
+@@@TouchableOpacity Function Component@@@
+
+Back button:
+This appears to be a button with an arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+"Change Password" menu item:
+This appears to be a clickable list item that allows users to navigate to the password change screen.
+@@@TouchableOpacity Function Component@@@
+
+"Privacy Policy" menu item:
+This appears to be a clickable list item that allows users to navigate to the privacy policy page.
+@@@TouchableOpacity Function Component@@@
+Terms & Condition label:
+This is a text label that describes the menu item, indicating that users can view the terms and conditions policy by interacting with this list item.
+@@@Text Functional Component@@@
+
+Logout button:
+This appears to be a button that allows users to securely sign out or log out of their account in the application.
+@@@TouchableOpacity Function Component@@@
+
+Notification list item:
+This is a list row item with a switch control, allowing users to toggle notification preferences on or off directly within the settings screen.
+@@@View Function Component@@@
+
+Security list item:
+This is a container row item that groups an icon, descriptive text, and a navigation arrow to direct users to security settings when pressed.
+@@@View Function Component@@@
+
+Invite Friend list item:
+This is a container row item combining an icon, label, and an arrow indicator to direct users to a referral or friend invitation feature.
+@@@View Function Component@@@
+
+Warning/Alert icon:
+This appears to be an icon container representing a warning symbol, commonly used alongside text to highlight important notices like terms, conditions, or safety warnings.
+@@@Function Component@@@

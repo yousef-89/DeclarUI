@@ -1,0 +1,89 @@
+"April 2021" text:
+This is a text label displaying the current month and year for the calendar or activity section.
+@@@Text Functional Component@@@
+
+"10" number label:
+This is a text label representing a numerical scale value on the priority chart.
+@@@Text Functional Component@@@
+
+"We" day label:
+This is a text label indicating the day of the week (Wednesday) on the chart axis.
+@@@Text Functional Component@@@
+
+"Your Activity" header:
+This is a header text label describing the section that displays user activity graphs and statistics.
+@@@Text Functional Component@@@
+
+"Task Perday" label:
+This is a subtitle text label indicating the metric being displayed, meaning task count per day.
+@@@Text Functional Component@@@
+
+Plus icon button:
+This is a circular action button, likely used to add a new task or entry when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"Personal" label:
+This is a text label indicating the category legend item for personal tasks.
+@@@Text Functional Component@@@
+
+Folder icon:
+This is an icon component representing a folder category or navigation tab, likely used to view saved files or categories.
+@@@Function Component@@@
+
+"Priority" header:
+This is a main title text label for the priority tracking section of the dashboard.
+@@@Text Functional Component@@@
+Home icon:
+This appears to be a button in the bottom navigation bar that likely allows users to navigate back to the home screen or main dashboard.
+@@@TouchableOpacity Function Component@@@
+
+"Secret" label:
+This is a text label indicating the category or legend for the data points associated with the "Secret" priority level in the chart.
+@@@Text Functional Component@@@
+
+"Su" label:
+This is a text label representing Sunday, used as a day-of-the-week axis label on the chart.
+@@@Text Functional Component@@@
+
+"Fr" label:
+This is a text label representing Friday, used as a day-of-the-week axis label on the chart.
+@@@Text Functional Component@@@
+
+"Th" label:
+This is a text label representing Thursday, used as a day-of-the-week axis label on the chart.
+@@@Text Functional Component@@@
+
+"08" label:
+This is a text label indicating a numerical value on the vertical axis of the priority chart.
+@@@Text Functional Component@@@
+
+"02" label:
+This is a text label indicating the starting numerical value on the vertical axis of the priority chart.
+@@@Text Functional Component@@@
+
+"Sa" label:
+This is a text label representing Saturday, used as a day-of-the-week axis label on the chart.
+@@@Text Functional Component@@@
+
+"Tu" label:
+This is a text label representing Tuesday, used as a day-of-the-week axis label on the chart.
+@@@Text Functional Component@@@
+"Private" label:
+This is a text label indicating the category of data or tasks labeled as private in the chart legend.
+@@@Text Functional Component@@@
+
+Document/List icon:
+This appears to be a button or icon representing a document or list section, likely used for navigation or displaying task lists.
+@@@TouchableOpacity Function Component@@@
+
+"Mo" label:
+This is a text label representing the day of the week, Monday, used as an axis label on the priority chart.
+@@@Text Functional Component@@@
+
+"04" label:
+This is a text label representing a numerical value on the y-axis of the priority chart.
+@@@Text Functional Component@@@
+
+"Graphic" title:
+This is a header text label indicating the title of the screen or section.
+@@@Text Functional Component@@@

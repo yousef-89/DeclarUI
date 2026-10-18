@@ -1,0 +1,101 @@
+Tracking number text:
+This appears to be a text label displaying a specific tracking number for a parcel, allowing users to easily identify and reference their shipment.
+@@@Text Functional Component@@@
+
+Play icon:
+This is a small decorative or interactive icon, likely used as an indicator or arrow for navigation or playback features within the app.
+@@@Function Component@@@
+
+Battery status icon:
+This represents the device's battery indicator in the status bar, displaying the remaining battery level.
+@@@StatusBar Android and iOS Component@@@
+
+"In transit" label:
+This text label indicates the current status of the parcel, informing the user that the shipment is currently on its way to the destination.
+@@@Text Functional Component@@@
+
+Signal strength icon:
+This is part of the status bar components, representing the current cellular or network signal strength of the device.
+@@@StatusBar Android and iOS Component@@@
+
+AliExpress logo:
+This is an image/logo representing the merchant or courier service associated with the parcel, helping users quickly recognize the merchant brand.
+@@@Function Component@@@
+
+"Last update: 2 days ago" label:
+This text label provides timestamp information regarding when the parcel tracking status was last refreshed or updated.
+@@@Text Functional Component@@@
+
+"Send parcel" navigation button:
+This combination of a parcel icon and a text label functions as a navigation button or tab item that allows users to switch to the parcel sending section.
+@@@TouchableOpacity Function Component@@@
+
+Progress bar indicator:
+This is a progress bar or status bar component used to visually represent the progress percentage or completion status of the parcel delivery process.
+@@@View Function Component@@@
+Details button and arrow:
+This appears to be a touchable element containing text and an arrow icon, allowing users to tap and view more detailed information about a specific parcel.
+@@@TouchableOpacity Function Component@@@
+
+Details text and arrow:
+This appears to be a clickable text element with an arrow indicator that navigates the user to a detailed tracking view when tapped.
+@@@TouchableOpacity Function Component@@@
+
+My parcels label:
+This is a section heading text label that identifies the main list or category of parcels currently being tracked by the user.
+@@@Text Functional Component@@@
+
+Amazon logo:
+This image represents the brand logo of the courier or merchant (Amazon) associated with the shipment being tracked.
+@@@Function Component@@@
+
+Parcel center navigation item:
+This icon and label combination serves as a navigation tab allowing users to switch to the "Parcel center" view within the application.
+@@@TouchableOpacity Function Component@@@
+
+9:41 time status indicator:
+This is a status bar text element that displays the current system time at the top of the mobile screen.
+@@@Text Functional Component@@@
+
+My parcels navigation item:
+This icon and label combination acts as a bottom tab bar button to navigate users back to the "My parcels" view.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar:
+This circular image displays the profile picture of the logged-in user, which likely serves as a button to open user settings or account profile.
+@@@TouchableOpacity Function Component@@@
+
+Tracking number text:
+This text label displays the unique tracking identification number for a specific parcel.
+@@@Text Functional Component@@@
+Delivered text:
+This is a text label displaying the delivery status of a specific parcel, indicating that it has been successfully delivered to the recipient.
+@@@Text Functional Component@@@
+
+Zalando brand name:
+This is a text label displaying the name of the shipping company or retailer (Zalando), helping users easily identify which merchant or courier is handling their package.
+@@@Text Functional Component@@@
+
+Left the parcel center text:
+This is a text label describing the current status or milestone of the parcel's delivery progress, indicating that it has departed from the sorting or distribution center.
+@@@Text Functional Component@@@
+
+Tracking number:
+This is a text label displaying a unique parcel tracking number, allowing users to identify and reference their specific shipment.
+@@@Text Functional Component@@@
+
+Left the parcel center status text:
+This is a text label indicating the current shipment status ("Left the parcel center") along with a secondary timestamp text showing when the status was last updated.
+@@@Text Functional Component@@@
+
+Wi-Fi/Network icon:
+This appears to be a status bar icon representing wireless network or internet connectivity, which is essential for fetching real-time parcel updates.
+@@@Function Component@@@
+
+Last update timestamp:
+This is a text label showing the relative time when the parcel tracking information was last refreshed, keeping the user informed of the data freshness.
+@@@Text Functional Component@@@
+
+Track parcel header title:
+This is a text label acting as the main heading or screen title, informing users that they are currently viewing the parcel tracking section of the app.
+@@@Text Functional Component@@@

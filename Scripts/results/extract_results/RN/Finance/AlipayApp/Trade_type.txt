@@ -1,0 +1,50 @@
+"收钱" (Receive Money) label:
+This is a text label indicating the option to receive money or access the user's receiving QR code.
+@@@Text Functional Component@@@
+
+Membership icon:
+This is an image/icon representing the user's membership level ("大众会员" / General Member) displayed at the top of the payment card.
+@@@Function Component@@@
+
+"分期付款" (Installment Payment) label:
+This is a text label for navigating to the installment payment service.
+@@@Text Functional Component@@@
+
+"转账" (Transfer) label:
+This is a text label indicating the transfer feature to send money to another account.
+@@@Text Functional Component@@@
+
+Payment QR code:
+This is an image displaying the dynamic payment QR code, which merchants can scan to deduct payment from the user's account.
+@@@Function Component@@@
+
+Bank card details label:
+This is a text block displaying the currently selected payment method ("招商银行储蓄卡 (7616)" / China Merchants Bank Debit Card (7616)) and the note "优先使用此付款方式" (Preferred payment method).
+@@@Text Functional Component@@@
+
+"点击可查看付款码数字" (Click to view payment code digits) label:
+This is a helper text label informing users that tapping the area allows them to view the numerical digits of their payment code.
+@@@Text Functional Component@@@
+
+Receive money icon:
+This is an image icon representing the "Receive Money" entry in the menu list.
+@@@Function Component@@@
+
+Transfer icon:
+This is an image icon representing the "Transfer" feature with a currency symbol surrounded by circular arrows.
+@@@Function Component@@@
+"分期" (Installments) badge icon:
+This is an icon/badge image indicating an installment payment option or feature.
+@@@Function Component@@@
+
+"向商家付款" (Pay to Merchant) label:
+This is a text header that informs the user that the displayed barcode and QR code are used for making payments directly to merchants.
+@@@Text Functional Component@@@
+
+Barcode icon:
+This is an icon image representing a payment code or barcode, serving as a visual indicator next to the merchant payment title.
+@@@Function Component@@@
+
+Bank logo icon:
+This is a bank brand logo image (China Merchants Bank) representing the associated bank card used as the payment method.
+@@@Function Component@@@

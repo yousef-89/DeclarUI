@@ -1,0 +1,147 @@
+"You don" label:
+This is a text label that displays part of a notification or placeholder message indicating that there are no scheduled items for this time slot.
+@@@Text Functional Component@@@
+
+Search input container:
+This appears to be a search bar container that allows users to type and search for tasks within the application.
+@@@View Function Component@@@
+
+"FR" label:
+This is a text label indicating the day of the week, specifically Friday, within the calendar date selector.
+@@@Text Functional Component@@@
+
+Graph icon:
+This is an icon button located in the bottom navigation bar, which likely allows users to view analytics, statistics, or progress charts.
+@@@TouchableOpacity Function Component@@@
+
+"Cleaning Clothes" task header:
+This is a text label showing the title of a scheduled task, indicating the activity name.
+@@@Text Functional Component@@@
+
+"SU" label:
+This is a text label indicating the day of the week, specifically Sunday, within the calendar date selector.
+@@@Text Functional Component@@@
+
+"Today" label:
+This is a section header text label that indicates the current day's schedule or tasks list.
+@@@Text Functional Component@@@
+
+"08:00" label:
+This is a text label representing the time of day, used as a time marker for scheduled items.
+@@@Text Functional Component@@@
+
+"Tas" header label:
+This is a main title text label indicating the page or section header, likely part of the word "Task".
+@@@Text Functional Component@@@
+Navigation icon:
+This appears to be a bottom navigation button that likely allows users to switch to a specific tab or view within the app.
+@@@TouchableOpacity Function Component@@@
+
+Task card snippet:
+This appears to be a container view that holds task details, time intervals, and tags for a scheduled event.
+@@@View Function Component@@@
+
+"12" date label:
+This is a text label displaying a specific day of the month for the calendar scheduler.
+@@@Text Functional Component@@@
+
+Profile/Home icon:
+This appears to be a navigational icon button located in the bottom bar, likely used to take the user back to the home or profile screen.
+@@@TouchableOpacity Function Component@@@
+
+"07:00" time label:
+This is a text label indicating the starting time for a scheduled block of tasks.
+@@@Text Functional Component@@@
+
+"Cleaning" title:
+This is a text label that displays the name or title of the scheduled task.
+@@@Text Functional Component@@@
+
+Selected date card (WE 14):
+This is an interactive calendar date card representing Wednesday the 14th, highlighted to indicate it is currently selected.
+@@@TouchableOpacity Function Component@@@
+
+"MO" weekday label:
+This is a text label displaying the abbreviation for Monday in the weekly calendar view.
+@@@Text Functional Component@@@
+
+Selected date card (WE 14 duplicate):
+This is an interactive calendar date card representing Wednesday the 14th, highlighted to indicate it is currently selected.
+@@@TouchableOpacity Function Component@@@
+Cleaning title and time text:
+This appears to be a text element that displays the title and time for a scheduled task item.
+@@@Text Functional Component@@@
+
+09:00 time label:
+This is a text label displaying a specific time slot in the schedule view.
+@@@Text Functional Component@@@
+
+SA day label:
+This text component represents the day of the week (Saturday) in the calendar header.
+@@@Text Functional Component@@@
+
+09 h 45 min duration label:
+This text component displays the total duration or summary time for the tasks of the day.
+@@@Text Functional Component@@@
+
+Cleaning task card snippet:
+This is a container view representing an individual scheduled task card with its details, tags, and status indicator.
+@@@View Function Component@@@
+
++ Add button:
+This appears to be a button that allows users to add a new schedule or task for the selected time slot.
+@@@TouchableOpacity Function Component@@@
+
+Task category indicator line:
+This is a visual accent bar or view used to categorize or highlight a specific task type.
+@@@View Function Component@@@
+
+07:15 - 07 time text:
+This is a text component showing the time range for a scheduled task.
+@@@Text Functional Component@@@
+
+Cleaning task card:
+This container view groups the task details including title, time range, and category tags.
+@@@View Function Component@@@
+"Cleaning" text label:
+This is a text label displaying part of a task name or title, indicating the category or subject of the scheduled event.
+@@@Text Functional Component@@@
+
+Navigation bar item / Tab icon:
+This appears to be a bottom navigation bar item or tab icon that allows users to switch between different main views or sections of the app.
+@@@TouchableOpacity Function Component@@@
+
+"18" date number label:
+This is a text label showing a specific date (the 18th) in the calendar date selector row.
+@@@Text Functional Component@@@
+
+Plus icon button:
+This is a circular floating or inline action button with a plus icon, typically used to add a new task, schedule, or item.
+@@@TouchableOpacity Function Component@@@
+
+"t have any schedule or" text label:
+This is a text label that displays part of a message indicating that there are no scheduled tasks for that specific time slot.
+@@@Text Functional Component@@@
+
+Tab bar or navigation container view:
+This appears to be a container view or background component that houses the bottom navigation icons and main action buttons.
+@@@View Function Component@@@
+
+"17" date number label:
+This is a text label showing a specific date (the 17th) in the calendar date selector row.
+@@@Text Functional Component@@@
+
+"13" date number label:
+This is a text label showing a specific date (the 13th) in the calendar date selector row.
+@@@Text Functional Component@@@
+
+"10:00" time label:
+This is a text label indicating a specific time (10:00 AM) on the timeline schedule view.
+@@@Text Functional Component@@@
+Task card container:
+This appears to be a container component that groups task details such as the task title, scheduled time, and category tags together with styling like rounded corners and a left accent border.
+@@@View Function Component@@@
+
+"TU" text label:
+This is a text label indicating the day of the week (Tuesday) in a horizontal calendar or date selector.
+@@@Text Functional Component@@@

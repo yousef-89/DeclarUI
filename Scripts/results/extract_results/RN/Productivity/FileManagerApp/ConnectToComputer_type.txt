@@ -1,0 +1,31 @@
+URL button component:
+This appears to be a button displaying a connection URL, which likely allows users to copy the URL or interact with it to establish a connection to their computer.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This appears to be a back button that allows users to return to the previous screen or menu.
+@@@TouchableOpacity Function Component@@@
+
+Wi-Fi signal icon:
+This is an icon representing the Wi-Fi signal strength or network status in the device's status bar.
+@@@Function Component@@@
+
+"Connect to Computer" title:
+This is a text label serving as the header or title of the screen, indicating the current section or feature being used.
+@@@Text Functional Component@@@
+
+Waiting status illustration and label:
+This appears to be a graphic illustration accompanied by a waiting text indicator, showing that the app is currently searching or waiting for a connection to be established.
+@@@View Function Component@@@
+
+Signal bars icon:
+This is a status bar indicator showing cellular network signal strength.
+@@@Function Component@@@
+
+Battery icon:
+This is a status bar indicator showing the current battery level of the device.
+@@@Function Component@@@
+
+"9:41" time label:
+This is a status bar text label displaying the current device time.
+@@@Text Functional Component@@@

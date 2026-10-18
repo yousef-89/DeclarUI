@@ -1,0 +1,77 @@
+Double checkmark icon:
+This appears to be a delivery status indicator (read receipt) showing that the message has been successfully sent and read.
+@@@ImageBackground@@@
+
+Phone call icon:
+This appears to be a button that allows users to initiate a voice phone call with the current contact.
+@@@TouchableOpacity Function Component@@@
+
+Double checkmark icon:
+This appears to be a delivery status indicator showing the read status of the message in the chat thread.
+@@@ImageBackground@@@
+
+Voice message player component:
+This is a container component displaying a waveform and play button, allowing users to play and listen to recorded voice messages.
+@@@View Function Component@@@
+
+Image message container:
+This appears to be an image container component displaying a shared photo with a play overlay, allowing users to view the image or media.
+@@@Function Component@@@
+
+Chat message bubble with text and emoji:
+This is a text bubble component containing a sent message with text and an emoji, displaying the user's conversation content.
+@@@Text Functional Component@@@
+
+Timestamp and read status icon:
+This appears to be a metadata component showing the exact time the message was sent along with its delivery status.
+@@@Text Functional Component@@@
+
+Status bar icons:
+This appears to be the system status bar showing network signal, Wi-Fi, and battery level indicators.
+@@@StatusBar Android and iOS Component@@@
+
+Chat message bubble:
+This is a text bubble component displaying a received or sent message within the chat conversation.
+@@@View Function Component@@@
+8:43 AM label:
+This is a text label displaying the timestamp of a message in the chat interface.
+@@@Text Functional Component@@@
+
+8:43 AM label:
+This is a text label displaying the timestamp of a message in the chat interface.
+@@@Text Functional Component@@@
+
+Back arrow icon:
+This appears to be a button that allows users to return to the previous screen or conversation list.
+@@@TouchableOpacity Function Component@@@
+
+9:41 label:
+This is a text label displaying the current time in the status bar at the top of the screen.
+@@@Text Functional Component@@@
+
+9:41 label:
+This is a text label displaying the current time in the status bar at the top of the screen.
+@@@Text Functional Component@@@
+
+Message bubble with "Hi Hasley, I am good. How are you?":
+This is a text view container displaying a chat message sent by the user, styled with a background color.
+@@@View Function Component@@@
+
+Message input bar with "Type here...":
+This is a text input area allowing users to type and compose new messages, accompanied by attachment and send buttons.
+@@@TextInput@@@
+
+"How are you?" label:
+This is a text label displaying the content of a received chat message.
+@@@Text Functional Component@@@
+
+User profile picture:
+This is an image component displaying the avatar of the user or contact in the chat.
+@@@Function Component@@@
+
+"Hasley Junior Online" label:
+This is a text label displaying the contact's name and their current online status.
+@@@Text Functional Component@@@
+Photo message thumbnail:
+This appears to be an image component showing a shared photo or video preview within the chat interface, likely allowing users to tap and view the media in full screen.
+@@@Function Component@@@

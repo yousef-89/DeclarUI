@@ -1,0 +1,89 @@
+"Bookmarks and saves" label:
+This is a text label indicating the bookmarks and saves section, which likely allows users to view their saved items or bookmarks when clicked.
+@@@Text Functional Component@@@
+
+Settings icon:
+This appears to be a button with a gear icon that likely allows users to access application settings and preferences.
+@@@TouchableOpacity Function Component@@@
+
+Decorative card background/border:
+This appears to be a structural container view that holds rewards and points information.
+@@@View Function Component@@@
+
+Unmatched small icon/shape:
+This appears to be a small decorative UI element or indicator, possibly part of a layout or badge.
+@@@View Function Component@@@
+
+Tabs icon and label:
+This appears to be a navigation button with an icon and label that allows users to switch to the tabs view or manage open tabs.
+@@@TouchableOpacity Function Component@@@
+
+"Notifications" label:
+This is a text label describing the notifications menu item, allowing users to view alerts and updates when tapped.
+@@@Text Functional Component@@@
+
+Apps icon and label:
+This appears to be a navigation button with an icon and label that allows users to view and access various app features or a collection of applications.
+@@@TouchableOpacity Function Component@@@
+
+Rewards card container:
+This is a container view displaying user rewards and today's points progress bar.
+@@@View Function Component@@@
+
+"History" label:
+This is a text label indicating the history section, which likely allows users to view their past activity or browsing history when tapped.
+@@@Text Functional Component@@@
+User profile icon:
+This appears to be an avatar representing the user's account, which likely serves as a button to navigate to the user profile or sign-in page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Weather icon and label:
+This component combines a weather icon and text label to represent a weather feature or section, likely serving as a button to navigate to the weather forecast screen.
+@@@TouchableOpacity Function Component@@@
+
+Right chevron arrow icon:
+This is a directional arrow icon that typically indicates a navigation action, acting as a button to lead users to a detailed sign-in or account page.
+@@@TouchableOpacity Function Component@@@
+
+Chat logo icon:
+This is the distinctive chat or assistant logo, likely acting as a central navigation button to open the chat interface or AI assistant.
+@@@TouchableOpacity Function Component@@@
+
+"Interests" text label:
+This text label indicates a menu category named "Interests," which likely describes a section where users can manage or view their favorite topics and preferences.
+@@@Text Functional Component@@@
+
+Black circle indicator:
+This appears to be a status bar or navigation indicator dot used to highlight active states or notifications in the UI.
+@@@View Function Component@@@
+
+"Tap to sign in" text:
+This text label prompts the user to sign in to their account, guiding them to initiate the authentication process.
+@@@Text Functional Component@@@
+
+Tab number "4" icon:
+This icon with a number "4" inside a rounded box likely serves as a tab bar button representing open tabs or pages, allowing users to switch between them.
+@@@TouchableOpacity Function Component@@@
+
+"Home" icon and text:
+This combined icon and text label acts as a navigation button representing the home screen, allowing users to return to the main dashboard when pressed.
+@@@TouchableOpacity Function Component@@@
+"Settings" label:
+This is a text label that displays the word "Settings", indicating the configuration option available in the menu list.
+@@@Text Functional Component@@@
+
+Bookmark icon:
+This appears to be an icon representing saved bookmarks or favorite items, which users can tap to view their saved content.
+@@@Function Component@@@
+
+History icon:
+This is an icon representing browsing or activity history, allowing users to navigate to past records when clicked.
+@@@Function Component@@@
+
+Star icon:
+This icon represents interests or starred items, functioning as a visual indicator for user preferences and saved topics.
+@@@Function Component@@@
+
+User profile avatar icon:
+This is an image component representing a user profile icon or avatar, typically used to display user identity or provide quick access to profile settings.
+@@@Function Component@@@

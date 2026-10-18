@@ -1,0 +1,194 @@
+Korea destination card image and label:
+This appears to be a clickable view container featuring a scenic background image and text labels ("韩国" for South Korea, "首尔" for Seoul) representing a travel destination, likely used to navigate to detailed tour information for Seoul, South Korea.
+@@@View Function Component@@@
+
+Departure location label with icon:
+This is a combination of a location pin icon and a text label indicating the current departure city ("烟台出发" meaning "Departing from Yantai"), likely used to open a location selection modal or page.
+@@@Text Functional Component@@@
+
+"免签落地签" (Visa-free / Visa-on-arrival) label:
+This is a text label indicating a category or filter for visa-free or visa-on-arrival travel destinations.
+@@@Text Functional Component@@@
+
+Yantai destination card with tag:
+This appears to be a clickable view component displaying a destination image with a city name ("烟台" for Yantai) and a sub-tag ("蓬莱阁" for Penglai Pavilion), likely used to navigate to travel guides or packages for that location.
+@@@View Function Component@@@
+
+"巴厘" (Bali) destination text:
+This is a text label showing part of a destination name ("巴厘" for Bali) used within a horizontal scrollable category list.
+@@@Text Functional Component@@@
+
+"国内游" (Domestic Travel) tag:
+This is a text label styled as a highlighted tab or tag indicating domestic travel options.
+@@@Text Functional Component@@@
+
+"周边游" (Surrounding Tours) tab:
+This is a text label representing a navigation tab for local or nearby short trips ("周边游").
+@@@Text Functional Component@@@
+
+"国内游" section header with "更多" (More) button:
+This is a section header containing a title ("国内游" for Domestic Travel) and a touchable button ("更多>" for More) that likely navigates to a full list of domestic travel packages.
+@@@View Function Component@@@
+
+"包车游" (Car Charter Tour) service item:
+This is a touchable feature card containing an icon and text ("包车游") representing a car charter booking service, allowing users to tap and open the corresponding booking page.
+@@@TouchableOpacity Function Component@@@
+"更多玩法" (More Activities) label:
+This is a text label that describes additional activity options or filters, translating to "More Activities" in English.
+@@@Text Functional Component@@@
+
+Destination icon and text:
+This appears to be a button or tab featuring a planet icon and the label "目的地" (Destination), which likely allows users to navigate to the destination selection page.
+@@@TouchableOpacity Function Component@@@
+
+"定制旅行" (Custom Travel) item:
+This is a clickable card with an icon and text label that likely navigates users to a customized travel planning service.
+@@@TouchableOpacity Function Component@@@
+
+"私家团" (Private Tour) item:
+This is a clickable category card with a crown icon and label that likely leads users to private tour packages.
+@@@TouchableOpacity Function Component@@@
+
+"威海" (Weihai) destination card:
+This is an image card displaying a scenic photo and the city name "威海" (Weihai), which likely opens detailed travel information or booking options for Weihai.
+@@@ImageBackground@@@
+
+"公司团建" (Company Team Building) label:
+This is a text label representing a category filter or option for corporate team building trips.
+@@@Text Functional Component@@@
+
+"泰国" (Thailand) destination card:
+This is an image card displaying a scenic photo of Thailand and its name, which likely opens travel options and details for this destination.
+@@@ImageBackground@@@
+
+"浏览历史" (Browsing History) label:
+This is a text label indicating the browsing history section or tab in the bottom navigation, translating to "Browsing History".
+@@@Text Functional Component@@@
+
+"国内游" (Domestic Travel) icon and label:
+This is a component consisting of an icon and a text label representing domestic travel options, which likely triggers a navigation or filter action.
+@@@TouchableOpacity Function Component@@@
+"出境游" (Outbound Travel) and "更多 >" (More >) container:
+This is a container displaying a section title ("Outbound Travel") and a button/link ("More >") to view more options in this category.
+@@@View Function Component@@@
+
+"山东" (Shandong) card with background scenery:
+This is a card featuring an image background of Shandong scenery with a text overlay indicating the region's name.
+@@@Function Component@@@
+
+"马尔代夫" (Maldives) tag:
+This is a text label styled as a button indicating a popular destination ("Maldives") for quick filtering or selection.
+@@@Text Functional Component@@@
+
+"目的地" (Destination) icon and label:
+This is a combination of an illustration and a text label indicating the "Destination" navigation option in the bottom tab or menu.
+@@@View Function Component@@@
+
+"当地参团" (Local Tours) card:
+This is a card component displaying a location pin icon and text ("Local Tours") to represent a specific travel service category.
+@@@View Function Component@@@
+
+"马来西亚" (Malaysia) tag:
+This is a text label styled as a button indicating a popular destination ("Malaysia") for quick filtering or selection.
+@@@Text Functional Component@@@
+
+"日本" (Japan) and "东京" (Tokyo) destination card:
+This is a card with an image background representing Japan and a sub-label for Tokyo, allowing users to tap and explore tours or info for this destination.
+@@@Function Component@@@
+
+Location and search bar section:
+This is a search bar component containing a departure location selector ("Yantai Departure"), a placeholder text input ("Destination/Keyword"), and a search button icon.
+@@@View Function Component@@@
+
+"最近距您 3.5km >" (Closest to you 3.5km >) label:
+This is a text label showing the distance to the nearest physical store or service location, providing spatial context to the user.
+@@@Text Functional Component@@@
+"老友精选" (Senior-friendly/Venerable Friends Selected) label:
+This is a text label that describes a curated selection category specifically aimed at older adults or seasoned travelers.
+@@@Text Functional Component@@@
+
+"新疆" (Xinjiang) destination card:
+This appears to be an image component showing a scenic landscape of Xinjiang, likely serving as a clickable card to view tour packages or information related to this destination.
+@@@Function Component@@@
+
+"日本" (Japan) destination card:
+This appears to be an image component showing a scenic landscape of Japan with an overlay for Tokyo, likely serving as a clickable card to explore travel options in Japan.
+@@@Function Component@@@
+
+"高端游" (High-end Tour) label:
+This is a text label that categorizes premium travel options or luxury tour packages.
+@@@Text Functional Component@@@
+
+"跟团游" (Group Tour) and "自由行" (Independent Travel) section:
+This is a container view holding category icons and text for different types of travel bookings, allowing users to tap and navigate to group tours or independent travel options.
+@@@View Function Component@@@
+
+"威海" (Weihai) destination card:
+This appears to be an image component displaying a landmark in Weihai, functioning as a clickable travel card to view related tour guides or packages.
+@@@Function Component@@@
+
+"一日游" (Day Tour) and "门票·玩乐" (Tickets & Entertainment) section:
+This container view groups together short-term travel services such as day trips, attraction tickets, and local entertainment activities.
+@@@View Function Component@@@
+
+Search icon button:
+This appears to be an interactive button or icon that allows users to initiate a search query based on the entered destination or keywords.
+@@@TouchableOpacity Function Component@@@
+
+"山东" (Shandong) destination card:
+This appears to be an image component displaying a scenic landscape of Shandong, functioning as a clickable destination card for tourism exploration.
+@@@Function Component@@@
+"新加坡" (Singapore) label:
+This is a text label indicating a destination country name ("Singapore"), likely functioning as a clickable filter tag or button to view travel options for Singapore.
+@@@Text Functional Component@@@
+
+"游万里山河..." promotional banner:
+This is a promotional image banner featuring elderly travelers and scenic landscapes, typically used to showcase special travel campaigns or featured tours ("Travel across mountains and rivers...").
+@@@Function Component@@@
+
+"邮轮" (Cruise) category item:
+This is a grid item containing an icon and label representing cruise travel bookings, likely functioning as a pressable navigation button to open cruise listings.
+@@@TouchableOpacity Function Component@@@
+
+"仙本那" (Semporna) destination card:
+This is a destination card image displaying a scenic view of Semporna with an overlay text label, functioning as a clickable card to view destination details or travel packages.
+@@@Function Component@@@
+
+"泰国" (Thailand) destination card:
+This is a destination card image showing a landmark in Thailand with an overlay text label, allowing users to tap and explore travel options for Thailand.
+@@@Function Component@@@
+
+"亲子游" (Family Tour) filter tab:
+This is a tab button or pill label used for filtering travel categories specifically by family-friendly tours ("Family Tour").
+@@@TouchableOpacity Function Component@@@
+
+"仙本那" (Semporna) destination card:
+This is a destination card image displaying a scenic view of Semporna with an overlay text label, functioning as a clickable card to view destination details or travel packages.
+@@@Function Component@@@
+
+"韩国" (South Korea) destination card:
+This is a destination card image showcasing South Korea with an overlay label indicating Seoul, allowing users to click for South Korea travel details.
+@@@Function Component@@@
+
+"附近有3家携程门店" (3 Ctrip stores nearby) label:
+This is a text label displaying information about nearby offline travel agency stores ("There are 3 Ctrip stores nearby"), informing the user of physical store locations.
+@@@Text Functional Component@@@
+"出境游" (Outbound Travel) label:
+This is a text label indicating the category for outbound international travel options.
+@@@Text Functional Component@@@
+
+"泰国" (Thailand) label:
+This is a text label representing a specific travel destination, Thailand, often used as a quick-filter button or tag for related travel deals.
+@@@Text Functional Component@@@
+
+"精选" (Featured) button:
+This appears to be a highlighted tab button that allows users to view curated or featured travel content and recommendations.
+@@@TouchableOpacity Function Component@@@
+
+"我的收藏" (My Favorites) label:
+This is a text label indicating the "My Favorites" section in the navigation bar, showing users their saved content or wishlisted trips.
+@@@Text Functional Component@@@
+
+"国内游" (Domestic Travel) label:
+This is a text label indicating the category for domestic travel options within the country.
+@@@Text Functional Component@@@

@@ -1,0 +1,62 @@
+Working on list item card:
+This container displays the icon, status label, and count for tasks that are currently in progress.
+@@@View Function Component@@@
+
+Pending list item card:
+This container displays the icon, status label, and count for tasks that are currently pending.
+@@@View Function Component@@@
+
+Total task list item card:
+This container displays the icon, status label, and count for the total number of tasks.
+@@@View Function Component@@@
+
+Wi-Fi icon:
+This icon indicates the current wireless network connection status in the device status bar.
+@@@Function Component@@@
+
+Completed list item card:
+This container displays the icon, status label, and count for tasks that have been completed.
+@@@View Function Component@@@
+
+App menu grid icon:
+This appears to be a navigation button representing dashboard or menu options at the bottom of the screen.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar:
+This image represents the user's profile picture in the top right corner of the dashboard.
+@@@Function Component@@@
+
+Completed task folder icon:
+This is a graphical icon representing completed tasks within a category item.
+@@@Function Component@@@
+
+Device battery status indicator:
+This component displays the current battery level of the mobile device.
+@@@View Function Component@@@
+Signal strength bars icon:
+This appears to be a status bar indicator that displays the current cellular network signal strength for the device.
+@@@Function Component@@@
+
+Plus icon button:
+This appears to be a prominent action button, likely used to add a new task, item, or entry within the application dashboard.
+@@@TouchableOpacity Function Component@@@
+
+Chat message icon:
+This appears to be a navigation or action button that allows users to open a chat, messaging interface, or view notifications.
+@@@TouchableOpacity Function Component@@@
+
+Tab bar icon:
+This appears to be a custom navigation tab button used in the bottom tab bar to switch between different main sections or views of the application.
+@@@TouchableOpacity Function Component@@@
+
+Time label (9:41):
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Donut chart graphic:
+This appears to be a graphical data visualization component (donut chart) that summarizes and illustrates task statistics or proportions on the dashboard.
+@@@View Function Component@@@
+
+"Dashboard" header label:
+This is a title text label that identifies the current screen as the dashboard, providing context to the user.
+@@@Text Functional Component@@@

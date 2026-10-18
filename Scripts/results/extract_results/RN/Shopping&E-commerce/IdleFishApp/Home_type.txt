@@ -1,0 +1,178 @@
+Phone icon with text "手机" (Phone):
+This appears to be a clickable icon button that likely navigates users to a section dedicated to mobile phones and related services.
+@@@TouchableOpacity Function Component@@@
+
+"借呗" (Jiebei - Borrow):
+This is a text label that indicates a financial lending or credit service feature, allowing users to check their borrowing quota.
+@@@Text Functional Component@@@
+
+Promotion banner with text "闲鱼特卖超低价" (Xianyu Special Sale Super Low Price):
+This is a promotional card component displaying special discount offers and a call-to-action button to grab deals starting at extremely low prices.
+@@@View Function Component@@@
+
+"备用金" (Reserve Fund / Pocket Cash):
+This is a text label describing a small-amount cash reserve or short-term financial credit product available to the user.
+@@@Text Functional Component@@@
+
+"鱼币抵减" (Fish Coin Deduction):
+This is a button or tag component that allows users to use their earned virtual "Fish Coins" to offset or discount purchase prices.
+@@@TouchableOpacity Function Component@@@
+
+"签到" (Check-in) button with icon:
+This appears to be a clickable button that lets users check in daily to earn rewards or points within the app.
+@@@TouchableOpacity Function Component@@@
+
+"我的" (My / Profile) icon and label:
+This is a navigation button that takes the user to their personal profile and account management screen.
+@@@TouchableOpacity Function Component@@@
+
+"消息" (Messages) icon and label with notification badge:
+This is a navigation button that opens the messaging and chat center, with a blue dot indicating unread messages.
+@@@TouchableOpacity Function Component@@@
+
+"卖得更快哦" (Sell faster) promotional text and emoji:
+This is a text label providing selling tips and encouragement to users to list items for quicker sales (Translation: "Sell faster, oh!").
+@@@Text Functional Component@@@
+Price symbol and number:
+This is a text label displaying the price of an item ("¥27").
+@@@Text Functional Component@@@
+
+"最新发布" (Latest releases) tab:
+This is a clickable text label used as a navigation or filter tab to sort content by newly released items.
+@@@TouchableOpacity Function Component@@@
+
+User avatar:
+This is an image component displaying the profile picture of a user, which may link to their user profile when tapped.
+@@@Function Component@@@
+
+"人才市场" (Talent Market) category item:
+This is an image icon with an accompanying text label representing a specific category or feature入口 (entry point) in the app.
+@@@Function Component@@@
+
+"强开教程" (Tutorial) text label:
+This is a text label displaying a heading or title for a tutorial or guide section.
+@@@Text Functional Component@@@
+
+Price tag icon:
+This is a decorative or functional image icon representing price discounts or shopping tags.
+@@@Function Component@@@
+
+"额度工具" (Quota tools) card container:
+This is a container view grouping together several financial quota-related tools and navigation options with icons and text labels.
+@@@View Function Component@@@
+
+"省钱小组" (Money-saving group) tab:
+This is a clickable text label used as a filter tab to navigate to community groups focused on saving money.
+@@@TouchableOpacity Function Component@@@
+
+"一周内发布" (Posted within a week) time label:
+This is a text label indicating the time frame when the product or content was published.
+@@@Text Functional Component@@@
+b-icon:
+This appears to be an icon graphic representing a brand or currency symbol (likely related to fish coins or platform credits), often used decoratively next to items.
+@@@Function Component@@@
+
+兌好禮 (Exchange for Gifts) label:
+This is a text label indicating a promotional feature where users can redeem rewards or gifts using points or tokens.
+@@@Text Functional Component@@@
+
+公益宝贝 (Public Welfare Item) label:
+This is a tag or label indicating that the associated item contributes to a charitable cause or public welfare program.
+@@@Text Functional Component@@@
+
+海鲜市场 (Seafood Market) label:
+This is a title header representing the specific section or market name within the application, translated as "Seafood Market".
+@@@Text Functional Component@@@
+
+王者荣耀/代打 代 (Honor of Kings / Boosting) label:
+This is a product title text describing a gaming service listing for Honor of Kings game boosting.
+@@@Text Functional Component@@@
+
+Pearl or coin icon:
+This appears to be a small decorative icon representing currency, tokens, or a special membership status within the app.
+@@@Function Component@@@
+
+公益宝贝 借贝花贝强开教程 有额度可以... (Public Welfare Item / Tutorial) label:
+This is a descriptive text snippet explaining a financial tutorial or service related to credit platforms.
+@@@Text Functional Component@@@
+
+Plus icon button:
+This appears to be a button or scrollable container edge indicator with a plus icon, likely used to add items or reveal more options in a horizontal tab list.
+@@@ScrollView@@@
+
+这些宝贝缺货了 (These items are out of stock) label:
+This is a notification text informing the user that the selected items are currently out of stock.
+@@@Text Functional Component@@@
+"其它额度" (Other credit/limit) label:
+This is a text label that displays a category title "Other limits" or "Other credit" in a financial or user dashboard section.
+@@@Text Functional Component@@@
+
+"用极好" (Use extremely well) label:
+This is a text label that indicates a recommendation or description of credit usage quality, translating to "use extremely well" or "great for use".
+@@@Text Functional Component@@@
+
+Search Bar:
+This appears to be a search input container with a placeholder text "穿戴甲" (Press-on nails), a scan/camera icon, and a search button, allowing users to search for items or scan products.
+@@@TextInput@@@
+
+"奢品" (Luxury goods) icon:
+This is an image icon representing luxury goods, likely serving as a clickable category button that navigates users to the luxury items section when tapped.
+@@@Function Component@@@
+
+"小" (Small) label part:
+This is a partial text label that likely forms part of a larger descriptive phrase or username, translating to "Small" or representing part of a brand/category name.
+@@@Text Functional Component@@@
+
+"总计额度" (Total credit limit) label:
+This is a text label that indicates the total credit limit amount available to the user in a financial overview card.
+@@@Text Functional Component@@@
+
+"猜你喜欢" (Guess you like) button:
+This is a tab/button that allows users to switch to a personalized recommendation feed based on their preferences, translating to "Guess you like" or "For You".
+@@@TouchableOpacity Function Component@@@
+
+"闲鱼" (Idle Fish) navigation tab icon:
+This is an icon representing the home tab ("Idle Fish"), which likely allows users to navigate back to the main homepage when tapped.
+@@@Function Component@@@
+
+Add "+" button:
+This is a prominent circular action button with a plus icon in the center, typically used for creating new posts, listing items for sale, or adding content.
+@@@TouchableOpacity Function Component@@@
+Game characters card list:
+This appears to be a list or scrollable container showing various game characters with their respective levels and stats.
+@@@flatlist-simple@@@
+
+"4,500.00" label:
+This is a text label displaying a monetary value or numerical credit limit amount.
+@@@Text Functional Component@@@
+
+"领取一笔备用额度 >" (Claim a reserve credit limit >) label:
+This is a text label that encourages users to claim or apply for a reserve credit limit, complete with a navigation arrow.
+@@@Text Functional Component@@@
+
+"极速回收" (Express Trade-in) card component:
+This is an interactive card component representing a quick item recycling or trade-in service featuring a camera icon and a "Free Doorstep Pickup" description, functioning as a clickable button to initiate the service.
+@@@TouchableOpacity Function Component@@@
+
+"放心充" (Reliable Top-up) label:
+This is a badge or text label indicating a secure or guaranteed top-up service.
+@@@Text Functional Component@@@
+
+"充值中心" (Top-up Center) icon and label component:
+This appears to be a navigational button representing the top-up center, allowing users to quickly access mobile or service recharges.
+@@@TouchableOpacity Function Component@@@
+
+Price and text fragment label:
+This is a text snippet showing part of a product's price or description with punctuation.
+@@@Text Functional Component@@@
+
+"闲鱼直播 爆款好物直播中" (Idle Fish Live / Popular Goods Live Streaming) promotional card:
+This is an interactive promotional card that highlights live streaming events, allowing users to tap and enter the live broadcast room to view popular items.
+@@@TouchableOpacity Function Component@@@
+
+"额度管理" (Limit Management) icon and label component:
+This is a button featuring an icon and text that allows users to manage their credit limits or account balances.
+@@@TouchableOpacity Function Component@@@
+"推荐" (Recommended) label:
+This is a text label displaying the word "Recommended" with a stylized background, indicating the current active category or feed tab in the app.
+@@@Text Functional Component@@@

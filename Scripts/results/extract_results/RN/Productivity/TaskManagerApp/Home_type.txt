@@ -1,0 +1,73 @@
+Banner card:
+This appears to be a container view that highlights overall task completion status, featuring text and a circular progress indicator.
+@@@View Function Component@@@
+
+Bell icon:
+This appears to be a notification button that likely allows users to view recent alerts or messages.
+@@@TouchableOpacity Function Component@@@
+
+Task card:
+This appears to be a card container view displaying task details, icons, and progress bars.
+@@@View Function Component@@@
+
+Battery status icon:
+This is a status bar indicator showing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Wi-Fi status icon:
+This is a status bar indicator showing the current Wi-Fi network connection status.
+@@@StatusBar Android and iOS Component@@@
+
+Search icon:
+This appears to be a button that allows users to search for tasks or content within the application.
+@@@TouchableOpacity Function Component@@@
+
+Task card:
+This appears to be a task item card containing title, progress information, and icon elements.
+@@@View Function Component@@@
+
+Add task button:
+This appears to be a floating action button that allows users to quickly create a new task.
+@@@TouchableOpacity Function Component@@@
+
+Banner card:
+This appears to be a container view displaying daily task completion progress and a call-to-action button.
+@@@View Function Component@@@
+Task Card 1:
+This appears to be a card view containing task details, including a category icon, task title, progress bar, and completion percentage, likely serving as a clickable item to view or edit the task.
+@@@View Function Component@@@
+
+Task Card 2:
+This is another task card component showcasing a meeting task with a distinct color theme, displaying the task name, icon, and progress details.
+@@@View Function Component@@@
+
+Calendar icon:
+This is a calendar icon button located in the bottom navigation bar, which likely allows users to switch to a calendar or schedule view of their tasks.
+@@@TouchableOpacity Function Component@@@
+
+Bar chart icon:
+This appears to be an analytics or statistics icon button in the navigation bar, potentially used to navigate to a screen displaying task completion metrics and productivity charts.
+@@@TouchableOpacity Function Component@@@
+
+Time "9:41" label:
+This is a status bar text label displaying the current system time.
+@@@Text Functional Component@@@
+
+User avatar image:
+This is a profile picture image component displaying the user's avatar in the header section.
+@@@Function Component@@@
+
+Home icon:
+This is a home icon button in the bottom navigation bar that allows users to return to the main dashboard or home screen.
+@@@TouchableOpacity Function Component@@@
+
+"Linda C. Ng" label:
+This is a text label displaying the user's full name in the header profile section.
+@@@Text Functional Component@@@
+
+Upcoming task list item:
+This is a list item component representing an upcoming task, displaying an icon, title, date, and a menu button for further actions.
+@@@View Function Component@@@
+Settings gear icon:
+This appears to be a clickable icon button located in the bottom navigation bar that likely allows users to navigate to the app's settings or configuration screen.
+@@@TouchableOpacity Function Component@@@

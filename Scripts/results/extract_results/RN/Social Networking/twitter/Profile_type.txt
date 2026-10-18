@@ -1,0 +1,119 @@
+Back button icon:
+This appears to be a button that likely allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+"Digital Goodies Team" label:
+This is a text label displaying the title or name of the profile/team at the top of the navigation bar.
+@@@Text Functional Component@@@
+
+Profile avatar image:
+This is an image component displaying the profile picture of the user or team.
+@@@Function Component@@@
+
+"Edit profile" button:
+This is a button that allows users to edit their profile information and settings.
+@@@TouchableOpacity Function Component@@@
+
+"Pixsellz" name label:
+This is a text label showing the display name of the profile.
+@@@Text Functional Component@@@
+
+"@pixsellz" handle label:
+This is a text label displaying the unique username or handle of the account.
+@@@Text Functional Component@@@
+
+"Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations" bio label:
+This is a text label providing a short biographical description of the profile.
+@@@Text Functional Component@@@
+
+"pixsellz.io" link label:
+This is a text label representing a clickable website link associated with the profile.
+@@@Text Functional Component@@@
+
+"Joined September 2018" join date label:
+This is a text label indicating the date when the user joined the platform.
+@@@Text Functional Component@@@
+
+"217 Following" stats label:
+This is a text label showing the number of accounts this user is following.
+@@@Text Functional Component@@@
+
+"118 Followers" stats label:
+This is a text label showing the number of followers this account has.
+@@@Text Functional Component@@@
+
+"Tweets" tab:
+This is a selectable tab button that filters and displays the user's tweets.
+@@@TouchableOpacity Function Component@@@
+
+"Tweets & replies" tab:
+This is a selectable tab button that filters and displays the user's tweets and replies.
+@@@TouchableOpacity Function Component@@@
+
+"Media" tab:
+This is a selectable tab button that filters and displays media content shared by the user.
+@@@TouchableOpacity Function Component@@@
+
+"Likes" tab:
+This is a selectable tab button that filters and displays tweets liked by the user.
+@@@TouchableOpacity Function Component@@@
+
+"Pinned Tweet" indicator:
+This is a text label indicating that the following tweet has been pinned to the top of the profile.
+@@@Text Functional Component@@@
+
+Tweet author avatar image:
+This is an image component displaying the profile picture of the tweet's author.
+@@@Function Component@@@
+
+Tweet author name label:
+This is a text label displaying the name of the tweet's author.
+@@@Text Functional Component@@@
+
+Tweet handle and timestamp label:
+This is a text label showing the author's handle and the timestamp of when the tweet was posted.
+@@@Text Functional Component@@@
+
+Tweet text content label:
+This is a text label containing the main body text and hashtags of the tweet.
+@@@Text Functional Component@@@
+
+Tweet video thumbnail image:
+This is an image component serving as a thumbnail preview for the video attached to the tweet.
+@@@Function Component@@@
+
+Play button icon:
+This is a button overlaid on the video thumbnail that likely plays the video when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Video duration "0:11" label:
+This is a text label showing the total duration of the video.
+@@@Text Functional Component@@@
+
+"109 views" label:
+This is a text label displaying the total view count for the video tweet.
+@@@Text Functional Component@@@
+
+Reply count and icon:
+This is a button with an icon and number representing the number of replies to the tweet and allowing users to reply.
+@@@TouchableOpacity Function Component@@@
+
+Retweet count and icon:
+This is a button with an icon and number representing the number of retweets and allowing users to retweet.
+@@@TouchableOpacity Function Component@@@
+
+Like count and icon:
+This is a button with an icon and number representing the number of likes and allowing users to like the tweet.
+@@@TouchableOpacity Function Component@@@
+
+Share/analytics button icon:
+This is a button with an icon that likely opens sharing options or view analytics for the tweet.
+@@@TouchableOpacity Function Component@@@
+
+Floating compose/tweet action button:
+This is a floating action button (FAB) that allows users to quickly create a new tweet or post.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar icons:
+These are icons representing different main tabs/sections of the app for bottom navigation.
+@@@View Function Component@@@

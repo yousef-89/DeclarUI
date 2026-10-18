@@ -1,0 +1,48 @@
+"Lock screen" label:
+This is a text label that displays the status or feature name "Lock screen", indicating that the corresponding toggle or setting relates to locking the screen.
+@@@Text Functional Component@@@
+
+Lock icon:
+This is an icon representing security or locking functionality, often paired with the lock screen setting to visually indicate the feature.
+@@@Function Component@@@
+
+"Click to add location" banner:
+This appears to be a pressable banner or button that allows users to tap and initiate the process of adding a new location.
+@@@TouchableOpacity Function Component@@@
+
+"Pine" label:
+This is a text label indicating a location name or street name ("Pine") on the map view.
+@@@Text Functional Component@@@
+
+Hamburger menu icon:
+This is an icon button typically used to open a navigation drawer or side menu containing additional app options.
+@@@TouchableOpacity Function Component@@@
+
+Status bar time and window icons:
+This area displays the current system time and recent apps or status indicators at the top of the screen.
+@@@StatusBar Android and iOS Component@@@
+
+Camera or photo placeholder icon:
+This appears to be a circular placeholder or camera-related icon used in the background or layout design.
+@@@Function Component@@@
+
+"Add location" title:
+This is a header text label that indicates the current screen's title or purpose, which is to add a location.
+@@@Text Functional Component@@@
+
+Location pin icon:
+This is an icon button positioned at the top right, likely used to locate the user's current position or open a map-based location picker.
+@@@TouchableOpacity Function Component@@@
+*(Note: No specific component images were provided separately in the prompt alongside the full app screenshot, but based on the UI elements visible in the screenshot, here is the breakdown of the primary components following your requested format)*
+
+"Add location" header title and "Lock screen" label:
+These are text elements used to display informational text and titles to the user on the screen.
+@@@Text Functional Component@@@
+
+"Click to add location" banner:
+This appears to be a touchable container or button that users can tap to open a search or input interface for adding a new location.
+@@@TouchableOpacity Function Component@@@
+
+Background city image:
+This is an image displayed in the background to visually enhance the location selection interface.
+@@@Function Component@@@

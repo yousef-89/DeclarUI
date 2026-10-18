@@ -1,0 +1,112 @@
+"6.8 GB" text:
+This is a text label displaying the amount of storage space occupied by a specific category (Images).
+@@@Text Functional Component@@@
+
+"Available" label:
+This is a text label indicating the available storage category section.
+@@@Text Functional Component@@@
+
+"Go to Clean to manage and free up space" label:
+This is a descriptive text label providing instructions on how the user can manage and free up storage space.
+@@@Text Functional Component@@@
+
+Signal bars icon:
+This is a status bar icon representing cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+"Apps" label:
+This is a text label representing the name of the storage category (Apps).
+@@@Text Functional Component@@@
+
+"256 GB" text:
+This is a text label indicating the total storage capacity of the device.
+@@@Text Functional Component@@@
+
+"116 MB" text:
+This is a text label displaying the amount of storage space occupied by the Audio category.
+@@@Text Functional Component@@@
+
+Document category icon:
+This is an image icon representing the Document category item in the storage list.
+@@@Function Component@@@
+
+"Document" label:
+This is a text label representing the name of the storage category (Document).
+@@@Text Functional Component@@@
+Circular progress chart graphic:
+This appears to be a graphical view component that visualizes the percentage of internal storage currently used, displaying the 66% completion value in the center.
+@@@View Function Component@@@
+
+Black container graphic:
+This appears to be a view component acting as a container or indicator for UI styling purposes.
+@@@View Function Component@@@
+
+Broom icon:
+This appears to be an icon component representing a cleaning or optimization action to free up storage space.
+@@@Function Component@@@
+
+Time display label (9:41):
+This is a text label that displays the current device time in the status bar.
+@@@Text Functional Component@@@
+
+"Used" label:
+This is a text label indicating the category of storage consumption, specifically showing the amount of space currently used.
+@@@Text Functional Component@@@
+
+"Audio" label (first instance):
+This is a text label indicating the audio file category in the device storage list.
+@@@Text Functional Component@@@
+
+"Audio" label (second instance):
+This is a text label indicating the audio file category in the device storage list.
+@@@Text Functional Component@@@
+
+"Internal Storage" title label:
+This is a text label displaying the screen title, indicating that the user is currently viewing the internal storage details.
+@@@Text Functional Component@@@
+
+"Videos" label:
+This is a text label indicating the video file category in the device storage list.
+@@@Text Functional Component@@@
+"1,432 items 🕿 6.8 GB" text:
+This text label displays the item count and storage size details for the images category in internal storage.
+@@@Text Functional Component@@@
+
+Wifi icon:
+This is an icon representing the Wi-Fi connection status in the status bar at the top of the app.
+@@@Function Component@@@
+
+"421 items" text:
+This text label displays the total number of audio items stored in the device.
+@@@Text Functional Component@@@
+
+"53 items" text:
+This text label displays the total number of video items stored in the device.
+@@@Text Functional Component@@@
+
+Document icon:
+This icon represents document files stored in the device's internal storage.
+@@@Function Component@@@
+
+Video icon:
+This icon represents video files stored in the device's internal storage.
+@@@Function Component@@@
+
+Audio icon:
+This icon represents audio files stored in the device's internal storage.
+@@@Function Component@@@
+
+"1,427 items 🕿 55 GB" text:
+This text label displays the item count and storage size details for the apps category in internal storage.
+@@@Text Functional Component@@@
+
+"Images" text:
+This is a section header text indicating the images category of internal storage.
+@@@Text Functional Component@@@
+Free up space label:
+This is a text label that indicates the action or feature name for freeing up storage space on the device.
+@@@Text Functional Component@@@
+
+Total label:
+This is a text label indicating the total amount of storage capacity available on the device.
+@@@Text Functional Component@@@

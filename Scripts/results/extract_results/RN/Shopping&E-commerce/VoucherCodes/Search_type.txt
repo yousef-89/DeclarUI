@@ -1,0 +1,136 @@
+Mobiles.co.uk brand logo image:
+This is an image component displaying the brand logo for Mobiles.co.uk within a reward offer list item.
+@@@Function Component@@@
+
+VIP label:
+This is a text label indicating the VIP tab status in the bottom navigation bar.
+@@@Text Functional Component@@@
+
+LG brand logo image:
+This is an image component showing the LG brand logo representing the company for a specific reward offer.
+@@@Function Component@@@
+
+Discover icon and label:
+This is a combination of an image icon and text label representing the "Discover" section in the bottom navigation tab bar.
+@@@Function Component@@@
+
+Start searching search bar:
+This is a text input component with a search icon that allows users to type queries to search for offers and content.
+@@@TextInput@@@
+
+Adidas brand logo image:
+This is an image component displaying the Adidas brand logo for a reward offer item.
+@@@Function Component@@@
+
+Dunelm brand logo image:
+This is an image component showcasing the Dunelm brand logo for an active retail reward offer.
+@@@Function Component@@@
+
+ZSL London Zoo promotional banner:
+This is a card view containing a promotional banner image and text for a "2 for 1 Entry with National Rail" offer.
+@@@View Function Component@@@
+
+Adidas brand logo and Trending text container:
+This is a UI container combining an Adidas logo and the "Trending" section header text.
+@@@View Function Component@@@
+View More label:
+This is a text label indicating a button or link to view more items or details in the reward offers section.
+@@@Text Functional Component@@@
+
+View More label:
+This is a text label indicating a button or link to view more items or details in the trending now section.
+@@@Text Functional Component@@@
+
+Reward Offers label:
+This is a section heading text label that describes the category of offers displayed below it.
+@@@Text Functional Component@@@
+
+£10 label:
+This is a text label displaying a monetary value or discount amount related to an offer.
+@@@Text Functional Component@@@
+
+Deliveroo brand icon:
+This is an image component displaying the logo of the brand Deliveroo associated with the offer.
+@@@Function Component@@@
+
+Search label:
+This is a text label acting as a placeholder or title for the search functionality at the top of the screen.
+@@@Text Functional Component@@@
+
+eBay brand icon:
+This is an image component displaying the logo of the brand eBay for the corresponding reward offer item.
+@@@Function Component@@@
+
+Dunelm reward offer details:
+This is a text block containing the merchant name, offer description, and expiration details for a specific reward.
+@@@Text Functional Component@@@
+
+LG reward offer details:
+This is a text block displaying the offer description, online reward status, and expiration date for an LG voucher.
+@@@Text Functional Component@@@
+Dunelm logo icon:
+This appears to be an image component displaying the brand logo for Dunelm within a reward offer list item.
+@@@Function Component@@@
+
+Trending Now partial card image:
+This is an image component displaying a promotional graphic or product image for the trending section of the app.
+@@@Function Component@@@
+
+Account tab icon and label:
+This appears to be a navigation tab button containing an icon and text label that directs users to their user profile or account settings page.
+@@@TouchableOpacity Function Component@@@
+
+MOBILES.CO.UK offer details text block:
+This is a text label displaying the vendor name, offer description, and expiration date for a specific reward deal.
+@@@Text Functional Component@@@
+
+ADISAS offer details text block:
+This is a text label displaying the vendor name, offer description, and expiration status for a specific reward deal.
+@@@Text Functional Component@@@
+
+LG brand logo icon:
+This appears to be an image component displaying the LG brand logo for a reward offer list item.
+@@@Function Component@@@
+
+EBAY offer title text block:
+This is a text label displaying the vendor name, offer description, and expiration details for a specific reward deal.
+@@@Text Functional Component@@@
+
+MOBILES.CO.UK offer header text block:
+This is a text label displaying the mobile provider's name and offer summary details for the reward item.
+@@@Text Functional Component@@@
+
+EBAY brand text label:
+This is a text label displaying the vendor name "EBAY" to identify the merchant associated with the reward offer.
+@@@Text Functional Component@@@
+Search input box:
+This appears to be a text input component that allows users to type queries to search for offers or items within the application.
+@@@TextInput@@@
+
+"Reward Offers" section header:
+This is a text label displaying the title of the section, indicating that the items below are reward offers.
+@@@Text Functional Component@@@
+
+"View More" link for Reward Offers:
+This is a touchable text/button that likely navigates the user to a full list or page containing more reward offers.
+@@@TouchableOpacity Function Component@@@
+
+Reward offer item list:
+This component represents a list of reward offers, rendering multiple items efficiently with their respective merchant logos, titles, and reward details.
+@@@flatlist-simple@@@
+
+"Trending Now" section header:
+This is a text label indicating the title of the trending section, showing popular or trending items below.
+@@@Text Functional Component@@@
+
+"View More" link for Trending Now:
+This is a touchable text/button that likely takes the user to a dedicated page displaying more trending items.
+@@@TouchableOpacity Function Component@@@
+
+Trending Now horizontal list:
+This component represents a horizontal scrollable list showcasing trending deals with large preview images and titles.
+@@@flatlist-simple@@@
+
+Bottom Navigation Bar:
+This is a navigation container holding multiple buttons (Discover, Search, VIP, Account) to let users switch between different main sections of the app.
+@@@View Function Component@@@

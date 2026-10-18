@@ -1,0 +1,93 @@
+Avatar initials icon (AB):
+This appears to be a user profile avatar image showing initials, which typically represents the chat contact's profile picture.
+@@@Function Component@@@
+
+WiFi icon:
+This is an icon representing the current network connection status in the device's status bar.
+@@@Function Component@@@
+
+Time label (9:36):
+This is a text label displaying the current time within the chat history list, indicating when a specific message was sent.
+@@@Text Functional Component@@@
+
+Chat message bubble ("You’ re welcome!"):
+This is a container view representing an incoming or outgoing chat message bubble holding text content.
+@@@View Function Component@@@
+
+Time label (9:32):
+This is a text label displaying the timestamp for a specific voice message in the chat history.
+@@@Text Functional Component@@@
+
+Time label (9:30):
+This is a text label displaying the timestamp for the first message in the chat history.
+@@@Text Functional Component@@@
+
+Time label (9:34):
+This is a text label displaying the timestamp for a message asking about tools used.
+@@@Text Functional Component@@@
+
+Chat message bubble ("Thank u so much Antonio! Glad to hear that :)"):
+This is a container view representing a chat message bubble holding text content.
+@@@View Function Component@@@
+
+Time label (9:39):
+This is a text label displaying the timestamp for the last message in the chat history.
+@@@Text Functional Component@@@
+9:41 time indicator:
+This is a text display showing the current device time in the status bar area.
+@@@Text Functional Component@@@
+
+Signal strength icon:
+This is an icon component in the status bar indicating the current mobile network signal strength.
+@@@Function Component@@@
+
+Today date label:
+This text label displays the date or time grouping for the messages in the chat conversation.
+@@@Text Functional Component@@@
+
+Hi! Your last shot was really good!:
+This is a chat message bubble containing text sent by another user in the conversation.
+@@@Text Functional Component@@@
+
+Figma, for prototype i use Principle:
+This is a chat message bubble containing text sent by the current user or contact, detailing the tools they use.
+@@@Text Functional Component@@@
+
+What tools do you use?:
+This is a chat message bubble containing a question sent within the chat interface.
+@@@Text Functional Component@@@
+
+Battery icon:
+This is a system status bar icon indicating the remaining battery level of the mobile device.
+@@@Function Component@@@
+
+9:37 timestamp:
+This is a small text label displaying the specific timestamp for a message in the chat.
+@@@Text Functional Component@@@
+
+Antonio Banderas name label:
+This is a text label displaying the name of the contact at the top of the chat screen.
+@@@Text Functional Component@@@
+
+Hi! Your last shot was really good! message box:
+This is a container view representing an incoming chat message bubble holding text content.
+@@@View Function Component@@@
+Message input area and attachment/send controls:
+This is a bottom bar containing a text input for typing messages, an emoji button, an attachment button, and a send/mic button.
+@@@TextInput@@@
+
+Timestamp "9:35":
+This is a text label displaying the time associated with a specific message or section in the chat.
+@@@Text Functional Component@@@
+
+Voice message player bubble:
+This container displays a voice message waveform and duration, likely acting as a clickable item to play or pause the audio message.
+@@@View Function Component@@@
+
+Home indicator bar:
+This is the standard iOS home indicator bar at the bottom of the screen, used for navigating back to the home screen.
+@@@View Function Component@@@
+
+Chat message text bubble:
+This is a text container displaying a chat message sent by a user, containing multi-line text and emojis.
+@@@Text Functional Component@@@

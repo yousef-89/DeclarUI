@@ -1,0 +1,186 @@
+Designers label:
+This is a text label displaying the search history item "Designers", indicating a previously searched term or category that users can click to execute the search again.
+@@@Text Functional Component@@@
+
+Close/Delete icon:
+This appears to be a button that allows users to delete or remove a specific search history item from their recent searches list.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard letter 'S' key:
+This is a key on the virtual keyboard representing the letter 'S', allowing users to input this character into the search text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard letter 'F' key:
+This is a key on the virtual keyboard representing the letter 'F', allowing users to input this character into the search text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard letter 'H' key:
+This is a key on the virtual keyboard representing the letter 'H', allowing users to input this character into the search text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Signal strength icon:
+This status bar icon displays the current cellular network signal strength, providing visual feedback on network connectivity.
+@@@Function Component@@@
+
+Keyboard letter 'U' key:
+This is a key on the virtual keyboard representing the letter 'U', allowing users to input this character into the search text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Dasha Taran label:
+This is a text label displaying the search history item "Dasha Taran", representing a previous search query for a person that users can select to repeat the search.
+@@@Text Functional Component@@@
+
+Photos filter button:
+This appears to be a clickable filter chip button that allows users to narrow down search results specifically to photos when selected.
+@@@TouchableOpacity Function Component@@@
+Magnifying glass icon:
+This appears to be a decorative or functional icon associated with search operations, likely used alongside search inputs or list items.
+@@@Function Component@@@
+
+"B" key icon:
+This is a virtual keyboard key labeled with the letter "B", which allows users to input the character when pressed.
+@@@Button@@@
+
+"Recent searches" label:
+This is a text label that indicates the section containing the user's previous search history.
+@@@Text Functional Component@@@
+
+"M" key icon:
+This is a virtual keyboard key labeled with the letter "M", which allows users to input the character when pressed.
+@@@Button@@@
+
+"Chats" filter button:
+This appears to be a selectable button or filter chip that allows users to filter search results specifically by chats.
+@@@TouchableOpacity Function Component@@@
+
+"D" key icon:
+This is a virtual keyboard key labeled with the letter "D", which allows users to input the character when pressed.
+@@@Button@@@
+
+"C" key icon:
+This is a virtual keyboard key labeled with the letter "C", which allows users to input the character when pressed.
+@@@Button@@@
+
+"Clear all" label:
+This is a text label indicating a button or action to clear the entire search history list.
+@@@Text Functional Component@@@
+
+"W" key icon:
+This is a virtual keyboard key labeled with the letter "W", which allows users to input the character when pressed.
+@@@Button@@@
+Battery icon:
+This appears to be a status bar indicator showing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+"Billie Eillish" label:
+This is a text label displaying a recent search term or item name in the list.
+@@@Text Functional Component@@@
+
+"P" key:
+This is a virtual keyboard key that likely allows the user to input the letter 'P' when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Microphone icon:
+This appears to be a button that likely allows users to use voice input or dictation for searching.
+@@@TouchableOpacity Function Component@@@
+
+"J" key:
+This is a virtual keyboard key that likely allows the user to input the letter 'J' when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"Go" button:
+This appears to be a submit or action button on the keyboard that likely triggers the search or navigation action.
+@@@TouchableOpacity Function Component@@@
+
+"L" key:
+This is a virtual keyboard key that likely allows the user to input the letter 'L' when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"X" key:
+This is a virtual keyboard key that likely allows the user to input the letter 'X' when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"123" button:
+This appears to be a keyboard modifier button that likely toggles the keyboard layout to numbers and symbols.
+@@@TouchableOpacity Function Component@@@
+A keycap:
+This appears to be a letter 'A' key on a virtual keyboard, allowing users to type the corresponding character into a text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+T keycap:
+This appears to be a letter 'T' key on a virtual keyboard, allowing users to type the corresponding character into a text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Q keycap:
+This appears to be a letter 'Q' key on a virtual keyboard, allowing users to type the corresponding character into a text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+I keycap:
+This appears to be a letter 'I' key on a virtual keyboard, allowing users to type the corresponding character into a text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Z keycap:
+This appears to be a letter 'Z' key on a virtual keyboard, allowing users to type the corresponding character into a text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Emoji icon:
+This appears to be a button on the virtual keyboard that allows users to open an emoji picker to insert emojis into their text input.
+@@@TouchableOpacity Function Component@@@
+
+Shift icon:
+This appears to be the shift/caps lock key on the virtual keyboard, allowing users to switch between uppercase and lowercase letters when typing.
+@@@TouchableOpacity Function Component@@@
+
+K keycap:
+This appears to be a letter 'K' key on a virtual keyboard, allowing users to type the corresponding character into a text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Backspace icon:
+This appears to be the backspace or delete key on the virtual keyboard, allowing users to remove characters from the text input field one by one.
+@@@TouchableOpacity Function Component@@@
+Wi-Fi icon:
+This appears to be a status bar icon indicating wireless network connectivity and signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Y key:
+This is a keyboard key button that allows users to type the letter "Y" into an active input field.
+@@@TouchableOpacity Function Component@@@
+
+O key:
+This is a keyboard key button that allows users to type the letter "O" into an active input field.
+@@@TouchableOpacity Function Component@@@
+
+R key:
+This is a keyboard key button that allows users to type the letter "R" into an active input field.
+@@@TouchableOpacity Function Component@@@
+
+G key:
+This is a keyboard key button that allows users to type the letter "G" into an active input field.
+@@@TouchableOpacity Function Component@@@
+
+Search placeholder text:
+This is a placeholder text label inside the search input field that prompts users to type what they are looking for.
+@@@Text Functional Component@@@
+
+Space bar:
+This is a keyboard key button that allows users to insert a space character into the active input field.
+@@@TouchableOpacity Function Component@@@
+
+V key:
+This is a keyboard key button that allows users to type the letter "V" into an active input field.
+@@@TouchableOpacity Function Component@@@
+
+N key:
+This is a keyboard key button that allows users to type the letter "N" into an active input field.
+@@@TouchableOpacity Function Component@@@
+Letter "E" key:
+This appears to be a key on the virtual keyboard that allows users to type the letter "E" into the active text input field.
+@@@TouchableOpacity Function Component@@@
+
+"Videos" filter button:
+This appears to be an interactive filter pill button that likely allows users to filter search results or content by videos when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Home indicator bar:
+This is the standard bottom gesture bar interface element used on iOS devices for navigating home or switching apps.
+@@@View Function Component@@@

@@ -1,0 +1,95 @@
+Chat message bubble (incoming text):
+This component displays a text message received from another user within the chat interface.
+@@@View Function Component@@@
+
+Video call icon:
+This appears to be a button that likely allows users to initiate a video call with the participant or group.
+@@@TouchableOpacity Function Component@@@
+
+Chat message content (incoming text):
+This component displays textual information received in a message bubble from another user.
+@@@Text Functional Component@@@
+
+File attachment card (Work and energy):
+This component represents a shared file item containing a document title and a download action button.
+@@@View Function Component@@@
+
+Information icon:
+This appears to be a button that likely allows users to view additional details, settings, or information about the discussion.
+@@@TouchableOpacity Function Component@@@
+
+Chat message bubble (outgoing text):
+This component displays a text message sent by the current user within the chat interface.
+@@@View Function Component@@@
+
+User profile avatar:
+This component displays the profile picture of a chat participant, often indicating their identity or online status.
+@@@Function Component@@@
+
+Shared files and message history block:
+This is a container view grouping multiple chat message bubbles and shared file attachments together.
+@@@View Function Component@@@
+
+User profile avatar:
+This component displays the profile picture of the message sender in the chat.
+@@@Function Component@@@
+Bottom navigation bar:
+This appears to be a container view holding multiple navigation items and icons for switching between different sections of the application like Home, Tasks, Classroom, and Chat.
+@@@View Function Component@@@
+
+Play video icon:
+This is a button containing a play symbol, which likely allows users to play or open attached video content or media files in the chat.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar:
+This component displays a user profile picture, which likely serves as a visual identifier for the participant in the chat thread.
+@@@Function Component@@@
+
+Physics header label:
+This is a text label displaying the current title or topic of the discussion, indicating the subject of the chat room.
+@@@Text Functional Component@@@
+
+Introduction to force file attachment card:
+This appears to be a downloadable document card containing a PDF file icon, file name, and download button, allowing users to view or download shared class resources.
+@@@TouchableOpacity Function Component@@@
+
+Discussion header label:
+This is a text label that indicates the current view or context is a discussion page.
+@@@Text Functional Component@@@
+
+Chat message bubble (Maya):
+This is a message container displaying text sent by another user in the discussion thread, allowing participants to read and exchange messages.
+@@@View Function Component@@@
+
+Forece, Energy & Work file attachment card:
+This appears to be a downloadable presentation file card containing a PPT icon, file name, and download button, allowing users to download shared lecture materials.
+@@@TouchableOpacity Function Component@@@
+
+Work and energy file attachment card:
+This appears to be a downloadable document card containing a file icon, file name, and download button, enabling users to access shared course notes.
+@@@TouchableOpacity Function Component@@@
+Here are the analyses of the provided component images:
+
+Message bubble text ("Here are the resource files..."):
+This is a text label displaying the content of a chat message sent by a user in the discussion thread.
+@@@Text Functional Component@@@
+
+Green message bubble ("Thank you so much Vishal"):
+This is a container view holding outgoing chat text content, styled with a distinct background color to differentiate the user's messages.
+@@@View Function Component@@@
+
+Input bar container ("Type something"):
+This appears to be an input area containing a text prompt and an action button, allowing users to type and send messages or attachments.
+@@@View Function Component@@@
+
+Document icon button:
+This appears to be a clickable button or icon that allows users to attach and send document files within the chat interface.
+@@@TouchableOpacity Function Component@@@
+
+Image/Gallery icon button:
+This appears to be a clickable button or icon that allows users to select and send images or photos from their device gallery.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar:
+This is an image component displaying the profile picture of a participant in the discussion chat.
+@@@Function Component@@@

@@ -1,0 +1,97 @@
+Message icon:
+This appears to be a chat bubble icon with a notification badge, which likely serves as a button to navigate to the user's messages or notifications screen.
+@@@TouchableOpacity Function Component@@@
+
+"狂暑季 MEDMXEVA 联名" (Summer Heat Season MEDMXEVA Collaboration) product details:
+This is a collection of text labels displaying promotional event details, product title, pricing, and discount information for an item.
+@@@Text Functional Component@@@
+
+T-shirt product image:
+This is an image displaying the front design of a graphic t-shirt available for purchase.
+@@@Function Component@@@
+
+Quick navigation shortcuts list:
+This is a horizontal container with multiple app shortcut icons and labels for quick access to different services like travel, subsidies, and food delivery.
+@@@ScrollView@@@
+
+"居家" (Home) tab label:
+This is a text label representing a navigation category, meaning "Home" or "Household", used to filter content streams.
+@@@Text Functional Component@@@
+
+Search bar component:
+This is a search bar containing a scan icon, placeholder/search text "team wang 联名", a camera icon for image search, and a search button.
+@@@View Function Component@@@
+
+"淘宝秒杀" (Taobao Flash Sale) section:
+This is a flash sale section header with a countdown timer and a row of discounted daily products with their respective prices.
+@@@View Function Component@@@
+
+"推荐" (Recommended) tab label:
+This is a text label indicating the currently selected "Recommended" category feed tab, highlighted with an underline indicator.
+@@@Text Functional Component@@@
+
+"数码" (Digital) tab label:
+This is a text label representing a category tab for digital and electronic products in the navigation bar.
+@@@Text Functional Component@@@
+Camera icon:
+This appears to be a button with a camera icon inside the search bar, which likely allows users to take or upload a photo to perform a visual search or scan QR codes.
+@@@TouchableOpacity Function Component@@@
+
+White rectangular card placeholder:
+This is a container view component displaying a product image or card placeholder, used to structure product listings in the grid.
+@@@View Function Component@@@
+
+"穿搭" (Outfit) label:
+This is a text label representing a navigation category, translating to "Outfit" or "Styling", which users can tap to view related fashion content.
+@@@Text Functional Component@@@
+
+Taobao Live streaming section:
+This is a section header and content container displaying live streaming channels, featuring streamer profiles and promotional tags for users to click and watch live broadcasts.
+@@@View Function Component@@@
+
+Play icon and "逛逛" (Explore) label:
+This is a navigation button combining an icon and text ("Explore"), which likely takes users to a short video or discovery feed.
+@@@TouchableOpacity Function Component@@@
+
+Black T-shirt product image:
+This is an image component displaying a graphic T-shirt product, serving as a visual preview in the shopping feed.
+@@@Function Component@@@
+
+White long-sleeve graphic sweatshirt:
+This is an image component showcasing a white long-sleeve sweatshirt with an anime-style graphic, used as a product display banner or item card.
+@@@Function Component@@@
+
+"狂暑季" (Summer Heat Season) label:
+This is a promotional text label translating to "Summer Heat Season", highlighting a seasonal sales campaign or special event.
+@@@Text Functional Component@@@
+
+"关注" (Following) label:
+This is a text label translating to "Following", representing a tab where users can view content from creators or stores they follow.
+@@@Text Functional Component@@@
+Purple banner button:
+This appears to be a promotional banner button with text "潮流男装 热卖好店上新" (Trendy men's clothing, hot-selling stores new arrivals) and a right arrow icon, which likely navigates the user to a new collection or promotional page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+White sweatshirt product image:
+This is an image of a white long-sleeve sweatshirt with an anime-style graphic print, serving as a product display card image in an e-commerce feed.
+@@@Function Component@@@
+
+Product title and price section:
+This container displays product details including the title "明日香 EVA 动漫水洗做" (Asuka EVA anime washed style) and pricing information "¥536 87人付款" (¥536, 87 people paid), providing key purchasing information to users.
+@@@View Function Component@@@
+
+"小时达" (Hourly Delivery) text label:
+This is a text label indicating a specific shopping category or delivery speed service called "小时达" (Hourly Delivery), helping users filter or identify fast-delivery products.
+@@@Text Functional Component@@@
+
+Product promotional card image:
+This is an image card displaying a product (slippers) with a colorful brand text overlay "zettaranc", likely used as a clickable promotional item in the shopping feed.
+@@@Function Component@@@
+
+Taobao logo icon:
+This is a circular icon featuring the Taobao logo, likely serving as a branding element or a home tab button at the bottom navigation bar.
+@@@Function Component@@@
+
+Product promotional card with masked area:
+This is a product card image showing a footwear item against a store background with colorful text "zettaranc" at the top, acting as a visual element for the item listing.
+@@@Function Component@@@

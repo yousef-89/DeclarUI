@@ -1,0 +1,93 @@
+Alex Jesus / Google Meet info:
+This is a container view grouping the instructor's profile information and meeting platform details for the scheduled class event.
+@@@View Function Component@@@
+
+Physics class card:
+This is a card container that displays information about a scheduled class including its title, chapter, instructor, meeting platform, and visual icon.
+@@@View Function Component@@@
+
+Mon 14 label:
+This is a text label displaying the day of the week and date in a calendar strip.
+@@@Text Functional Component@@@
+
+13:00 time label:
+This is a text label displaying a specific time in the schedule timeline.
+@@@Text Functional Component@@@
+
+Bottom navigation bar:
+This is a container view holding navigation tabs (Home, Tasks, Classroom, Chat) for switching between main app sections.
+@@@View Function Component@@@
+
+Today header text:
+This is a text label displaying the current date and title for the schedule view.
+@@@Text Functional Component@@@
+
+Fri 18 label:
+This is a text label displaying the day of the week and date for a future calendar day.
+@@@Text Functional Component@@@
+
+Assignment label:
+This is a text label displaying the title of a task or assignment card.
+@@@Text Functional Component@@@
+
+Geography details:
+This is a container view grouping class title, chapter, and meeting details for the geography schedule item.
+@@@View Function Component@@@
+Sat 19 date label:
+This appears to be a text label indicating the day of the week and date, helping users view calendar schedules.
+@@@Text Functional Component@@@
+
+11:00 time label:
+This appears to be a text label showing a scheduled time block for daily events.
+@@@Text Functional Component@@@
+
+Tue 15 date label:
+This appears to be a text label displaying a specific day and date within the horizontal calendar view.
+@@@Text Functional Component@@@
+
+Thu 17 active date label:
+This appears to be a text label showing the currently selected date with a highlight indicator.
+@@@Text Functional Component@@@
+
+11:50 end time label:
+This appears to be a text label indicating the end time of a scheduled time slot.
+@@@Text Functional Component@@@
+
+Sun 20 date label:
+This appears to be a text label indicating a calendar date at the end of the weekly view.
+@@@Text Functional Component@@@
+
+Assignment card view:
+This appears to be a container view that holds details about a specific task or assignment, including title, description, and related user or app icons.
+@@@View Function Component@@@
+
+User profile and document icons:
+These appear to be small functional image components representing the author or associated service for the task item.
+@@@Function Component@@@
+
+Clipboard icon:
+This appears to be an icon button or interactive element for navigating to the tasks or clipboard management section.
+@@@TouchableOpacity Function Component@@@
+
+Wed 16 date label:
+This appears to be a text label displaying Wednesday's date within the horizontal date picker.
+@@@Text Functional Component@@@
+Geography card container:
+This appears to be a container card displaying details for a geography class, including the chapter name, instructor, and meeting platform.
+@@@View Function Component@@@
+
+10:20 timestamp:
+This is a text label displaying the end time of the scheduled session.
+@@@Text Functional Component@@@
+
+9:30 timestamp:
+This is a text label displaying the start time of the scheduled session.
+@@@Text Functional Component@@@
+
+12:20 timestamp:
+This is a text label displaying the start time of an assignment or session.
+@@@Text Functional Component@@@
+
+Add Task button:
+This appears to be an interactive button that likely allows users to add a new task or event to their schedule.
+@@@TouchableOpacity Function Component@@@

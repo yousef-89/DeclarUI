@@ -1,0 +1,81 @@
+Battery status icon:
+This appears to be a status bar icon representing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+"Custom notifications" label:
+This is a text label that displays the option name, indicating that users can configure individual notification settings for this contact.
+@@@Text Functional Component@@@
+
+"Media" label:
+This is a text label acting as a tab title to display shared media files with the contact.
+@@@Text Functional Component@@@
+
+"Mobile" label:
+This is a text label that describes the phone number type, indicating the contact's phone category.
+@@@Text Functional Component@@@
+
+"June 24, 2020" label:
+This is a text label that displays the date when the user's status or bio was updated.
+@@@Text Functional Component@@@
+
+"Groups" label:
+This is a text label acting as a tab title to display mutual groups shared with the contact.
+@@@Text Functional Component@@@
+
+"+62 009 1212 3131" label:
+This is a text label displaying the contact's phone number.
+@@@Text Functional Component@@@
+
+"UI Design enthusiast" label:
+This is a text label displaying the user's bio description or personal quote.
+@@@Text Functional Component@@@
+
+Green toggle switch:
+This is a switch component that allows users to enable or disable mute notifications for the contact.
+@@@Switch@@@
+Wifi signal icon:
+This appears to be an icon displaying the current Wi-Fi network signal strength in the device status bar.
+@@@StatusBar Android and iOS Component@@@
+
+Header profile and navigation section:
+This is a container view grouping the back navigation button, user avatar, and contact name in the header.
+@@@View Function Component@@@
+
+User avatar initials "AB" icon:
+This is a circular profile picture placeholder displaying the user's initials, which can also function as a button to view the full profile image.
+@@@Function Component@@@
+
+"Links" tab label:
+This is a text label indicating the "Links" section within the media tabs navigation bar.
+@@@Text Functional Component@@@
+
+Media grid item container:
+This is a placeholder view representing an individual grid cell for media items like photos or videos.
+@@@View Function Component@@@
+
+"Antonio Banderas" name label:
+This is a text label displaying the contact's full name.
+@@@Text Functional Component@@@
+
+Phone call icon:
+This appears to be a button that likely allows users to initiate an audio phone call to the contact.
+@@@TouchableOpacity Function Component@@@
+
+"Documents" tab label:
+This is a text label indicating the "Documents" section within the media tabs navigation bar.
+@@@Text Functional Component@@@
+
+Cellular signal bars icon:
+This appears to be an icon displaying the mobile network signal strength in the device status bar.
+@@@StatusBar Android and iOS Component@@@
+Bio and phone number label:
+This is a text label that serves as a section header, indicating that the following details display the user's biography and phone number.
+@@@Text Functional Component@@@
+
+Grey square container:
+This appears to be a container view used to organize and hold media grid items or layout content within the profile screen.
+@@@View Function Component@@@
+
+9:41 time label:
+This is a status bar time indicator displaying the current device time in the top-left corner.
+@@@Text Functional Component@@@

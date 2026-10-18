@@ -1,0 +1,89 @@
+SUN day button:
+This appears to be a clickable button or tab representing Sunday in a weekly forecast selector, allowing users to view the hourly weather forecast for that specific day.
+@@@TouchableOpacity Function Component@@@
+
+Header bar with location and settings:
+This is a container view holding the top navigation elements, including a menu icon, location text, lock screen status, and a location pin icon.
+@@@View Function Component@@@
+
+0% rain/precipitation probability label:
+This text label displays the percentage probability of precipitation (rain or snow) for a specific time slot in the weather forecast.
+@@@Text Functional Component@@@
+
+THU day button:
+This appears to be a clickable button or tab representing Thursday in a weekly forecast selector, enabling users to switch the hourly weather forecast view to Thursday.
+@@@TouchableOpacity Function Component@@@
+
+Chance of rain and chance of snow legend labels:
+These text labels describe the weather legend icons for chance of rain and chance of snow, helping users interpret the precipitation percentage indicators below the forecast icons.
+@@@Text Functional Component@@@
+
+FRI day button:
+This appears to be a clickable button or tab representing Friday in a weekly forecast selector, allowing users to view the hourly weather forecast for Friday.
+@@@TouchableOpacity Function Component@@@
+
+27° temperature label:
+This text label displays the forecasted temperature value in degrees for a specific hourly or daily interval.
+@@@Text Functional Component@@@
+
+SAT day button:
+This appears to be a clickable button or tab representing Saturday in a weekly forecast selector, allowing users to view the hourly weather forecast for Saturday.
+@@@TouchableOpacity Function Component@@@
+
+27° temperature label (second instance):
+This text label displays another forecasted temperature value in degrees for a subsequent hourly or daily interval in the weather chart.
+@@@Text Functional Component@@@
+24 hours next weather forecast section:
+This container view holds the hourly weather forecast items, including times, weather icons, and precipitation chances for the upcoming 24 hours in a horizontal layout.
+@@@View Function Component@@@
+
+MON day selector button:
+This appears to be a touchable button representing Monday, likely used to switch the forecast view to show hourly details for that specific day when pressed.
+@@@TouchableOpacity Function Component@@@
+
+0% precipitation chance label:
+This text label indicates the probability of precipitation (0%) for a specific hour or timeframe.
+@@@Text Functional Component@@@
+
+WED day selector button:
+This appears to be a touchable button representing Wednesday, allowing users to select and view the weather forecast for Wednesday when tapped.
+@@@TouchableOpacity Function Component@@@
+
+31° temperature label:
+This text label displays a specific forecasted temperature value in degrees.
+@@@Text Functional Component@@@
+
+0% rain chance label:
+This text label shows the percentage chance of rain for a specific time period.
+@@@Text Functional Component@@@
+
+more details link:
+This text label acts as a clickable link that likely opens an expanded view with more comprehensive weather information and statistics.
+@@@Text Functional Component@@@
+
+29° temperature label:
+This text label indicates a forecasted temperature value of 29 degrees.
+@@@Text Functional Component@@@
+
+0% precipitation probability label:
+This text label displays the percentage chance of precipitation for a given time slot.
+@@@Text Functional Component@@@
+"TUE" button:
+This appears to be a clickable day-of-the-week tab that likely allows users to select Tuesday to view its specific hourly weather forecast.
+@@@TouchableOpacity Function Component@@@
+
+"31°" temperature label:
+This is a text label displaying the predicted high temperature for a specific day in the forecast.
+@@@Text Functional Component@@@
+
+Current weather card view:
+This is a container view that groups together current weather details, including date, time, current temperature, weather condition icon, and min/max temperatures.
+@@@View Function Component@@@
+
+"28°" temperature label:
+This is a text label displaying the forecasted temperature value for a specific time or day.
+@@@Text Functional Component@@@
+
+"Touch a day to see forecast by hourly" label:
+This is a instructional text label that informs users they can tap on any day in the weekly forecast row to view the hourly breakdown.
+@@@Text Functional Component@@@

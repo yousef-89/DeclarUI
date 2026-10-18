@@ -1,0 +1,182 @@
+"周边常去加油站" (Nearby frequently visited gas stations) label:
+This is a text label indicating a filter or category option for viewing nearby gas stations that the user frequently visits.
+@@@Text Functional Component@@@
+
+"高德车服" (AutoNavi Car Services) label:
+This is a text label displaying the brand or service name related to vehicle services in the app.
+@@@Text Functional Component@@@
+
+"立即加油" (Refuel now) button:
+This appears to be a clickable button that allows users to immediately start the refueling process or navigate to the refueling details page for a specific gas station.
+@@@TouchableOpacity Function Component@@@
+
+"加油" (Refuel) label:
+This is a text label indicating the refueling service or section.
+@@@Text Functional Component@@@
+
+"天享‘油’惠 随时回本，单单省！" (Enjoy daily fuel discounts, get your money back anytime, save on every single order!) banner and button container:
+This is a container view grouping promotional text and a check button to highlight fuel discount offers.
+@@@View Function Component@@@
+
+"高德车服" (AutoNavi Car Services) brand header label:
+This is a text label displaying the title/brand name for the car service section.
+@@@Text Functional Component@@@
+
+Pricing and discount details container:
+This is a container view that displays current fuel pricing, discount information, and a refuel action button for a specific gas station.
+@@@View Function Component@@@
+
+"7.1公里 芝罘区幸福街道幸福中路121号" (7.1 km, No. 121, Xingfu Middle Road, Xingfu Subdistrict, Zhifu District) location and distance label:
+This is a text label displaying the distance to the gas station and its detailed address.
+@@@Text Functional Component@@@
+
+"油站价¥7.87/L" (Gas station price ¥7.87/L) label:
+This is a text label displaying the original gas station fuel price per liter, usually shown with a strikethrough to highlight savings.
+@@@Text Functional Component@@@
+"3km 最便宜" (3km Cheapest) tag:
+This is a text label displaying geographical and pricing information, indicating that the gas station is the cheapest within a 3-kilometer radius.
+@@@Text Functional Component@@@
+
+"立即加油" (Refuel Now) button:
+This appears to be an interactive button that allows users to quickly proceed with selecting and paying for fuel at the specified gas station.
+@@@TouchableOpacity Function Component@@@
+
+"有卫生间" (Restroom Available) tag:
+This is a text label indicating that the gas station provides restroom facilities for customers.
+@@@Text Functional Component@@@
+
+"领" (Claim) icon/badge:
+This appears to be a badge or button indicating that users can claim a coupon or discount related to fuel services.
+@@@TouchableOpacity Function Component@@@
+
+"1.4 公里 芝罘区二马路东首" (1.4 km, East end of Ermalu, Zhifu District) description:
+This is a text label showing the distance and detailed address of the gas station to help users locate it easily.
+@@@Text Functional Component@@@
+
+"新人立减" (New User Instant Discount) tag:
+This is a text label indicating a special discount available for new users on their first transaction.
+@@@Text Functional Component@@@
+
+"油惠卡" (Fuel Discount Card) label:
+This is a text label describing a promotional card or feature related to fuel savings and discounts.
+@@@Text Functional Component@@@
+
+"硬核补贴钜给利 送您一份新" (Hardcore Subsidy Massive Benefits Giving You a New...) banner text:
+This is a promotional text banner highlighting special platform subsidies and offers for users.
+@@@Text Functional Component@@@
+
+"高德红包" (Amap Red Packet) tag:
+This is a text label or badge indicating that a platform-specific promotional red packet or cash coupon is applicable.
+@@@Text Functional Component@@@
+Gas station thumbnail image with a promotional tag:
+This appears to be an image component displaying a photo of a gas station along with a promotional badge overlay ("优惠加油" meaning "Discount Refueling").
+@@@Function Component@@@
+
+"加200省8" (Save 8 when spending 200) tag:
+This is a text label displaying a promotional discount offer, indicating that users can save a specific amount when refueling above a certain threshold.
+@@@Text Functional Component@@@
+
+"推荐排序" (Recommended Sorting) label:
+This is a text label indicating the current sorting option for the gas station list, allowing users to view recommendations.
+@@@Text Functional Component@@@
+
+"全部品牌" (All Brands) label:
+This is a text label used as a filter option to show gas stations from all available brands.
+@@@Text Functional Component@@@
+
+"新人专享" (Newcomer Exclusive) icon and label:
+This is a combination of an icon and text representing a special section or offer exclusively for new users.
+@@@Function Component@@@
+
+"加油" (Refueling) label:
+This is a text label indicating the refueling service category or action.
+@@@Text Functional Component@@@
+
+"1.2公里" (1.2 km) label:
+This is a text label showing the distance from the user's current location to the gas station.
+@@@Text Functional Component@@@
+
+Gas station thumbnail image with a promotional tag (duplicate):
+This appears to be an image component displaying a photo of a gas station along with a promotional badge overlay ("优惠加油" meaning "Discount Refueling").
+@@@Function Component@@@
+
+"供销石油加油站" (Supply and Marketing Petroleum Gas Station) label:
+This is a text label displaying the specific name and brand of the gas station.
+@@@Text Functional Component@@@
+Price and unit display ("¥7.56/L"):
+This is a text label displaying the promotional fuel price and unit (7.56 Yuan per Liter).
+@@@Text Functional Component@@@
+
+"分享油礼" (Share Oil Gift) icon and label:
+This appears to be a clickable feature item combining an icon and a text label, likely allowing users to share refueling promotions or referral rewards with friends.
+@@@TouchableOpacity Function Component@@@
+
+"优惠加油" (Discount Refueling) badge:
+This is an image/graphic badge overlay indicating that the gas station offers special discounts for refueling.
+@@@Function Component@@@
+
+"立即" (Immediately / Now) text fragment:
+This is a text label part of a call-to-action button, indicating actions such as "refuel now" or "claim immediately".
+@@@Text Functional Component@@@
+
+"优惠加油" (Discount Refueling) station image card overlay:
+This image snippet shows a promotional badge overlaid on a gas station photo, indicating discount eligibility.
+@@@Function Component@@@
+
+"烟台交运石油二马路金沟寨加油站" (Yantai Jiaoyun Petroleum Ermalu Jingouzhai Gas Station) label:
+This is a text label displaying the specific name of a gas station in the listing.
+@@@Text Functional Component@@@
+
+"巨划算" (Super Great Value) label:
+This is a text label highlighting a high-value or deeply discounted deal.
+@@@Text Functional Component@@@
+
+"调价补贴" (Price Adjustment Subsidy) label:
+This is a text label indicating a subsidy feature related to fuel price adjustments.
+@@@Text Functional Component@@@
+
+"中化石油安顺加油站(安顺站)" (Sinochem Petroleum Anshun Gas Station) label:
+This is a text label showing the full name of the specific Sinochem gas station branch.
+@@@Text Functional Component@@@
+"附近特惠油站" (Nearby Special Offer Gas Station) label:
+This is a text label that displays filter criteria for nearby discount gas stations, helping users quickly find and select promotional refueling locations.
+@@@Text Functional Component@@@
+
+"92#" label:
+This is a text label indicating the fuel grade (92 octane gasoline) used for filtering or displaying available fuel types at gas stations.
+@@@Text Functional Component@@@
+
+"点込主, 圳归大述加油子1儿念" label:
+This is a truncated promotional or service description text label providing additional details about gas station offers or services.
+@@@Text Functional Component@@@
+
+"领券中心" (Coupon Center) label:
+This is a text label indicating the "Coupon Center" section, where users can view and claim available discount vouchers.
+@@@Text Functional Component@@@
+
+"1.2公里 芝罘区二马路3号2单元内四号东山名..." (1.2 km, No. 3 Erma Road, Zhifu District...) label:
+This is a text label displaying the distance and detailed address of a specific gas station to help users locate it.
+@@@Text Functional Component@@@
+
+Gas station image with "优惠加油" (Discount Refueling) badge:
+This is an image component displaying a photo of a gas station along with a promotional badge overlay, representing a specific gas station option in a list.
+@@@Function Component@@@
+
+"满200减8" (Save 8 when spending 200 or more) label:
+This is a text label indicating a promotional discount offer where users get a specific amount off when reaching a minimum spending threshold.
+@@@Text Functional Component@@@
+
+"站超多" (Super many stations) label:
+This is a text label highlighting the large number of available gas stations included in the service or promotion.
+@@@Text Functional Component@@@
+
+Gas station image with "优惠加油" (Discount Refueling) badge:
+This is an image component displaying a photo of a gas station with a promotional overlay, used to visually represent a gas station in the directory or search results.
+@@@Function Component@@@
+"优惠加油" (Discount Refueling) tag image overlay:
+This is an image/icon element combined with text that highlights a special discount or promotional offer available at the gas station.
+@@@Function Component@@@
+
+"弘隆石油加油站" (Honglong Petroleum Gas Station) label:
+This is a text label displaying the name of the gas station ("Honglong Petroleum Gas Station"), providing key location information to the user.
+@@@Text Functional Component@@@

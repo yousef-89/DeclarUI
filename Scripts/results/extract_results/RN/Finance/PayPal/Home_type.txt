@@ -1,0 +1,66 @@
+PayPal Balance summary section:
+This is a container displaying the user's current account balance. It acts as a header summary for the wallet.
+@@@View Function Component@@@
+
+Referral card:
+This is a promotional card that explains a referral program. It includes a text description and an icon, likely acting as a container for information.
+@@@View Function Component@@@
+
+"Request" button:
+This is a call-to-action button that allows the user to initiate a request for money from other people.
+@@@TouchableOpacity Function Component@@@
+
+"Crypto" navigation item:
+This is a navigation icon and label that likely directs the user to the cryptocurrency trading or management section of the app.
+@@@TouchableOpacity Function Component@@@
+
+"ZF" contact/avatar circle:
+This appears to be a shortcut button representing a recent contact, allowing the user to quickly initiate a payment or message to this specific person.
+@@@TouchableOpacity Function Component@@@
+
+"Send money internationally" label:
+This is a section header providing information about the international money transfer service available in the app.
+@@@Text Functional Component@@@
+
+"Wallet" navigation item:
+This is a navigation icon and label that directs the user to their main wallet or account management dashboard.
+@@@TouchableOpacity Function Component@@@
+
+"Search" contact/action circle:
+This is a shortcut button that likely opens a search interface to find other contacts or perform a broad search within the app.
+@@@TouchableOpacity Function Component@@@
+
+"Home" navigation item:
+This is a navigation icon and label, typically used to return the user to the main dashboard of the application.
+@@@TouchableOpacity Function Component@@@
+User profile icon:
+This is a button that likely allows the user to access their account settings, profile information, or manage their personal details.
+@@@TouchableOpacity Function Component@@@
+
+Menu icon:
+This is a button that likely opens a side navigation drawer or menu to display further application options.
+@@@TouchableOpacity Function Component@@@
+
+PayPal balance card:
+This component displays the user's current account balance and acts as a container for payment information.
+@@@View Function Component@@@
+
+"Payments" label and icon:
+This represents a navigation tab for the payment section, allowing users to view transaction history or initiate transfers.
+@@@Text Functional Component@@@
+
+"ZF" circular button:
+This is a quick-action button, likely representing a frequent contact or a recent transaction recipient for fast money transfers.
+@@@TouchableOpacity Function Component@@@
+
+"Send" button:
+This is a call-to-action button used to initiate the money transfer process.
+@@@TouchableOpacity Function Component@@@
+
+QR code / Scan icon:
+This button likely opens the device camera to scan QR codes for payments or quick account adding.
+@@@TouchableOpacity Function Component@@@
+
+Question mark icon:
+This is a button that likely opens the Help or Support section to assist the user with app functionality.
+@@@TouchableOpacity Function Component@@@

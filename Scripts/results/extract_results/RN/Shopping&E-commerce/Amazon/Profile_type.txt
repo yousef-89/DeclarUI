@@ -1,0 +1,105 @@
+"Your Orders" button:
+This appears to be a button that likely allows users to navigate to their order history page to view past purchases and track deliveries.
+@@@TouchableOpacity Function Component@@@
+
+Header bar:
+This appears to be a container view holding the app logo, notification icon, and search icon for navigation and quick actions.
+@@@View Function Component@@@
+
+Bubble wrap product card:
+This appears to be a selectable list item or card component displaying an ordered product image for quick reordering or viewing details.
+@@@flatlist-simple@@@
+
+"Your Lists" button:
+This appears to be a button that likely allows users to navigate to their saved wishlists or shopping lists.
+@@@TouchableOpacity Function Component@@@
+
+UK flag icon:
+This appears to be an image component representing the United Kingdom flag, likely used as an indicator for the current region or language setting.
+@@@Function Component@@@
+
+Water bottles product card:
+This appears to be a product item card in a list displaying recently bought items for easy reordering.
+@@@flatlist-simple@@@
+
+Travel pillow product card:
+This appears to be a product image card within an order history list, showing the purchased item for easy reference.
+@@@Function Component@@@
+
+Empty product placeholder card:
+This appears to be an empty or placeholder card view in a horizontally scrolling list for recent orders.
+@@@View Function Component@@@
+
+Product container card:
+This appears to be a container view for displaying a product item card within a horizontal scroll list.
+@@@View Function Component@@@
+"Your Account" button:
+This appears to be a clickable button that takes the user to their account settings and details page.
+@@@TouchableOpacity Function Component@@@
+
+"See all" link:
+This is a text label acting as a link that allows users to view all items or details within the corresponding section.
+@@@Text Functional Component@@@
+
+User profile icon:
+This appears to be an image component representing the user's avatar or profile picture placeholder.
+@@@Function Component@@@
+
+Water bottles product image:
+This is an image component displaying a preview of a product item available for purchase.
+@@@Function Component@@@
+
+Shopping cart icon:
+This appears to be a button with a badge showing the number of items in the cart, allowing users to navigate to their shopping cart.
+@@@TouchableOpacity Function Component@@@
+
+Disposable gloves product image:
+This is an image component showing a preview of a product item in the user's order or recommendation history.
+@@@Function Component@@@
+
+"See all" link:
+This is a text label acting as a link that allows users to view all items or details within the corresponding section.
+@@@Text Functional Component@@@
+
+"See all" link:
+This is a text label acting as a link that allows users to view all items or details within the corresponding section.
+@@@Text Functional Component@@@
+
+Home icon:
+This appears to be a navigation button allowing users to return to the home screen of the application.
+@@@TouchableOpacity Function Component@@@
+
+Bubble wrap product image:
+This is an image component displaying a preview of a product item in the user's order history.
+@@@Function Component@@@
+"EN" label:
+This is a text label indicating the current language setting (English) for the app interface.
+@@@Text Functional Component@@@
+
+"Buy Again" button:
+This appears to be a touchable button that allows users to quickly view and reorder previously purchased items.
+@@@TouchableOpacity Function Component@@@
+
+Shopping cart icon:
+This is an interactive icon that displays the number of items currently in the user's shopping cart and allows them to navigate to the cart screen when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Product image (Andrex Supreme Quilts):
+This image displays a product package for a toilet paper brand, likely serving as a visual preview for reordering or viewing product details.
+@@@Function Component@@@
+
+"Buy again" label:
+This is a text label serving as a section header for the frequently repurchased items list.
+@@@Text Functional Component@@@
+
+Profile icon:
+This icon represents the user profile section, typically used as a button to navigate to account settings or personal information.
+@@@TouchableOpacity Function Component@@@
+
+"Hello, ml296" label:
+This is a text label greeting the logged-in user by their username or display name.
+@@@Text Functional Component@@@
+
+"Your Orders" label:
+This is a text label indicating the section or button functionality for viewing past and current orders.
+@@@Text Functional Component@@@

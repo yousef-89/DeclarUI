@@ -1,0 +1,108 @@
+Storage usage status bar and text info:
+This appears to be a graphical progress bar and text summary showing the current device storage usage (e.g., 85 GB of 128 GB used, 66%).
+@@@View Function Component@@@
+
+Storage label:
+This is a text label indicating the storage section or category being measured.
+@@@Text Functional Component@@@
+
+File size label:
+This text label displays the specific file size (2 MB) associated with a listed item.
+@@@Text Functional Component@@@
+
+Clean Junk files label:
+This text label describes the option or feature to clear junk files from the device.
+@@@Text Functional Component@@@
+
+Review files header:
+This text label indicates the section heading and total size for reviewing stored files.
+@@@Text Functional Component@@@
+
+Cloud icon and label:
+This is a combination of an icon and text representing cloud storage functionality or navigation.
+@@@View Function Component@@@
+
+Facebook card component:
+This component displays app information including the icon, name, and storage size of Facebook within the unused apps section.
+@@@View Function Component@@@
+
+Files icon and label:
+This component represents the files section or tab, featuring a folder icon and corresponding text label.
+@@@View Function Component@@@
+
+Unused Apps header:
+This text label serves as the section header for the list of unused applications on the device.
+@@@Text Functional Component@@@
+"See All" label:
+This is a text label that indicates users can tap to view all items in the corresponding section, such as all unused apps.
+@@@Text Functional Component@@@
+
+"(1.2 GB)" label:
+This is a text label showing the storage size of a specific group of items, providing details on how much space they occupy.
+@@@Text Functional Component@@@
+
+Waze app card component:
+This appears to be a card container holding an app icon, app name, and its storage size, which likely functions as a clickable button to select or view details about the unused app.
+@@@TouchableOpacity Function Component@@@
+
+"Home" tab icon and label:
+This appears to be a navigation button representing the home screen, allowing users to switch to the main dashboard view when tapped.
+@@@TouchableOpacity Function Component@@@
+
+File list icon:
+This is an image icon representing document or file content, typically used alongside file lists to visually indicate the file type.
+@@@Function Component@@@
+
+"RKAKL2022.xlsx" label:
+This is a text label displaying the filename and extension of a duplicate file found on the device.
+@@@Text Functional Component@@@
+
+"Clean" tab icon and label:
+This appears to be a navigation button representing the cleaning section, allowing users to navigate to the cleanup tools view when tapped.
+@@@TouchableOpacity Function Component@@@
+
+LinkedIn and Adobe app cards container:
+This appears to be a container holding multiple unused app cards, displaying app icons, names, and their respective storage sizes.
+@@@View Function Component@@@
+
+"66%" label:
+This is a text label displaying the percentage of used storage on the device, providing a quick summary of current device capacity.
+@@@Text Functional Component@@@
+9:41 time text:
+This is a text display showing the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Adobe app card:
+This is a container card representing an unused app, showing its icon, name, and storage size, likely allowing users to select or manage the app.
+@@@View Function Component@@@
+
+Progress bar:
+This is a graphical progress indicator representing the storage usage percentage relative to total capacity.
+@@@View Function Component@@@
+
+Review files icon:
+This is an icon graphic representing document review or file inspection functionality.
+@@@Function Component@@@
+
+LinkedIn app card:
+This is a container card displaying the LinkedIn app icon, name, and consumed storage size within the unused apps list.
+@@@View Function Component@@@
+
+"Used" label:
+This is a text label indicating the current storage usage metric.
+@@@Text Functional Component@@@
+
+"See All" label:
+This is a text label acting as a button or link to view all items in the corresponding section.
+@@@Text Functional Component@@@
+
+"Cleaner" title text:
+This is a header title text indicating the current screen or app name, "Cleaner".
+@@@Text Functional Component@@@
+
+"DSC2021084133.jpg" file label:
+This is a text label displaying the filename of a duplicate image file found during the scan.
+@@@Text Functional Component@@@
+Waze app card item:
+This appears to be a container view holding an app icon, app name, and storage size, likely acting as a touchable item to select or manage the unused app.
+@@@View Function Component@@@

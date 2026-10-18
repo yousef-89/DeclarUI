@@ -1,0 +1,46 @@
+"Payments" icon and label:
+This is a navigation button in the bottom tab bar, likely allowing the user to access payment-related features.
+@@@TouchableOpacity Function Component@@@
+
+"Wallet" icon and label:
+This is a navigation button in the bottom tab bar that allows the user to view their account balance and personal asset holdings.
+@@@TouchableOpacity Function Component@@@
+
+"Crypto" icon and label:
+This is a navigation button in the bottom tab bar that leads the user to the cryptocurrency dashboard, which is the current view.
+@@@TouchableOpacity Function Component@@@
+
+Bitcoin row:
+This is an interactive list item representing Bitcoin, displaying its name and current market price. It likely opens a detailed view for trading when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"买卖并持有加密货币" (Buy, Sell and Hold Cryptocurrencies) label:
+This is a header text providing a title for the section listing available cryptocurrencies.
+@@@Text Functional Component@@@
+
+"Crypto" screen title:
+This is a header text displaying the title of the current screen.
+@@@Text Functional Component@@@
+
+Ethereum row:
+This is an interactive list item representing Ethereum, displaying its name and current market price. It is structured similarly to the other crypto asset rows.
+@@@TouchableOpacity Function Component@@@
+
+Bitcoin Cash row:
+This is an interactive list item representing Bitcoin Cash, displaying its name and current market price.
+@@@TouchableOpacity Function Component@@@
+
+"Home" icon and label:
+This is a navigation button in the bottom tab bar, likely taking the user back to the main dashboard or landing page of the application.
+@@@TouchableOpacity Function Component@@@
+Bitcoin Cash item:
+This is a list item container representing a specific cryptocurrency asset. It likely encapsulates the logo, name, and current market price within a touchable area to navigate to the asset's detail page.
+@@@View Function Component@@@
+
+Information banner:
+This is a container displaying a warning or notification message to the user regarding the status of the crypto purchasing service. It typically contains an icon and explanatory text.
+@@@View Function Component@@@
+
+Litecoin item:
+This is a list item container representing the Litecoin asset. It follows the same structural pattern as the other crypto list items, displaying the asset's brand identity and price data.
+@@@View Function Component@@@

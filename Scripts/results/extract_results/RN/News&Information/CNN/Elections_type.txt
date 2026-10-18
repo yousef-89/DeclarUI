@@ -1,0 +1,54 @@
+News header image:
+This appears to be an image displaying a photo related to the news article about the Trump assassination attempt.
+@@@Function Component@@@
+
+Gunman title text:
+This is a text label that displays the headline of a news article regarding the gunman's distance from Trump and CNN's analysis.
+@@@Text Functional Component@@@
+
+Shoes quote title text:
+This is a text label presenting a quote from the article about what was said on stage after the shooting.
+@@@Text Functional Component@@@
+
+Elections header text:
+This is a text label showing the title of the current tab or section, which is "Elections".
+@@@Text Functional Component@@@
+
+VIDEO label text:
+This is a text label indicating that the accompanying article or section contains video content.
+@@@Text Functional Component@@@
+
+Bottom navigation bar:
+This is a container view holding the bottom navigation tabs, including icons and labels for Home, Elections, Watch, and Settings.
+@@@View Function Component@@@
+
+Gun audio title text:
+This is a text label that displays the headline for a news piece containing audio from rally attendees when the gunman was spotted.
+@@@Text Functional Component@@@
+
+Battery icon:
+This appears to be an icon indicating the device's battery status in the status bar.
+@@@StatusBar Android and iOS Component@@@
+
+Gunman title text alternative:
+This is a text label displaying the headline of a news article regarding the gunman's distance from Trump and CNN's analysis.
+@@@Text Functional Component@@@
+SIM card icon:
+This icon appears to represent a memory card or hardware component, possibly used as a decorative icon or indicator within the app layout.
+@@@Function Component@@@
+
+Minute-by-minute text label:
+This is a text label displaying a secondary article headline or sub-item title in a news feed.
+@@@Text Functional Component@@@
+
+5h time label:
+This is a text label indicating the relative time elapsed since the article was published.
+@@@Text Functional Component@@@
+
+Copy/Multi-window icon:
+This appears to be a button or icon that could allow users to copy content or open/switch between multiple windows or views.
+@@@TouchableOpacity Function Component@@@
+
+Main article title text:
+This is a prominent text label displaying the primary headline of the news article.
+@@@Text Functional Component@@@

@@ -1,0 +1,77 @@
+Share label:
+This is a text label indicating that users can tap it to share the selected file via other applications or contacts.
+@@@Text Functional Component@@@
+
+PDF file item container:
+This is a container view representing a single file entry in the list, grouping the file icon, title, date, size, and options button together.
+@@@View Function Component@@@
+
+Rename label:
+This is a text label indicating that users can tap it to rename the selected file.
+@@@Text Functional Component@@@
+
+Clock/Time indicator:
+This appears to be a status bar element showing the current time (9:41) on the device.
+@@@Text Functional Component@@@
+
+PDF file item preview:
+This is a list item representing an individual PDF file entry showing its icon, filename, modification date, file size, and a menu button for more actions.
+@@@flatlist-simple@@@
+
+Search icon:
+This appears to be a button with a magnifying glass icon that likely allows users to search for specific PDF files.
+@@@TouchableOpacity Function Component@@@
+
+File row item:
+This is a list item container representing an individual document entry within the file management list.
+@@@flatlist-simple@@@
+
+Filter/Menu icon:
+This appears to be a button with a list/filter icon that likely opens sorting options, filters, or additional menu actions for managing the files.
+@@@TouchableOpacity Function Component@@@
+
+Share icon:
+This appears to be a share icon that likely allows users to share the selected document with other apps or users.
+@@@Function Component@@@
+Battery icon:
+This appears to be a system status indicator that displays the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+PDF file item (Travel plan_America.pdf):
+This is a list item container that displays PDF file information including title, date, and size, likely part of a scrollable list of managed documents.
+@@@flatlist-simple@@@
+
+Signal bars icon:
+This appears to be a system status indicator that shows the cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+PDF file list item container:
+This is a container view representing a single row in the document list, enclosing the file icon, title, metadata, and options button.
+@@@View Function Component@@@
+
+Trash can icon:
+This is an icon button that likely allows users to delete the selected PDF file when clicked.
+@@@TouchableOpacity Function Component@@@
+
+"Delete" label:
+This is a text label that describes the functionality of the delete button, indicating that clicking it will remove the file.
+@@@Text Functional Component@@@
+
+PDF file list item container:
+This is a container view representing a single row in the document list, enclosing the file icon, title, metadata, and options button.
+@@@View Function Component@@@
+
+"PDF file management" title:
+This is a header text label that indicates the current screen's title and purpose, showing users they are in the PDF file management section.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This appears to be a system status indicator that displays the current wireless network connection status.
+@@@StatusBar Android and iOS Component@@@
+PDF file management list view:
+This appears to be a list container that displays multiple items representing PDF files, likely implemented as a scrollable list to show file details like name, date, and size.
+@@@flatlist-simple@@@
+
+Action sheet modal:
+This appears to be a modal pop-up containing a list of options (Share, Rename, Delete) related to a selected PDF file, allowing users to perform management actions.
+@@@Modal@@@

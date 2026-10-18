@@ -1,0 +1,108 @@
+Personal label:
+This is a text label indicating the "Personal" task type category option for user selection.
+@@@Text Functional Component@@@
+
+Add Task label:
+This is a header text label indicating the title of the current screen, showing users they are on the "Add Task" page.
+@@@Text Functional Component@@@
+
+White background container:
+This appears to be a view container used to group or wrap UI elements, providing a consistent layout structure.
+@@@View Function Component@@@
+
+White background container with border:
+This appears to be a view container used to wrap UI elements with a specific shape or padding layout.
+@@@View Function Component@@@
+
+Back arrow icon:
+This is a clickable icon button that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow with surrounding container:
+This is a view container that holds the back navigation button and potentially header layout elements.
+@@@View Function Component@@@
+
+Private label:
+This is a text label indicating the "Private" task type category option for user selection.
+@@@Text Functional Component@@@
+
++ Add new tag label:
+This is a text label indicating an action to add a new tag or category for task organization.
+@@@Text Functional Component@@@
+
+Secret label:
+This is a text label indicating the "Secret" task type category option for user selection.
+@@@Text Functional Component@@@
+Office tag button:
+This appears to be a clickable tag component that allows users to filter or categorize items by "Office".
+@@@TouchableOpacity Function Component@@@
+
+Tags label:
+This is a text label that serves as a section header for the tags area.
+@@@Text Functional Component@@@
+
+07:30 time display:
+This is a text component displaying the specific time value for a task duration or schedule.
+@@@Text Functional Component@@@
+
+AM indicator:
+This is a text component indicating the ante meridiem (morning) period for the time.
+@@@Text Functional Component@@@
+
+4 August 2021 date display:
+This is a text component showing the selected date for the task.
+@@@Text Functional Component@@@
+
+AM indicator for start time:
+This is a text component indicating the ante meridiem (morning) period for the start time.
+@@@Text Functional Component@@@
+
+Plan for a month title/input text:
+This is a text component showing the main title content for the task.
+@@@Text Functional Component@@@
+
+Home tag button:
+This appears to be a clickable tag component that allows users to filter or categorize items by "Home".
+@@@TouchableOpacity Function Component@@@
+
+Type label:
+This is a text label indicating the category or type selection section for the task.
+@@@Text Functional Component@@@
+Urgent tag button:
+This appears to be a selectable tag button representing the "Urgent" category, allowing users to categorize or filter tasks based on urgency.
+@@@TouchableOpacity Function Component@@@
+
+Work tag button:
+This appears to be a selectable tag button representing the "Work" category, allowing users to categorize tasks related to work.
+@@@TouchableOpacity Function Component@@@
+
+Office tag button:
+This appears to be a selectable tag button representing the "Office" category, allowing users to categorize tasks related to office activities.
+@@@TouchableOpacity Function Component@@@
+
+Creating this month's work plan text input:
+This appears to be an input field where users can type or edit the detailed description for the task being created.
+@@@TextInput@@@
+
+Create button:
+This appears to be a primary action button that users can press to finalize and submit the newly created task.
+@@@TouchableOpacity Function Component@@@
+
+Description label:
+This is a text label indicating the section for entering the task description.
+@@@Text Functional Component@@@
+
+Home tag button:
+This appears to be a selectable tag button representing the "Home" category, allowing users to categorize tasks related to home activities.
+@@@TouchableOpacity Function Component@@@
+
+Calendar icon:
+This appears to be an icon button that likely opens a calendar picker or date selection interface for scheduling the task.
+@@@Function Component@@@
+
+07:00 time text:
+This appears to be a text element displaying a specific time (07:00) for the task's schedule.
+@@@Text Functional Component@@@
+"Time" label:
+This is a text label that indicates the time selection section for the task being created.
+@@@Text Functional Component@@@

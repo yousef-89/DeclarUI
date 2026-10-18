@@ -1,0 +1,34 @@
+MOBILES.CO.UK logo image:
+This appears to be an image component displaying the retailer's brand logo, representing the merchant offering the deal or reward.
+@@@Function Component@@@
+
+Exclusive Free £50 Currys Voucher text label:
+This is a text label that highlights the main offer details, specifying the voucher amount and promotional terms for the user.
+@@@Text Functional Component@@@
+
+Online Reward label:
+This is a text label indicating the category or type of reward (online reward) associated with this offer.
+@@@Text Functional Component@@@
+
+Terms and Conditions label:
+This is a text label serving as a section header for the terms and conditions associated with the current offer.
+@@@Text Functional Component@@@
+
+VIP retailer notification icon:
+This is an image component displaying a star icon to visually represent the VIP retailer status and related perks.
+@@@Function Component@@@
+
+This is a VIP retailer! VIPs get a £5 gift card for every two shops with any VIP retailer text label:
+This is a text label that informs users about the VIP retailer benefits, explaining how they can earn gift cards by shopping with eligible retailers.
+@@@Text Functional Component@@@
+
+Sign In to Get Reward button:
+This appears to be a button that allows users to sign in to their account so they can claim or redeem the offered reward.
+@@@TouchableOpacity Function Component@@@
+
+Discover, Search, VIP, Account navigation bar:
+This appears to be a container view holding the bottom navigation items, allowing users to switch between different main sections of the app.
+@@@View Function Component@@@
+Ends 20 Jul label:
+This is a text label indicating the expiration date or deadline for the reward offer.
+@@@Text Functional Component@@@

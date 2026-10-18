@@ -1,0 +1,140 @@
+Key "7 PQRS" button:
+This appears to be a keypad button showing the number 7 and corresponding letters, which likely allows users to input the digit 7 into the phone number text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard icon:
+This appears to be a system or UI indicator icon representing the software keyboard at the bottom of the screen.
+@@@Function Component@@@
+
+Key "1" button:
+This appears to be a keypad button showing the number 1, which likely allows users to input the digit 1 into the phone number text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Key "9 WXYZ" button:
+This appears to be a keypad button showing the number 9 and corresponding letters, which likely allows users to input the digit 9 into the phone number text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Key "6 MNO" button:
+This appears to be a keypad button showing the number 6 and corresponding letters, which likely allows users to input the digit 6 into the phone number text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Key "2 ABC" button:
+This appears to be a keypad button showing the number 2 and corresponding letters, which likely allows users to input the digit 2 into the phone number text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Confirm checkmark button:
+This appears to be a confirm or submit action button with a checkmark icon, likely used to confirm the entered phone number or proceed to the next step.
+@@@TouchableOpacity Function Component@@@
+
+Key "* #" button:
+This appears to be a keypad button showing symbols * and #, which likely allows users to input these special characters into the phone number text field when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"请输入您的电话号码" (Please enter your phone number) label:
+This is a text label that prompts the user to enter their phone number, providing clear instruction for the input field below.
+@@@Text Functional Component@@@
+Number 3 key:
+This appears to be a key on the on-screen numeric keypad containing the number 3 and letters DEF, which allows users to input the digit '3' into the phone number text field when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"继续" (Continue) button:
+This is a prominent call-to-action button containing text that prompts users to proceed to the next step of the registration or login process after entering their phone number.
+@@@TouchableOpacity Function Component@@@
+
+"BREAKING" brand logo:
+This is a text-based brand logo displaying the application name "BREAKING" in a bold, italicized font, serving as the main header for the screen.
+@@@Text Functional Component@@@
+
+Zero key with plus symbol:
+This appears to be a key on the numeric keypad representing the number '0' and the '+' symbol, allowing users to input the digit or long-press/tap for international dialing prefixes.
+@@@TouchableOpacity Function Component@@@
+
+Backspace or delete key background:
+This is a container or button background for a delete action on the keypad, likely holding an icon to remove previously entered digits.
+@@@TouchableOpacity Function Component@@@
+
+SIM card or storage icon:
+This icon represents a SIM card or storage component, which may be used here to indicate phone number auto-detection or device identification features.
+@@@Function Component@@@
+
+Number 8 key:
+This appears to be a key on the on-screen numeric keypad containing the number 8 and letters TUV, used for inputting the digit '8' into the input field.
+@@@TouchableOpacity Function Component@@@
+
+Multiple windows or pages icon:
+This icon appears to represent multiple overlapping pages or windows, likely used for navigation or switching views within the app.
+@@@Function Component@@@
+
+Status bar camera cutout or dot:
+This appears to be a solid black circular indicator representing the front-facing camera cutout or sensor in the device's status bar area.
+@@@View Function Component@@@
+Camera cutout / notification indicator:
+This appears to be a status bar or display cutout indicator showing camera placement or system notification status on the device screen.
+@@@StatusBar Android and iOS Component@@@
+
+"4 GHI" key:
+This is a keypad button containing the number 4 and associated letters GHI, which can be pressed to enter digits or text into the phone number input field.
+@@@TouchableOpacity Function Component@@@
+
+"5 JKL" key:
+This is a keypad button showing the number 5 and letters JKL, allowing users to type the digit 5 into the phone number input field.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This is a navigation button featuring an arrow pointing left, which typically allows users to return to the previous screen or view.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard symbol key:
+This appears to be a specialized button on the virtual keypad, possibly used to minimize or hide the keyboard interface.
+@@@TouchableOpacity Function Component@@@
+
+"继续" (Continue) button:
+This is a prominent button with the Chinese text "继续" (meaning "Continue"), which likely submits the phone number and advances the user to the next step of the process.
+@@@TouchableOpacity Function Component@@@
+
+Phone number input container:
+This container combines a country code selector with a text input area labeled "输入电话号码" (meaning "Enter phone number"), allowing users to input their phone number for verification or registration.
+@@@TextInput@@@
+
+Home indicator bar:
+This is a standard system navigation bar at the bottom of the screen used for returning to the home screen or switching apps.
+@@@View Function Component@@@
+
+Backspace delete key:
+This is a keypad button featuring a delete/backspace icon, which allows users to erase previously typed characters in the phone number input field.
+@@@TouchableOpacity Function Component@@@
+Back arrow icon:
+This appears to be a button that likely allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+"BREAKING By SAFE APPS" header:
+This is a branding title displaying the app name and creator.
+@@@Text Functional Component@@@
+
+"请输入您的电话号码" (Please enter your phone number) label:
+This text prompts the user to input their phone number for registration or login purposes.
+@@@Text Functional Component@@@
+
+Country code selector ("+1" with dropdown arrow):
+This component allows users to select their country calling code from a list or menu.
+@@@TouchableOpacity Function Component@@@
+
+Phone number input field ("输入电话号码" / Enter phone number):
+This is a text input field where users can type their phone number.
+@@@TextInput@@@
+
+"继续" (Continue) button:
+This button allows users to proceed to the next step after entering their phone number.
+@@@Button@@@
+
+Number pad keys (1-9, 0, *, #):
+These are interactive buttons used to type numbers and characters into the phone input field.
+@@@TouchableOpacity Function Component@@@
+
+Backspace/Delete key:
+This button allows users to delete the last entered character in the phone number field.
+@@@TouchableOpacity Function Component@@@
+
+Confirm/Checkmark key:
+This button allows users to submit or confirm the entered phone number.
+@@@TouchableOpacity Function Component@@@

@@ -1,0 +1,221 @@
+Medal icon:
+This appears to be an interactive button representing rewards, likely allowing users to view their points, achievements, or redeem gifts within Microsoft Rewards.
+@@@TouchableOpacity Function Component@@@
+
+Ruler/Bar icon:
+This appears to be a button or icon representing a unit converter feature, allowing users to quickly access measurement and conversion tools.
+@@@TouchableOpacity Function Component@@@
+
+Location pin icon:
+This appears to be a button representing a location-based service or nearby feature, allowing users to find local places, stores, or services.
+@@@TouchableOpacity Function Component@@@
+
+Deals icon:
+This appears to be a button representing deals and promotions, likely allowing users to browse discounts, offers, and shopping deals.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This appears to be a navigation button that allows users to return to the previous screen or page in the application.
+@@@TouchableOpacity Function Component@@@
+
+Car with tag icon:
+This appears to be a button representing automotive or vehicle-related services, allowing users to explore car deals, shopping, or related information.
+@@@TouchableOpacity Function Component@@@
+
+Blue star coin icon:
+This appears to be an icon or indicator representing Microsoft Rewards points or currency, visually showing the user's reward status or points balance.
+@@@Function Component@@@
+
+Home icon with label:
+This appears to be a bottom navigation button containing both an icon and a text label, allowing users to navigate directly to the home screen.
+@@@TouchableOpacity Function Component@@@
+
+Shopping cart icon:
+This appears to be a button representing shopping or cart features, likely allowing users to view saved items, online purchases, or shopping deals.
+@@@TouchableOpacity Function Component@@@
+News icon:
+This appears to be a button with a newspaper icon that likely opens the news section or articles feed when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Images icon:
+This appears to be a button with a landscape/image icon that likely navigates the user to an image gallery or photo search feature.
+@@@TouchableOpacity Function Component@@@
+
+Multiple squares icon:
+This appears to be a container or wrapper view used to group UI elements or represent a stacked card layout.
+@@@View Function Component@@@
+
+"1" and "Tabs" label:
+This is a text and number combination label that indicates the current number of open browser tabs and describes the tab management feature.
+@@@Text Functional Component@@@
+
+Magic wand and brush icon:
+This appears to be a button featuring a creative tool icon, likely used to access AI-powered creation, design, or image generation tools.
+@@@TouchableOpacity Function Component@@@
+
+News icon (duplicate):
+This appears to be a button with a newspaper icon that likely opens the news section or articles feed when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Square root icon:
+This appears to be a button with a mathematical square root icon that likely opens a math solver or calculator tool.
+@@@TouchableOpacity Function Component@@@
+
+Plus icon with dashed border:
+This appears to be a button with a dashed border and a plus sign, likely allowing users to add or pin a new shortcut to the home screen.
+@@@TouchableOpacity Function Component@@@
+
+Settings gear icon:
+This appears to be a button with a gear icon inside a card, likely used to open the application settings or preferences menu.
+@@@TouchableOpacity Function Component@@@
+Apps icon and label:
+This appears to be a navigation tab button that likely directs the user to the Apps section of the application.
+@@@TouchableOpacity Function Component@@@
+
+Translator icon:
+This is an icon representing a translation feature, likely used as a button to open a tool for translating text or languages.
+@@@Function Component@@@
+
+"Join Microsoft Rewards to redeem free gifts!" text:
+This is a descriptive text label informing users about the Microsoft Rewards program and the ability to redeem free gifts.
+@@@Text Functional Component@@@
+
+Interests add icon:
+This icon with a star and a plus symbol likely serves as a button to add or follow new interests in the user's preferences.
+@@@TouchableOpacity Function Component@@@
+
+Rewards chart icon:
+This is an icon representing a ranking or rewards chart, likely acting as a button to view user rewards standings or statistics.
+@@@Function Component@@@
+
+Car with clock icon:
+This icon represents vehicle-related history or scheduling, likely functioning as a button to access transportation or car history services.
+@@@Function Component@@@
+
+Profile icon:
+This icon represents a user profile or account, likely serving as a button to view or edit account information.
+@@@Function Component@@@
+
+Location pin icon:
+This icon represents a location or map pin, likely functioning as a button to access nearby location-based services or maps.
+@@@Function Component@@@
+
+Chat icon and label:
+This appears to be a bottom navigation tab button representing the chat feature, likely allowing users to open the AI assistant or messaging interface.
+@@@TouchableOpacity Function Component@@@
+"EXPLORE" label:
+This is a text label that serves as a section header for the grid of explore options and shortcuts available in the app.
+@@@Text Functional Component@@@
+
+"Sign in to earn daily points" label:
+This is a text label that encourages users to sign in to their account to accumulate daily reward points.
+@@@Text Functional Component@@@
+
+History icon:
+This appears to be a button that likely allows users to view their browsing or activity history within the app.
+@@@TouchableOpacity Function Component@@@
+
+Money/Growth chart icon:
+This appears to be a button or icon representing financial tracking, stocks, or money-related services and features.
+@@@Function Component@@@
+
+Mobile photo icon:
+This appears to be a button or icon related to wallpapers, device photos, or display settings.
+@@@Function Component@@@
+
+Games icon:
+This appears to be a button that likely allows users to access and play casual mini-games within the application.
+@@@Function Component@@@
+
+Games icon (alternative view):
+This appears to be a button that likely allows users to access and play casual mini-games within the application.
+@@@Function Component@@@
+
+"PINNED" label:
+This is a text label that acts as a category header for the pinned shortcuts or items saved by the user.
+@@@Text Functional Component@@@
+
+Shopping cart icon:
+This appears to be a button that likely allows users to access shopping features, deals, or view items in their cart.
+@@@Function Component@@@
+Weather icon:
+This appears to be an icon representing weather services, likely functioning as a button to navigate users to the weather forecast and details page.
+@@@TouchableOpacity Function Component@@@
+
+Black circle indicator:
+This appears to be a solid black circle indicator, likely used as a status bar element or UI marker on the screen.
+@@@View Function Component@@@
+
+News or document icon:
+This appears to be an icon representing a news or document feature, likely used as a button to open news articles or reading content.
+@@@TouchableOpacity Function Component@@@
+
+Weather icon (alternative style):
+This appears to be a weather forecast icon, likely functioning as a button that directs users to live weather updates and forecasts.
+@@@TouchableOpacity Function Component@@@
+
+Explore AI icon:
+This appears to be a sparkle icon representing AI features, likely functioning as a button that opens AI exploration tools or chat assistants.
+@@@TouchableOpacity Function Component@@@
+
+Bookmarks icon:
+This appears to be a bookmark icon representing saved items, likely functioning as a button to view user bookmarks and saved pages.
+@@@TouchableOpacity Function Component@@@
+
+Interests icon:
+This appears to be a star icon representing user interests, likely functioning as a button to view or customize preferred content categories.
+@@@TouchableOpacity Function Component@@@
+
+Unit Converter icon:
+This appears to be an icon depicting measurement scales, likely functioning as a button that opens a unit conversion tool.
+@@@TouchableOpacity Function Component@@@
+
+Watch icon:
+This appears to be a play button icon representing video playback or streaming, likely functioning as a button to open video content.
+@@@TouchableOpacity Function Component@@@
+Explore AI icon:
+This appears to be a clickable button or icon representing the Explore AI feature, which likely allows users to access artificial intelligence tools or content when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Translator icon:
+This appears to be a button with a language translation symbol, which likely allows users to open a translation tool or feature when clicked.
+@@@TouchableOpacity Function Component@@@
+
+Rewards icon:
+This appears to be a button featuring a medal or trophy symbol, which likely opens the rewards program or points redemption screen when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Money icon:
+This appears to be a button featuring a financial growth chart, which likely opens stock tracking, finance news, or money-related tools when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Wallpapers icon:
+This appears to be a button with an image icon, likely allowing users to browse and download phone wallpapers when clicked.
+@@@TouchableOpacity Function Component@@@
+
+Watch icon:
+This appears to be a button featuring a play symbol, which likely opens video content or a streaming player when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Math icon:
+This appears to be a button with a square root and variable symbol, which likely opens a math solver or calculator tool when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Designer/Edit icon:
+This appears to be a button featuring a paintbrush and sparkle graphic, which likely opens a design, photo editing, or creative tool when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Trending icon:
+This appears to be a button featuring a bar chart with a star, which likely opens a trending topics or popular searches section when pressed.
+@@@TouchableOpacity Function Component@@@
+Bookmarks label:
+This is a text label that describes the functionality of the bookmarks button, indicating that users can view their saved bookmarks using this feature.
+@@@Text Functional Component@@@
+
+Mobile phone icon button:
+This appears to be a clickable button with a phone and image icon that likely allows users to access device-specific features, wallpapers, or mobile settings.
+@@@TouchableOpacity Function Component@@@
+
+Memory card icon:
+This appears to be an icon representing storage or a memory card, likely used as a visual indicator for saved data, storage management, or accessing local files.
+@@@Function Component@@@

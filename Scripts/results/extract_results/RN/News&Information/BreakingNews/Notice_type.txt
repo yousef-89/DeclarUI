@@ -1,0 +1,42 @@
+"突发新闻" toggle row:
+This is a list item or container view that pairs a label ("Breaking News") with a toggle switch to enable or disable notifications for this specific news category.
+@@@View Function Component@@@
+
+"立即解锁新闻提醒！" heading:
+This is a main title text label that urges the user to unlock news alerts ("Unlock news alerts now!").
+@@@Text Functional Component@@@
+
+"热门新闻" toggle row:
+This is a list item or container view that pairs a label ("Hot News") with a toggle switch to enable or disable notifications for trending news.
+@@@View Function Component@@@
+
+SIM card icon:
+This appears to be a decorative image icon, possibly representing device storage or related identification features in the app interface.
+@@@Function Component@@@
+
+Siren icon:
+This is an illustrative image representing an alarm or emergency notification siren, visually emphasizing the news alert feature.
+@@@Function Component@@@
+
+"频率" section:
+This is a container view grouping frequency options (such as planned, informed, and instant) for receiving news notifications.
+@@@View Function Component@@@
+
+Description text:
+This is a descriptive text label that explains the benefits of enabling notifications: "Enable notifications with one click and never miss breaking news. From local alerts to major global events, we provide all-around service."
+@@@Text Functional Component@@@
+
+"我确定我想要" button:
+This is a primary call-to-action button that allows users to confirm their selection and enable the requested notification settings ("I'm sure I want this").
+@@@TouchableOpacity Function Component@@@
+
+"暂时不需要" button:
+This is a secondary text button allowing users to decline or postpone the notification setup prompt ("Not needed for now").
+@@@TouchableOpacity Function Component@@@
+"本地新闻" (Local News) setting item with switch:
+This component is a list item containing text and a switch ("本地新闻", meaning "Local News"), which allows users to enable or disable local news notifications.
+@@@View Function Component@@@
+
+"8:35" status bar time and icon:
+This component displays the current system time ("8:35") in the status bar at the top of the screen.
+@@@StatusBar Android and iOS Component@@@

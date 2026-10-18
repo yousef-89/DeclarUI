@@ -1,0 +1,42 @@
+Exam button:
+This appears to be a touchable button labeled "Exam" that allows users to select or filter tasks related to exams.
+@@@TouchableOpacity Function Component@@@
+
+Topic / Chapter Name input:
+This is a text input field where users can type or edit the specific topic or chapter name for the task being added.
+@@@TextInput@@@
+
+Calendar icon:
+This is an image icon representing a calendar, which likely indicates a date selection feature or visual decoration for the date field.
+@@@Function Component@@@
+
+User profile avatar:
+This image displays the user's profile picture, potentially acting as a button to open profile settings or account details.
+@@@Function Component@@@
+
+"Fri 25, September, 2020" text:
+This text label displays a specific date, indicating the scheduled date for the task.
+@@@Text Functional Component@@@
+
+Lab button:
+This appears to be a touchable button labeled "Lab" that allows users to select or filter tasks related to laboratory sessions.
+@@@TouchableOpacity Function Component@@@
+
+Exam button (alternate instance):
+This appears to be a touchable button labeled "Exam" that allows users to select or filter tasks related to exams.
+@@@TouchableOpacity Function Component@@@
+
+"Add a task" title:
+This is a prominent text heading that clearly identifies the main purpose of the current screen, which is to create a new task.
+@@@Text Functional Component@@@
+
+"Category" section header:
+This is a text label that serves as a section header for the category selection options.
+@@@Text Functional Component@@@
+Bottom navigation bar:
+This appears to be a navigation bar component containing multiple interactive tabs (Home, Tasks, Classroom, Chat) allowing users to switch between different screens in the application.
+@@@View Function Component@@@
+
+"09:30 AM" label:
+This is a text label displaying a specific time, indicating the selected time for the task.
+@@@Text Functional Component@@@

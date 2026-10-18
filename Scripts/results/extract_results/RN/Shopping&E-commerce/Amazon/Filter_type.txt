@@ -1,0 +1,89 @@
+Cancelled label:
+This is a text label displaying "Cancelled", which indicates an option to filter orders by their cancellation status.
+@@@Text Functional Component@@@
+
+Back button:
+This appears to be a navigational header component containing a back arrow and label, allowing users to return to the previous screen.
+@@@View Function Component@@@
+
+2024 label:
+This is a text label displaying a specific year, used to indicate an option for filtering orders by year.
+@@@Text Functional Component@@@
+
+Profile icon:
+This appears to be an icon button representing the user profile section, allowing users to navigate to their account or profile page when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow icon:
+This is an icon representing a back arrow, typically used inside a navigation button to let users go back to the previous screen.
+@@@Function Component@@@
+
+Radio button icon:
+This appears to be a radio button component representing a selectable option for filtering orders.
+@@@TouchableOpacity Function Component@@@
+
+FILTER BY ORDER DATE label:
+This is a section header label indicating the category for filtering orders based on their date.
+@@@Text Functional Component@@@
+
+Local shops label:
+This is a text label displaying "Local shops", which represents an order filter category for local shop purchases.
+@@@Text Functional Component@@@
+
+Not Yet Dispatched list item:
+This appears to be a list item component showing an option to filter orders that have not yet been dispatched, complete with a radio button and text label.
+@@@View Function Component@@@
+"Orders" label:
+This is a text label associated with a radio button option, describing the "Orders" filter category.
+@@@Text Functional Component@@@
+
+Radio button:
+This appears to be a pressable radio button component that allows users to select or deselect specific filter options, such as "Orders".
+@@@TouchableOpacity Function Component@@@
+
+Shopping cart icon:
+This appears to be an interactive button with a shopping cart icon and a badge, likely allowing users to view the items currently in their shopping cart.
+@@@TouchableOpacity Function Component@@@
+
+Microphone icon:
+This appears to be a button with a microphone icon that likely allows users to perform voice-based searches in the app.
+@@@TouchableOpacity Function Component@@@
+
+"2021" label:
+This is a text label indicating a specific year (2021) option for filtering orders by date.
+@@@Text Functional Component@@@
+
+"Last 3 months" label:
+This is a text label describing a time-range filter option to view orders from the last 3 months.
+@@@Text Functional Component@@@
+
+Search bar container:
+This is a container component that holds the search input field, search icon, barcode scanner icon, and microphone icon for global searching.
+@@@View Function Component@@@
+
+"FILTER BY ORDER TYPE" label:
+This is a section header text label that categorizes the filter options below it by order type.
+@@@Text Functional Component@@@
+
+Home icon:
+This appears to be a bottom navigation button with a home icon, likely allowing users to navigate back to the main home screen.
+@@@TouchableOpacity Function Component@@@
+Radio button / Circle icon:
+This appears to be a selection indicator used for filtering options such as order types and dates, allowing users to select a specific filter criterion.
+@@@TouchableOpacity Function Component@@@
+
+"Last 30 days" label:
+This is a text label that displays a specific time filter option ("Last 30 days") for the order history.
+@@@Text Functional Component@@@
+
+"Apply" button:
+This appears to be an action button that allows users to apply the selected filter criteria to update the displayed list of orders.
+@@@TouchableOpacity Function Component@@@
+
+Menu icon:
+This appears to be a navigation or menu button, often used to open a side drawer or main navigation menu with additional options.
+@@@TouchableOpacity Function Component@@@
+
+"2022" label:
+This is a text label representing a specific year (2022) option for filtering orders by date.
+@@@Text Functional Component@@@

@@ -1,0 +1,66 @@
+Header background area:
+This appears to be a container view that holds the top navigation elements, such as the back button and search bar.
+@@@View Function Component@@@
+
+Product thumbnail images:
+This appears to be a collection of product images displayed in the 'Buy again' horizontal list, showing items previously purchased by the user.
+@@@Function Component@@@
+
+Product title and delivery text:
+This text component displays the name of the purchased item along with its delivery status and date.
+@@@Text Functional Component@@@
+
+Right arrow navigation icon:
+This appears to be a touchable button or indicator icon that allows users to view more details about the specific order or item.
+@@@TouchableOpacity Function Component@@@
+
+Product title and delivery info:
+This is a text label displaying the product name and its delivery date for a specific order history item.
+@@@Text Functional Component@@@
+
+Bottom navigation bar:
+This container view groups the bottom navigation icons and tabs for switching between main sections of the app like home, profile, cart, and menu.
+@@@View Function Component@@@
+
+Search input container border:
+This appears to be a container wrapper or border view for the search input field in the header.
+@@@View Function Component@@@
+
+Search bar component:
+This is a search input component that allows users to type queries to search for products across the application.
+@@@TextInput@@@
+
+Filter button with arrow:
+This appears to be a button that allows users to open filtering options to narrow down their order search results.
+@@@TouchableOpacity Function Component@@@
+Past three months label:
+This is a text label indicating the time frame or category for the past order history displayed below.
+@@@Text Functional Component@@@
+
+Search all orders input:
+This is a text input field that allows users to type keywords to search specifically within their order history.
+@@@TextInput@@@
+
+Packaging item image:
+This is an image component displaying a preview of a previously ordered product (bubble wrap roll).
+@@@Function Component@@@
+
+SmithPackaging Large Bubble Wrap Roll label:
+This is a text label displaying the product title and description for an ordered item in the history list.
+@@@Text Functional Component@@@
+
+Filter button/label:
+This appears to be a clickable text or button component that lets users open filtering options to refine their order list by time or status.
+@@@TouchableOpacity Function Component@@@
+
+Buy again heading label:
+This is a section heading text label that introduces the quick-reorder carousel for frequently purchased items.
+@@@Text Functional Component@@@
+
+Toyama Koshihikari 1kg label:
+This is a text label displaying the product name and details for an item from the order history list.
+@@@Text Functional Component@@@
+
+Highland Spring water pack image:
+This is an image component displaying a thumbnail of a beverage product pack available in the "Buy again" section.
+@@@Function Component@@@

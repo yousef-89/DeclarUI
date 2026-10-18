@@ -1,0 +1,70 @@
+"Continue with Google" button:
+This appears to be an interactive button that allows users to sign in or register quickly using their Google account credentials.
+@@@TouchableOpacity Function Component@@@
+
+"Continue with Apple" button:
+This appears to be an interactive button that allows users to sign in or register quickly using their Apple ID credentials.
+@@@TouchableOpacity Function Component@@@
+
+"Or continue with" label:
+This is a text separator indicating alternative authentication methods available to the user.
+@@@Text Functional Component@@@
+
+"Email" label:
+This is a text label indicating the field name where users should input their email address.
+@@@Text Functional Component@@@
+
+"Continue with Facebook" row/label snippet:
+This appears to be part of the Facebook sign-in button or text content indicating social authentication options.
+@@@Text Functional Component@@@
+
+"Email" input field:
+This is a text input component where users can type or enter their email address for login or registration.
+@@@TextInput@@@
+
+Header banner view:
+This appears to be a header container featuring a world map background and welcome text to greet returning users.
+@@@View Function Component@@@
+
+"Continue with email" button:
+This appears to be a primary action button allowing users to proceed with the traditional email-based login or registration process.
+@@@TouchableOpacity Function Component@@@
+
+"Continue with Facebook" button:
+This appears to be an interactive button that allows users to sign in or register quickly using their Facebook account credentials.
+@@@TouchableOpacity Function Component@@@
+World map header graphic:
+This appears to be a background image displaying a world map pattern at the top of the authentication screen to enhance the visual appeal.
+@@@ImageBackground@@@
+
+"Hi, Welcome Back" title:
+This is a main heading text welcoming returning users to the application.
+@@@Text Functional Component@@@
+
+"Email" input field:
+This is a text input field where users can enter their email address to log in or sign up.
+@@@TextInput@@@
+
+"Continue with email" button:
+This is a primary action button that users tap to proceed with their email credentials.
+@@@TouchableOpacity Function Component@@@
+
+"Or continue with" divider text:
+This is a text label separating the email login option from alternative social login methods.
+@@@Text Functional Component@@@
+
+"Continue with Google" button:
+This is a clickable button that allows users to authenticate and sign in using their Google account.
+@@@TouchableOpacity Function Component@@@
+
+"Continue with Apple" button:
+This is a clickable button that allows users to authenticate and sign in using their Apple ID.
+@@@TouchableOpacity Function Component@@@
+
+"Continue with Facebook" button:
+This is a clickable button that allows users to authenticate and sign in using their Facebook account.
+@@@TouchableOpacity Function Component@@@
+
+"Don't have an account? Sign up" footer text:
+This is a text prompt that guides new users to navigate to the registration screen if they do not have an account yet.
+@@@Text Functional Component@@@

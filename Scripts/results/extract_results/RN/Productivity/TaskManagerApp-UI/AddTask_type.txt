@@ -1,0 +1,108 @@
+URGENT tag:
+This appears to be an interactive button or tag that allows users to select or filter tasks by priority or category ("URGENT").
+@@@TouchableOpacity Function Component@@@
+
+Calendar icon:
+This is an icon that likely serves as a button to open a date picker for selecting the task's due date.
+@@@TouchableOpacity Function Component@@@
+
+Input field underline or container:
+This appears to be a view component acting as an input container or underline indicator for text input fields.
+@@@View Function Component@@@
+
+Dropdown arrow icon:
+This is an icon button that likely toggles a dropdown menu for selecting time or other options.
+@@@TouchableOpacity Function Component@@@
+
+Plus icon:
+This is an interactive button that likely allows users to add a new item, such as a team member or a board category.
+@@@TouchableOpacity Function Component@@@
+
+DESCRIPTION label:
+This is a text label that indicates the section for entering task details or notes.
+@@@Text Functional Component@@@
+
+Team member avatar:
+This image represents a user avatar, likely used to display profile pictures of team members assigned to the task.
+@@@Function Component@@@
+
+RUNNING tag:
+This appears to be an interactive button or tag that allows users to select or filter tasks by status ("RUNNING"), featuring a checkmark indicator.
+@@@TouchableOpacity Function Component@@@
+
+RUNNING tag duplicate:
+This appears to be an interactive button or tag that allows users to select or filter tasks by status ("RUNNING"), featuring a checkmark indicator.
+@@@TouchableOpacity Function Component@@@
+John avatar icon:
+This appears to be an avatar image representing a team member named John, used to display user profile pictures visually.
+@@@Function Component@@@
+
+"Add Task" title label:
+This is a text label that indicates the current screen's title, showing users that they are on the task creation page.
+@@@Text Functional Component@@@
+
+"TEAM MEMBER" section label:
+This is a text label that serves as a section header for the team members list or selection area.
+@@@Text Functional Component@@@
+
+"ONGOING" board tag:
+This is a text label displayed inside a board tag component, indicating the status category of the task.
+@@@Text Functional Component@@@
+
+"TASK NAME" field label:
+This is a text label that acts as a placeholder or floating label indicating where users should input the task name.
+@@@Text Functional Component@@@
+
+"May 01, 2020" date display label:
+This is a text label displaying the selected task due date or start date.
+@@@Text Functional Component@@@
+
+Ranak avatar icon:
+This appears to be an avatar image representing a team member named Ranak, possibly acting as a pressable element to select or view profile details.
+@@@TouchableOpacity Function Component@@@
+
+"Add Member" dashed button icon:
+This appears to be a dashed circular button with a plus icon, which likely allows users to add new team members to the task.
+@@@TouchableOpacity Function Component@@@
+
+Mahmud avatar icon:
+This appears to be an avatar image representing a team member named Mahmud, used to visually display user profiles within the team member selection list.
+@@@Function Component@@@
+"01:00 PM" label:
+This is a text label displaying the end time value for the task creation form.
+@@@Text Functional Component@@@
+
+"10:00 AM" label:
+This is a text label displaying the start time value for the task creation form.
+@@@Text Functional Component@@@
+
+User Avatar image:
+This is an image component displaying a profile picture or avatar of a team member in a circular layout.
+@@@Function Component@@@
+
+Wi-Fi status icon:
+This is an icon component representing the current wireless network connectivity status in the status bar.
+@@@Function Component@@@
+
+"END TIME" label:
+This is a text label indicating the end time field of the form.
+@@@Text Functional Component@@@
+
+"START TIME" label:
+This is a text label indicating the start time field of the form.
+@@@Text Functional Component@@@
+
+"DATE" label:
+This is a text label indicating the date input field of the form.
+@@@Text Functional Component@@@
+
+Signal strength icon:
+This is an icon component representing the current mobile network signal strength in the status bar.
+@@@Function Component@@@
+
+"Done" button:
+This is a button component that allows users to submit and save the new task form.
+@@@TouchableOpacity Function Component@@@
+"BOARD" label:
+This is a text label indicating the section for selecting a board or category associated with the task.
+@@@Text Functional Component@@@

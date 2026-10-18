@@ -1,0 +1,85 @@
+"不可退款" (Non-refundable) label:
+This is a text label indicating that the room booking is non-refundable, informing the user about the cancellation policy.
+@@@Text Functional Component@@@
+
+"标准间" (Standard Room) label:
+This is a text header representing the room type name, specifically "Standard Room", to help users identify the category of the accommodation.
+@@@Text Functional Component@@@
+
+"Booking.com 上只剩 1 间房了" (Only 1 room left on Booking.com) label:
+This is a text label displaying availability urgency to encourage users to book quickly.
+@@@Text Functional Component@@@
+
+"(到来店付款)" ((Pay at hotel)) label:
+This is a text label specifying the payment method, indicating that the user can pay when arriving at the hotel.
+@@@Text Functional Component@@@
+
+"独立浴室" (Private bathroom) label and icon:
+This is a combination of an icon and text representing a room amenity, specifically indicating that a private bathroom is included.
+@@@Text Functional Component@@@
+
+"选择并定制" (Select and customize) button:
+This appears to be a clickable button that allows users to select the current room option and proceed to customize their booking.
+@@@TouchableOpacity Function Component@@@
+
+"含税费及其他费用" (Includes taxes and other charges) label:
+This is a text label providing additional pricing details to inform users that taxes and fees are already included in the displayed price.
+@@@Text Functional Component@@@
+
+"有 17 个选项符合你的筛选条件" (17 options match your filter criteria) label:
+This is a text label indicating the total number of search results or room options available based on the user's applied filters.
+@@@Text Functional Component@@@
+
+Non-refundable icon, Checkmark icon, and Guests icon:
+These are icon components used to visually represent various room policies and features, such as cancellation policy, booking status, and occupancy limits.
+@@@Function Component@@@
+"不可退款" (Non-refundable) label:
+This is a text label indicating that the hotel room booking is non-refundable, informing the user about the cancellation policy.
+@@@Text Functional Component@@@
+
+"到店付款" (Pay at hotel) label:
+This is a text label indicating that payment for the room will be made directly at the hotel upon arrival.
+@@@Text Functional Component@@@
+
+"标准间" (Standard room) label:
+This is a text label displaying the room type name, specifically "Standard Room", to help users identify the room category.
+@@@Text Functional Component@@@
+
+"2位成人的入住价格" (Price for 2 adults) label:
+This is a text label indicating that the displayed price is calculated based on an occupancy of 2 adults.
+@@@Text Functional Component@@@
+
+Fullscreen icon:
+This appears to be an interactive button that allows users to expand the room images or view details in full-screen mode.
+@@@TouchableOpacity Function Component@@@
+
+"选择客房" (Select room) and hotel name header:
+This is a container view holding the screen title and hotel name in the navigation header.
+@@@View Function Component@@@
+
+"选项1：" (Option 1:) label:
+This is a text label marking the first bed configuration option for the room.
+@@@Text Functional Component@@@
+
+"空调" (Air conditioning) label:
+This is a text label indicating that the room is equipped with air conditioning among its amenities.
+@@@Text Functional Component@@@
+
+Filter and guest count section:
+This container view groups the filter options (such as breakfast included) and guest count selection controls at the top of the page.
+@@@View Function Component@@@
+"无需预付" ("No prepayment required") text label:
+This is a text label indicating that no prepayment is required for the hotel booking.
+@@@Text Functional Component@@@
+
+"迷你吧" ("Mini-bar") text label:
+This is a text label indicating that the hotel room includes a mini-bar amenity.
+@@@Text Functional Component@@@
+
+Non-refundable icon:
+This appears to be an icon representing a non-refundable policy or that payment/refund terms are restricted.
+@@@Function Component@@@
+
+Share/Export icon:
+This appears to be a button icon that allows users to share the current page or hotel details with others.
+@@@TouchableOpacity Function Component@@@

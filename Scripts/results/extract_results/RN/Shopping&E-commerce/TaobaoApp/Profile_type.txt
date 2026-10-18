@@ -1,0 +1,167 @@
+"收藏" (Favorites) and "查看最近收藏" (View recent favorites) text with arrow icon:
+This is a section header and navigation prompt indicating that users can view their recent favorites or saved items by tapping it.
+@@@View Function Component@@@
+
+"待发货" (Pending shipment) icon and text:
+This appears to be a clickable order status button that directs users to view their orders that are currently waiting to be shipped.
+@@@TouchableOpacity Function Component@@@
+
+"不吃不吃不吃 Orz" (Do not eat do not eat do not eat Orz) username label:
+This is a text label displaying the user's nickname or profile name in the application.
+@@@Text Functional Component@@@
+
+"红包签到" (Red packet check-in) text label:
+This is a text label describing a feature where users can check in to receive red packets or cash rewards.
+@@@Text Functional Component@@@
+
+"消息" (Messages) text label:
+This is a text label indicating the messaging or notification section, which likely navigates to user chats and system alerts.
+@@@Text Functional Component@@@
+
+Footprint/History icon:
+This is an icon representing the user's browsing history or footprints within the app.
+@@@Function Component@@@
+
+"摇现金" (Shake for cash) text label:
+This is a text label indicating a promotional feature where users can shake their phone to win cash prizes.
+@@@Text Functional Component@@@
+
+"官方客服" (Official customer service) icon and text button:
+This appears to be a customer support button that allows users to open a chat or call interface for assistance.
+@@@TouchableOpacity Function Component@@@
+
+"我的淘宝" (My Taobao) icon and text navigation item:
+This is a tab bar navigation item representing the user's personal profile section.
+@@@TouchableOpacity Function Component@@@
+"快递" (Express) and "查看快递信息" (View express information) label:
+This text label displays delivery-related status and instructions, allowing users to quickly check shipping information.
+@@@Text Functional Component@@@
+
+"首页" (Home) label:
+This text label describes the functionality of the home navigation icon, indicating that it redirects the user to the main landing page.
+@@@Text Functional Component@@@
+
+"现金" (Cash) icon and label:
+This appears to be an interactive button or list item that allows users to access cash-related rewards or promotional activities.
+@@@TouchableOpacity Function Component@@@
+
+"0张" (0 coupons/sheets) label:
+This text label displays a numerical count (0 coupons) indicating the user's available vouchers or tickets.
+@@@Text Functional Component@@@
+
+"查取件" (Check pickup) button:
+This button allows users to view and manage their parcel pickup details.
+@@@TouchableOpacity Function Component@@@
+
+"现金" (Cash) icon and label:
+This appears to be an interactive button or list item that allows users to access cash-related rewards or promotional activities.
+@@@TouchableOpacity Function Component@@@
+
+"设置" (Settings) icon and label:
+This icon and text combination serves as a button to navigate to the application's settings and configuration page.
+@@@TouchableOpacity Function Component@@@
+
+"待付款" (Pending payment) icon and label:
+This interactive button represents an order status filter, directing users to view their pending payments.
+@@@TouchableOpacity Function Component@@@
+
+"关注店铺" (Followed shops) icon and label:
+This text label indicates the number or section of stores the user has followed, providing quick access to favorite shops.
+@@@Text Functional Component@@@
+Shopping cart icon and "购物车" (Shopping Cart) label:
+This appears to be a bottom navigation bar button with an icon and text label that allows users to navigate to their shopping cart page.
+@@@TouchableOpacity Function Component@@@
+
+"快递" (Express/Shipping) label:
+This is a text label that indicates the shipping or delivery section, helping users track their packages and shipping information.
+@@@Text Functional Component@@@
+
+"足迹" (Footprints/Browsing History) label:
+This is a text label indicating the browsing history section where users can view products and channels they have previously visited.
+@@@Text Functional Component@@@
+
+"退款/售后" (Refund/After-sales) icon and label:
+This is a touchable navigation item featuring an icon and text label that likely directs users to their refund and after-sales service requests.
+@@@TouchableOpacity Function Component@@@
+
+"暂无推荐" (No recommendations) and "去逛逛更多宝贝" (Go browse more items) text block:
+This is a text section containing a prompt indicating there are no current recommendations and a call-to-action text encouraging users to browse more products.
+@@@Text Functional Component@@@
+
+Folder icon with "暂无推荐" and "去逛逛更多宝贝" text:
+This appears to be a container view grouping an empty state folder illustration and related text elements to display when no recommended items are available.
+@@@View Function Component@@@
+
+"优惠券" (Coupons) label:
+This is a text label that indicates the coupon section, showing the number of available discount coupons.
+@@@Text Functional Component@@@
+
+"待收货" (To Receive) icon and label:
+This is a touchable navigation item with a delivery truck icon and text label that likely takes users to the list of orders awaiting delivery confirmation.
+@@@TouchableOpacity Function Component@@@
+
+"我的足迹" (My Browsing History) label:
+This is a text label indicating the user's personal browsing history section, allowing them to see items they have previously viewed.
+@@@Text Functional Component@@@
+"天猫积分" (Tmall Points) and "990" labels:
+This appears to be a text element displaying the user's Tmall Points balance and the category name, indicating loyalty points accumulated on the platform.
+@@@Text Functional Component@@@
+
+"红包" (Red Packet) and "¥0.00" labels:
+This appears to be a text element displaying the user's available red packet balance and category name, representing promotional cash or discounts.
+@@@Text Functional Component@@@
+
+Profile avatar and badge image:
+This appears to be an image component displaying the user's avatar and account longevity badge (e.g., 5 years on Taobao), representing personal profile information.
+@@@Function Component@@@
+
+"88VIP" card image and text:
+This appears to be a promotional banner or card for the 88VIP subscription service, likely functioning as a button or container to unlock membership perks and music streaming benefits.
+@@@View Function Component@@@
+
+"逛逛" (Guangguang) icon and label:
+This appears to be an icon and text label combination that likely serves as a navigation button directing users to the discovery or content feed section of the app.
+@@@TouchableOpacity Function Component@@@
+
+"待评价" (Pending Review) icon and label:
+This appears to be an icon and text label representing a status button for orders awaiting user reviews and feedback.
+@@@TouchableOpacity Function Component@@@
+
+"收藏" (Favorites) label:
+This appears to be a text label indicating the favorites or saved items section, likely allowing users to view bookmarked products or content.
+@@@Text Functional Component@@@
+
+Profile avatar duplicate image:
+This appears to be an image component displaying the user's profile avatar and membership badge, used as part of the user header section.
+@@@Function Component@@@
+
+Promo banner container:
+This appears to be a container view enclosing promotional messages ("点击查看更多优惠" - Click to view more offers) and a call-to-action button ("去查看" - Go to view), encouraging users to visit the coupon center.
+@@@View Function Component@@@
+"查寄件" (Check Shipments) button:
+This appears to be a clickable card or button that allows users to check courier or shipping details.
+@@@TouchableOpacity Function Component@@@
+
+"为你节省 ¥781" (Saved for you ¥781) banner:
+This component displays promotional savings information and likely acts as a button or card that users can tap to view more details about their savings.
+@@@TouchableOpacity Function Component@@@
+
+Red envelope icon:
+This is an icon representing a red envelope feature, likely used as a button to access cash bonuses or red packet rewards.
+@@@Function Component@@@
+
+"立即查看" (View Now) button:
+This is a button that prompts users to immediately view details, discounts, or promotional activities.
+@@@TouchableOpacity Function Component@@@
+
+"收货地址" (Shipping Address) label:
+This text label indicates the user's saved shipping address section.
+@@@Text Functional Component@@@
+
+"足迹 / 看过的商品和频道" (Footprint / Viewed products and channels) label:
+This text label describes the browsing history section, showing items and channels the user has previously viewed.
+@@@Text Functional Component@@@
+
+"我的订单" (My Orders) label:
+This is a text label that titles the order management section of the profile page.
+@@@Text Functional Component@@@

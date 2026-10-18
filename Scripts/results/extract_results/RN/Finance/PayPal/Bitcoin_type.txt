@@ -1,0 +1,70 @@
+$100 button:
+This is a button that allows the user to quickly select a predefined purchase or transfer amount of $100.
+@@@TouchableOpacity Function Component@@@
+
+$50 button:
+This is a button that allows the user to quickly select a predefined purchase or transfer amount of $50.
+@@@TouchableOpacity Function Component@@@
+
+Crypto navigation icon/label:
+This represents a navigation tab for the 'Crypto' section of the application, used to switch the current view to crypto market data.
+@@@TouchableOpacity Function Component@@@
+
+Wallet navigation icon/label:
+This represents a navigation tab for the 'Wallet' section of the application, used to access the user's personal asset balances.
+@@@TouchableOpacity Function Component@@@
+
+"24小时" (24 Hours) selector:
+This is a button that allows the user to filter the price chart data to show activity over the last 24 hours. "24小时" translates to "24 Hours".
+@@@TouchableOpacity Function Component@@@
+
+$20 button:
+This is a button that allows the user to quickly select a predefined purchase or transfer amount of $20.
+@@@TouchableOpacity Function Component@@@
+
+Price chart image:
+This is a graphical representation (line chart) showing the historical price movement of the asset over time.
+@@@Function Component@@@
+
+"Payments" navigation icon/label:
+This represents a navigation tab for the 'Payments' section, used to navigate to money transfer or bill payment features.
+@@@TouchableOpacity Function Component@@@
+
+"Home" navigation icon/label:
+This represents a navigation tab to return the user to the main dashboard or home screen of the application.
+@@@TouchableOpacity Function Component@@@
+Down arrow icon:
+This is a visual indicator representing a decrease in value, often used in financial apps to show negative price performance.
+@@@Function Component@@@
+
+"购物" (Shop) button:
+This is a primary action button used to initiate a purchase or shopping flow. The Chinese text "购物" translates to "Shopping".
+@@@TouchableOpacity Function Component@@@
+
+Percentage change label:
+This displays the numerical percentage change of the asset, providing context to the price fluctuation.
+@@@Text Functional Component@@@
+
+"$ 500" option button:
+This is a selectable preset amount button, likely for quick-purchase or investment workflows.
+@@@TouchableOpacity Function Component@@@
+
+Price change amount label:
+This shows the specific currency amount by which the asset price has changed, complementing the percentage indicator.
+@@@Text Functional Component@@@
+
+"Bitcoin" label:
+This text identifies the asset being displayed on the screen.
+@@@Text Functional Component@@@
+
+"过去24小时" (Past 24 hours) label:
+This is a descriptive label indicating the time frame for the displayed price performance data.
+@@@Text Functional Component@@@
+
+"$ 50" option button:
+This is a selectable preset amount button, similar to the $500 option, used for quick-selection tasks.
+@@@TouchableOpacity Function Component@@@
+
+"$ 20" option button:
+This is a selectable preset amount button, allowing the user to select $20 for a quick transaction.
+@@@TouchableOpacity Function Component@@@

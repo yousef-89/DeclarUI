@@ -1,0 +1,85 @@
+Sports & Outdoors category icon:
+This appears to be a touchable icon representing the "Sports & Outdoors" category, likely allowing users to navigate to that specific category's product list when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Video label:
+This is a text label indicating the "Video" category or navigation tab, allowing users to switch to video-related content or services when tapped.
+@@@Text Functional Component@@@
+
+Jewellery & Watches category icon:
+This appears to be a touchable icon representing the "Jewellery & Watches" category, which allows users to browse items related to jewelry and watches.
+@@@TouchableOpacity Function Component@@@
+
+Bags & Luggage category icon:
+This appears to be a touchable icon representing the "Bags & Luggage" category, allowing users to view products related to bags and luggage.
+@@@TouchableOpacity Function Component@@@
+
+Category icon:
+This appears to be a touchable category icon, likely used to navigate to a specific product category section within the shopping app.
+@@@TouchableOpacity Function Component@@@
+
+Recommended deal for you product card:
+This card component displays a recommended deal item including its image and associated text, likely functioning as a pressable container that navigates users to the product details page.
+@@@TouchableOpacity Function Component@@@
+
+Automotive category icon:
+This appears to be a touchable icon representing the "Automotive" category, allowing users to navigate directly to automotive-related products.
+@@@TouchableOpacity Function Component@@@
+
+Shop Electronics today heading:
+This is a text heading that highlights a promotional section encouraging users to shop for electronics today.
+@@@Text Functional Component@@@
+
+Bottom navigation bar:
+This is a navigation container holding multiple icons (home, profile, cart, menu) at the bottom of the screen to allow users to switch between main app sections.
+@@@View Function Component@@@
+Luggage category icon:
+This appears to be an icon representing the "Bags & Luggage" category, likely used as a clickable button to navigate to products related to travel bags and luggage.
+@@@Function Component@@@
+
+Office category icon:
+This appears to be an icon representing the "Office" category, likely used as a clickable button to navigate to office supplies and products.
+@@@Function Component@@@
+
+Automotive category icon:
+This appears to be an icon representing the "Automotive" category, likely used as a clickable button to navigate to automotive parts and accessories.
+@@@Function Component@@@
+
+Jewellery & Watches category label and icon:
+This is a combination of an icon and text label describing the "Jewellery & Watches" category, functioning as a navigational button to related product listings.
+@@@Text Functional Component@@@
+
+Music tab label:
+This is a text label indicating the "Music" section or category tab, which users can tap to switch content views or navigate to music-related offerings.
+@@@Text Functional Component@@@
+
+Bags & Luggage category icon:
+This appears to be an icon representing the "Bags & Luggage" category, functioning as a clickable button to view relevant items.
+@@@Function Component@@@
+
+"4+ star deal for you" card preview:
+This is a promotional product card containing a title and an image preview of a deal rated 4 stars and above, likely serving as a clickable item to view product details.
+@@@View Function Component@@@
+
+Air fryer product image:
+This is an image representing a recommended air fryer product, likely used within a promotional banner or product card to showcase the item visually.
+@@@Function Component@@@
+
+"Sports & Outdoors" category text label:
+This is a text label describing the "Sports & Outdoors" category, indicating a section for sports and outdoor equipment.
+@@@Text Functional Component@@@
+Search bar component:
+This appears to be an input field container that allows users to type search queries or use features like scanning within the app.
+@@@TextInput@@@
+
+Delivery location address bar:
+This is a text container that displays the current delivery location and allows users to click or tap to change their shipping address or location preferences.
+@@@View Function Component@@@
+
+Printer icon:
+This is an icon button representing office supplies or printing categories, which likely navigates users to office-related products when clicked.
+@@@TouchableOpacity Function Component@@@
+
+"Prime" label:
+This is a text label indicating the "Prime" section or filter option within the app for exclusive membership benefits and content.
+@@@Text Functional Component@@@

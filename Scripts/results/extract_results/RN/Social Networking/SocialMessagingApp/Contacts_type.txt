@@ -1,0 +1,116 @@
+Calls label:
+This is a text label indicating the "Calls" section or tab in the bottom navigation bar, allowing users to switch to their call logs or make phone calls.
+@@@Text Functional Component@@@
+
+Location pin icon:
+This appears to be an icon button that likely allows users to search for or find people nearby based on their location.
+@@@TouchableOpacity Function Component@@@
+
+DT initials avatar:
+This is a circular profile avatar containing user initials, typically used to display a user's profile picture or placeholder within the contacts list.
+@@@View Function Component@@@
+
+WiFi status icon:
+This is a status bar indicator showing the current Wi-Fi network connection strength.
+@@@StatusBar Android and iOS Component@@@
+
+Contacts title:
+This is a header text label displaying the title "Contacts" at the top of the screen to indicate the current page context.
+@@@Text Functional Component@@@
+
+Online status text:
+This is a text label displaying the status "Online" in green to indicate that the user is currently active and available.
+@@@Text Functional Component@@@
+
+Antonio Banderas contact name:
+This is a text label showing the full name of a contact in the list.
+@@@Text Functional Component@@@
+
+BE initials avatar:
+This is a circular profile avatar containing user initials, serving as a placeholder for a contact's profile image.
+@@@View Function Component@@@
+
+Dark circle and RT avatar:
+This is a combination of a dark circular indicator/button and a small profile avatar with initials "RT", likely representing an active action or profile element in the interface.
+@@@View Function Component@@@
+Navigation bar indicator / tab icon:
+This appears to be an active tab indicator or navigation icon located at the bottom menu bar to indicate the currently selected tab or category.
+@@@Function Component@@@
+
+Plus and circle icon:
+This appears to be an icon button that likely allows users to add a new contact or invite someone to the platform.
+@@@TouchableOpacity Function Component@@@
+
+Emily Blunt avatar placeholder:
+This is a circular user avatar container displaying initials, representing a profile picture or contact icon.
+@@@Function Component@@@
+
+AB initials avatar placeholder:
+This is a circular user avatar container displaying user initials, representing a contact profile picture.
+@@@Function Component@@@
+
+"Invite friends" label:
+This is a text label describing the action to invite new friends or contacts to the app.
+@@@Text Functional Component@@@
+
+"Billie Eillish" label:
+This is a text label displaying the contact name in the contacts list.
+@@@Text Functional Component@@@
+
+"Messages" label:
+This is a text label labeling the bottom navigation tab for accessing messages.
+@@@Text Functional Component@@@
+
+Bottom home indicator bar:
+This is a system indicator bar located at the bottom of the screen for gesture-based navigation on iOS devices.
+@@@StatusBar Android and iOS Component@@@
+
+"Dwayne Johnson" name and status label:
+This is a text container displaying a contact's name and secondary status text indicating their last active time.
+@@@Text Functional Component@@@
+"Find people nearby" label:
+This is a text label that indicates an option to search or discover other users located near the current user's geographical position.
+@@@Text Functional Component@@@
+
+"DT" avatar placeholder:
+This appears to be an image or view component displaying user initials (DT) within a circular background, representing a contact's profile picture.
+@@@Function Component@@@
+
+"Chris Evans" and "Last seen today at 8:40" text block:
+This is a text component displaying a contact's display name along with their last active timestamp information.
+@@@Text Functional Component@@@
+
+"DJ" avatar placeholder:
+This appears to be an image or view component displaying user initials (DJ) within a circular background, representing a contact's profile picture.
+@@@Function Component@@@
+
+"Dasha Taran" label:
+This is a text label displaying the full name of a contact in the contacts list.
+@@@Text Functional Component@@@
+
+"Contacts" title label:
+This is a text label representing the header title for the current view, indicating that the user is on the Contacts screen.
+@@@Text Functional Component@@@
+
+Circular floating action button:
+This appears to be a circular button that likely triggers a primary action on this screen, such as starting a new chat or adding a new contact.
+@@@TouchableOpacity Function Component@@@
+
+"CE" avatar placeholder:
+This appears to be an image or view component displaying user initials (CE) within a circular background, representing a contact's profile picture.
+@@@Function Component@@@
+
+Battery status indicator:
+This is a system status bar icon representing the device's battery level.
+@@@StatusBar Android and iOS Component@@@
+Emily Blunt and last seen text:
+This text component displays the contact's name and their last active status or timestamp, helping users identify the person and when they were last online.
+@@@Text Functional Component@@@
+
+Signal strength icon:
+This image/icon represents the mobile network signal strength, providing visual feedback on the device's current cellular connectivity status in the status bar.
+@@@Function Component@@@
+
+Online label:
+This text label indicates the real-time availability status of the contact, showing that the user is currently online and active in the app.
+@@@Text Functional Component@@@

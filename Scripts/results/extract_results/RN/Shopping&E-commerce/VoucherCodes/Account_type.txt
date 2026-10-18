@@ -1,0 +1,54 @@
+Search label:
+This is a text label indicating the search section or acting as a placeholder text for search functionality in the navigation bar.
+@@@Text Functional Component@@@
+
+Favourite brands label:
+This is a text label that displays the title "Favourite brands," indicating a menu item for viewing or managing preferred brands.
+@@@Text Functional Component@@@
+
+VIP label:
+This is a text label that highlights the "VIP" section or status within the app interface.
+@@@Text Functional Component@@@
+
+Account icon and label:
+This appears to be a bottom navigation button combining an icon and a text label, allowing users to navigate to their account or profile screen.
+@@@TouchableOpacity Function Component@@@
+
+Personal details label:
+This is a text label indicating the "Personal details" menu option where users can view or edit their personal information.
+@@@Text Functional Component@@@
+
+Discover icon and label:
+This appears to be a bottom navigation button with an icon and text label, allowing users to navigate to the discovery or home feed tab.
+@@@TouchableOpacity Function Component@@@
+
+Heart icon:
+This is an icon component representing the favourite brands feature, typically used alongside the text label to visually indicate saved or liked items.
+@@@Function Component@@@
+
+VIP rewards tracker list item:
+This appears to be a list item component showing the "VIP rewards tracker" option complete with an icon, text, a "New" badge, and a navigation arrow.
+@@@View Function Component@@@
+
+Track transaction status label:
+This is a text label indicating the menu option to check and track previous transaction statuses.
+@@@Text Functional Component@@@
+Personal details icon:
+This appears to be an avatar or user profile icon, typically used to visually represent personal account settings or user-related sections.
+@@@Function Component@@@
+
+"Tailor your offers and access exciting rewards" banner:
+This appears to be a promotional banner container that groups promotional text and a sign-in action together for user engagement.
+@@@View Function Component@@@
+
+"Gift card wallet" list item:
+This appears to be a list item component representing a menu option to access gift card details and balance.
+@@@View Function Component@@@
+
+"Communication preferences" list item:
+This appears to be a list item container that groups an icon, label, and arrow together to navigate to communication settings.
+@@@View Function Component@@@
+
+"Submit a code" text:
+This is a text label indicating an option or button for users to enter and submit a promotional or voucher code.
+@@@Text Functional Component@@@

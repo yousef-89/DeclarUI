@@ -1,0 +1,89 @@
+Post header and meta text block:
+This area displays post metadata including the author name, timestamps, reply counts, and like counts in a social media feed.
+@@@View Function Component@@@
+
+Repost or quote icon:
+This is an interactive icon button that allows users to repost or share the content to their own timeline or profile.
+@@@TouchableOpacity Function Component@@@
+
+Battery status indicator:
+This component represents the device's battery level in the status bar at the top of the screen.
+@@@StatusBar Android and iOS Component@@@
+
+User profile avatar image:
+This is a circular image representing the user's profile picture displayed in the post header.
+@@@Function Component@@@
+
+Small nested user profile avatar image:
+This is a small circular profile image used as part of a stacked avatar group to show additional interactions or participants.
+@@@Function Component@@@
+
+Heart like button icon:
+This icon button allows users to like or unlike the post, incrementing or decrementing the like count.
+@@@TouchableOpacity Function Component@@@
+
+Post text content block:
+This text block contains the main post description and user information in the social media feed.
+@@@Text Functional Component@@@
+
+User profile avatar with status overlay:
+This circular avatar image displays a user's profile picture with an overlaid status indicator or time progress ring.
+@@@Function Component@@@
+
+Stacked user profile avatar image:
+This circular avatar image is part of a group of profile pictures showing recent interactions or replies below a post.
+@@@Function Component@@@
+User profile avatar:
+This appears to be an avatar image representing a user's profile picture, commonly used in social media apps to identify users and link to their profiles.
+@@@Function Component@@@
+
+Search icon:
+This appears to be a button with a magnifying glass icon, likely used to open a search interface or navigate to the search tab.
+@@@TouchableOpacity Function Component@@@
+
+Header content block:
+This appears to be a container view grouping the app logo and user post text details together in the header/feed area.
+@@@View Function Component@@@
+
+Status bar time:
+This is a text label displaying the current time (9:41) in the device's status bar.
+@@@Text Functional Component@@@
+
+Post media image:
+This is an image component displaying media content (a 3D graphic) attached to a user's post.
+@@@Function Component@@@
+
+Home navigation icon:
+This appears to be a home icon button located in the bottom tab bar, allowing users to return to the main feed view.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar icon:
+This appears to be a user profile avatar icon used for navigation or displaying user identity in the bottom tab bar or profile section.
+@@@Function Component@@@
+
+Heart / Like icon button:
+This appears to be an interactive button with a heart icon, allowing users to like or favorite a post.
+@@@TouchableOpacity Function Component@@@
+
+User avatar image:
+This is an image component showing a user's avatar thumbnail, typically used in post headers or comment threads to represent the author.
+@@@Function Component@@@
+User avatar icon:
+This appears to be an interactive user profile icon or thumbnail image that likely links to a user's profile or account details when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Action icon:
+This is an interactive action icon button located in the navigation or toolbar area, likely used to trigger a specific feature such as searching or filtering content.
+@@@TouchableOpacity Function Component@@@
+
+Share or send icon:
+This appears to be an interactive button representing a share or send action, allowing users to forward, repost, or share content with others.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar image:
+This is a profile picture thumbnail representing a user, typically rendered as an image component within a post or comment section.
+@@@Function Component@@@
+
+Profile tab icon:
+This is a bottom navigation tab icon representing the user's profile section, allowing users to switch to their personal profile screen when tapped.
+@@@TouchableOpacity Function Component@@@

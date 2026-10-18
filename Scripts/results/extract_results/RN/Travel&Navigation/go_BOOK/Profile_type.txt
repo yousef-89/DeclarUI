@@ -1,0 +1,54 @@
+Payment Method list item:
+This appears to be a clickable row component containing an icon, text, and an arrow, which likely navigates the user to the payment method configuration screen.
+@@@TouchableOpacity Function Component@@@
+
+Settings list item:
+This appears to be a clickable row component containing a gear icon, text, and an arrow, which likely navigates the user to the application settings screen.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar and name section:
+This container holds the user's profile picture and name details, displaying user identity information within the profile screen.
+@@@View Function Component@@@
+
+Bookmarks list item:
+This appears to be a clickable row component containing a heart icon, text, and an arrow, which likely navigates the user to their saved bookmarks or favorite items.
+@@@TouchableOpacity Function Component@@@
+
+Back button:
+This is a button containing a left arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Security list item:
+This appears to be a clickable row component containing a shield icon, text, and an arrow, which likely navigates the user to security and privacy settings.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar and name header snippet:
+This is another section container displaying the user's avatar image alongside their profile text details.
+@@@View Function Component@@@
+
+Profile avatar image:
+This is an image component displaying the user's profile picture within a circular frame.
+@@@Function Component@@@
+
+Edit Profile list item:
+This appears to be a clickable row component containing a user icon, text, and an arrow, which likely navigates the user to the screen where they can edit their profile information.
+@@@TouchableOpacity Function Component@@@
+Notification list item:
+This appears to be a list item container that displays notification settings and details, likely allowing users to navigate to notification preferences when tapped.
+@@@View Function Component@@@
+
+Bottom navigation bar:
+This is a bottom tab navigation bar that allows users to easily switch between different main sections of the app such as Home, Notification, Ticket, History, and Setting.
+@@@View Function Component@@@
+
+"Profile" title label:
+This is a text label that displays the title of the current screen, indicating to the user that they are viewing their profile page.
+@@@Text Functional Component@@@
+
+Settings gear icon button:
+This appears to be a clickable button with a gear icon that likely allows users to open the app settings or configuration page.
+@@@TouchableOpacity Function Component@@@
+
+Back arrow button:
+This appears to be a navigation button with a left arrow that likely allows users to return to the previous screen.
+@@@TouchableOpacity Function Component@@@

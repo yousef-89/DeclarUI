@@ -1,0 +1,167 @@
+"S35赛季特惠接单" promotional image:
+This is an image that likely displays promotional content or advertisements related to a gaming season discount offer, showcasing pricing details or character visuals.
+@@@Function Component@@@
+
+"物流公司" (Logistics Company) label:
+This is a text label that indicates the shipping carrier or logistics company name associated with the package or delivery order.
+@@@Text Functional Component@@@
+
+"2024年07月02日 12:27" (July 02, 2024, 12:27) label:
+This is a text label displaying a specific timestamp, likely indicating the time of receipt or update for the logistics information.
+@@@Text Functional Component@@@
+
+"提醒" (Reminders) label:
+This is a text label representing a tab category for notification reminders or alert-based messages.
+@@@Text Functional Component@@@
+
+"其他" (Others) label:
+This is a text label representing a tab category for miscellaneous or other types of notifications.
+@@@Text Functional Component@@@
+
+"查看详情" (View Details) button:
+This appears to be a button that likely allows users to view more detailed information about the specific order or logistics update when clicked.
+@@@TouchableOpacity Function Component@@@
+
+Power bank promotional image:
+This is an image that showcases a product (such as a power bank with built-in cables), likely used for marketing, product display, or item preview within an e-commerce notification.
+@@@Function Component@@@
+
+"互动" (Interaction) label:
+This is a text label representing a tab category for interactive notifications or social activities.
+@@@Text Functional Component@@@
+
+Gear icon:
+This appears to be a clickable button with a settings icon, likely used to open the settings or configuration page for notifications and app preferences.
+@@@TouchableOpacity Function Component@@@
+Promotional poster image:
+This is an image component displaying a special offer or promotion banner for the gaming season.
+@@@Function Component@@@
+
+ZTO Express logo:
+This is an image component displaying the corporate logo of ZTO Express, a courier company.
+@@@Function Component@@@
+
+"即将确认收货" (Upcoming Order Confirmation) label:
+This is a text label indicating that the order is about to be confirmed for receipt.
+@@@Text Functional Component@@@
+
+"24/04/25" date label:
+This is a text label indicating the date of the notification or event (April 25, 2024).
+@@@Text Functional Component@@@
+
+"点击查看签收详情>>" (Click to view delivery details>>) label:
+This is a text label providing a clickable prompt for users to view more detailed information about the package delivery.
+@@@Text Functional Component@@@
+
+ZTO Express logo duplicate:
+This is an image component displaying the corporate logo of ZTO Express, a courier company.
+@@@Function Component@@@
+
+Cainiao icon:
+This is an image component displaying the avatar or icon for Cainiao, a logistics services provider.
+@@@Function Component@@@
+
+"包裹已被签收" (Package has been signed for) label:
+This is a text label informing the user that their package has been successfully delivered and signed for.
+@@@Text Functional Component@@@
+
+"赞评" (Likes and Comments) tab label:
+This is a text label indicating a tab or section for likes and comments within the app interface.
+@@@Text Functional Component@@@
+"包裹签收通知" (Package Receipt Notification) label:
+This is a text label that displays the title or category of the notification indicating that a package has been signed for and received.
+@@@Text Functional Component@@@
+
+"延长收货" (Extend Delivery) button:
+This appears to be a clickable button that allows users to request an extension on the delivery or receipt confirmation time for their order.
+@@@TouchableOpacity Function Component@@@
+
+ZTO Express logo:
+This is an image component displaying the logo of the ZTO Express delivery company, serving as a visual identifier for the shipping provider.
+@@@Function Component@@@
+
+"查快递" (Check Express) label:
+This text label indicates the search or tracking functionality for looking up express delivery status and updates.
+@@@Text Functional Component@@@
+
+"通知" (Notification) label:
+This text label serves as the header title of the page, indicating that the user is currently viewing their notifications.
+@@@Text Functional Component@@@
+
+"24/07/06" date label:
+This text label displays the date (Year/Month/Day) associated with the specific notification message.
+@@@Text Functional Component@@@
+
+Truck delivery icon:
+This image component represents a delivery truck icon, typically used for logistics and shipping-related notifications or statuses.
+@@@Function Component@@@
+
+"优惠" (Promotions/Discounts) label:
+This text label categorizes the notification or navigation tab, indicating content related to discounts and promotional offers.
+@@@Text Functional Component@@@
+
+"订单物流消息" (Order Logistics Message) label:
+This text label describes the title or type of notification, indicating that the message contains updates regarding order shipping and logistics.
+@@@Text Functional Component@@@
+"快递信息" (Courier Information) label:
+This is a text label displaying courier or shipping information details.
+@@@Text Functional Component@@@
+
+"即将自动确认收货" (Will automatically confirm receipt) label:
+This is a text label indicating the current status that the order will soon automatically confirm receipt.
+@@@Text Functional Component@@@
+
+"查看详情" (View details) button:
+This appears to be a clickable button that allows users to view more details about the order or shipment.
+@@@TouchableOpacity Function Component@@@
+
+"24/04/25" date label:
+This is a text label showing the date of the notification or event.
+@@@Text Functional Component@@@
+
+Header bar container with store name and date:
+This appears to be a container view grouping the store icon, store name, date, and options icon together in a notification card.
+@@@View Function Component@@@
+
+"11舍407" (Building 11, Room 407) address detail label:
+This is a text label displaying the specific delivery room or address details.
+@@@Text Functional Component@@@
+
+"收货地址" (Delivery address) label:
+This is a text label indicating the shipping address section.
+@@@Text Functional Component@@@
+
+"申通快递" (STO Express) label:
+This is a text label indicating the name of the logistics company handling the shipment.
+@@@Text Functional Component@@@
+
+"物流" (Logistics) tab label:
+This is a text label representing the "Logistics" category tab at the top navigation bar.
+@@@Text Functional Component@@@
+"韵达快递" (Yunda Express) label:
+This is a text label displaying the name of a courier or logistics company ("Yunda Express"), indicating the shipping provider for the package.
+@@@Text Functional Component@@@
+
+"关山街道珞瑜路 1037 号华中科技大学东 11 舍" (Guanshan Street, Luoyu Road No. 1037, Huazhong University of Science and Technology East 11 Dormitory) label:
+This is a text label that shows the detailed delivery address for the package.
+@@@Text Functional Component@@@
+
+Avatar/Logo icon:
+This appears to be an image representing the store or courier brand logo within the notification card.
+@@@Function Component@@@
+
+"快递公司" (Courier Company) label:
+This is a text label serving as a key or field name that indicates the shipping company associated with the delivery notification.
+@@@Text Functional Component@@@
+
+"菜鸟" (Cainiao) label:
+This is a text label showing the brand name "Cainiao", representing the logistics platform sending the notification.
+@@@Text Functional Component@@@
+
+"签收时间" (Signing Time / Delivery Time) label:
+This is a text label indicating the timestamp when the package was successfully delivered and signed for.
+@@@Text Functional Component@@@
+
+"包裹签收通知" (Package Delivery Notice) label:
+This is a text label that serves as the title for the notification card, informing the user that their package has arrived and been signed for.
+@@@Text Functional Component@@@

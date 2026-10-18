@@ -1,0 +1,136 @@
+"加油站" (Gas Station) tag:
+This is a text label indicating the category of the location as a gas station.
+@@@Text Functional Component@@@
+
+"地图" (Map) icon and label:
+This appears to be a button that likely allows users to open a map view for location details.
+@@@TouchableOpacity Function Component@@@
+
+"油站印象" (Gas Station Impression) label:
+This is a descriptive text label providing instructions on how users can leave feedback or share their experience after refueling.
+@@@Text Functional Component@@@
+
+"请选择油枪" (Please select a fuel nozzle) dropdown:
+This appears to be a dropdown selection component or button that allows users to choose a specific fuel nozzle/grade before refueling.
+@@@TouchableOpacity Function Component@@@
+
+"导航" (Navigation) button:
+This is a button that likely allows users to start GPS navigation towards the gas station.
+@@@TouchableOpacity Function Component@@@
+
+"立减优惠" (Instant discount) label:
+This is a text label describing an instant discount offer available for refueling.
+@@@Text Functional Component@@@
+
+More options menu button:
+This is a circular button containing three dots that likely opens a menu with additional actions or options.
+@@@TouchableOpacity Function Component@@@
+
+"刚刚浏览" (Just browsed) label:
+This is a tag indicating that the user has recently viewed this gas station.
+@@@Text Functional Component@@@
+
+"路线" (Route) button:
+This is a prominent button that likely provides route planning or directions to the gas station.
+@@@TouchableOpacity Function Component@@@
+Photo count badge:
+This appears to be an interactive badge showing the current photo index and total photo count (1/51), likely functioning as a button to open the full photo gallery viewer when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"导航" (Navigation) button:
+This is a button labeled with "导航" (Navigation), which users can tap to launch map navigation and get directions to the gas station.
+@@@TouchableOpacity Function Component@@@
+
+Search icon:
+This is a button with a magnifying glass icon, which users can tap to trigger a search function within the app.
+@@@TouchableOpacity Function Component@@@
+
+"地图" (Map) and "国标价 ¥8.07/L" (National Standard Price ¥8.07/L) section:
+This container displays a map icon along with the text "地图" (Map) and the national standard fuel price, likely serving as an interactive button to view the location on a map or access price details.
+@@@View Function Component@@@
+
+¥300 tier pricing card:
+This is a card displaying the price tier of ¥300 along with its discount information ("立减约 ¥ 11.81"), allowing users to select this specific amount for fueling and discounts.
+@@@TouchableOpacity Function Component@@@
+
+More options icon:
+This is a button featuring three dots, which typically opens a contextual menu with additional options or settings when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"优惠加油" (Discount Refueling) header with question mark:
+This text label and icon indicate the section title for discount refueling options, with the question mark likely acting as a button to open a help modal or tooltip explaining the discount rules.
+@@@View Function Component@@@
+
+"营业时间 周一至周日 00:00-24:00" (Business Hours Monday to Sunday 00:00-24:00) label:
+This text label displays the operating hours of the gas station, indicating that it is open 24 hours a day, Monday through Sunday.
+@@@Text Functional Component@@@
+
+"优惠券" (Coupons) label:
+This text label indicates the availability of coupons for the transaction, showing users that discounts or vouchers can be applied here.
+@@@Text Functional Component@@@
+"反馈" (Feedback) button with edit icon:
+This appears to be a touchable button that allows users to submit feedback or report issues regarding the gas station information.
+@@@TouchableOpacity Function Component@@@
+
+"周边" (Nearby) label:
+This is a text label that indicates the current tab or section is related to nearby locations or services.
+@@@Text Functional Component@@@
+
+"订单" (Orders) icon and label:
+This appears to be a touchable navigation button that directs users to their order history or active orders.
+@@@TouchableOpacity Function Component@@@
+
+Search icon button:
+This is a circular touchable button with a magnifying glass icon, likely used to trigger a search feature within the app.
+@@@TouchableOpacity Function Component@@@
+
+"¥ 200" and discount amount card:
+This card component displays a preset refueling amount of 200 Yuan along with the corresponding discount information.
+@@@View Function Component@@@
+
+"收藏" (Favorites) icon and label:
+This appears to be a touchable button with a star icon that allows users to bookmark or save this gas station to their favorites.
+@@@TouchableOpacity Function Component@@@
+
+"¥ 7.56/L" price label:
+This is a text label indicating the current discounted fuel price per liter in Chinese Yuan.
+@@@Text Functional Component@@@
+
+"电话" (Phone) icon and button:
+This is a touchable button with a phone icon and label, allowing users to quickly call the gas station for inquiries.
+@@@TouchableOpacity Function Component@@@
+
+"¥ 先加油后付款 输入金额计算优惠" (Pay after refueling, enter amount to calculate discount) banner:
+This appears to be a clickable promotional banner or button that guides users to enter an amount for refueling and calculating discounts.
+@@@TouchableOpacity Function Component@@@
+"油站价 ¥7.87/L" (Station price ¥7.87/L) label:
+This is a text label displaying the gas station's fuel price per liter, providing pricing information to the users.
+@@@Text Functional Component@@@
+
+"输入金额后查看可用优惠券" (Enter amount to view available coupons) label:
+This is a text placeholder or instructional label indicating that users need to input an amount first to check applicable coupons.
+@@@Text Functional Component@@@
+
+"路线" (Route) button:
+This appears to be a touchable button that allows users to view the route or get directions to the gas station.
+@@@TouchableOpacity Function Component@@@
+
+"阅读并同意《信息服务用户服务条款》《汽车服务个人信息处理规则》" (Read and agree to Information Service User Service Terms and Automotive Service Personal Information Processing Rules) label:
+This is a text label displaying the terms of service and privacy policy agreements that users need to read and agree to.
+@@@Text Functional Component@@@
+
+"距你 2.5公里 驾车6分钟 芝罘区 芝罘区二马路3号2单元内四号东山东山名郡路南" (Distance 2.5km, Driving 6 mins, Zhifu District...) label:
+This is a text label providing location-based details such as distance, estimated driving time, and detailed address of the gas station.
+@@@Text Functional Component@@@
+
+"¥100 立减约 ¥3.93" (¥100 Instant discount approx. ¥3.93) card/view:
+This is a container view displaying a preset payment amount option along with its corresponding discount details for the user to select.
+@@@View Function Component@@@
+
+"供销石油加油站" (Supply and Marketing Petroleum Gas Station) label:
+This is a heading text label that displays the name of the gas station.
+@@@Text Functional Component@@@
+
+"92#" dropdown selector:
+This appears to be a selector component or interactive button that allows users to choose the fuel grade (e.g., 92#).
+@@@TouchableOpacity Function Component@@@

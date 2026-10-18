@@ -1,12 +1,11 @@
 import json
-from openai import OpenAI
 import subprocess
 import shutil
-import httpx
 import base64
 import re
 import os
-import openai
+from google import genai
+from google.genai import types
 import glob
 import time
 import logging
@@ -29,10 +28,7 @@ prompt_folder = os.path.join('DeclarUI\Scripts\code_generation\utils\prompt_temp
 component_info_folder = os.path.join('DeclarUI\Scripts\results\extract_results',UI_class)
 output_folder = os.path.join('DeclarUI\Scripts\results\code_results','ablation_study')
 
-os.environ["OPENAI_API_BASE"] = 'https://api.xty.app/v1'
-os.environ["OPENAI_API_KEY"] = "your-api-key"  # gpt-4o/claude-3.5-sonnet
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
+GEMINI_KEY = os.environ["GEMINI_API_KEY"]
 
 # Initialize logging
 logging.basicConfig(
@@ -317,32 +313,22 @@ def is_fully_navigated(res,implemented_ids,not_implemented_ids, app_classificati
 
 def send_single_prompt_and_get_response(client,prompt,base64_image=''):
     if base64_image:
-        completion = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "user", "content": [
-                    {
-                        "type":"text",
-                        "text":prompt
-                    },
-                    {
-                        "type":"image_url",
-                        "image_url":{
-                            "url": f"data:image/png;base64,{base64_image}"
-                        }
-                    }
-                ]},
-            ]
+        completion = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=[
+                prompt,
+                types.Part.from_bytes(
+                    data=base64.b64decode(base64_image),
+                    mime_type="image/png",
+                ),
+            ],
         )
     else:
-        completion = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-            {"role": "system", "content": "You are an engineer proficient in React Native."},
-                {"role": "user", "content": prompt}
-            ]
+        completion = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents="You are an engineer proficient in React Native.\n\n" + prompt,
         )
-    res = completion.choices[0].message.content
+    res = completion.text
     res = remove_first_and_last_lines(res)
     return res
 
@@ -385,14 +371,7 @@ def copy_file2project(src_folder, dst_folder):
 
 
 def send_mutiple_prompts_and_get_response(app_classification, app_name):
-    client = OpenAI(
-        base_url="https://api.xty.app/v1",
-        api_key="your_api_key", 
-        http_client=httpx.Client(
-            base_url="https://api.xty.app/v1",
-            follow_redirects=True,
-        ),
-    )
+    client = genai.Client(api_key=GEMINI_KEY)
     entry_func_name = get_uitype_detail()["entry_func_name"]
     extend_name = get_uitype_detail()["extend_name"]
     page_seq = 0

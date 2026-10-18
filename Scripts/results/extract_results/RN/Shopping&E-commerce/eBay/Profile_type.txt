@@ -1,0 +1,128 @@
+"卖家，" (Seller) label:
+This is a text label that displays part of a descriptive phrase for saved items or searches (translated as "Seller,").
+@@@Text Functional Component@@@
+
+Tag icon:
+This appears to be an icon button representing selling records or shortcuts, likely allowing users to view or manage items they have listed for sale.
+@@@TouchableOpacity Function Component@@@
+
+"已保存" (Saved) label:
+This is a text label that indicates saved items, searches, or favorite sellers.
+@@@Text Functional Component@@@
+
+"购买记录" (Purchase history) labels:
+This is a text label displaying the section title and description for tracking past orders and transaction history.
+@@@Text Functional Component@@@
+
+"我的 eBay" (My eBay) icon and label:
+This is a navigation tab item representing the user's personal profile or account section ("My eBay").
+@@@TouchableOpacity Function Component@@@
+
+"搜索" (Search) icon and label:
+This is a navigation tab or button used to initiate a search within the app.
+@@@TouchableOpacity Function Component@@@
+
+"通知" (Notifications) icon and label:
+This is a navigation tab or button used to view user notifications and alerts.
+@@@TouchableOpacity Function Component@@@
+
+"追踪列表" (Watchlist) label:
+This is a text label indicating the "Watchlist" section, used to monitor items the user is closely following.
+@@@Text Functional Component@@@
+
+Notification badge "5":
+This is a text/view indicator showing the number of unread messages or notifications (5).
+@@@Text Functional Component@@@
+Gavel icon:
+This appears to be an icon button that likely navigates users to ongoing auctions and offers ("出价和议价").
+@@@TouchableOpacity Function Component@@@
+
+Heart icon:
+This appears to be a button that likely allows users to access their watched or saved items ("追踪列表" / "已保存").
+@@@TouchableOpacity Function Component@@@
+
+"密切关注追踪物品" (Closely monitor tracked items) label:
+This is a descriptive text label providing a subtitle for the tracking list menu option.
+@@@Text Functional Component@@@
+
+Tag and item label:
+This appears to be an icon with text representing the "Selling" (出售物品) section, which likely allows users to view items they are selling.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar icon "M":
+This appears to be an image container or avatar icon representing the user's profile picture.
+@@@Function Component@@@
+
+Refresh/repeat cycle icon:
+This appears to be a button representing the "Buy Again" (再次购买) feature, allowing users to quickly repurchase previously bought items.
+@@@TouchableOpacity Function Component@@@
+
+User profile and registration info:
+This text component displays the username ("mu_447895") and registration year ("注册时间 2021" / Registration year 2021).
+@@@Text Functional Component@@@
+
+"再次购买" (Buy again) label:
+This is a text label indicating the "Buy Again" feature for repurchasing past items.
+@@@Text Functional Component@@@
+
+"动态消息" (Feed / Activity messages) label:
+This is a text label describing activity updates or messages related to searches, sellers, or saved items.
+@@@Text Functional Component@@@
+"快捷方式" (Shortcuts) label:
+This is a section header text label that indicates the shortcuts or quick access features section below it.
+@@@Text Functional Component@@@
+
+Package icon:
+This appears to be an icon button that likely allows users to view their order history, purchase records, or package deliveries.
+@@@TouchableOpacity Function Component@@@
+
+"出价和议价" (Bids and Offers) and description label:
+This is a text block describing ongoing auctions and seller negotiations, indicating the status of user bids and offers.
+@@@Text Functional Component@@@
+
+"查看您保存的偏好设置" (View your saved preferences) label:
+This is a descriptive text label that explains the functionality of the "My size" feature, indicating users can view their saved sizing preferences.
+@@@Text Functional Component@@@
+
+"出售记录" (Selling records) label:
+This is a text label that indicates the user's past sales or selling history within the shortcuts section.
+@@@Text Functional Component@@@
+
+"我的码数" (My size) label:
+This is a text label that displays the name of the feature allowing users to view and manage their sizing preferences.
+@@@Text Functional Component@@@
+
+"购买已购买过的物品" (Buy previously purchased items) label:
+This is a descriptive text label explaining the "Buy again" feature, allowing users to quickly repurchase items they have bought before.
+@@@Text Functional Component@@@
+
+Home icon and "主页" (Home) label:
+This is a navigation bar button item with a home icon and label that allows users to return to the main home screen of the app.
+@@@TouchableOpacity Function Component@@@
+
+"搜索" (Search) label:
+This is a text label accompanying the search icon in the bottom navigation bar, indicating the search feature.
+@@@Text Functional Component@@@
+Envelope icon:
+This appears to be a button with an envelope icon in the top right header, likely used to open messages, inbox, or notifications.
+@@@TouchableOpacity Function Component@@@
+
+History/Clock icon:
+This appears to be an icon inside a list item button representing recently viewed items or browsing history, allowing users to quickly access their past activity.
+@@@Function Component@@@
+
+"最近浏览" (Recently browsed) and "您最近浏览的物品" (Items you've recently browsed) labels:
+These are text labels describing the list section and item function, indicating that this section displays the user's recently viewed items.
+@@@Text Functional Component@@@
+
+Shopping cart icon:
+This appears to be a button in the top right header with a cart icon, likely allowing users to view items added to their shopping cart or proceed to checkout.
+@@@TouchableOpacity Function Component@@@
+
+Shoe icon:
+This appears to be an icon inside a list item button representing "My Size" (我的尺码), allowing users to view and manage their saved clothing or shoe size preferences.
+@@@Function Component@@@
+
+Heart icon:
+This appears to be an icon inside a list item button representing saved or favorite items (such as "Saved" or "Watchlist"), allowing users to quickly access their liked products.
+@@@Function Component@@@

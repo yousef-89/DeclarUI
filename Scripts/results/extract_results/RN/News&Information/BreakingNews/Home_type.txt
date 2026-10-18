@@ -1,0 +1,120 @@
+"BELOUD" label:
+This is a text label representing a brand name or navigation tab ("BELOUD").
+@@@Text Functional Component@@@
+
+"视频" (Video) label:
+This is a text label indicating a video category or tab. Translation: "Video".
+@@@Text Functional Component@@@
+
+"热门" (Trending/Hot) label:
+This is a text label indicating a category or tab for trending content. Translation: "Hot" or "Trending".
+@@@Text Functional Component@@@
+
+Black circle icon:
+This appears to be a graphic indicator or status dot, potentially used for notifications or UI decoration.
+@@@Function Component@@@
+
+Weather icon:
+This is a weather icon showing a sun and clouds with rain, indicating current weather conditions for the selected city.
+@@@Function Component@@@
+
+"新闻" (News) label:
+This is a text label representing the news section or tab. Translation: "News".
+@@@Text Functional Component@@@
+
+"8:35" time label:
+This is a text label displaying the current system time, which is 8:35.
+@@@Text Functional Component@@@
+
+Megaphone icon:
+This is an icon representing announcements, audio, or promotional content (such as an ad notice).
+@@@Function Component@@@
+
+"總統核定成立大法官提名審薦小組擬明日開會" (President approves establishment of Grand Justices nomination review group, plans to meet tomorrow) headline text label:
+This is a headline text label displaying a news article title. Translation: "The President has approved the establishment of a Grand Justices nomination review group, planning to hold a meeting tomorrow."
+@@@Text Functional Component@@@
+Mon, 15 M07 2024, 08:35 label:
+This is a text label displaying the current date and time (Monday, 15 July 2024, 08:35), providing users with temporal context.
+@@@Text Functional Component@@@
+
+突发重大 (Breaking Major News) label:
+This is a text label indicating a category or filter for breaking major news stories. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+Comment icon button:
+This appears to be a button with a comment icon, allowing users to open the comments section or write a comment on the article.
+@@@TouchableOpacity Function Component@@@
+
+AD label:
+This is a badge or text label indicating that the displayed content is an advertisement.
+@@@Text Functional Component@@@
+
+话题墙 (Topic Wall) label:
+This is a navigation or section label representing the "Topic Wall" feature, likely allowing users to view trending discussions or community topics. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+更多 (More) label:
+This is a navigation or button text label indicating "More", which likely opens additional options or menu items when clicked. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+突发新闻 (Breaking News) category label:
+This is a text label displaying the category name "Breaking News", used for navigation or section titling. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+UDN.COM - 33分钟 (UDN.COM - 33 minutes ago) label:
+This is a text label showing the news source and the time elapsed since publication (33 minutes ago). When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+谷歌广告 (Google Ads) label:
+This is a text label indicating that the content or ad provider is Google Ads. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+"提醒" (Reminder) label:
+This is a text label that displays the navigation or tab title "Reminder" in the bottom menu bar, indicating a section for alerts or notifications.
+@@@Text Functional Component@@@
+
+"突发新闻" (Breaking News) label:
+This is a text label highlighting a category tag or news badge labeled "Breaking News" in Chinese.
+@@@Text Functional Component@@@
+
+"最新资讯" (Latest News) label:
+This is a text label indicating the "Latest News" category tab in the top navigation bar.
+@@@Text Functional Component@@@
+
+"评论" (Comments) label:
+This is a text label representing the "Comments" section or button, allowing users to view or add comments on the article.
+@@@Text Functional Component@@@
+
+"RSI C6" text:
+This is a text label displaying the product name or brand identifier "RSI C6" related to the displayed vehicle image.
+@@@Text Functional Component@@@
+
+App logo icon:
+This appears to be an image component showing the app's branding logo with Chinese characters meaning "Breaking News", likely acting as a header icon or branding element.
+@@@Function Component@@@
+
+User avatar placeholder icon:
+This appears to be an image component showing a default user profile silhouette, which likely links to user account settings or profile view.
+@@@Function Component@@@
+
+Vehicle license plate or brand badge image:
+This is an image component displaying a close-up of a vehicle's badging or custom plate text ("RSI C6 advanced composites technology").
+@@@Function Component@@@
+
+"同城" (Local/Same City) label:
+This is a text label representing the "Local" news category tab in the top navigation bar, allowing users to view content specific to their region.
+@@@Text Functional Component@@@
+"选择您的城市" (Select your city) label:
+This is a text label that indicates the current location setting or prompts the user to choose their city, translating to "Select your city".
+@@@Text Functional Component@@@
+
+Magnifying glass search icon:
+This appears to be a button with a search icon that likely allows users to open a search interface or perform a search query within the app.
+@@@TouchableOpacity Function Component@@@
+
+List navigation icon:
+This appears to be a navigation icon representing a list view or menu, allowing users to switch tabs or access list-based content.
+@@@Function Component@@@
+
+"猜你喜欢" (Guess You Like) label:
+This is a tab label that indicates a personalized content feed, translating to "Guess You Like", featuring a bottom indicator line to show it is currently selected.
+@@@Text Functional Component@@@

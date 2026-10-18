@@ -1,0 +1,31 @@
+Valid on Vodafone pay monthly contracts only. text:
+This is a text label displaying part of the terms and conditions details for the offer.
+@@@Text Functional Component@@@
+
+NEW tag:
+This appears to be a badge or tag component indicating that a feature or section is newly added.
+@@@View Function Component@@@
+
+Discover tab:
+This appears to be a navigation tab containing an icon and label that likely directs users to the discover or home section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Monthly price text:
+This is a text label explaining the monthly price increase and contract terms.
+@@@Text Functional Component@@@
+
+Account tab:
+This appears to be a navigation tab containing an icon and label allowing users to view and manage their account details.
+@@@TouchableOpacity Function Component@@@
+
+Search tab:
+This appears to be a navigation tab containing an icon and label that likely opens the search functionality.
+@@@TouchableOpacity Function Component@@@
+
+Star icon:
+This appears to be an interactive icon button, likely representing a VIP or favorite feature that users can toggle.
+@@@TouchableOpacity Function Component@@@
+
+Terms and Conditions header:
+This is the header section containing a back button and title, allowing users to return to the previous screen and see the current page title.
+@@@View Function Component@@@

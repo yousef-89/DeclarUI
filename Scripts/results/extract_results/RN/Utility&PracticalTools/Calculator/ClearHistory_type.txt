@@ -1,0 +1,89 @@
+Equals button:
+This appears to be a button representing the equals sign, likely used to calculate and display the final result of a mathematical expression.
+@@@TouchableOpacity Function Component@@@
+
+History icon button:
+This appears to be a button with a clock icon, likely used to view previous calculation history.
+@@@TouchableOpacity Function Component@@@
+
+Minus button:
+This appears to be a button representing the minus sign, used for subtraction operations in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Plus button:
+This appears to be a button representing the plus sign, used for addition operations in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Clear History button:
+This appears to be a button with text that allows users to clear their calculation history list.
+@@@TouchableOpacity Function Component@@@
+
+Equals button (duplicate view):
+This appears to be a button representing the equals sign, used to trigger the final calculation.
+@@@TouchableOpacity Function Component@@@
+
+"Switch to Light" label:
+This is a text label that indicates the current theme toggle option, allowing users to switch the app appearance to light mode.
+@@@Text Functional Component@@@
+
+"45 × 24" label:
+This is a text label that displays the current calculation expression or sub-expression being evaluated.
+@@@Text Functional Component@@@
+
+Multiply button:
+This appears to be a button representing the multiplication sign, used for multiplication operations in the calculator.
+@@@TouchableOpacity Function Component@@@
+Close icon:
+This appears to be a button that likely allows users to close a panel, clear the current input, or delete an entry.
+@@@TouchableOpacity Function Component@@@
+
+Expand icon:
+This appears to be a button that likely allows users to expand the view, maximize the display area, or enter fullscreen mode.
+@@@TouchableOpacity Function Component@@@
+
+Multiplication (x) button:
+This appears to be a calculator button used to perform multiplication operations between numbers.
+@@@TouchableOpacity Function Component@@@
+
+Switch component:
+This appears to be a switch toggle that allows users to toggle between different application modes, such as switching to light mode.
+@@@Switch@@@
+
+History pill label:
+This appears to be a text label indicating a past calculation or a specific history value, such as 1080.
+@@@Text Functional Component@@@
+
+Switch component (duplicate):
+This appears to be a switch toggle that allows users to toggle between different application modes, such as switching to light mode.
+@@@Switch@@@
+
+Close icon (duplicate):
+This appears to be a button that likely allows users to close a panel, clear the current input, or delete an entry.
+@@@TouchableOpacity Function Component@@@
+
+Division (/) button:
+This appears to be a calculator button used to perform division operations between numbers.
+@@@TouchableOpacity Function Component@@@
+
+History panel view:
+This appears to be a container view displaying a clock icon and a message indicating that there is no calculation history yet.
+@@@View Function Component@@@
+Minus button icon:
+This appears to be a button representing the subtraction operation in the calculator, allowing users to subtract values.
+@@@TouchableOpacity Function Component@@@
+
+History pill label:
+This is a text label displaying a saved number or history item within a pill-shaped container.
+@@@Text Functional Component@@@
+
+Division button icon:
+This appears to be a button representing the division operation in the calculator, allowing users to divide values.
+@@@TouchableOpacity Function Component@@@
+
+Plus button icon:
+This appears to be a button representing the addition operation in the calculator, allowing users to add values together.
+@@@TouchableOpacity Function Component@@@
+
+History clock icon:
+This appears to be an icon representing history or time, likely used within a history panel to indicate past calculations or logs.
+@@@Function Component@@@

@@ -1,0 +1,186 @@
+Photo and message snippet item:
+This appears to be a list item layout containing an icon, text label, and metadata representing a media message in a chat history list.
+@@@View Function Component@@@
+
+Checkmark icon:
+This is a small indicator icon likely showing that a message has been successfully sent or read.
+@@@Function Component@@@
+
+"6:00" timestamp:
+This is a text label displaying the time when the message was sent.
+@@@Text Functional Component@@@
+
+"Dasha Taran" contact name:
+This is a text label displaying the display name of the contact in the messages list.
+@@@Text Functional Component@@@
+
+"9:41" status bar time:
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Signal strength icon:
+This is an indicator icon representing the current cellular network signal strength in the device's status bar.
+@@@Function Component@@@
+
+"Hello there?" message preview:
+This is a text label showing the latest message preview content in a conversation.
+@@@Text Functional Component@@@
+
+"EB" avatar:
+This is a profile avatar containing user initials with a circular background image container.
+@@@Function Component@@@
+
+"Contacts" label:
+This is a text label describing the navigation tab for accessing the user's contacts list.
+@@@Text Functional Component@@@
+"Photo", "Ilay Serah", and "Video" text/icons section:
+This is a portion of a chat list item containing contact name and recent message indicators like photo or video previews, displaying contextual information about the message content.
+@@@View Function Component@@@
+
+"Thanks ray!" text:
+This is a text label displaying the recent message snippet from a contact in the conversation list.
+@@@Text Functional Component@@@
+
+Mixed message/icon snippet section:
+This appears to be a clipped segment showing various message metadata such as icons and text snippets within the chat list rows.
+@@@View Function Component@@@
+
+"Scarlett Johansson" text:
+This is a text label displaying the name of a contact in the messages list.
+@@@Text Functional Component@@@
+
+Dark circle profile icon and small "RT" indicator:
+This is an avatar container showing a user profile picture placeholder along with a small label component representing user initials or status.
+@@@View Function Component@@@
+
+"IS" avatar circle:
+This is a circular profile avatar container displaying the initials "IS" for a contact in the messages list.
+@@@View Function Component@@@
+
+"Okay thank you billie" text:
+This is a text label showing the content of the latest message received from a specific contact.
+@@@Text Functional Component@@@
+
+"Yesterday" text:
+This is a text label indicating the timestamp of when the last message was received.
+@@@Text Functional Component@@@
+
+"Messages" header text:
+This is a header text label indicating the current title of the screen or section, which is "Messages".
+@@@Text Functional Component@@@
+8:30 timestamp label:
+This is a text label displaying the time or timestamp of a message or chat item.
+@@@Text Functional Component@@@
+
+DT user avatar:
+This appears to be a user profile avatar displaying initials "DT" inside a circular container, representing a contact.
+@@@View Function Component@@@
+
+AB user avatar with online indicator:
+This appears to be a user profile avatar showing initials "AB" with a green dot indicator denoting online status.
+@@@View Function Component@@@
+
+Unread message count badge and timestamp label:
+This appears to be a container combining an unread notification count badge and a timestamp label.
+@@@View Function Component@@@
+
+Messages header title:
+This is a text label displaying the title of the screen or section, indicating the current view is "Messages".
+@@@Text Functional Component@@@
+
+WiFi icon:
+This represents a network status icon indicating WiFi connectivity strength.
+@@@Function Component@@@
+
+Antonio Banderas name label:
+This is a text label displaying a contact's name, used to identify the person in the conversation list.
+@@@Text Functional Component@@@
+
+CE user avatar:
+This appears to be a user profile avatar displaying initials "CE" inside a circular container, representing a contact.
+@@@View Function Component@@@
+
+Unread message badge:
+This is a notification badge displaying the number of unread messages for a specific conversation.
+@@@View Function Component@@@
+Double check icon:
+This icon displays a delivery/read receipt status (double checkmark) indicating that the sent message has been successfully received or read by the recipient.
+@@@Function Component@@@
+
+Johnny Deep text:
+This text label displays the name of a contact in the message list.
+@@@Text Functional Component@@@
+
+Billie Eillish text:
+This text label displays the name of a contact in the message list.
+@@@Text Functional Component@@@
+
+re welcome text:
+This text label displays a snippet of a message preview within the conversation list.
+@@@Text Functional Component@@@
+
+AB avatar icon with green indicator:
+This container displays a user profile picture avatar along with a small online status indicator dot in the bottom-right corner.
+@@@View Function Component@@@
+
+Photo text:
+This text label describes the type of media sent in the message preview, indicating that a photo was shared.
+@@@Text Functional Component@@@
+
+Photo and Ilay Serah container:
+This view groups together a message preview with an icon and text along with a contact name row in the message list.
+@@@View Function Component@@@
+
+Unread message count badge:
+This badge view displays the number of unread messages (e.g., "2") for a specific conversation.
+@@@View Function Component@@@
+
+Home indicator bar:
+This is the standard iOS bottom home indicator bar used for navigating back to the home screen or switching apps.
+@@@View Function Component@@@
+JD profile avatar:
+This appears to be a user profile picture placeholder displaying initials, likely used to represent a contact in the messaging list.
+@@@Function Component@@@
+
+AB profile avatar with online status indicator:
+This is a user profile avatar with a green status dot indicating that the user is currently online or active.
+@@@Function Component@@@
+
+"Call" text label:
+This is a text label displaying a word from a message preview, indicating the type of content or interaction in the conversation.
+@@@Text Functional Component@@@
+
+"Yesterday" timestamp label:
+This is a text label that displays the time or date (Yesterday) when the last message was received in the conversation.
+@@@Text Functional Component@@@
+
+Battery status indicator:
+This appears to be a system status icon representing the device's battery level in the status bar at the top of the screen.
+@@@StatusBar Android and iOS Component@@@
+
+"Chris Evans" contact name label:
+This is a text label displaying the name of the contact in the message list.
+@@@Text Functional Component@@@
+
+Dark circular overlay/button:
+This appears to be a floating action button or touchable interaction element overlaying the list, possibly used to start a new chat or message.
+@@@TouchableOpacity Function Component@@@
+
+IS profile avatar:
+This is a user profile picture placeholder displaying initials, representing a specific contact in the messaging interface.
+@@@Function Component@@@
+
+AB profile avatar with online status indicator:
+This is another user profile avatar with initials and an online status indicator dot.
+@@@Function Component@@@
+"You" label:
+This is a text label indicating the sender of the message preview, showing that the current user sent the previous message.
+@@@Text Functional Component@@@
+
+"Calls" label:
+This is a text label for the bottom navigation tab, indicating the section where users can view and make phone or video calls.
+@@@Text Functional Component@@@
+
+Magnifying glass icon:
+This appears to be a button that likely allows users to search for specific messages, chats, or contacts within the app.
+@@@TouchableOpacity Function Component@@@

@@ -1,0 +1,89 @@
+英国英格兰多塞特(Dorset)的整套小木屋 6位房客·2间卧室·3张床·1.5个卫生间 (Entire chalet in Dorset, England - 6 guests, 2 bedrooms, 3 beds, 1.5 baths) label:
+This is a text label that displays the property type, location, and key accommodation details such as the number of guests, bedrooms, beds, and bathrooms.
+@@@Text Functional Component@@@
+
+Property rating and review details card:
+This appears to be a container view showing the property's average rating with stars, a guest favorite badge, and the total count of reviews.
+@@@View Function Component@@@
+
+这个房源很抢手 (This place is in high demand) label:
+This is a text label indicating that the listing is very popular and gets booked quickly by other travelers.
+@@@Text Functional Component@@@
+
+无线网络 (Wi-Fi) label:
+This is a text label indicating that wireless internet is available as one of the property's amenities.
+@@@Text Functional Component@@@
+
+Back button:
+This is an interactive circular button with a left arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+¥ 2,424 /晚 9月2日至7日 (¥ 2,424 per night, Sep 2 - 7) label:
+This is a text label showing the pricing details per night and the selected booking date range.
+@@@Text Functional Component@@@
+
+预订 (Book) button:
+This is a primary call-to-action button that allows users to proceed with booking the selected property for the specified dates.
+@@@TouchableOpacity Function Component@@@
+
+Share button:
+This is an interactive circular button with an upward arrow icon that allows users to share the property listing link or details.
+@@@TouchableOpacity Function Component@@@
+
+入住便捷 (Easy check-in) label:
+This is a text label describing a key feature or amenity of the listing, indicating that guests can experience a smooth and easy check-in process.
+@@@Text Functional Component@@@
+Award icon:
+This appears to be a badge or award icon, likely used to highlight a specific feature or rating attribute of the property, such as guest favorite.
+@@@Function Component@@@
+
+"1/52" badge:
+This is a text label displaying the current image index out of the total number of property photos, indicating the photo gallery pagination.
+@@@Text Functional Component@@@
+
+"这个房源很抢手" (This property is in high demand) label and diamond icon:
+This is a combination of a decorative icon and text highlighting the high demand or popularity status of the listed property.
+@@@View Function Component@@@
+
+"8月3日前免费取消" (Free cancellation before August 3) label:
+This is a text label that indicates the cancellation policy for the booking, letting users know they can cancel for free before a specific date.
+@@@Text Functional Component@@@
+
+Favorite heart icon button:
+This appears to be a touchable button with a heart icon that allows users to add or remove the property from their wishlist or favorites.
+@@@TouchableOpacity Function Component@@@
+
+"Pitch 24 Creek Caravan Park Ringstead狗友好" (Pitch 24 Creek Caravan Park Ringstead Dog-friendly) title:
+This is a text label displaying the full title and main features of the property, including its name and pet-friendly status.
+@@@Text Functional Component@@@
+
+Calendar icon:
+This is an icon representing a calendar or date-related feature, often used alongside information about cancellation policies or booking dates.
+@@@Function Component@@@
+
+Wifi icon:
+This is an icon representing wireless network availability, used next to amenity features for the property.
+@@@Function Component@@@
+
+"海景民宿" (Ocean view homestay) label:
+This is a text label describing one of the key amenities or features of the property, indicating it offers an ocean view.
+@@@Text Functional Component@@@
+"位置极佳" (Great Location) label:
+This is a text label that describes a key feature or advantage of the listing's location, meaning "Great location".
+@@@Text Functional Component@@@
+
+Location pin icon:
+This appears to be an icon representing location or mapping features, likely used alongside location-related text to help users identify geographic details easily.
+@@@Function Component@@@
+
+Beach house icon:
+This icon represents a seaside or vacation home feature, providing a visual cue for properties located near the beach.
+@@@Function Component@@@
+
+Key icon:
+This icon represents check-in or access features, likely indicating convenient or self check-in options for guests.
+@@@Function Component@@@
+
+"超赞房东" (Superhost) label:
+This is a text label that indicates the host has achieved Superhost status, meaning "Superhost".
+@@@Text Functional Component@@@

@@ -1,0 +1,73 @@
+"CURVE UK LIMITED" text:
+This is a text label displaying the company or contact name "CURVE UK LIMITED" in a contact list.
+@@@Text Functional Component@@@
+
+QR code scanner icon:
+This appears to be a button with an icon that likely allows users to scan QR codes or barcodes using the device's camera.
+@@@TouchableOpacity Function Component@@@
+
+Company logo or contact avatar icon:
+This is an image component displaying the logo for CURVE UK LIMITED.
+@@@Function Component@@@
+
+"Fang Zhou" text:
+This is a text label displaying a person's name "Fang Zhou" within the contact list.
+@@@Text Functional Component@@@
+
+Back arrow icon:
+This is a button with a left arrow icon that allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Information icon:
+This appears to be a button with an information icon that likely opens a modal or navigates to a screen containing more details about the contact.
+@@@TouchableOpacity Function Component@@@
+
+"建议联系人" (Suggested contacts) label:
+This is a text label that serves as a section header, indicating the group of suggested contacts below it.
+@@@Text Functional Component@@@
+
+Information icon:
+This appears to be a button with an information icon that likely opens a modal or navigates to detailed information about the suggested contact.
+@@@TouchableOpacity Function Component@@@
+
+Address book / Contact icon:
+This is an icon representing an address book or contacts directory, typically used alongside a prompt to enable contact syncing or access.
+@@@Function Component@@@
+"您的联系人" (Your contacts) label and avatar:
+This is a combination of a text label and an avatar representing a contact section. The text means "Your contacts".
+@@@View Function Component@@@
+
+"ZF" avatar icon:
+This is an avatar icon with initials "ZF" displayed inside a colored circular background, likely representing a user or contact.
+@@@Function Component@@@
+
+Information icon:
+This appears to be an information button that users can tap to view more details about the contact or transaction history.
+@@@TouchableOpacity Function Component@@@
+
+Search input placeholder text:
+This is a text input field placeholder that guides users to search by entering a name, username, email address, or phone number.
+@@@TextInput@@@
+
+"Fang Zhou" contact name:
+This is a text label displaying the contact's name, "Fang Zhou".
+@@@Text Functional Component@@@
+
+"启用您的联系人" (Enable your contacts) label:
+This is a text label with an icon indicating that users can enable or sync their contacts. Translation: "Enable your contacts".
+@@@Text Functional Component@@@
+
+Home indicator bar:
+This is the standard iOS home indicator bar at the bottom of the screen.
+@@@View Function Component@@@
+
+"CURVE UK LIMITED" logo icon:
+This is a company logo icon representing "CURVE UK LIMITED" for a business contact or payee.
+@@@Function Component@@@
+
+"跨境汇款至银行账户、现金领取点等" (Cross-border remittance to bank accounts, cash pickup points, etc.) banner:
+This is a clickable banner button that likely directs users to cross-border transfer services.
+@@@TouchableOpacity Function Component@@@
+ZF avatar icon:
+This appears to be an avatar image representing a contact or user initials (ZF) in a circular profile container.
+@@@Function Component@@@

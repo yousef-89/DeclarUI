@@ -1,0 +1,171 @@
+Date card component:
+This appears to be a selectable date container card showing "星期日" (Sunday) and date "07-21", which likely allows users to pick this specific departure date for the tour.
+@@@View Function Component@@@
+
+"导 |" (Guide/Lead text fragment):
+This is a text fragment showing part of a Chinese label, likely related to tour guide information or navigation services.
+@@@Text Functional Component@@@
+
+Share icon button:
+This is a clickable icon button allowing users to share the current tour page or product details with friends or social media.
+@@@TouchableOpacity Function Component@@@
+
+More options icon button:
+This is a clickable icon button represented by three dots, typically used to open a pop-up menu with more secondary actions or settings.
+@@@TouchableOpacity Function Component@@@
+
+"立即预订" (Book Now) button:
+This is a prominent primary call-to-action button that lets users start the booking and reservation process for the tour package.
+@@@TouchableOpacity Function Component@@@
+
+Customer service icon and text:
+This represents a customer service entry point with a user-chat icon and the text "客服" (Customer Service), allowing users to open a chat window to consult with support.
+@@@TouchableOpacity Function Component@@@
+
+"达人探线" (Expert Exploration tag):
+This is a promotional tag or button highlighting expert-vetted travel routes, allowing users to view specialized travel content.
+@@@TouchableOpacity Function Component@@@
+
+"超棒 “酒店很舒服”" (Superb "Hotel is very comfortable" review tag):
+This is a highlighted review snippet or tag praising the hotel quality, providing positive social proof for potential customers.
+@@@Text Functional Component@@@
+
+Weekend departure date card component:
+This is a selectable date card marked with "周末出行" (Weekend Travel), showing "星期六" (Saturday) and "07-20", allowing users to select a weekend departure option.
+@@@View Function Component@@@
+收藏 (Favorites/Like) icon:
+This appears to be an interactive button with a heart and plus icon, which likely allows users to add the current travel package to their favorites or wishlist.
+@@@TouchableOpacity Function Component@@@
+
+29项优惠 (29 discounts) label:
+This is a text label that displays the number of available discounts or promotions (29 discounts), indicating to users how many promotional offers can be applied to this item.
+@@@Text Functional Component@@@
+
+烟台 + 蓬莱区 2日1晚拼小团 (Yantai + Penglai District 2-day 1-night group tour) title:
+This is a text label displaying the main title of the travel package, describing the destination and itinerary details.
+@@@Text Functional Component@@@
+
+分期立减 (Installment discount) button/label:
+This appears to be a promotional tag or button indicating an instant discount available when paying via installments.
+@@@TouchableOpacity Function Component@@@
+
+近30天低价 (Lowest price in last 30 days) / 星期五 07-19 (Friday 07-19) card:
+This is a date selection card showing the price context ("Lowest price in last 30 days") and specific date ("Friday 07-19"), allowing users to select departure dates for the tour.
+@@@TouchableOpacity Function Component@@@
+
+拼小团 (Small group tour) label:
+This is a text label indicating the tour type is a small group tour, highlighting the travel style category.
+@@@Text Functional Component@@@
+
+放心游 (Worry-free travel) label:
+This is a text label representing a service guarantee ("Worry-free travel"), assuring users of reliable service quality.
+@@@Text Functional Component@@@
+
+More options (...) icon:
+This is a button with three dots, typically used to open a modal or menu with additional options such as sharing, reporting, or navigating back to the home page.
+@@@TouchableOpacity Function Component@@@
+
+自由灵活 (Free and flexible) label:
+This is a text label describing the flexibility feature of the travel package, indicating that the itinerary can be customized or offers flexible scheduling.
+@@@Text Functional Component@@@
+"人少体验好" (Small groups, better experience) text label:
+This appears to be a text label describing a specific feature or selling point of the tour package, indicating fewer people and a better travel experience.
+@@@Text Functional Component@@@
+
+"店铺" (Shop) icon and label:
+This appears to be a button with an icon and text representing a store, which likely allows users to navigate to the merchant's store page.
+@@@TouchableOpacity Function Component@@@
+
+"优选" (Selected/Premium) tag:
+This is a text label indicating that this particular option or feature is selected or premium quality.
+@@@Text Functional Component@@@
+
+"纯玩无购物" (Pure play, no shopping) text label:
+This is a text label highlighting that the tour package focuses purely on sightseeing without any forced shopping stops.
+@@@Text Functional Component@@@
+
+Tour title and pricing details container:
+This appears to be a container view grouping the main tour title, price, and promotional tags together.
+@@@View Function Component@@@
+
+"编号" (ID Number) text label:
+This is a text label displaying the product identification number for the tour package ("编号 45578775").
+@@@Text Functional Component@@@
+
+"图片1/4" (Photo 1/4) indicator:
+This appears to be a badge indicating the current photo index out of the total image gallery count.
+@@@Text Functional Component@@@
+
+"¥965/人起" (From ¥965 per person) price label:
+This is a text label displaying the starting price per person for the tour package.
+@@@Text Functional Component@@@
+
+"无购物" (No shopping) text label:
+This is a text label indicating that the tour package includes no shopping stops, highlighted in green.
+@@@Text Functional Component@@@
+"看每日行程" (View Daily Itinerary) button:
+This appears to be a clickable button that allows users to view the detailed daily itinerary of the travel package.
+@@@TouchableOpacity Function Component@@@
+
+"烟台出发" (Yantai Departure) label:
+This is a text label indicating the departure city for the tour, which is Yantai.
+@@@Text Functional Component@@@
+
+"钻石贵宾专享" (Diamond VIP Exclusive) label and icon container:
+This is a tag or badge containing an icon and text indicating exclusive benefits and perks for diamond VIP members.
+@@@View Function Component@@@
+
+"5.0分" (5.0 Score) label:
+This is a text label showing the rating score of 5.0, representing high customer satisfaction or reviews.
+@@@Text Functional Component@@@
+
+"星期一 07-22" (Monday 07-22) label:
+This is a text label displaying a specific date and day of the week for tour scheduling or booking selection.
+@@@Text Functional Component@@@
+
+"特色体验" (Featured Experience) label:
+This is a text label highlighting special or unique activities included in the travel package.
+@@@Text Functional Component@@@
+
+"提前 2 天免费退" (Free cancellation 2 days in advance) label:
+This is a text label indicating the cancellation policy, allowing free cancellation up to 2 days prior to the trip.
+@@@Text Functional Component@@@
+
+"全部班期" (All Departure Dates) label:
+This is a text label indicating an option to view all available departure dates for the tour.
+@@@Text Functional Component@@@
+
+"成团保障" (Group Formation Guarantee) label:
+This is a text label highlighting the service guarantee that the tour group will successfully form and depart as scheduled.
+@@@Text Functional Component@@@
+Back arrow icon:
+This appears to be a clickable back button with an arrow icon that allows users to return to the previous screen or page.
+@@@TouchableOpacity Function Component@@@
+
+"班期选" (Schedule Selection) vertical label:
+This is a vertical text label indicating a section or tab for selecting tour dates and schedules.
+@@@Text Functional Component@@@
+
+"暑期大促" (Summer Promotion) label tag:
+This is a promotional tag or badge highlighting a special summer discount offer.
+@@@Text Functional Component@@@
+
+"卖点" (Selling Point) badge:
+This is a tag highlighting key features or selling points of the tour package.
+@@@Text Functional Component@@@
+
+"服务" (Service) label:
+This is a text label indicating the service guarantees section.
+@@@Text Functional Component@@@
+
+"优惠" (Discounts/Offers) label:
+This is a text label indicating the promotional offers section.
+@@@Text Functional Component@@@
+
+"烟台玩美国旅" (Yantai Wanmei International Travel) agency label:
+This is a text label showing the name of the travel agency providing the tour.
+@@@Text Functional Component@@@
+
+"帆船出海" (Sailing Trip) tag:
+This is a tag highlighting a specific activity included in the tour package, translating to "Sailing Trip".
+@@@Text Functional Component@@@

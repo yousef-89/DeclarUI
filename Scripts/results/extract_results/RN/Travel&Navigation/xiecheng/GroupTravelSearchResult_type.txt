@@ -1,0 +1,217 @@
+"2天" (2 Days) label:
+This is a text label indicating a filter option for a 2-day tour duration.
+@@@Text Functional Component@@@
+
+"烟台+威海·3日2晚" (Yantai + Weihai · 3 Days 2 Nights) label:
+This is a text label displaying the travel route title and duration, translating to "Yantai + Weihai, 3 Days and 2 Nights".
+@@@Text Functional Component@@@
+
+"游玩 烟台玩3天·含2正餐" (Sightseeing: Yantai 3-Day Tour · Includes 2 Main Meals) label:
+This is a text label describing the highlights and inclusions of the tour package.
+@@@Text Functional Component@@@
+
+"烟台玩美国旅 进店 >" (Yantai Play America Travel Enter Shop >) label:
+This is a text label showing the agency name and providing a navigation link to enter their store page.
+@@@Text Functional Component@@@
+
+"人数 2" (Number of People: 2) filter button:
+This appears to be an interactive dropdown or filter button allowing users to select the number of travelers, showing a current selection of 2 people.
+@@@TouchableOpacity Function Component@@@
+
+"3" diamond rating label:
+This is a text label indicating the hotel or service quality level (3 diamonds).
+@@@Text Functional Component@@@
+
+"当季" (Current Season) label:
+This is a tag or label indicating that the tour is recommended or relevant for the current season.
+@@@Text Functional Component@@@
+
+"行住 全程3钻酒店" (Accommodation: 3-Diamond Hotel Throughout) label:
+This is a text label detailing the accommodation arrangement for the tour package.
+@@@Text Functional Component@@@
+
+"拼小团" (Small Group Tour) button:
+This appears to be an interactive filter button that allows users to filter tours by small group sizes when clicked.
+@@@TouchableOpacity Function Component@@@
+服务 纯玩无购物·6人小团·提前2天免费退 (Service: Pure play, no shopping, 6-person small group, free cancellation 2 days in advance):
+This is a text label displaying detailed service terms and guarantees for a tour package.
+@@@Text Functional Component@@@
+
+亲子·游学 (Parent-Child Study Tour):
+This is a text label indicating a category or tab option for family-oriented educational travel trips.
+@@@Text Functional Component@@@
+
+“酒店很舒服” ("Hotel is very comfortable"):
+This is a text label showing user reviews or highlights about the hotel accommodation quality.
+@@@Text Functional Component@@@
+
+暑期大促 (Summer Promotion):
+This is a text label highlighting a special promotional event or discount period.
+@@@Text Functional Component@@@
+
+行：2晚住宿·含1晚2钻 / 服务 纯玩无购物·提前2天免费退·成团保障 (Travel: 2 nights stay, including 1 night 2-diamond / Service: Pure play, no shopping, free cancellation 2 days in advance, group formation guarantee):
+This is a text label displaying the itinerary and service details for a tour package.
+@@@Text Functional Component@@@
+
+行住 全程3钻酒店 / 服务 纯玩无购物·6人小团·提前2天免费退 (Stay: 3-diamond hotel throughout / Service: Pure play, no shopping, 6-person small group, free cancellation 2 days in advance):
+This is a text label detailing the accommodation and service commitments for a tour package.
+@@@Text Functional Component@@@
+
+经典路线·16%选择 蓬莱 玩3-4天｜蓬莱仙岛 (Classic Route, 16% choice - Penglai, 3-4 days play | Penglai Fairyland):
+This is a card or banner view containing promotional text and background imagery for a specific tourist destination.
+@@@View Function Component@@@
+
+游玩 (Play/Tour):
+This is a text label indicating the activities or touring category of a travel package.
+@@@Text Functional Component@@@
+
+5钻 (5 Diamonds):
+This is a text label representing a filtering option or rating level for high-tier hotel accommodations (5-diamond rating).
+@@@Text Functional Component@@@
+Footprint icon:
+This appears to be an icon button or graphical indicator representing user footprints or browsing history/activity within the app.
+@@@TouchableOpacity Function Component@@@
+
+"行 全程 3 钻酒店 服务 纯玩无购物·6 人小团·提前 2 天免费退" (Itinerary: Whole journey 3-diamond hotel; Service: Pure play, no shopping, 6-person small group, free cancellation 2 days in advance) label:
+This is a text label detailing the itinerary and service standards for a travel package, indicating accommodation quality and tour features.
+@@@Text Functional Component@@@
+
+"跟团游 烟台出发" (Group Tour, Yantai Departure) label:
+This is a text label combined with a tag background that describes the type of travel package (Group Tour) and the departure location (Yantai).
+@@@Text Functional Component@@@
+
+"拼小团 烟台出发" (Small Group Tour, Yantai Departure) label:
+This is a text label with a tag background indicating that the product is a small group tour and departs from Yantai.
+@@@Text Functional Component@@@
+
+"钻石贵宾&机票用户尊享 可享专属预订折扣·无忧退订 详情" (Diamond VIP & Air Ticket User Exclusive, Enjoy exclusive booking discount, hassle-free cancellation, details) container/banner:
+This is a promotional banner component highlighting exclusive discounts and privileges for VIP and air ticket users, with a close button and details link.
+@@@View Function Component@@@
+
+"限时促销 已减 100" (Limited Time Promotion, Reduced by 100) button:
+This appears to be a promotional button or tag indicating a limited-time discount and price reduction of 100 currency units.
+@@@TouchableOpacity Function Component@@@
+
+"经典线路·23%选择 烟台一地 玩 3-4 天 | 人间仙境" (Classic Route·23% choice, Yantai One-destination, Play 3-4 days | Wonderland on Earth) card component:
+This is an image background card component featuring a destination recommendation, highlighting travel duration and route popularity.
+@@@ImageBackground@@@
+
+"喂海鸥" (Feeding Seagulls) label:
+This is a highlighted text label describing a specific activity included in the tour itinerary, translating to "Feeding Seagulls".
+@@@Text Functional Component@@@
+
+"限时促销 已减 100" (Limited Time Promotion, Reduced by 100) button:
+This appears to be a promotional button or tag indicating a limited-time discount and price reduction of 100 currency units.
+@@@TouchableOpacity Function Component@@@
+山东烟台+蓬莱+长岛·3日游 (Shandong Yantai + Penglai + Changdao 3-Day Tour) label:
+This is a text label displaying the full title and itinerary duration of a tour package, helping users quickly understand the destination and length of the trip.
+@@@Text Functional Component@@@
+
+拼小团 / 烟台出发 (Pin Xiaotuan / Departing from Yantai) image and tag container:
+This is an image container featuring group-buying tour tags and departure location labels overlaid on top of a scenic photo, along with a promotional button at the bottom.
+@@@Function Component@@@
+
+筛选 (Filter) label:
+This is a text label with a dropdown indicator, indicating a button or menu used to filter the travel list based on various criteria such as price, rating, or features.
+@@@Text Functional Component@@@
+
+烟台出发 (Departing from Yantai) label:
+This is a text label inside a styled tag container indicating the departure city for the tour package.
+@@@Text Functional Component@@@
+
+天数 / 日期 (Days / Date) label:
+This is a text label with a dropdown icon that likely opens a date picker or day range filter to narrow down travel package durations.
+@@@Text Functional Component@@@
+
+¥ 965 起 (From ¥965) label:
+This is a text label displaying the starting price for a tour package, highlighting the cost per person to attract potential customers.
+@@@Text Functional Component@@@
+
+烟台出发 (Departing from Yantai) label:
+This is a text label inside a tag container highlighting the departure location for the selected travel itinerary.
+@@@Text Functional Component@@@
+
+优选 (Premium/Selected) label:
+This is a text label inside a small tag badge indicating that the tour package is a recommended or premium option.
+@@@Text Functional Component@@@
+
+优选 (Premium/Selected) label:
+This is a text label inside a small tag badge indicating that the tour package is a recommended or premium option.
+@@@Text Functional Component@@@
+"推荐排序" (Recommended Sorting) label:
+This is a text label combined with a dropdown indicator, which likely serves as a filter or sorting button to let users sort travel packages by recommendations.
+@@@Text Functional Component@@@
+
+"跟团游" (Guided Tour) label:
+This appears to be a tag or category button indicating a guided tour type, likely used for filtering search results.
+@@@Text Functional Component@@@
+
+"¥ 1699 起" (From ¥1699) price label:
+This text displays the starting price for a travel package, indicating the cost in Chinese Yuan.
+@@@Text Functional Component@@@
+
+"3" rating/diamond label:
+This icon and number combination indicates a rating or tier level (such as a 3-diamond hotel or service level) for the travel package.
+@@@Text Functional Component@@@
+
+"烟台出发参团" (Departing from Yantai to Join Tour) label:
+This text describes the departure location and tour type, indicating that the trip departs from Yantai.
+@@@Text Functional Component@@@
+
+"3" rating/diamond label:
+This icon and number combination indicates a rating or tier level (such as a 3-diamond hotel or service level) for the travel package.
+@@@Text Functional Component@@@
+
+"携程自营" (Trip.com Self-Operated) label:
+This text tag indicates that the travel product or service is directly operated by the platform (Trip.com), signifying official curation or higher reliability.
+@@@Text Functional Component@@@
+
+"烟台+蓬莱区·2日1晚" (Yantai + Penglai District · 2 Days 1 Night) title:
+This text displays the main title of the travel package, specifying the destinations (Yantai and Penglai District) and the duration (2 days and 1 night).
+@@@Text Functional Component@@@
+
+"限时促销" (Limited-Time Promotion) label:
+This text label highlights a promotional discount or special offer that is available for a limited time on the travel package.
+@@@Text Functional Component@@@
+"金牌店铺" (Gold Medal Store) label:
+This is a text label displaying "Gold Medal Store", which likely indicates a filter or category option for premium or top-rated merchant stores.
+@@@Text Functional Component@@@
+
+"烟台玩美国旅 进店 >" (Yantai Play America International Travel Service Store Entry) label:
+This is a text label that displays the name of a travel agency store and provides a directional arrow, indicating a clickable link to visit the store's profile or product catalog.
+@@@Text Functional Component@@@
+
+"店铺" (Store) label:
+This is a text label indicating the "Store" section or tab, allowing users to browse store-specific travel packages and merchants.
+@@@Text Functional Component@@@
+
+"经典线路·23%选择" (Classic Route · 23% Selection) label:
+This is a text label highlighting a popular travel route category and its selection percentage among users, serving as a badge or tag on featured destination images.
+@@@Text Functional Component@@@
+
+"帆船出海" (Sailboat Sailing) label:
+This is a text label highlighting a specific tour activity or highlight ("Sailboat Sailing") included in the travel package, rendered in an accent color to catch the user's attention.
+@@@Text Functional Component@@@
+
+Search and location bar container:
+This is a search and location header bar containing a location indicator, a search input field with placeholder text, and a clear button, allowing users to search for destinations and change departure locations.
+@@@View Function Component@@@
+
+"线路玩法" (Route Gameplay/Style) label:
+This is a text label accompanied by a dropdown arrow, indicating a filter option for users to select different travel route styles or itineraries.
+@@@Text Functional Component@@@
+
+"帆船出海" (Sailboat Sailing) label:
+This is a text label highlighting a specific tour activity ("Sailboat Sailing") included in the travel package, rendered in an accent color.
+@@@Text Functional Component@@@
+
+"4.8分 已售88人 | 山东艳欣国旅 进店 >" (4.8 Score, 88 Sold | Shandong Yanxin International Travel Service Store Entry) label:
+This is a text label showing rating information, sales count, and a store entry link for a travel product, providing essential booking and merchant details.
+@@@Text Functional Component@@@
+"拼小团" (Group Tour) label:
+This is a text label styled as a tag, indicating that the tour package belongs to a small-group or group-booking format.
+@@@Text Functional Component@@@
+
+"体验赶海乐趣" (Experience the Fun of Catching Seafood on the Beach) label:
+This is a text label highlighting a specific highlight or activity included in the travel itinerary, allowing users to quickly see key features of the tour.
+@@@Text Functional Component@@@

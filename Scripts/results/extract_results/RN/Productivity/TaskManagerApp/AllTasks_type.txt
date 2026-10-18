@@ -1,0 +1,93 @@
+10AM-11AM time range text:
+This appears to be a text label indicating a specific time schedule or duration for a task.
+@@@Text Functional Component@@@
+
+Back button:
+This is a touchable icon button that likely allows users to navigate back to the previous screen or view.
+@@@TouchableOpacity Function Component@@@
+
+Progress bar and text:
+This is a container view component that groups the progress bar and the 'Progress' label together for layout organization.
+@@@View Function Component@@@
+
+9:41 time label:
+This is a text label displaying the current time in the device's status bar area.
+@@@Text Functional Component@@@
+
+95% progress value text:
+This is a text label that shows the completion percentage of a specific task.
+@@@Text Functional Component@@@
+
+Task item container:
+This appears to be a view container grouping various elements related to a single running task, such as title, time, and progress.
+@@@View Function Component@@@
+
+50% progress value text:
+This is a text label showing the numeric percentage value of a task's progress.
+@@@Text Functional Component@@@
+
+Battery status indicator:
+This is a system status bar component that visually represents the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Grocery task header and details:
+This is a container view component that houses the title, time schedule, and progress details for the grocery task item.
+@@@View Function Component@@@
+"05 Persons" label:
+This is a text label indicating the number of persons or team members assigned to a task.
+@@@Text Functional Component@@@
+
+"Meeting with designer" label:
+This is a text label displaying the title of the task or meeting.
+@@@Text Functional Component@@@
+
+"Progress" label and bar portion:
+This is a text label showing the current progress state of the task, accompanied by a visual progress indicator.
+@@@View Function Component@@@
+
+"Todays task" label:
+This is a text label serving as a section header for tasks scheduled for today.
+@@@Text Functional Component@@@
+
+"60%" label:
+This is a text label showing the numerical completion percentage of the task.
+@@@Text Functional Component@@@
+
+"09AM-10AM" label:
+This is a text label displaying the scheduled time range for the task.
+@@@Text Functional Component@@@
+
+Search icon button:
+This appears to be a button with a magnifying glass icon, likely used to open a search interface or filter tasks.
+@@@TouchableOpacity Function Component@@@
+
+"Dashboard redesign" task section:
+This container includes task details, schedule, participant count, and options for a specific dashboard redesign task.
+@@@View Function Component@@@
+
+"Progress" label and bar portion:
+This is a text label accompanied by a partial progress bar indicating task completion status.
+@@@View Function Component@@@
+Bar chart icon:
+This appears to be a graphical representation or icon likely used to indicate statistics, progress, or metrics within the app interface.
+@@@Function Component@@@
+
+"Grocery app design" label:
+This is a text label displaying the title of a specific task, indicating the name of the project or assignment.
+@@@Text Functional Component@@@
+
+"Running" label:
+This is a text label indicating the current status of a task, showing that it is currently active or in progress.
+@@@Text Functional Component@@@
+
+"04 Persons" label with group icon:
+This is a text label accompanied by an icon that indicates the number of team members or persons assigned to a specific task.
+@@@Text Functional Component@@@
+
+"All tasks" label:
+This is a text label serving as the header or title for the current view, indicating that all tasks are being displayed.
+@@@Text Functional Component@@@
+
+Search icon button:
+This appears to be a clickable button containing a magnifying glass icon, which likely allows users to open a search bar or search for specific tasks.
+@@@TouchableOpacity Function Component@@@

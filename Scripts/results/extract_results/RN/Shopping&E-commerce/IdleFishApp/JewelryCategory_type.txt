@@ -1,0 +1,116 @@
+"爱藏评级" (AIZANG Grading) text:
+This is a text label indicating the current category/tab for grading services (AIZANG Grading), translating to "AIZANG Grading".
+@@@Text Functional Component@@@
+
+"面值3元 官价8折起 ¥188起" (Face value 3 yuan, official price starting from 20% off, starting from ¥188) card:
+This appears to be an interactive card component displaying product information including face value, discount, image, and price, which likely navigates to the item details upon being pressed.
+@@@TouchableOpacity Function Component@@@
+
+"咸丰通宝" (Xianfeng Tongbao) coin image:
+This is an image component displaying a traditional Chinese ancient coin (Xianfeng Tongbao), representing the item visually.
+@@@Function Component@@@
+
+"咸丰通宝" (Xianfeng Tongbao) item card with text:
+This is a container view holding an image of a coin and its corresponding title text label, grouping the item information together.
+@@@View Function Component@@@
+
+"陶瓷紫砂" (Ceramics and Purple Clay) text:
+This is a text label indicating a product category tab name, translating to "Ceramics and Purple Clay".
+@@@Text Functional Component@@@
+
+"清 康熙通宝" (Qing Kangxi Tongbao) coin image:
+This is an image component showing an ancient Chinese coin (Kangxi Tongbao), serving as a visual representation of the product.
+@@@Function Component@@@
+
+"清 康熙通宝" (Qing Kangxi Tongbao) card view:
+This is a container view component holding the coin image and its corresponding text label, displaying a single item entry in a list or grid.
+@@@View Function Component@@@
+
+"清 乾隆通宝" (Qing Qianlong Tongbao) item card:
+This is a container view component displaying an ancient coin image, its title, price, and percentage change, representing a product card.
+@@@View Function Component@@@
+
+Graded currency item image:
+This is an image component showing a certified/graded paper currency or certificate in a protective holder, acting as the visual for the list item.
+@@@Function Component@@@
+"价格" (Price) filter button:
+This appears to be a button or dropdown trigger labeled with "价格" (Price) and sorting arrows, which likely allows users to sort or filter the product list by price.
+@@@TouchableOpacity Function Component@@@
+
+Product card item ("面值5元 官价4折起 ¥10起"):
+This component represents a product card combining text descriptions, pricing information, and a product image, likely serving as a clickable item that navigates to product details.
+@@@TouchableOpacity Function Component@@@
+
+"文玩杂项" (Collectibles and Sundries) category label:
+This is a text label displaying the category name "文玩杂项" (Collectibles and Sundries), used to indicate the current section or category of items.
+@@@Text Functional Component@@@
+
+"-13.0%" price change indicator badge:
+This component displays a negative percentage change (-13.0%) with a downward arrow inside a green container, indicating a price drop or discount for a trending item.
+@@@View Function Component@@@
+
+"新品日历" (New Product Calendar) title:
+This is a text label indicating the section title "新品日历" (New Product Calendar), which highlights newly released items or upcoming products.
+@@@Text Functional Component@@@
+
+Product card item ("面值10元 官价7折起 ¥25起"):
+This component is a product card containing face value information, discount details, a product image, and pricing, functioning as a clickable container that leads to the specific product page.
+@@@TouchableOpacity Function Component@@@
+
+"金盾评级" (Gold Shield Grading) category label:
+This is a text label indicating a specific grading category ("金盾评级" - Gold Shield Grading) for items, likely used for filtering or selecting authentication standards.
+@@@Text Functional Component@@@
+
+Product description header block ("面值10元 官价7折起"):
+This component contains text detailing the face value ("面值10元" - Face value 10 RMB) and official discount information ("官价7折起" - Official price starting from 30% off) for a coin product.
+@@@View Function Component@@@
+
+Product item image ("龙钞/纪念钞"):
+This image displays a packaged collectible banknote or coin, serving as the visual representation of the product item in a list or grid.
+@@@Function Component@@@
+"保粹评级" (BaoCui Grading) label:
+This is a text label that indicates a specific certification and grading category ("BaoCui Grading") for collectibles or coins, likely used for filtering or navigating to related items.
+@@@Text Functional Component@@@
+
+"类型" (Type) dropdown button:
+This appears to be a clickable filter button with a dropdown arrow, allowing users to sort or filter the item list by category or type.
+@@@TouchableOpacity Function Component@@@
+
+"发布时间" (Publish Time) button:
+This is a filter button that likely allows users to sort the product list by the time the items were published or listed.
+@@@TouchableOpacity Function Component@@@
+
+"6.0%" increase rate indicator:
+This is a badge or indicator displaying a positive percentage change with an upward arrow, representing value appreciation or a price increase for the item.
+@@@View Function Component@@@
+
+Item certificate and item image:
+This is an image component displaying a collectible item along with its authentication certificate wrapper.
+@@@Function Component@@@
+
+"真品保障 质量问题包退" (Authenticity guaranteed, returnable for quality issues) banner text:
+This is a promotional text label ensuring authenticity and after-sales guarantee for the items.
+@@@Text Functional Component@@@
+
+"10.1%" increase rate indicator:
+This is a badge displaying a positive percentage change with an upward arrow, indicating a price increase or market growth.
+@@@View Function Component@@@
+
+Qianlong Tongbao coin image:
+This is an image component displaying an ancient Chinese coin (Qianlong Tongbao) for visual presentation and product identification.
+@@@Function Component@@@
+
+Promotional banner image:
+This is a banner image promoting a special coin market sale event with promotional graphics and text.
+@@@Function Component@@@
+"市价3折抢!" (Market price 30% off grab!) label:
+This is a promotional text label that indicates a special discount offer, translating to "Grab at 30% of market price!".
+@@@Text Functional Component@@@
+
+Graded currency/banknote item image:
+This is an image component displaying a certified and graded currency or banknote collectible inside a protective slab with a grading label.
+@@@Function Component@@@
+
+"面值20元 官价8折起" (Denomination 20 yuan, Official price from 20% off) card component:
+This appears to be a card container that groups product information, including denomination text, promotional discount details, product images, and pricing with an action indicator.
+@@@View Function Component@@@

@@ -1,0 +1,198 @@
+Follow button:
+This appears to be a button that allows users to follow a specific user or account directly from the activity feed.
+@@@TouchableOpacity Function Component@@@
+
+Profile icon:
+This appears to be an image or icon representing a user profile or avatar associated with the activity item.
+@@@Function Component@@@
+
+"col" text label:
+This is a text label displaying the username of the user who performed an action in the activity feed.
+@@@Text Functional Component@@@
+
+Red profile icon:
+This appears to be a colored image or icon representing a user avatar in the notification list.
+@@@Function Component@@@
+
+Battery icon:
+This appears to be an indicator showing the current battery status of the device in the status bar.
+@@@StatusBar Android and iOS Component@@@
+
+"dori" text label:
+This is a text label displaying the username of another user in the activity list.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This appears to be an indicator showing the wireless network connection status in the device status bar.
+@@@StatusBar Android and iOS Component@@@
+
+"angela" text label:
+This is a text label displaying the username of a user in the activity feed.
+@@@Text Functional Component@@@
+
+"Verified" button:
+This appears to be a filter button or tab that likely allows users to filter the activity feed to show only verified interactions or accounts.
+@@@TouchableOpacity Function Component@@@
+Follow button:
+This appears to be a button that allows users to follow a specific user or account directly from the activity feed.
+@@@TouchableOpacity Function Component@@@
+
+Compose/Edit icon:
+This appears to be an icon button that likely allows users to create a new post or message.
+@@@TouchableOpacity Function Component@@@
+
+History/Search icon:
+This appears to be a navigation icon button that likely allows users to view their search history or activity logs.
+@@@TouchableOpacity Function Component@@@
+
+Follow button:
+This appears to be a button that allows users to follow a specific user or account directly from the activity feed.
+@@@TouchableOpacity Function Component@@@
+
+"michael" label:
+This is a text label displaying a username, indicating the name of the user who performed an activity.
+@@@Text Functional Component@@@
+
+"Answers" tab button:
+This appears to be a filter tab button that allows users to filter the activity list to show only answers.
+@@@TouchableOpacity Function Component@@@
+
+"peter" label:
+This is a text label displaying a username, indicating the name of the user who performed an activity.
+@@@Text Functional Component@@@
+
+User profile avatar:
+This appears to be an image component representing a user's profile picture or avatar icon.
+@@@Function Component@@@
+
+Follow button:
+This appears to be a button that allows users to follow a specific user or account directly from the activity feed.
+@@@TouchableOpacity Function Component@@@
+"Follow" button:
+This appears to be an interactive button that allows the user to follow a specific user or account when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Home icon:
+This is an icon that likely serves as a navigation button to direct the user back to the home screen or main dashboard.
+@@@Function Component@@@
+
+"Follow" button:
+This appears to be an interactive button that allows the user to follow a specific user or account when pressed.
+@@@TouchableOpacity Function Component@@@
+
+"Follow" button:
+This appears to be an interactive button that allows the user to follow a specific user or account when pressed.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar:
+This image represents a user profile picture or placeholder icon, typically used to visually identify a user in the activity feed.
+@@@Function Component@@@
+
+"Started following you" text label:
+This is a text label describing the activity notification, indicating that another user has started following the account.
+@@@Text Functional Component@@@
+
+"All" filter tab:
+This is a filter button or tab label that allows users to view all types of activity notifications when selected.
+@@@Text Functional Component@@@
+
+"Started following you" text label:
+This is a text label describing the activity notification, indicating that another user has started following the account.
+@@@Text Functional Component@@@
+
+"Started following you" text label:
+This is a text label describing the activity notification, indicating that another user has started following the account.
+@@@Text Functional Component@@@
+
+"Follow" button:
+This appears to be an interactive button that allows the user to follow a specific user or account when pressed.
+@@@TouchableOpacity Function Component@@@
+"Mentions" label:
+This is a text label inside a filter tab at the top of the activity screen, indicating that users can filter their notifications to see only mentions.
+@@@Text Functional Component@@@
+
+"Activity" header label:
+This is a prominent title text label indicating the current main screen or section of the application.
+@@@Text Functional Component@@@
+
+"Started following you" subtitle label:
+This is a descriptive text label that explains the nature of the activity notification, indicating that a specific user has started following the current user.
+@@@Text Functional Component@@@
+
+"Follow" action button:
+This appears to be an interactive button that allows users to quickly follow back or follow the user who performed the activity.
+@@@TouchableOpacity Function Component@@@
+
+"Started following you" subtitle label:
+This is a descriptive text label that explains the nature of the activity notification, indicating that a specific user has started following the current user.
+@@@Text Functional Component@@@
+
+"thomas" username label:
+This is a text label displaying the username of the person who interacted with the current user.
+@@@Text Functional Component@@@
+
+User profile avatar icon:
+This appears to be an image component representing the profile picture or status icon of the user associated with the activity item.
+@@@Function Component@@@
+
+"willie" username label:
+This is a text label displaying the username of another person who interacted with the current user.
+@@@Text Functional Component@@@
+
+"Follow" action button:
+This appears to be an interactive button that allows users to quickly follow back or follow the user who performed the activity.
+@@@TouchableOpacity Function Component@@@
+Profile avatar icon:
+This appears to be an image component displaying a user's profile picture or avatar icon next to their notification item.
+@@@Function Component@@@
+
+"mike" label:
+This is a text label displaying the username "mike", identifying the user who performed the activity action.
+@@@Text Functional Component@@@
+
+"Started following you" label:
+This is a text label describing the activity details, indicating that the specific user has started following the current user.
+@@@Text Functional Component@@@
+
+"Started following you" label (second instance):
+This is a text label describing the activity details for another notification item in the list.
+@@@Text Functional Component@@@
+
+Profile avatar icon (second instance):
+This appears to be an image component displaying another user's profile picture or avatar icon next to their notification item.
+@@@Function Component@@@
+
+"Follow" button:
+This appears to be a button that allows the user to follow back or initiate a connection with the user who triggered the activity notification.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar icon (third instance):
+This appears to be an image component displaying another user's profile picture or avatar icon next to their notification item.
+@@@Function Component@@@
+
+"devon" label:
+This is a text label displaying the username "devon", identifying the user who performed the activity action.
+@@@Text Functional Component@@@
+
+"Started following you" label (third instance):
+This is a text label describing the activity details for another notification item in the list, indicating that the user has started following the current user.
+@@@Text Functional Component@@@
+"Started following you" label:
+This is a text label indicating the notification type, informing the user that another account has started following them.
+@@@Text Functional Component@@@
+
+"willie" label:
+This is a text label displaying the username of the account that performed the action in the activity feed.
+@@@Text Functional Component@@@
+
+"templeton" label:
+This is a text label displaying the username of the account that performed the action in the activity feed.
+@@@Text Functional Component@@@
+
+"Follow" button:
+This appears to be a button that allows the user to quickly follow back or follow the specified user directly from the activity list.
+@@@TouchableOpacity Function Component@@@
+
+Heart icon:
+This appears to be an interactive icon button that likely serves as a navigation tab or action indicator, highlighting the current active "Activity" or likes section.
+@@@TouchableOpacity Function Component@@@

@@ -1,0 +1,62 @@
+Back arrow icon button:
+This appears to be a back button that allows users to navigate to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Flight schedule and route details item:
+This container displays airline branding, departure and arrival times, airport codes, flight duration, and route visualization, representing a flight ticket option within search results.
+@@@View Function Component@@@
+
+"Ticket Price" and pricing details:
+This section displays the cost of the ticket along with its descriptive label indicating that this amount represents the ticket price.
+@@@Text Functional Component@@@
+
+Back arrow icon button:
+This appears to be a back button that allows users to navigate to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+"Book Now" button:
+This is a button that allows users to proceed with booking the selected flight ticket.
+@@@TouchableOpacity Function Component@@@
+
+Flight schedule and route details item:
+This container displays airline branding, departure and arrival times, airport codes, flight duration, and route visualization, representing a flight ticket option within search results.
+@@@View Function Component@@@
+
+Flight search criteria summary:
+This container displays the selected departure and arrival locations, travel date, seat count, and class type, along with an edit icon to modify the search parameters.
+@@@View Function Component@@@
+
+More options icon button:
+This appears to be a menu button that likely opens additional options or settings related to the search page.
+@@@TouchableOpacity Function Component@@@
+
+"Ticket Price" label:
+This text label describes the adjacent pricing information, indicating that the displayed amount is the ticket price.
+@@@Text Functional Component@@@
+AirArabia flight details section:
+This is a container view that groups together flight schedule information including airline name, departure and arrival times, airport codes, flight duration, and flight path icons.
+@@@View Function Component@@@
+
+Search title:
+This is a text label displaying the title "Search" at the top of the screen to indicate the current page or context.
+@@@Text Functional Component@@@
+
+Ticket price label:
+This is a text label displaying the price and a description ("Ticket Price"), showing the cost associated with the selected flight option.
+@@@Text Functional Component@@@
+
+Zayaan flight details section:
+This is a container view that groups together flight information for Zayaan airlines, showing schedule details, airport codes, and flight duration.
+@@@View Function Component@@@
+
+More options icon button:
+This appears to be a button with a three-dot icon that likely allows users to open a menu of additional options or settings related to the search.
+@@@TouchableOpacity Function Component@@@
+
+Ticket price and book now section:
+This is a container view that displays the ticket price along with a "Book Now" action text/button to allow users to proceed with booking the selected flight.
+@@@View Function Component@@@
+
+Ticket price and book now section (duplicate):
+This is a container view that displays the ticket price and "Book Now" option for another flight search result item.
+@@@View Function Component@@@

@@ -1,0 +1,109 @@
+Currency price digit ".30080":
+This represents a numerical price value for a currency pair, likely used for display purposes within a list item.
+@@@Text Functional Component@@@
+
+Currency price digit "0.67267":
+This is a numerical price display, showing the current market value of a currency pair in a specific trading context.
+@@@Text Functional Component@@@
+
+"GBPUSD" text:
+This is a label identifying the specific currency pair being displayed in the trading list.
+@@@Text Functional Component@@@
+
+"Simple" mode toggle button:
+This button allows the user to switch the list view mode to a simplified format, changing how data is presented.
+@@@TouchableOpacity Function Component@@@
+
+"USDCAD 1.36912 1.36919" row:
+This is a container representing a single item in the currency list, displaying the pair name alongside its bid and ask prices.
+@@@View Function Component@@@
+
+Currency price digit "0.88489":
+This is a numerical value indicating the current price quote for a specific financial instrument.
+@@@Text Functional Component@@@
+
+"Trade" icon and label:
+This is a navigation button that takes the user to the active trading execution screen.
+@@@TouchableOpacity Function Component@@@
+
+"Chart" label:
+This acts as a text label for the charting navigation tab, likely associated with an icon to display visual price trends.
+@@@Text Functional Component@@@
+
+"Quotes" icon and label:
+This is a navigation button for the "Quotes" section, which is the current screen showing real-time currency price data.
+@@@TouchableOpacity Function Component@@@
+Numeric price display:
+This component displays a specific currency pair's sell or buy price. It is used to present real-time financial data to the user.
+@@@Text Functional Component@@@
+
+Trade icon:
+This is a button that navigates the user to a trading interface or allows them to place an order for the selected currency pair.
+@@@TouchableOpacity Function Component@@@
+
+Currency pair row (EURUSD):
+This is a list item representing a specific currency pair, displaying its name and corresponding bid/ask prices. It is likely part of a list of market quotes.
+@@@Text Functional Component@@@
+
+Currency pair row (AUDNZD):
+This is a list item representing the AUDNZD currency pair, showing the asset name and its current market price values.
+@@@Text Functional Component@@@
+
+Settings icon and label:
+This appears to be a navigation button located in the bottom tab bar, allowing the user to access the application's configuration and preferences.
+@@@TouchableOpacity Function Component@@@
+
+Currency pair name (EURUSD):
+This text label identifies the specific currency pair (Euro/US Dollar) being quoted in the market list.
+@@@Text Functional Component@@@
+
+Header with currency pair name (EURUSD):
+This represents the primary header text for a row in the market quote list, identifying the asset being tracked.
+@@@Text Functional Component@@@
+
+Currency pair row (USDJPY):
+This is a list item showing the USDJPY pair label followed by its dynamic price data, used for quick market scanning.
+@@@Text Functional Component@@@
+
+Currency pair name (USDCHF):
+This text indicates the USDCHF (US Dollar/Swiss Franc) currency pair, serving as a header or identifier for a row in the quote list.
+@@@Text Functional Component@@@
+AUDCAD label:
+A text label displaying the currency pair symbol for Australian Dollar/Canadian Dollar.
+@@@Text Functional Component@@@
+
+0.92085 value:
+A text component displaying the current bid price for the currency pair.
+@@@Text Functional Component@@@
+
+1.30083 value:
+A text component displaying a specific price value, likely the bid price for the GBPUSD currency pair.
+@@@Text Functional Component@@@
+
+1.09337 value and plus sign:
+A text component showing a price value next to a plus icon, potentially used to add or manage currency pairs.
+@@@Text Functional Component@@@
+
+History icon/label:
+A navigation button representing the 'History' tab, likely used to view past trading transactions.
+@@@TouchableOpacity Function Component@@@
+
+AUDUSD label:
+A text label displaying the currency pair symbol for Australian Dollar/US Dollar.
+@@@Text Functional Component@@@
+
+Advanced button:
+A segment selection button that allows the user to switch the display mode to 'Advanced' for more detailed trading data.
+@@@TouchableOpacity Function Component@@@
+
+NZDUSD row:
+A row containing text elements for the currency pair NZDUSD and its associated bid and ask prices.
+@@@View Function Component@@@
+
+Candlestick chart icon:
+An icon representing the 'Chart' navigation tab, used to display technical analysis charts for currency pairs.
+@@@TouchableOpacity Function Component@@@
+Component Keyword:
+0.92095 price text:
+This is a text label displaying the current numerical value of a currency pair in a trading app. It is used to present real-time or updated market data to the user.
+@@@Text Functional Component@@@

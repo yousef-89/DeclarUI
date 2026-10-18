@@ -1,0 +1,62 @@
+"My parcels" text:
+This is a section heading text label that identifies the upcoming list of user's packages and deliveries.
+@@@Text Functional Component@@@
+
+QR code scan button:
+This appears to be a button containing a QR code icon that likely allows users to quickly scan a parcel barcode or QR code using the device camera.
+@@@TouchableOpacity Function Component@@@
+
+"tracking number" placeholder text:
+This is a placeholder text inside the text input field, instructing users to enter their parcel's tracking number.
+@@@Text Functional Component@@@
+
+"Send parcel" navigation item:
+This is a navigation label and icon combination that likely allows users to switch to the screen where they can create and send a new parcel.
+@@@View Function Component@@@
+
+"Track parcel" title:
+This is the main screen heading text indicating the primary function of the current view, which is tracking packages.
+@@@Text Functional Component@@@
+
+"Parcel center" navigation item:
+This is a bottom navigation tab containing an icon and label that allows users to access the parcel center or pickup location finder.
+@@@View Function Component@@@
+
+Wi-Fi / Network status icon:
+This status bar icon indicates the device's current Wi-Fi or wireless network connectivity status.
+@@@Function Component@@@
+
+"My parcels" active navigation tab:
+This is the currently selected bottom navigation tab with an icon and label representing the active "My parcels" view.
+@@@View Function Component@@@
+
+User profile avatar:
+This image component displays the profile picture of the logged-in user, which may also act as a button to open user settings or profile details.
+@@@Function Component@@@
+Battery icon:
+This appears to be a status indicator icon representing the current battery level of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Track parcel button:
+This appears to be a call-to-action button that allows users to submit the entered tracking number to search for their parcel.
+@@@TouchableOpacity Function Component@@@
+
+Enter parcel number or scan QR code label:
+This is a text label that provides instructions for the user, indicating where to input the tracking number or use the scanner.
+@@@Text Functional Component@@@
+
+Tracking number text:
+This appears to be a text label displaying a specific tracking number for a parcel.
+@@@Text Functional Component@@@
+
+Signal bars icon:
+This appears to be a status indicator icon showing the current cellular signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Parcel status card:
+This appears to be a container view grouping information about a specific parcel, including its tracking number, carrier logo, delivery status, and a details link.
+@@@View Function Component@@@
+
+Time text:
+This is a text label displaying the current system time in the status bar.
+@@@Text Functional Component@@@

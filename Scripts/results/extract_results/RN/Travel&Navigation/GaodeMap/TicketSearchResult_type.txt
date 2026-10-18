@@ -1,0 +1,237 @@
+"今天 18" (Today 18) label:
+This is a text label displaying the date ("Today 18"), which is part of the date selection bar for booking tickets.
+@@@Text Functional Component@@@
+
+"登录 12306 官方出票无忧保障" (Log in to 12306 official ticketing worry-free guarantee) banner:
+This is a notification banner with an icon and text advising users to log in for official ticket issuance and service protection.
+@@@View Function Component@@@
+
+"客车 ¥350起" (Coach ¥350 onwards) label:
+This is a text label indicating an alternative travel mode (Coach/Bus) along with its starting price.
+@@@Text Functional Component@@@
+
+"15:34" time label:
+This is a text label displaying the departure time for a specific train or travel option.
+@@@Text Functional Component@@@
+
+"后天 20" (The day after tomorrow 20) label:
+This is a text label displaying the date ("The day after tomorrow 20") on the date selection bar.
+@@@Text Functional Component@@@
+
+"郑州东" (Zhengzhou East) label:
+This is a text label inside a bordered container indicating a transit station (Zhengzhou East) along the journey.
+@@@Text Functional Component@@@
+
+"第 1 程" (Leg 1) badge:
+This is a text label inside a bordered badge indicating the first leg or segment of a connecting trip.
+@@@Text Functional Component@@@
+
+"耗时" (Duration) label:
+This is a text label used as a sorting or filter option at the bottom bar to organize results by travel duration.
+@@@Text Functional Component@@@
+
+"周一 22" (Monday 22) label:
+This is a text label displaying the date ("Monday 22") on the date selection bar.
+@@@Text Functional Component@@@
+"威海站" (Weihai Station) label:
+This is a text label indicating the name of the railway station ("Weihai Station").
+@@@Text Functional Component@@@
+
+"飞机直达推荐" (Direct Flight Recommendation) label:
+This is a text label that displays a recommended direct flight option and its promotional title.
+@@@Text Functional Component@@@
+
+"G3247" label:
+This is a text label showing the specific high-speed train or flight number ("G3247").
+@@@Text Functional Component@@@
+
+"汉口站" (Hankou Station) label:
+This is a text label indicating the arrival railway station name ("Hankou Station").
+@@@Text Functional Component@@@
+
+"有票推荐" (Tickets Available Recommendation) label:
+This is a text label within a badge that indicates tickets are currently available for recommendation.
+@@@Text Functional Component@@@
+
+"上午出发" (Morning Departure) label:
+This is a text label indicating the filter option for morning departure times.
+@@@Text Functional Component@@@
+
+"满50减1" (Minus 1 when full 50 / Promotion tag) label:
+This is a text label displaying a promotional discount offer.
+@@@Text Functional Component@@@
+
+"共8时29分" (Total 8 hours 29 minutes) label:
+This is a text label showing the total duration of the trip ("Total 8 hours 29 minutes").
+@@@Text Functional Component@@@
+
+"明天 7.19" (Tomorrow 7.19) button/tab:
+This appears to be an interactive date selection button/tab for tomorrow, July 19th, allowing users to view schedules for that specific date.
+@@@TouchableOpacity Function Component@@@
+09:31 time label:
+This is a text label displaying the departure time of a train (09:31).
+@@@Text Functional Component@@@
+
+22:38 time label:
+This is a text label displaying the arrival time of a train (22:38).
+@@@Text Functional Component@@@
+
+"第2程" (Second Leg) label:
+This is a text label indicating that this segment is the second leg of a connecting journey.
+@@@Text Functional Component@@@
+
+Airplane icon:
+This appears to be an image representing a flight or airplane service option.
+@@@Function Component@@@
+
+"飞机 ¥620起" (Flight from ¥620) label:
+This is a text label showing flight availability and starting price, allowing users to switch to or view flight options.
+@@@Text Functional Component@@@
+
+"武汉站" (Wuhan Station) label:
+This is a text label indicating the name of the railway station (Wuhan Station).
+@@@Text Functional Component@@@
+
+"价格" (Price) label:
+This is a text label for a sorting or filtering option, allowing users to sort the list of travel options by price.
+@@@Text Functional Component@@@
+
+"15:34前无直达班次," (No direct trains before 15:34) label:
+This is a text label providing informational tips or alerts regarding the availability of direct trips before a specific time.
+@@@Text Functional Component@@@
+
+"筛选" (Filter) label:
+This is a text label describing a filtering function, allowing users to open a filter menu to refine their search results.
+@@@Text Functional Component@@@
+"只看有票" (Tickets available only) label:
+This is a filter button or label that allows users to view only the train schedules that currently have available tickets.
+@@@TouchableOpacity Function Component@@@
+
+"同站换乘 19分" (Same-station transfer 19 mins) label:
+This is a text label indicating that the journey involves a transfer at the same station with a duration of 19 minutes.
+@@@Text Functional Component@@@
+
+"武汉站" (Wuhan Station) label:
+This is a text label displaying the arrival station name.
+@@@Text Functional Component@@@
+
+"周三 24" (Wednesday 24) label:
+This is a date picker or calendar tab component showing the day of the week and date, which users can tap to select travel dates.
+@@@TouchableOpacity Function Component@@@
+
+"G2148" train number label:
+This is a text label displaying the specific train number for the journey.
+@@@Text Functional Component@@@
+
+"G2084" train number and icon label:
+This is a combination of text and icon showing the train number and associated service details or seating preferences.
+@@@View Function Component@@@
+
+"威海站" (Weihai Station) label (first instance):
+This is a text label displaying the departure station name.
+@@@Text Functional Component@@@
+
+"威海站" (Weihai Station) label (second instance):
+This is a text label displaying the departure station name for another route option.
+@@@Text Functional Component@@@
+
+"第1程" (Leg 1) label:
+This is a tagged view component indicating the first leg or segment of a connecting trip.
+@@@View Function Component@@@
+"耗时最短" (Shortest duration) label:
+This is a text label inside a tag that highlights a travel option with the shortest travel time.
+@@@Text Functional Component@@@
+
+"明天 7.19" (Tomorrow 7.19) date card:
+This is a touchable date selection card indicating tomorrow's date, likely allowing users to switch the travel date when clicked.
+@@@TouchableOpacity Function Component@@@
+
+"同站换乘 21分" (Same-station transfer 21 min) label:
+This is a descriptive text label indicating that the route involves a transfer at the same station with a 21-minute layover.
+@@@Text Functional Component@@@
+
+"第 2 程" (Leg 2) label:
+This is a text label indicating the second leg/segment of a connecting travel route.
+@@@Text Functional Component@@@
+
+"23:11" time label:
+This is a text label displaying the arrival time of the train.
+@@@Text Functional Component@@@
+
+"直达最低价" (Direct lowest price) label:
+This is a text label inside a tag highlighting that the route offers the lowest price for direct travel.
+@@@Text Functional Component@@@
+
+"只看高铁动车" (High-speed trains only) button:
+This appears to be a filter button that allows users to filter the search results to show only high-speed rail and bullet trains.
+@@@TouchableOpacity Function Component@@@
+
+"G339" train number label:
+This is a text label displaying the specific train number for the journey.
+@@@Text Functional Component@@@
+
+"周二 23" (Tuesday 23) date selection item:
+This is a touchable date selection component representing Tuesday the 23rd, allowing users to view train schedules for that specific day.
+@@@TouchableOpacity Function Component@@@
+"4时 15分 比火车省 69 元" ("4h 15m, saves 69 RMB compared to train") label:
+This is a text label that displays the estimated travel duration and the cost savings compared to taking a train.
+@@@Text Functional Component@@@
+
+"周日 21" ("Sunday 21") label:
+This is a text label displaying the day of the week and date, likely used in a horizontal date picker to let users select travel dates.
+@@@Text Functional Component@@@
+
+"威海站" ("Weihai Station") label:
+This is a text label indicating the name of the railway station (Weihai Station).
+@@@Text Functional Component@@@
+
+"高德红包" ("Gaode Red Packet") label:
+This is a button containing promotional text and styling, likely allowing users to claim a promotional discount or coupon when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"推荐 2 个有票方案" ("Recommended 2 available ticket options") label:
+This is a text label indicating that there are 2 available ticket options recommended for the user based on their search criteria.
+@@@Text Functional Component@@@
+
+"威海市" ("Weihai City") label:
+This is a text label displaying the name of the departure city (Weihai City).
+@@@Text Functional Component@@@
+
+"推荐排序" ("Recommended sorting") label:
+This is a text label indicating the current sorting method applied to the search results list, which is sorted by recommendation.
+@@@Text Functional Component@@@
+
+"二等 1" ("Second class 1 remaining") label:
+This is a text label indicating the seat class and the number of remaining tickets available for booking.
+@@@Text Functional Component@@@
+
+Calendar icon:
+This appears to be a button with a calendar icon that likely allows users to open a date picker to select a different travel date.
+@@@TouchableOpacity Function Component@@@
+"武汉站" (Wuhan Station) label:
+This is a text label displaying the name of the destination railway station ("Wuhan Station"), indicating where the train trip ends.
+@@@Text Functional Component@@@
+
+"共10时" (Total 10 hours) label:
+This is a text label indicating the total estimated duration of the train journey, which is 10 hours.
+@@@Text Functional Component@@@
+
+"合肥南" (Hefei South) transit tag:
+This appears to be a view component containing an icon and text representing a transit station ("Hefei South"), likely indicating a transfer stop along the route.
+@@@View Function Component@@@
+
+"登录" (Login) button:
+This is a button that allows users to sign in or log into their 12306 account to ensure a smooth ticket booking experience.
+@@@TouchableOpacity Function Component@@@
+
+"高德红包 | 共减1" (Gaode Red Packet | Total Discount 1) label:
+This is a text label showing promotional information, indicating a specific discount or red packet offer available for the user.
+@@@Text Functional Component@@@
+
+"D2150" train number label:
+This is a text label displaying the specific train number ("D2150"), helping users identify the train service.
+@@@Text Functional Component@@@
+
+"12:38" departure time label:
+This is a text label displaying the departure time ("12:38") for the scheduled train journey.
+@@@Text Functional Component@@@

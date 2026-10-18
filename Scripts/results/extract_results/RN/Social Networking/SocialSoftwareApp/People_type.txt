@@ -1,0 +1,128 @@
+Profile picture list item group:
+This appears to be a list item component showing user avatars and status indicators in a contact list.
+@@@flatlist-simple@@@
+
+WiFi icon:
+This is a system status icon indicating the strength of the Wi-Fi connection at the top of the screen.
+@@@Function Component@@@
+
+Compass icon:
+This is a navigation or explore button located in the bottom tab bar, likely used to switch to a discover or browse view.
+@@@TouchableOpacity Function Component@@@
+
+Waving hand icon:
+This is an interactive button that allows users to send a quick wave or greeting to their contacts.
+@@@TouchableOpacity Function Component@@@
+
+"People" label:
+This is a header text indicating the current section of the app, titled "People".
+@@@Text Functional Component@@@
+
+"Tabitha Potter" label:
+This is a text label displaying the full name of a specific contact in the list.
+@@@Text Functional Component@@@
+
+User profile avatar:
+This is an image component displaying a user's profile picture along with an active status badge indicating how recently they were online.
+@@@Function Component@@@
+
+Contact list group:
+This is a segment of the contact list showing multiple user entries with their corresponding avatars and activity statuses.
+@@@flatlist-simple@@@
+
+"Zack John" label:
+This is a text label showing the name of another user in the contact list.
+@@@Text Functional Component@@@
+9:41 time text:
+This appears to be a status bar text component displaying the current time on the mobile device.
+@@@Text Functional Component@@@
+
+People navigation icon:
+This appears to be an icon button representing the people/contacts tab, likely allowing users to switch to the contacts or people management view when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Waving hand icon button:
+This appears to be a button with a waving hand icon, likely used to send a wave or greeting to contacts in the list.
+@@@TouchableOpacity Function Component@@@
+
+Home indicator bar:
+This is a standard iOS home indicator bar located at the bottom of the screen, typically used for gesture navigation to return to the home screen.
+@@@View Function Component@@@
+
+Jamie Franco text label:
+This is a text label displaying the name of a contact in the list.
+@@@Text Functional Component@@@
+
+Waving hand icon button:
+This appears to be a button with a waving hand icon, likely used to send a wave or greeting to contacts in the list.
+@@@TouchableOpacity Function Component@@@
+
+Waving hand icon button:
+This appears to be a button with a waving hand icon, likely used to send a wave or greeting to contacts in the list.
+@@@TouchableOpacity Function Component@@@
+
+Waving hand icon button:
+This appears to be a button with a waving hand icon, likely used to send a wave or greeting to contacts in the list.
+@@@TouchableOpacity Function Component@@@
+
+User avatars and status indicators:
+These appear to be user profile picture avatars with online or activity status badges, typically used to visually represent contacts in a list or grid.
+@@@Function Component@@@
+Waving hand icon:
+This appears to be an interactive button that likely allows users to send a quick wave or greeting to a contact in the list.
+@@@TouchableOpacity Function Component@@@
+
+Chat bubble icon:
+This appears to be a button that likely allows users to open a chat or messaging interface with their contacts.
+@@@TouchableOpacity Function Component@@@
+
+"Martha Craig" label:
+This is a text label displaying the name of a contact person in the list.
+@@@Text Functional Component@@@
+
+Profile picture image:
+This is an image component displaying the user's profile picture or avatar in a circular layout.
+@@@Function Component@@@
+
+Add friend icon:
+This appears to be a button that likely allows users to add new friends or connections.
+@@@TouchableOpacity Function Component@@@
+
+"8 min." and "10 min." status labels:
+These are text labels indicating how recently the users were active or online.
+@@@Text Functional Component@@@
+
+"Search" input bar:
+This is a text input component that allows users to type keywords to search for people or contacts.
+@@@TextInput@@@
+
+Signal strength icon:
+This is an icon component representing the current mobile network signal strength in the status bar.
+@@@StatusBar Android and iOS Component@@@
+
+Plus icon:
+This appears to be a button that likely allows users to add a new story or post new content.
+@@@TouchableOpacity Function Component@@@
+"30 min." status label:
+This is a text label displaying a time duration, likely indicating how long ago the user was active or when their story was posted.
+@@@Text Functional Component@@@
+
+"Your story" and "Add to your story" text labels:
+These are text elements that show the title and description for the user's personal story section, guiding them to create or view their own stories.
+@@@Text Functional Component@@@
+
+Chat message icon:
+This appears to be a clickable button or icon that allows users to open their messages or chats interface.
+@@@TouchableOpacity Function Component@@@
+
+"Kieron Dotson" text label:
+This is a text label displaying the name of a contact in the list.
+@@@Text Functional Component@@@
+
+"Albert Lasker" text label:
+This is a text label displaying the name of a contact under the "Recently Active" section.
+@@@Text Functional Component@@@
+
+Contact avatar images with active status:
+These images show profile pictures of contacts along with time indicator badges, displayed within list items.
+@@@Function Component@@@

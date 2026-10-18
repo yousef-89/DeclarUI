@@ -1,0 +1,62 @@
+Back arrow icon:
+This appears to be a button that allows users to navigate back to the previous screen or page.
+@@@TouchableOpacity Function Component@@@
+
+"Search" label:
+This is a text label that indicates the current title of the page or screen.
+@@@Text Functional Component@@@
+
+More options icon:
+This appears to be a button that likely opens a menu with additional options or settings.
+@@@TouchableOpacity Function Component@@@
+
+Notification item row with text and action icon:
+This appears to be a list item showing user activity details, including a user avatar, notification text, timestamp, and an action button on the right.
+@@@View Function Component@@@
+
+Notification item row with user avatar and follow status:
+This appears to be a list item showing a user notification where someone wants to follow the user, with an avatar, description text, and a follow action button.
+@@@View Function Component@@@
+
+Notification text snippet:
+This is a text snippet displaying part of a user notification message describing an interaction like liking a web UI design post.
+@@@Text Functional Component@@@
+
+Back arrow button:
+This appears to be a button containing a left arrow icon to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar icons:
+These appear to be navigation icons located at the bottom menu bar for switching between different sections like Home, Notification, Ticket, History, and Setting.
+@@@View Function Component@@@
+
+User avatars:
+These appear to be circular image components displaying profile pictures of users who interacted with the account.
+@@@Function Component@@@
+Notification list item card with user profile picture, action text description, timestamp, and an action button:
+This appears to be a list item card displaying a notification about a user liking a post, allowing users to view details or interact with the notification.
+@@@View Function Component@@@
+
+Notification list item card with user profile picture, comment action text description, timestamp, and a comment action button:
+This is a list item container that presents a notification indicating a user commented on a post, providing context and quick access.
+@@@View Function Component@@@
+
+Notification list item card with user profile picture, comment notification text, timestamp, and a comment button:
+This component serves as a notification card container displaying user activity details such as comments, keeping users informed about interactions.
+@@@View Function Component@@@
+
+Notification list item card with user profile picture, presentation join activity text, timestamp, and an action button:
+This component represents a notification list item showing when a user joined a presentation, organizing social activity updates clearly.
+@@@View Function Component@@@
+
+Notification item header text and user profile section:
+This is a structural text and image container displaying notification details such as user names and activity descriptions.
+@@@View Function Component@@@
+
+Bottom navigation bar with multiple tabs (Home, Notification, Ticket, History, Setting):
+This is a bottom navigation menu bar containing icons and labels that allow users to switch between main sections of the app.
+@@@View Function Component@@@
+
+Back arrow button:
+This appears to be a button with a left arrow icon that likely allows users to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@

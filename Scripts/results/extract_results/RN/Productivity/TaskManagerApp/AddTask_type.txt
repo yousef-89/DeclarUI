@@ -1,0 +1,121 @@
+"Get alart for this task" label:
+This is a text label that describes the alert functionality, indicating the user can toggle notifications for the task.
+@@@Text Functional Component@@@
+
+"Add New Task" label:
+This is a text label serving as the screen title, indicating that the current view is for creating a new task.
+@@@Text Functional Component@@@
+
+"Important" button:
+This appears to be a selectable button that allows the user to set the task type category as important.
+@@@TouchableOpacity Function Component@@@
+
+Status bar icons:
+These icons represent status bar indicators such as signal strength, Wi-Fi, and battery status for the device.
+@@@Function Component@@@
+
+"Personal" button:
+This appears to be a selectable button that allows the user to set the task type category as personal.
+@@@TouchableOpacity Function Component@@@
+
+User profile avatar image:
+This is an image component displaying the user's profile picture.
+@@@Function Component@@@
+
+"Choose date & time" label:
+This is a text label indicating the section where users can select the date and time for the task.
+@@@Text Functional Component@@@
+
+"9:00 AM-12:00 PM" button:
+This appears to be a touchable container or button that allows the user to view or modify the selected time range for the task.
+@@@TouchableOpacity Function Component@@@
+
+Calendar widget component:
+This is a container view component enclosing the calendar UI elements, month display, navigation arrows, and date selection grid.
+@@@View Function Component@@@
+18-02-2022 date display box:
+This appears to be a container displaying a selected date, likely functioning as a button to open a date picker for task scheduling.
+@@@TouchableOpacity Function Component@@@
+
+9:41 time status indicator:
+This is a text component displaying the current system time in the device's status bar.
+@@@Text Functional Component@@@
+
+Wi-Fi status icon:
+This is an image/icon indicating the current wireless network connection status in the device's status bar.
+@@@Function Component@@@
+
+"Task title" label:
+This is a text label indicating the section title for entering the task's title.
+@@@Text Functional Component@@@
+
+"Website redesign" text input field:
+This is a text input area allowing users to enter or edit the title of the new task.
+@@@TextInput@@@
+
+"Done" button:
+This is a button that users can press to submit or save the newly created task.
+@@@TouchableOpacity Function Component@@@
+
+"On" switch component:
+This is a toggle switch component that allows users to enable or disable alerts for the task.
+@@@Switch@@@
+
+"Task type" label:
+This is a text label indicating the section for selecting the type of the task.
+@@@Text Functional Component@@@
+
+Battery status indicator:
+This is an icon indicating the current battery level of the device in the status bar.
+@@@Function Component@@@
+Profile picture:
+This is an image component displaying the user's avatar or profile picture at the top of the screen.
+@@@Function Component@@@
+
+"Add New Task" title:
+This is a text label displaying the main heading of the screen, indicating that the user is currently creating a new task.
+@@@Text Functional Component@@@
+
+Calendar widget:
+This is a view container that houses the interactive calendar interface, including month navigation, day headers, and selectable date numbers.
+@@@View Function Component@@@
+
+"Task title" label:
+This is a text label that serves as the section header for the input field where users can enter the name of the task.
+@@@Text Functional Component@@@
+
+"Website redesign" text input:
+This is a text input field where the user can type or edit the title of the new task.
+@@@TextInput@@@
+
+"Task type" label:
+This is a text label indicating the category selection section for the task.
+@@@Text Functional Component@@@
+
+"Important" button:
+This is a pressable button that allows the user to select "Important" as the task type category.
+@@@TouchableOpacity Function Component@@@
+
+"Personal" button:
+This is a pressable button that allows the user to select "Personal" as the task type category.
+@@@TouchableOpacity Function Component@@@
+
+"Choose date & time" label:
+This is a text label that indicates the section where users can select the date and time for the task.
+@@@Text Functional Component@@@
+
+"18-02-2022" date picker button:
+This is a pressable button or input field placeholder that likely opens a date picker component to choose the task date.
+@@@TouchableOpacity Function Component@@@
+
+"9:00 AM-12:00 PM" time picker button:
+This is a pressable button or input field placeholder that likely opens a time picker component to choose the task time range.
+@@@TouchableOpacity Function Component@@@
+
+"Get alert for this task" label and switch:
+This is a text label accompanied by a toggle switch to enable or disable notifications and alerts for the task.
+@@@Switch@@@
+
+"Done" button:
+This is a primary action button at the bottom of the screen that users tap to save and finalize the new task creation.
+@@@TouchableOpacity Function Component@@@

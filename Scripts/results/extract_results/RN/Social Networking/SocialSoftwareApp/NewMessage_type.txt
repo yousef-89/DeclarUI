@@ -1,0 +1,202 @@
+Martha Craig label:
+This is a text label displaying the contact's name, used to identify the user within the contact list.
+@@@Text Functional Component@@@
+
+Jamie Franco avatar image:
+This is a circular image representing the profile picture of the contact, helping users visually identify them.
+@@@Function Component@@@
+
+Martha Craig avatar image:
+This is a circular image representing the group or participant's profile picture, used for visual identification in the contact list.
+@@@Function Component@@@
+
+Kieron Dotson avatar image:
+This is a circular profile image displaying the picture of the contact, allowing users to recognize them quickly.
+@@@Function Component@@@
+
+Microphone icon:
+This appears to be a button with a microphone icon that likely allows users to input text or messages using voice dictation.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard key "I":
+This is a keyboard key button representing the letter "I" for text input.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard key "B":
+This is a keyboard key button representing the letter "B" for text input.
+@@@TouchableOpacity Function Component@@@
+
+Keyboard key "E":
+This is a keyboard key button representing the letter "E" for text input.
+@@@TouchableOpacity Function Component@@@
+
+"ЛЮДИ" (People) label:
+This is a section header text label indicating the category of listed contacts, translating to "People" in English.
+@@@Text Functional Component@@@
+Up arrow icon:
+This appears to be a button icon on the software keyboard that likely allows users to toggle uppercase/capitalization mode for typing.
+@@@TouchableOpacity Function Component@@@
+
+Kieron Dotson label:
+This is a text label displaying the full name of a contact, used to identify individual users in the messaging list.
+@@@Text Functional Component@@@
+
+T key icon:
+This appears to be a virtual keyboard button that allows users to type the letter "T".
+@@@TouchableOpacity Function Component@@@
+
+P key icon:
+This appears to be a virtual keyboard button that allows users to type the letter "P".
+@@@TouchableOpacity Function Component@@@
+
+Backspace/Delete icon:
+This appears to be a virtual keyboard button that allows users to delete characters in the text input field.
+@@@TouchableOpacity Function Component@@@
+
+R key icon:
+This appears to be a virtual keyboard button that allows users to type the letter "R".
+@@@TouchableOpacity Function Component@@@
+
+H key icon:
+This appears to be a virtual keyboard button that allows users to type the letter "H".
+@@@TouchableOpacity Function Component@@@
+
+Group chat icon:
+This appears to be an icon representing a group of people, likely used to visually indicate the "Create a New Group" feature.
+@@@Function Component@@@
+
+J key icon:
+This appears to be a virtual keyboard button that allows users to type the letter "J".
+@@@TouchableOpacity Function Component@@@
+"X" key icon:
+This appears to be a key on the virtual keyboard that represents the letter "x" for typing text input.
+@@@Button@@@
+
+WiFi icon:
+This status bar icon indicates the device's current Wi-Fi network connection status and signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+"Go" key:
+This appears to be a keyboard action button used to submit or execute the text entered in the message input field.
+@@@Button@@@
+
+Smiley face icon:
+This appears to be a button located on the keyboard that allows users to open an emoji picker panel to insert emojis into their message.
+@@@TouchableOpacity Function Component@@@
+
+"Q" key icon:
+This appears to be a key on the virtual keyboard that represents the letter "q" for typing text input.
+@@@Button@@@
+
+"Y" key icon:
+This appears to be a key on the virtual keyboard that represents the letter "y" for typing text input.
+@@@Button@@@
+
+"123" key:
+This appears to be a button on the virtual keyboard that switches the keyboard layout to numbers and symbols mode.
+@@@Button@@@
+
+Battery icon:
+This status bar component displays the current battery level and charging status of the mobile device.
+@@@StatusBar Android and iOS Component@@@
+
+"New message" label:
+This is a text label indicating the title of the current screen, showing that the user is composing a new message.
+@@@Text Functional Component@@@
+Jamie Franco text label:
+This is a text label displaying the name of a contact in the list, allowing users to identify individual entries for messaging or selection.
+@@@Text Functional Component@@@
+
+Tabitha Potter text label:
+This is a text label displaying the name of a contact in the list, helping users identify specific individuals to message.
+@@@Text Functional Component@@@
+
+Letter 'O' keyboard key:
+This is a keyboard button used for typing the letter 'O' into the message recipient text input field.
+@@@Button@@@
+
+Create a New Group text label:
+This is a text label indicating the option to create a new group chat, guiding users on how to initiate group messaging.
+@@@Text Functional Component@@@
+
+Letter 'V' keyboard key:
+This is a keyboard button used for typing the letter 'V' into the text input field.
+@@@Button@@@
+
+Letter 'L' keyboard key:
+This is a keyboard key used for typing the letter 'L' into the message recipient or search input field.
+@@@Button@@@
+
+Cancel text label:
+This is a text label on a button that allows users to cancel the current messaging action and return to the previous screen.
+@@@Text Functional Component@@@
+
+User profile avatar image:
+This is an image component displaying the profile picture of a contact within the messaging list.
+@@@Function Component@@@
+
+Letter 'K' keyboard key:
+This is a keyboard key used for typing the letter 'K' into the text input field.
+@@@Button@@@
+W key icon:
+This appears to be a virtual keyboard button that allows users to input the letter 'w' when typing.
+@@@TouchableOpacity Function Component@@@
+
+Signal bars icon:
+This represents the cellular signal strength indicator in the device's status bar, showing the current network connection quality.
+@@@StatusBar Android and iOS Component@@@
+
+9:41 time label:
+This is a text label displaying the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+U key icon:
+This appears to be a virtual keyboard button that allows users to input the letter 'u' when typing.
+@@@TouchableOpacity Function Component@@@
+
+Space button:
+This appears to be the spacebar on the virtual keyboard, used to insert a space character between words during text input.
+@@@TouchableOpacity Function Component@@@
+
+G key icon:
+This appears to be a virtual keyboard button that allows users to input the letter 'g' when typing.
+@@@TouchableOpacity Function Component@@@
+
+Z key icon:
+This appears to be a virtual keyboard button that allows users to input the letter 'z' when typing.
+@@@TouchableOpacity Function Component@@@
+
+A key icon:
+This appears to be a virtual keyboard button that allows users to input the letter 'a' when typing.
+@@@TouchableOpacity Function Component@@@
+
+D key icon:
+This appears to be a virtual keyboard button that allows users to input the letter 'd' when typing.
+@@@TouchableOpacity Function Component@@@
+S key icon:
+This appears to be a keyboard key button representing the letter 's', allowing users to input text when composing a message or searching.
+@@@TouchableOpacity Function Component@@@
+
+Zack John text label:
+This is a text label displaying a contact's name within the list, helping users identify specific people to message.
+@@@Text Functional Component@@@
+
+C key icon:
+This appears to be a keyboard key button representing the letter 'c', allowing users to input text when composing a message or searching.
+@@@TouchableOpacity Function Component@@@
+
+N key icon:
+This appears to be a keyboard key button representing the letter 'n', allowing users to input text when composing a message or searching.
+@@@TouchableOpacity Function Component@@@
+
+Horizontal separator line:
+This is a thin view element acting as a visual divider to separate items within the interface.
+@@@View Function Component@@@
+
+M key icon:
+This appears to be a keyboard key button representing the letter 'm', allowing users to input text when composing a message or searching.
+@@@TouchableOpacity Function Component@@@
+
+Tabitha Potter avatar image:
+This is a profile picture icon representing a user in the contact list, visually identifying the person.
+@@@Function Component@@@

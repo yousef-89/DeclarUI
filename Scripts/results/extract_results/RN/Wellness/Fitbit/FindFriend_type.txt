@@ -1,0 +1,62 @@
+"利用您的电话号码查找好友！" (Find friends using your phone number!) label:
+This is a text label that encourages users to find friends by utilizing their phone number.
+@@@Text Functional Component@@@
+
+"电子邮箱" (Email) navigation button:
+This appears to be a touchable navigation item containing an icon and label, which likely allows users to switch to the email-based friend searching method when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"寻找朋友" (Find Friends) header label:
+This is a text label displaying the title of the screen, indicating to the user that they are currently in the "Find Friends" section.
+@@@Text Functional Component@@@
+
+"输入您的电话号码，从您的联系人列表中添加好友。" (Enter your phone number to add friends from your contact list.) instruction label:
+This is a descriptive text label providing instructions on how users can add friends from their contacts list using their phone number.
+@@@Text Functional Component@@@
+
+Background card view container:
+This is a view container used to layout and group content elements such as icons and text labels together.
+@@@View Function Component@@@
+
+"Username" navigation button:
+This appears to be a touchable navigation item containing an icon and label, which likely allows users to switch to the username-based friend searching method when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Settings or icon view container:
+This appears to be a container view used to wrap or position icon elements and structural UI components on the screen.
+@@@View Function Component@@@
+
+Instructional sub-text label:
+This is a supplementary text label providing further details on how to input phone numbers to add friends.
+@@@Text Functional Component@@@
+
+"连接通讯录" (Connect Contacts) button:
+This appears to be a primary action button that allows users to connect and grant access to their address book/contacts to find friends.
+@@@TouchableOpacity Function Component@@@
+"寻找朋友" (Find Friends) and "完成" (Done) navigation header:
+This is a header area displaying the screen title "寻找朋友" (Find Friends) and a text button "完成" (Done) that likely allows users to save or complete their current actions.
+@@@Text Functional Component@@@
+
+Contact book search tab item:
+This appears to be a touchable tab or button featuring an address book icon and the label "通讯录" (Contacts), used to switch the search method to phone contacts.
+@@@TouchableOpacity Function Component@@@
+
+Email search tab item:
+This appears to be a touchable tab or button featuring an email icon and the label "电子邮箱" (Email), used to switch the search method to email addresses.
+@@@TouchableOpacity Function Component@@@
+
+Username search tab item:
+This appears to be a touchable tab or button featuring a user icon and the label "Username", used to switch the search method to usernames.
+@@@TouchableOpacity Function Component@@@
+
+"利用您的电话号码查找好友！" (Find friends using your phone number!) label:
+This is a descriptive text heading that informs users about the current method of finding friends using their phone number.
+@@@Text Functional Component@@@
+
+"输入您的电话号码，从您的联系人列表中添加好友。" (Enter your phone number to add friends from your contact list.) label:
+This is a descriptive text paragraph providing instructions on how the phone number search feature works.
+@@@Text Functional Component@@@
+
+"连接通讯录" (Connect Contacts) button:
+This is a prominent button at the bottom of the screen that allows users to grant access and connect their address book to find friends.
+@@@TouchableOpacity Function Component@@@

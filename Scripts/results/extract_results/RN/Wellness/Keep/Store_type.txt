@@ -1,0 +1,70 @@
+Circular icon container (first item):
+This appears to be an image container that displays category icons or thumbnails for user navigation.
+@@@Function Component@@@
+
+Circular icon container (second item):
+This appears to be an image container that displays category icons or thumbnails for user navigation.
+@@@Function Component@@@
+
+Promotional banner graphic:
+This is an image component displaying a promotional graphic with models and branding elements.
+@@@Function Component@@@
+
+"运动奖品" (Sports Awards) icon:
+This is an icon component representing sports awards or prizes within a category grid.
+@@@Function Component@@@
+
+"必买精选" (Must-Buy Selection) tag:
+This is a text label indicating curated or recommended product selections. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+Price and discount label (¥13):
+This is a text display showing the current discounted price along with the original crossed-out price for a product.
+@@@Text Functional Component@@@
+
+"直降 ¥30" (Direct Drop ¥30) tag:
+This is a text label indicating a direct price reduction or discount amount. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+Circular icon container (third item):
+This appears to be an image container that displays category icons or thumbnails for user navigation.
+@@@Function Component@@@
+
+Stationary bike icon:
+This is an image component displaying an icon or product thumbnail representing exercise equipment (home smart fitness bike).
+@@@Function Component@@@
+"商城" (Mall) label:
+This is a text label that indicates the navigation tab name for the shopping mall section of the application.
+@@@Text Functional Component@@@
+
+Decorative cake pouch image:
+This appears to be an image displaying a product, specifically a cute cake-shaped pouch or keychain, which users can view and potentially purchase.
+@@@Function Component@@@
+
+Green promotional background image:
+This is an image graphic used as a banner or background for promotional content or fitness-related advertisements.
+@@@Function Component@@@
+
+"60天低价" (60-day lowest price) label:
+This is a text label indicating a promotional tag that highlights products sold at their lowest price in the last 60 days.
+@@@Text Functional Component@@@
+
+Price display ("¥59 ¥89"):
+This is a text component displaying the current discounted price and the original crossed-out price of a product.
+@@@Text Functional Component@@@
+
+Circular product category icon (stationary/water bottle outline):
+This is an image icon representing a specific category of products or quick navigation link in the app.
+@@@Function Component@@@
+
+"全部分类" (All Categories) label:
+This is a text label describing a navigation category item that allows users to view all product categories when clicked.
+@@@Text Functional Component@@@
+
+Smart scale product image:
+This is a product image displaying a smart body fat scale available for purchase in the store.
+@@@Function Component@@@
+
+Circular product category icon (stationary/exercise equipment outline):
+This is an image icon representing a specific fitness equipment category or quick navigation link in the app.
+@@@Function Component@@@

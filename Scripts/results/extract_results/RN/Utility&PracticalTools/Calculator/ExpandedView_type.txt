@@ -1,0 +1,233 @@
+Sin button:
+This appears to be a calculator function button that triggers the sine trigonometric calculation when pressed.
+@@@TouchableOpacity Function Component@@@
+
+4 button:
+This appears to be a calculator number button used to input the digit 4 into the calculation display.
+@@@TouchableOpacity Function Component@@@
+
+Delete icon button:
+This appears to be a backspace or clear button used to delete the last entered character or digit in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+1080 label:
+This is a text label displaying a numerical value or calculator history state, indicating a specific number or dimension.
+@@@Text Functional Component@@@
+
+Clock icon:
+This appears to be a history button that likely allows users to view previous calculation history or past entries.
+@@@TouchableOpacity Function Component@@@
+
+0 button (first occurrence):
+This appears to be a calculator number button used to input the digit 0 into the calculation display.
+@@@TouchableOpacity Function Component@@@
+
+Equals button:
+This appears to be the primary calculation button that computes the final result of the entered mathematical expression.
+@@@TouchableOpacity Function Component@@@
+
+Plus button:
+This appears to be an arithmetic operation button used to perform addition in calculations.
+@@@TouchableOpacity Function Component@@@
+
+0 button (second occurrence):
+This appears to be a calculator number button used to input the digit 0 into the calculation display.
+@@@TouchableOpacity Function Component@@@
++/- button:
+This appears to be a button used in the calculator to toggle the positive or negative sign of the current number input or result.
+@@@TouchableOpacity Function Component@@@
+
+7 button:
+This appears to be a number button on the calculator interface used to input the digit 7 into the calculation.
+@@@TouchableOpacity Function Component@@@
+
+|x| button:
+This appears to be a mathematical function button used to calculate the absolute value of the current number.
+@@@TouchableOpacity Function Component@@@
+
+x button:
+This appears to be a multiplication operator button used to multiply two or more numbers in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+% button:
+This appears to be a percentage operator button used to calculate percentages or convert a number to a percentage.
+@@@TouchableOpacity Function Component@@@
+
+log button:
+This appears to be a scientific calculator button used to calculate the common logarithm (base 10) of a number.
+@@@TouchableOpacity Function Component@@@
+
+log10 button:
+This appears to be a scientific calculator button used to calculate the logarithm with base 10 of a given number.
+@@@TouchableOpacity Function Component@@@
+
+cos button:
+This appears to be a trigonometric function button used to calculate the cosine of an angle.
+@@@TouchableOpacity Function Component@@@
+
+tan button:
+This appears to be a trigonometric function button used to calculate the tangent of an angle.
+@@@TouchableOpacity Function Component@@@
+Switch toggle:
+This appears to be a toggle switch that allows users to enable or disable the "Switch to Dark" mode in the application.
+@@@Switch@@@
+
+"1080" display:
+This is a text display showing the current calculation result or input value within the calculator interface.
+@@@Text Functional Component@@@
+
+"x" variable button:
+This appears to be a button used to input the variable 'x' into algebraic or mathematical calculations.
+@@@TouchableOpacity Function Component@@@
+
+"()" parenthesis button:
+This is a button that allows users to insert opening and closing parentheses into mathematical expressions to control operational precedence.
+@@@TouchableOpacity Function Component@@@
+
+Backspace / Clear entry icon:
+This appears to be a button that allows users to delete the last entered character or clear the current input.
+@@@TouchableOpacity Function Component@@@
+
+"9" number button:
+This is a numeric button that allows users to input the digit 9 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+"Deg / Rad" mode button:
+This appears to be a toggle button that lets users switch between degree and radian modes for trigonometric calculations.
+@@@TouchableOpacity Function Component@@@
+
+"2" number button:
+This is a numeric button that allows users to input the digit 2 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+"C" clear button:
+This is a button that allows users to clear the current calculation or reset the calculator's state.
+@@@TouchableOpacity Function Component@@@
+C button:
+This appears to be a calculator button used to clear the current entry or reset the calculation state.
+@@@TouchableOpacity Function Component@@@
+
+Switch to Dark toggle and label:
+This component consists of a switch to toggle the app's dark mode theme and a text label explaining its functionality.
+@@@Switch@@@
+
+3 button:
+This is a numeric keypad button representing the number 3, allowing users to input digits into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+e button:
+This is a scientific calculator button representing Euler's number ($e$), allowing users to input mathematical constants.
+@@@TouchableOpacity Function Component@@@
+
++ button:
+This is an arithmetic operation button used to perform addition between numbers.
+@@@TouchableOpacity Function Component@@@
+
+9 button:
+This is a numeric keypad button representing the number 9, allowing users to input digits into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+2 button:
+This is a numeric keypad button representing the number 2, allowing users to input digits into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+e^n button:
+This is a scientific calculator button used to calculate exponential functions with base $e$.
+@@@TouchableOpacity Function Component@@@
+
+x^2 button:
+This is a scientific calculator button used to square a given number.
+@@@TouchableOpacity Function Component@@@
+Dot button:
+This appears to be a button used for entering a decimal point during calculations.
+@@@TouchableOpacity Function Component@@@
+
+Number 8 button:
+This appears to be a button representing the digit 8, which allows users to input the number 8 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Number 7 button:
+This appears to be a button representing the digit 7, which allows users to input the number 7 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Number 6 button:
+This appears to be a button representing the digit 6, which allows users to input the number 6 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+1/x button:
+This appears to be a button that calculates the reciprocal (1 divided by x) of the current input value.
+@@@TouchableOpacity Function Component@@@
+
+Number 1 button:
+This appears to be a button representing the digit 1, which allows users to input the number 1 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Number 3 button:
+This appears to be a button representing the digit 3, which allows users to input the number 3 into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Pi ($\pi$) button:
+This appears to be a button that inserts the mathematical constant Pi ($\pi$) into the calculation.
+@@@TouchableOpacity Function Component@@@
+
+Number 5 button:
+This appears to be a button representing the digit 5, which allows users to input the number 5 into the calculator.
+@@@TouchableOpacity Function Component@@@
+Parentheses button:
+This appears to be a button used to insert opening and closing parentheses for grouping mathematical expressions in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Expand/Fullscreen icon button:
+This appears to be a button that likely allows users to expand the calculator view or toggle fullscreen mode.
+@@@TouchableOpacity Function Component@@@
+
+Minus sign button:
+This appears to be a button used for subtraction operations or entering negative numbers in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Division sign button:
+This appears to be a button used to perform division operations in the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Dimensions or resolution label:
+This is a text label displaying dimensions or resolution, likely indicating the current screen size or canvas dimensions in the app.
+@@@Text Functional Component@@@
+
+Exponent button:
+This appears to be a button used to calculate or insert an exponent ($x^n$) for mathematical operations.
+@@@TouchableOpacity Function Component@@@
+
+History icon button:
+This appears to be a button that allows users to view previous calculation history or past results.
+@@@TouchableOpacity Function Component@@@
+
+Number 1 button:
+This appears to be a numeric button used to input the digit '1' into the calculator.
+@@@TouchableOpacity Function Component@@@
+
+Number 5 button:
+This appears to be a numeric button used to input the digit '5' into the calculator.
+@@@TouchableOpacity Function Component@@@
+Absolute value (|x|) button:
+This appears to be an interactive button on the calculator keypad used to calculate the absolute value of a number or expression.
+@@@TouchableOpacity Function Component@@@
+
+Division (/) button:
+This appears to be an interactive operator button on the calculator keypad used to perform division operations.
+@@@TouchableOpacity Function Component@@@
+
+Number 4 button:
+This appears to be an interactive number button on the calculator keypad used to input the digit 4.
+@@@TouchableOpacity Function Component@@@
+
+Swap / Alternate function button:
+This appears to be an interactive modifier button on the calculator keypad used to toggle between secondary functions or alternate keyboard layouts.
+@@@TouchableOpacity Function Component@@@
+
+Square root (√) button:
+This appears to be an interactive scientific function button on the calculator keypad used to calculate the square root of a number.
+@@@TouchableOpacity Function Component@@@
+
+Plus/Minus (+/-) button:
+This appears to be an interactive modifier button on the calculator keypad used to toggle the positive or negative sign of the current value.
+@@@TouchableOpacity Function Component@@@

@@ -1,0 +1,46 @@
+"DOWNLOAD..." button:
+This appears to be a call-to-action button that allows users to start downloading articles for offline reading.
+@@@TouchableOpacity Function Component@@@
+
+Download icon inside a circle:
+This is an icon representing download functionality, likely used as a visual indicator for offline reading or downloading content.
+@@@Function Component@@@
+
+"Offline reading" label and status bar icons:
+This is a text label displaying the screen title, indicating the current section of the application where users manage offline content.
+@@@Text Functional Component@@@
+
+"Me" tab icon and label:
+This is a navigation tab item that allows users to switch to their personal profile or account settings view.
+@@@View Function Component@@@
+
+Black circle indicator:
+This appears to be a visual UI indicator or home indicator bar typically found at the bottom of mobile screens.
+@@@View Function Component@@@
+
+Empty state illustration and text:
+This is an illustration and placeholder view displayed when there is no content available for offline reading, accompanied by explanatory text.
+@@@View Function Component@@@
+
+Battery icon:
+This is a status bar icon indicating the current battery level of the mobile device.
+@@@StatusBar Android and iOS Component@@@
+
+"Home" navigation tab:
+This is a bottom navigation button with an icon and label that allows users to navigate back to the main home screen.
+@@@TouchableOpacity Function Component@@@
+
+Trash can icon:
+This appears to be a button that likely allows users to delete downloaded articles or clear offline reading data.
+@@@TouchableOpacity Function Component@@@
+"Offline reading" title and "Automatic download on WiFi" label:
+This appears to be text content displaying the screen's title and setting description, informing the user about offline reading options and Wi-Fi download preferences.
+@@@Text Functional Component@@@
+
+"8:58" time display:
+This is a text label showing the current device time in the status bar area.
+@@@Text Functional Component@@@
+
+"Download articles" label:
+This is a text label indicating the title or description of the specific download item or action available in the list.
+@@@Text Functional Component@@@

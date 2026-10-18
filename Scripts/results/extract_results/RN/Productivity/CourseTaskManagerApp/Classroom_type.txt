@@ -1,0 +1,31 @@
+Classroom text:
+This is a text label displaying the screen title "Classroom", indicating the current section of the application the user is viewing.
+@@@Text Functional Component@@@
+
+Bottom Navigation Bar:
+This container view holds the bottom navigation items (Home, Tasks, Classroom, Chat), allowing users to easily switch between different main sections of the app.
+@@@View Function Component@@@
+
+Add Class button:
+This is a pressable button with a plus icon and text that allows users to create and add a new class to their schedule.
+@@@TouchableOpacity Function Component@@@
+
+Physics and Class Details section:
+This container view displays specific details about the selected class, such as the subject name, chapter, instructor, and number of enrolled students.
+@@@View Function Component@@@
+
+Class Information and Tabs section:
+This container view groups the metadata, enrollment information, and interactive tabs like Description, Discussion, and Resources for the selected class.
+@@@View Function Component@@@
+
+Today, 17 Sept label:
+This is a text label showing the current date, providing temporal context to the user at the top of the classroom screen.
+@@@Text Functional Component@@@
+
+Detailed Description text section:
+This container view wraps the descriptive text and heading explaining the core concepts of the current class topic.
+@@@View Function Component@@@
+
+Video feed or media banner:
+This component displays a live video feed or recorded lecture image with controls and overlays representing an ongoing classroom session.
+@@@Function Component@@@

@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import time
 import json
 from openai import OpenAI
 import subprocess
@@ -7,6 +11,8 @@ import base64
 import re
 import os
 import openai
+from google import genai
+from google.genai import types
 import glob
 import time
 import logging
@@ -16,22 +22,33 @@ from utils.compiler.RN_compiler import run_gradlew_assemble
 from utils.connect_neo4j import search_neo4j_by_id
 
 
+
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "..", ".."))
+
 lang_index = 0
-UI_class_list = ["RN","Flutter","ArkTS"]
+UI_class_list = ["RN", "Flutter", "ArkTS"]
 UI_class = UI_class_list[lang_index]
-UItype_list = ["React Native","Flutter","ArkTS"]
+UItype_list = ["React Native", "Flutter", "ArkTS"]
 UItype = UItype_list[lang_index]
-project_template_folder_list = ["rn_project_folder","","flutter_project_folder","arkts_project_folder"]
-project_template_folder = project_template_folder_list[lang_index]
-picture_folder= 'DeclarUI\Dataset'
-prompt_folder = os.path.join('DeclarUI\Scripts\code_generation\utils\prompt_templates',UI_class)
-component_info_folder = os.path.join('DeclarUI\Scripts\results\extract_results',UI_class)
-output_folder = os.path.join('DeclarUI\Scripts\results\code_results','baseline_gpt')
 
-os.environ["OPENAI_API_BASE"] = 'https://api.xty.app/v1'
-os.environ["OPENAI_API_KEY"] = "your-api-key"  # gpt-4o/claude-3.5-sonnet
+# Point directly to the template folder inside utils/project_templates/
+project_template_folder = os.path.join(
+    PROJECT_ROOT, "Scripts", "code_generation", "utils", "project_templates", UI_class
+)
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+picture_folder = os.path.join(PROJECT_ROOT, "Dataset")
+prompt_folder = os.path.join(PROJECT_ROOT, "Scripts", "code_generation", "utils", "prompt_templates", UI_class)
+component_info_folder = os.path.join(PROJECT_ROOT, "Scripts", "results", "extract_results", UI_class)
+output_folder = os.path.join(PROJECT_ROOT, "Scripts", "results", "code_results", "baseline_gpt")
+
+GEMINI_KEY = os.environ["GEMINI_API_KEY"]
+
+
+# Initialize the OpenAI client pointing to Google AI Studio
+client = genai.Client(api_key=GEMINI_KEY)
+
 
 # Initialize logging
 logging.basicConfig(
@@ -148,7 +165,7 @@ def prompt_construct(app_classification,app_name,page_name,sequence=1,type="Scre
     sub_prompt_path = os.path.join(prompt_folder,'SubPrompt.txt')
     navigation_prompt_path = os.path.join(prompt_folder,'PTG2NavigationPrompt.txt')
     refine_prompt_path = os.path.join(prompt_folder,'RefineCodePrompt.txt')
-    compile_refine_prompt_path = os.path.join('DeclarUI\Scripts\code_generation\utils\prompt_templates','RefineCompileErrorPrompt.txt')
+    compile_refine_prompt_path = os.path.join(r'DeclarUI\Scripts\code_generation\utils\prompt_templates','RefineCompileErrorPrompt.txt')
     if UItype == 'ArkTS':
         refer_refine_prompt_path = os.path.join(prompt_folder,'ReferRefinePrompt.txt')
         
@@ -338,7 +355,7 @@ def is_fully_navigated(res,implemented_ids,not_implemented_ids, app_classificati
     navi_iter_limit = 3
     iter_cnt = 0
     while not_implemented_ids and iter_cnt < navi_iter_limit:
-        logging.info(f'{app_name} {page_name} Not implemented ids: ',not_implemented_ids)
+        logging.info(f'{app_name} {page_name} Not implemented ids: {not_implemented_ids}')
         RefinePrompt = prompt_construct(app_classification,app_name,page_name,type="Refine",implemented_ids=implemented_ids,not_implemented_ids=not_implemented_ids)
         res = send_single_prompt_and_get_response(client,RefinePrompt)
         save_response(output_folder, app_classification, app_name, page_name+ extend_name, res)
@@ -348,37 +365,25 @@ def is_fully_navigated(res,implemented_ids,not_implemented_ids, app_classificati
     return res
 
 
-def send_single_prompt_and_get_response(client,prompt,base64_image=''):
-    if base64_image:
-        completion = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "user", "content": [
-                    {
-                        "type":"text",
-                        "text":prompt
-                    },
-                    {
-                        "type":"image_url",
-                        "image_url":{
-                            "url": f"data:image/png;base64,{base64_image}"
-                        }
-                    }
-                ]},
-            ]
+def send_single_prompt_and_get_response(client, prompt, image_path=''):
+    time.sleep(4)  # Rate limit protection (15 RPM)
+    
+    contents = [prompt]
+    if image_path and os.path.exists(image_path):
+        with open(image_path, "rb") as f:
+            contents.append(types.Part.from_bytes(data=f.read(), mime_type="image/png"))
+            
+    try:
+        completion = client.models.generate_content(
+            model="gemini-3.1-flash-lite",
+            contents=contents
         )
-    else:
-        completion = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-            {"role": "system", "content": "You are an engineer proficient in React Native."},
-                {"role": "user", "content": prompt}
-            ]
-        )
-    res = completion.choices[0].message.content
-    res = remove_first_and_last_lines(res)
-    return res
+        res = completion.text or ""
+    except Exception as e:
+        print(f"[!] Generation Error: {e}")
+        res = ""
 
+    return remove_first_and_last_lines(res)
 
 def clear_folder(folder_path):
     try:
@@ -406,6 +411,7 @@ def clear_folder(folder_path):
 
 def copy_file2project(src_folder, dst_folder):
     components_folder = os.path.join(dst_folder,"components")
+
     for item in os.listdir(src_folder):
         extension = os.path.splitext(item)[1]
         if extension == '.js' or extension == '.jsx':
@@ -418,19 +424,12 @@ def copy_file2project(src_folder, dst_folder):
 
 
 def send_mutiple_prompts_and_get_response(app_classification, app_name):
-    client = OpenAI(
-        base_url="https://api.xty.app/v1",
-        api_key="your_api_key", 
-        http_client=httpx.Client(
-            base_url="https://api.xty.app/v1",
-            follow_redirects=True,
-        ),
-    )
+    # Use global client initialized at the top of the file
     entry_func_name = get_uitype_detail()["entry_func_name"]
     extend_name = get_uitype_detail()["extend_name"]
     page_seq = 0
-    # Use the glob module to retrieve all png files
-    app_file_path = picture_folder+'\\'+app_classification+'\\'+ app_name
+    
+    app_file_path = os.path.join(picture_folder, app_classification, app_name)
     png_files = glob.glob(os.path.join(app_file_path, '*.png'))
     
     add_package_list = []
@@ -438,53 +437,50 @@ def send_mutiple_prompts_and_get_response(app_classification, app_name):
         page_seq += 1
         page_extension = os.path.basename(png_file)
         page_name = os.path.splitext(page_extension)[0]
-        prompt = prompt_construct(app_classification,app_name,page_name,page_seq,type="Screen")
-        base64_img_before = encode_image(png_file)           
-        res = send_single_prompt_and_get_response(client,prompt,base64_img_before)
+        prompt = prompt_construct(app_classification, app_name, page_name, page_seq, type="Screen")
+        
+        # Pass image file path directly to send_single_prompt_and_get_response
+        res = send_single_prompt_and_get_response(client, prompt, image_path=png_file)
         print(f'----------{page_name} code:----------\n{res}')
-        save_response(output_folder, app_classification, app_name, page_name+ extend_name, res)
+        save_response(output_folder, app_classification, app_name, page_name + extend_name, res)
         logging.info(f'----------{page_name} code:----------\n{res}')
-        implemented_ids,not_implemented_ids=inspect_RNnavigation(app_classification,app_name,page_name)
-        # Check if page navigation is fully implemented
-        logging.info(page_name,' Implemented ids: ',implemented_ids)
-        res = is_fully_navigated(res,implemented_ids,not_implemented_ids,app_classification,app_name,page_name,extend_name,client=client)
+        
+        implemented_ids, not_implemented_ids = inspect_RNnavigation(app_classification, app_name, page_name)
+        res = is_fully_navigated(res, implemented_ids, not_implemented_ids, app_classification, app_name, page_name, extend_name, client=client)
+        
         if UItype == "React Native":
-            # retrieve the packages that need to be added
             add_package_set = set(add_package_list)
             add_package_set = add_package_set.union(set(extract_package_name(res)))
             add_package_list = list(add_package_set)
 
-        time.sleep(2)
-        print("Succesfully saved the response")
-    # Generating application entry.
+        print("Successfully saved response")
+        
     print('Generating application entry.') 
-    NavigationPrompt = prompt_construct(app_classification,app_name,page_name,type="Navigation")
-    # print(NavigationPrompt)
+    NavigationPrompt = prompt_construct(app_classification, app_name, page_name, type="Navigation")
     res = send_single_prompt_and_get_response(client, NavigationPrompt)
     logging.info(f'=========App.js code:=========\n{res}\n')
     save_response(output_folder, app_classification, app_name, entry_func_name, res)
+    
     compile_state = False
     loop_count = 0
     error_msg = ''
-    # Clean the project files in preparation for compilation
-    clear_folder(os.path.join(project_template_folder,"components"))
-    # Copy the generated code to the project folder
-    copy_file2project(os.path.join(output_folder,app_classification,app_name),os.path.join(project_template_folder))
+    
+    clear_folder(os.path.join(project_template_folder, "components"))
+    copy_file2project(os.path.join(output_folder, app_classification, app_name), os.path.join(project_template_folder))
     print(f'Add Package List: {add_package_list}')
-    compile_state,error_msg = run_gradlew_assemble(project_template_folder,app_classification,app_name,add_package_list)
-     # compile iteration
+    compile_state, error_msg = run_gradlew_assemble(project_template_folder, app_classification, app_name, add_package_list)
+    
     while not compile_state and loop_count < 3:
-        # fix one file every time
-        print(f"---------------{loop_count+1}fix---------------")
-        CompileRefinePrompt = prompt_construct(app_classification,app_name,page_name,type="Compile_refine",error_msg=error_msg)
-        res = send_single_prompt_and_get_response(client,CompileRefinePrompt)
+        print(f"---------------{loop_count+1} fix---------------")
+        CompileRefinePrompt = prompt_construct(app_classification, app_name, page_name, type="Compile_refine", error_msg=error_msg)
+        res = send_single_prompt_and_get_response(client, CompileRefinePrompt)
         logging.info(f'{page_name} code:\n{res}\n')
         refined_list = save_compile_refined_code_to_files(output_folder, app_classification, app_name, res)
-        print(f'refined_list:{refined_list}')
-        copy_file2project(os.path.join(output_folder,app_classification,app_name),os.path.join(project_template_folder))
-        compile_state,error_msg = run_gradlew_assemble(project_template_folder,app_classification,app_name,[])
+        copy_file2project(os.path.join(output_folder, app_classification, app_name), os.path.join(project_template_folder))
+        compile_state, error_msg = run_gradlew_assemble(project_template_folder, app_classification, app_name, [])
         loop_count += 1
-    return compile_state,loop_count,error_msg
+        
+    return compile_state, loop_count, error_msg
         
         
 def generate_by_classification(app_classification):

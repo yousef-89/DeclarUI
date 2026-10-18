@@ -1,0 +1,66 @@
+"请求能否满足需视供应情况而定" (Requests are subject to availability) label:
+This is a text label that provides additional information regarding bed type preferences, indicating that requests depend on actual hotel availability.
+@@@Text Functional Component@@@
+
+"2张单人床" (2 single beds) label:
+This is a text label displaying a specific bed type option available for selection.
+@@@Text Functional Component@@@
+
+"确认" (Confirm) button:
+This appears to be a clickable button that allows users to confirm their room and bed preferences selection and proceed with the booking.
+@@@TouchableOpacity Function Component@@@
+
+Quantity selector component:
+This component allows users to increase or decrease the number of rooms using plus and minus icons with a central number display.
+@@@View Function Component@@@
+
+Radio button / selection circle:
+This appears to be a selection indicator or radio button used to indicate or toggle the chosen bed type preference.
+@@@TouchableOpacity Function Component@@@
+
+"含税费及其他费用" (Includes taxes and other fees) label:
+This is a text label indicating that the displayed price includes applicable taxes and additional fees.
+@@@Text Functional Component@@@
+
+Home indicator / Bottom bar:
+This is the system gesture bar at the bottom of iOS devices, used for returning to the home screen or switching apps.
+@@@View Function Component@@@
+
+"1张特大号双人床" (1 extra-large double bed) label:
+This is a text label displaying an alternative large bed type option for the room.
+@@@Text Functional Component@@@
+
+"无偏好" (No preference) label:
+This is a text label representing the default or fallback bed type option where the user has no specific preference.
+@@@Text Functional Component@@@
+客房数量 (Room quantity) label:
+This is a text label indicating the "Room quantity" setting, which informs users what the adjacent quantity selector controls.
+@@@Text Functional Component@@@
+
+标准间 (Standard room) header label:
+This appears to be a text label for the navigation bar or header, displaying the room type title "Standard room".
+@@@Text Functional Component@@@
+
+707元 (707 Yuan) price label:
+This is a text label displaying the total price "707 Yuan" for the selected room configuration.
+@@@Text Functional Component@@@
+
+Selected radio button icon:
+This is a selectable icon indicating that the current option ("No preference") is selected by the user.
+@@@TouchableOpacity Function Component@@@
+
+标准间 (Standard room) badge label:
+This is a text label inside a styled header tag representing the room category "Standard room".
+@@@Text Functional Component@@@
+
+Unselected radio button icon:
+This is an unselected radio button icon that users can tap to switch their bed type preference.
+@@@TouchableOpacity Function Component@@@
+
+标准间 1 (Standard room 1) section title label:
+This is a text label indicating the specific room instance or section title, translating to "Standard room 1".
+@@@Text Functional Component@@@
+
+选择床型 (Select bed type) section header label:
+This is a text label that serves as a section header for choosing the bed preference, translating to "Select bed type".
+@@@Text Functional Component@@@

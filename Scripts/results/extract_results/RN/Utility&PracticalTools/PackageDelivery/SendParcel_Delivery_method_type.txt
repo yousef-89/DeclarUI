@@ -1,0 +1,81 @@
+Name label:
+This is a text label that indicates the field where the user is expected to enter their name.
+@@@Text Functional Component@@@
+
+Input field container:
+This is an input field container that allows users to type and edit their text input.
+@@@TextInput@@@
+
+Address label:
+This is a text label that indicates the input field where the user should enter their delivery or recipient address.
+@@@Text Functional Component@@@
+
+Phone number label:
+This is a text label that indicates the input field where the user should enter a phone number.
+@@@Text Functional Component@@@
+
+Send parcel tab and icon:
+This appears to be a navigation tab with an icon and label that allows users to navigate to the send parcel section or view related options.
+@@@TouchableOpacity Function Component@@@
+
+Time indicator:
+This is a text label showing the current time in the device's status bar area.
+@@@Text Functional Component@@@
+
+Recipient info section header:
+This is a section header text label that groups and describes the following input fields related to recipient information.
+@@@Text Functional Component@@@
+
+Email input field:
+This is an input field container with pre-filled or partially entered text, allowing users to type and edit their email address.
+@@@TextInput@@@
+
+Battery status indicator:
+This is a system status indicator that visually represents the current battery level of the device.
+@@@View Function Component@@@
+Parcel center icon and label:
+This appears to be a navigation tab bar item combining an icon and a text label, which allows users to switch to the parcel center screen when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Home indicator bar:
+This is the standard iOS home indicator bar at the bottom of the screen, used for navigating back to the home screen or switching apps.
+@@@View Function Component@@@
+
+My parcels icon and label:
+This appears to be a navigation tab bar item with an icon and text label that allows users to navigate to the "My parcels" screen when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"Send parcel" title:
+This is a header text label that indicates the current screen or main feature of the page, telling the user they are on the send parcel form.
+@@@Text Functional Component@@@
+
+Battery icon:
+This is a status bar icon representing the device's battery level.
+@@@StatusBar Android and iOS Component@@@
+
+Signal strength icon:
+This is a status bar icon indicating the current cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Delivery method card:
+This is a card container holding an icon, title, and subtitle to represent a specific delivery method option that users can select.
+@@@TouchableOpacity Function Component@@@
+
+"Delivery method" section header:
+This is a section header text label that introduces the delivery options group for the user.
+@@@Text Functional Component@@@
+
+Name input field:
+This is a text input field where users can enter or view the recipient's name information.
+@@@TextInput@@@
+From door to door option card:
+This appears to be a selectable container or button representing the "From door to door" delivery method option, allowing users to choose this specific service for their parcel.
+@@@TouchableOpacity Function Component@@@
+
+Wifi icon:
+This is a status bar icon representing the device's current Wi-Fi network connection status.
+@@@StatusBar Android and iOS Component@@@
+
+Email label:
+This is a text label indicating that the corresponding text input field is meant for entering an email address.
+@@@Text Functional Component@@@

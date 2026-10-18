@@ -1,0 +1,42 @@
+Black circle icon:
+This appears to be a camera cutout or system overlay indicator on the device screen, functioning as a non-interactive view element.
+@@@View Function Component@@@
+
+"Current location" label:
+This is a text label indicating the section header for location settings within the app.
+@@@Text Functional Component@@@
+
+Network signal icon:
+This represents the cellular network signal strength indicator in the system status bar.
+@@@StatusBar Android and iOS Component@@@
+
+Battery icon:
+This represents the device's battery level indicator in the system status bar.
+@@@StatusBar Android and iOS Component@@@
+
+Explanatory text paragraph:
+This is a descriptive text block providing instructions and warnings about the automatic location detection feature limitations.
+@@@Text Functional Component@@@
+
+"Automatic detection" label:
+This is a text label describing the functionality of the associated toggle switch for automatically detecting the user's location.
+@@@Text Functional Component@@@
+
+Status bar icons composite:
+This represents system status bar icons indicating time, connectivity, and notifications.
+@@@StatusBar Android and iOS Component@@@
+
+Navigation corner or geometric element:
+This appears to be a design layout or padding container element used for interface formatting.
+@@@View Function Component@@@
+
+"7:11" and app switcher icons:
+This represents the device status bar clock display and system navigation indicators.
+@@@StatusBar Android and iOS Component@@@
+Location pin icon:
+This is a location pin icon visually representing geographic coordinates or location services, often used alongside text labels to indicate map-related items.
+@@@Function Component@@@
+
+"Add location" button:
+This appears to be a button with a plus icon and text that allows users to add a new location manually or through search.
+@@@TouchableOpacity Function Component@@@

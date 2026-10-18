@@ -1,0 +1,143 @@
+Yellow circular icon with a mobile device shape:
+This appears to be an interactive button or category icon that likely leads users to a smartphone resale or auxiliary assistance service feature.
+@@@TouchableOpacity Function Component@@@
+
+"文玩玉翠" (Jades and Antiques) label:
+This is a text label displaying a category name, indicating that users can browse related antique and jade items by tapping it.
+@@@Text Functional Component@@@
+
+"推荐" (Recommended) label:
+This is a text label that highlights the recommended section or tab for the current view.
+@@@Text Functional Component@@@
+
+Blue circular icon with a refresh/recycle symbol:
+This appears to be an interactive button or category icon that likely leads users to a recycling or exchange service feature.
+@@@TouchableOpacity Function Component@@@
+
+"热门推荐" (Popular Recommendations) label:
+This is a text label indicating the most popular recommended items or categories in the current list view.
+@@@Text Functional Component@@@
+
+Yellow circular icon with a checkmark on a document:
+This appears to be an interactive button or category icon that likely leads users to a verified selection or guaranteed inspection service.
+@@@TouchableOpacity Function Component@@@
+
+Blue circular icon with a money bag symbol:
+This appears to be an interactive button or category icon that likely leads users to financial services, proxy selling, or asset valuation features.
+@@@TouchableOpacity Function Component@@@
+
+Green circular icon with a shopping bag and heart shape:
+This appears to be an interactive button or category icon that likely leads users to a giveaway or freebie section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Blue circular icon with a bear face shape:
+This appears to be an interactive button or category icon that likely leads users to a mystery box or trendy toy trading section.
+@@@TouchableOpacity Function Component@@@
+"卖闲置" and "旧衣回收" (Sell idle items and old clothes recycling) labels and icons:
+This appears to be a container view grouping two distinct item selling and recycling categories with their respective icons and text labels.
+@@@View Function Component@@@
+
+Shopping bag icon:
+This is an icon component representing luxury goods or shopping categories, likely serving as a clickable button to navigate to the corresponding category page.
+@@@TouchableOpacity Function Component@@@
+
+Recycling refresh icon:
+This is an icon component representing recycling or renewal services, likely serving as a clickable button to navigate to a recycling service page.
+@@@TouchableOpacity Function Component@@@
+
+"优惠券码" (Coupon code) label:
+This is a text label displaying the category name for coupon codes, indicating to users that they can browse or enter coupon codes in this section.
+@@@Text Functional Component@@@
+
+"免费鉴定" (Free authentication) icon and label:
+This is a combination icon and text label component representing a free authentication service, which users can tap to access item verification features.
+@@@TouchableOpacity Function Component@@@
+
+"运动户外" (Sports and outdoors) label:
+This is a text label indicating the sports and outdoor category in the navigation sidebar, allowing users to select and view related products.
+@@@Text Functional Component@@@
+
+"服饰鞋帽" (Clothing, shoes, and hats) label:
+This is a text label indicating the apparel and fashion category in the sidebar, helping users filter products by clothing, shoes, and hats.
+@@@Text Functional Component@@@
+
+Green jade/jewelry icon:
+This is a decorative icon representing jade and jewelry items, likely functioning as a pressable category button.
+@@@TouchableOpacity Function Component@@@
+
+"二手车" (Used cars) icon and label:
+This is a combination icon and text label component representing the used car trading category, which users can tap to view second-hand vehicle listings.
+@@@TouchableOpacity Function Component@@@
+"家居生活" (Home Life) label:
+This is a text label indicating the category "Home Life" in the sidebar navigation.
+@@@Text Functional Component@@@
+
+"母婴" (Mother and Baby) label:
+This is a text label indicating the category "Mother and Baby" in the sidebar navigation.
+@@@Text Functional Component@@@
+
+闲鱼游戏 (Xianyu Games) icon and label:
+This appears to be an interactive grid item combining an icon and text label that likely allows users to browse or trade second-hand video games and gaming accounts.
+@@@TouchableOpacity Function Component@@@
+
+奢侈品帮卖 (Luxury Consignment) icon and label:
+This appears to be an interactive grid item combining an icon and text label that likely allows users to request assistance in selling luxury items.
+@@@TouchableOpacity Function Component@@@
+
+"家用电器" (Home Appliances) label:
+This is a text label indicating the category "Home Appliances" in the sidebar navigation.
+@@@Text Functional Component@@@
+
+图书回收 (Book Recycling) icon and label:
+This appears to be an interactive grid item combining an image and text label that likely allows users to sell or recycle used books.
+@@@TouchableOpacity Function Component@@@
+
+"美容彩妆" (Beauty and Makeup) label:
+This is a text label indicating the category "Beauty and Makeup" in the sidebar navigation.
+@@@Text Functional Component@@@
+
+明星玩家 (Star Player) icon:
+This appears to be a clickable icon representing the "Star Player" feature, likely directing users to a section featuring prominent or verified sellers/influencers.
+@@@TouchableOpacity Function Component@@@
+
+卡券 (Gift Cards / Coupons) icon:
+This appears to be a clickable icon representing the "Gift Cards/Coupons" feature, likely allowing users to buy, sell, or manage digital cards and coupons.
+@@@TouchableOpacity Function Component@@@
+"模玩动漫" (Model Toys & Anime) label:
+This is a text label that categorizes the sidebar item, indicating that users can filter or browse model toys and anime-related products when selected.
+@@@Text Functional Component@@@
+
+"企业" (Enterprise) label:
+This is a text label that describes the sidebar category for business or enterprise-related services and listings.
+@@@Text Functional Component@@@
+
+Search input container:
+This appears to be a search input container with a magnifying glass icon and placeholder text "阔腿裤 | 牛仔短裤" (Wide-leg pants | Denim shorts), allowing users to type and search for items within the app.
+@@@TextInput@@@
+
+"闲鱼租房" (Idle Fish House Rental) icon and label:
+This is a touchable feature item consisting of an icon and a text label, likely used to navigate users to the house rental section of the platform.
+@@@TouchableOpacity Function Component@@@
+
+"游戏装备" (Game Equipment) label:
+This is a text label indicating the category for gaming equipment in the sidebar navigation.
+@@@Text Functional Component@@@
+
+"数码" (Digital/Electronics) label:
+This is a text label representing the digital and electronics category in the sidebar list.
+@@@Text Functional Component@@@
+
+"拍" (Shoot/Snap) icon:
+This is a circular button with an icon and Chinese character, likely allowing users to quickly take photos to list items or perform image searches.
+@@@TouchableOpacity Function Component@@@
+
+"闲鱼鱼市" (Idle Fish Fish Market / Recycling/Exchange) icon:
+This is a circular interactive icon button that likely directs users to a specific marketplace or exchange feature within the app.
+@@@TouchableOpacity Function Component@@@
+
+"宠物花卉" (Pets & Flowers) label:
+This is a text label representing the pets and flowers category in the sidebar navigation.
+@@@Text Functional Component@@@
+Blue heart currency icon and partial text:
+This appears to be an interactive button with a heart and currency symbol, likely representing a money-saving or preferred selling feature ("省心卖") when tapped by the user.
+@@@TouchableOpacity Function Component@@@

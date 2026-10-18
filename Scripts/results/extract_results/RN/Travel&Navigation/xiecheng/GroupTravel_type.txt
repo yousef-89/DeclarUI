@@ -1,0 +1,147 @@
+"西安" (Xi'an) button with fire icon:
+This appears to be a touchable button representing the popular destination Xi'an with a fire icon, likely allowing users to select it for tour searches.
+@@@TouchableOpacity Function Component@@@
+
+"国内跟团游" (Domestic Group Tours) label:
+This is a text label indicating the category of domestic group tours, describing the option selected in the navigation tab.
+@@@Text Functional Component@@@
+
+"私家团 行程可调 / 自由行 套餐便宜" (Private Tour / Independent Tour) container:
+This is a container view grouping descriptive options and details for private and independent tour packages.
+@@@View Function Component@@@
+
+"国际跟团游 / 中国港澳台" (International Group Tours / China Hong Kong, Macau and Taiwan) label:
+This is a text label describing international group tours and regions including Hong Kong, Macau, and Taiwan.
+@@@Text Functional Component@@@
+
+Image banner:
+This appears to be an image component displaying promotional content or a featured banner in the travel application.
+@@@Function Component@@@
+
+"烟台出发" (Departing from Yantai) label:
+This is a text label indicating the departure city for the tour search.
+@@@Text Functional Component@@@
+
+"北京" (Beijing) button:
+This appears to be a selectable button for the destination Beijing, allowing users to quickly filter tours by this location.
+@@@TouchableOpacity Function Component@@@
+
+"大连" (Dalian) button with fire icon:
+This appears to be a touchable button for the popular destination Dalian with a fire icon, likely allowing users to select it for tour searches.
+@@@TouchableOpacity Function Component@@@
+
+"云南" (Yunnan) button:
+This appears to be a selectable button for the destination Yunnan, allowing users to quickly filter tours by this location.
+@@@TouchableOpacity Function Component@@@
+"出发日期不限" (Departure Date No Limit) label:
+This is a text label indicating that there are no restrictions on the departure date, guiding users to select or view travel dates.
+@@@Text Functional Component@@@
+
+"四川" (Sichuan) card:
+This is a pressable card or button featuring a location name ("Sichuan"), which likely allows users to filter or select Sichuan as a destination for tours.
+@@@TouchableOpacity Function Component@@@
+
+"度假直播" (Holiday Live Broadcast) card:
+This is an interactive card or button providing users with access to live travel streams and popular tour guides.
+@@@TouchableOpacity Function Component@@@
+
+"新疆" (Xinjiang) card:
+This is a pressable card or button featuring a location name ("Xinjiang"), which likely allows users to filter or select Xinjiang as a travel destination.
+@@@TouchableOpacity Function Component@@@
+
+"南京" (Nanjing) card:
+This is a pressable card or button featuring a location name ("Nanjing"), allowing users to select Nanjing as a departure or destination city.
+@@@TouchableOpacity Function Component@@@
+
+"烟台" (Yantai) card:
+This is a pressable card or button featuring a location name ("Yantai") alongside an icon, likely used to display or change the departure city.
+@@@TouchableOpacity Function Component@@@
+
+"游万里山河 赏一川风月" banner title:
+This is a decorative text banner or header displaying a promotional slogan for travel, enhancing the visual theme of the app's homepage.
+@@@Text Functional Component@@@
+
+"人气榜" (Popularity Ranking) card:
+This is an interactive card or button highlighting popular tours with guaranteed no-shopping policies, allowing users to view the ranking details.
+@@@TouchableOpacity Function Component@@@
+
+"精选" (Featured) card:
+This is a pressable tab or button indicating a curated selection of travel products or destinations.
+@@@TouchableOpacity Function Component@@@
+Scenery image:
+This is an image component showing a scenic landscape photo, likely used as a thumbnail in a travel promotion or list.
+@@@Function Component@@@
+
+Scenic thumbnail image:
+This is an image component displaying another travel destination thumbnail, used within a photo gallery or recommendation list.
+@@@Function Component@@@
+
+"钻石贵宾 · 已为您升级尊享折扣95折起" (Diamond VIP · Upgraded to enjoy exclusive discounts starting from 95% off) label:
+This is a text label highlighting VIP member benefits and discount promotions.
+@@@Text Functional Component@@@
+
+"贵州" (Guizhou) label:
+This is a text label indicating a travel destination ("Guizhou"), likely acting as a filter option or category tag.
+@@@Text Functional Component@@@
+
+Banner image icon:
+This appears to be a promotional banner graphic or icon used in marketing sections, such as seasonal discounts or special offers.
+@@@Function Component@@@
+
+"成都" (Chengdu) label:
+This is a text label indicating the city "Chengdu", functioning as a quick-selection tag or location filter.
+@@@Text Functional Component@@@
+
+"会员专享价 退订无忧" (Member Exclusive Price, Worry-Free Cancellation) card:
+This is a container or text area detailing exclusive pricing and cancellation policies for members, likely serving as a clickable navigation item.
+@@@View Function Component@@@
+
+"游玩天数不限" (Unlimited Tour Days) label:
+This is a text label indicating that there are no restrictions on the duration of the tour, used in travel search filters.
+@@@Text Functional Component@@@
+
+"跟团首页" (Tours Homepage) label:
+This is a text label representing the main title or navigation tab for the group tour homepage.
+@@@Text Functional Component@@@
+"2成人 0儿童" (2 adults 0 children) label:
+This is a text label that indicates the selected number of adult and child passengers for the travel booking.
+@@@Text Functional Component@@@
+
+"上海" (Shanghai) label:
+This appears to be a clickable tag or button with an icon representing a popular departure city or destination selection option.
+@@@TouchableOpacity Function Component@@@
+
+"2成人 0儿童 看适合当前出行人的产品" (2 adults 0 children, View products suitable for current travelers) label:
+This is a text label displaying the passenger count alongside a prompt advising users to view products tailored to their current traveling group.
+@@@Text Functional Component@@@
+
+"浏览历史" (Browsing History) label:
+This is a text label indicating the bottom navigation tab or section for viewing the user's previously browsed history.
+@@@Text Functional Component@@@
+
+"限时优惠," (Limited-time offer) label:
+This is a text label indicating promotional details or a limited-time discount for the campaign section.
+@@@Text Functional Component@@@
+
+"查询" (Search) button:
+This is a primary action button that allows users to submit their travel search criteria to find available tour packages.
+@@@Button@@@
+
+"查看更多" (View More) button:
+This is a button that likely allows users to view more promotional or recommended tour options.
+@@@TouchableOpacity Function Component@@@
+
+Scenery image:
+This is an image component displaying a visual preview of a travel destination or tour package.
+@@@Function Component@@@
+
+"我的订单" (My Orders) label:
+This is a text label indicating the bottom navigation tab or section for viewing the user's travel bookings and orders.
+@@@Text Functional Component@@@
+"我的收藏" (My Favorites) label:
+This is a text label that displays the name of the navigation tab, indicating that users are viewing their saved or favorited items.
+@@@Text Functional Component@@@
+
+"暑期大促·精选" (Summer Sale · Featured) and subtitle label:
+This is a section header text block that describes the promotional event ("Summer Sale · Featured") along with a subtitle indicating limited-time offers and ongoing promotions.
+@@@Text Functional Component@@@

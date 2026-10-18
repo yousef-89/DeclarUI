@@ -1,0 +1,78 @@
+Wi-Fi icon:
+This is a status bar indicator showing the device's current Wi-Fi network connection strength.
+@@@StatusBar Android and iOS Component@@@
+
+Profile details and tag snippet:
+This is a collection of text and tag components displaying user profile information such as age and interest tags.
+@@@Text Functional Component@@@
+
+Like/Heart button:
+This is a circular interactive button with a heart icon that allows users to like the profile or accept the match.
+@@@TouchableOpacity Function Component@@@
+
+Profile name and tags section:
+This container displays user profile information including name, age, verification badge, and descriptive interest tags.
+@@@View Function Component@@@
+
+Close/Reject button:
+This is a circular interactive button with an 'X' icon that allows users to pass or dismiss the current profile.
+@@@TouchableOpacity Function Component@@@
+
+Potential Match badge:
+This is a status badge with a lightning icon indicating that the current profile is a potential match.
+@@@View Function Component@@@
+
+Signal strength icon:
+This is a status bar indicator showing the mobile network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Start Conversation button:
+This is a pill-shaped button with a chat bubble icon that allows users to initiate a chat or send a message to the profile.
+@@@TouchableOpacity Function Component@@@
+
+Battery status icon:
+This is a status bar indicator showing the remaining battery percentage and charging status of the device.
+@@@StatusBar Android and iOS Component@@@
+Back arrow icon:
+This appears to be a back button that allows users to navigate to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+Profile background image:
+This is a full-screen image displaying the profile picture of the user.
+@@@Function Component@@@
+
+"Potential Match!" badge:
+This is a badge containing text and an icon that indicates the status of the profile as a potential match.
+@@@View Function Component@@@
+
+"Klee Gracia, 24" label with verified checkmark:
+This text label displays the name and age of the profile user, accompanied by a verified badge icon.
+@@@Text Functional Component@@@
+
+"Running" interest tag:
+This is a tag/pill component displaying a user interest, which helps categorize hobbies or preferences.
+@@@View Function Component@@@
+
+"Outdoor" interest tag:
+This is a tag/pill component displaying an outdoor hobby or interest.
+@@@View Function Component@@@
+
+"Anime" interest tag:
+This is a tag/pill component displaying an interest in anime.
+@@@View Function Component@@@
+
+Bio description text:
+This text component displays the personal bio of the user, providing a short description about themselves.
+@@@Text Functional Component@@@
+
+Cross/dismiss button:
+This button allows the user to pass or dismiss the current profile, usually taking them to the next profile.
+@@@TouchableOpacity Function Component@@@
+
+"Start Conversation" button:
+This is a primary action button with an icon and text that allows users to initiate a chat or conversation with the profile.
+@@@TouchableOpacity Function Component@@@
+
+Heart/like button:
+This button allows the user to like the current profile.
+@@@TouchableOpacity Function Component@@@

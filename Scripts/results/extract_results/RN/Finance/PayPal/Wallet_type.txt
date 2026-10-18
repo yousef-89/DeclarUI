@@ -1,0 +1,62 @@
+Payments icon and label:
+This appears to be a navigation tab item that allows users to switch to the payments section of the app.
+@@@TouchableOpacity Function Component@@@
+
+Barclays card banner:
+This is a branded container component displaying a bank card header with the Barclays logo, which likely serves as a visual card representation or a button to view card details.
+@@@View Function Component@@@
+
+Crypto icon and label:
+This appears to be a navigation tab item that lets users navigate to the cryptocurrency trading and portfolio view.
+@@@TouchableOpacity Function Component@@@
+
+VISA logo:
+This is an image component displaying the VISA logo to indicate the card's payment network.
+@@@Function Component@@@
+
+"信用卡" (Credit Card) label:
+This is a text label indicating the type of card (Credit Card in Chinese).
+@@@Text Functional Component@@@
+
+Rewards label:
+This is a text label representing the rewards section header in the navigation bar.
+@@@Text Functional Component@@@
+
+"5871" label:
+This is a text label showing the last four digits of the user's bank card.
+@@@Text Functional Component@@@
+
+Wallet icon and label:
+This appears to be a navigation tab item that indicates the current active wallet screen.
+@@@TouchableOpacity Function Component@@@
+
+"Bank accounts and cards" label:
+This is a section header text describing the following list of linked bank accounts and cards.
+@@@Text Functional Component@@@
+"Wallet" label:
+This is a text label indicating the current active tab name in the navigation bar.
+@@@Text Functional Component@@@
+
+"cards" label:
+This is a text label part of the section header describing the "Bank accounts and cards" feature.
+@@@Text Functional Component@@@
+
+"Add new" label:
+This is a text label that acts as a clickable action to add a new bank account or card.
+@@@Text Functional Component@@@
+
+"Home" icon and label:
+This is a navigation button containing an icon and text label that allows users to switch to the home screen.
+@@@TouchableOpacity Function Component@@@
+
+"Activity" label:
+This is a text label representing the activity tab in the bottom navigation bar.
+@@@Text Functional Component@@@
+
+PayPal balance card view:
+This is a container view that holds the PayPal balance information and currency details.
+@@@View Function Component@@@
+
+Card number "5871" label:
+This is a text label displaying the last digits of the registered bank card for identification.
+@@@Text Functional Component@@@

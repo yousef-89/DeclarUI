@@ -1,0 +1,66 @@
+54 West Adams Court and Rego Park, NY 11374 text:
+This text label displays the street address and city/state information for a specific parcel center location.
+@@@Text Functional Component@@@
+
+Map view:
+This appears to be a map component that visually displays geographical locations and markers for different parcel centers in the area.
+@@@View Function Component@@@
+
+Fully occupied text:
+This text label indicates the current occupancy status of the parcel center, showing that it is completely full.
+@@@Text Functional Component@@@
+
+My parcels navigation item:
+This is a navigation button and label that allows users to switch to the "My parcels" view or tab.
+@@@TouchableOpacity Function Component@@@
+
+NY0812 text:
+This text label shows the unique identification code or name of the parcel center location.
+@@@Text Functional Component@@@
+
+Available 24/7 text:
+This text label indicates the operating hours or accessibility of the parcel center.
+@@@Text Functional Component@@@
+
+Send parcel navigation item:
+This is a navigation button and label that allows users to switch to the "Send parcel" view or tab.
+@@@TouchableOpacity Function Component@@@
+
+Signal strength icon:
+This status bar icon indicates the current cellular network signal strength of the device.
+@@@StatusBar Android and iOS Component@@@
+
+Parcel center navigation item:
+This is an active navigation button and label that represents the current "Parcel center" view or tab.
+@@@TouchableOpacity Function Component@@@
+9:41 time text:
+This is a text label showing the current time in the device's status bar.
+@@@Text Functional Component@@@
+
+Wi-Fi icon:
+This is an icon representing the device's wireless network connection status in the status bar.
+@@@Function Component@@@
+
+"Parcel centers" title:
+This is a header title describing the current screen, indicating that it displays a list or map of parcel pickup/drop-off locations.
+@@@Text Functional Component@@@
+
+Home indicator bar:
+This is a visual indicator bar at the bottom of iOS devices used for gesture navigation (like returning to the home screen).
+@@@View Function Component@@@
+
+Battery icon background container:
+This is a status bar container or wrapper representing the battery indicator area.
+@@@View Function Component@@@
+
+"Lots of empty space" label:
+This is a descriptive text label indicating the current occupancy status or capacity level of a specific parcel center location.
+@@@Text Functional Component@@@
+
+Battery status indicator:
+This is a status bar icon representing the device's battery level.
+@@@View Function Component@@@
+
+Map view:
+This is a map component displaying geographical locations of parcel centers with interactive markers.
+@@@View Function Component@@@

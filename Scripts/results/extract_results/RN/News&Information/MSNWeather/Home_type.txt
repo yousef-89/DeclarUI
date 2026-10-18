@@ -1,0 +1,36 @@
+Bottom navigation bar icons and labels:
+This appears to be a container view or navigation bar holding multiple interactive destination tabs (Home, Weather, Chat, Tabs, Apps) to allow users to switch between main sections of the app.
+@@@View Function Component@@@
+
+Rewards card header and description:
+This is a container view showcasing Microsoft Rewards information, including an icon, title, and descriptive text about earning points through searches.
+@@@View Function Component@@@
+
+Weather widget card:
+This is a container view displaying weather details such as the location (Mountain View, CA), temperature, condition icon, UV index, and humidity percentage.
+@@@View Function Component@@@
+
+Market/Stocks widget card:
+This is a container view that shows financial market indices and stock symbols like DJI, AAPL, AMZN, and TSLA along with a graphical trend icon.
+@@@View Function Component@@@
+
+Chat icon and label:
+This is an interactive button featuring the app's chat/assistant logo and label, which likely opens the AI chat interface when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Deals tag and status bar indicators:
+This is a status bar and header section showing network signal, battery status, and a promotional "Deals" tag button.
+@@@StatusBar Android and iOS Component@@@
+
+Profile/Camera cutout placeholder:
+This is a circular view or graphic element likely representing a placeholder for a user profile avatar or camera cutout at the top of the screen.
+@@@View Function Component@@@
+
+Search input bar with camera and microphone:
+This is a text input field accompanied by search, camera, and microphone icons, allowing users to type queries or use voice/visual search.
+@@@TextInput@@@
+
+Weather widget card duplicate:
+This is a container view displaying weather details such as the location, temperature, condition icon, UV index, and humidity percentage.
+@@@View Function Component@@@
+No component images were provided for analysis in this request. Please provide the extracted component images alongside the screenshot, and I will gladly analyze and categorize them according to your instructions.

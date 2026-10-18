@@ -1,0 +1,155 @@
+"优惠加油" (Discount Refueling) icon and label:
+This appears to be a clickable feature button that likely directs users to fuel discount services or gas stations nearby.
+@@@TouchableOpacity Function Component@@@
+
+"驾车" (Driving) icon and label:
+This appears to be a touchable feature button that likely allows users to initiate driving navigation or view driving routes.
+@@@TouchableOpacity Function Component@@@
+
+"航院社区" (Hangyuan Community) label:
+This is a text label displaying a location name on the map, indicating the name of the community or residential area.
+@@@Text Functional Component@@@
+
+"大酒店" (Grand Hotel) label:
+This is a text label displaying a business name on the map, indicating the name of a hotel in that location.
+@@@Text Functional Component@@@
+
+"附近" (Nearby) icon and label:
+This appears to be a navigation or tab button that likely allows users to explore nearby services and points of interest.
+@@@TouchableOpacity Function Component@@@
+
+"打车" (Taxi) icon and label:
+This appears to be a touchable feature button that likely allows users to call a taxi or access ride-hailing services.
+@@@TouchableOpacity Function Component@@@
+
+Home icon:
+This appears to be an icon representing home settings or a favorite location shortcut.
+@@@Function Component@@@
+
+"去单位" (Go to Work) label:
+This is a text label that indicates the destination preset for commuting to the user's workplace.
+@@@Text Functional Component@@@
+
+"实时公交" (Real-time Bus) icon and label:
+This appears to be a touchable feature button that likely allows users to check real-time bus arrival times and routes.
+@@@TouchableOpacity Function Component@@@
+"去设置" (Go to settings) text label:
+This appears to be a text label indicating that users can tap to go to the settings page to configure their home or work address.
+@@@Text Functional Component@@@
+
+"火车票机票" (Train tickets and flight tickets) component:
+This is an interactive feature button/icon combination representing train and flight ticket booking services.
+@@@TouchableOpacity Function Component@@@
+
+Search input container:
+This is a search bar component allowing users to type or search for locations, public transit, or subways.
+@@@TextInput@@@
+
+"驾车" (Driving) component:
+This is a service button with an icon and text label for navigation or booking driving directions.
+@@@TouchableOpacity Function Component@@@
+
+"订酒店" (Hotel booking) component:
+This is a service button displaying a building icon and text label to help users book hotels.
+@@@TouchableOpacity Function Component@@@
+
+"去设置" (Go to settings) text label:
+This is a text label indicating that users can configure their work location settings.
+@@@Text Functional Component@@@
+
+"虹口大酒店" (Hongkou Hotel) map label:
+This is a text label displaying a POI (Point of Interest) name on the map.
+@@@Text Functional Component@@@
+
+"步行" (Walking) component:
+This is a service button showing a pedestrian icon and text label to initiate walking directions.
+@@@TouchableOpacity Function Component@@@
+
+"虹口大厦" (Hongkou Mansion) map label:
+This is a text label displaying a building POI name on the map.
+@@@Text Functional Component@@@
+Hotel marker icon:
+This appears to be a clickable map marker representing a hotel location, allowing users to view details or book accommodation when selected.
+@@@TouchableOpacity Function Component@@@
+
+"中国农业银行" (Agricultural Bank of China) label:
+This is a text label on the map representing a specific bank branch, helping users identify financial institutions nearby.
+@@@Text Functional Component@@@
+
+Chauffeur service (代驾) icon and label:
+This appears to be an interactive button with an icon and text label that lets users quickly request a designated driver service.
+@@@TouchableOpacity Function Component@@@
+
+Chat/Messages (消息) icon:
+This is a navigation icon representing the messages or chat tab, enabling users to switch to their communications or notification inbox.
+@@@TouchableOpacity Function Component@@@
+
+Bus (公交) icon and label:
+This is a button featuring a bus icon and text label, allowing users to quickly access public transit schedules and route planning.
+@@@TouchableOpacity Function Component@@@
+
+"高德地图" (AutoNavi/Amap) label:
+This is a text label displaying the map application brand name on the interface.
+@@@Text Functional Component@@@
+
+Route (路线) button:
+This appears to be a navigation or route-planning button that allows users to find directions or paths to a specified destination.
+@@@TouchableOpacity Function Component@@@
+
+Profile/Mine (我的) icon and label:
+This is a bottom navigation tab with an icon and label representing the user's personal profile section.
+@@@TouchableOpacity Function Component@@@
+
+"教育学校" (Educational School) label:
+This is a map text label indicating the location of an educational school nearby.
+@@@Text Functional Component@@@
+"烟台潇翔小学" (Yantai Xiaoxiang Primary School) label:
+This is a text label displaying a location name on the map interface, indicating a school landmark.
+@@@Text Functional Component@@@
+
+"滨海广场" (Binhai Square) label:
+This is a text label displaying a location name on the map, representing a public square landmark.
+@@@Text Functional Component@@@
+
+"百纳瑞汀酒店" (Baina Ruiting Hotel) label:
+This is a text label displaying a location name on the map, indicating a hotel landmark.
+@@@Text Functional Component@@@
+
+"消息" (Messages) label:
+This is a text label describing the navigation tab item for messages or chat functionality.
+@@@Text Functional Component@@@
+
+Location target button:
+This appears to be a button that allows users to reset the map view and center the map back to the user's current location.
+@@@TouchableOpacity Function Component@@@
+
+"更多工具" (More Tools) icon and label:
+This appears to be a button that opens a menu or panel displaying additional features and tools available in the app.
+@@@TouchableOpacity Function Component@@@
+
+"通知" (Notifications) icon and label:
+This appears to be a button that navigates the user to the notification center to view alerts and updates.
+@@@TouchableOpacity Function Component@@@
+
+"反馈" (Feedback) icon and label:
+This appears to be a button that allows users to submit feedback or report issues regarding the app.
+@@@TouchableOpacity Function Component@@@
+
+Briefcase icon:
+This appears to be an icon representing work or professional settings, likely used as a visual indicator for workplace-related shortcuts.
+@@@Function Component@@@
+"回家" (Go Home) label:
+This is a text label that describes a quick shortcut feature, indicating that users can quickly set navigation or view directions to their home location.
+@@@Text Functional Component@@@
+
+"图层" (Layers) icon and label:
+This appears to be a button with an icon and text that allows users to switch map layers, such as satellite view, traffic view, or standard map view.
+@@@TouchableOpacity Function Component@@@
+
+"旺林蓬莱小面馆" (Wanglin Penglai Xiaomian Restaurant) label:
+This is a text label that displays the name of a specific POI (Point of Interest) or business on the map, helping users identify locations.
+@@@Text Functional Component@@@
+
+"打车" (Call a Taxi) icon and label:
+This appears to be a button that likely allows users to quickly access ride-hailing services or request a taxi directly from the app's navigation interface.
+@@@TouchableOpacity Function Component@@@

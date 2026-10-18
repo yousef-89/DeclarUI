@@ -1,0 +1,35 @@
+Capsule navigation/action bar buttons:
+This represents the standard mini-program or app header capsule containing more options ("...") and close/minimize actions.
+@@@View Function Component@@@
+
+"选择缴费类型，输入缴费单位" (Select payment type, enter billing agency) instruction text:
+This text block provides instructions for users on how to pay online, prompting them to select a category and proceed.
+@@@Text Functional Component@@@
+
+Checkmark icon:
+This is an icon component showing a tick mark, used visually to denote a feature guarantee or a completed state.
+@@@Function Component@@@
+
+"随时可缴" (Pay anytime) feature label:
+This is a text label indicating the service feature that utility bills can be paid at any time.
+@@@Text Functional Component@@@
+
+"转供缴费" (Sub-metering / Transferred supply payment) button:
+This is an interactive tile button allowing users to navigate to the sub-metering or relayed utility payment service.
+@@@TouchableOpacity Function Component@@@
+
+"暖气费" (Heating bill) button:
+This is an interactive tile button that users can press to pay or manage heating utility expenses.
+@@@TouchableOpacity Function Component@@@
+
+"极速到账" (Instant arrival) text:
+This is a text label highlighting the feature that payments arrive and are credited quickly.
+@@@Text Functional Component@@@
+
+"有线电视" (Cable TV) button:
+This is an interactive category tile button enabling users to pay for cable TV services.
+@@@TouchableOpacity Function Component@@@
+
+Blue round icon:
+This is a circular graphic/icon representing a brand logo or service emblem.
+@@@Function Component@@@

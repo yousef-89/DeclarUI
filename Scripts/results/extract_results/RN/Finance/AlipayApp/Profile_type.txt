@@ -1,0 +1,46 @@
+Video icon:
+This is an icon representing the "视频" (Video) section in the bottom navigation bar, used to visually guide users to video content.
+@@@Function Component@@@
+
+"110积分待领取 >" (110 points pending collection) label:
+This is a text label indicating that the user has 110 membership reward points available to collect in the Alipay Member section.
+@@@Text Functional Component@@@
+
+"今日收款(元)" (Today's receipts (Yuan)) label:
+This text label describes the monetary metric below it, indicating the total merchant receipts collected today in Yuan.
+@@@Text Functional Component@@@
+
+Blue circle icon:
+This is an icon representing the "总资产" (Total Assets) section, visually identifying financial asset management for the user.
+@@@Function Component@@@
+
+"账单" (Bills) label:
+This is a text label for the bills section, allowing users to navigate to their transaction and payment history.
+@@@Text Functional Component@@@
+
+"0.00" value:
+This is a text component displaying the numerical value of today's receipts, showing an amount of 0.00 Yuan.
+@@@Text Functional Component@@@
+
+Yu'e Bao icon:
+This is a graphical logo/icon representing the "余额宝" (Yu'e Bao) wealth management service.
+@@@Function Component@@@
+
+"上传身份证照片" (Upload ID card photo) label:
+This is a text prompt reminding users to upload their ID card photo to access more financial services.
+@@@Text Functional Component@@@
+
+"视频" (Video) label:
+This is a text label beneath the video tab icon in the bottom navigation bar, identifying the video tab.
+@@@Text Functional Component@@@
+Currency icon:
+This is an icon image displaying a currency symbol (¥) inside an orange circle, typically used to visually represent financial services, funds, or wealth management features.
+@@@Function Component@@@
+
+"用户保护中心 >" (User Protection Center) label:
+This is a text label located in the header section that translates to "User Protection Center," indicating a link or navigation button to the account security and user protection settings.
+@@@Text Functional Component@@@
+
+Feature icon:
+This is a graphical icon image representing a specific service within the app (such as the Huabei credit service), providing visual branding and quick identification for the list item.
+@@@Function Component@@@

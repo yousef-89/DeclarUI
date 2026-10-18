@@ -1,0 +1,58 @@
+Purple card edge/side component:
+This appears to be a card container or a partial view of a carousel card for displaying additional course information or options.
+@@@View Function Component@@@
+
+Chemistry course card:
+This is an interactive course card that likely allows users to tap and open chemistry-related materials, classes, or details.
+@@@TouchableOpacity Function Component@@@
+
+Physics schedule card:
+This card component displays details about an upcoming physics class, including time, instructor, and meeting link, and can likely be clicked for more options.
+@@@TouchableOpacity Function Component@@@
+
+Mathematics course card:
+This is an interactive course card representing mathematics, which users can tap to view subject-specific content and assignments.
+@@@TouchableOpacity Function Component@@@
+
+"4 tasks today" label:
+This is a text label displaying the number of pending tasks for the day, serving as a quick summary for the user.
+@@@Text Functional Component@@@
+
+Mathematics card with "Your schedule" text:
+This component contains both a course card button and a section title text, serving as a container for grouped UI elements.
+@@@View Function Component@@@
+
+"Your running subjects" label:
+This is a subtitle text label describing the section containing the user's active courses.
+@@@Text Functional Component@@@
+
+Mathematics course card:
+This is an interactive button-like card for the Mathematics course, allowing users to navigate to the subject's details.
+@@@TouchableOpacity Function Component@@@
+
+Bottom navigation bar:
+This is a bottom tab navigation bar containing multiple touchable icon and text buttons for switching between main app sections like Home, Tasks, Classroom, and Discuss.
+@@@View Function Component@@@
+Profile picture icon:
+This appears to be an image component displaying the user's avatar, which likely links to user profile settings or account details when tapped.
+@@@Function Component@@@
+
+"Courses" label:
+This is a text label serving as a section heading for the running subjects/courses available in the app.
+@@@Text Functional Component@@@
+
+Schedule detail icons:
+These icons represent meta-information for the scheduled class, such as time, instructor, and meeting platform, serving as visual indicators for the details listed.
+@@@Function Component@@@
+
+"Hello Liana" label:
+This is a greeting text label that displays a personalized welcome message using the user's name.
+@@@Text Functional Component@@@
+
+Mathematics course card:
+This is a pressable container card displaying an icon and title for the Mathematics course, likely used to navigate to course details or materials.
+@@@TouchableOpacity Function Component@@@
+
+Chemistry course card:
+This is a pressable container card displaying an icon and title for the Chemistry course, likely used to navigate to course details or materials.
+@@@TouchableOpacity Function Component@@@

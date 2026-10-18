@@ -1,0 +1,62 @@
+Account and profile icon with text "账户资料" (Account Profile):
+This appears to be a navigation button with an icon and label that allows users to view and manage their account details and profile settings.
+@@@TouchableOpacity Function Component@@@
+
+Search icon with text "搜索" (Search):
+This appears to be a navigation button with a magnifying glass icon and label that likely takes users to the search tab or triggers a search action.
+@@@TouchableOpacity Function Component@@@
+
+Surrounding area search input box:
+This appears to be a text input field or interactive search container labeled "周围地区" (Surrounding area) with a magnifying glass icon, allowing users to enter or select a location for finding nearby accommodations.
+@@@View Function Component@@@
+
+Guest and room selection input box:
+This appears to be an interactive container labeled "1间房 · 2位成人 · 无儿童" (1 room · 2 adults · 0 children) with a user icon, allowing users to specify the number of rooms, adults, and children for their booking.
+@@@View Function Component@@@
+
+Saved items icon with text "已保存" (Saved):
+This appears to be a navigation button with a heart icon and label that lets users access their saved or favorite hotels and listings.
+@@@TouchableOpacity Function Component@@@
+
+Bookings icon with text "订单" (Bookings):
+This appears to be a navigation button with a suitcase icon and label that directs users to view their current and past bookings or reservations.
+@@@TouchableOpacity Function Component@@@
+
+Hotel card information block:
+This appears to be a container displaying hotel details such as name ("AC Hotel by Marriott Manchester..."), distance ("8,540公里" / 8,540 kilometers), and price ("£160").
+@@@View Function Component@@@
+
+Notification bell icon:
+This appears to be a button with a bell icon that likely opens user notifications, alerts, or promotional messages.
+@@@TouchableOpacity Function Component@@@
+
+"临时起意？" (Spontaneous trip?) section title:
+This is a text label acting as a section header, asking "Spontaneous trip?" in Chinese to introduce a curated list of nearby or last-minute hotel recommendations.
+@@@Text Functional Component@@@
+"搜索" (Search) button:
+This is a prominent button that initiates the hotel search process based on the user-selected location, dates, and guests.
+@@@TouchableOpacity Function Component@@@
+
+Hotel details and distance text:
+This text label displays the hotel name ("Maldron Hotel Manc") and distance ("8,541公里" / 8,541 kilometers) from the current search criteria or location.
+@@@Text Functional Component@@@
+
+"7月18日 周四 - 7月19日 周五" (July 18 Thursday - July 19 Friday) date range label:
+This component displays the selected check-in and check-out dates along with a calendar icon, allowing users to view or modify their booking dates.
+@@@View Function Component@@@
+
+Hotel name and distance summary label:
+This text component shows the hotel name and distance from the current location in kilometers ("8,541公里" / 8,541 kilometers).
+@@@Text Functional Component@@@
+
+Booking.com brand logo:
+This image displays the Booking.com brand logo in the header of the application.
+@@@Function Component@@@
+
+Hotel exterior photo 1:
+This image shows the exterior facade and entrance of the AC Hotel by Marriott Manchester City Centre.
+@@@Function Component@@@
+
+Hotel exterior photo 2:
+This image shows the exterior building and street view of the Maldron Hotel Manchester.
+@@@Function Component@@@

@@ -1,0 +1,112 @@
+Free parking icon and label:
+This appears to be a clickable feature item with an icon and label "免费停车" (Free parking), likely used to view details about free parking amenities at the hotel.
+@@@TouchableOpacity Function Component@@@
+
+"客房与人数" (Rooms and Guests) label:
+This is a text label indicating the section for selecting the number of rooms and guests, translating to "Rooms and Guests".
+@@@Text Functional Component@@@
+
+"烟台南山皇冠假日酒店" (Yantai Nanshan Crowne Plaza) header title:
+This is a text label displaying the name of the hotel, translating to "Yantai Nanshan Crowne Plaza".
+@@@Text Functional Component@@@
+
+"1间房" (1 room) label:
+This is a text label indicating the room quantity, translating to "1 room".
+@@@Text Functional Component@@@
+
+Spa and wellness center icon and label:
+This appears to be a clickable feature item with an icon and label "Spa及健康中心" (Spa & Health Center), likely used to view details about spa and wellness facilities.
+@@@TouchableOpacity Function Component@@@
+
+Indoor swimming pool icon:
+This appears to be an icon component representing the indoor swimming pool amenity.
+@@@Function Component@@@
+
+"入住时间" (Check-in time) label:
+This is a text label indicating the check-in time section, translating to "Check-in time".
+@@@Text Functional Component@@@
+
+"烟台南山皇冠假日酒店" (Yantai Nanshan Crowne Plaza) secondary title:
+This is a text label displaying the hotel name again in the body section, translating to "Yantai Nanshan Crowne Plaza".
+@@@Text Functional Component@@@
+
+Hotel room photo:
+This appears to be an image component displaying a preview photo of the hotel room interior.
+@@@Function Component@@@
+Share icon:
+This appears to be a button that likely allows users to share the current hotel page or details via various messaging or social media platforms.
+@@@TouchableOpacity Function Component@@@
+
+Hotel image 1:
+This is an image showcasing a room interior within the hotel gallery section.
+@@@Function Component@@@
+
+Hotel rating badge:
+This is a badge displaying the hotel's numerical rating score, providing quick visual feedback on the property's quality.
+@@@View Function Component@@@
+
+Hotel image 2:
+This is an image displaying another angle of a hotel room interior.
+@@@Function Component@@@
+
+"2位成人" (2 Adults) label:
+This is a text label indicating the number of adult guests for the room reservation. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+Parking amenity icon and label:
+This is an interactive view containing a parking icon and a label, likely used to view hotel amenities or parking details.
+@@@View Function Component@@@
+
+"免费无线网络连接" (Free Wi-Fi) label:
+This is a text label describing the free wireless network connection amenity offered by the hotel. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+"退房时间" (Check-out Time) label:
+This is a text label indicating the check-out time section for the hotel booking. When non-English text is present, provide a translation.
+@@@Text Functional Component@@@
+
+Hotel image 3 with "+118" overlay:
+This image displays a hotel room with an overlay indicating the remaining number of photos available in the gallery.
+@@@ImageBackground@@@
+1晚房价 (7月18日 - 7月19日) (Price for 1 night (July 18 - July 19)) label:
+This is a text label indicating the duration and dates for the room price displayed.
+@@@Text Functional Component@@@
+
+1晚房价 (Price for 1 night) label:
+This is a text label specifying the duration of the stay as one night for the room price.
+@@@Text Functional Component@@@
+
+Spa及健康中心 (Spa & Wellness Center) icon:
+This appears to be an icon representing a spa and health center facility available at the hotel.
+@@@Function Component@@@
+
+无儿童 (No children) label:
+This is a text label indicating that there are no children included in the guest count.
+@@@Text Functional Component@@@
+
+Hotel room image:
+This is an image displaying the interior of a hotel room with a bed and a couch.
+@@@Function Component@@@
+
+查看房型列表 (View room types list) button:
+This is a button that allows users to view the list of available room types when clicked.
+@@@TouchableOpacity Function Component@@@
+
+7月18日 周四 (July 18 Thursday) label:
+This is a text label showing the check-in date (July 18, Thursday).
+@@@Text Functional Component@@@
+
+餐厅 (Restaurant) icon:
+This is an icon representing the hotel restaurant facility.
+@@@Function Component@@@
+
+7月19日 周五 (July 19 Friday) label:
+This is a text label showing the check-out date (July 19, Friday).
+@@@Text Functional Component@@@
+Wi-Fi icon:
+This appears to be a clickable button or icon representing wireless internet availability, likely allowing users to view more details about the hotel's Wi-Fi services when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Swimming pool icon:
+This appears to be a clickable button or icon representing the indoor swimming pool amenity, likely allowing users to view further information about the pool when tapped.
+@@@TouchableOpacity Function Component@@@

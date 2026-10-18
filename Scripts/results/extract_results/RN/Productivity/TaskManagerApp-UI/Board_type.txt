@@ -1,0 +1,54 @@
+Bottom navigation bar:
+This appears to be a container view holding multiple navigation icons and a central action button for switching between different main sections of the app.
+@@@View Function Component@@@
+
+"Board" title:
+This is a header text label that indicates the current screen or section name the user is viewing.
+@@@Text Functional Component@@@
+
+Signal bars icon:
+This status bar icon indicates the current cellular network signal strength.
+@@@StatusBar Android and iOS Component@@@
+
+Battery icon:
+This status bar icon displays the remaining battery level of the mobile device.
+@@@StatusBar Android and iOS Component@@@
+
+"Personal" board card:
+This is an interactive card component displaying category details and task count, which likely navigates to personal tasks when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Profile avatar image:
+This is an avatar image representing the user profile, potentially opening profile settings or user details when tapped.
+@@@Function Component@@@
+
+"Events" board card:
+This is an interactive card component displaying category details and task count for events, allowing users to view scheduled event tasks.
+@@@TouchableOpacity Function Component@@@
+
+"Work" board card:
+This is an interactive card component displaying category details and task count for work-related items, allowing users to open work boards.
+@@@TouchableOpacity Function Component@@@
+
+"Create Board" card:
+This is an interactive action card with a plus icon that allows users to create a new board or category.
+@@@TouchableOpacity Function Component@@@
+Meeting category card:
+This appears to be a clickable card component that likely navigates the user to a filtered view showing meeting-related tasks and details.
+@@@TouchableOpacity Function Component@@@
+
+Time display:
+This is a text label displaying the current time in the status bar area at the top of the screen.
+@@@Text Functional Component@@@
+
+Personal category card:
+This appears to be a clickable card component that allows users to access and view personal tasks and information.
+@@@TouchableOpacity Function Component@@@
+
+Events category card:
+This appears to be a clickable card component that directs users to a calendar or list of scheduled events and tasks.
+@@@TouchableOpacity Function Component@@@
+
+Private category card:
+This appears to be a clickable card component that opens a secure or private section for sensitive tasks.
+@@@TouchableOpacity Function Component@@@

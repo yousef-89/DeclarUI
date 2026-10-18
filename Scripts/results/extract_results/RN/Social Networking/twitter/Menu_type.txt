@@ -1,0 +1,120 @@
+Profile card snippet:
+This appears to be a card container displaying user information and interaction buttons in the profile drawer.
+@@@View Function Component@@@
+
+9:41 time label:
+This is a text label displaying the current time at the top of the screen in the status bar area.
+@@@Text Functional Component@@@
+
+117 Followers label:
+This is a text label that shows the count and description of users following the profile.
+@@@Text Functional Component@@@
+
+Home indicator bar:
+This is a bottom bar indicator typically used on iOS devices for navigation gestures or system home action.
+@@@View Function Component@@@
+
+Bookmarks label:
+This is a text label representing the "Bookmarks" navigation option in the side menu drawer.
+@@@Text Functional Component@@@
+
+Pixsellz profile logo:
+This appears to be an avatar or profile image representing the user/brand logo in the side menu.
+@@@Function Component@@@
+
+Lists label:
+This is a text label representing the "Lists" navigation item in the profile drawer menu.
+@@@Text Functional Component@@@
+
+216 Following label:
+This is a text label that shows the count and description of accounts that the user is following.
+@@@Text Functional Component@@@
+
+Lightbulb icon:
+This appears to be a clickable icon button at the bottom of the menu, likely used for toggling a theme feature or lighting mode.
+@@@TouchableOpacity Function Component@@@
+User name fragment:
+This appears to be a portion of a user name or handle text within a list or post item, used to display user information.
+@@@Text Functional Component@@@
+
+Profile label:
+This is a text label indicating the "Profile" navigation option in the drawer menu, which likely directs users to view or edit their user profile.
+@@@Text Functional Component@@@
+
+Pixsellz header info:
+This text component displays the main profile name and handle (@pixsellz) at the top of the side menu to identify the currently logged-in account.
+@@@Text Functional Component@@@
+
+More options icon button:
+This appears to be a clickable icon button, likely used to open additional options or context menus related to user profile settings.
+@@@TouchableOpacity Function Component@@@
+
+Home navigation icon button:
+This appears to be a clickable navigation icon button representing the home tab, allowing users to return to the main feed view.
+@@@TouchableOpacity Function Component@@@
+
+Bookmark icon:
+This is an icon component representing bookmarks, likely used alongside label text to direct users to their saved or bookmarked content.
+@@@Function Component@@@
+
+Moments label and icon:
+This is a combination of an icon and text label for the "Moments" section, allowing users to navigate to curated posts or highlights.
+@@@Text Functional Component@@@
+
+QR code icon button:
+This appears to be a clickable button with a QR code symbol, likely used to open a QR scanner or display the user's personal QR code for sharing.
+@@@TouchableOpacity Function Component@@@
+
+Help Center label:
+This is a text label for the "Help Center" menu item, which when tapped likely directs users to support documentation or customer service.
+@@@Text Functional Component@@@
+Profile avatar image:
+This appears to be an image component displaying a user's profile picture in a circular format, likely allowing users to view or upload a larger version of the image.
+@@@Function Component@@@
+
+Story/Status avatar image:
+This appears to be an image component showing another user's profile or status thumbnail, which likely allows users to tap and view stories or updates.
+@@@Function Component@@@
+
+"Topics" label:
+This is a text label that indicates a navigation section or category named "Topics", allowing users to browse related content.
+@@@Text Functional Component@@@
+
+Topics icon:
+This appears to be a button with a speech bubble icon, which likely navigates users to a topics or discussions page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Signal strength indicator icon:
+This appears to be a status bar icon representing cellular network signal strength, typically used in the device's status bar to indicate connectivity.
+@@@StatusBar Android and iOS Component@@@
+
+Small avatar image:
+This appears to be an image component displaying a miniature user profile photo, commonly used next to user names or activities for quick identification.
+@@@Function Component@@@
+
+Lists icon:
+This appears to be a button with a list symbol, which likely allows users to navigate to their saved lists or custom feeds when tapped.
+@@@TouchableOpacity Function Component@@@
+
+More options icon:
+This appears to be a button with three dots inside a circle, which likely opens a menu or reveals additional options and settings when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Profile icon:
+This appears to be a button featuring a user silhouette icon, which likely navigates the user to their profile page or account settings when tapped.
+@@@TouchableOpacity Function Component@@@
+Profile Story and Badge Image:
+This appears to be a profile or story avatar with a notification badge, likely allowing users to tap and view stories or updates from a specific user.
+@@@Function Component@@@
+
+Profile Avatar Image:
+This is a user profile avatar image that visually represents a user within the application, typically displayed next to posts, comments, or profile details.
+@@@Function Component@@@
+
+User Profile Avatar Image:
+This is a circular user profile image that represents another user or account, commonly used in social media feeds and lists to display author identities.
+@@@Function Component@@@
+
+WiFi Network Icon:
+This icon represents the device's wireless network connection status, typically displayed in the status bar to indicate signal strength and connectivity.
+@@@Function Component@@@

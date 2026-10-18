@@ -1,0 +1,128 @@
+"2 Persons" label:
+This is a text label indicating the number of participants assigned or attending the task or meeting.
+@@@Text Functional Component@@@
+
+"WED 12" label:
+This is a text component displaying the day of the week and date, likely used in a calendar or schedule view.
+@@@Text Functional Component@@@
+
+"Task" label:
+This is a header title text indicating the main screen or section name of the application.
+@@@Text Functional Component@@@
+
+"FRI 14" label:
+This is a text component displaying the selected day of the week and date in the calendar strip.
+@@@Text Functional Component@@@
+
+Group icon:
+This appears to be an icon representing multiple users or participants associated with a task or event.
+@@@Function Component@@@
+
+Chat icon:
+This appears to be an icon representing a messaging or chat feature in the bottom navigation bar.
+@@@Function Component@@@
+
+"9:41" label:
+This is a text label displaying the current status bar time.
+@@@Text Functional Component@@@
+
+"May 01, 2020" label:
+This is a text label displaying the current date context for the tasks displayed on the screen.
+@@@Text Functional Component@@@
+
+"10 - 11 AM" label:
+This is a text label displaying the scheduled time range for the task or meeting.
+@@@Text Functional Component@@@
+Application Design Meeting label:
+This is a text label displaying the title of a specific meeting or task item within the task card.
+@@@Text Functional Component@@@
+
+2 Persons label:
+This is a text label indicating the number of participants assigned to or attending the meeting or task.
+@@@Text Functional Component@@@
+
+Clock icon:
+This appears to be an icon representing time, paired with a schedule to indicate the start and end time of the task.
+@@@Function Component@@@
+
+Website UI Design for $500 label:
+This is a text label describing the project details or category along with the associated budget or payment amount.
+@@@Text Functional Component@@@
+
+10 - 11 AM label:
+This is a text label indicating the specific time slot (from 10 AM to 11 AM) during which the scheduled task or meeting takes place.
+@@@Text Functional Component@@@
+
+SUN label:
+This is a text label representing the day of the week (Sunday) displayed in the calendar date header.
+@@@Text Functional Component@@@
+
+11 label:
+This is a text label showing the calendar date number (11) for the corresponding day of the week.
+@@@Text Functional Component@@@
+
+Add Task button:
+This appears to be a button with a plus icon and text that allows users to create and add a new task when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Folder with checkmark icon:
+This appears to be an icon representing a completed task folder or project management section in the navigation bar.
+@@@Function Component@@@
+New Web UI Design Project text:
+This is a text label displaying the title of the task card, indicating the specific project name.
+@@@Text Functional Component@@@
+
+RUNNING label:
+This is a text label indicating the current status or category of the task.
+@@@Text Functional Component@@@
+
+Tab bar icon / UI element:
+This appears to be a graphical icon representing a specific section, likely part of a navigation bar or tab item.
+@@@Function Component@@@
+
+Today text:
+This is a header text label indicating the selected day view or section title.
+@@@Text Functional Component@@@
+
+Add Task button:
+This is a button that likely allows users to add a new task when pressed.
+@@@TouchableOpacity Function Component@@@
+
+Website UI Design for $500 text:
+This is a descriptive text label providing additional details about the project such as its description and budget.
+@@@Text Functional Component@@@
+
+URGENT label:
+This is a text label indicating the priority level of the task.
+@@@Text Functional Component@@@
+
+User profile avatar image:
+This is an image component displaying the user's avatar or profile picture in the header.
+@@@Function Component@@@
+
+THU 13 calendar date item:
+This is a date display component showing the day of the week and date, likely used for selecting or viewing tasks on a specific day.
+@@@View Function Component@@@
+MON label:
+This is a text label indicating the day of the week, Monday, as part of a calendar date selection header.
+@@@Text Functional Component@@@
+
+SAT label:
+This is a text label indicating the day of the week, Saturday, within the calendar date selection component.
+@@@Text Functional Component@@@
+
+Wifi icon:
+This is a status bar icon representing the device's current Wi-Fi network connection strength.
+@@@Function Component@@@
+
+Signal strength icon:
+This is a status bar icon representing the device's mobile network signal strength.
+@@@Function Component@@@
+
+ONGOING card and header section:
+This container view groups the ongoing task details, including status labels, meeting titles, and associated options.
+@@@View Function Component@@@
+
+TUE label:
+This is a text label indicating the day of the week, Tuesday, as part of the weekly calendar view.
+@@@Text Functional Component@@@

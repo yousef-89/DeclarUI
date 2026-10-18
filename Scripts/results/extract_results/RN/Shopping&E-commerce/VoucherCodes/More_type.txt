@@ -1,0 +1,50 @@
+Amazon.co.uk Reward Offer Card:
+This component displays an exclusive reward offer from Amazon, including the company logo, offer description, reward type, and expiration date, likely acting as a clickable card to view offer details.
+@@@TouchableOpacity Function Component@@@
+
+Booking.com Reward Offer Card:
+This component displays an exclusive hotel booking discount offer from Booking.com, including the logo, offer details, reward status, and expiration date, likely functioning as an interactive card item.
+@@@TouchableOpacity Function Component@@@
+
+Reward Offers Header:
+This component shows a top navigation bar with a back arrow and the title "Reward Offers", allowing users to go back to the previous screen.
+@@@View Function Component@@@
+
+Account Tab Icon and Label:
+This component combines a user profile icon and the text label "Account", serving as a navigation button to direct users to their account profile page.
+@@@TouchableOpacity Function Component@@@
+
+VIP Tab Label:
+This component displays the text "VIP", likely part of the bottom navigation bar representing a VIP rewards or status section.
+@@@Text Functional Component@@@
+
+Search Tab Label:
+This component displays the text "Search", serving as a text label for the search navigation tab at the bottom of the screen.
+@@@Text Functional Component@@@
+
+Discover Tab Icon and Label:
+This component consists of a compass icon and the text label "Discover", acting as a bottom navigation item that brings users back to the discovery or home feed.
+@@@TouchableOpacity Function Component@@@
+
+Just Eat Reward Offer Card:
+This component displays a promotional offer card for Just Eat featuring a free Amazon voucher with qualifying orders, including company branding and validity terms.
+@@@TouchableOpacity Function Component@@@
+
+Currys Reward Offer Card:
+This component represents a reward offer card for Currys offering a voucher with qualifying orders, featuring the brand logo, offer description, and expiration details.
+@@@TouchableOpacity Function Component@@@
+Back arrow icon:
+This is a button with an arrow icon located in the header, likely used to navigate back to the previous screen.
+@@@TouchableOpacity Function Component@@@
+
+"Reward Offers" title:
+This is a text label displaying the title of the screen, indicating that the user is currently viewing available reward offers.
+@@@Text Functional Component@@@
+
+Reward item card:
+This appears to be a container view representing an individual reward offer card, grouping the brand logo, offer description, reward type, and expiration date together.
+@@@View Function Component@@@
+
+Bottom navigation bar:
+This is a container view at the bottom of the screen holding the main navigation tabs ("Discover", "Search", "VIP", and "Account").
+@@@View Function Component@@@

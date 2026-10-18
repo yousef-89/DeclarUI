@@ -1,0 +1,73 @@
+SFTP Server icon:
+This appears to be an icon representing the SFTP server option in the connection list, serving as a visual indicator for the server type.
+@@@Function Component@@@
+
+SFTP Server label:
+This is a text label that displays the name "SFTP Server" for the corresponding connection option in the list.
+@@@Text Functional Component@@@
+
+Windows SMB label:
+This is a text label that displays the name "Windows SMB" for the corresponding network sharing connection option in the list.
+@@@Text Functional Component@@@
+
+Import from cloud storage label:
+This is a section header text label indicating the category for importing files from various cloud storage services.
+@@@Text Functional Component@@@
+
+Dropbox button:
+This appears to be a touchable button containing the Dropbox option, allowing users to select and connect to their Dropbox account.
+@@@TouchableOpacity Function Component@@@
+
+OneDrive label:
+This is a text label displaying the name "OneDrive" for the corresponding cloud storage connection option.
+@@@Text Functional Component@@@
+
+From Computer banner component:
+This appears to be a container view or card component that highlights the "From Computer" feature with an illustrative icon and descriptive text.
+@@@View Function Component@@@
+
+Box label:
+This is a text label displaying the name "Box" for the corresponding cloud storage connection option in the list.
+@@@Text Functional Component@@@
+
+Bottom navigation bar:
+This appears to be a navigation bar component containing multiple tab icons for switching between different main sections of the application.
+@@@View Function Component@@@
+Wi-Fi icon:
+This appears to be a status bar or connection indicator icon representing the Wi-Fi signal strength, allowing users to quickly see their network connectivity status.
+@@@StatusBar Android and iOS Component@@@
+
+Battery status icon:
+This appears to be a status bar icon showing the device's current battery level, helping users monitor their remaining power.
+@@@StatusBar Android and iOS Component@@@
+
+Right arrow navigation icon:
+This appears to be a button or directional indicator that likely allows users to navigate to a specific connection setup or details page when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"Add Connection" label:
+This is a text label that serves as a section header, indicating the area where users can add new server or storage connections.
+@@@Text Functional Component@@@
+
+Signal strength bars icon:
+This appears to be a status bar icon representing cellular network signal strength, providing visual feedback on mobile data connectivity.
+@@@StatusBar Android and iOS Component@@@
+
+Time display "9:41":
+This is a text label displaying the current system time in the status bar.
+@@@Text Functional Component@@@
+
+Google Drive button:
+This appears to be a touchable button that allows users to select and connect their Google Drive account for cloud storage import.
+@@@TouchableOpacity Function Component@@@
+
+Windows SMB logo icon:
+This appears to be an image representing the Windows SMB service logo used to identify the connection option in the list.
+@@@Function Component@@@
+
+FTP Server icon:
+This appears to be an image icon representing the FTP Server connection option, helping users visually identify the protocol type.
+@@@Function Component@@@
+Connections title:
+This is a header text label that indicates the current screen or section name, showing users that they are viewing the "Connections" page.
+@@@Text Functional Component@@@

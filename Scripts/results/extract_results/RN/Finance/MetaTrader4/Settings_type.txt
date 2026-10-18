@@ -1,0 +1,102 @@
+"Journal" label:
+This is a text label indicating a settings section for viewing application logs or historical system events.
+@@@Text Functional Component@@@
+
+"Interface" section:
+This component displays the current language setting and acts as a navigation trigger to open the interface customization menu.
+@@@TouchableOpacity Function Component@@@
+
+"OTP" icon:
+This represents a visual icon for a one-time password generator utility within the settings.
+@@@Function Component@@@
+
+"One-time password generator" label:
+This is a descriptive text label providing context for the OTP feature.
+@@@Text Functional Component@@@
+
+"Mailbox" icon:
+This is a graphical icon representing an email or messaging center.
+@@@Function Component@@@
+
+"Traders Community" icon:
+This is a brand logo icon representing the MQL5 traders community forum.
+@@@Function Component@@@
+
+"Account Info" text:
+This text block displays user-specific account details, including the device name, server provider, and account number.
+@@@Text Functional Component@@@
+
+"MQL5" icon:
+This is a branded logo icon for the MQL5 platform, likely leading to community or social features.
+@@@Function Component@@@
+
+"History" icon:
+This icon represents the navigation item for the trading history logs.
+@@@Function Component@@@
+Component Keyword: 
+"Tradays" and "Economic calendar" labels:
+These are text labels that categorize a list item, providing the name of the feature and a short description.
+@@@Text Functional Component@@@
+
+Component Keyword: 
+"Chat and Messages" and "Sign in to MQL5.community!" labels:
+These are text labels within a navigation row that inform the user of the messaging feature and the current status or call-to-action (signing in).
+@@@Text Functional Component@@@
+
+Component Keyword: 
+"News" and "UAE is poised to hit its oil capacity a year earlier t..." labels:
+These are text labels displaying a title and a snippet of the latest financial news article.
+@@@Text Functional Component@@@
+
+Component Keyword: 
+"Quotes" icon and label:
+This represents a bottom navigation tab button that, when pressed, redirects the user to the quotes/trading pairs screen.
+@@@TouchableOpacity Function Component@@@
+
+Component Keyword: 
+"Tradays" calendar icon:
+This is an icon representing the "Tradays" feature, likely used as a visual indicator within a list row.
+@@@Function Component@@@
+
+Component Keyword: 
+"Interface" language icon:
+This is an icon representing language or interface settings, likely acting as a visual cue for the user in the settings menu.
+@@@Function Component@@@
+
+Component Keyword: 
+"Settings" gear icon:
+This is a visual icon representing the settings category, likely displayed as an entry point for configuration options.
+@@@Function Component@@@
+
+Component Keyword: 
+"Chat" thumb icon:
+This is a visual icon representing the chat/community feature, used to quickly identify the messaging section.
+@@@Function Component@@@
+
+Component Keyword: 
+"Settings" title text:
+This is the title text for the current screen, clearly indicating that the user is in the "Settings" menu.
+@@@Text Functional Component@@@
+Candlestick chart icon:
+This appears to be a graphical icon representing the "Charts" section, used as a visual aid to help users quickly identify the charts menu item.
+@@@Function Component@@@
+
+"New Account" label:
+This is a text label indicating the purpose of the row, which is to allow the user to add or set up a new trading account.
+@@@Text Functional Component@@@
+
+"Mailbox" row text:
+This text displays the title "Mailbox" and a subtitle describing its function ("Built-in Virtual Hosting — trading robots and signa..."), providing information about the internal messaging system.
+@@@Text Functional Component@@@
+
+Book icon:
+This icon represents the "News" section, serving as a visual indicator for the application's news feed feature.
+@@@Function Component@@@
+
+"MQL5 Algo Trading" label:
+This is a text label identifying the "MQL5 Algo Trading" service, providing access to algorithmic trading features or community resources.
+@@@Text Functional Component@@@
+
+Green profile/status icon:
+This icon likely serves as a visual indicator for an account status or a user profile section, helping users navigate to their personal settings or account management.
+@@@Function Component@@@

@@ -1,0 +1,159 @@
+ROMOSS brand logo icon:
+This is an image representing the brand logo for ROMOSS (罗马仕), typically used as an avatar or identifier for the merchant's message thread.
+@@@Function Component@@@
+
+Clear/Eraser icon:
+This appears to be a button or action icon likely used to clear message history, notifications, or perform a clean-up action on the current view.
+@@@TouchableOpacity Function Component@@@
+
+"Starbucks 星巴克官方旗舰店" (Starbucks Official Flagship Store) text label:
+This is a text label displaying the English and Chinese name of the store ("Starbucks Official Flagship Store"), indicating the sender of the message.
+@@@Text Functional Component@@@
+
+"对藕香抹微云" text label:
+This is a text label showing a user's nickname or message preview content ("对藕香抹微云").
+@@@Text Functional Component@@@
+
+"24/03/25" date label:
+This is a text label indicating the date of the message or interaction ("24/03/25", March 25, 2024).
+@@@Text Functional Component@@@
+
+Starbucks brand logo:
+This is an image representing the Starbucks brand logo used as an avatar for the official flagship store message item.
+@@@Function Component@@@
+
+"良品铺子旗舰店" (Bestore Official Flagship Store) text label:
+This is a text label displaying the store name ("Bestore Official Flagship Store") in Chinese.
+@@@Text Functional Component@@@
+
+YOMIK brand logo icon:
+This is an image representing the YOMIK brand logo, featuring a colorful geometric pattern and stylized typography used as a merchant avatar.
+@@@Function Component@@@
+
+"互动" (Interaction) card button:
+This appears to be a clickable card or button representing the "Interaction" (互动) category or feature, marked with a puzzle piece icon.
+@@@TouchableOpacity Function Component@@@
+"24/03/19" date label:
+This is a text label displaying a date, indicating when the message or notification was received.
+@@@Text Functional Component@@@
+
+Yellow bookmark icon with plus sign:
+This appears to be an interactive button that likely allows users to add or save items to a bookmarks or favorites list.
+@@@TouchableOpacity Function Component@@@
+
+"不要错过限" (Do not miss the limited time / Don't miss out) label:
+This is a text label part of a promotional message, urging users not to miss out on a limited-time offer or discount.
+@@@Text Functional Component@@@
+
+"售后" (After-sales) button with arrow icon:
+This appears to be an interactive button or card that leads users to the after-sales service or customer support section.
+@@@TouchableOpacity Function Component@@@
+
+"24/06/13" date label:
+This is a text label displaying a date, indicating the timestamp of a specific message or notification.
+@@@Text Functional Component@@@
+
+"Jellycat 2024新生系列焕新上市！" (Jellycat 2024 Newborn Series Newly Launched!) label:
+This is a text label describing a new product launch from a brand, informing users about the latest collection available.
+@@@Text Functional Component@@@
+
+Shopping cart icon and "购物车" (Shopping Cart) label:
+This appears to be a navigation button or tab bar item that takes the user to their shopping cart page.
+@@@TouchableOpacity Function Component@@@
+
+"24/04/03" date label:
+This is a text label displaying a date, indicating when the message or notification was received.
+@@@Text Functional Component@@@
+
+"两周前的消息" (Messages from two weeks ago) label:
+This is a section header text label indicating that the messages listed below are older, specifically from two weeks ago.
+@@@Text Functional Component@@@
+"逛逛" (Browse) icon and label:
+This appears to be a button with an icon and text representing a navigation tab that likely allows users to browse through content or feeds when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Yellow bookmark icon:
+This appears to be a button with an icon that likely allows users to bookmark or save content quickly when tapped.
+@@@TouchableOpacity Function Component@@@
+
+Search icon:
+This appears to be a button with a magnifying glass icon that likely allows users to search for content or items within the app when tapped.
+@@@TouchableOpacity Function Component@@@
+
+"6.1-8.31" label:
+This is a text label displaying a date range (June 1st to August 31st), indicating the active period for the promotional event mentioned in the header.
+@@@Text Functional Component@@@
+
+"jELLYCAT旗舰店" (jELLYCAT Flagship Store) label:
+This is a text label displaying the store name "jELLYCAT旗舰店" (jELLYCAT Flagship Store), indicating the title or sender of the notification message.
+@@@Text Functional Component@@@
+
+jELLYCAT brand logo:
+This appears to be an image representing the store logo for jELLYCAT, used as an avatar to visually identify the brand in the message list.
+@@@Function Component@@@
+
+"良品铺子" (Bestore) brand icon:
+This appears to be an image representing the store logo for Bestore, used as an avatar to visually identify the brand in the message list.
+@@@Function Component@@@
+
+Starbucks brand logo:
+This appears to be an image representing the Starbucks official flagship store logo, used as an avatar to visually identify the brand in the message list.
+@@@Function Component@@@
+
+"24/07/03" label:
+This is a text label displaying the date "24/07/03" (July 3, 2024), indicating when the message was received.
+@@@Text Functional Component@@@
+Number "5" badge:
+This is a badge showing an unread message count of 5 for a specific notification item in the list.
+@@@Text Functional Component@@@
+
+"24/02/22" date label:
+This text label displays the date of the message (February 22, 2024).
+@@@Text Functional Component@@@
+
+"提醒" (Reminder) icon and label button:
+This appears to be a button with a bell icon and text indicating a reminder feature, which likely allows users to set or view notifications and alerts.
+@@@TouchableOpacity Function Component@@@
+
+"龙腾新岁·开工大吉！入会臻享爆品优先购" (Dragon New Year, prosperous work start! Join the membership for priority purchase of popular products) label:
+This text label describes a promotional message or event description for new year membership benefits.
+@@@Text Functional Component@@@
+
+Number "3" badge:
+This is a badge showing an unread message count of 3 for a specific notification item.
+@@@Text Functional Component@@@
+
+"Starbucks" store name label:
+This text label displays the name of the brand/store ("Starbucks") sending the message.
+@@@Text Functional Component@@@
+
+"更多优惠尽在掌握" (More discounts are in your hands) label:
+This text label provides a promotional tagline or subtitle encouraging users to check out more deals and offers.
+@@@Text Functional Component@@@
+
+"的服务满意吗？" (Are you satisfied with the service?) label:
+This text label represents part of a customer satisfaction survey message inquiring about the user's experience.
+@@@Text Functional Component@@@
+
+"活动" (Activity) tag:
+This is a small highlighted tag labeled "Activity" to categorize or draw attention to promotional events or special activities.
+@@@View Function Component@@@
+Top navigation bar ("消息" (Messages), brush icon, search icon, plus icon):
+This is the header section containing the screen title and several action icons for filtering, searching, or adding content.
+@@@View Function Component@@@
+
+"交易物流" (Transaction Logistics) card:
+This card likely functions as a touchable container that directs users to view shipping updates, delivery status, and order details.
+@@@TouchableOpacity Function Component@@@
+
+"两周前的消息" (Messages from two weeks ago) section header:
+This is a text label that categorizes and introduces the older message list below it.
+@@@Text Functional Component@@@
+
+Message list item (romoss旗舰店):
+This is a list item representing a conversation thread with a specific store, showing the avatar, store name, latest message preview, timestamp, and unread count badge.
+@@@flatlist-simple@@@
+
+Bottom tab bar ("首页" (Home), "逛逛" (Explore), "消息" (Messages), "购物车" (Cart), "我的淘宝" (My Taobao)):
+This is the bottom navigation bar used for switching between the main sections of the application.
+@@@View Function Component@@@
