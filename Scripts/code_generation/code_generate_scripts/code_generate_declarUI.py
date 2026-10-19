@@ -237,6 +237,12 @@ def prompt_construct(app_classification,app_name,page_name,sequence=1,type="Scre
 
 
 def save_response(output_folder, app_classification, app_name, pic_name, response, save_type="js"):
+    if not response or not response.strip():
+        raise ValueError(
+            f"Refusing to save an empty generated response: "
+            f"{app_classification}/{app_name}/{pic_name}"
+        )
+
     save_type = get_uitype_detail()['save_type']
     # Create output folder if it does not exist
     output_folder = os.path.join(output_folder, app_classification, app_name)
@@ -372,18 +378,39 @@ def send_single_prompt_and_get_response(client, prompt, image_path=''):
     if image_path and os.path.exists(image_path):
         with open(image_path, "rb") as f:
             contents.append(types.Part.from_bytes(data=f.read(), mime_type="image/png"))
-            
-    try:
-        completion = client.models.generate_content(
-            model="gemini-3.1-flash-lite",
-            contents=contents
-        )
-        res = completion.text or ""
-    except Exception as e:
-        print(f"[!] Generation Error: {e}")
-        res = ""
 
-    return remove_first_and_last_lines(res)
+    max_attempts = 4
+    transient_statuses = ("429", "500", "502", "503", "504")
+    last_error = None
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            completion = client.models.generate_content(
+                model="gemini-3.5-flash-lite",
+                contents=contents
+            )
+            res = remove_first_and_last_lines(completion.text or "").strip()
+            if not res:
+                raise RuntimeError("The model returned an empty response.")
+            return res
+        except Exception as error:
+            last_error = error
+            error_text = str(error)
+            is_transient = any(status in error_text for status in transient_statuses)
+            if not is_transient or attempt == max_attempts:
+                raise RuntimeError(
+                    f"Generation failed after {attempt} attempt(s): {error}"
+                ) from error
+
+            delay_seconds = 5 * (2 ** (attempt - 1))
+            print(
+                f"[!] Transient generation error on attempt {attempt}/{max_attempts}: "
+                f"{error}"
+            )
+            print(f"Retrying in {delay_seconds} seconds...")
+            time.sleep(delay_seconds)
+
+    raise RuntimeError(f"Generation failed: {last_error}")
 
 def clear_folder(folder_path):
     try:
@@ -508,8 +535,5 @@ def generate_by_app(app_classification,app_name):
     
     
 if __name__ == "__main__":
-    app_classification_list = ["Social Networking","Entertainment","Productivity","Education","Wellness","Finance","Shopping&E-commerce","Travel&Navigation","News&Information","Utility&PracticalTools"]
-    app_classification = app_classification_list[0]
-    app_name = ''
-    generate_by_classification(app_classification_list[9])
+    generate_by_app("Shopping&E-commerce", "Amazon")
    

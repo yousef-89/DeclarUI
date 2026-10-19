@@ -139,29 +139,35 @@ def run_gradlew_assemble(project_path,category,apk_name,add_package_list=[]):
     original_cwd = os.getcwd()
     error_dict = ""
     compile_state = False
-    os.chdir(project_path)
-    if not os.path.exists('android'):
-        print("Error: The current directory is not the root of a React Native project.")
-        return
-
-    os.chdir('android')
-
-    # inspect whether gradlew exists
-    if not os.path.exists('gradlew'):
-        print("Error：gradlew file not exists.")
-        return
-    npm_install_cmd = [r"D:\Program Files\nodejs\npm.cmd", "install"]
-    npm_uninstall_cmd  = [r"D:\Program Files\nodejs\npm.cmd", "uninstall"]
-    # If there are new packages, install them using npm install.
-    if add_package_list:
-        for add_package in add_package_list:
-            if not is_package_installed(add_package):
-                npm_install_cmd.append(add_package)
-                npm_uninstall_cmd.append(add_package)
-        print(npm_install_cmd)
-        if len(npm_install_cmd) > 2:
-            subprocess.run(npm_install_cmd, check=True)
+    npm_uninstall_cmd = []
     try:
+        os.chdir(project_path)
+        if not os.path.exists('android'):
+            error_dict = "The configured React Native template does not contain an android directory."
+            print(
+                "Error: The current directory is not the root of a React Native project."
+            )
+            return compile_state, error_dict
+
+        os.chdir('android')
+
+        if not os.path.exists('gradlew'):
+            error_dict = "The React Native project does not contain a gradlew script."
+            print("Error: gradlew file does not exist.")
+            return compile_state, error_dict
+
+        npm_install_cmd = [r"D:\Program Files\nodejs\npm.cmd", "install"]
+        npm_uninstall_cmd = [r"D:\Program Files\nodejs\npm.cmd", "uninstall"]
+
+        if add_package_list:
+            for add_package in add_package_list:
+                if not is_package_installed(add_package):
+                    npm_install_cmd.append(add_package)
+                    npm_uninstall_cmd.append(add_package)
+            print(npm_install_cmd)
+            if len(npm_install_cmd) > 2:
+                subprocess.run(npm_install_cmd, check=True)
+
         # run gradlew assemble command
         result = subprocess.run(['gradlew.bat', 'assemble'], 
                                 capture_output=True, 
@@ -174,18 +180,17 @@ def run_gradlew_assemble(project_path,category,apk_name,add_package_list=[]):
         print(f"gradlew assemble failed to run。Error msg：{e.stderr}")
         compile_state = False
         clean_error = strip_ansi_escape(e.stderr)
-        error_dict = extract_error_info(clean_error)
         error_dict = clean_error
-        for key, value in error_dict.items():
-            print(f"file: {key}\n Error: {value}\n")
         with open('../err_log.txt', 'w', encoding='utf-8') as f:
             f.write(clean_error)
         print(f"The gradlew assemble command failed. The error log has been saved to err_log.txt.")  
-    # If there are new packages, they need to be removed after the build is complete to avoid affecting the next compilation.
-    if add_package_list and len(npm_uninstall_cmd)>2:
-        subprocess.run(npm_uninstall_cmd, check=True)   
-    os.chdir(original_cwd)
-    return compile_state,error_dict
+
+    finally:
+        if add_package_list and len(npm_uninstall_cmd) > 2:
+            subprocess.run(npm_uninstall_cmd, check=True)
+        os.chdir(original_cwd)
+
+    return compile_state, error_dict
  
 def extract_error_info(log_text):
     pattern = r'(\w+\.js): (.+?)\n\n\s*((?:\d+\s*\|\s*.*(?:\n|$))+)'

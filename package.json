@@ -5,6 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
+    "render:baseline": "node batch_render.js output/baseline-amazon 3000",
+    "render:refined": "node batch_render.js output/refined-amazon 3000",
+    "evaluate:baseline": "python evaluate_baseline.py --baseline output/baseline-amazon --output output/baseline-amazon-evaluation.json",
+    "evaluate:refined": "python evaluate_baseline.py --baseline output/refined-amazon --output output/refined-amazon-evaluation.json",
+    "refine:visual": "python visual_refine.py",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +24,14 @@
   },
   "homepage": "https://github.com/security-pride/DeclarUI#readme",
   "dependencies": {
+    "@react-navigation/native": "^7.5.1",
     "puppeteer": "^25.14.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "react-native": "npm:react-native-web@^0.21.4",
+    "react-native-safe-area-context": "^5.10.1",
+    "react-native-screens": "^4.30.0",
+    "react-native-vector-icons": "^9.2.0",
     "react-native-web": "^0.21.4",
     "react-scripts": "^5.0.1"
   },

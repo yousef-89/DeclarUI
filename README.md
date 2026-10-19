@@ -48,3 +48,71 @@ To generate UI code, run the following command:
 cd Scripts/code_generation/code_generate_scripts
 python code_generate_declarUI.py
 ```
+
+### Headless baseline rendering
+Start the React Native Web host in one terminal:
+```bash
+npm start
+```
+
+Then render every `.js` and `.jsx` component currently in `src/generated`:
+```bash
+npm run render:baseline
+```
+
+Baseline screenshots are written to `output/baseline-amazon`, along with
+`summary.json`, which records the success or failure of each component:
+```bash
+npm run render:baseline
+```
+
+Refined screenshots use a separate output directory:
+```bash
+npm run render:refined
+```
+
+The underlying renderer also accepts a custom output directory and server port:
+```bash
+npm run render:baseline -- output/my-baseline 3001
+```
+
+The batch command scans the directory once when it starts; newly added
+components are included the next time the command is run.
+
+To evaluate the baseline renders, place the corresponding original reference
+images in `Dataset/targets`, then run:
+```bash
+npm run evaluate:baseline
+```
+
+To evaluate a refined iteration, run:
+```bash
+npm run evaluate:refined
+```
+
+To perform one automated visual-refinement pass, keep the development server
+running and run:
+```bash
+npm run refine:visual
+npm run render:refined
+npm run evaluate:refined
+```
+The current generated sources are backed up to
+`output/refinement/iteration-0-source` before refinement. The refinement uses
+the baseline evaluation report, reference screenshots, current renders, and
+Gemini to produce revised component code.
+
+The Python evaluation dependencies can be installed with:
+```bash
+python -m pip install -r requirements-evaluation.txt
+```
+
+The evaluator first looks for an exact component-name match, such as
+`DefaultViewScreen.png`, and then automatically tries the original screen name
+without the `Screen` suffix, such as `DefaultView.png`. It calculates SSIM and
+CLIP similarity for valid pairs and writes
+`output/baseline_evaluation.json`. The selected target filename is recorded in
+the report. Failed renders and components without a matching target remain in
+the report but are excluded from metric averages. Reference images must be
+original ground-truth screenshots; do not copy baseline renders into
+`Dataset/targets`.

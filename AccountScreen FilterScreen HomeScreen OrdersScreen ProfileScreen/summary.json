@@ -1,0 +1,93 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated",
+  "sourceDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen",
+  "port": 3000,
+  "app": null,
+  "selectedComponents": null,
+  "total": 10,
+  "succeeded": 7,
+  "failed": 3,
+  "results": [
+    {
+      "component": "AccountScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\AccountScreen.js",
+      "componentPath": "AccountScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\AccountScreen.png",
+      "success": true,
+      "error": null
+    },
+    {
+      "component": "ClearHistoryScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\ClearHistoryScreen.js",
+      "componentPath": "ClearHistoryScreen",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "DefaultViewScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\DefaultViewScreen.js",
+      "componentPath": "DefaultViewScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\DefaultViewScreen.png",
+      "success": true,
+      "error": null
+    },
+    {
+      "component": "ExpandedView-ShowHistroyScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\ExpandedView-ShowHistroyScreen.js",
+      "componentPath": "ExpandedView-ShowHistroyScreen",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "FilterScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\FilterScreen.js",
+      "componentPath": "FilterScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\FilterScreen.png",
+      "success": true,
+      "error": null
+    },
+    {
+      "component": "HomeScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\HomeScreen.js",
+      "componentPath": "HomeScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\HomeScreen.png",
+      "success": true,
+      "error": null
+    },
+    {
+      "component": "OrdersScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\OrdersScreen.js",
+      "componentPath": "OrdersScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\OrdersScreen.png",
+      "success": true,
+      "error": null
+    },
+    {
+      "component": "ProfileScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\ProfileScreen.js",
+      "componentPath": "ProfileScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\ProfileScreen.png",
+      "success": true,
+      "error": null
+    },
+    {
+      "component": "ShowHistoryScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\ShowHistoryScreen.js",
+      "componentPath": "ShowHistoryScreen",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "TestScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\TestScreen.js",
+      "componentPath": "TestScreen",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\AccountScreen FilterScreen HomeScreen OrdersScreen ProfileScreen\\TestScreen.png",
+      "success": true,
+      "error": null
+    }
+  ]
+}

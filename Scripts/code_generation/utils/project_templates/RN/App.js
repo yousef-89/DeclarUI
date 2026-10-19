@@ -1,24 +1,24 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ClearHistoryScreen from './components/ClearHistoryScreen';
-import DefaultViewScreen from './components/DefaultViewScreen';
-import ExpandedViewScreen from './components/ExpandedViewScreen';
-import ExpandedViewShowHistoryScreen from './components/ExpandedView-ShowHistoryScreen';
-import ShowHistoryScreen from './components/ShowHistoryScreen';
+import AccountScreen from './components/AccountScreen';
+import FilterScreen from './components/FilterScreen';
+import HomeScreen from './components/HomeScreen';
+import OrdersScreen from './components/OrdersScreen';
+import ProfileScreen from './components/ProfileScreen';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="ClearHistory" component={ClearHistoryScreen} />
-        <Stack.Screen name="DefaultView" component={DefaultViewScreen} />
-        <Stack.Screen name="ExpandedView" component={ExpandedViewScreen} />
-        <Stack.Screen name="ExpandedView-ShowHistory" component={ExpandedViewShowHistoryScreen} />
-        <Stack.Screen name="ShowHistory" component={ShowHistoryScreen} />
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Account" component={AccountScreen} />
+        <Stack.Screen name="Filter" component={FilterScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Orders" component={OrdersScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
