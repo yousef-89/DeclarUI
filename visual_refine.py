@@ -19,19 +19,24 @@ def parse_args():
         description="Refine generated screens using reference and rendered images."
     )
     parser.add_argument(
+        "--app",
+        required=True,
+        help="Application name used in src/generated and output paths.",
+    )
+    parser.add_argument(
         "--evaluation",
         type=Path,
-        default=Path("output") / "baseline-amazon-evaluation.json",
+        default=None,
     )
     parser.add_argument(
         "--source-dir",
         type=Path,
-        default=Path("src") / "generated",
+        default=None,
     )
     parser.add_argument(
         "--backup-dir",
         type=Path,
-        default=Path("output") / "refinement" / "iteration-0-source",
+        default=None,
     )
     parser.add_argument("--model", default=MODEL)
     return parser.parse_args()
@@ -47,9 +52,17 @@ def strip_code_fence(text):
 
 
 def image_part(path):
+    suffix = path.suffix.lower()
+    mime_type = {
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".png": "image/png",
+    }.get(suffix)
+    if mime_type is None:
+        raise ValueError(f"Unsupported image format: {path}")
     return types.Part.from_bytes(
         data=path.read_bytes(),
-        mime_type="image/png",
+        mime_type=mime_type,
     )
 
 
@@ -76,9 +89,14 @@ Current source:
 
 
 def refine(args):
-    evaluation_path = resolve(args.evaluation)
-    source_dir = resolve(args.source_dir)
-    backup_dir = resolve(args.backup_dir)
+    evaluation_path = resolve(
+        args.evaluation or Path("output") / args.app / "baseline-evaluation.json"
+    )
+    source_dir = resolve(args.source_dir or Path("src") / "generated" / args.app)
+    backup_dir = resolve(
+        args.backup_dir
+        or Path("output") / args.app / "refinement" / "iteration-0-source"
+    )
 
     if "GEMINI_API_KEY" not in os.environ:
         raise RuntimeError("GEMINI_API_KEY is not set.")

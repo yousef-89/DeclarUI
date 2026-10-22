@@ -2,26 +2,29 @@ const fs = require('fs');
 const path = require('path');
 const { captureComponentScreenshot } = require('./render_runner');
 
-const GENERATED_DIR = path.join(__dirname, 'src', 'generated');
-const DEFAULT_OUTPUT_DIR = path.join(__dirname, 'output', 'baseline');
-
 function getOptions(args) {
-  const [outputDir = DEFAULT_OUTPUT_DIR, port = '3000'] = args;
+  const [appName = 'default', iteration = 'baseline', port = '3000'] = args;
   const parsedPort = Number.parseInt(port, 10);
 
+  if (!appName.trim()) {
+    throw new Error('App name must not be empty.');
+  }
   if (!Number.isInteger(parsedPort) || parsedPort < 1 || parsedPort > 65535) {
     throw new Error(`Invalid port "${port}". Expected a number between 1 and 65535.`);
   }
 
   return {
-    outputDir: path.resolve(outputDir),
+    appName,
+    generatedDir: path.join(__dirname, 'src', 'generated', appName),
+    outputDir: path.join(__dirname, 'output', appName, iteration),
     port: parsedPort
   };
 }
 
 async function runBatchRender({
-  generatedDir = GENERATED_DIR,
-  outputDir = DEFAULT_OUTPUT_DIR,
+  appName = 'default',
+  generatedDir = path.join(__dirname, 'src', 'generated', appName),
+  outputDir = path.join(__dirname, 'output', appName, 'baseline'),
   port = 3000
 } = {}) {
   if (!fs.existsSync(generatedDir)) {
@@ -48,7 +51,7 @@ async function runBatchRender({
     let error = null;
 
     try {
-      success = await captureComponentScreenshot(componentName, outputPath, port);
+      success = await captureComponentScreenshot(componentName, outputPath, port, appName);
     } catch (renderError) {
       error = renderError instanceof Error ? renderError.message : String(renderError);
     }
@@ -65,6 +68,7 @@ async function runBatchRender({
   const summary = {
     generatedDirectory: generatedDir,
     outputDirectory: outputDir,
+    appName,
     port,
     total: results.length,
     succeeded: results.filter((result) => result.success).length,

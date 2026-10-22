@@ -2,14 +2,15 @@ import React, { Suspense, lazy } from 'react';
 
 const getQueryParam = (param) => {
   const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param) || 'TestScreen';
+  return urlParams.get(param);
 };
 
 export default function App() {
-  const targetComponent = getQueryParam('component');
+  const appName = getQueryParam('app') || 'default';
+  const targetComponent = getQueryParam('component') || 'TestScreen';
 
   const ComponentToRender = lazy(() =>
-    import(`./generated/${targetComponent}`)
+    import(`./generated/${appName}/${targetComponent}`)
       .then((mod) => ({ default: mod.default || mod }))
       .catch((err) => {
         console.error('Failed to load dynamic component:', err);

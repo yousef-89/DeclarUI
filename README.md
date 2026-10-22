@@ -55,39 +55,38 @@ Start the React Native Web host in one terminal:
 npm start
 ```
 
-Then render every `.js` and `.jsx` component currently in `src/generated`:
+Then render every `.js` and `.jsx` component in the selected app folder:
 ```bash
 npm run render:baseline
 ```
 
-Baseline screenshots are written to `output/baseline-amazon`, along with
-`summary.json`, which records the success or failure of each component:
+The app-scoped renderer command is:
 ```bash
-npm run render:baseline
+node batch_render.js <app_name> <iteration> [port]
 ```
+For example, `node batch_render.js Amazon baseline 3000` scans
+`src/generated/Amazon` and writes screenshots to `output/Amazon/baseline`, along with
+`summary.json`, which records the success or failure of each component:
 
 Refined screenshots use a separate output directory:
 ```bash
 npm run render:refined
 ```
 
-The underlying renderer also accepts a custom output directory and server port:
-```bash
-npm run render:baseline -- output/my-baseline 3001
-```
-
 The batch command scans the directory once when it starts; newly added
 components are included the next time the command is run.
 
 To evaluate the baseline renders, place the corresponding original reference
-images in `Dataset/targets`, then run:
+images in `Dataset/targets/<app_name>`. The evaluator dynamically loads every
+`.png`, `.jpg`, and `.jpeg` file in that folder:
 ```bash
-npm run evaluate:baseline
+python evaluate_baseline.py --app Amazon
 ```
 
 To evaluate a refined iteration, run:
 ```bash
-npm run evaluate:refined
+python evaluate_baseline.py --app Amazon --baseline output/Amazon/refined `
+  --output output/Amazon/refined-evaluation.json
 ```
 
 To perform one automated visual-refinement pass, keep the development server
@@ -98,7 +97,7 @@ npm run render:refined
 npm run evaluate:refined
 ```
 The current generated sources are backed up to
-`output/refinement/iteration-0-source` before refinement. The refinement uses
+`output/<app_name>/refinement/iteration-0-source` before refinement. The refinement uses
 the baseline evaluation report, reference screenshots, current renders, and
 Gemini to produce revised component code.
 
@@ -111,8 +110,15 @@ The evaluator first looks for an exact component-name match, such as
 `DefaultViewScreen.png`, and then automatically tries the original screen name
 without the `Screen` suffix, such as `DefaultView.png`. It calculates SSIM and
 CLIP similarity for valid pairs and writes
-`output/baseline_evaluation.json`. The selected target filename is recorded in
+`output/<app_name>/baseline-evaluation.json`. The selected target filename is recorded in
 the report. Failed renders and components without a matching target remain in
 the report but are excluded from metric averages. Reference images must be
 original ground-truth screenshots; do not copy baseline renders into
 `Dataset/targets`.
+
+Before rendering, a generated component can be checked with:
+```bash
+node check_syntax.js src/generated/Amazon/HomeScreen.js
+```
+The checker prints `SYNTAX_VALID` for valid JSX or
+`SYNTAX_INVALID: <error message>` for parser failures.

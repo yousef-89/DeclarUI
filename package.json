@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "render:baseline": "node batch_render.js output/baseline-amazon 3000",
-    "render:refined": "node batch_render.js output/refined-amazon 3000",
-    "evaluate:baseline": "python evaluate_baseline.py --baseline output/baseline-amazon --output output/baseline-amazon-evaluation.json",
-    "evaluate:refined": "python evaluate_baseline.py --baseline output/refined-amazon --output output/refined-amazon-evaluation.json",
-    "refine:visual": "python visual_refine.py",
+    "render:baseline": "node batch_render.js Amazon baseline 3000",
+    "render:refined": "node batch_render.js Amazon refined 3000",
+    "evaluate:baseline": "python evaluate_baseline.py --app Amazon",
+    "evaluate:refined": "python evaluate_baseline.py --app Amazon --baseline output/Amazon/refined --output output/Amazon/refined-evaluation.json",
+    "refine:visual": "python visual_refine.py --app Amazon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,6 +34,9 @@
     "react-native-vector-icons": "^9.2.0",
     "react-native-web": "^0.21.4",
     "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.29.9"
   },
   "browserslist": {
     "production": [

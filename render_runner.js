@@ -2,7 +2,12 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-async function captureComponentScreenshot(componentName, outputPath, port = 3000) {
+async function captureComponentScreenshot(
+  componentName,
+  outputPath,
+  port = 3000,
+  appName = 'default'
+) {
   const browser = await puppeteer.launch({
     headless: 'new',
     args: [
@@ -22,7 +27,7 @@ async function captureComponentScreenshot(componentName, outputPath, port = 3000
       deviceScaleFactor: 2
     });
 
-    const targetUrl = `http://localhost:${port}?component=${componentName}`;
+    const targetUrl = `http://localhost:${port}?app=${encodeURIComponent(appName)}&component=${encodeURIComponent(componentName)}`;
     await page.goto(targetUrl, { waitUntil: 'networkidle0', timeout: 10000 });
 
     await page.waitForSelector('#render-root', { visible: true, timeout: 5000 });
@@ -60,10 +65,12 @@ async function captureComponentScreenshot(componentName, outputPath, port = 3000
 module.exports = { captureComponentScreenshot };
 
 if (require.main === module) {
-  const [,, compName, outPath] = process.argv;
-  if (compName && outPath) {
-    captureComponentScreenshot(compName, outPath);
+  const [, , first, second, third] = process.argv;
+  if (third) {
+    captureComponentScreenshot(second, third, 3000, first);
+  } else if (first && second) {
+    captureComponentScreenshot(first, second);
   } else {
-    console.log("Usage: node render_runner.js <ComponentName> <OutputPath>");
+    console.log("Usage: node render_runner.js <AppName> <ComponentName> <OutputPath>");
   }
 }

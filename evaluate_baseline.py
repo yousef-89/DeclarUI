@@ -14,21 +14,26 @@ def parse_args():
         description="Calculate SSIM and CLIP similarity for baseline renders."
     )
     parser.add_argument(
+        "--app",
+        required=True,
+        help="Application name used in Dataset/targets, src/generated, and output.",
+    )
+    parser.add_argument(
         "--targets",
         type=Path,
-        default=Path("Dataset") / "targets",
+        default=None,
         help="Directory containing reference images named after components.",
     )
     parser.add_argument(
         "--baseline",
         type=Path,
-        default=Path("output") / "baseline",
+        default=None,
         help="Directory containing baseline screenshots and summary.json.",
     )
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("output") / "baseline_evaluation.json",
+        default=None,
         help="Path for the evaluation report.",
     )
     return parser.parse_args()
@@ -38,17 +43,22 @@ def resolve_path(path):
     return path if path.is_absolute() else Path.cwd() / path
 
 
-def find_target(target_dir, component):
+def load_targets(target_dir):
+    targets = {}
+    for path in sorted(target_dir.iterdir()):
+        if path.is_file() and path.suffix.lower() in {".png", ".jpg", ".jpeg"}:
+            targets.setdefault(path.stem, path)
+    return targets
+
+
+def find_target(targets, component):
     candidates = [component]
     if component.endswith("Screen"):
         candidates.append(component[:-len("Screen")])
-
     for candidate in candidates:
-        target_path = target_dir / f"{candidate}.png"
-        if target_path.exists():
-            return target_path
-
-    return target_dir / f"{candidates[0]}.png"
+        if candidate in targets:
+            return targets[candidate]
+    return None
 
 
 def load_ssim(target_path, render_path):
@@ -133,20 +143,24 @@ def run_evaluation(target_dir, baseline_dir, output_path):
     with summary_path.open(encoding="utf-8") as file:
         summary = json.load(file)
 
+    if not target_dir.exists():
+        raise FileNotFoundError(f"Target directory not found: {target_dir}")
+
+    targets = load_targets(target_dir)
     results = []
     metric_pairs = []
     for item in summary.get("results", []):
         component = item["component"]
-        target_path = find_target(target_dir, component)
+        target_path = find_target(targets, component)
         rendered_path = Path(item["screenshot"]) if item.get("screenshot") else None
         result = {
             "component": component,
             "render_success": bool(item.get("success")),
             "render_error": item.get("error"),
-            "target": str(target_path),
+            "target": str(target_path) if target_path else None,
             "render": str(rendered_path) if rendered_path else None,
-            "target_exists": target_path.exists(),
-            "target_match": target_path.name if target_path.exists() else None,
+            "target_exists": target_path is not None,
+            "target_match": target_path.name if target_path else None,
             "metric_status": "not_evaluated",
             "ssim": None,
             "clip_similarity": None,
@@ -156,7 +170,7 @@ def run_evaluation(target_dir, baseline_dir, output_path):
 
         if not result["render_success"]:
             result["metric_status"] = "render_failed"
-        elif not target_path.exists():
+        elif target_path is None:
             result["metric_status"] = "target_missing"
         elif rendered_path is None or not rendered_path.exists():
             result["metric_status"] = "render_file_missing"
@@ -236,9 +250,9 @@ if __name__ == "__main__":
     try:
         arguments = parse_args()
         run_evaluation(
-            resolve_path(arguments.targets),
-            resolve_path(arguments.baseline),
-            resolve_path(arguments.output),
+            resolve_path(arguments.targets or Path("Dataset") / "targets" / arguments.app),
+            resolve_path(arguments.baseline or Path("output") / arguments.app / "baseline"),
+            resolve_path(arguments.output or Path("output") / arguments.app / "baseline-evaluation.json"),
         )
     except ImportError as error:
         print(
