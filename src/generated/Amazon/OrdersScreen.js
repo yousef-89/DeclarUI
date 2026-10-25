@@ -21,7 +21,7 @@ const OrdersScreen = ({ navigation }) => {
         <View style={styles.topBar}>
           <TouchableOpacity
             style={styles.backButton}
-            onPress={() => navigation.navigate('Profile')}
+            onPress={() => navigation?.navigate?.('Profile')}
           >
             <Icon name="arrow-left" size={24} color="#000" />
           </TouchableOpacity>
@@ -52,7 +52,7 @@ const OrdersScreen = ({ navigation }) => {
           </View>
           <TouchableOpacity
             style={styles.filterButton}
-            onPress={() => navigation.navigate('Filter')}
+            onPress={() => navigation?.navigate?.('Filter')}
           >
             <Text style={styles.filterText}>Filter</Text>
             <Icon name="chevron-right" size={18} color="#000" style={styles.filterArrow} />
@@ -69,16 +69,16 @@ const OrdersScreen = ({ navigation }) => {
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.carouselContainer}>
             <View style={styles.productThumbnailContainer}>
-              <Image source={{ uri: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=200&q=80' }} style={styles.thumbnailImage} />
+              <Image source={{ uri: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=300&q=80' }} style={styles.thumbnailImage} />
             </View>
             <View style={styles.productThumbnailContainer}>
-              <Image source={{ uri: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=200&q=80' }} style={styles.thumbnailImage} />
+              <Image source={{ uri: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=300&q=80' }} style={styles.thumbnailImage} />
             </View>
             <View style={styles.productThumbnailContainer}>
-              <Image source={{ uri: 'https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=200&q=80' }} style={styles.thumbnailImage} />
+              <Image source={{ uri: 'https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=300&q=80' }} style={styles.thumbnailImage} />
             </View>
             <View style={styles.productThumbnailContainer}>
-              <Image source={{ uri: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=200&q=80' }} style={styles.thumbnailImage} />
+              <Image source={{ uri: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=300&q=80' }} style={styles.thumbnailImage} />
             </View>
           </ScrollView>
         </View>
@@ -90,7 +90,9 @@ const OrdersScreen = ({ navigation }) => {
 
         {/* Order Item 1 */}
         <View style={styles.orderItemCard}>
-          <Image source={{ uri: 'https://images.unsplash.com/photo-1585338107529-13afc5f02c86?auto=format&fit=crop&w=200&q=80' }} style={styles.orderItemImage} />
+          <View style={styles.imagePlaceholder}>
+            <Image source={{ uri: 'https://images.unsplash.com/photo-1585338107529-13afc5f02c86?auto=format&fit=crop&w=300&q=80' }} style={styles.orderItemImage} />
+          </View>
           <View style={styles.orderItemDetails}>
             <Text style={styles.orderItemTitle} numberOfLines={2}>
               SmithPackaging Large Bubble Wrap Roll 300mm x 5m - Sm...
@@ -104,7 +106,9 @@ const OrdersScreen = ({ navigation }) => {
 
         {/* Order Item 2 */}
         <View style={styles.orderItemCard}>
-          <Image source={{ uri: 'https://images.unsplash.com/photo-1592722716790-213c4e5113d7?auto=format&fit=crop&w=200&q=80' }} style={styles.orderItemImage} />
+          <View style={styles.imagePlaceholder}>
+            <Image source={{ uri: 'https://images.unsplash.com/photo-1592722716012-d5582f37c35f?auto=format&fit=crop&w=300&q=80' }} style={styles.orderItemImage} />
+          </View>
           <View style={styles.orderItemDetails}>
             <Text style={styles.orderItemTitle} numberOfLines={2}>
               AYhome Travel Pillow, Memory Foam Neck Pillow for Travel,...
@@ -119,7 +123,7 @@ const OrdersScreen = ({ navigation }) => {
         {/* Order Item 3 */}
         <View style={styles.orderItemCard}>
           <View style={styles.imageBadgeContainer}>
-            <Image source={{ uri: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=200&q=80' }} style={styles.orderItemImage} />
+            <Image source={{ uri: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=300&q=80' }} style={styles.orderItemImage} />
             <View style={styles.badge}>
               <Text style={styles.badgeText}>2</Text>
             </View>
@@ -140,10 +144,10 @@ const OrdersScreen = ({ navigation }) => {
 
       {/* Bottom navigation bar */}
       <View style={styles.bottomNavBar}>
-        <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.navItem}>
+        <TouchableOpacity onPress={() => navigation?.navigate?.('Home')} style={styles.navItem}>
           <Feather name="home" size={24} color="#000" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Profile')} style={styles.navItem}>
+        <TouchableOpacity onPress={() => navigation?.navigate?.('Profile')} style={styles.navItem}>
           <Feather name="user" size={24} color="#00838F" />
           <View style={styles.activeIndicator} />
         </TouchableOpacity>
@@ -164,9 +168,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#EAEDED',
   },
   headerContainer: {
-    backgroundColor: '#7FE3EE',
+    backgroundColor: '#81dcf3',
     paddingTop: 45,
-    paddingBottom: 12,
+    paddingBottom: 16,
     paddingHorizontal: 15,
     borderBottomWidth: 1,
     borderBottomColor: '#BDC3C7',
@@ -186,29 +190,29 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#BDC3C7',
-    paddingHorizontal: 10,
-    height: 40,
+    paddingHorizontal: 12,
+    height: 48,
   },
   searchIcon: {
     marginRight: 8,
   },
   searchInput: {
     flex: 1,
-    fontSize: 15,
+    fontSize: 16,
     color: '#000',
     paddingVertical: 0,
   },
   scanIcon: {
-    marginHorizontal: 6,
+    marginHorizontal: 8,
   },
   micIcon: {
     marginLeft: 2,
   },
   pageTitle: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     color: '#000',
-    marginTop: 12,
+    marginTop: 14,
   },
   scrollContent: {
     paddingBottom: 20,
@@ -230,7 +234,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#BDC3C7',
     paddingHorizontal: 10,
-    height: 38,
+    height: 42,
     marginRight: 8,
   },
   orderSearchIcon: {
@@ -238,7 +242,7 @@ const styles = StyleSheet.create({
   },
   orderSearchInput: {
     flex: 1,
-    fontSize: 14,
+    fontSize: 15,
     color: '#000',
     paddingVertical: 0,
   },
@@ -246,14 +250,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#F3F3F3',
-    paddingHorizontal: 12,
+    paddingHorizontal: 16,
     borderRadius: 6,
     borderWidth: 1,
     borderColor: '#BDC3C7',
-    height: 38,
+    height: 42,
   },
   filterText: {
-    fontSize: 14,
+    fontSize: 15,
     color: '#000',
     fontWeight: '400',
   },
@@ -289,18 +293,18 @@ const styles = StyleSheet.create({
   productThumbnailContainer: {
     width: 95,
     height: 95,
-    backgroundColor: '#F9F9F9',
+    backgroundColor: '#FFFFFF',
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#E5E7E9',
+    borderColor: '#D5D8DC',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 10,
-    padding: 5,
+    padding: 6,
   },
   thumbnailImage: {
-    width: 75,
-    height: 75,
+    width: 80,
+    height: 80,
     resizeMode: 'contain',
   },
   timeFrameContainer: {
@@ -328,6 +332,12 @@ const styles = StyleSheet.create({
     width: 75,
     height: 75,
     resizeMode: 'contain',
+  },
+  imagePlaceholder: {
+    width: 75,
+    height: 75,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   imageBadgeContainer: {
     position: 'relative',
@@ -360,13 +370,13 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   orderItemTitle: {
-    fontSize: 14,
+    fontSize: 15,
     color: '#000',
     marginBottom: 6,
-    lineHeight: 18,
+    lineHeight: 20,
   },
   orderItemDelivery: {
-    fontSize: 13,
+    fontSize: 14,
     color: '#008577',
     fontWeight: '500',
   },

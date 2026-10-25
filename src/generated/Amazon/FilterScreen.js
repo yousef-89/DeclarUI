@@ -241,28 +241,6 @@ const FilterScreen = ({ navigation }) => {
             </TouchableOpacity>
           </View>
         </ScrollView>
-
-        {/* Bottom Navigation Bar */}
-        <View style={styles.bottomNav}>
-          <TouchableOpacity style={styles.bottomNavItem} onPress={() => navigation.navigate('Home')}>
-            <Icon name="home" size={24} color="#000" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.bottomNavItem} onPress={() => navigation.navigate('Profile')}>
-            <Icon name="user" size={24} color="#00838f" />
-            <View style={styles.activeIndicator} />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.bottomNavItem}>
-            <View>
-              <Icon name="shopping-cart" size={24} color="#000" />
-              <View style={styles.cartBadge}>
-                <Text style={styles.cartBadgeText}>2</Text>
-              </View>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.bottomNavItem}>
-            <Icon name="menu" size={24} color="#000" />
-          </TouchableOpacity>
-        </View>
       </View>
     </SafeAreaView>
   );
@@ -344,17 +322,16 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
-    marginBottom: 60,
   },
   scrollContent: {
     paddingBottom: 40,
   },
   sectionHeader: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '700',
-    color: '#555555',
+    color: '#333333',
     backgroundColor: '#eaeded',
-    paddingVertical: 10,
+    paddingVertical: 8,
     paddingHorizontal: 16,
     borderTopWidth: 1,
     borderBottomWidth: 1,
@@ -379,7 +356,7 @@ const styles = StyleSheet.create({
     height: 24,
     borderRadius: 12,
     borderWidth: 1.5,
-    borderColor: '#888',
+    borderColor: '#767676',
     backgroundColor: '#fff',
   },
   radioSelectedOuter: {
@@ -387,7 +364,7 @@ const styles = StyleSheet.create({
     height: 24,
     borderRadius: 12,
     borderWidth: 2,
-    borderColor: '#007185',
+    borderColor: '#008296',
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
@@ -396,7 +373,7 @@ const styles = StyleSheet.create({
     width: 12,
     height: 12,
     borderRadius: 6,
-    backgroundColor: '#007185',
+    backgroundColor: '#008296',
   },
   optionText: {
     fontSize: 17,
@@ -419,49 +396,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#0f1111',
     fontWeight: '400',
-  },
-  bottomNav: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: 60,
-    backgroundColor: '#fff',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    borderTopWidth: 1,
-    borderTopColor: '#d5dbdb',
-  },
-  bottomNavItem: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    height: '100%',
-  },
-  activeIndicator: {
-    position: 'absolute',
-    bottom: 0,
-    width: '40%',
-    height: 3,
-    backgroundColor: '#00838f',
-  },
-  cartBadge: {
-    position: 'absolute',
-    top: -6,
-    right: -10,
-    backgroundColor: '#00838f',
-    borderRadius: 8,
-    minWidth: 16,
-    height: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: 2,
-  },
-  cartBadgeText: {
-    color: '#fff',
-    fontSize: 10,
-    fontWeight: 'bold',
   },
 });
 

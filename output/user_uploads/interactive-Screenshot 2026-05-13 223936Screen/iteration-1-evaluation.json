@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\user_uploads",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\user_uploads\\interactive-Screenshot 2026-05-13 223936Screen\\iteration-1",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.5902,
+  "mean_clip_similarity": 0.4674,
+  "detailed_results": [
+    {
+      "component": "Screenshot 2026-05-13 223936Screen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\user_uploads\\Screenshot 2026-05-13 223936.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\user_uploads\\interactive-Screenshot 2026-05-13 223936Screen\\iteration-1\\Screenshot 2026-05-13 223936Screen.png",
+      "target_exists": true,
+      "target_match": "Screenshot 2026-05-13 223936.png",
+      "metric_status": "evaluated",
+      "ssim": 0.5902,
+      "clip_similarity": 0.4674,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 397,
+        "height": 856
+      }
+    }
+  ]
+}

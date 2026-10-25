@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Amazon",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Amazon\\interactive-FilterScreen\\iteration-0",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.8104,
+  "mean_clip_similarity": 0.8908,
+  "detailed_results": [
+    {
+      "component": "FilterScreen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Amazon\\Filter.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Amazon\\interactive-FilterScreen\\iteration-0\\FilterScreen.png",
+      "target_exists": true,
+      "target_match": "Filter.png",
+      "metric_status": "evaluated",
+      "ssim": 0.8104,
+      "clip_similarity": 0.8908,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 1179,
+        "height": 2400
+      }
+    }
+  ]
+}

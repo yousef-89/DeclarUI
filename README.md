@@ -136,6 +136,30 @@ Start the dashboard with:
 ```bash
 streamlit run app.py
 ```
+After a refinement result is displayed, use **Open ... in interactive preview** to open the generated screen in the React Native Web host. This preview is separate from Puppeteer screenshot capture and lets you click controls and type into text fields. Start the host first in another terminal:
+```bash
+npm start
+```
+The preview URL uses `?app=<app_name>&component=<component_name>` and opens the same component selected by the dashboard.
+
+In the dashboard, choose **An existing app** to refine one screen or all screens from a dataset. Choose **A new uploaded mockup** to upload an image directly; the dashboard automatically stores it, generates an initial component if needed, and applies the optional natural-language request during generation and refinement. Users do not need to select the internal `user_uploads` folder.
+
+Uploaded mockups are saved in `Dataset/targets/user_uploads/` as
+`UserUpload.png` and use the stable generated component
+`src/generated/user_uploads/UserUploadScreen.js`. The dashboard asks Gemini to
+create or replace that component from the uploaded image. A stable entry point
+avoids dynamic-module loading failures when a screenshot is created while the
+React development server is already running. The original upload filename is
+shown in the dashboard. The natural-language tweak is included in the
+generation request and in subsequent refinement prompts, so requests such as
+`make the background yellow` are applied to the generated UI.
+
+Each interactive screen preserves its iteration history under:
+```text
+output/<app_name>/interactive-<component>/iteration-0/
+output/<app_name>/interactive-<component>/iteration-1/
+output/<app_name>/interactive-<component>/iteration-2/
+```
 
 The complete bounded self-refinement pipeline can be run with:
 ```bash

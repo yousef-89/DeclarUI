@@ -15,14 +15,14 @@ const AccountScreen = ({ navigation }) => {
         </TouchableOpacity>
         
         <View style={styles.searchContainer}>
-          <Icon name="search" size={20} color="#000" style={styles.searchIcon} />
+          <Icon name="search" size={18} color="#000" style={styles.searchIcon} />
           <TextInput 
             style={styles.searchInput}
             placeholder="Search Amazon.co.uk"
-            placeholderTextColor="#7a7a7a"
+            placeholderTextColor="#666"
           />
-          <Icon name="camera" size={20} color="#000" style={styles.searchRightIcon} />
-          <Icon name="mic" size={20} color="#000" style={styles.searchRightIconMic} />
+          <Icon name="camera" size={18} color="#555" style={styles.searchRightIcon} />
+          <Icon name="mic" size={18} color="#555" style={styles.searchRightIconMic} />
         </View>
       </View>
 
@@ -130,14 +130,14 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#7fe2ed',
-    paddingTop: 42,
+    backgroundColor: '#66e4ee',
+    paddingTop: 44,
     paddingBottom: 10,
     paddingHorizontal: 8,
   },
   backButton: {
     padding: 6,
-    marginRight: 2,
+    marginRight: 4,
   },
   searchContainer: {
     flex: 1,
@@ -146,38 +146,40 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 8,
     paddingHorizontal: 12,
-    height: 44,
+    height: 40,
     borderWidth: 1,
-    borderColor: '#99c2cc',
+    borderColor: '#b8c5cc',
   },
   searchIcon: {
-    marginRight: 10,
+    marginRight: 8,
+    marginTop: 1,
   },
   searchInput: {
     flex: 1,
-    fontSize: 16,
-    color: '#000',
+    fontSize: 15,
+    color: '#111',
     paddingVertical: 0,
     outlineStyle: 'none',
   },
   searchRightIcon: {
-    marginLeft: 12,
+    marginLeft: 10,
   },
   searchRightIconMic: {
-    marginLeft: 16,
+    marginLeft: 14,
     marginRight: 0,
   },
   scrollContent: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     paddingTop: 2,
     paddingBottom: 90,
   },
   sectionHeader: {
-    fontSize: 21,
-    fontWeight: 'bold',
+    fontSize: 20,
+    fontWeight: '700',
     color: '#111',
     marginTop: 18,
     marginBottom: 8,
+    letterSpacing: -0.2,
   },
   sectionContainer: {
     backgroundColor: '#fff',
@@ -190,7 +192,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 14,
+    paddingVertical: 13,
     paddingHorizontal: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#d5d9d9',
@@ -199,16 +201,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 14,
+    paddingVertical: 13,
     paddingHorizontal: 16,
   },
   listItemText: {
-    fontSize: 16,
+    fontSize: 15,
     color: '#111',
   },
   chevronText: {
-    fontSize: 22,
-    color: '#333',
+    fontSize: 20,
+    color: '#555',
     fontWeight: '300',
     marginTop: -2,
   },
@@ -217,7 +219,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    height: 60,
+    height: 56,
     backgroundColor: '#fff',
     flexDirection: 'row',
     justifyContent: 'space-around',

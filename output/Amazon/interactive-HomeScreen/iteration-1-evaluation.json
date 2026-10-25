@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Amazon",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Amazon\\interactive-HomeScreen\\iteration-1",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.6402,
+  "mean_clip_similarity": 0.8638,
+  "detailed_results": [
+    {
+      "component": "HomeScreen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Amazon\\Home.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Amazon\\interactive-HomeScreen\\iteration-1\\HomeScreen.png",
+      "target_exists": true,
+      "target_match": "Home.png",
+      "metric_status": "evaluated",
+      "ssim": 0.6402,
+      "clip_similarity": 0.8638,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 1179,
+        "height": 2411
+      }
+    }
+  ]
+}

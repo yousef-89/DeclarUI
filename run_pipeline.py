@@ -181,6 +181,51 @@ def refine_component(
     source_path.write_text(f"{refined_code}\n", encoding="utf-8")
 
 
+def create_component_from_target(app_name, target_path, tweak=""):
+    """Generate an initial component for an uploaded target image."""
+    try:
+        from google import genai
+        from visual_refine import MODEL, image_part, strip_code_fence
+    except ModuleNotFoundError as error:
+        raise RuntimeError(
+            "Gemini dependencies are required to generate an uploaded screen."
+        ) from error
+
+    if "GEMINI_API_KEY" not in os.environ:
+        raise RuntimeError("GEMINI_API_KEY is not set.")
+
+    component = "UserUploadScreen" if app_name == "user_uploads" else target_path.stem
+    if not component.endswith("Screen"):
+        component = f"{component}Screen"
+    source_dir = PROJECT_ROOT / "src" / "generated" / app_name
+    source_dir.mkdir(parents=True, exist_ok=True)
+    source_path = source_dir / f"{component}.js"
+    tweak_section = (
+        f"\n\nUser-requested visual change:\n{tweak.strip()}"
+        if tweak.strip()
+        else ""
+    )
+    prompt = f"""
+Create a complete React Native Web JSX component named {component} from the
+provided target screenshot.
+
+Return only valid JavaScript source code, without Markdown fences or explanations.
+Use react-native primitives and keep the result compatible with this project's
+headless renderer. Do not use navigation packages, native-only APIs, or external
+assets. Reproduce the screenshot's layout, colors, spacing, typography, and
+visible controls as closely as possible.{tweak_section}
+""".strip()
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=[prompt, image_part(target_path)],
+    )
+    generated_code = strip_code_fence(response.text or "")
+    if not generated_code:
+        raise RuntimeError(f"Gemini returned empty code for {target_path.name}.")
+    source_path.write_text(f"{generated_code}\n", encoding="utf-8")
+    return component, source_path
+
 def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
     """Refine one generated screen and return its latest result and source."""
     try:
@@ -217,26 +262,23 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
     with ensure_dev_server():
         for iteration in range(max_iterations):
             validate_syntax(client, MODEL, source_path)
+            iteration_name = f"interactive-{component}/iteration-{iteration}"
+            iteration_dir = (
+                PROJECT_ROOT / "output" / app_name / f"interactive-{component}"
+                / f"iteration-{iteration}"
+            )
             run_command(
                 [
                     "node",
                     "batch_render.js",
                     app_name,
-                    f"interactive-{component}",
+                    iteration_name,
                     "3000",
                     component,
                 ],
                 f"Rendering {component}",
             )
-            iteration_dir = (
-                PROJECT_ROOT / "output" / app_name / f"interactive-{component}"
-            )
-            evaluation_path = (
-                PROJECT_ROOT
-                / "output"
-                / app_name
-                / f"interactive-{component}-evaluation.json"
-            )
+            evaluation_path = iteration_dir.parent / f"iteration-{iteration}-evaluation.json"
             run_command(
                 [
                     sys.executable,

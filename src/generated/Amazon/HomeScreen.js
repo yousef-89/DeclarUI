@@ -7,7 +7,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false}>
-        {/* Top Header Section with Gradient-like background simulation */}
+        {/* Top Header Section with Gradient background simulation */}
         <View style={styles.headerContainer}>
           {/* Search Bar Component */}
           <View style={styles.searchBarContainer}>
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
   headerContainer: {
     paddingTop: 12,
     paddingHorizontal: 12,
-    paddingBottom: 12,
+    paddingBottom: 10,
     backgroundColor: '#82e8e2',
     backgroundImage: 'linear-gradient(to bottom, #82e8e2, #a8f3ee)',
   },
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
   },
   topMenuContainer: {
     flexDirection: 'row',
-    marginTop: 12,
+    marginTop: 10,
     paddingLeft: 4,
   },
   primeLabel: {
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
   deliveryBar: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#b0f2e8',
+    backgroundColor: '#7ce5db',
     paddingVertical: 10,
     paddingHorizontal: 12,
   },
@@ -335,11 +335,11 @@ const styles = StyleSheet.create({
     width: 68,
     height: 68,
     borderRadius: 34,
-    backgroundColor: '#f0f8ff',
+    backgroundColor: '#e6f2ff',
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: '#c6e2ff',
+    borderWidth: 1.5,
+    borderColor: '#3895e6',
     marginBottom: 6,
   },
   categoryLabel: {
