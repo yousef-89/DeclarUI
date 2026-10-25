@@ -10,6 +10,7 @@
     "evaluate:baseline": "python evaluate_baseline.py --app Amazon",
     "evaluate:refined": "python evaluate_baseline.py --app Amazon --baseline output/Amazon/refined --output output/Amazon/refined-evaluation.json",
     "refine:visual": "python visual_refine.py --app Amazon",
+    "run:pipeline": "python run_pipeline.py --app Amazon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

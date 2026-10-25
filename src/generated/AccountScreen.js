@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
-import Icon from '../generated-icon';
+import Icon from './generated-icon';
 
 const AccountScreen = ({ navigation }) => {
   return (

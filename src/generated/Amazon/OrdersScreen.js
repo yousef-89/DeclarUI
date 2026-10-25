@@ -8,10 +8,10 @@ import {
   Image,
   StyleSheet,
 } from 'react-native';
-import Icon from '../generated-icon';
-import MaterialIcons from '../generated-icon';
-import Ionicons from '../generated-icon';
-import Feather from '../generated-icon';
+import Icon from '../../generated/generated-icon';
+import MaterialIcons from '../../generated/generated-icon';
+import Ionicons from '../../generated/generated-icon';
+import Feather from '../../generated/generated-icon';
 
 const OrdersScreen = ({ navigation }) => {
   return (

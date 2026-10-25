@@ -27,7 +27,7 @@ async function captureComponentScreenshot(
       deviceScaleFactor: 2
     });
 
-    const targetUrl = `http://localhost:${port}?app=${encodeURIComponent(appName)}&component=${encodeURIComponent(componentName)}`;
+    const targetUrl = `http://127.0.0.1:${port}?app=${encodeURIComponent(appName)}&component=${encodeURIComponent(componentName)}`;
     await page.goto(targetUrl, { waitUntil: 'networkidle0', timeout: 10000 });
 
     await page.waitForSelector('#render-root', { visible: true, timeout: 5000 });

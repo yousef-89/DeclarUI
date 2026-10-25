@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, ScrollView, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import Icon from '../generated-icon';
-import MaterialCommunityIcons from '../generated-icon';
+import Icon from '../../generated/generated-icon';
+import MaterialCommunityIcons from '../../generated/generated-icon';
 
 const HomeScreen = ({ navigation }) => {
   return (

@@ -62,11 +62,16 @@ npm run render:baseline
 
 The app-scoped renderer command is:
 ```bash
-node batch_render.js <app_name> <iteration> [port]
+node batch_render.js <app_name> <iteration> [port] [component]
 ```
 For example, `node batch_render.js Amazon baseline 3000` scans
 `src/generated/Amazon` and writes screenshots to `output/Amazon/baseline`, along with
 `summary.json`, which records the success or failure of each component:
+
+To render one selected screen only:
+```bash
+node batch_render.js Amazon interactive-AccountScreen 3000 AccountScreen
+```
 
 Refined screenshots use a separate output directory:
 ```bash
@@ -122,3 +127,20 @@ node check_syntax.js src/generated/Amazon/HomeScreen.js
 ```
 The checker prints `SYNTAX_VALID` for valid JSX or
 `SYNTAX_INVALID: <error message>` for parser failures.
+
+The Streamlit dashboard supports both selected-screen and all-screen refinement. In all-screen mode, each target with a matching generated component is processed independently and receives its own output folder and evaluation report. Targets without generated components are skipped and reported.
+
+Running all screens is considerably more expensive than refining one screen: with five screens and three maximum iterations, it can require up to 15 render/evaluation/refinement cycles and multiple Gemini requests. Use selected-screen mode for development and small app experiments; use all-screen mode for a controlled app-level experiment.
+
+Start the dashboard with:
+```bash
+streamlit run app.py
+```
+
+The complete bounded self-refinement pipeline can be run with:
+```bash
+python run_pipeline.py --app Amazon --max_iterations 3
+```
+For each iteration, it validates generated components, renders the app,
+calculates SSIM and CLIP, and asks Gemini to refine screens whose SSIM is below
+`0.90`. Screens meeting the threshold are skipped in later iterations.

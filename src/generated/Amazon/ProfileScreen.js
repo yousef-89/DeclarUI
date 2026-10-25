@@ -8,9 +8,9 @@ import {
   StyleSheet,
   SafeAreaView,
 } from 'react-native';
-import Icon from '../generated-icon';
-import MaterialIcons from '../generated-icon';
-import Ionicons from '../generated-icon';
+import Icon from '../../generated/generated-icon';
+import MaterialIcons from '../../generated/generated-icon';
+import Ionicons from '../../generated/generated-icon';
 
 const ProfileScreen = ({ navigation }) => {
   return (
@@ -48,7 +48,7 @@ const ProfileScreen = ({ navigation }) => {
               <MaterialIcons name="keyboard-arrow-down" size={22} color="#000" style={{marginTop: 2}} />
             </View>
             <View style={styles.languageContainer}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.ukFlag} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.ukFlag} />
               <Text style={styles.enLabel}>EN</Text>
             </View>
           </View>
@@ -85,11 +85,11 @@ const ProfileScreen = ({ navigation }) => {
 
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
             <View style={styles.productContainerCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.bubbleWrapImage} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.bubbleWrapImage} />
               <Text style={styles.productTitle} numberOfLines={2}>SmithPackaging Large Bubble Wrap Roll</Text>
             </View>
             <View style={styles.productContainerCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.travelPillowImage} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.travelPillowImage} />
               <Text style={styles.productTitle} numberOfLines={2}>AYhome Travel Pillow</Text>
             </View>
             <View style={styles.emptyProductPlaceholderCard} />
@@ -103,27 +103,27 @@ const ProfileScreen = ({ navigation }) => {
 
           <View style={styles.buyAgainGrid}>
             <View style={styles.buyAgainCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.waterBottlesImage} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.waterBottlesImage} />
               <Text style={styles.buyAgainItemText} numberOfLines={2}>Highland Spring water</Text>
             </View>
             <View style={styles.buyAgainCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.disposableGlovesImage} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.disposableGlovesImage} />
               <Text style={styles.buyAgainItemText} numberOfLines={2}>Disposable gloves</Text>
             </View>
             <View style={styles.buyAgainCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.productImageAndrex} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.productImageAndrex} />
               <Text style={styles.buyAgainItemText} numberOfLines={2}>King pot noodles</Text>
             </View>
             <View style={styles.buyAgainCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.waterBottlesImage} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.waterBottlesImage} />
               <Text style={styles.buyAgainItemText} numberOfLines={2}>Toyama Koshihikari rice</Text>
             </View>
             <View style={styles.buyAgainCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.disposableGlovesImage} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.disposableGlovesImage} />
               <Text style={styles.buyAgainItemText} numberOfLines={2}>Jin Ramen</Text>
             </View>
             <View style={styles.buyAgainCard}>
-              <Image source={require('../assets/snack-icon.png')} style={styles.productImageAndrex} />
+              <Image source={require('../../assets/snack-icon.png')} style={styles.productImageAndrex} />
               <Text style={styles.buyAgainItemText} numberOfLines={2}>Andrex toilet paper</Text>
             </View>
           </View>

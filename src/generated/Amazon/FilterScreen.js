@@ -8,8 +8,8 @@ import {
   ScrollView,
   SafeAreaView,
 } from 'react-native';
-import Icon from '../generated-icon';
-import MaterialCommunityIcons from '../generated-icon';
+import Icon from '../../generated/generated-icon';
+import MaterialCommunityIcons from '../../generated/generated-icon';
 
 const FilterScreen = ({ navigation }) => {
   const [selectedOrderType, setSelectedOrderType] = useState('Orders');
@@ -28,14 +28,14 @@ const FilterScreen = ({ navigation }) => {
             <Icon name="arrow-left" size={24} color="#000" />
           </TouchableOpacity>
           <View style={styles.searchBarContainer}>
-            <Icon name="search" size={20} color="#333" style={styles.searchIcon} />
+            <Icon name="search" size={18} color="#333" style={styles.searchIcon} />
             <TextInput
               style={styles.searchInput}
               placeholder="Search Amazon.co.uk"
               placeholderTextColor="#888"
             />
-            <MaterialCommunityIcons name="qrcode-scan" size={20} color="#333" style={styles.iconSpacing} />
-            <Icon name="mic" size={20} color="#333" />
+            <MaterialCommunityIcons name="qrcode-scan" size={18} color="#333" style={styles.iconSpacing} />
+            <Icon name="mic" size={18} color="#333" />
           </View>
         </View>
 
@@ -45,7 +45,7 @@ const FilterScreen = ({ navigation }) => {
             style={styles.backButtonContainer}
             onPress={() => navigation.navigate('Orders')}
           >
-            <Icon name="chevron-left" size={24} color="#000" />
+            <Icon name="chevron-left" size={24} color="#000" style={styles.backChevron} />
             <Text style={styles.backButtonText}>Back</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -248,7 +248,7 @@ const FilterScreen = ({ navigation }) => {
             <Icon name="home" size={24} color="#000" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.bottomNavItem} onPress={() => navigation.navigate('Profile')}>
-            <Icon name="user" size={24} color="#0097a7" />
+            <Icon name="user" size={24} color="#00838f" />
             <View style={styles.activeIndicator} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.bottomNavItem}>
@@ -271,7 +271,7 @@ const FilterScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#84e6d4',
+    backgroundColor: '#62d7c5',
   },
   container: {
     flex: 1,
@@ -280,9 +280,9 @@ const styles = StyleSheet.create({
   topBarContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#84e6d4',
+    backgroundColor: '#62d7c5',
     paddingHorizontal: 12,
-    paddingVertical: 8,
+    paddingVertical: 10,
   },
   searchBarContainer: {
     flex: 1,
@@ -290,9 +290,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     borderRadius: 8,
-    marginLeft: 10,
-    paddingHorizontal: 10,
-    height: 40,
+    marginLeft: 12,
+    paddingHorizontal: 12,
+    height: 42,
   },
   searchIcon: {
     marginRight: 8,
@@ -304,15 +304,15 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
   },
   iconSpacing: {
-    marginHorizontal: 10,
+    marginHorizontal: 12,
   },
   subHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: '#eaeded',
-    paddingHorizontal: 8,
-    paddingVertical: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#d5dbdb',
   },
@@ -320,19 +320,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  backChevron: {
+    marginLeft: -6,
+    marginRight: 0,
+  },
   backButtonText: {
     fontSize: 17,
-    color: '#000',
-    marginLeft: 0,
+    color: '#0f1111',
     fontWeight: '400',
   },
   applyTopButton: {
-    backgroundColor: '#fde081',
-    paddingHorizontal: 18,
-    paddingVertical: 7,
+    backgroundColor: '#ffd814',
+    paddingHorizontal: 20,
+    paddingVertical: 8,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#e2be4b',
+    borderColor: '#fcd200',
   },
   applyTopButtonText: {
     fontSize: 15,
@@ -341,28 +344,27 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
-    marginBottom: 60, // Leave room for bottom nav
+    marginBottom: 60,
   },
   scrollContent: {
-    paddingBottom: 30,
+    paddingBottom: 40,
   },
   sectionHeader: {
     fontSize: 13,
     fontWeight: '700',
-    color: '#0f1111',
-    backgroundColor: '#f0f2f2',
-    paddingVertical: 9,
+    color: '#555555',
+    backgroundColor: '#eaeded',
+    paddingVertical: 10,
     paddingHorizontal: 16,
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: '#d5dbdb',
-    marginTop: 0,
     letterSpacing: 0.2,
   },
   optionRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 16,
+    paddingVertical: 14,
     paddingHorizontal: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#eaeded',
@@ -376,7 +378,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    borderWidth: 2,
+    borderWidth: 1.5,
     borderColor: '#888',
     backgroundColor: '#fff',
   },
@@ -406,12 +408,12 @@ const styles = StyleSheet.create({
     marginTop: 24,
   },
   applyButton: {
-    backgroundColor: '#fde081',
+    backgroundColor: '#ffd814',
     borderRadius: 8,
     alignItems: 'center',
-    paddingVertical: 13,
+    paddingVertical: 14,
     borderWidth: 1,
-    borderColor: '#e2be4b',
+    borderColor: '#fcd200',
   },
   applyButtonText: {
     fontSize: 16,
@@ -442,13 +444,13 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: '40%',
     height: 3,
-    backgroundColor: '#0097a7',
+    backgroundColor: '#00838f',
   },
   cartBadge: {
     position: 'absolute',
     top: -6,
     right: -10,
-    backgroundColor: '#0097a7',
+    backgroundColor: '#00838f',
     borderRadius: 8,
     minWidth: 16,
     height: 16,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
-import Icon from '../generated-icon';
+import Icon from '../../generated/generated-icon';
 
 const AccountScreen = ({ navigation }) => {
   return (
@@ -9,7 +9,7 @@ const AccountScreen = ({ navigation }) => {
       <View style={styles.header}>
         <TouchableOpacity 
           style={styles.backButton}
-          onPress={() => navigation.navigate('Profile')}
+          onPress={() => navigation.navigate && navigation.navigate('Profile')}
         >
           <Icon name="arrow-left" size={24} color="#000" />
         </TouchableOpacity>
@@ -21,8 +21,8 @@ const AccountScreen = ({ navigation }) => {
             placeholder="Search Amazon.co.uk"
             placeholderTextColor="#7a7a7a"
           />
-          <Icon name="camera" size={20} color="#555" style={styles.searchRightIcon} />
-          <Icon name="mic" size={20} color="#555" style={styles.searchRightIconMic} />
+          <Icon name="camera" size={20} color="#000" style={styles.searchRightIcon} />
+          <Icon name="mic" size={20} color="#000" style={styles.searchRightIconMic} />
         </View>
       </View>
 
@@ -32,20 +32,20 @@ const AccountScreen = ({ navigation }) => {
         <View style={styles.sectionContainer}>
           <TouchableOpacity 
             style={styles.listItem}
-            onPress={() => navigation.navigate('Orders')}
+            onPress={() => navigation.navigate && navigation.navigate('Orders')}
           >
             <Text style={styles.listItemText}>Your Orders</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.listItem}>
             <Text style={styles.listItemText}>Your Subscribe & Save</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.listItemLast}>
             <Text style={styles.listItemText}>Your Amazon Day</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
         </View>
 
@@ -54,27 +54,27 @@ const AccountScreen = ({ navigation }) => {
         <View style={styles.sectionContainer}>
           <TouchableOpacity style={styles.listItem}>
             <Text style={styles.listItemText}>Payments and transactions</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.listItem}>
             <Text style={styles.listItemText}>Manage gift card balance</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.listItem}>
             <Text style={styles.listItemText}>Shop with Points</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.listItem}>
             <Text style={styles.listItemText}>Top up account</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.listItemLast}>
             <Text style={styles.listItemText}>In-Store Promo Wallet</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
         </View>
 
@@ -83,7 +83,7 @@ const AccountScreen = ({ navigation }) => {
         <View style={styles.sectionContainer}>
           <TouchableOpacity style={styles.listItemLast}>
             <Text style={styles.listItemText}>Contact Us</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
         </View>
 
@@ -92,19 +92,19 @@ const AccountScreen = ({ navigation }) => {
         <View style={[styles.sectionContainer, { marginBottom: 40 }]}>
           <TouchableOpacity style={styles.listItemLast}>
             <Text style={styles.listItemText}>Login & security</Text>
-            <Icon name="chevron-right" size={18} color="#000" />
+            <Text style={styles.chevronText}>›</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
 
       {/* Bottom Navigation Bar */}
       <View style={styles.bottomBar}>
-        <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.bottomBarItem}>
+        <TouchableOpacity onPress={() => navigation.navigate && navigation.navigate('Home')} style={styles.bottomBarItem}>
           <Icon name="home" size={24} color="#000" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Profile')} style={styles.bottomBarItem}>
-          <Icon name="user" size={24} color="#00838f" />
+        <TouchableOpacity onPress={() => navigation.navigate && navigation.navigate('Profile')} style={styles.bottomBarItem}>
           <View style={styles.activeIndicator} />
+          <Icon name="user" size={24} color="#00838f" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.bottomBarItem}>
           <View style={styles.cartContainer}>
@@ -125,18 +125,18 @@ const AccountScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#eaeded',
+    backgroundColor: '#fff',
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#7ce4ef',
-    paddingTop: 45,
+    backgroundColor: '#7fe2ed',
+    paddingTop: 42,
     paddingBottom: 10,
-    paddingHorizontal: 10,
+    paddingHorizontal: 8,
   },
   backButton: {
-    padding: 5,
+    padding: 6,
     marginRight: 2,
   },
   searchContainer: {
@@ -148,34 +148,35 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     height: 44,
     borderWidth: 1,
-    borderColor: '#b0c4de',
+    borderColor: '#99c2cc',
   },
   searchIcon: {
-    marginRight: 8,
+    marginRight: 10,
   },
   searchInput: {
     flex: 1,
     fontSize: 16,
     color: '#000',
     paddingVertical: 0,
+    outlineStyle: 'none',
   },
   searchRightIcon: {
-    marginLeft: 14,
+    marginLeft: 12,
   },
   searchRightIconMic: {
-    marginLeft: 14,
-    marginRight: 2,
+    marginLeft: 16,
+    marginRight: 0,
   },
   scrollContent: {
-    paddingHorizontal: 12,
-    paddingTop: 4,
+    paddingHorizontal: 16,
+    paddingTop: 2,
     paddingBottom: 90,
   },
   sectionHeader: {
-    fontSize: 20,
+    fontSize: 21,
     fontWeight: 'bold',
     color: '#111',
-    marginTop: 16,
+    marginTop: 18,
     marginBottom: 8,
   },
   sectionContainer: {
@@ -205,6 +206,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#111',
   },
+  chevronText: {
+    fontSize: 22,
+    color: '#333',
+    fontWeight: '300',
+    marginTop: -2,
+  },
   bottomBar: {
     position: 'absolute',
     bottom: 0,
@@ -227,7 +234,7 @@ const styles = StyleSheet.create({
   activeIndicator: {
     position: 'absolute',
     top: 0,
-    width: '45%',
+    width: '55%',
     height: 3,
     backgroundColor: '#00838f',
   },

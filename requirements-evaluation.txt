@@ -3,3 +3,5 @@ scikit-image
 Pillow
 torch
 transformers
+google-genai
+streamlit

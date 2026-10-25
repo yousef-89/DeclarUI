@@ -3,7 +3,7 @@ const path = require('path');
 const { captureComponentScreenshot } = require('./render_runner');
 
 function getOptions(args) {
-  const [appName = 'default', iteration = 'baseline', port = '3000'] = args;
+  const [appName = 'default', iteration = 'baseline', port = '3000', component] = args;
   const parsedPort = Number.parseInt(port, 10);
 
   if (!appName.trim()) {
@@ -15,6 +15,7 @@ function getOptions(args) {
 
   return {
     appName,
+    component,
     generatedDir: path.join(__dirname, 'src', 'generated', appName),
     outputDir: path.join(__dirname, 'output', appName, iteration),
     port: parsedPort
@@ -25,6 +26,7 @@ async function runBatchRender({
   appName = 'default',
   generatedDir = path.join(__dirname, 'src', 'generated', appName),
   outputDir = path.join(__dirname, 'output', appName, 'baseline'),
+  component = null,
   port = 3000
 } = {}) {
   if (!fs.existsSync(generatedDir)) {
@@ -35,7 +37,12 @@ async function runBatchRender({
 
   const files = fs.readdirSync(generatedDir)
     .filter((file) => /\.(js|jsx)$/.test(file))
+    .filter((file) => !component || path.basename(file, path.extname(file)) === component)
     .sort((left, right) => left.localeCompare(right));
+
+  if (component && files.length === 0) {
+    throw new Error(`Generated component does not exist: ${component}`);
+  }
 
   console.log(`[Batch Renderer] Found ${files.length} components to render...`);
 

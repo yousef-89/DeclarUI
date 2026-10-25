@@ -66,7 +66,12 @@ def image_part(path):
     )
 
 
-def build_prompt(component, code, ssim, clip):
+def build_prompt(component, code, ssim, clip, tweak=""):
+    tweak_section = (
+        f"\n\nAdditional user-requested tweak:\n{tweak.strip()}"
+        if tweak.strip()
+        else ""
+    )
     return f"""
 You are performing one visual refinement pass for a React Native Web UI.
 
@@ -85,6 +90,7 @@ present. Do not introduce navigation packages, native-only APIs, or new assets.
 
 Current source:
 {code}
+{tweak_section}
 """.strip()
 
 
