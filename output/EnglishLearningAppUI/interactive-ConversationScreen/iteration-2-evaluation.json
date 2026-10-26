@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\EnglishLearningAppUI",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\EnglishLearningAppUI\\interactive-ConversationScreen\\iteration-2",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.4021,
+  "mean_clip_similarity": 0.8534,
+  "detailed_results": [
+    {
+      "component": "ConversationScreen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\EnglishLearningAppUI\\Conversation.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\EnglishLearningAppUI\\interactive-ConversationScreen\\iteration-2\\ConversationScreen.png",
+      "target_exists": true,
+      "target_match": "Conversation.png",
+      "metric_status": "evaluated",
+      "ssim": 0.4021,
+      "clip_similarity": 0.8534,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 375,
+        "height": 812
+      }
+    }
+  ]
+}

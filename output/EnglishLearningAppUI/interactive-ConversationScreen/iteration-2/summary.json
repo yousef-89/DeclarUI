@@ -1,0 +1,18 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\EnglishLearningAppUI",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\EnglishLearningAppUI\\interactive-ConversationScreen\\iteration-2",
+  "appName": "EnglishLearningAppUI",
+  "port": 3000,
+  "total": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "results": [
+    {
+      "component": "ConversationScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\EnglishLearningAppUI\\ConversationScreen.js",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\EnglishLearningAppUI\\interactive-ConversationScreen\\iteration-2\\ConversationScreen.png",
+      "success": true,
+      "error": null
+    }
+  ]
+}

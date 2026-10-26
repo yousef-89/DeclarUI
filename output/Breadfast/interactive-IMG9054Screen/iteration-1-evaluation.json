@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Breadfast",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9054Screen\\iteration-1",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.3369,
+  "mean_clip_similarity": 0.4721,
+  "detailed_results": [
+    {
+      "component": "IMG9054Screen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Breadfast\\IMG_9054.PNG",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9054Screen\\iteration-1\\IMG9054Screen.png",
+      "target_exists": true,
+      "target_match": "IMG_9054.PNG",
+      "metric_status": "evaluated",
+      "ssim": 0.3369,
+      "clip_similarity": 0.4721,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 1179,
+        "height": 2408
+      }
+    }
+  ]
+}

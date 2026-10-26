@@ -67,11 +67,26 @@ def image_part(path):
 
 
 def build_prompt(component, code, ssim, clip, tweak=""):
-    tweak_section = (
-        f"\n\nAdditional user-requested tweak:\n{tweak.strip()}"
-        if tweak.strip()
-        else ""
-    )
+    tweak_section = ""
+    if tweak.strip():
+        tweak_section = f"""
+
+User-directed edit (highest priority):
+{tweak.strip()}
+
+Apply this request deliberately and visibly. Treat it as an edit instruction,
+not as optional feedback. Identify the affected property or region first, then
+change only what is needed to satisfy it. Preserve all unrelated layout,
+content, controls, interactions, imports, and styling. If the requested change
+intentionally differs from the reference screenshot, keep that intentional
+difference; do not undo it merely to increase SSIM or CLIP.
+
+Before returning the code, verify:
+1. The requested change is represented explicitly in the source.
+2. The changed value is applied to the correct visible element.
+3. Existing UI structure and behavior are preserved.
+4. The result remains valid React Native Web JSX.
+""".rstrip()
     return f"""
 You are performing one visual refinement pass for a React Native Web UI.
 
@@ -81,12 +96,18 @@ Current CLIP similarity: {clip}
 
 The first image is the original reference screenshot.
 The second image is the current rendered screenshot.
-Compare them and improve the generated component to reduce the visible differences.
+Compare them and improve the generated component to reduce visible differences.
+When a user-directed edit is provided below, the user request takes priority
+over matching the original reference. Make progressive, cumulative edits: start
+from the current source, keep successful previous changes, and do not rewrite
+the screen from scratch.
 
 Return only the complete JavaScript source code for {component}; do not use Markdown
 fences or explanations. Preserve the existing component's behavior and React Native
 Web compatibility. Keep local imports such as '../generated-icon' unchanged when
-present. Do not introduce navigation packages, native-only APIs, or new assets.
+present. Do not introduce navigation packages, native-only APIs, new assets,
+placeholder content, or unrelated redesigns. Prefer explicit style values over
+indirect or ambiguous changes.
 
 Current source:
 {code}

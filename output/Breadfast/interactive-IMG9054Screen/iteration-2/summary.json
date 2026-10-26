@@ -1,0 +1,18 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9054Screen\\iteration-2",
+  "appName": "Breadfast",
+  "port": 3000,
+  "total": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "results": [
+    {
+      "component": "IMG9054Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast\\IMG9054Screen.js",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9054Screen\\iteration-2\\IMG9054Screen.png",
+      "success": true,
+      "error": null
+    }
+  ]
+}

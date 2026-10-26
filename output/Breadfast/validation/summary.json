@@ -1,0 +1,46 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\validation",
+  "appName": "Breadfast",
+  "port": 3001,
+  "total": 5,
+  "succeeded": 0,
+  "failed": 5,
+  "results": [
+    {
+      "component": "IMG9052Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast\\IMG9052Screen.js",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "IMG9054Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast\\IMG9054Screen.js",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "IMG9055Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast\\IMG9055Screen.js",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "IMG9056Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast\\IMG9056Screen.js",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    },
+    {
+      "component": "IMG9057Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\Breadfast\\IMG9057Screen.js",
+      "screenshot": null,
+      "success": false,
+      "error": "Renderer returned a failure"
+    }
+  ]
+}

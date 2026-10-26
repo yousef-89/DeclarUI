@@ -1,10 +1,13 @@
-﻿from pathlib import Path
+import hashlib
+import re
+from pathlib import Path
 from urllib.parse import quote
 
 import streamlit as st
 
 from run_pipeline import (
     PROJECT_ROOT,
+    component_name_from_target,
     create_component_from_target,
     run_selected_refinement,
 )
@@ -35,22 +38,31 @@ def available_targets(app_name):
     )
 
 
-def save_upload(uploaded_file):
-    target_dir = TARGET_ROOT / "user_uploads"
+def safe_name(value, fallback):
+    cleaned = re.sub(r"[^A-Za-z0-9_-]+", "_", value).strip("_")
+    return cleaned or fallback
+
+
+def save_uploads(uploaded_files):
+    app_name = "user_uploads"
+    target_dir = TARGET_ROOT / app_name
     target_dir.mkdir(parents=True, exist_ok=True)
-    original_name = Path(uploaded_file.name).name
-    destination = target_dir / "UserUpload.png"
-    destination.write_bytes(uploaded_file.getbuffer())
-    return destination, original_name
+    saved = []
+    for uploaded_file in uploaded_files:
+        original_name = Path(uploaded_file.name).name
+        extension = Path(original_name).suffix.lower()
+        digest = hashlib.sha1(uploaded_file.getvalue()).hexdigest()[:8]
+        stem = safe_name(Path(original_name).stem, "Screen")
+        destination = target_dir / f"{stem}-{digest}{extension}"
+        if not destination.exists():
+            destination.write_bytes(uploaded_file.getvalue())
+        saved.append(destination)
+    return saved
 
 
 def component_for_target(app_name, target_path):
-    if app_name == "user_uploads":
-        return "UserUploadScreen"
     generated_dir = PROJECT_ROOT / "src" / "generated" / app_name
-    candidates = [target_path.stem]
-    if not target_path.stem.endswith("Screen"):
-        candidates.append(f"{target_path.stem}Screen")
+    candidates = [component_name_from_target(target_path), target_path.stem]
     for candidate in candidates:
         if (generated_dir / f"{candidate}.js").exists():
             return candidate
@@ -66,12 +78,12 @@ def preview_url(app_name, component, port=3000):
     )
 
 
-def refine_targets(app_name, targets, tweak, max_iterations):
+def refine_targets(app_name, targets, tweak, max_iterations, generate_missing=False):
     jobs = []
     skipped = []
     for target in targets:
         component = component_for_target(app_name, target)
-        if app_name == "user_uploads":
+        if component is None and generate_missing:
             try:
                 with st.spinner(f"Creating a component for {target.name}..."):
                     component, _ = create_component_from_target(
@@ -136,6 +148,8 @@ with left:
         "What do you want to refine?",
         ["An existing app", "A new uploaded mockup"],
     )
+    pending_uploads = []
+    selected_upload_index = None
 
     if workflow == "An existing app":
         apps = available_apps()
@@ -147,17 +161,24 @@ with left:
             selected_app = st.selectbox("Choose an app", apps)
             targets = available_targets(selected_app)
     else:
-        selected_app = "user_uploads"
-        uploaded_file = st.file_uploader(
-            "Upload a mockup screenshot",
+        pending_uploads = []
+        selected_upload_index = None
+        uploaded_files = st.file_uploader(
+            "Upload one or more mockup screenshots",
             type=["png", "jpg", "jpeg"],
-            help="The uploaded image becomes the target screen automatically.",
+            accept_multiple_files=True,
+            help="Each screenshot becomes one target screen in the uploaded app.",
         )
-        targets = []
-        if uploaded_file is not None:
-            saved_path, original_name = save_upload(uploaded_file)
-            st.success(f"Mockup saved as {saved_path.name} (uploaded file: {original_name})")
-            targets = [saved_path]
+        selected_app = "user_uploads"
+        existing_uploads = available_targets(selected_app)
+        pending_uploads = list(uploaded_files or [])
+        selected_upload_index = None
+        if uploaded_files:
+            st.success(
+                f"{len(uploaded_files)} screen(s) ready. "
+                "They will be stored only when you start refinement."
+            )
+        targets = existing_uploads
 
     selected_target = None
     if workflow == "An existing app":
@@ -176,12 +197,34 @@ with left:
         elif targets:
             st.info(f"All {len(targets)} target screens will be processed.")
     else:
-        refinement_scope = "One screen"
+        refinement_scope = st.radio(
+            "Refinement scope",
+            ["One screen", "All screens"],
+            horizontal=True,
+            help="Use One screen for testing or All screens for the uploaded app.",
+        )
         if targets:
-            selected_target = targets[0]
-            st.info(f"Ready to refine uploaded screen: {selected_target.name}")
+            if refinement_scope == "One screen":
+                selected_target = st.selectbox(
+                    "Choose the uploaded screen to refine",
+                    pending_uploads if pending_uploads else targets,
+                    format_func=lambda item: (
+                        item.name if hasattr(item, "name") else item.stem
+                    ),
+                )
+                if pending_uploads:
+                    selected_upload_index = pending_uploads.index(selected_target)
+            else:
+                total_pending = len(targets) + len(pending_uploads)
+                st.info(f"All {total_pending} uploaded screens will be processed.")
         else:
-            st.info("Upload a screenshot to begin.")
+            if pending_uploads:
+                st.info(
+                    f"{len(pending_uploads)} screen(s) are ready and will be "
+                    "stored when you start refinement."
+                )
+            else:
+                st.info("Upload one or more screenshots to begin.")
 
     tweak = st.text_input(
         "What would you like to change?",
@@ -212,14 +255,24 @@ with right:
         "click controls and type into fields."
     )
     if run_clicked:
-        if not targets:
-            st.error("Choose an app or upload a mockup first.")
+        if workflow == "A new uploaded mockup" and pending_uploads:
+            saved_targets = save_uploads(pending_uploads)
+            targets = available_targets(selected_app)
+            if refinement_scope == "One screen":
+                selected_targets = [
+                    saved_targets[selected_upload_index]
+                ] if selected_upload_index is not None else []
+            else:
+                selected_targets = targets
         else:
             selected_targets = (
                 targets
                 if refinement_scope == "All screens"
                 else [selected_target] if selected_target else []
             )
+        if not targets:
+            st.error("Choose an app or upload a mockup first.")
+        else:
             if not selected_targets:
                 st.error("Choose a target screen first.")
             else:
@@ -228,4 +281,5 @@ with right:
                     selected_targets,
                     tweak,
                     int(max_iterations),
+                    True,
                 )

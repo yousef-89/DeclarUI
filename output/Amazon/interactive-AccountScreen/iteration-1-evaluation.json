@@ -6,8 +6,8 @@
   "successful_renders": 1,
   "failed_renders": 0,
   "metric_evaluated_components": 1,
-  "mean_ssim": 0.7881,
-  "mean_clip_similarity": 0.9309,
+  "mean_ssim": 0.7878,
+  "mean_clip_similarity": 0.9559,
   "detailed_results": [
     {
       "component": "AccountScreen",
@@ -18,8 +18,8 @@
       "target_exists": true,
       "target_match": "Account.png",
       "metric_status": "evaluated",
-      "ssim": 0.7881,
-      "clip_similarity": 0.9309,
+      "ssim": 0.7878,
+      "clip_similarity": 0.9559,
       "resized_for_ssim": true,
       "evaluation_size": {
         "width": 1179,

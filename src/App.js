@@ -18,7 +18,16 @@ export default function App() {
 
   const ComponentToRender = lazy(() =>
     loadComponent()
-      .then((mod) => ({ default: mod.default || mod }))
+      .then((mod) => {
+        const namedComponent = mod[targetComponent];
+        const component = mod.default || namedComponent;
+        if (typeof component !== 'function' && typeof component !== 'object') {
+          throw new Error(
+            `Module does not export a React component named "${targetComponent}".`
+          );
+        }
+        return { default: component };
+      })
       .catch((err) => {
         console.error('Failed to load dynamic component:', err);
         return {

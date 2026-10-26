@@ -142,17 +142,22 @@ npm start
 ```
 The preview URL uses `?app=<app_name>&component=<component_name>` and opens the same component selected by the dashboard.
 
-In the dashboard, choose **An existing app** to refine one screen or all screens from a dataset. Choose **A new uploaded mockup** to upload an image directly; the dashboard automatically stores it, generates an initial component if needed, and applies the optional natural-language request during generation and refinement. Users do not need to select the internal `user_uploads` folder.
+In the dashboard, choose **An existing app** to refine one screen or all screens from a dataset. If a target image has no matching generated component, the dashboard creates that component from the image before refinement. Choose **A new uploaded mockup** to upload one or more images and click **Generate and refine mockup**. Selected files remain temporary until that button is pressed; this prevents accidental uploads or duplicate files from being stored. After confirmation, the dashboard stores every image in the internal `Dataset/targets/user_uploads/` collection, creates a matching generated component for each image when needed, and runs the same refinement workflow without requiring the user to know the project folder structure. The natural-language tweak is included in component generation and subsequent refinement prompts.
 
-Uploaded mockups are saved in `Dataset/targets/user_uploads/` as
-`UserUpload.png` and use the stable generated component
-`src/generated/user_uploads/UserUploadScreen.js`. The dashboard asks Gemini to
-create or replace that component from the uploaded image. A stable entry point
-avoids dynamic-module loading failures when a screenshot is created while the
-React development server is already running. The original upload filename is
-shown in the dashboard. The natural-language tweak is included in the
-generation request and in subsequent refinement prompts, so requests such as
-`make the background yellow` are applied to the generated UI.
+Uploaded image names are made safe and receive a short content hash, so repeated
+uploads do not overwrite different images. For example:
+```text
+Dataset/targets/user_uploads/Home-a1b2c3d4.png
+src/generated/user_uploads/HomeA1b2c3d4Screen.js
+```
+These internal names are hidden from normal users; the dashboard handles them
+automatically.
+
+To add an external multi-screen app manually, create one folder such as
+`Dataset/targets/MyExternalApp/` and copy its screenshots there. It appears as
+a normal app in the existing-app selector. Matching generated components can be
+added under `src/generated/MyExternalApp/`; if they are missing, the dashboard
+generates them from the screenshots before refinement.
 
 Each interactive screen preserves its iteration history under:
 ```text
@@ -168,3 +173,11 @@ python run_pipeline.py --app Amazon --max_iterations 3
 For each iteration, it validates generated components, renders the app,
 calculates SSIM and CLIP, and asks Gemini to refine screens whose SSIM is below
 `0.90`. Screens meeting the threshold are skipped in later iterations.
+
+For interactive refinement with a user instruction, the dashboard returns the
+final accepted iteration so that requested changes can accumulate across
+passes. Without a user instruction, it returns the iteration with the highest
+SSIM. A refinement that drops SSIM by more than `0.08` from the previous
+accepted iteration is rejected and the previous component source is restored;
+this prevents a severe regression from replacing a usable screen. All
+iteration screenshots and evaluation reports remain available for inspection.

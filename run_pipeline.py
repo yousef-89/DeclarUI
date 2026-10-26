@@ -12,7 +12,18 @@ from contextlib import contextmanager
 from pathlib import Path
 
 SSIM_THRESHOLD = 0.90
+MAX_SSIM_REGRESSION = 0.08
 PROJECT_ROOT = Path(__file__).resolve().parent
+
+
+def component_name_from_target(target_path):
+    """Return a valid component name derived from a target filename."""
+    words = [
+        word for word in target_path.stem.replace("-", "_").split("_") if word
+    ]
+    component = "".join(word[:1].upper() + word[1:] for word in words)
+    component = component or "Screen"
+    return component if component.endswith("Screen") else f"{component}Screen"
 
 
 def parse_args():
@@ -194,9 +205,7 @@ def create_component_from_target(app_name, target_path, tweak=""):
     if "GEMINI_API_KEY" not in os.environ:
         raise RuntimeError("GEMINI_API_KEY is not set.")
 
-    component = "UserUploadScreen" if app_name == "user_uploads" else target_path.stem
-    if not component.endswith("Screen"):
-        component = f"{component}Screen"
+    component = component_name_from_target(target_path)
     source_dir = PROJECT_ROOT / "src" / "generated" / app_name
     source_dir.mkdir(parents=True, exist_ok=True)
     source_path = source_dir / f"{component}.js"
@@ -259,6 +268,11 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
 
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     result = None
+    best_result = None
+    best_source = None
+    previous_result = None
+    previous_source = None
+    prompt_driven = bool(tweak.strip())
     with ensure_dev_server():
         for iteration in range(max_iterations):
             validate_syntax(client, MODEL, source_path)
@@ -303,8 +317,41 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
             )
             if not result or result.get("metric_status") != "evaluated":
                 raise RuntimeError(f"No usable evaluation result for {component}.")
-            if result["ssim"] >= SSIM_THRESHOLD or iteration == max_iterations - 1:
+            source_snapshot = source_path.read_bytes()
+            source_snapshot_path = iteration_dir / f"{component}.source.js"
+            source_snapshot_path.write_bytes(source_snapshot)
+            if (
+                previous_result is not None
+                and result["ssim"] < previous_result["ssim"] - MAX_SSIM_REGRESSION
+            ):
+                if previous_source is not None:
+                    source_path.write_bytes(previous_source)
+                print(
+                    f"[Pipeline] Rejected {component} iteration {iteration}: "
+                    f"SSIM dropped from {previous_result['ssim']:.4f} to "
+                    f"{result['ssim']:.4f}."
+                )
+                result = previous_result
                 return result, source_path
+            previous_result = result
+            previous_source = source_snapshot
+            if best_result is None or (
+                result["ssim"],
+                result["clip_similarity"],
+            ) > (
+                best_result["ssim"],
+                best_result["clip_similarity"],
+            ):
+                best_result = result
+                best_source = source_snapshot
+            if (
+                iteration == max_iterations - 1
+                or (not prompt_driven and result["ssim"] >= SSIM_THRESHOLD)
+            ):
+                if prompt_driven:
+                    return result, source_path
+                source_path.write_bytes(best_source)
+                return best_result, source_path
 
             refine_component(
                 client,
@@ -317,7 +364,9 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
                 tweak,
             )
 
-    return result, source_path
+    if best_source is not None:
+        source_path.write_bytes(best_source)
+    return best_result or result, source_path
 
 
 def run_pipeline(app_name, max_iterations):
@@ -350,6 +399,14 @@ def run_pipeline(app_name, max_iterations):
 
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     completed = set()
+    best_results = {}
+    best_sources = {}
+    previous_results = {}
+    previous_sources = {}
+
+    def restore_best_sources():
+        for source_path, source_bytes in best_sources.items():
+            source_path.write_bytes(source_bytes)
 
     iteration = 0
     with ensure_dev_server():
@@ -397,6 +454,34 @@ def run_pipeline(app_name, max_iterations):
                     raise RuntimeError(
                         f"No usable evaluation result for {source_path.stem}."
                     )
+                source_snapshot = source_path.read_bytes()
+                previous_result = previous_results.get(source_path.stem)
+                if (
+                    previous_result is not None
+                    and item["ssim"]
+                    < previous_result["ssim"] - MAX_SSIM_REGRESSION
+                ):
+                    previous_source = previous_sources.get(source_path)
+                    if previous_source is not None:
+                        source_path.write_bytes(previous_source)
+                    completed.add(source_path.stem)
+                    print(
+                        f"[Pipeline] Rejected {source_path.stem} iteration "
+                        f"{iteration}: SSIM dropped from "
+                        f"{previous_result['ssim']:.4f} to {item['ssim']:.4f}."
+                    )
+                    continue
+                previous_results[source_path.stem] = item
+                previous_sources[source_path] = source_snapshot
+                if source_path.stem not in best_results or (
+                    item["ssim"],
+                    item["clip_similarity"],
+                ) > (
+                    best_results[source_path.stem]["ssim"],
+                    best_results[source_path.stem]["clip_similarity"],
+                ):
+                    best_results[source_path.stem] = item
+                    best_sources[source_path] = source_snapshot
                 if item["ssim"] >= SSIM_THRESHOLD:
                     completed.add(source_path.stem)
                     print(
@@ -408,12 +493,14 @@ def run_pipeline(app_name, max_iterations):
 
             if not pending:
                 print("[Pipeline] All screens reached the SSIM threshold.")
+                restore_best_sources()
                 return
             if iteration == max_iterations - 1:
                 print(
                     f"[Pipeline] Maximum iterations reached; "
                     f"{len(pending)} screen(s) remain below the threshold."
                 )
+                restore_best_sources()
                 return
 
             for source_path, item in pending:

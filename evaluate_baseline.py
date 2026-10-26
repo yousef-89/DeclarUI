@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -58,6 +59,15 @@ def find_target(targets, component):
     for candidate in candidates:
         if candidate in targets:
             return targets[candidate]
+
+    def normalized(value):
+        value = re.sub(r"screen$", "", value, flags=re.IGNORECASE)
+        return re.sub(r"[^a-z0-9]+", "", value.lower())
+
+    normalized_candidates = {normalized(candidate) for candidate in candidates}
+    for target_stem, target_path in targets.items():
+        if normalized(target_stem) in normalized_candidates:
+            return target_path
     return None
 
 

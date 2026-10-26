@@ -1,0 +1,18 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\user_uploads",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\user_uploads\\interactive-Screenshot2026052215423304d39047Screen\\iteration-1",
+  "appName": "user_uploads",
+  "port": 3000,
+  "total": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "results": [
+    {
+      "component": "Screenshot2026052215423304d39047Screen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\user_uploads\\Screenshot2026052215423304d39047Screen.js",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\user_uploads\\interactive-Screenshot2026052215423304d39047Screen\\iteration-1\\Screenshot2026052215423304d39047Screen.png",
+      "success": true,
+      "error": null
+    }
+  ]
+}
