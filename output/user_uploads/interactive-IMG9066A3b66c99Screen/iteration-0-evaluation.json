@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\user_uploads",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\user_uploads\\interactive-IMG9066A3b66c99Screen\\iteration-0",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.2121,
+  "mean_clip_similarity": 0.3961,
+  "detailed_results": [
+    {
+      "component": "IMG9066A3b66c99Screen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\user_uploads\\IMG_9066-a3b66c99.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\user_uploads\\interactive-IMG9066A3b66c99Screen\\iteration-0\\IMG9066A3b66c99Screen.png",
+      "target_exists": true,
+      "target_match": "IMG_9066-a3b66c99.png",
+      "metric_status": "evaluated",
+      "ssim": 0.2121,
+      "clip_similarity": 0.3961,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 1179,
+        "height": 2411
+      }
+    }
+  ]
+}
