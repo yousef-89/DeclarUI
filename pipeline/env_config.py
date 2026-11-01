@@ -7,7 +7,7 @@ in the terminal still overrides the file.
 import os
 from pathlib import Path
 
-ENV_PATH = Path(__file__).resolve().parent / ".env"
+ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
 
 
 def load_env(path=ENV_PATH):

@@ -8,7 +8,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-import run_store
+from pipeline import run_store
 
 # Categorical slots 1-3 (validated for CVD separation in light and dark mode).
 SERIES_COLORS = {

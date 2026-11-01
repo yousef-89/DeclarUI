@@ -49,135 +49,120 @@ cd Scripts/code_generation/code_generate_scripts
 python code_generate_declarUI.py
 ```
 
-### Headless baseline rendering
-Start the React Native Web host in one terminal:
+## Autonomous visual refinement loop (thesis extension)
+
+DeclarUI's original refinement only repairs compilation and navigation errors.
+This extension adds a closed loop that turns a UI screenshot into React Native
+code and refines it visually without human intervention:
+
+1. **Component perception** - Gemini decomposes the screenshot into typed
+   components (buttons, inputs, sliders, tab bars, carousels, ...) with bounding
+   boxes, grounded by computer-vision block measurements.
+2. **Baseline generation** - Gemini writes a React Native Web screen from the
+   screenshot, the component inventory, and the measured layout.
+3. **Headless rendering** - Puppeteer renders the screen in a viewport with the
+   target's aspect ratio.
+4. **Dual-metric evaluation** - SSIM (structure/layout) and CLIP (perceptual
+   similarity) against the screenshot; content SSIM is logged in addition.
+5. **Iterative refinement** - up to 3 diagnose-then-fix passes using the target,
+   the render, a side-by-side comparison with a coordinate ruler, and the
+   mismatch regions.
+6. **Guardrail and rollback** - a pass that lowers SSIM by more than 0.02
+   relative to the best version so far is rejected, the best version is
+   restored, and refinement continues from it. Syntax and runtime errors get
+   one automatic repair attempt.
+
+**User edits.** A natural-language change ("make the tab bar dark") is applied
+by a separate loop and scored with **Edit Compliance** (a Gemini judge's 0-1
+rating of whether the change is visibly applied) and **Structural
+Preservation** (edge-based SSIM between the pre-edit and post-edit renders
+outside the edited region). SSIM/CLIP against the screenshot are not
+meaningful for intended edits and are only logged for reference.
+
+### Setup
+
 ```bash
-npm start
+npm install
+python -m pip install -r requirements.txt
 ```
 
-Then render every `.js` and `.jsx` component in the selected app folder:
-```bash
-npm run render:baseline
+Create a `.env` file in the project root (it is gitignored):
+
+```text
+GEMINI_API_KEY=your-key
+GEMINI_MODEL=gemini-3.8-flash          # optional, default gemini-3.5-flash-lite
+GEMINI_JUDGE_MODEL=gemini-3.8-flash    # optional, defaults to GEMINI_MODEL
 ```
 
-The app-scoped renderer command is:
-```bash
-node batch_render.js <app_name> <iteration> [port] [component]
-```
-For example, `node batch_render.js Amazon baseline 3000` scans
-`src/generated/Amazon` and writes screenshots to `output/Amazon/baseline`, along with
-`summary.json`, which records the success or failure of each component:
+`GEMINI_MODEL` is used by the loop and by the original DeclarUI scripts.
 
-To render one selected screen only:
-```bash
-node batch_render.js Amazon interactive-AccountScreen 3000 AccountScreen
-```
+### Running
 
-Refined screenshots use a separate output directory:
-```bash
-npm run render:refined
-```
+Dashboard (refine screens, browse history, compare results):
 
-The batch command scans the directory once when it starts; newly added
-components are included the next time the command is run.
-
-To evaluate the baseline renders, place the corresponding original reference
-images in `Dataset/targets/<app_name>`. The evaluator dynamically loads every
-`.png`, `.jpg`, and `.jpeg` file in that folder:
-```bash
-python evaluate_baseline.py --app Amazon
-```
-
-To evaluate a refined iteration, run:
-```bash
-python evaluate_baseline.py --app Amazon --baseline output/Amazon/refined `
-  --output output/Amazon/refined-evaluation.json
-```
-
-To perform one automated visual-refinement pass, keep the development server
-running and run:
-```bash
-npm run refine:visual
-npm run render:refined
-npm run evaluate:refined
-```
-The current generated sources are backed up to
-`output/<app_name>/refinement/iteration-0-source` before refinement. The refinement uses
-the baseline evaluation report, reference screenshots, current renders, and
-Gemini to produce revised component code.
-
-The Python evaluation dependencies can be installed with:
-```bash
-python -m pip install -r requirements-evaluation.txt
-```
-
-The evaluator first looks for an exact component-name match, such as
-`DefaultViewScreen.png`, and then automatically tries the original screen name
-without the `Screen` suffix, such as `DefaultView.png`. It calculates SSIM and
-CLIP similarity for valid pairs and writes
-`output/<app_name>/baseline-evaluation.json`. The selected target filename is recorded in
-the report. Failed renders and components without a matching target remain in
-the report but are excluded from metric averages. Reference images must be
-original ground-truth screenshots; do not copy baseline renders into
-`Dataset/targets`.
-
-Before rendering, a generated component can be checked with:
-```bash
-node check_syntax.js src/generated/Amazon/HomeScreen.js
-```
-The checker prints `SYNTAX_VALID` for valid JSX or
-`SYNTAX_INVALID: <error message>` for parser failures.
-
-The Streamlit dashboard supports both selected-screen and all-screen refinement. In all-screen mode, each target with a matching generated component is processed independently and receives its own output folder and evaluation report. Targets without generated components are skipped and reported.
-
-Running all screens is considerably more expensive than refining one screen: with five screens and three maximum iterations, it can require up to 15 render/evaluation/refinement cycles and multiple Gemini requests. Use selected-screen mode for development and small app experiments; use all-screen mode for a controlled app-level experiment.
-
-Start the dashboard with:
 ```bash
 streamlit run app.py
 ```
-After a refinement result is displayed, use **Open ... in interactive preview** to open the generated screen in the React Native Web host. This preview is separate from Puppeteer screenshot capture and lets you click controls and type into text fields. Start the host first in another terminal:
+
+Command line, all screens of one app:
+
 ```bash
-npm start
+python run_pipeline.py --app Breadfast --max_iterations 3
 ```
-The preview URL uses `?app=<app_name>&component=<component_name>` and opens the same component selected by the dashboard.
 
-In the dashboard, choose **An existing app** to refine one screen or all screens from a dataset. If a target image has no matching generated component, the dashboard creates that component from the image before refinement. Choose **A new uploaded mockup** to upload one or more images and click **Generate and refine mockup**. Selected files remain temporary until that button is pressed; this prevents accidental uploads or duplicate files from being stored. After confirmation, the dashboard stores every image in the internal `Dataset/targets/user_uploads/` collection, creates a matching generated component for each image when needed, and runs the same refinement workflow without requiring the user to know the project folder structure. The natural-language tweak is included in component generation and subsequent refinement prompts.
+Both start the React Native Web render host (`npm start`, port 3000)
+automatically if it is not already running. Screenshots are taken from
+`Dataset/targets/<app>/`; generated screens live in `src/generated/<app>/`.
 
-Uploaded image names are made safe and receive a short content hash, so repeated
-uploads do not overwrite different images. For example:
+### Results and history
+
+Every run is recorded in `output/history.db` (SQLite) and in its own folder:
+
 ```text
-Dataset/targets/user_uploads/Home-a1b2c3d4.png
-src/generated/user_uploads/HomeA1b2c3d4Screen.js
+output/<app>/runs/<run_id>/iteration-<n>/
+    <Component>.png          render of this iteration
+    <Component>.source.js    code of this iteration
+    prompt.txt               prompt sent to Gemini
+    diagnosis.txt / plan.txt Gemini's diagnosis (refinement) or plan (edit)
+output/<app>/inventory/<Component>.json   cached component inventory
 ```
-These internal names are hidden from normal users; the dashboard handles them
-automatically.
 
-To add an external multi-screen app manually, create one folder such as
-`Dataset/targets/MyExternalApp/` and copy its screenshots there. It appears as
-a normal app in the existing-app selector. Matching generated components can be
-added under `src/generated/MyExternalApp/`; if they are missing, the dashboard
-generates them from the screenshots before refinement.
+The dashboard's **History** tab shows every run with its screenshots, metric
+trajectory, prompts, model notes, and code; **Overview** aggregates results by
+model and app and exports runs/iterations as CSV. `metrics_tracker.csv` is
+still appended for compatibility. Results from before the history store are in
+`output/legacy/`.
 
-Each interactive screen preserves its iteration history under:
+### Project layout
+
 ```text
-output/<app_name>/interactive-<component>/iteration-0/
-output/<app_name>/interactive-<component>/iteration-1/
-output/<app_name>/interactive-<component>/iteration-2/
+app.py                  Streamlit dashboard
+run_pipeline.py         refinement loop and command-line entry point
+pipeline/
+    visual_refine.py    prompt building and Gemini helpers
+    prompts/            prompt templates (inventory, generate, refine, edit, judge, repair)
+    layout_analysis.py  logical canvas, SSIM/content SSIM, block detection, comparison image
+    evaluate_baseline.py  SSIM + CLIP evaluation of a render folder
+    run_store.py        SQLite run history
+    history_views.py    dashboard views (run detail, history, overview)
+    env_config.py       loads .env
+renderer/
+    batch_render.js     renders components with Puppeteer
+    render_runner.js    single-screen capture (freshness check, error detection)
+    check_syntax.js     JSX syntax check
+src/                    React Native Web render host and generated screens
+Dataset/                DeclarUI dataset and target screenshots (Dataset/targets/)
+Scripts/                original DeclarUI preprocessing and generation scripts
+output/                 run results and history database
 ```
 
-The complete bounded self-refinement pipeline can be run with:
+### Individual tools
+
 ```bash
-python run_pipeline.py --app Amazon --max_iterations 3
+node renderer/batch_render.js <app> <output-subfolder> [port] [component]
+python -m pipeline.evaluate_baseline --app <app> --baseline output/<app>/<subfolder>
+node renderer/check_syntax.js src/generated/<app>/<Component>.js
 ```
-For each iteration, it validates generated components, renders the app,
-calculates SSIM and CLIP, and asks Gemini to refine screens whose SSIM is below
-`0.90`. Screens meeting the threshold are skipped in later iterations.
 
-For interactive refinement with a user instruction, the dashboard returns the
-final accepted iteration so that requested changes can accumulate across
-passes. Without a user instruction, it returns the iteration with the highest
-SSIM. A refinement that drops SSIM by more than `0.08` from the previous
-accepted iteration is rejected and the previous component source is restored;
-this prevents a severe regression from replacing a usable screen. All
-iteration screenshots and evaluation reports remain available for inspection.
+Target screenshots are matched to components by name (`Home.png` ->
+`HomeScreen`). They must be original screenshots, never copies of renders.

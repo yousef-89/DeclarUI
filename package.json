@@ -5,12 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "render:baseline": "node batch_render.js Amazon baseline 3000",
-    "render:refined": "node batch_render.js Amazon refined 3000",
-    "evaluate:baseline": "python evaluate_baseline.py --app Amazon",
-    "evaluate:refined": "python evaluate_baseline.py --app Amazon --baseline output/Amazon/refined --output output/Amazon/refined-evaluation.json",
-    "refine:visual": "python visual_refine.py --app Amazon",
-    "run:pipeline": "python run_pipeline.py --app Amazon",
+    "render": "node renderer/batch_render.js",
+    "evaluate": "python -m pipeline.evaluate_baseline",
+    "pipeline": "python run_pipeline.py",
+    "dashboard": "streamlit run app.py",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

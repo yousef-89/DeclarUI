@@ -76,7 +76,7 @@ def load_ssim(target_path, render_path):
     Returns global SSIM, content-region SSIM, the lowest-scoring screen regions,
     and the logical evaluation size.
     """
-    from layout_analysis import load_pair, region_report, ssim_metrics
+    from pipeline.layout_analysis import load_pair, region_report, ssim_metrics
 
     target, rendered = load_pair(target_path, render_path)
     score, content_score, ssim_map, mask = ssim_metrics(target, rendered)
@@ -98,7 +98,7 @@ def load_clip_scores(target_paths, render_paths, device):
     model = CLIPModel.from_pretrained(model_name).to(device)
     model.eval()
 
-    from layout_analysis import background_color, pad_to_square
+    from pipeline.layout_analysis import background_color, pad_to_square
 
     def letterboxed(path):
         # CLIPProcessor center-crops to a square, which would discard the top

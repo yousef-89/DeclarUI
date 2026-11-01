@@ -5,7 +5,7 @@ from pathlib import Path
 
 import streamlit as st
 
-import history_views
+from pipeline import history_views
 from run_pipeline import (
     PROJECT_ROOT,
     component_name_from_target,
@@ -13,7 +13,7 @@ from run_pipeline import (
     run_selected_refinement,
     server_is_ready,
 )
-from visual_refine import JUDGE_MODEL, MODEL
+from pipeline.visual_refine import JUDGE_MODEL, MODEL
 
 
 TARGET_ROOT = PROJECT_ROOT / "Dataset" / "targets"

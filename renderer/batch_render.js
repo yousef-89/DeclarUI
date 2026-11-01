@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { captureComponentScreenshot } = require('./render_runner');
 
-const STAMP_PATH = path.join(__dirname, 'src', 'render-stamp.json');
+const PROJECT_ROOT = path.join(__dirname, '..');
+const STAMP_PATH = path.join(PROJECT_ROOT, 'src', 'render-stamp.json');
 
 function loadViewports() {
   // Optional {component: [width, height]} map so each screen renders at its
@@ -33,16 +34,16 @@ function getOptions(args) {
   return {
     appName,
     component,
-    generatedDir: path.join(__dirname, 'src', 'generated', appName),
-    outputDir: path.join(__dirname, 'output', appName, iteration),
+    generatedDir: path.join(PROJECT_ROOT, 'src', 'generated', appName),
+    outputDir: path.join(PROJECT_ROOT, 'output', appName, iteration),
     port: parsedPort
   };
 }
 
 async function runBatchRender({
   appName = 'default',
-  generatedDir = path.join(__dirname, 'src', 'generated', appName),
-  outputDir = path.join(__dirname, 'output', appName, 'baseline'),
+  generatedDir = path.join(PROJECT_ROOT, 'src', 'generated', appName),
+  outputDir = path.join(PROJECT_ROOT, 'output', appName, 'baseline'),
   component = null,
   port = 3000
 } = {}) {

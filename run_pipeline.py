@@ -5,7 +5,7 @@ import csv
 import json
 import os
 
-import env_config  # noqa: F401  (loads .env before settings are read)
+from pipeline import env_config  # noqa: F401  (loads .env before settings are read)
 import subprocess
 import sys
 import time
@@ -161,7 +161,7 @@ def generate(client, model, contents, json_output=False):
 
 def repair_component(client, model, component, source_path, problem):
     """Ask Gemini to fix a syntax or runtime error without redesigning the UI."""
-    from visual_refine import load_prompt, strip_code_fence
+    from pipeline.visual_refine import load_prompt, strip_code_fence
 
     prompt = load_prompt(
         "repair",
@@ -179,7 +179,7 @@ def repair_component(client, model, component, source_path, problem):
 def check_syntax(source_path):
     """Return None when the source parses, otherwise the parser message."""
     result = run_command(
-        ["node", "check_syntax.js", str(source_path)],
+        ["node", "renderer/check_syntax.js", str(source_path)],
         f"Syntax check for {source_path.name}",
         check=False,
     )
@@ -201,7 +201,7 @@ def validate_syntax(client, model, source_path):
 
 
 def find_component_target(app_name, component):
-    from evaluate_baseline import find_target, load_targets
+    from pipeline.evaluate_baseline import find_target, load_targets
 
     target_dir = PROJECT_ROOT / "Dataset" / "targets" / app_name
     if not target_dir.is_dir():
@@ -219,7 +219,7 @@ def render_and_evaluate(app_name, component, iteration, viewport, output_name=No
     iteration_name = f"{output_name}/iteration-{iteration}"
     iteration_dir = PROJECT_ROOT / "output" / app_name / output_name / f"iteration-{iteration}"
     run_command(
-        ["node", "batch_render.js", app_name, iteration_name, "3000", component],
+        ["node", "renderer/batch_render.js", app_name, iteration_name, "3000", component],
         f"Rendering {component}",
         env={"RENDER_VIEWPORTS": json.dumps({component: list(viewport)})},
         check=False,
@@ -228,7 +228,8 @@ def render_and_evaluate(app_name, component, iteration, viewport, output_name=No
     run_command(
         [
             sys.executable,
-            "evaluate_baseline.py",
+            "-m",
+            "pipeline.evaluate_baseline",
             "--app",
             app_name,
             "--baseline",
@@ -362,7 +363,7 @@ def parse_json_response(text):
 
 def save_notes(notes_path, prompt, response_text):
     """Keep the model's diagnosis/plan with the iteration for traceability."""
-    from visual_refine import response_notes
+    from pipeline.visual_refine import response_notes
 
     if notes_path is None:
         return
@@ -401,8 +402,8 @@ def normalize_inventory(inventory, canvas):
 
 def build_inventory(client, model, app_name, component, target_path, canvas):
     """Decompose the target screenshot into typed UI components (cached)."""
-    from layout_analysis import describe_layout, read_color, to_logical
-    from visual_refine import image_part, load_prompt, load_spatial_metadata
+    from pipeline.layout_analysis import describe_layout, read_color, to_logical
+    from pipeline.visual_refine import image_part, load_prompt, load_spatial_metadata
 
     cache_path = PROJECT_ROOT / "output" / app_name / "inventory" / f"{component}.json"
     if cache_path.exists():
@@ -440,8 +441,8 @@ def refine_component(
     notes_path=None,
 ):
     """Run one diagnose-then-fix refinement pass against the target."""
-    from layout_analysis import comparison_image
-    from visual_refine import (
+    from pipeline.layout_analysis import comparison_image
+    from pipeline.visual_refine import (
         build_layout_feedback,
         build_prompt,
         image_part,
@@ -490,7 +491,7 @@ def edit_component(
     notes_path=None,
 ):
     """Apply the user's requested change to the current source."""
-    from visual_refine import image_part, load_prompt, rn_rules, strip_code_fence
+    from pipeline.visual_refine import image_part, load_prompt, rn_rules, strip_code_fence
 
     prompt = load_prompt(
         "edit",
@@ -518,8 +519,8 @@ def judge_edit(client, model, before_path, after_path, instruction, canvas):
     between the pre-edit and post-edit renders outside the region the request
     legitimately affects, so unrequested layout changes lower it.
     """
-    from layout_analysis import structural_preservation
-    from visual_refine import image_part, load_prompt
+    from pipeline.layout_analysis import structural_preservation
+    from pipeline.visual_refine import image_part, load_prompt
 
     prompt = load_prompt(
         "edit_judge",
@@ -552,8 +553,8 @@ def create_component_from_target(app_name, target_path):
     """Generate an initial component: decompose the screenshot, then code it."""
     try:
         from google import genai
-        from layout_analysis import describe_layout, logical_size, read_color, to_logical
-        from visual_refine import (
+        from pipeline.layout_analysis import describe_layout, logical_size, read_color, to_logical
+        from pipeline.visual_refine import (
             MODEL,
             format_inventory,
             image_part,
@@ -742,7 +743,7 @@ def run_edit_loop(client, model, recorder, source_path, viewport, max_iterations
     an intended edit deliberately moves the screen away from the screenshot.
     Candidates are ranked by Edit Compliance, then Structural Preservation.
     """
-    from visual_refine import JUDGE_MODEL
+    from pipeline.visual_refine import JUDGE_MODEL
 
     component = recorder.component
     baseline, baseline_source, error = evaluate_candidate(
@@ -821,9 +822,9 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
     """
     try:
         from google import genai
-        from layout_analysis import logical_size
-        from run_store import RunRecorder
-        from visual_refine import JUDGE_MODEL, MODEL
+        from pipeline.layout_analysis import logical_size
+        from pipeline.run_store import RunRecorder
+        from pipeline.visual_refine import JUDGE_MODEL, MODEL
     except ModuleNotFoundError as error:
         raise RuntimeError(
             "Gemini dependencies are required to run the pipeline. "

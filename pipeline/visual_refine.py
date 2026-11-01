@@ -4,7 +4,7 @@ import argparse
 import json
 import os
 
-import env_config  # noqa: F401  (loads .env before settings are read)
+from pipeline import env_config  # noqa: F401  (loads .env before settings are read)
 import re
 import shutil
 from pathlib import Path
@@ -17,7 +17,8 @@ from google.genai import types
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
 JUDGE_MODEL = os.environ.get("GEMINI_JUDGE_MODEL", MODEL)
 PROMPT_DIR = Path(__file__).resolve().parent / "prompts"
-ICON_SOURCE = Path(__file__).resolve().parent / "src" / "generated" / "generated-icon.js"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+ICON_SOURCE = PROJECT_ROOT / "src" / "generated" / "generated-icon.js"
 
 
 def parse_args():
@@ -121,7 +122,7 @@ def _normalized_name(value):
 
 def load_spatial_metadata(target_path):
     """Load target-specific GroundingDINO/SAM metadata when available."""
-    extraction_dir = Path(__file__).resolve().parent / "Dataset" / "extractions"
+    extraction_dir = PROJECT_ROOT / "Dataset" / "extractions"
     if not extraction_dir.is_dir():
         return "{}"
 
@@ -155,7 +156,7 @@ def load_spatial_metadata(target_path):
 
 def build_layout_feedback(target_path, rendered_path, worst_regions=None):
     """Describe measured layout differences between target and render."""
-    from layout_analysis import describe_layout, load_pair
+    from pipeline.layout_analysis import describe_layout, load_pair
 
     target, rendered = load_pair(target_path, rendered_path)
     sections = [
@@ -262,7 +263,7 @@ def refine(args):
         if not backup_path.exists():
             shutil.copy2(source_path, backup_path)
 
-        from layout_analysis import comparison_image, logical_size
+        from pipeline.layout_analysis import comparison_image, logical_size
 
         code = source_path.read_text(encoding="utf-8")
         prompt = build_prompt(
