@@ -3,8 +3,10 @@
 import hashlib
 import json
 import os
+import secrets
 import shutil
 import subprocess
+import time
 from pathlib import Path
 from urllib.parse import quote
 
@@ -102,6 +104,19 @@ def start_render_server():
     )
 
 
+def request_rebuild():
+    """Make the dev server rebuild so it picks up newly added screen files.
+
+    On Windows webpack notices edits to existing files but not new files until
+    the next rebuild; rewriting the render stamp (imported by App.js) forces
+    one, exactly as the renderer does before every screenshot.
+    """
+    stamp = f"{int(time.time() * 1000)}-{secrets.token_hex(4)}"
+    (PROJECT_ROOT / "src" / "render-stamp.json").write_text(
+        json.dumps({"stamp": stamp}, separators=(",", ":")) + "\n", encoding="utf-8"
+    )
+
+
 def preview_section(run, item, key):
     """Copy one stored version into the preview slot and link to it."""
     from run_pipeline import server_is_ready
@@ -120,6 +135,7 @@ def preview_section(run, item, key):
         target = PROJECT_ROOT / "src" / "generated" / PREVIEW_APP / f"{run['component']}.js"
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(item["source_path"], target)
+        request_rebuild()
         st.session_state[f"{key}-ready"] = item["source_path"]
     if st.session_state.get(f"{key}-ready") == item["source_path"]:
         st.link_button("Open live preview ↗", preview_url(PREVIEW_APP, run["component"]))
