@@ -5,3 +5,7 @@ build/
 dist/
 *.log
 test_output.png
+src/render-stamp.json
+output/history.db
+__pycache__/
+*.pyc

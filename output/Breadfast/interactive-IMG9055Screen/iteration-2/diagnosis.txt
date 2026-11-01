@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header background color: container has background `#f8f8f9`, change to `#ffffff` to match reference white background.
+2. QR button color: qrButton background is `#fff` with `#f2f2f4` border, change to `#f7eaf3` background and border-radius 16, with icon color `#97227d`.
+3. Order history card icon: using receipt lines instead of receipt icon, use `<Icon name="receipt" size={24} color="#e5603b" />` or receipt illustration.
+4. List item icons: using emojis (♡, 🎁, 📦, ⚙, 💬, ?), replace with proper icon components (`heart`, `gift`, `box`/`package`, `settings`, `message-square`, `help-circle`).
+5. Bottom nav position and overlapping: floatingNavWrapper needs correct positioning `bottom: 18` and background styling to not overlap content improperly.

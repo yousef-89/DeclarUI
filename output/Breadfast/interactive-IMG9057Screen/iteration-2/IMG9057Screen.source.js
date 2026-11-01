@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Icon from '../generated-icon';
 
 export default function IMG9057Screen() {
   return (
@@ -7,7 +8,7 @@ export default function IMG9057Screen() {
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.backButton}>
-          <Text style={styles.backArrow}>‹</Text>
+          <Icon name="chevron-left" size={20} color="#242424" />
         </View>
         <Text style={styles.headerTitle}>Refer and earn</Text>
       </View>
@@ -34,13 +35,13 @@ export default function IMG9057Screen() {
           {/* Card 1 */}
           <View style={styles.card}>
             <View style={styles.iconContainer}>
-              <Text style={styles.iconSymbol}>🛒</Text>
+              <Icon name="cart" size={20} color="#272727" />
             </View>
             <Text style={styles.cardTitle}>Complete{'\n'}5 orders</Text>
             
             <View style={styles.progressContainer}>
               <View style={styles.progressBarBackground}>
-                <View style={[styles.progressBarFill, { width: '8%' }]} />
+                <View style={[styles.progressBarFill, { width: '0%' }]} />
               </View>
             </View>
             <Text style={styles.cardFooter}>5 orders left</Text>
@@ -49,13 +50,13 @@ export default function IMG9057Screen() {
           {/* Card 2 */}
           <View style={styles.card}>
             <View style={styles.iconContainer}>
-              <Text style={styles.iconSymbol}>📄</Text>
+              <Icon name="receipt" size={20} color="#272727" />
             </View>
             <Text style={styles.cardTitle}>Spend EGP 1,000{'\n'}in purchases</Text>
             
             <View style={styles.progressContainer}>
               <View style={styles.progressBarBackground}>
-                <View style={[styles.progressBarFill, { width: '8%' }]} />
+                <View style={[styles.progressBarFill, { width: '0%' }]} />
               </View>
             </View>
             <Text style={styles.cardFooter}>EGP 1,000.00 left</Text>
@@ -81,38 +82,31 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingTop: 16,
-    paddingBottom: 12,
+    paddingHorizontal: 15,
+    height: 51,
     backgroundColor: '#FFFFFF',
   },
   backButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 31,
+    height: 31,
+    borderRadius: 16,
     borderWidth: 1,
-    borderColor: '#E5E5EA',
+    borderColor: '#d9d9d9',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  backArrow: {
-    fontSize: 26,
-    color: '#1C1C1E',
-    marginTop: -2,
-    fontWeight: '300',
   },
   headerTitle: {
     flex: 1,
     textAlign: 'center',
     fontSize: 17,
-    fontWeight: '600',
-    color: '#111111',
-    marginRight: 40,
+    fontWeight: '700',
+    color: '#242424',
+    marginRight: 31,
     letterSpacing: -0.2,
   },
   banner: {
-    height: 196,
-    backgroundColor: '#FCEFE7',
+    height: 167,
+    backgroundColor: '#f5d9c4',
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
@@ -166,21 +160,21 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 42,
   },
   content: {
-    paddingHorizontal: 16,
-    paddingTop: 24,
+    paddingHorizontal: 15,
+    paddingTop: 44,
     alignItems: 'center',
   },
   title: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: '700',
-    color: '#111111',
+    color: '#212121',
     textAlign: 'center',
     marginBottom: 10,
-    letterSpacing: -0.4,
+    letterSpacing: -0.2,
   },
   subtitle: {
     fontSize: 14,
-    color: '#555555',
+    color: '#3e3e3e',
     textAlign: 'center',
     marginBottom: 24,
     paddingHorizontal: 10,
@@ -189,73 +183,70 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    gap: 12,
+    gap: 14,
   },
   card: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    borderRadius: 16,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#E2E2E6',
+    borderColor: '#818481',
     padding: 16,
     alignItems: 'center',
-    height: 190,
+    height: 182,
   },
   iconContainer: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: '#F5F5F7',
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#ebebeb',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 12,
-  },
-  iconSymbol: {
-    fontSize: 18,
+    marginBottom: 16,
   },
   cardTitle: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: '#1C1C1E',
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#323232',
     textAlign: 'center',
-    lineHeight: 19,
-    marginBottom: 20,
+    lineHeight: 18,
+    marginBottom: 16,
   },
   progressContainer: {
     width: '100%',
-    marginBottom: 10,
+    marginBottom: 12,
   },
   progressBarBackground: {
-    height: 6,
-    backgroundColor: '#E5E5EA',
-    borderRadius: 3,
+    height: 10,
+    backgroundColor: '#ebebeb',
+    borderRadius: 5,
     overflow: 'hidden',
     width: '100%',
   },
   progressBarFill: {
     height: '100%',
-    backgroundColor: '#00A86B',
-    borderRadius: 3,
+    backgroundColor: '#272727',
+    borderRadius: 5,
   },
   cardFooter: {
-    fontSize: 12,
-    color: '#8E8E93',
+    fontSize: 11,
+    color: '#919191',
     textAlign: 'center',
-    fontWeight: '500',
+    fontWeight: '400',
   },
   footerContainer: {
     position: 'absolute',
-    bottom: 56,
+    bottom: 50,
     left: 0,
     right: 0,
     alignItems: 'center',
   },
   termsText: {
-    fontSize: 13,
-    color: '#7C7C82',
+    fontSize: 14,
+    color: '#3e3e3e',
   },
   termsLink: {
-    color: '#8E2860',
-    fontWeight: '600',
+    color: '#a36a9a',
+    fontWeight: '400',
   },
 });

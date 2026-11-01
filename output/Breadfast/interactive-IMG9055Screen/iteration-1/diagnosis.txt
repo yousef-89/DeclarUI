@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header icon button: Background color in render is plain white with pink dots, but reference has background `#f7eaf3`, color `#97227d`, and uses `<Icon name="qr-code" size={18} color="#97227d" />`.
+2. Order history card icon: Render has hamburger menu icon, but reference has a receipt illustration.
+3. Bottom navigation bar: Positioned incorrectly (covering content too high up at y=728), should be a floating rounded pill bar matching reference at y=718 with height 62.
+4. List item icons: Render uses raw emojis/symbols (♡, 🎁, 📦, ⚙, 💬, ?), but reference uses clean vector `<Icon>` components (heart, gift, boxes, settings, chat, help, chevron-right).
+5. Card sizes and layout: Top cards container height/padding and banner background color (`#7c336a`) need slight fine-tuning to match exact dimensions.

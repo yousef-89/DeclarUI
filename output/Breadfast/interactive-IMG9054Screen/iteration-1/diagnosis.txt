@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header icon and brand styling: Replace the custom text logo and chat bubble with properly sized brand elements and the allowed `<Icon name="chat" ... />` component.
+2. Wallet balance layout and typography: Adjust `balanceAmount` font size and layout alignment so '0.00' matches reference height and boldness precisely.
+3. Promotional Card banner positioning and dimensions: Update `banner` height from 530 to 582, and correct inner padding/elements arrangement (chip and contactless waves placed correctly at top right / center of card).
+4. Card chip & contactless icon position: Move chip and contactless icon to the upper right/center area inside the banner similar to reference layout.
+5. Bottom navigation bar layout: Fix floating tab bar position and dimensions to match exact specs (`bottomNavContainer` height and padding, matching horizontal spacing).
+6. Action buttons styling & spacing: Tune action circles colors (`#FCE4EC` light pink for saved cards) and text font sizes to align with target scores.

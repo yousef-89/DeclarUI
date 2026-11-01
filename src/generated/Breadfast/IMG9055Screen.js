@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import Icon from '../generated-icon';
 
 export default function IMG9055Screen() {
   return (
@@ -9,23 +10,7 @@ export default function IMG9055Screen() {
         <View style={styles.header}>
           <Text style={styles.headerTitle}>yousef Samy</Text>
           <View style={styles.qrButton}>
-            <View style={styles.qrIconGrid}>
-              <View style={styles.qrRow}>
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-              </View>
-              <View style={styles.qrRow}>
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-                <View style={[styles.qrCell, { backgroundColor: '#d32f54', borderColor: '#d32f54' }]} />
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-              </View>
-              <View style={styles.qrRow}>
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
-              </View>
-            </View>
+            <Icon name="grid" size={18} color="#97227d" />
           </View>
         </View>
 
@@ -56,9 +41,7 @@ export default function IMG9055Screen() {
         <View style={styles.topCardsRow}>
           <View style={styles.topCard}>
             <View style={styles.cardIconBox}>
-              <View style={styles.receiptLine} />
-              <View style={styles.receiptLine} />
-              <View style={styles.receiptLineShort} />
+              <Icon name="file-text" size={20} color="#c95188" />
             </View>
             <Text style={styles.topCardTitle}>Order history</Text>
           </View>
@@ -78,11 +61,11 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Text style={styles.glyphText}>♡</Text>
+                <Icon name="heart" size={18} color="#232323" />
               </View>
               <Text style={styles.menuItemText}>Favorites</Text>
             </View>
-            <Text style={styles.chevron}>›</Text>
+            <Icon name="chevron-right" size={18} color="#737373" />
           </View>
 
           <View style={styles.menuDivider} />
@@ -90,11 +73,11 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Text style={styles.glyphText}>🎁</Text>
+                <Icon name="gift" size={18} color="#212121" />
               </View>
               <Text style={styles.menuItemText}>Invite a friend</Text>
             </View>
-            <Text style={styles.chevron}>›</Text>
+            <Icon name="chevron-right" size={18} color="#7b7b7b" />
           </View>
 
           <View style={styles.menuDivider} />
@@ -102,11 +85,11 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Text style={styles.glyphText}>📦</Text>
+                <Icon name="package" size={18} color="#050505" />
               </View>
               <Text style={styles.menuItemText}>BundleUp</Text>
             </View>
-            <Text style={styles.chevron}>›</Text>
+            <Icon name="chevron-right" size={18} color="#767676" />
           </View>
         </View>
 
@@ -116,11 +99,11 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Text style={styles.glyphText}>⚙</Text>
+                <Icon name="settings" size={18} color="#242424" />
               </View>
               <Text style={styles.menuItemText}>Settings</Text>
             </View>
-            <Text style={styles.chevron}>›</Text>
+            <Icon name="chevron-right" size={18} color="#737373" />
           </View>
 
           <View style={styles.menuDivider} />
@@ -128,11 +111,11 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Text style={styles.glyphText}>💬</Text>
+                <Icon name="message-circle" size={18} color="#222222" />
               </View>
               <Text style={styles.menuItemText}>Chat with us</Text>
             </View>
-            <Text style={styles.chevron}>›</Text>
+            <Icon name="chevron-right" size={18} color="#777777" />
           </View>
 
           <View style={styles.menuDivider} />
@@ -140,11 +123,11 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Text style={styles.glyphText}>?</Text>
+                <Icon name="help-circle" size={18} color="#262626" />
               </View>
               <Text style={styles.menuItemText}>Help</Text>
             </View>
-            <Text style={styles.chevron}>›</Text>
+            <Icon name="chevron-right" size={18} color="#7d7d7d" />
           </View>
         </View>
 
@@ -155,27 +138,27 @@ export default function IMG9055Screen() {
       <View style={styles.floatingNavWrapper}>
         <View style={styles.bottomNav}>
           <View style={styles.navItem}>
-            <Text style={styles.navIconText}>🏠</Text>
+            <Icon name="home" size={20} color="#717173" />
             <Text style={styles.navLabel}>Home</Text>
           </View>
 
           <View style={styles.navItem}>
-            <Text style={styles.navIconText}>🛒</Text>
+            <Icon name="shopping-cart" size={20} color="#747474" />
             <Text style={styles.navLabel}>Cart</Text>
           </View>
 
           <View style={styles.navItem}>
-            <Text style={styles.navIconText}>💳</Text>
+            <Icon name="credit-card" size={20} color="#737373" />
             <Text style={styles.navLabel}>Pay</Text>
           </View>
 
           <View style={styles.activeNavItem}>
-            <Text style={styles.activeNavIconText}>≡</Text>
+            <Icon name="menu" size={18} color="#292929" />
             <Text style={styles.activeNavLabel}>More</Text>
           </View>
 
           <View style={styles.searchNavItem}>
-            <Text style={styles.searchNavIconText}>🔍</Text>
+            <Icon name="search" size={20} color="#717172" />
           </View>
         </View>
       </View>
@@ -186,65 +169,41 @@ export default function IMG9055Screen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f8f8f9',
+    backgroundColor: '#ffffff',
   },
   scrollContent: {
-    paddingHorizontal: 16,
-    paddingTop: 24,
-    paddingBottom: 110,
+    paddingHorizontal: 15,
+    paddingTop: 16,
+    paddingBottom: 100,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 20,
-    paddingHorizontal: 4,
+    paddingHorizontal: 1,
   },
   headerTitle: {
-    fontSize: 32,
-    fontWeight: '800',
-    color: '#111',
-    letterSpacing: -0.5,
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#212121',
   },
   qrButton: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: '#fff',
+    width: 34,
+    height: 34,
+    borderRadius: 16,
+    backgroundColor: '#f7eaf3',
     justifyContent: 'center',
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.06,
-    shadowRadius: 4,
-    elevation: 2,
-    borderWidth: 1,
-    borderColor: '#f2f2f4',
-  },
-  qrIconGrid: {
-    width: 18,
-    height: 18,
-    justifyContent: 'space-between',
-  },
-  qrRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    height: 4.5,
-  },
-  qrCell: {
-    width: 4.5,
-    height: 4.5,
-    borderWidth: 1.5,
-    borderRadius: 1,
   },
   banner: {
-    backgroundColor: '#582b48',
-    borderRadius: 24,
+    backgroundColor: '#7c336a',
+    borderRadius: 16,
     flexDirection: 'row',
-    padding: 20,
+    padding: 16,
     overflow: 'hidden',
-    height: 136,
-    marginBottom: 20,
+    height: 72,
+    marginBottom: 16,
     alignItems: 'center',
     justifyContent: 'space-between',
   },
@@ -253,42 +212,38 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   bannerTitle: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '800',
-    lineHeight: 22,
+    color: '#ffffff',
+    fontSize: 13.5,
+    fontWeight: '700',
+    lineHeight: 18,
   },
   bannerSubtitle: {
-    color: '#eca6d1',
-    fontSize: 11,
-    marginTop: 8,
-    fontWeight: '600',
+    color: '#ffffff',
+    fontSize: 10,
+    marginTop: 3,
+    fontWeight: '400',
+    opacity: 0.9,
   },
   bannerGraphic: {
     width: 120,
-    height: 110,
+    height: 72,
     position: 'relative',
     justifyContent: 'center',
     alignItems: 'center',
   },
   cardMockup: {
     position: 'absolute',
-    width: 76,
-    height: 48,
+    width: 65,
+    height: 42,
     backgroundColor: '#262427',
-    borderRadius: 6,
-    left: 0,
-    top: 40,
-    transform: [{ rotate: '-12deg' }],
+    borderRadius: 5,
+    left: 10,
+    top: 15,
+    transform: [{ rotate: '-10deg' }],
     borderWidth: 1,
     borderColor: '#444',
-    padding: 6,
+    padding: 5,
     justifyContent: 'space-between',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
-    elevation: 4,
   },
   cardHeaderRow: {
     flexDirection: 'row',
@@ -296,42 +251,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   cardChip: {
-    width: 10,
-    height: 8,
+    width: 8,
+    height: 6,
     backgroundColor: '#d4af37',
     borderRadius: 1,
   },
   cardBrandText: {
     color: '#fff',
-    fontSize: 5.5,
+    fontSize: 5,
     fontWeight: 'bold',
   },
   cardSubText: {
     color: '#aaa',
-    fontSize: 4.5,
+    fontSize: 4,
     fontWeight: '600',
   },
   bagMockup: {
     position: 'absolute',
-    width: 68,
-    height: 80,
+    width: 55,
+    height: 62,
     backgroundColor: '#d842a2',
-    borderRadius: 10,
-    right: 0,
-    top: 6,
+    borderRadius: 8,
+    right: 5,
+    top: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    transform: [{ rotate: '8deg' }],
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.25,
-    shadowRadius: 6,
-    elevation: 5,
+    transform: [{ rotate: '6deg' }],
   },
   bagLogo: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 24,
+    height: 24,
+    borderRadius: 12,
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
@@ -339,131 +289,105 @@ const styles = StyleSheet.create({
   bagLogoText: {
     color: '#d842a2',
     fontWeight: '900',
-    fontSize: 17,
+    fontSize: 14,
   },
   topCardsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 24,
+    marginBottom: 20,
   },
   topCard: {
-    backgroundColor: '#fff',
-    borderRadius: 24,
-    padding: 18,
+    backgroundColor: '#ffffff',
+    borderRadius: 20,
+    padding: 16,
     width: '48%',
-    height: 120,
+    height: 108,
     justifyContent: 'space-between',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.04,
-    shadowRadius: 6,
-    elevation: 2,
-    borderWidth: 1,
-    borderColor: '#f2f2f4',
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    elevation: 3,
   },
   cardIconBox: {
-    width: 38,
-    height: 44,
+    width: 36,
+    height: 36,
     backgroundColor: '#fbece8',
     borderRadius: 10,
-    padding: 8,
-    justifyContent: 'space-around',
-  },
-  receiptLine: {
-    height: 3,
-    backgroundColor: '#e65c3b',
-    borderRadius: 1.5,
-    width: '100%',
-  },
-  receiptLineShort: {
-    height: 3,
-    backgroundColor: '#e65c3b',
-    borderRadius: 1.5,
-    width: '65%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   rewardsIconBox: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
     backgroundColor: '#fcd3e1',
     justifyContent: 'center',
     alignItems: 'center',
   },
   rewardsIconText: {
-    color: '#d32f54',
+    color: '#c95188',
     fontWeight: '900',
-    fontSize: 20,
+    fontSize: 16,
   },
   topCardTitle: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: '700',
-    color: '#111',
+    color: '#212121',
   },
   topCardSubtitle: {
-    fontSize: 11.5,
-    color: '#888',
-    marginTop: 2,
-    fontWeight: '500',
+    fontSize: 10.5,
+    color: '#7e7e7f',
+    marginTop: 1,
+    fontWeight: '400',
   },
   sectionHeader: {
     fontSize: 12,
-    fontWeight: '700',
-    color: '#888',
-    marginBottom: 10,
-    marginLeft: 6,
-    letterSpacing: 0.8,
+    fontWeight: '600',
+    color: '#7e7e7f',
+    marginBottom: 8,
+    marginLeft: 4,
   },
   sectionContainer: {
-    backgroundColor: '#fff',
-    borderRadius: 24,
-    marginBottom: 24,
+    backgroundColor: '#ffffff',
+    borderRadius: 20,
+    marginBottom: 20,
     overflow: 'hidden',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.04,
-    shadowRadius: 6,
-    elevation: 2,
-    borderWidth: 1,
-    borderColor: '#f2f2f4',
+    shadowOpacity: 0.06,
+    shadowRadius: 8,
+    elevation: 3,
   },
   menuItem: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 16,
-    paddingHorizontal: 18,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
   },
   menuItemLeft: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   iconCircle: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    backgroundColor: '#f8f8f9',
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    backgroundColor: '#f7f7f8',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 14,
   },
-  glyphText: {
-    fontSize: 18,
-    color: '#111',
-  },
   menuItemText: {
-    fontSize: 15.5,
-    fontWeight: '600',
-    color: '#111',
-  },
-  chevron: {
-    fontSize: 22,
-    color: '#c7c7cc',
-    fontWeight: '300',
+    fontSize: 15,
+    fontWeight: '500',
+    color: '#212121',
   },
   menuDivider: {
     height: 1,
-    backgroundColor: '#f1f1f3',
-    marginLeft: 70,
+    backgroundColor: '#f0f0f2',
+    marginLeft: 64,
   },
   bottomSpacer: {
     height: 20,
@@ -471,23 +395,23 @@ const styles = StyleSheet.create({
   floatingNavWrapper: {
     position: 'absolute',
     bottom: 20,
-    left: 16,
-    right: 16,
+    left: 20,
+    right: 20,
     alignItems: 'center',
   },
   bottomNav: {
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: 8,
-    paddingHorizontal: 10,
-    borderRadius: 36,
+    paddingVertical: 6,
+    paddingHorizontal: 8,
+    borderRadius: 28,
     width: '100%',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 6 },
+    shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.1,
-    shadowRadius: 12,
+    shadowRadius: 10,
     elevation: 6,
     borderWidth: 1,
     borderColor: '#eee',
@@ -498,51 +422,35 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 4,
   },
-  navIconText: {
-    fontSize: 18,
-  },
   navLabel: {
-    fontSize: 10,
-    color: '#666',
-    marginTop: 3,
+    fontSize: 9.5,
+    color: '#717173',
+    marginTop: 2,
     fontWeight: '500',
   },
   activeNavItem: {
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1.3,
-    backgroundColor: '#f4e7ec',
+    backgroundColor: '#e1e1e3',
     paddingVertical: 8,
+    paddingHorizontal: 14,
     borderRadius: 24,
     flexDirection: 'row',
   },
-  activeNavIconText: {
-    fontSize: 16,
-    color: '#d32f54',
-    marginRight: 4,
-    fontWeight: 'bold',
-  },
   activeNavLabel: {
     fontSize: 11,
-    color: '#d32f54',
-    fontWeight: 'bold',
+    color: '#292929',
+    fontWeight: '600',
+    marginLeft: 4,
   },
   searchNavItem: {
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#eee',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.05,
-    shadowRadius: 4,
-    elevation: 2,
-  },
-  searchNavIconText: {
-    fontSize: 16,
+    borderColor: '#dadada',
   },
 });

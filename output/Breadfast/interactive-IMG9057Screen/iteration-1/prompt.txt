@@ -1,0 +1,435 @@
+You are an expert React Native engineer performing one visual refinement pass
+on the screen component IMG9057Screen. Make the render match the reference
+screenshot more closely.
+
+# Images
+1. The reference screenshot (the goal).
+2. The current render of the code below.
+3. A side-by-side comparison (reference left, render right) on the same
+   390 x 804 point canvas, with a y-axis ruler and grid lines
+   every 50 points, so you can measure vertical offsets and sizes.
+
+# Current scores
+SSIM: 0.7839 (structural layout similarity, 1.0 = identical)
+Content SSIM: 0.5757 (SSIM over regions containing UI elements only)
+CLIP: 0.8538 (perceptual similarity)
+
+# Component inventory of the reference
+Screen: A referral program screen showing unlock conditions with progress bars. Background #ffffff, light theme, status bar not shown.
+- c1 header bbox=[0, 20, 390, 51]; style: background #ffffff
+- c2 icon_button bbox=[15, 16, 45, 47]; icon: chevron-left; style: rounded circle, border; state: default; in c1
+- c3 title bbox=[135, 32, 118, 15]; text: Refer and earn; style: font-weight bold, color #242424; in c1
+- c4 illustration bbox=[0, 71, 390, 167]; icon: refer and earn illustration; style: background #f5d9c4
+- c5 title bbox=[70, 282, 250, 18]; text: Unlock your referral program; style: font-weight bold, color #212121
+- c6 text bbox=[19, 333, 351, 16]; text: Get free credit in your Breadfast wallet when you...; style: color #3e3e3e
+- c7 card bbox=[15, 372, 173, 182]; style: background #ffffff, border radius, border #818481
+- c8 icon bbox=[82, 388, 40, 41]; icon: shopping cart; style: background #ebebeb, rounded circle; in c7
+- c9 text bbox=[71, 452, 62, 28]; text: Complete 5 orders; style: font-weight bold, color #323232; in c7
+- c10 progress_bar bbox=[32, 506, 139, 10]; style: background #ebebeb, fill #272727; state: 0% filled; in c7
+- c11 text bbox=[70, 533, 62, 9]; text: 5 orders left; style: color #919191; in c7
+- c12 card bbox=[202, 372, 173, 182]; style: background #ffffff, border radius, border #777a77
+- c13 icon bbox=[268, 388, 40, 41]; icon: receipt; style: background #ebebeb, rounded circle; in c12
+- c14 text bbox=[235, 452, 106, 28]; text: Spend EGP 1,000 in purchases; style: font-weight bold, color #363636; in c12
+- c15 progress_bar bbox=[219, 506, 139, 10]; style: background #ebebeb, fill #272727; state: 0% filled; in c12
+- c16 text bbox=[244, 533, 90, 11]; text: EGP 1,000.00 left; style: color #959595; in c12
+- c17 link bbox=[109, 740, 172, 14]; text: Terms and Conditions apply.; style: color #a36a9a
+
+# Measured layout on the shared canvas
+Target screenshot layout (measured):
+Canvas: 390x804 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (15, 28, 9, 29) #d9d9d9
+- (29, 29, 13, 21) #982f88
+- (50, 29, 10, 29) #d9d9d9
+- (136, 32, 117, 14) #242424
+- (0, 71, 390, 167) #f5d9c4
+- (70, 282, 250, 19) #212121
+- (19, 333, 351, 16) #3e3e3e
+- (15, 372, 173, 182) #818481
+- (202, 372, 173, 182) #777a77
+- (93, 400, 17, 17) #272727
+- (280, 401, 17, 15) #272727
+- (71, 452, 61, 14) #323232
+- (235, 452, 107, 14) #363636
+- (76, 469, 51, 11) #343434
+- (248, 469, 81, 14) #373737
+- (31, 506, 140, 9) #ebebeb
+- (219, 506, 139, 9) #ebebeb
+- (70, 533, 63, 9) #919191
+- (244, 533, 90, 11) #959595
+- (109, 740, 172, 14) #a36a9a
+
+Current render layout (measured on the same canvas):
+Canvas: 390x804 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (141, 30, 109, 13) #111111
+- (0, 68, 390, 196) #fcefe7
+- (50, 295, 291, 22) #111111
+- (40, 331, 310, 14) #6a6b64
+- (16, 382, 1, 165) #e2e2e6
+- (188, 382, 1, 165) #e2e2e6
+- (201, 382, 1, 165) #e2e2e6
+- (373, 382, 1, 165) #e2e2e6
+- (94, 401, 18, 18) #b2b3bc
+- (280, 401, 15, 18) #d6d2e3
+- (72, 447, 61, 14) #1c242a
+- (235, 447, 105, 14) #232225
+- (77, 466, 52, 11) #232b30
+- (248, 466, 79, 14) #342527
+- (33, 500, 139, 7) #e5e5ea
+- (218, 500, 139, 7) #e5e5ea
+- (70, 520, 66, 10) #96999c
+- (243, 520, 90, 11) #96959b
+- (112, 734, 166, 14) #96476c
+
+Regions with the largest visual mismatch (lowest SSIM):
+- y 737-804: SSIM 0.192
+- y 268-335: SSIM 0.2976
+- y 469-536: SSIM 0.3776
+- y 402-469: SSIM 0.4058
+
+# React Native Web implementation rules
+
+Code
+- Export the screen as `export default function IMG9057Screen() { ... }`.
+- Import only from 'react', 'react-native', and the local icon component:
+  `import Icon from '../generated-icon';`
+- Use React state (useState) so controls are interactive: switches toggle,
+  sliders move, tabs and segmented controls change selection, inputs accept text.
+- No navigation libraries, native-only APIs, external packages, or network calls.
+
+Canvas
+- The screen renders in a fixed 390 x 804 point canvas with the
+  same aspect ratio as the screenshot. All coordinates are in these points.
+- The root View uses `flex: 1` and the screenshot's background color.
+- Lay out content with flexbox. Use `position: 'absolute'` only for elements
+  that overlay other content: floating buttons, floating or fixed bottom bars,
+  badges, and elements pinned to the bottom of the screen.
+- Content that is cut off at the bottom of the screenshot must also be cut off
+  in the render; do not shrink content to make it fit.
+- If the screenshot shows the phone status bar (time, signal, battery),
+  reproduce it with a Text for the time and small Views for the indicators.
+
+Typography
+- fontSize is roughly 0.75 x the measured height of a single text line.
+- Match font weight (400 regular, 500 medium, 600 semibold, 700 bold), color,
+  alignment, and letter case exactly as shown. Copy all visible text verbatim.
+
+Images and icons
+- Never load remote or local image files (no `uri`, no `require`).
+- Photos and banners: a View with the region's dominant color (or two stacked
+  Views to approximate a gradient), the same size and corner radius, with any
+  text that is printed on the image reproduced as Text on top.
+- Small illustrations of objects (food, gifts, products): a single emoji with
+  a fontSize matching the illustration size.
+- Pictograms and UI icons: `<Icon name="..." size={..} color=".." />`.
+  Available names: search, chevron-left, chevron-right, chevron-up, chevron-down, arrow-left, arrow-right, arrow-up, arrow-down, menu, more-horizontal, more-vertical, close, plus, minus, check, home, heart, star, user, users, bell, cart, bag, settings, filter, sliders, share, download, upload, refresh, play, pause, skip-forward, skip-back, shuffle, repeat, volume, mic, camera, image, calendar, clock, location, globe, chat, mail, phone, send, lock, eye, edit, trash, grid, list, bookmark, gift, credit-card, wallet, tag, info, help, logout, scan, qr-code, printer, car, truck, diamond, briefcase, book, music, headphones, video, wifi, battery, signal, sun, moon, flag, thumbs-up, comment, link, circle.
+  Add `filled` for solid icons. Pick the closest name; never draw icons as letters.
+- Avatars: a circular View with the dominant color (and initials if shown).
+
+Controls (build these from Views so they match the screenshot exactly)
+- Button / icon button: TouchableOpacity with the exact background, border,
+  radius, padding, and label or icon.
+- Text input / search bar: View container with icon(s) + TextInput with
+  `placeholder` and `placeholderTextColor` matching the screenshot.
+- Switch / toggle: a rounded track View with a circular thumb View on the
+  left (off) or right (on), using the screenshot's colors.
+- Slider / seek bar / progress bar: a thin track View, a filled View whose width
+  is the shown fraction, and (for sliders) a circular thumb at that position.
+- Checkbox / radio: bordered square / circle View, filled with a check icon or
+  inner dot when selected.
+- Segmented control / chips / tags: a row of rounded Views; the selected item
+  has the distinct background shown in the screenshot.
+- Tab bar: a row of icon + label items. If it floats (rounded, inset from the
+  edges, shadow), make it an absolutely positioned rounded View at the same
+  position; otherwise a full-width bar at the bottom with a top border.
+- Carousel: a horizontal ScrollView; if neighbouring cards peek in at the
+  screen edges, reproduce the peeking cards at those positions.
+- Badges / counters: small absolutely positioned rounded Views.
+- Lists and grids: map over a data array; keep row heights, gaps, and column
+  widths equal to the measured values.
+
+# How to refine
+1. Compare the reference and the render component by component, using the
+   inventory as a checklist.
+2. Fix the most important differences first, in this order:
+   a. missing, extra, or wrong-type components (e.g. a flat tab bar where the
+      reference has a floating one, a plain View where it has a slider);
+   b. position and size errors: heights, widths, margins, gaps, alignment,
+      anything shifted vertically (check the ruler);
+   c. colors, corner radii, borders, shadows;
+   d. typography: font size, weight, color, text content.
+3. Leave components that already match unchanged. Do not rewrite the screen
+   from scratch; edit the specific styles and elements that cause differences.
+
+# Output format
+First a section starting with `DIAGNOSIS:` listing at most 6 concrete
+differences, most impactful first, each with the exact fix (property, old
+value, new value). Then the complete updated source code in a single ```jsx
+code block.
+
+# Current source
+```jsx
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function IMG9057Screen() {
+  return (
+    <View style={styles.container}>
+      {/* Header */}
+      <View style={styles.header}>
+        <View style={styles.backButton}>
+          <Text style={styles.backArrow}>‹</Text>
+        </View>
+        <Text style={styles.headerTitle}>Refer and earn</Text>
+      </View>
+
+      {/* Illustration Banner */}
+      <View style={styles.banner}>
+        <View style={styles.illustrationPlaceholder}>
+          <View style={styles.circleAvatar1} />
+          <View style={styles.circleAvatar2} />
+          <View style={styles.circleAvatar3} />
+          <View style={styles.mainFigure} />
+        </View>
+      </View>
+
+      {/* Content Section */}
+      <View style={styles.content}>
+        <Text style={styles.title}>Unlock your referral program</Text>
+        <Text style={styles.subtitle}>
+          Get free credit in your Breadfast wallet when you...
+        </Text>
+
+        {/* Cards Row */}
+        <View style={styles.cardsRow}>
+          {/* Card 1 */}
+          <View style={styles.card}>
+            <View style={styles.iconContainer}>
+              <Text style={styles.iconSymbol}>🛒</Text>
+            </View>
+            <Text style={styles.cardTitle}>Complete{'\n'}5 orders</Text>
+            
+            <View style={styles.progressContainer}>
+              <View style={styles.progressBarBackground}>
+                <View style={[styles.progressBarFill, { width: '8%' }]} />
+              </View>
+            </View>
+            <Text style={styles.cardFooter}>5 orders left</Text>
+          </View>
+
+          {/* Card 2 */}
+          <View style={styles.card}>
+            <View style={styles.iconContainer}>
+              <Text style={styles.iconSymbol}>📄</Text>
+            </View>
+            <Text style={styles.cardTitle}>Spend EGP 1,000{'\n'}in purchases</Text>
+            
+            <View style={styles.progressContainer}>
+              <View style={styles.progressBarBackground}>
+                <View style={[styles.progressBarFill, { width: '8%' }]} />
+              </View>
+            </View>
+            <Text style={styles.cardFooter}>EGP 1,000.00 left</Text>
+          </View>
+        </View>
+      </View>
+
+      {/* Footer / Terms */}
+      <View style={styles.footerContainer}>
+        <Text style={styles.termsText}>
+          <Text style={styles.termsLink}>Terms and Conditions</Text> apply.
+        </Text>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    paddingBottom: 12,
+    backgroundColor: '#FFFFFF',
+  },
+  backButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#E5E5EA',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  backArrow: {
+    fontSize: 26,
+    color: '#1C1C1E',
+    marginTop: -2,
+    fontWeight: '300',
+  },
+  headerTitle: {
+    flex: 1,
+    textAlign: 'center',
+    fontSize: 17,
+    fontWeight: '600',
+    color: '#111111',
+    marginRight: 40,
+    letterSpacing: -0.2,
+  },
+  banner: {
+    height: 196,
+    backgroundColor: '#FCEFE7',
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'hidden',
+  },
+  illustrationPlaceholder: {
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+  },
+  circleAvatar1: {
+    position: 'absolute',
+    top: 18,
+    left: '38%',
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    backgroundColor: '#D18BC0',
+    borderWidth: 2,
+    borderColor: '#FFFFFF',
+  },
+  circleAvatar2: {
+    position: 'absolute',
+    top: 18,
+    right: '32%',
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    backgroundColor: '#A3D2C2',
+    borderWidth: 2,
+    borderColor: '#FFFFFF',
+  },
+  circleAvatar3: {
+    position: 'absolute',
+    bottom: 12,
+    left: '28%',
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: '#8698C4',
+    borderWidth: 2,
+    borderColor: '#FFFFFF',
+  },
+  mainFigure: {
+    position: 'absolute',
+    bottom: 0,
+    right: '27%',
+    width: 84,
+    height: 100,
+    backgroundColor: '#8E3870',
+    borderTopLeftRadius: 42,
+    borderTopRightRadius: 42,
+  },
+  content: {
+    paddingHorizontal: 16,
+    paddingTop: 24,
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: '#111111',
+    textAlign: 'center',
+    marginBottom: 10,
+    letterSpacing: -0.4,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#555555',
+    textAlign: 'center',
+    marginBottom: 24,
+    paddingHorizontal: 10,
+  },
+  cardsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    gap: 12,
+  },
+  card: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#E2E2E6',
+    padding: 16,
+    alignItems: 'center',
+    height: 190,
+  },
+  iconContainer: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '#F5F5F7',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  iconSymbol: {
+    fontSize: 18,
+  },
+  cardTitle: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#1C1C1E',
+    textAlign: 'center',
+    lineHeight: 19,
+    marginBottom: 20,
+  },
+  progressContainer: {
+    width: '100%',
+    marginBottom: 10,
+  },
+  progressBarBackground: {
+    height: 6,
+    backgroundColor: '#E5E5EA',
+    borderRadius: 3,
+    overflow: 'hidden',
+    width: '100%',
+  },
+  progressBarFill: {
+    height: '100%',
+    backgroundColor: '#00A86B',
+    borderRadius: 3,
+  },
+  cardFooter: {
+    fontSize: 12,
+    color: '#8E8E93',
+    textAlign: 'center',
+    fontWeight: '500',
+  },
+  footerContainer: {
+    position: 'absolute',
+    bottom: 56,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  termsText: {
+    fontSize: 13,
+    color: '#7C7C82',
+  },
+  termsLink: {
+    color: '#8E2860',
+    fontWeight: '600',
+  },
+});
+
+```

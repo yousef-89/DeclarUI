@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header icons: current render places chat/gift icons with wrong border/padding/radius compared to reference. Fix: update `iconButton` dimensions to `width: 38`, `height: 38`, `borderRadius: 19`, and border color `#f0f0f0`.
+2. Banner card width & styling: banner card width is currently 344 inside a small container, but reference banner looks wider/fuller and properly aligned. Fix: adjust `bannerCard` width to `358` and align banner contents.
+3. Category cards height and styling: current cards have `height: 56`, but grid alignment and emoji representations don't match the reference icons (e.g. paper bags with items for Supermarket, burger for Restaurants, etc.). Fix: update emoji sizes to `fontSize: 24` or `26` and place them correctly on the right side of cards.
+4. "New" badge positioning: badges on cards (e.g. Restaurants, Shops) are placed incorrectly using `top: 6, right: 8`, whereas in the reference they overflow the top right edge of the card container. Fix: set `top: -6, right: 6` with appropriate absolute positioning.
+5. Floating search button: position is slightly off vertically/horizontally. Fix: update `floatingSearchButton` to `bottom: 95`, `right: 16`, `width: 54`, `height: 54`, `borderRadius: 27`.
+6. Tab bar & active indicator: current active tab style and layout differs slightly from reference. Fix: match floating tab bar padding and background color `#ffffff` with border/shadow exactly like reference.

@@ -1,0 +1,27 @@
+You are evaluating whether a user's requested change was applied to a mobile
+app screen.
+
+User request: "$instruction"
+
+Image 1 is the screen BEFORE the edit. Image 2 is the screen AFTER the edit.
+Both are on a $canvas_width x $canvas_height point canvas (x to the right,
+y downward).
+
+Assess:
+1. compliance: how completely and correctly image 2 implements the request,
+   from 0 (not applied at all, or applied to the wrong element) to 10 (fully
+   and correctly applied). Judge only the requested change itself.
+2. edited_region: the smallest box [x, y, width, height] in canvas points that
+   contains every element the request legitimately affects. For requests that
+   affect the whole screen (e.g. the background color or a global font
+   change), return the full canvas.
+3. unintended_changes: differences between image 1 and image 2 that the
+   request did not ask for, outside or inside the edited region.
+
+Return JSON only:
+{
+  "compliance": 0-10,
+  "evidence": "one sentence describing what changed",
+  "edited_region": [x, y, width, height],
+  "unintended_changes": ["..."]
+}

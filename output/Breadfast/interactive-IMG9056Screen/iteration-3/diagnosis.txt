@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header top spacing: container `paddingTop` is 32, reference is around 32-38. Let's adjust `headerTitle` margin top to exactly match y=32.
+2. Menu button border-radius: currently 24 (full circle for 48x48), but reference shows circular button (`borderRadius: 24`). Let's ensure background and border colors match precisely `#dadada`.
+3. Search bar border color: currently `#dadada`, reference looks like `#dadada` or slightly lighter. Let's fine-tune border color and icon colors.
+4. Footer container position: currently `bottom: 28`, reference shows `bottom: 23` or similar. Let's adjust `bottom` to 23.
+5. Menu button icon size/color: currently size 22, color `#717171`. Reference has a dark gray icon inside.

@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header Location Text Color & Weight: The location text color in reference is `#973d88` with exact bold weight, whereas the render used `#5C0632`. Fix: change `locationText` and `chevron` color to `#973d88`.
+2. Header Icons Layout & Color: The header icons are on the right with a specific size and purple icon color (`#95247b` / `#963486`). Fix: Use `<Icon>` component for chat and gift with proper size and color, matching reference layout.
+3. Floating Tab Bar & Search Button Layout: The reference has a floating tab bar (`c24`) with rounded corners floating above the bottom, and a circular floating search button (`c29`) positioned above the bottom right of the tab bar. Fix: Update tab bar and floating search button styling to use absolute positioning and match reference coordinates/shadows.
+4. Category Cards Height & Layout: The reference category cards are 56 height with horizontal padding and specific icon positions. Fix: Adjust card height to `56`, reduce padding, align text and icons properly.
+5. Banner Carousel Size & Styling: The promotional banner in reference has specific proportions (width ~344, height ~193) and a small "NEW" badge at top-left. Fix: Adjust `bannerCard` width to `344` and height to `193`, fix badge positioning and font styling.

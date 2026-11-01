@@ -1,0 +1,47 @@
+You are an expert React Native engineer performing one visual refinement pass
+on the screen component $component. Make the render match the reference
+screenshot more closely.
+
+# Images
+1. The reference screenshot (the goal).
+2. The current render of the code below.
+3. A side-by-side comparison (reference left, render right) on the same
+   $canvas_width x $canvas_height point canvas, with a y-axis ruler and grid lines
+   every 50 points, so you can measure vertical offsets and sizes.
+
+# Current scores
+SSIM: $ssim (structural layout similarity, 1.0 = identical)
+Content SSIM: $content_ssim (SSIM over regions containing UI elements only)
+CLIP: $clip (perceptual similarity)
+$regression_note
+# Component inventory of the reference
+$inventory
+
+# Measured layout on the shared canvas
+$layout_feedback
+
+$rules
+
+# How to refine
+1. Compare the reference and the render component by component, using the
+   inventory as a checklist.
+2. Fix the most important differences first, in this order:
+   a. missing, extra, or wrong-type components (e.g. a flat tab bar where the
+      reference has a floating one, a plain View where it has a slider);
+   b. position and size errors: heights, widths, margins, gaps, alignment,
+      anything shifted vertically (check the ruler);
+   c. colors, corner radii, borders, shadows;
+   d. typography: font size, weight, color, text content.
+3. Leave components that already match unchanged. Do not rewrite the screen
+   from scratch; edit the specific styles and elements that cause differences.
+
+# Output format
+First a section starting with `DIAGNOSIS:` listing at most 6 concrete
+differences, most impactful first, each with the exact fix (property, old
+value, new value). Then the complete updated source code in a single ```jsx
+code block.
+
+# Current source
+```jsx
+$code
+```

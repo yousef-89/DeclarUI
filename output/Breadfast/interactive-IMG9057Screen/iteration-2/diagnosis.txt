@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header icon button position: `backButton` top padding/positioning is off compared to reference (y=16 vs y=28), needs proper vertical alignment matching y=16 with exact 45x47 outer bounding.
+2. Card height and top offset: `card` component has height 182 and starts at y=372 in reference, but currently starts at y=327 with height 183.
+3. Card icon and progress bar styles: Second card uses incorrect `circle` icon instead of `receipt` icon, and progress bar fill color needs to be correctly positioned at 0% with exact height/width.
+4. Header back button border color: `borderColor` is `#d9d9d9`, reference shows crisp rounded circle with clean border.
+5. Illustration banner graphics: The placeholder representation of the characters needs precise positioning/scaling to match the top banner.
+6. Subtitle and title vertical spacings: `content` padding top and title/subtitle margins need slight adjustments to match y=282 and y=333 accurately.

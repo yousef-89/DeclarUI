@@ -1,0 +1,583 @@
+You are an expert React Native engineer performing one visual refinement pass
+on the screen component IMG90784b5ec4e9Screen. Make the render match the reference
+screenshot more closely.
+
+# Images
+1. The reference screenshot (the goal).
+2. The current render of the code below.
+3. A side-by-side comparison (reference left, render right) on the same
+   390 x 742 point canvas, with a y-axis ruler and grid lines
+   every 50 points, so you can measure vertical offsets and sizes.
+
+# Current scores
+SSIM: 0.6184 (structural layout similarity, 1.0 = identical)
+Content SSIM: 0.3113 (SSIM over regions containing UI elements only)
+CLIP: 0.8989 (perceptual similarity)
+
+# Component inventory of the reference
+Screen: Alarm clock app home screen displaying a list of set alarms, a PRO promotion, a new mission banner, and a bottom navigation bar. Background #18171c, dark theme, status bar not shown.
+- c1 chip bbox=[16, 17, 110, 32]; text: PRO Start; icon: lightning bolt in circle; style: pill badge, gradient border, dark background; state: default
+- c2 icon_button bbox=[356, 31, 16, 6]; icon: three dots menu; style: transparent background; state: default
+- c3 card bbox=[12, 73, 366, 79]; text: Overslept AGAIN? Try our new mission; icon: NEW star badge and right arrow; style: rounded card, dark background; state: default
+- c4 title bbox=[21, 179, 140, 19]; text: Ring in 26min >; icon: right arrow; style: bold white text; state: default
+- c5 card bbox=[12, 217, 366, 108]; style: rounded card, dark background; state: default
+- c6 text bbox=[32, 238, 54, 10]; text: One-time; style: small gray text; state: default; in c5
+- c7 title bbox=[33, 266, 117, 36]; text: 8:45 am; style: large gray text; state: default; in c5
+- c8 switch bbox=[311, 234, 51, 32]; style: toggle switch; state: off; in c5
+- c9 icon_button bbox=[350, 295, 4, 10]; icon: three vertical dots; style: transparent; state: default; in c5
+- c10 card bbox=[12, 337, 366, 108]; style: rounded card, dark background; state: default
+- c11 text bbox=[32, 357, 54, 10]; text: One-time; style: small gray text; state: default; in c10
+- c12 title bbox=[34, 390, 118, 30]; text: 9:00 am; style: large gray text; state: default; in c10
+- c13 switch bbox=[311, 353, 51, 32]; style: toggle switch; state: off; in c10
+- c14 icon_button bbox=[350, 414, 4, 11]; icon: three vertical dots; style: transparent; state: default; in c10
+- c15 card bbox=[12, 456, 366, 108]; style: rounded card, dark background; state: default
+- c16 text bbox=[32, 476, 54, 10]; text: One-time; style: small white text; state: default; in c15
+- c17 title bbox=[33, 509, 119, 32]; text: 9:00 am; style: large white text; state: default; in c15
+- c18 switch bbox=[310, 472, 53, 32]; style: toggle switch cyan/white; state: on; in c15
+- c19 icon_button bbox=[350, 533, 4, 11]; icon: three vertical dots; style: transparent; state: default; in c15
+- c20 card bbox=[12, 574, 366, 105]; style: rounded card, dark background; state: default
+- c21 text bbox=[32, 595, 54, 10]; text: One-time; style: small white text; state: default; in c20
+- c22 title bbox=[33, 628, 111, 32]; text: 9:15 am; style: large white text; state: default; in c20
+- c23 switch bbox=[310, 591, 53, 32]; style: toggle switch cyan/white; state: on; in c20
+- c24 icon_button bbox=[350, 656, 4, 7]; icon: three vertical dots; style: transparent; state: default; in c20
+- c25 floating_action_button bbox=[318, 598, 57, 59]; icon: plus sign; style: pink/red circular button with white plus; state: default
+- c26 tab_bar bbox=[20, 672, 350, 62]; style: bottom navigation bar, dark rounded container; state: default
+- c27 tab_item bbox=[23, 680, 86, 50]; text: Alarm; icon: alarm clock; style: selected tab with pill background; state: selected; in c26
+- c28 tab_item bbox=[108, 680, 47, 50]; text: Sleep; icon: moon and stars; style: unselected tab; state: default; in c26
+- c29 tab_item bbox=[165, 680, 60, 50]; text: Morning; icon: sun; style: unselected tab; state: default; in c26
+- c30 tab_item bbox=[234, 680, 51, 50]; text: Report; icon: chart document; style: unselected tab; state: default; in c26
+- c31 tab_item bbox=[296, 680, 61, 50]; text: Setting; icon: gear; style: unselected tab; state: default; in c26
+
+# Measured layout on the shared canvas
+Target screenshot layout (measured):
+Canvas: 390x742 points, background #18171c.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (16, 17, 110, 36) #d39eab
+- (356, 31, 16, 6) #fafafa
+- (31, 92, 41, 40) #e94443
+- (88, 95, 118, 14) #f0f0f1
+- (351, 106, 8, 12) #c3c2c7
+- (88, 115, 158, 17) #fafafa
+- (21, 179, 122, 19) #fafafa
+- (153, 182, 7, 12) #cccbd0
+- (311, 234, 51, 32) #ffffff
+- (32, 238, 54, 10) #69686e
+- (33, 271, 117, 31) #525254
+- (350, 295, 4, 11) #d2d1d5
+- (311, 353, 51, 32) #ffffff
+- (32, 357, 54, 10) #69686f
+- (34, 390, 118, 31) #525254
+- (350, 414, 4, 11) #d2d1d5
+- (310, 472, 53, 32) #ffffff
+- (32, 476, 54, 10) #e5e5e6
+- (33, 509, 119, 32) #fafafa
+- (350, 533, 4, 11) #d2d1d6
+- (310, 591, 65, 72) #e84653
+- (32, 595, 54, 10) #e4e4e5
+- (33, 628, 111, 32) #fafafa
+- (20, 672, 350, 62) #4a494e
+- (56, 685, 21, 21) #f0f0f0
+- (51, 712, 31, 9) #ececec
+
+Current render layout (measured on the same canvas):
+Canvas: 390x742 points, background #222126.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (16, 20, 104, 32) #fafafa
+- (30, 30, 77, 12) #fdfdfd
+- (354, 34, 14, 4) #ffffff
+- (87, 92, 107, 13) #e4e4e5
+- (32, 95, 44, 26) #e94443
+- (344, 101, 8, 14) #f1f1f1
+- (87, 112, 151, 16) #ffffff
+- (21, 174, 146, 20) #ffffff
+- (36, 229, 52, 10) #f7f7f7
+- (303, 229, 51, 30) #ffffff
+- (38, 257, 81, 26) #4f4f52
+- (343, 274, 4, 11) #69686e
+- (36, 345, 52, 10) #f7f7f7
+- (303, 345, 51, 30) #ffffff
+- (38, 373, 80, 26) #505052
+- (343, 390, 4, 11) #69686e
+- (303, 460, 51, 32) #ffffff
+- (36, 461, 52, 10) #f7f7f7
+- (37, 488, 82, 27) #fafafa
+- (343, 506, 4, 11) #69686e
+- (303, 576, 67, 84) #e84653
+- (36, 577, 52, 10) #f7f7f7
+- (37, 604, 76, 27) #f4f3f4
+- (182, 679, 18, 19) #84838a
+- (320, 679, 18, 19) #84838a
+- (51, 680, 17, 17) #f9f9fa
+- (116, 681, 15, 15) #8b8a91
+- (254, 681, 15, 15) #89888f
+- (45, 704, 29, 8) #fafafa
+- (111, 704, 24, 10) #69686f
+- (172, 704, 37, 10) #727177
+- (247, 704, 29, 10) #6f6f75
+- (313, 704, 31, 10) #707076
+
+Regions with the largest visual mismatch (lowest SSIM):
+- y 0-61: SSIM 0.2125
+- y 432-494: SSIM 0.2269
+- y 61-123: SSIM 0.2581
+- y 494-556: SSIM 0.2582
+
+# React Native Web implementation rules
+
+Code
+- Export the screen as `export default function IMG90784b5ec4e9Screen() { ... }`.
+- Import only from 'react', 'react-native', and the local icon component:
+  `import Icon from '../generated-icon';`
+- Use React state (useState) so controls are interactive: switches toggle,
+  sliders move, tabs and segmented controls change selection, inputs accept text.
+- No navigation libraries, native-only APIs, external packages, or network calls.
+
+Canvas
+- The screen renders in a fixed 390 x 742 point canvas with the
+  same aspect ratio as the screenshot. All coordinates are in these points.
+- The root View uses `flex: 1` and the screenshot's background color.
+- Lay out content with flexbox. Use `position: 'absolute'` only for elements
+  that overlay other content: floating buttons, floating or fixed bottom bars,
+  badges, and elements pinned to the bottom of the screen.
+- Content that is cut off at the bottom of the screenshot must also be cut off
+  in the render; do not shrink content to make it fit.
+- If the screenshot shows the phone status bar (time, signal, battery),
+  reproduce it with a Text for the time and small Views for the indicators.
+
+Typography
+- fontSize is roughly 0.75 x the measured height of a single text line.
+- Match font weight (400 regular, 500 medium, 600 semibold, 700 bold), color,
+  alignment, and letter case exactly as shown. Copy all visible text verbatim.
+
+Images and icons
+- Never load remote or local image files (no `uri`, no `require`).
+- Photos and banners: a View with the region's dominant color (or two stacked
+  Views to approximate a gradient), the same size and corner radius, with any
+  text that is printed on the image reproduced as Text on top.
+- Small illustrations of objects (food, gifts, products): a single emoji with
+  a fontSize matching the illustration size.
+- Pictograms and UI icons: `<Icon name="..." size={..} color=".." />`.
+  Available names: search, chevron-left, chevron-right, chevron-up, chevron-down, arrow-left, arrow-right, arrow-up, arrow-down, menu, more-horizontal, more-vertical, close, plus, minus, check, home, heart, star, user, users, bell, cart, bag, settings, filter, sliders, share, download, upload, refresh, play, pause, skip-forward, skip-back, shuffle, repeat, volume, mic, camera, image, calendar, clock, location, globe, chat, mail, phone, send, lock, eye, edit, trash, grid, list, bookmark, gift, credit-card, wallet, tag, info, help, logout, scan, qr-code, printer, car, truck, diamond, briefcase, book, music, headphones, video, wifi, battery, signal, sun, moon, flag, thumbs-up, comment, link, circle.
+  Add `filled` for solid icons. Pick the closest name; never draw icons as letters.
+- Avatars: a circular View with the dominant color (and initials if shown).
+
+Controls (build these from Views so they match the screenshot exactly)
+- Button / icon button: TouchableOpacity with the exact background, border,
+  radius, padding, and label or icon.
+- Text input / search bar: View container with icon(s) + TextInput with
+  `placeholder` and `placeholderTextColor` matching the screenshot.
+- Switch / toggle: a rounded track View with a circular thumb View on the
+  left (off) or right (on), using the screenshot's colors.
+- Slider / seek bar / progress bar: a thin track View, a filled View whose width
+  is the shown fraction, and (for sliders) a circular thumb at that position.
+- Checkbox / radio: bordered square / circle View, filled with a check icon or
+  inner dot when selected.
+- Segmented control / chips / tags: a row of rounded Views; the selected item
+  has the distinct background shown in the screenshot.
+- Tab bar: a row of icon + label items. If it floats (rounded, inset from the
+  edges, shadow), make it an absolutely positioned rounded View at the same
+  position; otherwise a full-width bar at the bottom with a top border.
+- Carousel: a horizontal ScrollView; if neighbouring cards peek in at the
+  screen edges, reproduce the peeking cards at those positions.
+- Badges / counters: small absolutely positioned rounded Views.
+- Lists and grids: map over a data array; keep row heights, gaps, and column
+  widths equal to the measured values.
+
+# How to refine
+1. Compare the reference and the render component by component, using the
+   inventory as a checklist.
+2. Fix the most important differences first, in this order:
+   a. missing, extra, or wrong-type components (e.g. a flat tab bar where the
+      reference has a floating one, a plain View where it has a slider);
+   b. position and size errors: heights, widths, margins, gaps, alignment,
+      anything shifted vertically (check the ruler);
+   c. colors, corner radii, borders, shadows;
+   d. typography: font size, weight, color, text content.
+3. Leave components that already match unchanged. Do not rewrite the screen
+   from scratch; edit the specific styles and elements that cause differences.
+
+# Output format
+First a section starting with `DIAGNOSIS:` listing at most 6 concrete
+differences, most impactful first, each with the exact fix (property, old
+value, new value). Then the complete updated source code in a single ```jsx
+code block.
+
+# Current source
+```jsx
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import Icon from '../generated-icon';
+
+export default function IMG90784b5ec4e9Screen() {
+  const [alarms, setAlarms] = useState([
+    { id: 1, type: 'One-time', time: '8:45', ampm: 'am', active: false },
+    { id: 2, type: 'One-time', time: '9:00', ampm: 'am', active: false },
+    { id: 3, type: 'One-time', time: '9:00', ampm: 'am', active: true },
+    { id: 4, type: 'One-time', time: '9:15', ampm: 'am', active: true },
+  ]);
+
+  const [activeTab, setActiveTab] = useState('Alarm');
+
+  const toggleAlarm = (id) => {
+    setAlarms(alarms.map(a => a.id === id ? { ...a, active: !a.active } : a));
+  };
+
+  return (
+    <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        {/* Top Bar */}
+        <View style={styles.topBar}>
+          <View style={styles.proButton}>
+            <Icon name="zap" size={14} color="#f06292" style={styles.proIcon} />
+            <Text style={styles.proText}>PRO Start</Text>
+          </View>
+          <TouchableOpacity style={styles.dotsButton}>
+            <Icon name="more-horizontal" size={18} color="#ffffff" />
+          </TouchableOpacity>
+        </View>
+
+        {/* Banner */}
+        <View style={styles.banner}>
+          <View style={styles.newBadge}>
+            <Text style={styles.newBadgeText}>NEW</Text>
+          </View>
+          <View style={styles.bannerTextContainer}>
+            <Text style={styles.bannerTitle}>Overslept AGAIN?</Text>
+            <Text style={styles.bannerSubtitle}>Try our new mission</Text>
+          </View>
+          <Icon name="chevron-right" size={20} color="#ffffff" />
+        </View>
+
+        {/* Subheader */}
+        <View style={styles.subHeader}>
+          <Text style={styles.subHeaderText}>Ring in 26min</Text>
+          <Icon name="chevron-right" size={20} color="#ffffff" style={styles.subHeaderArrowIcon} />
+        </View>
+
+        {/* Alarm List */}
+        <View style={styles.alarmList}>
+          {alarms.map((alarm) => (
+            <View key={alarm.id} style={styles.alarmCard}>
+              <View style={styles.alarmLeftContent}>
+                <Text style={[styles.alarmType, alarm.active && styles.activeAlarmType]}>
+                  {alarm.type}
+                </Text>
+                <View style={styles.timeRow}>
+                  <Text style={[styles.alarmTime, !alarm.active && styles.inactiveText]}>
+                    {alarm.time}
+                  </Text>
+                  <Text style={[styles.alarmAmPm, !alarm.active && styles.inactiveText]}>
+                    {alarm.ampm}
+                  </Text>
+                </View>
+              </View>
+              <View style={styles.alarmRight}>
+                <TouchableOpacity 
+                  activeOpacity={0.8} 
+                  onPress={() => toggleAlarm(alarm.id)}
+                  style={[styles.toggle, alarm.active ? styles.toggleOn : styles.toggleOff]}
+                >
+                  <View style={[styles.toggleThumb, alarm.active ? styles.toggleThumbOn : styles.toggleThumbOff]} />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.dotsVerticalContainer}>
+                  <Icon name="more-vertical" size={14} color="#69686e" />
+                </TouchableOpacity>
+              </View>
+            </View>
+          ))}
+        </View>
+        <View style={{ height: 100 }} />
+      </ScrollView>
+
+      {/* Floating Action Button */}
+      <TouchableOpacity style={styles.fab} activeOpacity={0.9}>
+        <Icon name="plus" size={26} color="#ffffff" />
+      </TouchableOpacity>
+
+      {/* Bottom Navigation */}
+      <View style={styles.bottomNavContainer}>
+        <View style={styles.bottomNav}>
+          <TouchableOpacity 
+            style={[styles.tabItem, activeTab === 'Alarm' && styles.tabItemActive]}
+            onPress={() => setActiveTab('Alarm')}
+          >
+            <Icon name="clock" size={20} color={activeTab === 'Alarm' ? '#ffffff' : '#8b8a91'} />
+            <Text style={[styles.tabText, activeTab === 'Alarm' && styles.tabTextActive]}>Alarm</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.tabItem, activeTab === 'Sleep' && styles.tabItemActive]}
+            onPress={() => setActiveTab('Sleep')}
+          >
+            <Icon name="moon" size={20} color={activeTab === 'Sleep' ? '#ffffff' : '#8b8a91'} />
+            <Text style={[styles.tabText, activeTab === 'Sleep' && styles.tabTextActive]}>Sleep</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.tabItem, activeTab === 'Morning' && styles.tabItemActive]}
+            onPress={() => setActiveTab('Morning')}
+          >
+            <Icon name="sun" size={20} color={activeTab === 'Morning' ? '#ffffff' : '#8b8a91'} />
+            <Text style={[styles.tabText, activeTab === 'Morning' && styles.tabTextActive]}>Morning</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.tabItem, activeTab === 'Report' && styles.tabItemActive]}
+            onPress={() => setActiveTab('Report')}
+          >
+            <Icon name="file-text" size={20} color={activeTab === 'Report' ? '#ffffff' : '#8b8a91'} />
+            <Text style={[styles.tabText, activeTab === 'Report' && styles.tabTextActive]}>Report</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.tabItem, activeTab === 'Setting' && styles.tabItemActive]}
+            onPress={() => setActiveTab('Setting')}
+          >
+            <Icon name="settings" size={20} color={activeTab === 'Setting' ? '#ffffff' : '#8b8a91'} />
+            <Text style={[styles.tabText, activeTab === 'Setting' && styles.tabTextActive]}>Setting</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    width: 390,
+    height: 742,
+    backgroundColor: '#18171c',
+    flex: 1,
+    position: 'relative',
+  },
+  scrollContent: {
+    paddingTop: 10,
+  },
+  topBar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    height: 44,
+    marginTop: 4,
+  },
+  proButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#241f26',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#e94443',
+  },
+  proIcon: {
+    marginRight: 4,
+  },
+  proText: {
+    color: '#ffffff',
+    fontWeight: 'bold',
+    fontSize: 13,
+  },
+  dotsButton: {
+    padding: 4,
+  },
+  banner: {
+    backgroundColor: '#222126',
+    marginHorizontal: 16,
+    marginTop: 14,
+    borderRadius: 18,
+    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  newBadge: {
+    backgroundColor: '#e94443',
+    paddingHorizontal: 8,
+    paddingVertical: 5,
+    borderRadius: 8,
+    marginRight: 12,
+  },
+  newBadgeText: {
+    color: '#ffffff',
+    fontWeight: 'bold',
+    fontSize: 11,
+    letterSpacing: 0.5,
+  },
+  bannerTextContainer: {
+    flex: 1,
+  },
+  bannerTitle: {
+    color: '#ffffff',
+    fontSize: 13,
+    fontWeight: '600',
+    opacity: 0.9,
+  },
+  bannerSubtitle: {
+    color: '#ffffff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginTop: 1,
+  },
+  subHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    marginTop: 24,
+    marginBottom: 12,
+  },
+  subHeaderText: {
+    color: '#ffffff',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  subHeaderArrowIcon: {
+    marginLeft: 2,
+    marginTop: 2,
+  },
+  alarmList: {
+    paddingHorizontal: 16,
+  },
+  alarmCard: {
+    backgroundColor: '#222126',
+    borderRadius: 22,
+    paddingHorizontal: 20,
+    paddingVertical: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
+    height: 104,
+  },
+  alarmLeftContent: {
+    justifyContent: 'center',
+  },
+  alarmType: {
+    color: '#ffffff',
+    fontSize: 12,
+    marginBottom: 2,
+    fontWeight: '500',
+  },
+  activeAlarmType: {
+    color: '#ffffff',
+  },
+  timeRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
+  alarmTime: {
+    color: '#ffffff',
+    fontSize: 36,
+    fontWeight: '300',
+    letterSpacing: -1,
+  },
+  alarmAmPm: {
+    color: '#ffffff',
+    fontSize: 15,
+    marginLeft: 3,
+    fontWeight: '400',
+  },
+  inactiveText: {
+    color: '#525254',
+  },
+  alarmRight: {
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    height: '100%',
+    paddingVertical: 2,
+  },
+  toggle: {
+    width: 51,
+    height: 31,
+    borderRadius: 16,
+    padding: 2,
+    justifyContent: 'center',
+  },
+  toggleOff: {
+    backgroundColor: '#3b3a40',
+  },
+  toggleOn: {
+    backgroundColor: '#43b3ae',
+    alignItems: 'flex-end',
+  },
+  toggleThumb: {
+    width: 27,
+    height: 27,
+    backgroundColor: '#ffffff',
+    borderRadius: 14,
+  },
+  toggleThumbOff: {
+    transform: [{ translateX: 0 }],
+  },
+  toggleThumbOn: {
+    transform: [{ translateX: 0 }],
+  },
+  dotsVerticalContainer: {
+    padding: 2,
+  },
+  fab: {
+    position: 'absolute',
+    right: 20,
+    bottom: 84,
+    width: 56,
+    height: 56,
+    backgroundColor: '#e84653',
+    borderRadius: 28,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.35,
+    shadowRadius: 6,
+    elevation: 8,
+  },
+  bottomNavContainer: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+    paddingBottom: 16,
+    backgroundColor: 'transparent',
+  },
+  bottomNav: {
+    width: 350,
+    height: 60,
+    backgroundColor: '#201f24',
+    borderRadius: 30,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    paddingHorizontal: 6,
+    borderWidth: 1,
+    borderColor: '#2b2a30',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 6,
+  },
+  tabItem: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 20,
+  },
+  tabItemActive: {
+    backgroundColor: '#323137',
+  },
+  tabText: {
+    fontSize: 10,
+    color: '#8b8a91',
+    marginTop: 2,
+  },
+  tabTextActive: {
+    fontSize: 10,
+    color: '#ffffff',
+    marginTop: 2,
+    fontWeight: 'bold',
+  },
+});
+
+```

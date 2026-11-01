@@ -1,13 +1,14 @@
 {
-  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "protocol_stage": "Refinement Evaluation (iteration-2)",
   "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Breadfast",
   "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9052Screen\\iteration-2",
   "total_components": 1,
   "successful_renders": 1,
   "failed_renders": 0,
   "metric_evaluated_components": 1,
-  "mean_ssim": 0.6406,
-  "mean_clip_similarity": 0.8394,
+  "mean_ssim": 0.5163,
+  "mean_content_ssim": 0.2766,
+  "mean_clip_similarity": 0.7861,
   "detailed_results": [
     {
       "component": "IMG9052Screen",
@@ -18,12 +19,35 @@
       "target_exists": true,
       "target_match": "IMG_9052.PNG",
       "metric_status": "evaluated",
-      "ssim": 0.6406,
-      "clip_similarity": 0.8394,
+      "ssim": 0.5163,
+      "content_ssim": 0.2766,
+      "clip_similarity": 0.7861,
+      "worst_regions": [
+        {
+          "y_start": 198,
+          "y_end": 264,
+          "ssim": 0.198
+        },
+        {
+          "y_start": 264,
+          "y_end": 330,
+          "ssim": 0.2053
+        },
+        {
+          "y_start": 132,
+          "y_end": 198,
+          "ssim": 0.2105
+        },
+        {
+          "y_start": 66,
+          "y_end": 132,
+          "ssim": 0.2618
+        }
+      ],
       "resized_for_ssim": true,
       "evaluation_size": {
-        "width": 1178,
-        "height": 2394
+        "width": 390,
+        "height": 793
       }
     }
   ]

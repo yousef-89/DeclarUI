@@ -22,11 +22,11 @@ UItype_list = ["React Native","Flutter","ArkTS"]
 UItype = UItype_list[lang_index]
 project_template_folder_list = ["rn_project_folder","","flutter_project_folder","arkts_project_folder"]
 project_template_folder = project_template_folder_list[lang_index]
-picture_folder= 'DeclarUI\Dataset'
+picture_folder= r'DeclarUI\Dataset'
 ablation_options = ['sam','refine']
-prompt_folder = os.path.join('DeclarUI\Scripts\code_generation\utils\prompt_templates','ablation_study',ablation_options[0])
-component_info_folder = os.path.join('DeclarUI\Scripts\results\extract_results',UI_class)
-output_folder = os.path.join('DeclarUI\Scripts\results\code_results','ablation_study')
+prompt_folder = os.path.join(r'DeclarUI\Scripts\code_generation\utils\prompt_templates','ablation_study',ablation_options[0])
+component_info_folder = os.path.join(r'DeclarUI\Scripts\results\extract_results',UI_class)
+output_folder = os.path.join(r'DeclarUI\Scripts\results\code_results','ablation_study')
 
 GEMINI_KEY = os.environ["GEMINI_API_KEY"]
 
@@ -126,7 +126,7 @@ def prompt_construct(app_classification,app_name,page_name,sequence=1,type="Scre
     sub_prompt_path = os.path.join(prompt_folder,'SubPrompt.txt')
     navigation_prompt_path = os.path.join(prompt_folder,'PTG2NavigationPrompt.txt')
     refine_prompt_path = os.path.join(prompt_folder,'RefineCodePrompt.txt')
-    compile_refine_prompt_path = os.path.join('DeclarUI\Scripts\code_generation\utils\prompt_templates','RefineCompileErrorPrompt.txt')
+    compile_refine_prompt_path = os.path.join(r'DeclarUI\Scripts\code_generation\utils\prompt_templates','RefineCompileErrorPrompt.txt')
     if UItype == 'ArkTS':
         refer_refine_prompt_path = os.path.join(prompt_folder,'ReferRefinePrompt.txt')
         
@@ -314,7 +314,7 @@ def is_fully_navigated(res,implemented_ids,not_implemented_ids, app_classificati
 def send_single_prompt_and_get_response(client,prompt,base64_image=''):
     if base64_image:
         completion = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
             contents=[
                 prompt,
                 types.Part.from_bytes(
@@ -325,7 +325,7 @@ def send_single_prompt_and_get_response(client,prompt,base64_image=''):
         )
     else:
         completion = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
             contents="You are an engineer proficient in React Native.\n\n" + prompt,
         )
     res = completion.text

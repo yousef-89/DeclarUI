@@ -386,7 +386,7 @@ def send_single_prompt_and_get_response(client, prompt, image_path=''):
     for attempt in range(1, max_attempts + 1):
         try:
             completion = client.models.generate_content(
-                model="gemini-3.5-flash-lite",
+                model=os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite"),
                 contents=contents
             )
             res = remove_first_and_last_lines(completion.text or "").strip()

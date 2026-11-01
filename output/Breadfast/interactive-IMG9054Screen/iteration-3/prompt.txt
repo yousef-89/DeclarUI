@@ -1,0 +1,589 @@
+You are an expert React Native engineer performing one visual refinement pass
+on the screen component IMG9054Screen. Make the render match the reference
+screenshot more closely.
+
+# Images
+1. The reference screenshot (the goal).
+2. The current render of the code below.
+3. A side-by-side comparison (reference left, render right) on the same
+   390 x 797 point canvas, with a y-axis ruler and grid lines
+   every 50 points, so you can measure vertical offsets and sizes.
+
+# Current scores
+SSIM: 0.7387 (structural layout similarity, 1.0 = identical)
+Content SSIM: 0.6572 (SSIM over regions containing UI elements only)
+CLIP: 0.9243 (perceptual similarity)
+
+# Component inventory of the reference
+Screen: Digital wallet and payment app home screen showing wallet balance, saved cards, and promotional card banner. Background #ffffff, light theme, status bar not shown.
+- c1 header bbox=[15, 26, 57, 26]; text: Pay; icon: Brand logo; style: magenta brand color; state: default
+- c2 icon_button bbox=[346, 31, 20, 19]; icon: chat bubble icon; style: pink rounded background; state: default
+- c3 text bbox=[16, 104, 87, 10]; text: Wallet balance; style: grey text, small; state: default
+- c4 title bbox=[17, 127, 83, 30]; text: EGP 0.00; style: dark bold text, large zero; state: default
+- c5 button bbox=[257, 93, 48, 48]; text: Add to balance; icon: plus icon; style: magenta circle background, white icon; state: default
+- c6 button bbox=[823, 93, 48, 48]; text: Saved cards; icon: credit card icon; style: light pink circle background; state: default
+- c7 card bbox=[24, 190, 342, 582]; style: gradient dark purple background, rounded corners; state: default
+- c8 image bbox=[112, 263, 86, 86]; icon: Brand logo watermark; style: white, semi-transparent; state: default; in c7
+- c9 image bbox=[406, 369, 118, 80]; icon: credit card chip and contactless icon; style: silver card chip; state: default; in c7
+- c10 title bbox=[153, 564, 314, 56]; text: Save on purchases with the Breadfast Card; style: white text, bold, centered; state: default; in c7
+- c11 text bbox=[184, 660, 252, 34]; text: Get cashback and discounts whenever you shop with the card.; style: white text, centered, small; state: default; in c7
+- c12 button bbox=[371, 730, 178, 48]; text: Get started; style: white background, rounded pill, dark text; state: default; in c7
+- c13 tab_bar bbox=[50, 902, 329, 78]; style: white background, floating pill container with border; state: default
+- c14 tab_item bbox=[128, 915, 47, 51]; text: Home; icon: home outline icon; style: grey text/icon; state: default; in c13
+- c15 tab_item bbox=[299, 915, 39, 51]; text: Cart; icon: cart outline icon; style: grey text/icon; state: default; in c13
+- c16 tab_item bbox=[465, 902, 63, 64]; text: Pay; icon: wallet icon; style: magenta background pill, white text/icon; state: selected; in c13
+- c17 tab_item bbox=[615, 915, 47, 51]; text: More; icon: menu hamburger icon; style: grey text/icon; state: default; in c13
+- c18 button bbox=[786, 902, 148, 78]; icon: search magnifying glass icon; style: white circular button with grey border; state: default
+
+# Measured layout on the shared canvas
+Target screenshot layout (measured):
+Canvas: 390x797 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (15, 26, 57, 26) #4c3a4c
+- (346, 31, 20, 19) #b73d86
+- (257, 93, 48, 48) #9b1d7e
+- (16, 104, 87, 10) #7c7c7c
+- (335, 110, 19, 14) #b2307d
+- (17, 127, 83, 30) #212121
+- (263, 148, 35, 9) #a0418b
+- (328, 148, 32, 9) #9e3e89
+- (261, 162, 40, 10) #9b3a84
+- (330, 162, 29, 10) #9f3e8a
+- (24, 190, 342, 582) #5a2551
+- (161, 601, 68, 11) #972d7f
+- (20, 721, 12, 49) #dadada
+- (358, 721, 12, 49) #dadada
+- (244, 730, 21, 17) #757575
+- (328, 735, 21, 20) #717171
+- (50, 753, 32, 9) #292929
+- (117, 753, 24, 9) #363636
+- (241, 753, 27, 9) #2e2e2e
+
+Current render layout (measured on the same canvas):
+Canvas: 390x797 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (330, 24, 36, 36) #fce4ec
+- (24, 35, 57, 23) #212121
+- (254, 78, 48, 48) #9b1d7e
+- (318, 78, 48, 48) #fce4ec
+- (24, 93, 77, 9) #8f928f
+- (25, 120, 89, 22) #212121
+- (261, 135, 34, 9) #363337
+- (327, 135, 30, 9) #302c33
+- (259, 149, 38, 9) #2e2a32
+- (329, 149, 26, 9) #353d3d
+- (24, 186, 342, 582) #4e0e37
+- (156, 696, 78, 12) #5a2551
+- (151, 728, 70, 34) #9b1d7e
+- (54, 730, 15, 15) #757575
+- (110, 730, 17, 16) #757575
+- (249, 731, 15, 13) #cbcbcb
+- (326, 737, 17, 17) #757575
+- (48, 753, 27, 8) #898a91
+- (109, 753, 19, 8) #94968f
+- (245, 753, 24, 8) #898684
+
+Regions with the largest visual mismatch (lowest SSIM):
+- y 132-199: SSIM 0.346
+- y 66-132: SSIM 0.3764
+- y 730-797: SSIM 0.4095
+- y 0-66: SSIM 0.4564
+
+# React Native Web implementation rules
+
+Code
+- Export the screen as `export default function IMG9054Screen() { ... }`.
+- Import only from 'react', 'react-native', and the local icon component:
+  `import Icon from '../generated-icon';`
+- Use React state (useState) so controls are interactive: switches toggle,
+  sliders move, tabs and segmented controls change selection, inputs accept text.
+- No navigation libraries, native-only APIs, external packages, or network calls.
+
+Canvas
+- The screen renders in a fixed 390 x 797 point canvas with the
+  same aspect ratio as the screenshot. All coordinates are in these points.
+- The root View uses `flex: 1` and the screenshot's background color.
+- Lay out content with flexbox. Use `position: 'absolute'` only for elements
+  that overlay other content: floating buttons, floating or fixed bottom bars,
+  badges, and elements pinned to the bottom of the screen.
+- Content that is cut off at the bottom of the screenshot must also be cut off
+  in the render; do not shrink content to make it fit.
+- If the screenshot shows the phone status bar (time, signal, battery),
+  reproduce it with a Text for the time and small Views for the indicators.
+
+Typography
+- fontSize is roughly 0.75 x the measured height of a single text line.
+- Match font weight (400 regular, 500 medium, 600 semibold, 700 bold), color,
+  alignment, and letter case exactly as shown. Copy all visible text verbatim.
+
+Images and icons
+- Never load remote or local image files (no `uri`, no `require`).
+- Photos and banners: a View with the region's dominant color (or two stacked
+  Views to approximate a gradient), the same size and corner radius, with any
+  text that is printed on the image reproduced as Text on top.
+- Small illustrations of objects (food, gifts, products): a single emoji with
+  a fontSize matching the illustration size.
+- Pictograms and UI icons: `<Icon name="..." size={..} color=".." />`.
+  Available names: search, chevron-left, chevron-right, chevron-up, chevron-down, arrow-left, arrow-right, arrow-up, arrow-down, menu, more-horizontal, more-vertical, close, plus, minus, check, home, heart, star, user, users, bell, cart, bag, settings, filter, sliders, share, download, upload, refresh, play, pause, skip-forward, skip-back, shuffle, repeat, volume, mic, camera, image, calendar, clock, location, globe, chat, mail, phone, send, lock, eye, edit, trash, grid, list, bookmark, gift, credit-card, wallet, tag, info, help, logout, scan, qr-code, printer, car, truck, diamond, briefcase, book, music, headphones, video, wifi, battery, signal, sun, moon, flag, thumbs-up, comment, link, circle.
+  Add `filled` for solid icons. Pick the closest name; never draw icons as letters.
+- Avatars: a circular View with the dominant color (and initials if shown).
+
+Controls (build these from Views so they match the screenshot exactly)
+- Button / icon button: TouchableOpacity with the exact background, border,
+  radius, padding, and label or icon.
+- Text input / search bar: View container with icon(s) + TextInput with
+  `placeholder` and `placeholderTextColor` matching the screenshot.
+- Switch / toggle: a rounded track View with a circular thumb View on the
+  left (off) or right (on), using the screenshot's colors.
+- Slider / seek bar / progress bar: a thin track View, a filled View whose width
+  is the shown fraction, and (for sliders) a circular thumb at that position.
+- Checkbox / radio: bordered square / circle View, filled with a check icon or
+  inner dot when selected.
+- Segmented control / chips / tags: a row of rounded Views; the selected item
+  has the distinct background shown in the screenshot.
+- Tab bar: a row of icon + label items. If it floats (rounded, inset from the
+  edges, shadow), make it an absolutely positioned rounded View at the same
+  position; otherwise a full-width bar at the bottom with a top border.
+- Carousel: a horizontal ScrollView; if neighbouring cards peek in at the
+  screen edges, reproduce the peeking cards at those positions.
+- Badges / counters: small absolutely positioned rounded Views.
+- Lists and grids: map over a data array; keep row heights, gaps, and column
+  widths equal to the measured values.
+
+# How to refine
+1. Compare the reference and the render component by component, using the
+   inventory as a checklist.
+2. Fix the most important differences first, in this order:
+   a. missing, extra, or wrong-type components (e.g. a flat tab bar where the
+      reference has a floating one, a plain View where it has a slider);
+   b. position and size errors: heights, widths, margins, gaps, alignment,
+      anything shifted vertically (check the ruler);
+   c. colors, corner radii, borders, shadows;
+   d. typography: font size, weight, color, text content.
+3. Leave components that already match unchanged. Do not rewrite the screen
+   from scratch; edit the specific styles and elements that cause differences.
+
+# Output format
+First a section starting with `DIAGNOSIS:` listing at most 6 concrete
+differences, most impactful first, each with the exact fix (property, old
+value, new value). Then the complete updated source code in a single ```jsx
+code block.
+
+# Current source
+```jsx
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from '../generated-icon';
+
+export default function IMG9054Screen() {
+  return (
+    <View style={styles.container}>
+      {/* Top Header */}
+      <View style={styles.header}>
+        <View style={styles.logoContainer}>
+          <Text style={styles.logoSymbol}>ℰ</Text>
+          <Text style={styles.logoText}>Pay</Text>
+          <Text style={styles.trademark}>®</Text>
+        </View>
+        <TouchableOpacity style={styles.chatButton}>
+          <Icon name="chat" size={16} color="#B73D86" />
+        </TouchableOpacity>
+      </View>
+
+      {/* Wallet Balance Section */}
+      <View style={styles.walletSection}>
+        <View>
+          <Text style={styles.walletLabel}>Wallet balance</Text>
+          <View style={styles.balanceRow}>
+            <Text style={styles.currency}>EGP</Text>
+            <Text style={styles.balanceAmount}>0.00</Text>
+          </View>
+        </View>
+
+        <View style={styles.actionsContainer}>
+          <TouchableOpacity style={styles.actionItem}>
+            <View style={styles.actionCirclePurple}>
+              <Icon name="plus" size={24} color="#FFFFFF" />
+            </View>
+            <Text style={styles.actionText}>Add to{'\n'}balance</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.actionItem}>
+            <View style={styles.actionCirclePink}>
+              <Icon name="credit-card" size={20} color="#B73D86" />
+            </View>
+            <Text style={styles.actionText}>Saved{'\n'}cards</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* Card Banner */}
+      <View style={styles.banner}>
+        <View style={styles.bannerTopRow}>
+          <Text style={styles.bannerLogoSymbol}>ℰ</Text>
+          <View style={styles.cardRepresentation}>
+            <View style={styles.chip}>
+              <View style={styles.chipLineHorizontal} />
+              <View style={styles.chipLineVertical} />
+              <View style={styles.chipInnerBox} />
+            </View>
+            <View style={styles.contactlessWaves}>
+              <View style={styles.wave1} />
+              <View style={styles.wave2} />
+              <View style={styles.wave3} />
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.bannerContent}>
+          <Text style={styles.bannerTitle}>Save on purchases with the Breadfast Card</Text>
+          <Text style={styles.bannerSubtitle}>Get cashback and discounts whenever you shop with the card.</Text>
+          
+          <TouchableOpacity style={styles.getStartedButton}>
+            <Text style={styles.getStartedText}>Get started</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* Bottom Navigation */}
+      <View style={styles.bottomNavContainer}>
+        <View style={styles.bottomNav}>
+          <TouchableOpacity style={styles.navItem}>
+            <Icon name="home" size={20} color="#757575" />
+            <Text style={styles.navText}>Home</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.navItem}>
+            <Icon name="cart" size={20} color="#757575" />
+            <Text style={styles.navText}>Cart</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={[styles.navItem, styles.navItemActive]}>
+            <Icon name="wallet" size={18} color="#FFFFFF" />
+            <Text style={styles.navTextActive}>Pay</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.navItem}>
+            <Icon name="menu" size={20} color="#757575" />
+            <Text style={styles.navText}>More</Text>
+          </TouchableOpacity>
+        </View>
+
+        <TouchableOpacity style={styles.searchFab}>
+          <Icon name="search" size={20} color="#757575" />
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    paddingHorizontal: 24,
+    paddingTop: 26,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
+    height: 32,
+  },
+  logoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  logoSymbol: {
+    fontSize: 26,
+    color: '#9B1D7E',
+    fontStyle: 'italic',
+    fontWeight: 'bold',
+    marginRight: 2,
+  },
+  logoText: {
+    fontSize: 24,
+    color: '#212121',
+    fontWeight: 'bold',
+    letterSpacing: -0.5,
+  },
+  trademark: {
+    fontSize: 8,
+    color: '#212121',
+    alignSelf: 'flex-start',
+    marginTop: 4,
+    marginLeft: 1,
+  },
+  chatButton: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: '#FCE4EC',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  walletSection: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 26,
+  },
+  walletLabel: {
+    fontSize: 12,
+    color: '#7C7C7C',
+    marginBottom: 4,
+  },
+  balanceRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
+  currency: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#212121',
+    marginRight: 4,
+  },
+  balanceAmount: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#212121',
+    letterSpacing: -0.5,
+  },
+  actionsContainer: {
+    flexDirection: 'row',
+  },
+  actionItem: {
+    alignItems: 'center',
+    marginLeft: 16,
+  },
+  actionCirclePurple: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: '#9B1D7E',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  actionCirclePink: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: '#FCE4EC',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  actionText: {
+    fontSize: 11,
+    color: '#212121',
+    textAlign: 'center',
+    lineHeight: 14,
+    fontWeight: '500',
+  },
+  banner: {
+    height: 582,
+    backgroundColor: '#5A2551',
+    borderRadius: 28,
+    paddingHorizontal: 24,
+    paddingTop: 28,
+    paddingBottom: 32,
+    justifyContent: 'space-between',
+    backgroundImage: 'linear-gradient(180deg, #7A1054 0%, #3D0D2B 100%)',
+  },
+  bannerTopRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+  },
+  bannerLogoSymbol: {
+    fontSize: 86,
+    color: '#FFFFFF',
+    fontStyle: 'italic',
+    fontWeight: 'bold',
+    opacity: 0.25,
+    marginTop: -16,
+    marginLeft: -8,
+  },
+  cardRepresentation: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 8,
+  },
+  chip: {
+    width: 44,
+    height: 34,
+    borderRadius: 6,
+    backgroundColor: '#DCDCDC',
+    borderWidth: 1,
+    borderColor: '#C0C0C0',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  chipLineHorizontal: {
+    position: 'absolute',
+    width: '100%',
+    height: 1.5,
+    backgroundColor: '#A0A0A0',
+  },
+  chipLineVertical: {
+    position: 'absolute',
+    height: '100%',
+    width: 1.5,
+    backgroundColor: '#A0A0A0',
+  },
+  chipInnerBox: {
+    width: 18,
+    height: 14,
+    borderWidth: 1,
+    borderColor: '#A0A0A0',
+    backgroundColor: '#E8E8E8',
+    borderRadius: 2,
+  },
+  contactlessWaves: {
+    width: 16,
+    height: 22,
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
+    position: 'relative',
+  },
+  wave1: {
+    width: 4,
+    height: 22,
+    borderRightWidth: 2,
+    borderColor: '#FFFFFF',
+    borderTopRightRadius: 11,
+    borderBottomRightRadius: 11,
+    opacity: 0.9,
+  },
+  wave2: {
+    width: 8,
+    height: 14,
+    borderRightWidth: 2,
+    borderColor: '#FFFFFF',
+    borderTopRightRadius: 7,
+    borderBottomRightRadius: 7,
+    position: 'absolute',
+    right: 4,
+    top: 4,
+    opacity: 0.9,
+  },
+  wave3: {
+    width: 12,
+    height: 6,
+    borderRightWidth: 2,
+    borderColor: '#FFFFFF',
+    borderTopRightRadius: 3,
+    borderBottomRightRadius: 3,
+    position: 'absolute',
+    right: 8,
+    top: 8,
+    opacity: 0.9,
+  },
+  bannerContent: {
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  bannerTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+    textAlign: 'center',
+    marginBottom: 10,
+    lineHeight: 30,
+    paddingHorizontal: 12,
+  },
+  bannerSubtitle: {
+    fontSize: 12.5,
+    color: '#E0CCD7',
+    textAlign: 'center',
+    marginBottom: 28,
+    lineHeight: 18,
+    paddingHorizontal: 20,
+  },
+  getStartedButton: {
+    backgroundColor: '#FFFFFF',
+    paddingVertical: 14,
+    paddingHorizontal: 40,
+    borderRadius: 24,
+  },
+  getStartedText: {
+    color: '#5A2551',
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
+  bottomNavContainer: {
+    position: 'absolute',
+    bottom: 20,
+    left: 24,
+    right: 24,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  bottomNav: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 36,
+    paddingVertical: 6,
+    paddingHorizontal: 6,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    marginRight: 10,
+    height: 64,
+    borderWidth: 1,
+    borderColor: '#EFEFEF',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  navItem: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 4,
+    paddingHorizontal: 10,
+    borderRadius: 20,
+  },
+  navItemActive: {
+    backgroundColor: '#9B1D7E',
+    flexDirection: 'row',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 20,
+  },
+  navText: {
+    fontSize: 10,
+    color: '#757575',
+    marginTop: 2,
+    fontWeight: '500',
+  },
+  navTextActive: {
+    fontSize: 11,
+    color: '#FFFFFF',
+    fontWeight: '600',
+    marginLeft: 6,
+  },
+  searchFab: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: '#FFFFFF',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#EFEFEF',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+});
+
+```

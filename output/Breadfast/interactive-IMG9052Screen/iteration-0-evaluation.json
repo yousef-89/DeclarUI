@@ -6,8 +6,9 @@
   "successful_renders": 1,
   "failed_renders": 0,
   "metric_evaluated_components": 1,
-  "mean_ssim": 0.647,
-  "mean_clip_similarity": 0.8355,
+  "mean_ssim": 0.5213,
+  "mean_content_ssim": 0.2793,
+  "mean_clip_similarity": 0.7877,
   "detailed_results": [
     {
       "component": "IMG9052Screen",
@@ -18,12 +19,35 @@
       "target_exists": true,
       "target_match": "IMG_9052.PNG",
       "metric_status": "evaluated",
-      "ssim": 0.647,
-      "clip_similarity": 0.8355,
+      "ssim": 0.5213,
+      "content_ssim": 0.2793,
+      "clip_similarity": 0.7877,
+      "worst_regions": [
+        {
+          "y_start": 0,
+          "y_end": 66,
+          "ssim": 0.2081
+        },
+        {
+          "y_start": 264,
+          "y_end": 330,
+          "ssim": 0.2087
+        },
+        {
+          "y_start": 198,
+          "y_end": 264,
+          "ssim": 0.2168
+        },
+        {
+          "y_start": 132,
+          "y_end": 198,
+          "ssim": 0.2569
+        }
+      ],
       "resized_for_ssim": true,
       "evaluation_size": {
-        "width": 1178,
-        "height": 2394
+        "width": 390,
+        "height": 793
       }
     }
   ]

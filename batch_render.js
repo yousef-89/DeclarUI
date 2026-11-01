@@ -2,6 +2,23 @@ const fs = require('fs');
 const path = require('path');
 const { captureComponentScreenshot } = require('./render_runner');
 
+const STAMP_PATH = path.join(__dirname, 'src', 'render-stamp.json');
+
+function loadViewports() {
+  // Optional {component: [width, height]} map so each screen renders at its
+  // target's aspect ratio instead of a fixed phone size.
+  if (!process.env.RENDER_VIEWPORTS) {
+    return {};
+  }
+  return JSON.parse(process.env.RENDER_VIEWPORTS);
+}
+
+function writeRenderStamp() {
+  const stamp = `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+  fs.writeFileSync(STAMP_PATH, `${JSON.stringify({ stamp })}\n`);
+  return stamp;
+}
+
 function getOptions(args) {
   const [appName = 'default', iteration = 'baseline', port = '3000', component] = args;
   const parsedPort = Number.parseInt(port, 10);
@@ -46,6 +63,7 @@ async function runBatchRender({
 
   console.log(`[Batch Renderer] Found ${files.length} components to render...`);
 
+  const viewports = loadViewports();
   const results = [];
 
   for (const file of files) {
@@ -54,11 +72,22 @@ async function runBatchRender({
 
     console.log(`[Batch Renderer] Rendering ${componentName}...`);
 
+    const [width, height] = viewports[componentName] || [390, 844];
     let success = false;
     let error = null;
 
     try {
-      success = await captureComponentScreenshot(componentName, outputPath, port, appName);
+      // Written after the generated source, so a bundle carrying this stamp
+      // also contains the current version of the component.
+      const stamp = writeRenderStamp();
+      ({ success, error } = await captureComponentScreenshot(
+        componentName,
+        outputPath,
+        port,
+        appName,
+        { width, height },
+        stamp
+      ));
     } catch (renderError) {
       error = renderError instanceof Error ? renderError.message : String(renderError);
     }
@@ -68,6 +97,7 @@ async function runBatchRender({
       source: path.join(generatedDir, file),
       screenshot: success ? outputPath : null,
       success,
+      viewport: { width, height },
       error: success ? null : error || 'Renderer returned a failure'
     });
   }

@@ -1,0 +1,17 @@
+Repair the React Native Web screen component $component so that it compiles
+and renders without errors.
+
+Error:
+$problem
+
+Fix only what causes the error. Preserve the UI, layout, styles, imports, and
+behavior. Do not add navigation packages, native-only APIs, image files, or
+remote URLs. Imports are limited to 'react', 'react-native', and
+'../generated-icon'.
+
+Return the complete corrected source code in a single ```jsx code block and
+nothing else.
+
+```jsx
+$code
+```

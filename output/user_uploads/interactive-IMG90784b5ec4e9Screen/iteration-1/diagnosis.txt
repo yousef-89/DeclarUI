@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Bottom navigation bar (`bottomNav`) is rendered with individual unselected colored icons instead of a unified dark container matching the reference `#4a494e` / `#201f24` with only the selected tab highlighted.
+2. Bottom navigation bar styling uses simple text emojis instead of `<Icon>` components (`alarm`, `moon`, `sun`, `grid`/`bar`, `settings`).
+3. PRO Start button border color and styling need to match the subtle glowing gradient/border effect more closely.
+4. Floating Action Button vertical position is slightly too low and overlaps the bottom navbar or cards; adjust `bottom` offset to ~80.
+5. Alarm card layout and typography weights/colors need slight adjustment to match exact inactive vs active time gray colors (`#525254` vs `#fafafa`).

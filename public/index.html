@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DeclarUI Render Host</title>
+    <style>
+      /* The dev server's compile-error overlay reports problems in any generated
+         file, not just the screen being previewed; the screen's own load errors
+         are shown inside the page instead. */
+      #webpack-dev-server-client-overlay { display: none !important; }
+    </style>
   </head>
   <body>
     <div id="root"></div>

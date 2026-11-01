@@ -1,0 +1,265 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "A referral program screen showing unlock conditions with progress bars."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "header",
+      "text": "",
+      "icon": "",
+      "style": "background #ffffff",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        0,
+        20,
+        390,
+        51
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "icon_button",
+      "text": "",
+      "icon": "chevron-left",
+      "style": "rounded circle, border",
+      "state": "default",
+      "parent": "c1",
+      "bbox": [
+        15,
+        16,
+        45,
+        47
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "title",
+      "text": "Refer and earn",
+      "icon": "",
+      "style": "font-weight bold, color #242424",
+      "state": "",
+      "parent": "c1",
+      "bbox": [
+        135,
+        32,
+        118,
+        15
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "illustration",
+      "text": "",
+      "icon": "refer and earn illustration",
+      "style": "background #f5d9c4",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        0,
+        71,
+        390,
+        167
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "title",
+      "text": "Unlock your referral program",
+      "icon": "",
+      "style": "font-weight bold, color #212121",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        70,
+        282,
+        250,
+        18
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "text",
+      "text": "Get free credit in your Breadfast wallet when you...",
+      "icon": "",
+      "style": "color #3e3e3e",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        19,
+        333,
+        351,
+        16
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "background #ffffff, border radius, border #818481",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        372,
+        173,
+        182
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "icon",
+      "text": "",
+      "icon": "shopping cart",
+      "style": "background #ebebeb, rounded circle",
+      "state": "",
+      "parent": "c7",
+      "bbox": [
+        82,
+        388,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "text",
+      "text": "Complete 5 orders",
+      "icon": "",
+      "style": "font-weight bold, color #323232",
+      "state": "",
+      "parent": "c7",
+      "bbox": [
+        71,
+        452,
+        62,
+        28
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "background #ebebeb, fill #272727",
+      "state": "0% filled",
+      "parent": "c7",
+      "bbox": [
+        32,
+        506,
+        139,
+        10
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "text",
+      "text": "5 orders left",
+      "icon": "",
+      "style": "color #919191",
+      "state": "",
+      "parent": "c7",
+      "bbox": [
+        70,
+        533,
+        62,
+        9
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "background #ffffff, border radius, border #777a77",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        372,
+        173,
+        182
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "icon",
+      "text": "",
+      "icon": "receipt",
+      "style": "background #ebebeb, rounded circle",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        268,
+        388,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "text",
+      "text": "Spend EGP 1,000 in purchases",
+      "icon": "",
+      "style": "font-weight bold, color #363636",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        235,
+        452,
+        106,
+        28
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "background #ebebeb, fill #272727",
+      "state": "0% filled",
+      "parent": "c12",
+      "bbox": [
+        219,
+        506,
+        139,
+        10
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "text",
+      "text": "EGP 1,000.00 left",
+      "icon": "",
+      "style": "color #959595",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        244,
+        533,
+        90,
+        11
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "link",
+      "text": "Terms and Conditions apply.",
+      "icon": "",
+      "style": "color #a36a9a",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        109,
+        740,
+        172,
+        14
+      ]
+    }
+  ]
+}

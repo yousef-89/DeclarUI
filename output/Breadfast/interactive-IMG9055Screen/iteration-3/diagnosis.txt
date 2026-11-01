@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Screen background color: container uses `#f8f8f9`, but the reference background is pure white `#ffffff`.
+2. Header top icon button: uses custom drawn dots instead of the `<Icon name="qr-code" ... />` or grid icon with exact color `#97227d` and background `#f7eaf3`.
+3. Order history card icon: uses dummy receipt lines instead of the correct icon or receipt style; reference has a small receipt icon/emoji.
+4. List item icons (Explore & Account): custom circles with glyph text used generic emoji/text instead of clean Icons (`heart`, `gift`, `box`, `settings`, `chat`, `help`, `chevron-right`).
+5. Bottom navigation styling & floating wrapper: floating nav wrapper is positioned incorrectly or overlaps incorrectly; needs precise styling to match reference floating bar with magnifying glass button on the right.

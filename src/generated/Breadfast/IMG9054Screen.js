@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from '../generated-icon';
 
 export default function IMG9054Screen() {
   return (
@@ -11,13 +12,9 @@ export default function IMG9054Screen() {
           <Text style={styles.logoText}>Pay</Text>
           <Text style={styles.trademark}>®</Text>
         </View>
-        <View style={styles.chatButton}>
-          <View style={styles.chatBubble}>
-            <View style={styles.dot} />
-            <View style={styles.dot} />
-            <View style={styles.dot} />
-          </View>
-        </View>
+        <TouchableOpacity style={styles.chatButton}>
+          <Icon name="chat" size={16} color="#B73D86" />
+        </TouchableOpacity>
       </View>
 
       {/* Wallet Balance Section */}
@@ -26,27 +23,24 @@ export default function IMG9054Screen() {
           <Text style={styles.walletLabel}>Wallet balance</Text>
           <View style={styles.balanceRow}>
             <Text style={styles.currency}>EGP</Text>
-            <Text style={styles.balanceAmount}>0</Text>
-            <Text style={styles.balanceDecimals}>.00</Text>
+            <Text style={styles.balanceAmount}>0.00</Text>
           </View>
         </View>
 
         <View style={styles.actionsContainer}>
-          <View style={styles.actionItem}>
+          <TouchableOpacity style={styles.actionItem}>
             <View style={styles.actionCirclePurple}>
-              <Text style={styles.plusIcon}>+</Text>
+              <Icon name="plus" size={24} color="#FFFFFF" />
             </View>
             <Text style={styles.actionText}>Add to{'\n'}balance</Text>
-          </View>
+          </TouchableOpacity>
 
-          <View style={styles.actionItem}>
+          <TouchableOpacity style={styles.actionItem}>
             <View style={styles.actionCirclePink}>
-              <View style={styles.cardIconBox}>
-                <View style={styles.cardIconLine} />
-              </View>
+              <Icon name="credit-card" size={20} color="#B73D86" />
             </View>
             <Text style={styles.actionText}>Saved{'\n'}cards</Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
 
@@ -69,54 +63,42 @@ export default function IMG9054Screen() {
         </View>
 
         <View style={styles.bannerContent}>
-          <Text style={styles.bannerTitle}>Save on purchases with{'\n'}the Breadfast Card</Text>
-          <Text style={styles.bannerSubtitle}>Get cashback and discounts whenever you{'\n'}shop with the card.</Text>
+          <Text style={styles.bannerTitle}>Save on purchases with the Breadfast Card</Text>
+          <Text style={styles.bannerSubtitle}>Get cashback and discounts whenever you shop with the card.</Text>
           
-          <View style={styles.getStartedButton}>
+          <TouchableOpacity style={styles.getStartedButton}>
             <Text style={styles.getStartedText}>Get started</Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
 
       {/* Bottom Navigation */}
       <View style={styles.bottomNavContainer}>
         <View style={styles.bottomNav}>
-          <View style={styles.navItem}>
-            <View style={styles.homeHouseRoof} />
-            <View style={styles.homeHouseBase} />
+          <TouchableOpacity style={styles.navItem}>
+            <Icon name="home" size={20} color="#757575" />
             <Text style={styles.navText}>Home</Text>
-          </View>
+          </TouchableOpacity>
 
-          <View style={styles.navItem}>
-            <View style={styles.cartContainer}>
-              <View style={styles.cartWheel1} />
-              <View style={styles.cartWheel2} />
-              <View style={styles.cartBody} />
-            </View>
+          <TouchableOpacity style={styles.navItem}>
+            <Icon name="cart" size={20} color="#757575" />
             <Text style={styles.navText}>Cart</Text>
-          </View>
+          </TouchableOpacity>
 
-          <View style={[styles.navItem, styles.navItemActive]}>
-            <View style={styles.payWallet}>
-              <View style={styles.payWalletClasp} />
-            </View>
+          <TouchableOpacity style={[styles.navItem, styles.navItemActive]}>
+            <Icon name="wallet" size={18} color="#FFFFFF" />
             <Text style={styles.navTextActive}>Pay</Text>
-          </View>
+          </TouchableOpacity>
 
-          <View style={styles.navItem}>
-            <View style={styles.moreLine} />
-            <View style={styles.moreLine} />
-            <View style={styles.moreLine} />
+          <TouchableOpacity style={styles.navItem}>
+            <Icon name="menu" size={20} color="#757575" />
             <Text style={styles.navText}>More</Text>
-          </View>
+          </TouchableOpacity>
         </View>
 
-        <View style={styles.searchFab}>
-          <View style={styles.searchMagnifier}>
-            <View style={styles.magnifierCircle} />
-            <View style={styles.magnifierHandle} />
-          </View>
-        </View>
+        <TouchableOpacity style={styles.searchFab}>
+          <Icon name="search" size={20} color="#757575" />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -126,157 +108,116 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    paddingHorizontal: 20,
-    paddingTop: 50,
+    paddingHorizontal: 24,
+    paddingTop: 26,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 20,
+    height: 32,
   },
   logoContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   logoSymbol: {
-    fontSize: 32,
-    color: '#9C0A73',
+    fontSize: 26,
+    color: '#9B1D7E',
     fontStyle: 'italic',
     fontWeight: 'bold',
     marginRight: 2,
   },
   logoText: {
-    fontSize: 28,
-    color: '#1A1A1A',
+    fontSize: 24,
+    color: '#212121',
     fontWeight: 'bold',
     letterSpacing: -0.5,
   },
   trademark: {
-    fontSize: 10,
-    color: '#1A1A1A',
+    fontSize: 8,
+    color: '#212121',
     alignSelf: 'flex-start',
     marginTop: 4,
+    marginLeft: 1,
   },
   chatButton: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: '#FFF5F8',
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: '#FCE4EC',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  chatBubble: {
-    width: 20,
-    height: 14,
-    borderRadius: 3,
-    borderWidth: 2,
-    borderColor: '#FF2D85',
-    position: 'relative',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-  dot: {
-    width: 2,
-    height: 2,
-    borderRadius: 1,
-    backgroundColor: '#FF2D85',
-    marginHorizontal: 1,
   },
   walletSection: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 26,
   },
   walletLabel: {
-    fontSize: 14,
-    color: '#717171',
+    fontSize: 12,
+    color: '#7C7C7C',
     marginBottom: 4,
   },
   balanceRow: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'baseline',
   },
   currency: {
-    fontSize: 18,
+    fontSize: 15,
     fontWeight: '700',
-    color: '#1A1A1A',
+    color: '#212121',
     marginRight: 4,
-    marginBottom: 8,
   },
   balanceAmount: {
-    fontSize: 44,
+    fontSize: 30,
     fontWeight: 'bold',
-    color: '#1A1A1A',
-    lineHeight: 48,
-  },
-  balanceDecimals: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#1A1A1A',
-    lineHeight: 44,
+    color: '#212121',
+    letterSpacing: -0.5,
   },
   actionsContainer: {
     flexDirection: 'row',
   },
   actionItem: {
     alignItems: 'center',
-    marginLeft: 12,
+    marginLeft: 16,
   },
   actionCirclePurple: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
-    backgroundColor: '#9C0A73',
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: '#9B1D7E',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 6,
   },
   actionCirclePink: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
-    backgroundColor: '#FFF0F5',
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: '#FCE4EC',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 6,
   },
-  plusIcon: {
-    fontSize: 30,
-    color: '#FFFFFF',
-    fontWeight: '300',
-    marginTop: -2,
-  },
-  cardIconBox: {
-    width: 22,
-    height: 16,
-    borderRadius: 3,
-    borderWidth: 2,
-    borderColor: '#9C0A73',
-    justifyContent: 'center',
-  },
-  cardIconLine: {
-    height: 3,
-    backgroundColor: '#9C0A73',
-    width: '100%',
-  },
   actionText: {
     fontSize: 11,
-    color: '#1A1A1A',
+    color: '#212121',
     textAlign: 'center',
     lineHeight: 14,
     fontWeight: '500',
   },
   banner: {
-    height: 530,
-    backgroundColor: '#4A1535',
-    borderRadius: 32,
-    padding: 24,
+    height: 582,
+    backgroundColor: '#5A2551',
+    borderRadius: 28,
+    paddingHorizontal: 24,
+    paddingTop: 28,
+    paddingBottom: 32,
     justifyContent: 'space-between',
-    marginBottom: 90,
-    backgroundImage: 'linear-gradient(135deg, #7A1054 0%, #3D0D2B 100%)',
+    backgroundImage: 'linear-gradient(180deg, #7A1054 0%, #3D0D2B 100%)',
   },
   bannerTopRow: {
     flexDirection: 'row',
@@ -284,28 +225,29 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   bannerLogoSymbol: {
-    fontSize: 64,
+    fontSize: 86,
     color: '#FFFFFF',
     fontStyle: 'italic',
     fontWeight: 'bold',
-    opacity: 0.9,
-    marginTop: -8,
+    opacity: 0.25,
+    marginTop: -16,
+    marginLeft: -8,
   },
   cardRepresentation: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 12,
+    marginTop: 8,
   },
   chip: {
-    width: 48,
-    height: 38,
+    width: 44,
+    height: 34,
     borderRadius: 6,
     backgroundColor: '#DCDCDC',
     borderWidth: 1,
     borderColor: '#C0C0C0',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 16,
+    marginRight: 12,
     position: 'relative',
     overflow: 'hidden',
   },
@@ -322,235 +264,151 @@ const styles = StyleSheet.create({
     backgroundColor: '#A0A0A0',
   },
   chipInnerBox: {
-    width: 20,
-    height: 16,
+    width: 18,
+    height: 14,
     borderWidth: 1,
     borderColor: '#A0A0A0',
     backgroundColor: '#E8E8E8',
     borderRadius: 2,
   },
   contactlessWaves: {
-    width: 18,
-    height: 24,
+    width: 16,
+    height: 22,
     justifyContent: 'space-between',
     alignItems: 'flex-end',
     position: 'relative',
   },
   wave1: {
-    width: 5,
-    height: 24,
-    borderRightWidth: 2.5,
+    width: 4,
+    height: 22,
+    borderRightWidth: 2,
     borderColor: '#FFFFFF',
-    borderTopRightRadius: 12,
-    borderBottomRightRadius: 12,
+    borderTopRightRadius: 11,
+    borderBottomRightRadius: 11,
+    opacity: 0.9,
   },
   wave2: {
-    width: 10,
-    height: 16,
-    borderRightWidth: 2.5,
+    width: 8,
+    height: 14,
+    borderRightWidth: 2,
     borderColor: '#FFFFFF',
-    borderTopRightRadius: 8,
-    borderBottomRightRadius: 8,
+    borderTopRightRadius: 7,
+    borderBottomRightRadius: 7,
     position: 'absolute',
     right: 4,
     top: 4,
+    opacity: 0.9,
   },
   wave3: {
-    width: 15,
-    height: 8,
-    borderRightWidth: 2.5,
+    width: 12,
+    height: 6,
+    borderRightWidth: 2,
     borderColor: '#FFFFFF',
-    borderTopRightRadius: 4,
-    borderBottomRightRadius: 4,
+    borderTopRightRadius: 3,
+    borderBottomRightRadius: 3,
     position: 'absolute',
     right: 8,
     top: 8,
+    opacity: 0.9,
   },
   bannerContent: {
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   bannerTitle: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: 'bold',
     color: '#FFFFFF',
     textAlign: 'center',
-    marginBottom: 12,
-    lineHeight: 32,
+    marginBottom: 10,
+    lineHeight: 30,
+    paddingHorizontal: 12,
   },
   bannerSubtitle: {
-    fontSize: 14,
+    fontSize: 12.5,
     color: '#E0CCD7',
     textAlign: 'center',
     marginBottom: 28,
-    lineHeight: 20,
+    lineHeight: 18,
+    paddingHorizontal: 20,
   },
   getStartedButton: {
     backgroundColor: '#FFFFFF',
     paddingVertical: 14,
     paddingHorizontal: 40,
-    borderRadius: 30,
+    borderRadius: 24,
   },
   getStartedText: {
-    color: '#8B005D',
-    fontSize: 16,
+    color: '#5A2551',
+    fontSize: 15,
     fontWeight: 'bold',
   },
   bottomNavContainer: {
     position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
+    bottom: 20,
+    left: 24,
+    right: 24,
     flexDirection: 'row',
-    paddingHorizontal: 16,
-    paddingBottom: 20,
-    backgroundColor: '#FFFFFF',
     alignItems: 'center',
   },
   bottomNav: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: '#F5F5F7',
+    backgroundColor: '#FFFFFF',
     borderRadius: 36,
     paddingVertical: 6,
-    paddingHorizontal: 8,
+    paddingHorizontal: 6,
     justifyContent: 'space-around',
     alignItems: 'center',
-    marginRight: 12,
+    marginRight: 10,
     height: 64,
+    borderWidth: 1,
+    borderColor: '#EFEFEF',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
   },
   navItem: {
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 4,
     paddingHorizontal: 10,
-    width: 64,
+    borderRadius: 20,
   },
   navItemActive: {
-    backgroundColor: '#E5D6E1',
-    borderRadius: 24,
-  },
-  homeHouseRoof: {
-    width: 0,
-    height: 0,
-    borderLeftWidth: 9,
-    borderRightWidth: 9,
-    borderBottomWidth: 7,
-    borderLeftColor: 'transparent',
-    borderRightColor: 'transparent',
-    borderBottomColor: '#666666',
-    marginBottom: 1,
-  },
-  homeHouseBase: {
-    width: 12,
-    height: 9,
-    backgroundColor: '#666666',
-    marginBottom: 3,
-  },
-  cartContainer: {
-    width: 20,
-    height: 16,
-    position: 'relative',
-    marginBottom: 4,
-  },
-  cartBody: {
-    width: 16,
-    height: 11,
-    borderWidth: 2,
-    borderColor: '#666666',
-    borderTopWidth: 0,
-    borderBottomLeftRadius: 3,
-    borderBottomRightRadius: 3,
-    position: 'absolute',
-    top: 0,
-    left: 0,
-  },
-  cartWheel1: {
-    width: 3,
-    height: 3,
-    borderRadius: 1.5,
-    backgroundColor: '#666666',
-    position: 'absolute',
-    bottom: 0,
-    left: 3,
-  },
-  cartWheel2: {
-    width: 3,
-    height: 3,
-    borderRadius: 1.5,
-    backgroundColor: '#666666',
-    position: 'absolute',
-    bottom: 0,
-    right: 3,
-  },
-  payWallet: {
-    width: 18,
-    height: 13,
-    backgroundColor: '#9C0A73',
-    borderRadius: 3,
-    justifyContent: 'center',
-    alignItems: 'flex-end',
-    marginBottom: 3,
-    paddingRight: 2,
-  },
-  payWalletClasp: {
-    width: 4,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: '#FFFFFF',
-  },
-  moreLine: {
-    width: 14,
-    height: 2,
-    backgroundColor: '#666666',
-    borderRadius: 1,
-    marginVertical: 1.5,
+    backgroundColor: '#9B1D7E',
+    flexDirection: 'row',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 20,
   },
   navText: {
     fontSize: 10,
-    color: '#666666',
-    marginTop: 1,
+    color: '#757575',
+    marginTop: 2,
+    fontWeight: '500',
   },
   navTextActive: {
-    fontSize: 10,
-    color: '#1A1A1A',
+    fontSize: 11,
+    color: '#FFFFFF',
     fontWeight: '600',
-    marginTop: 1,
+    marginLeft: 6,
   },
   searchFab: {
     width: 64,
     height: 64,
     borderRadius: 32,
-    backgroundColor: '#F5F5F7',
+    backgroundColor: '#FFFFFF',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#EFEFEF',
-  },
-  searchMagnifier: {
-    width: 20,
-    height: 20,
-    position: 'relative',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  magnifierCircle: {
-    width: 14,
-    height: 14,
-    borderRadius: 7,
-    borderWidth: 2,
-    borderColor: '#555555',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-  },
-  magnifierHandle: {
-    width: 7,
-    height: 2,
-    backgroundColor: '#555555',
-    position: 'absolute',
-    bottom: 0,
-    right: 0,
-    transform: [{ rotate: '45deg' }],
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
   },
 });

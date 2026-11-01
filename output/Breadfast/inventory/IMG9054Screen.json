@@ -1,0 +1,280 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "Digital wallet and payment app home screen showing wallet balance, saved cards, and promotional card banner."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "header",
+      "bbox": [
+        15,
+        26,
+        57,
+        26
+      ],
+      "text": "Pay",
+      "icon": "Brand logo",
+      "style": "magenta brand color",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c2",
+      "type": "icon_button",
+      "bbox": [
+        346,
+        31,
+        20,
+        19
+      ],
+      "text": "",
+      "icon": "chat bubble icon",
+      "style": "pink rounded background",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c3",
+      "type": "text",
+      "bbox": [
+        16,
+        104,
+        87,
+        10
+      ],
+      "text": "Wallet balance",
+      "icon": "",
+      "style": "grey text, small",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c4",
+      "type": "title",
+      "bbox": [
+        17,
+        127,
+        83,
+        30
+      ],
+      "text": "EGP 0.00",
+      "icon": "",
+      "style": "dark bold text, large zero",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c5",
+      "type": "button",
+      "bbox": [
+        257,
+        93,
+        48,
+        48
+      ],
+      "text": "Add to balance",
+      "icon": "plus icon",
+      "style": "magenta circle background, white icon",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c6",
+      "type": "button",
+      "bbox": [
+        823,
+        93,
+        48,
+        48
+      ],
+      "text": "Saved cards",
+      "icon": "credit card icon",
+      "style": "light pink circle background",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c7",
+      "type": "card",
+      "bbox": [
+        24,
+        190,
+        342,
+        582
+      ],
+      "text": "",
+      "icon": "",
+      "style": "gradient dark purple background, rounded corners",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c8",
+      "type": "image",
+      "bbox": [
+        112,
+        263,
+        86,
+        86
+      ],
+      "text": "",
+      "icon": "Brand logo watermark",
+      "style": "white, semi-transparent",
+      "state": "default",
+      "parent": "c7"
+    },
+    {
+      "id": "c9",
+      "type": "image",
+      "bbox": [
+        406,
+        369,
+        118,
+        80
+      ],
+      "text": "",
+      "icon": "credit card chip and contactless icon",
+      "style": "silver card chip",
+      "state": "default",
+      "parent": "c7"
+    },
+    {
+      "id": "c10",
+      "type": "title",
+      "bbox": [
+        153,
+        564,
+        314,
+        56
+      ],
+      "text": "Save on purchases with the Breadfast Card",
+      "icon": "",
+      "style": "white text, bold, centered",
+      "state": "default",
+      "parent": "c7"
+    },
+    {
+      "id": "c11",
+      "type": "text",
+      "bbox": [
+        184,
+        660,
+        252,
+        34
+      ],
+      "text": "Get cashback and discounts whenever you shop with the card.",
+      "icon": "",
+      "style": "white text, centered, small",
+      "state": "default",
+      "parent": "c7"
+    },
+    {
+      "id": "c12",
+      "type": "button",
+      "bbox": [
+        371,
+        730,
+        178,
+        48
+      ],
+      "text": "Get started",
+      "icon": "",
+      "style": "white background, rounded pill, dark text",
+      "state": "default",
+      "parent": "c7"
+    },
+    {
+      "id": "c13",
+      "type": "tab_bar",
+      "bbox": [
+        50,
+        902,
+        329,
+        78
+      ],
+      "text": "",
+      "icon": "",
+      "style": "white background, floating pill container with border",
+      "state": "default",
+      "parent": ""
+    },
+    {
+      "id": "c14",
+      "type": "tab_item",
+      "bbox": [
+        128,
+        915,
+        47,
+        51
+      ],
+      "text": "Home",
+      "icon": "home outline icon",
+      "style": "grey text/icon",
+      "state": "default",
+      "parent": "c13"
+    },
+    {
+      "id": "c15",
+      "type": "tab_item",
+      "bbox": [
+        299,
+        915,
+        39,
+        51
+      ],
+      "text": "Cart",
+      "icon": "cart outline icon",
+      "style": "grey text/icon",
+      "state": "default",
+      "parent": "c13"
+    },
+    {
+      "id": "c16",
+      "type": "tab_item",
+      "bbox": [
+        465,
+        902,
+        63,
+        64
+      ],
+      "text": "Pay",
+      "icon": "wallet icon",
+      "style": "magenta background pill, white text/icon",
+      "state": "selected",
+      "parent": "c13"
+    },
+    {
+      "id": "c17",
+      "type": "tab_item",
+      "bbox": [
+        615,
+        915,
+        47,
+        51
+      ],
+      "text": "More",
+      "icon": "menu hamburger icon",
+      "style": "grey text/icon",
+      "state": "default",
+      "parent": "c13"
+    },
+    {
+      "id": "c18",
+      "type": "button",
+      "bbox": [
+        786,
+        902,
+        148,
+        78
+      ],
+      "text": "",
+      "icon": "search magnifying glass icon",
+      "style": "white circular button with grey border",
+      "state": "default",
+      "parent": ""
+    }
+  ]
+}

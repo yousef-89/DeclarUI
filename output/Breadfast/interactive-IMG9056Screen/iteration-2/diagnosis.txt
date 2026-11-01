@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header top spacing: container `paddingTop` is 32, reference title starts around y=32 with height 14. Adjust container paddingTop or headerStyle to match precisely.
+2. Bottom bar container placement: `bottom` offset is 28, reference bottom bar is at y=728 (so bottom: 804 - 728 - 51 = 25). Change `footerContainer` bottom to 25.
+3. Menu button horizontal position: reference menu button left is at x=23, current render uses flex-row inside `footerContainer` with padding, which places it slightly differently. Make `footerContainer` absolute positioning match exactly: `left: 23`, `right: 23`, `height: 48`.
+4. Search bar width & position: search bar width in reference goes up to x=363 (width 277). Ensure precise left/right/flex properties.
+5. Icon colors: menu icon color is `#717171`, search icon color is `#969696`.

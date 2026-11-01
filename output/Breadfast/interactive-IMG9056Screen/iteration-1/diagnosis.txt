@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header Title Top Position: old `paddingTop: 60`, new `paddingTop: 32` to align with reference y=32.
+2. Header Title Font Size & Weight: old `fontSize: 20`, `fontWeight: '600'`, new `fontSize: 18`, `fontWeight: 'bold'`, `color: '#050505'`.
+3. Menu Button Size & Style: old width/height 52, border `#E5E7EB`, new width/height 48, border `#dadada`, background `#dadada` for lines or button wrapper.
+4. Search Bar Position & Size: old height 52, margin bottom 40, new height 48, position absolute/bottom aligned at y=728, width 277.
+5. Search Bar Icon: old emoji `🔍`, new `<Icon name="search" size={18} color="#969696" />`.
+6. Footer Container & Background: old full-width flex footer with space-between, new absolute positioning at bottom with explicit padding/margins matching `y=728`.

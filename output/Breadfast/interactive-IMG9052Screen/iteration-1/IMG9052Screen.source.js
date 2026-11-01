@@ -1,7 +1,10 @@
-import React from 'react';
-import { View, Text, ScrollView, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from '../generated-icon';
 
-const IMG9052Screen = () => {
+export default function IMG9052Screen() {
+  const [activeTab, setActiveTab] = useState('Home');
+
   return (
     <View style={styles.container}>
       {/* Header */}
@@ -10,16 +13,18 @@ const IMG9052Screen = () => {
           <Text style={styles.deliverTo}>Deliver to</Text>
           <View style={styles.locationRow}>
             <Text style={styles.locationText}>Hyde Park Damac Compound</Text>
-            <Text style={styles.chevron}> ▾</Text>
+            <View style={{ marginLeft: 4 }}>
+              <Icon name="chevron-down" size={11} color="#973d88" />
+            </View>
           </View>
         </View>
         <View style={styles.headerIcons}>
-          <View style={styles.iconButton}>
-            <Text style={styles.iconText}>💬</Text>
-          </View>
-          <View style={styles.iconButton}>
-            <Text style={styles.iconText}>🎁</Text>
-          </View>
+          <TouchableOpacity style={styles.iconButton}>
+            <Icon name="chat" size={18} color="#95247b" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.iconButton}>
+            <Icon name="gift" size={18} color="#963486" />
+          </TouchableOpacity>
         </View>
       </View>
 
@@ -80,7 +85,7 @@ const IMG9052Screen = () => {
             <View style={styles.card}>
               <View>
                 <Text style={styles.cardTitle}>Lunchbox</Text>
-                <Text style={styles.cardTitle}>Essentials</Text>
+                <Text style={styles.cardSubtitle}>Essentials</Text>
               </View>
               <View style={styles.cardImagePlaceholder}>
                 <Text style={styles.emojiImg}>🍱</Text>
@@ -176,142 +181,147 @@ const IMG9052Screen = () => {
         </View>
 
         {/* Extra bottom spacing */}
-        <View style={{ height: 130 }} />
+        <View style={{ height: 120 }} />
       </ScrollView>
 
       {/* Floating Search & Bottom Navigation */}
-      <View style={styles.floatingSearchContainer}>
-        <View style={styles.searchButton}>
-          <Text style={styles.searchIcon}>🔍</Text>
-        </View>
-      </View>
+      <TouchableOpacity style={styles.floatingSearchButton}>
+        <Icon name="search" size={22} color="#10b981" />
+      </TouchableOpacity>
 
-      <View style={styles.bottomNav}>
-        <View style={[styles.navItem, styles.activeNavItem]}>
-          <Text style={styles.navIconActive}>🏠</Text>
-          <Text style={styles.navTextActive}>Home</Text>
-        </View>
-        <View style={styles.navItem}>
-          <Text style={styles.navIcon}>🛒</Text>
-          <Text style={styles.navText}>Cart</Text>
-        </View>
-        <View style={styles.navItem}>
-          <Text style={styles.navIcon}>💳</Text>
-          <Text style={styles.navText}>Pay</Text>
-        </View>
-        <View style={styles.navItem}>
-          <Text style={styles.navIcon}>☰</Text>
-          <Text style={styles.navText}>More</Text>
-        </View>
+      <View style={styles.floatingTabContainer}>
+        <TouchableOpacity 
+          style={[styles.navItem, activeTab === 'Home' && styles.activeNavItem]}
+          onPress={() => setActiveTab('Home')}
+        >
+          <Icon name="home" size={18} color={activeTab === 'Home' ? '#7c3aed' : '#888'} />
+          {activeTab === 'Home' && <Text style={styles.navTextActive}>Home</Text>}
+        </TouchableOpacity>
+
+        <TouchableOpacity 
+          style={[styles.navItem, activeTab === 'Cart' && styles.activeNavItem]}
+          onPress={() => setActiveTab('Cart')}
+        >
+          <Icon name="cart" size={18} color={activeTab === 'Cart' ? '#7c3aed' : '#888'} />
+          {activeTab === 'Cart' && <Text style={styles.navTextActive}>Cart</Text>}
+        </TouchableOpacity>
+
+        <TouchableOpacity 
+          style={[styles.navItem, activeTab === 'Pay' && styles.activeNavItem]}
+          onPress={() => setActiveTab('Pay')}
+        >
+          <Icon name="wallet" size={18} color={activeTab === 'Pay' ? '#7c3aed' : '#888'} />
+          {activeTab === 'Pay' && <Text style={styles.navTextActive}>Pay</Text>}
+        </TouchableOpacity>
+
+        <TouchableOpacity 
+          style={[styles.navItem, activeTab === 'More' && styles.activeNavItem]}
+          onPress={() => setActiveTab('More')}
+        >
+          <Icon name="menu" size={18} color={activeTab === 'More' ? '#7c3aed' : '#888'} />
+          {activeTab === 'More' && <Text style={styles.navTextActive}>More</Text>}
+        </TouchableOpacity>
       </View>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    maxWidth: 480,
+    backgroundColor: '#ffffff',
+    maxWidth: 390,
     width: '100%',
     alignSelf: 'center',
-    position: 'relative',
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingTop: 16,
+    paddingHorizontal: 16,
+    paddingTop: 30,
     paddingBottom: 12,
   },
   deliverTo: {
-    fontSize: 12,
-    color: '#777',
+    fontSize: 11,
+    color: '#373737',
     marginBottom: 2,
-    fontWeight: '500',
   },
   locationRow: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   locationText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#5C0632',
-    letterSpacing: -0.2,
-  },
-  chevron: {
     fontSize: 14,
-    color: '#5C0632',
     fontWeight: 'bold',
+    color: '#973d88',
   },
   headerIcons: {
     flexDirection: 'row',
   },
   iconButton: {
-    width: 42,
-    height: 42,
-    borderRadius: 21,
-    backgroundColor: '#F9F9FA',
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 10,
+    marginLeft: 8,
     borderWidth: 1,
-    borderColor: '#F0F0F0',
-  },
-  iconText: {
-    fontSize: 18,
+    borderColor: '#f0f0f0',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
   },
   scrollContent: {
-    paddingHorizontal: 20,
+    paddingHorizontal: 16,
   },
   bannerContainer: {
     marginVertical: 4,
   },
   bannerCard: {
-    width: 380,
-    height: 190,
-    backgroundColor: '#230710',
-    borderRadius: 22,
-    padding: 18,
+    width: 344,
+    height: 193,
+    backgroundColor: '#1b060d',
+    borderRadius: 16,
+    padding: 16,
     overflow: 'hidden',
     position: 'relative',
   },
   bannerBadge: {
     position: 'absolute',
-    top: 14,
-    left: 14,
-    backgroundColor: '#fff',
+    top: 12,
+    left: 12,
+    backgroundColor: '#ffffff',
     paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
   },
   bannerBadgeText: {
     fontSize: 10,
-    fontWeight: '900',
-    color: '#000',
-    letterSpacing: 0.5,
+    fontWeight: 'bold',
+    color: '#000000',
   },
   bannerContent: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 4,
   },
   bannerTitle: {
-    color: '#fff',
-    fontSize: 17,
-    fontWeight: '900',
-    letterSpacing: 0.8,
-    marginBottom: 16,
+    color: '#ffffff',
+    fontSize: 15,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+    marginBottom: 20,
     textAlign: 'center',
   },
   cansRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    paddingHorizontal: 12,
+    paddingHorizontal: 10,
   },
   canLeft: {
     alignItems: 'flex-start',
@@ -321,35 +331,30 @@ const styles = StyleSheet.create({
   },
   canSub: {
     color: '#a3e635',
-    fontSize: 10,
-    fontWeight: '800',
-    letterSpacing: 0.3,
+    fontSize: 9,
+    fontWeight: 'bold',
   },
   canMain: {
     color: '#a3e635',
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: '900',
-    letterSpacing: 0.5,
   },
   canSubRight: {
     color: '#f472b6',
-    fontSize: 10,
-    fontWeight: '800',
-    letterSpacing: 0.3,
+    fontSize: 9,
+    fontWeight: 'bold',
   },
   canMainRight: {
     color: '#f472b6',
-    fontSize: 20,
+    fontSize: 17,
     fontWeight: '900',
-    letterSpacing: 0.5,
   },
   sectionTitle: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: '#111',
-    marginTop: 22,
-    marginBottom: 14,
-    letterSpacing: -0.3,
+    color: '#212121',
+    marginTop: 14,
+    marginBottom: 12,
   },
   gridContainer: {
     flexDirection: 'column',
@@ -357,66 +362,61 @@ const styles = StyleSheet.create({
   gridRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 12,
+    marginBottom: 10,
   },
   card: {
-    width: '48%',
-    backgroundColor: '#F8F9FB',
-    borderRadius: 20,
-    padding: 16,
-    height: 100,
+    width: 175,
+    backgroundColor: '#f8f8f8',
+    borderRadius: 14,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    height: 56,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     position: 'relative',
     overflow: 'hidden',
   },
   cardTitle: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: '#111',
-    letterSpacing: -0.2,
+    fontSize: 13,
+    fontWeight: '600',
+    color: '#212121',
   },
   cardSubtitle: {
-    fontSize: 11,
-    color: '#666',
-    marginTop: 3,
-    fontWeight: '500',
+    fontSize: 10,
+    color: '#777777',
+    marginTop: 1,
   },
   cardImagePlaceholder: {
-    position: 'absolute',
-    right: 12,
-    bottom: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   emojiImg: {
-    fontSize: 38,
+    fontSize: 28,
   },
   newBadge: {
     position: 'absolute',
-    top: 12,
-    right: 12,
-    backgroundColor: '#6b21a8',
-    paddingHorizontal: 8,
+    top: 6,
+    right: 8,
+    backgroundColor: '#95247b',
+    paddingHorizontal: 6,
     paddingVertical: 2,
-    borderRadius: 10,
+    borderRadius: 8,
     zIndex: 2,
   },
   newBadgeText: {
-    color: '#fff',
-    fontSize: 10,
+    color: '#ffffff',
+    fontSize: 9,
     fontWeight: 'bold',
   },
-  floatingSearchContainer: {
+  floatingSearchButton: {
     position: 'absolute',
-    right: 20,
-    bottom: 85,
-    zIndex: 20,
-  },
-  searchButton: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: '#fff',
+    right: 21,
+    bottom: 105,
+    width: 58,
+    height: 58,
+    borderRadius: 29,
+    backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
@@ -424,61 +424,46 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 8,
     elevation: 6,
-    borderWidth: 1,
-    borderColor: '#eee',
+    borderWidth: 2,
+    borderColor: '#10b981',
+    zIndex: 20,
   },
-  searchIcon: {
-    fontSize: 22,
-  },
-  bottomNav: {
+  floatingTabContainer: {
     position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: 72,
-    backgroundColor: '#fff',
+    bottom: 15,
+    left: 15,
+    right: 15,
+    height: 64,
+    backgroundColor: '#ffffff',
+    borderRadius: 32,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    borderTopWidth: 1,
-    borderTopColor: '#EFEFEF',
-    paddingBottom: 12,
-    paddingHorizontal: 12,
-    zIndex: 15,
+    paddingHorizontal: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.12,
+    shadowRadius: 10,
+    elevation: 8,
+    zIndex: 10,
   },
   navItem: {
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 20,
   },
   activeNavItem: {
     backgroundColor: '#f3e8ff',
-    borderRadius: 24,
-    marginHorizontal: 4,
-    paddingVertical: 8,
     flexDirection: 'row',
-    paddingHorizontal: 16,
-  },
-  navIcon: {
-    fontSize: 20,
-    color: '#888',
-    marginBottom: 2,
-  },
-  navText: {
-    fontSize: 11,
-    color: '#888',
-    fontWeight: '500',
-  },
-  navIconActive: {
-    fontSize: 18,
-    color: '#7c3aed',
-    marginRight: 6,
+    alignItems: 'center',
+    paddingHorizontal: 14,
   },
   navTextActive: {
     fontSize: 12,
     color: '#7c3aed',
     fontWeight: 'bold',
+    marginLeft: 6,
   },
 });
-
-export default IMG9052Screen;

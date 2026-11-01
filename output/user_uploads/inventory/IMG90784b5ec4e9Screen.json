@@ -1,0 +1,475 @@
+{
+  "screen": {
+    "background": "#18171c",
+    "theme": "dark",
+    "has_status_bar": false,
+    "summary": "Alarm clock app home screen displaying a list of set alarms, a PRO promotion, a new mission banner, and a bottom navigation bar."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "chip",
+      "text": "PRO Start",
+      "icon": "lightning bolt in circle",
+      "style": "pill badge, gradient border, dark background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        16,
+        17,
+        110,
+        32
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "icon_button",
+      "text": "",
+      "icon": "three dots menu",
+      "style": "transparent background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        356,
+        31,
+        16,
+        6
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "card",
+      "text": "Overslept AGAIN? Try our new mission",
+      "icon": "NEW star badge and right arrow",
+      "style": "rounded card, dark background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        12,
+        73,
+        366,
+        79
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "title",
+      "text": "Ring in 26min >",
+      "icon": "right arrow",
+      "style": "bold white text",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        21,
+        179,
+        140,
+        19
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "rounded card, dark background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        12,
+        217,
+        366,
+        108
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "text",
+      "text": "One-time",
+      "icon": "",
+      "style": "small gray text",
+      "state": "default",
+      "parent": "c5",
+      "bbox": [
+        32,
+        238,
+        54,
+        10
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "title",
+      "text": "8:45 am",
+      "icon": "",
+      "style": "large gray text",
+      "state": "default",
+      "parent": "c5",
+      "bbox": [
+        33,
+        266,
+        117,
+        36
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "switch",
+      "text": "",
+      "icon": "",
+      "style": "toggle switch",
+      "state": "off",
+      "parent": "c5",
+      "bbox": [
+        311,
+        234,
+        51,
+        32
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "icon_button",
+      "text": "",
+      "icon": "three vertical dots",
+      "style": "transparent",
+      "state": "default",
+      "parent": "c5",
+      "bbox": [
+        350,
+        295,
+        4,
+        10
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "rounded card, dark background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        12,
+        337,
+        366,
+        108
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "text",
+      "text": "One-time",
+      "icon": "",
+      "style": "small gray text",
+      "state": "default",
+      "parent": "c10",
+      "bbox": [
+        32,
+        357,
+        54,
+        10
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "title",
+      "text": "9:00 am",
+      "icon": "",
+      "style": "large gray text",
+      "state": "default",
+      "parent": "c10",
+      "bbox": [
+        34,
+        390,
+        118,
+        30
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "switch",
+      "text": "",
+      "icon": "",
+      "style": "toggle switch",
+      "state": "off",
+      "parent": "c10",
+      "bbox": [
+        311,
+        353,
+        51,
+        32
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "icon_button",
+      "text": "",
+      "icon": "three vertical dots",
+      "style": "transparent",
+      "state": "default",
+      "parent": "c10",
+      "bbox": [
+        350,
+        414,
+        4,
+        11
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "rounded card, dark background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        12,
+        456,
+        366,
+        108
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "text",
+      "text": "One-time",
+      "icon": "",
+      "style": "small white text",
+      "state": "default",
+      "parent": "c15",
+      "bbox": [
+        32,
+        476,
+        54,
+        10
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "title",
+      "text": "9:00 am",
+      "icon": "",
+      "style": "large white text",
+      "state": "default",
+      "parent": "c15",
+      "bbox": [
+        33,
+        509,
+        119,
+        32
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "switch",
+      "text": "",
+      "icon": "",
+      "style": "toggle switch cyan/white",
+      "state": "on",
+      "parent": "c15",
+      "bbox": [
+        310,
+        472,
+        53,
+        32
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "icon_button",
+      "text": "",
+      "icon": "three vertical dots",
+      "style": "transparent",
+      "state": "default",
+      "parent": "c15",
+      "bbox": [
+        350,
+        533,
+        4,
+        11
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "rounded card, dark background",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        12,
+        574,
+        366,
+        105
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "text",
+      "text": "One-time",
+      "icon": "",
+      "style": "small white text",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        32,
+        595,
+        54,
+        10
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "title",
+      "text": "9:15 am",
+      "icon": "",
+      "style": "large white text",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        33,
+        628,
+        111,
+        32
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "switch",
+      "text": "",
+      "icon": "",
+      "style": "toggle switch cyan/white",
+      "state": "on",
+      "parent": "c20",
+      "bbox": [
+        310,
+        591,
+        53,
+        32
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "icon_button",
+      "text": "",
+      "icon": "three vertical dots",
+      "style": "transparent",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        350,
+        656,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "floating_action_button",
+      "text": "",
+      "icon": "plus sign",
+      "style": "pink/red circular button with white plus",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        318,
+        598,
+        57,
+        59
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "bottom navigation bar, dark rounded container",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        20,
+        672,
+        350,
+        62
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "tab_item",
+      "text": "Alarm",
+      "icon": "alarm clock",
+      "style": "selected tab with pill background",
+      "state": "selected",
+      "parent": "c26",
+      "bbox": [
+        23,
+        680,
+        86,
+        50
+      ]
+    },
+    {
+      "id": "c28",
+      "type": "tab_item",
+      "text": "Sleep",
+      "icon": "moon and stars",
+      "style": "unselected tab",
+      "state": "default",
+      "parent": "c26",
+      "bbox": [
+        108,
+        680,
+        47,
+        50
+      ]
+    },
+    {
+      "id": "c29",
+      "type": "tab_item",
+      "text": "Morning",
+      "icon": "sun",
+      "style": "unselected tab",
+      "state": "default",
+      "parent": "c26",
+      "bbox": [
+        165,
+        680,
+        60,
+        50
+      ]
+    },
+    {
+      "id": "c30",
+      "type": "tab_item",
+      "text": "Report",
+      "icon": "chart document",
+      "style": "unselected tab",
+      "state": "default",
+      "parent": "c26",
+      "bbox": [
+        234,
+        680,
+        51,
+        50
+      ]
+    },
+    {
+      "id": "c31",
+      "type": "tab_item",
+      "text": "Setting",
+      "icon": "gear",
+      "style": "unselected tab",
+      "state": "default",
+      "parent": "c26",
+      "bbox": [
+        296,
+        680,
+        61,
+        50
+      ]
+    }
+  ]
+}

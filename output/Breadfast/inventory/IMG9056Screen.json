@@ -1,0 +1,70 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "Search screen with a bottom navigation bar containing a menu button and search input."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "title",
+      "text": "Search",
+      "icon": "",
+      "style": "font-size: 18px; font-weight: bold; color: #050505;",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        166,
+        32,
+        56,
+        14
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "background: #ffffff; padding: 10px;",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        23,
+        728,
+        342,
+        51
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "icon_button",
+      "text": "",
+      "icon": "menu",
+      "style": "background: #dadada; border-radius: 50%;",
+      "state": "",
+      "parent": "c2",
+      "bbox": [
+        27,
+        728,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "search_bar",
+      "text": "What are you looking for?",
+      "icon": "magnifier",
+      "style": "background: #ffffff; border: 1px solid #dadada; border-radius: 24px; color: #969696;",
+      "state": "placeholder text shown",
+      "parent": "c2",
+      "bbox": [
+        86,
+        728,
+        277,
+        48
+      ]
+    }
+  ]
+}

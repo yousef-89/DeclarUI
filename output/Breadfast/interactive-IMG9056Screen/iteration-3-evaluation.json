@@ -1,0 +1,49 @@
+{
+  "protocol_stage": "Refinement Evaluation (iteration-3)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Breadfast",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9056Screen\\iteration-3",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.964,
+  "mean_content_ssim": 0.4588,
+  "mean_clip_similarity": 0.958,
+  "detailed_results": [
+    {
+      "component": "IMG9056Screen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\Breadfast\\IMG_9056.PNG",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\Breadfast\\interactive-IMG9056Screen\\iteration-3\\IMG9056Screen.png",
+      "target_exists": true,
+      "target_match": "IMG_9056.PNG",
+      "metric_status": "evaluated",
+      "ssim": 0.964,
+      "content_ssim": 0.4588,
+      "clip_similarity": 0.958,
+      "worst_regions": [
+        {
+          "y_start": 0,
+          "y_end": 67,
+          "ssim": 0.3576
+        },
+        {
+          "y_start": 670,
+          "y_end": 737,
+          "ssim": 0.4579
+        },
+        {
+          "y_start": 737,
+          "y_end": 804,
+          "ssim": 0.473
+        }
+      ],
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 390,
+        "height": 804
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Navigation bar icons/tabs: Currently using emoji text representations with custom placeholder views; replace with proper `<Icon>` components and precise label layout matching the reference tab bar.
+2. PRO Start badge: Border color and gradient/styling needs adjustment to match the glowing pink/orange gradient pill border in the reference.
+3. Bottom Navigation Container: The container background color and rounded shape need exact alignment with `#4a494e` / dark pill style.
+4. Alarm card padding and vertical alignment: The alarm cards have slightly misaligned internal spacing for "One-time" and the time text; adjust vertical padding and font colors (`#69686e` for inactive, `#fafafa` for active text).
+5. Floating Action Button position: The FAB button overlaps slightly too much or is mispositioned vertically; adjust `bottom: 95` and `right: 18`.

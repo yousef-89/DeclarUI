@@ -1,0 +1,18 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\SoundCloudiOSMusic",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\SoundCloudiOSMusic\\interactive-SearchScreen\\iteration-1",
+  "appName": "SoundCloudiOSMusic",
+  "port": 3000,
+  "total": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "results": [
+    {
+      "component": "SearchScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\SoundCloudiOSMusic\\SearchScreen.js",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\SoundCloudiOSMusic\\interactive-SearchScreen\\iteration-1\\SearchScreen.png",
+      "success": true,
+      "error": null
+    }
+  ]
+}

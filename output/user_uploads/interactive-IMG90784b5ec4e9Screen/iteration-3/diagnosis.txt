@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. PRO chip icon: The reference uses a lightning bolt icon inside a circle badge with a reddish-pink border and dark background; current uses `zap` with pink color without border/circle background container style matching reference. Fix: wrap icon in a small circular view with red/pink border `#d39eab`.
+2. NEW badge shape: The reference uses a starburst/polygonal style badge for "NEW" with red background; current uses a rounded rectangle. Fix: use star icon or stylized rounded shape with jagged edges, or polygon/star icon.
+3. Bottom navigation icons: Report and Setting icons in the bottom bar are hollow/outlined or different (Report uses `file-text`, Setting uses `settings`), whereas reference uses a chart document for Report and gear for Setting. Also tab items padding and alignment. Fix: update Report icon to chart/document style (e.g. `bar-chart-2` or `file-text` filled) and Setting to `settings` filled or correct variant.
+4. Active alarm toggle color: Active state switch background is a cyan/teal color `#43b3ae` or `#4cc3b9` in reference, current is cyan-teal but let's ensure precise color `#3cc5c8` matching screenshot.
+5. Inactive alarm font color & weight: Inactive alarm card time color is darker gray `#525254` with bold/medium weight mismatch. Fix: adjust `inactiveText` color to `#525254`.
+6. Header spacing & heights: Top bar margin and banner vertical positioning can be slightly tweaked to match exact measured canvas offsets (e.g., banner at y=73).

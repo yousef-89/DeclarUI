@@ -1,0 +1,49 @@
+You are a UI analyst. Decompose the attached mobile app screenshot into its
+UI components so an engineer can rebuild it exactly.
+
+Return every bounding box as "box_2d": [ymin, xmin, ymax, xmax], normalized
+to 0-1000 relative to the screenshot's height (y) and width (x). Never use
+pixel or point coordinates.
+
+Computer-vision measurements of the visible blocks in the same normalized
+box_2d format, which you should use to make your boxes precise:
+$layout
+
+Return JSON only, with this structure:
+{
+  "screen": {
+    "background": "#rrggbb",
+    "theme": "light" | "dark",
+    "has_status_bar": true | false,
+    "summary": "one sentence describing the screen's purpose"
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "<one of the types below>",
+      "box_2d": [ymin, xmin, ymax, xmax],
+      "text": "visible text, verbatim, or empty",
+      "icon": "short icon description, or empty",
+      "style": "background, border, radius, font size/weight, colors",
+      "state": "e.g. selected, on, off, 40% filled, placeholder text shown",
+      "parent": "id of the containing component, or empty"
+    }
+  ]
+}
+
+Component types:
+status_bar, header, title, text, icon, icon_button, button, link, text_input,
+search_bar, image, banner, illustration, avatar, card, list_item, grid,
+carousel, chip, badge, tab_bar, tab_item, segmented_control, switch,
+checkbox, radio, slider, progress_bar, stepper, rating, dropdown,
+floating_action_button, divider, bottom_sheet, other
+
+Rules:
+- List every visible interactive control individually (each button, tab item,
+  chip, switch, slider, input). Do not merge controls into a generic card.
+- Use the most specific type: a rounded pill with a magnifier and placeholder
+  is a search_bar, a horizontal row of icon+label items at the bottom is a
+  tab_bar with tab_item children, a draggable thumb on a track is a slider.
+- Note whether bars float (inset, rounded, shadow) or span the full width.
+- Note carousels whose neighbouring items peek in at the screen edges.
+- Order components top to bottom, left to right, parents before children.

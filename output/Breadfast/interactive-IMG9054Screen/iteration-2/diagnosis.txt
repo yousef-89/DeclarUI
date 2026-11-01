@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header/Logo placement & size: The header logo text and symbol are misaligned vertically and slightly off in scale compared to the top reference (y ~26 instead of 35).
+2. Card component content positions: The brand watermark and credit card chip/contactless icon are positioned at the top right of the card banner in the reference (`bannerTopRow`), whereas the current render places them incorrectly.
+3. Card banner vertical position & height: The main banner card starts at `y: 190` with height `582`, but current render starts at `y: 180` and content inside is misaligned.
+4. Bottom navigation bar layout: The tab bar and search button floating container are positioned too low (`bottom: 12` vs reference `bottom: ~20` inside the screen, and absolute layout relative to canvas).
+5. Card typography & padding: The banner title, subtitle, and "Get started" button need exact positioning and spacing to match the reference layout.

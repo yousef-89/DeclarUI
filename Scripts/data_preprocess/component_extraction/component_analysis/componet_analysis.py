@@ -1,4 +1,5 @@
 import json
+import os
 from openai import OpenAI
 import subprocess
 import shutil
@@ -61,7 +62,7 @@ def split2type(image_dir, category, app_name, image_name, content):
         
         try:
             completion = client.models.generate_content(
-                model="gemini-3.5-flash-lite",
+                model=os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite"),
                 contents=content_list,
             )
             response = response + (completion.text or "") + '\n'

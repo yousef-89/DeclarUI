@@ -1,0 +1,758 @@
+You are an expert React Native engineer performing one visual refinement pass
+on the screen component IMG9055Screen. Make the render match the reference
+screenshot more closely.
+
+# Images
+1. The reference screenshot (the goal).
+2. The current render of the code below.
+3. A side-by-side comparison (reference left, render right) on the same
+   390 x 800 point canvas, with a y-axis ruler and grid lines
+   every 50 points, so you can measure vertical offsets and sizes.
+
+# Current scores
+SSIM: 0.6941 (structural layout similarity, 1.0 = identical)
+Content SSIM: 0.3786 (SSIM over regions containing UI elements only)
+CLIP: 0.8945 (perceptual similarity)
+
+Note: the previous refinement attempt was rolled back because it lowered SSIM to 0.7387 and content SSIM to 0.3479. Its diagnosis was probably wrong or the edits were too broad; try different, targeted fixes.
+
+# Component inventory of the reference
+Screen: User account and profile management screen with explore options, account settings, and bottom navigation. Background #ffffff, light theme, status bar not shown.
+- c1 title bbox=[16, 37, 178, 29]; text: yousef Samy; style: font-weight: bold, font-size: 28px, color: #212121
+- c2 icon_button bbox=[336, 38, 34, 21]; icon: qr code grid; style: background: #f7eaf3, color: #97227d, border-radius: 16px
+- c3 banner bbox=[15, 92, 360, 72]; text: Get Free Delivery on orders above EGP 200
+Tap to apply for your Breadfast Card; icon: delivery bag and card illustration; style: background: #7c336a, border-radius: 16px, color: #ffffff
+- c4 card bbox=[15, 176, 175, 108]; text: Order history; icon: receipt; style: background: #ffffff, border-radius: 20px, shadow
+- c5 card bbox=[200, 176, 175, 108]; text: Breadfast Rewards
+Shop to earn points; icon: reward logo; style: background: #ffffff, border-radius: 20px, shadow
+- c6 title bbox=[16, 309, 51, 10]; text: EXPLORE; style: font-size: 12px, font-weight: 600, color: #7e7e7f
+- c7 card bbox=[15, 334, 360, 161]; style: background: #ffffff, border-radius: 20px
+- c8 list_item bbox=[33, 352, 105, 19]; text: Favorites; icon: heart, chevron right; style: color: #232323; in c7
+- c9 list_item bbox=[33, 403, 137, 20]; text: Invite a friend; icon: gift, chevron right; style: color: #212121; in c7
+- c10 list_item bbox=[33, 454, 108, 21]; text: BundleUp; icon: boxes, chevron right; style: color: #050505; in c7
+- c11 title bbox=[16, 519, 58, 9]; text: ACCOUNT; style: font-size: 12px, font-weight: 600, color: #838383
+- c12 card bbox=[15, 542, 360, 161]; style: background: #ffffff, border-radius: 20px
+- c13 list_item bbox=[33, 560, 97, 21]; text: Settings; icon: gear, chevron right; style: color: #242424; in c12
+- c14 list_item bbox=[33, 613, 130, 19]; text: Chat with us; icon: chat bubble, chevron right; style: color: #222222; in c12
+- c15 list_item bbox=[33, 664, 71, 20]; text: Help; icon: question circle, chevron right; style: color: #262626; in c12
+- c16 tab_bar bbox=[20, 718, 350, 62]; style: background: #ffffff, border-top: 1px solid #eee
+- c17 tab_item bbox=[50, 731, 32, 34]; text: Home; icon: house; style: color: #717173; state: inactive; in c16
+- c18 tab_item bbox=[117, 731, 24, 34]; text: Cart; icon: cart; style: color: #747474; state: inactive; in c16
+- c19 tab_item bbox=[182, 732, 20, 36]; text: Pay; icon: wallet; style: color: #737373; state: inactive; in c16
+- c20 tab_item bbox=[213, 721, 107, 55]; text: More; icon: menu hamburger; style: background: #e1e1e3, border-radius: 24px, color: #292929; state: active; in c16
+- c21 icon_button bbox=[307, 724, 63, 55]; icon: magnifying glass; style: background: #ffffff, border: 1px solid #dadada, border-radius: 24px; in c16
+
+# Measured layout on the shared canvas
+Target screenshot layout (measured):
+Canvas: 390x800 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (16, 37, 178, 29) #212121
+- (344, 38, 21, 21) #97227d
+- (15, 92, 360, 72) #7c336a
+- (213, 187, 31, 33) #c95188
+- (32, 189, 23, 30) #e1d8cf
+- (28, 235, 96, 15) #2a2a2a
+- (214, 235, 138, 12) #2a2a2a
+- (213, 258, 119, 13) #c7c7c7
+- (16, 309, 51, 10) #7e7e7f
+- (33, 352, 21, 19) #232323
+- (346, 354, 9, 15) #737373
+- (72, 355, 66, 13) #272727
+- (33, 403, 21, 20) #212121
+- (346, 406, 8, 14) #7b7b7b
+- (72, 407, 98, 12) #2a2a2a
+- (33, 454, 21, 21) #050505
+- (346, 457, 9, 15) #767676
+- (72, 458, 69, 16) #292929
+- (16, 519, 58, 9) #838383
+- (33, 560, 21, 21) #242424
+- (346, 563, 9, 15) #737373
+- (72, 564, 58, 16) #282828
+- (33, 613, 21, 19) #222222
+- (346, 615, 9, 15) #777777
+- (72, 616, 91, 13) #292929
+- (33, 664, 21, 20) #262626
+- (346, 667, 9, 14) #7d7d7d
+- (72, 668, 32, 15) #252525
+- (213, 721, 107, 55) #e1e1e3
+- (20, 723, 13, 50) #dadada
+- (358, 724, 12, 49) #d9d9d9
+- (56, 731, 21, 20) #717173
+- (119, 731, 20, 21) #747474
+- (182, 732, 19, 19) #737373
+- (328, 738, 21, 20) #717172
+- (50, 756, 32, 9) #292929
+- (117, 756, 24, 9) #363636
+- (182, 756, 20, 12) #363636
+
+Current render layout (measured on the same canvas):
+Canvas: 390x800 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (19, 35, 196, 33) #111111
+- (339, 37, 18, 18) #d32f54
+- (16, 88, 358, 136) #582b48
+- (35, 263, 38, 44) #fbece8
+- (221, 263, 40, 40) #fcd3e1
+- (222, 310, 130, 12) #111111
+- (35, 329, 95, 16) #111111
+- (221, 333, 103, 12) #919191
+- (23, 392, 55, 9) #888888
+- (88, 445, 62, 12) #131313
+- (48, 446, 12, 11) #2f2f2f
+- (45, 513, 18, 18) #c82342
+- (88, 516, 96, 12) #171717
+- (46, 584, 16, 18) #ba7e5b
+- (88, 587, 68, 15) #131313
+- (22, 656, 62, 9) #888888
+- (48, 708, 12, 6) #3b3b3b
+- (87, 709, 57, 5) #6b6b6b
+- (231, 728, 88, 37) #f4e7ec
+- (52, 731, 18, 18) #9d6249
+- (120, 731, 18, 18) #b2b5be
+- (14, 735, 3, 36) #e9e9ea
+- (373, 735, 3, 36) #e9e9ea
+- (187, 737, 19, 12) #3da9e8
+- (333, 740, 16, 16) #586195
+- (48, 757, 27, 8) #8a8a8a
+- (119, 757, 19, 8) #787878
+- (189, 757, 16, 10) #767676
+- (30, 774, 330, 19) #4d4d4d
+
+Regions with the largest visual mismatch (lowest SSIM):
+- y 133-200: SSIM 0.2341
+- y 0-66: SSIM 0.3073
+- y 400-466: SSIM 0.3246
+- y 333-400: SSIM 0.3327
+
+# React Native Web implementation rules
+
+Code
+- Export the screen as `export default function IMG9055Screen() { ... }`.
+- Import only from 'react', 'react-native', and the local icon component:
+  `import Icon from '../generated-icon';`
+- Use React state (useState) so controls are interactive: switches toggle,
+  sliders move, tabs and segmented controls change selection, inputs accept text.
+- No navigation libraries, native-only APIs, external packages, or network calls.
+
+Canvas
+- The screen renders in a fixed 390 x 800 point canvas with the
+  same aspect ratio as the screenshot. All coordinates are in these points.
+- The root View uses `flex: 1` and the screenshot's background color.
+- Lay out content with flexbox. Use `position: 'absolute'` only for elements
+  that overlay other content: floating buttons, floating or fixed bottom bars,
+  badges, and elements pinned to the bottom of the screen.
+- Content that is cut off at the bottom of the screenshot must also be cut off
+  in the render; do not shrink content to make it fit.
+- If the screenshot shows the phone status bar (time, signal, battery),
+  reproduce it with a Text for the time and small Views for the indicators.
+
+Typography
+- fontSize is roughly 0.75 x the measured height of a single text line.
+- Match font weight (400 regular, 500 medium, 600 semibold, 700 bold), color,
+  alignment, and letter case exactly as shown. Copy all visible text verbatim.
+
+Images and icons
+- Never load remote or local image files (no `uri`, no `require`).
+- Photos and banners: a View with the region's dominant color (or two stacked
+  Views to approximate a gradient), the same size and corner radius, with any
+  text that is printed on the image reproduced as Text on top.
+- Small illustrations of objects (food, gifts, products): a single emoji with
+  a fontSize matching the illustration size.
+- Pictograms and UI icons: `<Icon name="..." size={..} color=".." />`.
+  Available names: search, chevron-left, chevron-right, chevron-up, chevron-down, arrow-left, arrow-right, arrow-up, arrow-down, menu, more-horizontal, more-vertical, close, plus, minus, check, home, heart, star, user, users, bell, cart, bag, settings, filter, sliders, share, download, upload, refresh, play, pause, skip-forward, skip-back, shuffle, repeat, volume, mic, camera, image, calendar, clock, location, globe, chat, mail, phone, send, lock, eye, edit, trash, grid, list, bookmark, gift, credit-card, wallet, tag, info, help, logout, scan, qr-code, printer, car, truck, diamond, briefcase, book, music, headphones, video, wifi, battery, signal, sun, moon, flag, thumbs-up, comment, link, circle.
+  Add `filled` for solid icons. Pick the closest name; never draw icons as letters.
+- Avatars: a circular View with the dominant color (and initials if shown).
+
+Controls (build these from Views so they match the screenshot exactly)
+- Button / icon button: TouchableOpacity with the exact background, border,
+  radius, padding, and label or icon.
+- Text input / search bar: View container with icon(s) + TextInput with
+  `placeholder` and `placeholderTextColor` matching the screenshot.
+- Switch / toggle: a rounded track View with a circular thumb View on the
+  left (off) or right (on), using the screenshot's colors.
+- Slider / seek bar / progress bar: a thin track View, a filled View whose width
+  is the shown fraction, and (for sliders) a circular thumb at that position.
+- Checkbox / radio: bordered square / circle View, filled with a check icon or
+  inner dot when selected.
+- Segmented control / chips / tags: a row of rounded Views; the selected item
+  has the distinct background shown in the screenshot.
+- Tab bar: a row of icon + label items. If it floats (rounded, inset from the
+  edges, shadow), make it an absolutely positioned rounded View at the same
+  position; otherwise a full-width bar at the bottom with a top border.
+- Carousel: a horizontal ScrollView; if neighbouring cards peek in at the
+  screen edges, reproduce the peeking cards at those positions.
+- Badges / counters: small absolutely positioned rounded Views.
+- Lists and grids: map over a data array; keep row heights, gaps, and column
+  widths equal to the measured values.
+
+# How to refine
+1. Compare the reference and the render component by component, using the
+   inventory as a checklist.
+2. Fix the most important differences first, in this order:
+   a. missing, extra, or wrong-type components (e.g. a flat tab bar where the
+      reference has a floating one, a plain View where it has a slider);
+   b. position and size errors: heights, widths, margins, gaps, alignment,
+      anything shifted vertically (check the ruler);
+   c. colors, corner radii, borders, shadows;
+   d. typography: font size, weight, color, text content.
+3. Leave components that already match unchanged. Do not rewrite the screen
+   from scratch; edit the specific styles and elements that cause differences.
+
+# Output format
+First a section starting with `DIAGNOSIS:` listing at most 6 concrete
+differences, most impactful first, each with the exact fix (property, old
+value, new value). Then the complete updated source code in a single ```jsx
+code block.
+
+# Current source
+```jsx
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+
+export default function IMG9055Screen() {
+  return (
+    <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>yousef Samy</Text>
+          <View style={styles.qrButton}>
+            <View style={styles.qrIconGrid}>
+              <View style={styles.qrRow}>
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+              </View>
+              <View style={styles.qrRow}>
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { backgroundColor: '#d32f54', borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+              </View>
+              <View style={styles.qrRow}>
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+              </View>
+            </View>
+          </View>
+        </View>
+
+        {/* Banner */}
+        <View style={styles.banner}>
+          <View style={styles.bannerTextContainer}>
+            <Text style={styles.bannerTitle}>Get Free Delivery</Text>
+            <Text style={styles.bannerTitle}>on orders above EGP 200</Text>
+            <Text style={styles.bannerSubtitle}>Tap to apply for your Breadfast Card</Text>
+          </View>
+          <View style={styles.bannerGraphic}>
+            <View style={styles.cardMockup}>
+              <View style={styles.cardHeaderRow}>
+                <View style={styles.cardChip} />
+              </View>
+              <Text style={styles.cardBrandText}>Breadfast Pay</Text>
+              <Text style={styles.cardSubText}>ADIB VISA</Text>
+            </View>
+            <View style={styles.bagMockup}>
+              <View style={styles.bagLogo}>
+                <Text style={styles.bagLogoText}>8</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        {/* Top Cards (Order history & Rewards) */}
+        <View style={styles.topCardsRow}>
+          <View style={styles.topCard}>
+            <View style={styles.cardIconBox}>
+              <View style={styles.receiptLine} />
+              <View style={styles.receiptLine} />
+              <View style={styles.receiptLineShort} />
+            </View>
+            <Text style={styles.topCardTitle}>Order history</Text>
+          </View>
+
+          <View style={styles.topCard}>
+            <View style={styles.rewardsIconBox}>
+              <Text style={styles.rewardsIconText}>8</Text>
+            </View>
+            <Text style={styles.topCardTitle}>Breadfast Rewards</Text>
+            <Text style={styles.topCardSubtitle}>Shop to earn points</Text>
+          </View>
+        </View>
+
+        {/* Section: EXPLORE */}
+        <Text style={styles.sectionHeader}>EXPLORE</Text>
+        <View style={styles.sectionContainer}>
+          <View style={styles.menuItem}>
+            <View style={styles.menuItemLeft}>
+              <View style={styles.iconCircle}>
+                <Text style={styles.glyphText}>♡</Text>
+              </View>
+              <Text style={styles.menuItemText}>Favorites</Text>
+            </View>
+            <Text style={styles.chevron}>›</Text>
+          </View>
+
+          <View style={styles.menuDivider} />
+
+          <View style={styles.menuItem}>
+            <View style={styles.menuItemLeft}>
+              <View style={styles.iconCircle}>
+                <Text style={styles.glyphText}>🎁</Text>
+              </View>
+              <Text style={styles.menuItemText}>Invite a friend</Text>
+            </View>
+            <Text style={styles.chevron}>›</Text>
+          </View>
+
+          <View style={styles.menuDivider} />
+
+          <View style={styles.menuItem}>
+            <View style={styles.menuItemLeft}>
+              <View style={styles.iconCircle}>
+                <Text style={styles.glyphText}>📦</Text>
+              </View>
+              <Text style={styles.menuItemText}>BundleUp</Text>
+            </View>
+            <Text style={styles.chevron}>›</Text>
+          </View>
+        </View>
+
+        {/* Section: ACCOUNT */}
+        <Text style={styles.sectionHeader}>ACCOUNT</Text>
+        <View style={styles.sectionContainer}>
+          <View style={styles.menuItem}>
+            <View style={styles.menuItemLeft}>
+              <View style={styles.iconCircle}>
+                <Text style={styles.glyphText}>⚙</Text>
+              </View>
+              <Text style={styles.menuItemText}>Settings</Text>
+            </View>
+            <Text style={styles.chevron}>›</Text>
+          </View>
+
+          <View style={styles.menuDivider} />
+
+          <View style={styles.menuItem}>
+            <View style={styles.menuItemLeft}>
+              <View style={styles.iconCircle}>
+                <Text style={styles.glyphText}>💬</Text>
+              </View>
+              <Text style={styles.menuItemText}>Chat with us</Text>
+            </View>
+            <Text style={styles.chevron}>›</Text>
+          </View>
+
+          <View style={styles.menuDivider} />
+
+          <View style={styles.menuItem}>
+            <View style={styles.menuItemLeft}>
+              <View style={styles.iconCircle}>
+                <Text style={styles.glyphText}>?</Text>
+              </View>
+              <Text style={styles.menuItemText}>Help</Text>
+            </View>
+            <Text style={styles.chevron}>›</Text>
+          </View>
+        </View>
+
+        <View style={styles.bottomSpacer} />
+      </ScrollView>
+
+      {/* Floating Bottom Navigation */}
+      <View style={styles.floatingNavWrapper}>
+        <View style={styles.bottomNav}>
+          <View style={styles.navItem}>
+            <Text style={styles.navIconText}>🏠</Text>
+            <Text style={styles.navLabel}>Home</Text>
+          </View>
+
+          <View style={styles.navItem}>
+            <Text style={styles.navIconText}>🛒</Text>
+            <Text style={styles.navLabel}>Cart</Text>
+          </View>
+
+          <View style={styles.navItem}>
+            <Text style={styles.navIconText}>💳</Text>
+            <Text style={styles.navLabel}>Pay</Text>
+          </View>
+
+          <View style={styles.activeNavItem}>
+            <Text style={styles.activeNavIconText}>≡</Text>
+            <Text style={styles.activeNavLabel}>More</Text>
+          </View>
+
+          <View style={styles.searchNavItem}>
+            <Text style={styles.searchNavIconText}>🔍</Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f8f8f9',
+  },
+  scrollContent: {
+    paddingHorizontal: 16,
+    paddingTop: 24,
+    paddingBottom: 110,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
+    paddingHorizontal: 4,
+  },
+  headerTitle: {
+    fontSize: 32,
+    fontWeight: '800',
+    color: '#111',
+    letterSpacing: -0.5,
+  },
+  qrButton: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.06,
+    shadowRadius: 4,
+    elevation: 2,
+    borderWidth: 1,
+    borderColor: '#f2f2f4',
+  },
+  qrIconGrid: {
+    width: 18,
+    height: 18,
+    justifyContent: 'space-between',
+  },
+  qrRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    height: 4.5,
+  },
+  qrCell: {
+    width: 4.5,
+    height: 4.5,
+    borderWidth: 1.5,
+    borderRadius: 1,
+  },
+  banner: {
+    backgroundColor: '#582b48',
+    borderRadius: 24,
+    flexDirection: 'row',
+    padding: 20,
+    overflow: 'hidden',
+    height: 136,
+    marginBottom: 20,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  bannerTextContainer: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  bannerTitle: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '800',
+    lineHeight: 22,
+  },
+  bannerSubtitle: {
+    color: '#eca6d1',
+    fontSize: 11,
+    marginTop: 8,
+    fontWeight: '600',
+  },
+  bannerGraphic: {
+    width: 120,
+    height: 110,
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardMockup: {
+    position: 'absolute',
+    width: 76,
+    height: 48,
+    backgroundColor: '#262427',
+    borderRadius: 6,
+    left: 0,
+    top: 40,
+    transform: [{ rotate: '-12deg' }],
+    borderWidth: 1,
+    borderColor: '#444',
+    padding: 6,
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    elevation: 4,
+  },
+  cardHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  cardChip: {
+    width: 10,
+    height: 8,
+    backgroundColor: '#d4af37',
+    borderRadius: 1,
+  },
+  cardBrandText: {
+    color: '#fff',
+    fontSize: 5.5,
+    fontWeight: 'bold',
+  },
+  cardSubText: {
+    color: '#aaa',
+    fontSize: 4.5,
+    fontWeight: '600',
+  },
+  bagMockup: {
+    position: 'absolute',
+    width: 68,
+    height: 80,
+    backgroundColor: '#d842a2',
+    borderRadius: 10,
+    right: 0,
+    top: 6,
+    justifyContent: 'center',
+    alignItems: 'center',
+    transform: [{ rotate: '8deg' }],
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 6,
+    elevation: 5,
+  },
+  bagLogo: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bagLogoText: {
+    color: '#d842a2',
+    fontWeight: '900',
+    fontSize: 17,
+  },
+  topCardsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 24,
+  },
+  topCard: {
+    backgroundColor: '#fff',
+    borderRadius: 24,
+    padding: 18,
+    width: '48%',
+    height: 120,
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.04,
+    shadowRadius: 6,
+    elevation: 2,
+    borderWidth: 1,
+    borderColor: '#f2f2f4',
+  },
+  cardIconBox: {
+    width: 38,
+    height: 44,
+    backgroundColor: '#fbece8',
+    borderRadius: 10,
+    padding: 8,
+    justifyContent: 'space-around',
+  },
+  receiptLine: {
+    height: 3,
+    backgroundColor: '#e65c3b',
+    borderRadius: 1.5,
+    width: '100%',
+  },
+  receiptLineShort: {
+    height: 3,
+    backgroundColor: '#e65c3b',
+    borderRadius: 1.5,
+    width: '65%',
+  },
+  rewardsIconBox: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#fcd3e1',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  rewardsIconText: {
+    color: '#d32f54',
+    fontWeight: '900',
+    fontSize: 20,
+  },
+  topCardTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#111',
+  },
+  topCardSubtitle: {
+    fontSize: 11.5,
+    color: '#888',
+    marginTop: 2,
+    fontWeight: '500',
+  },
+  sectionHeader: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: '#888',
+    marginBottom: 10,
+    marginLeft: 6,
+    letterSpacing: 0.8,
+  },
+  sectionContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 24,
+    marginBottom: 24,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.04,
+    shadowRadius: 6,
+    elevation: 2,
+    borderWidth: 1,
+    borderColor: '#f2f2f4',
+  },
+  menuItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 16,
+    paddingHorizontal: 18,
+  },
+  menuItemLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  iconCircle: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    backgroundColor: '#f8f8f9',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 14,
+  },
+  glyphText: {
+    fontSize: 18,
+    color: '#111',
+  },
+  menuItemText: {
+    fontSize: 15.5,
+    fontWeight: '600',
+    color: '#111',
+  },
+  chevron: {
+    fontSize: 22,
+    color: '#c7c7cc',
+    fontWeight: '300',
+  },
+  menuDivider: {
+    height: 1,
+    backgroundColor: '#f1f1f3',
+    marginLeft: 70,
+  },
+  bottomSpacer: {
+    height: 20,
+  },
+  floatingNavWrapper: {
+    position: 'absolute',
+    bottom: 20,
+    left: 16,
+    right: 16,
+    alignItems: 'center',
+  },
+  bottomNav: {
+    backgroundColor: '#fff',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    borderRadius: 36,
+    width: '100%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.1,
+    shadowRadius: 12,
+    elevation: 6,
+    borderWidth: 1,
+    borderColor: '#eee',
+  },
+  navItem: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+    paddingVertical: 4,
+  },
+  navIconText: {
+    fontSize: 18,
+  },
+  navLabel: {
+    fontSize: 10,
+    color: '#666',
+    marginTop: 3,
+    fontWeight: '500',
+  },
+  activeNavItem: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1.3,
+    backgroundColor: '#f4e7ec',
+    paddingVertical: 8,
+    borderRadius: 24,
+    flexDirection: 'row',
+  },
+  activeNavIconText: {
+    fontSize: 16,
+    color: '#d32f54',
+    marginRight: 4,
+    fontWeight: 'bold',
+  },
+  activeNavLabel: {
+    fontSize: 11,
+    color: '#d32f54',
+    fontWeight: 'bold',
+  },
+  searchNavItem: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#eee',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  searchNavIconText: {
+    fontSize: 16,
+  },
+});
+
+```

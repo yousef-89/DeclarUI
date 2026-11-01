@@ -3,15 +3,21 @@
 import argparse
 import json
 import os
+
+import env_config  # noqa: F401  (loads .env before settings are read)
 import re
 import shutil
 from pathlib import Path
+from string import Template
 
 from google import genai
 from google.genai import types
 
 
-MODEL = "gemini-3.5-flash-lite"
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
+JUDGE_MODEL = os.environ.get("GEMINI_JUDGE_MODEL", MODEL)
+PROMPT_DIR = Path(__file__).resolve().parent / "prompts"
+ICON_SOURCE = Path(__file__).resolve().parent / "src" / "generated" / "generated-icon.js"
 
 
 def parse_args():
@@ -47,8 +53,47 @@ def resolve(path):
 
 
 def strip_code_fence(text):
-    match = re.search(r"```(?:javascript|jsx|js)?\s*(.*?)```", text, re.DOTALL)
-    return match.group(1).strip() if match else text.strip()
+    """Extract the component source from a model response.
+
+    Prefers a fenced block tagged jsx/js/javascript; otherwise uses the longest
+    fenced block, so a DIAGNOSIS or JSON block cannot be mistaken for code.
+    """
+    blocks = re.findall(r"```([A-Za-z]*)[ \t]*\n?(.*?)```", text, re.DOTALL)
+    code_blocks = [
+        body for language, body in blocks
+        if language.lower() in {"jsx", "js", "javascript", "tsx"}
+    ]
+    candidates = code_blocks or [body for _, body in blocks]
+    if candidates:
+        return max(candidates, key=len).strip()
+    return text.strip()
+
+
+def response_notes(text):
+    """Return the model's reasoning text that precedes the code block."""
+    return text.split("```", 1)[0].strip()
+
+
+def load_prompt(name, **values):
+    """Fill a prompt template from the prompts/ directory."""
+    template = Template((PROMPT_DIR / f"{name}.txt").read_text(encoding="utf-8"))
+    return template.substitute(**values).strip()
+
+
+def icon_names():
+    source = ICON_SOURCE.read_text(encoding="utf-8")
+    block = source[source.index("const ICONS"):source.index("const ALIASES")]
+    return ", ".join(re.findall(r"^  '([a-z-]+)':", block, re.MULTILINE))
+
+
+def rn_rules(component, canvas):
+    return load_prompt(
+        "rn_web_rules",
+        component=component,
+        canvas_width=canvas[0],
+        canvas_height=canvas[1],
+        icon_names=icon_names(),
+    )
 
 
 def image_part(path):
@@ -64,6 +109,10 @@ def image_part(path):
         data=path.read_bytes(),
         mime_type=mime_type,
     )
+
+
+def png_part(png_bytes):
+    return types.Part.from_bytes(data=png_bytes, mime_type="image/png")
 
 
 def _normalized_name(value):
@@ -104,65 +153,75 @@ def load_spatial_metadata(target_path):
     return json.dumps(metadata, indent=2, ensure_ascii=True)
 
 
-def build_prompt(component, code, ssim, clip, tweak="", spatial_metadata="{}"):
-    tweak_section = ""
-    if tweak.strip():
-        tweak_section = f"""
+def build_layout_feedback(target_path, rendered_path, worst_regions=None):
+    """Describe measured layout differences between target and render."""
+    from layout_analysis import describe_layout, load_pair
 
-User-directed edit (highest priority):
-{tweak.strip()}
+    target, rendered = load_pair(target_path, rendered_path)
+    sections = [
+        "Target screenshot layout (measured):",
+        describe_layout(target),
+        "",
+        "Current render layout (measured on the same canvas):",
+        describe_layout(rendered),
+    ]
+    if worst_regions:
+        sections.extend(["", "Regions with the largest visual mismatch (lowest SSIM):"])
+        sections.extend(
+            f"- y {region['y_start']}-{region['y_end']}: SSIM {region['ssim']}"
+            for region in worst_regions
+        )
+    return "\n".join(sections)
 
-Apply this request deliberately and visibly. Treat it as an edit instruction,
-not as optional feedback. Identify the affected property or region first, then
-change only what is needed to satisfy it. Preserve all unrelated layout,
-content, controls, interactions, imports, and styling. If the requested change
-intentionally differs from the reference screenshot, keep that intentional
-difference; do not undo it merely to increase SSIM or CLIP.
 
-Before returning the code, verify:
-1. The requested change is represented explicitly in the source.
-2. The changed value is applied to the correct visible element.
-3. Existing UI structure and behavior are preserved.
-4. The result remains valid React Native Web JSX.
-""".rstrip()
-    return f"""
-You are performing one visual refinement pass for a React Native Web UI.
+def format_inventory(inventory):
+    """Render a component inventory as compact prompt text."""
+    if not inventory:
+        return "(not available)"
+    screen = inventory.get("screen", {})
+    lines = [
+        f"Screen: {screen.get('summary', '')} Background {screen.get('background', '?')}, "
+        f"{screen.get('theme', '?')} theme, status bar "
+        f"{'shown' if screen.get('has_status_bar') else 'not shown'}."
+    ]
+    for item in inventory.get("components", []):
+        details = [
+            f"{item.get('id', '?')} {item.get('type', 'other')} bbox={item.get('bbox')}"
+        ]
+        for key in ("text", "icon", "style", "state"):
+            if item.get(key):
+                details.append(f"{key}: {item[key]}")
+        if item.get("parent"):
+            details.append(f"in {item['parent']}")
+        lines.append("- " + "; ".join(details))
+    return "\n".join(lines)
 
-Component: {component}
-Current SSIM: {ssim}
-Current CLIP similarity: {clip}
 
-The first image is the original reference screenshot.
-The second image is the current rendered screenshot.
-CRITICAL RULE: Before making any changes, identify which elements in the current render already match the target screenshot. You are strictly forbidden from altering the styling, layout, or structure of those matching elements. Only modify the specific code blocks causing the visual delta.
-The following GroundingDINO/SAM spatial metadata describes detected regions and
-bounding boxes in the reference screenshot:
-
-{spatial_metadata}
-
-Use this metadata as a coordinate guide. Align each detected region's position
-and dimensions before changing visual details. Use it to correct flexbox
-direction and alignment, margins, padding, widths, heights, and absolute
-positioning. Treat coordinates as reference-image measurements and preserve
-the target aspect ratio; do not invent regions that are absent from the
-metadata or screenshot.
-Compare them and improve the generated component to reduce visible differences.
-When a user-directed edit is provided below, the user request takes priority
-over matching the original reference. Make progressive, cumulative edits: start
-from the current source, keep successful previous changes, and do not rewrite
-the screen from scratch.
-
-Return only the complete JavaScript source code for {component}; do not use Markdown
-fences or explanations. Preserve the existing component's behavior and React Native
-Web compatibility. Keep local imports such as '../generated-icon' unchanged when
-present. Do not introduce navigation packages, native-only APIs, new assets,
-placeholder content, or unrelated redesigns. Prefer explicit style values over
-indirect or ambiguous changes.
-
-Current source:
-{code}
-{tweak_section}
-""".strip()
+def build_prompt(
+    component,
+    code,
+    item,
+    canvas,
+    inventory=None,
+    layout_feedback="",
+    regression_note="",
+):
+    """Build the refinement prompt for one iteration."""
+    note = f"\nNote: {regression_note}\n" if regression_note else ""
+    return load_prompt(
+        "refine",
+        component=component,
+        canvas_width=canvas[0],
+        canvas_height=canvas[1],
+        ssim=item["ssim"],
+        content_ssim=item.get("content_ssim"),
+        clip=item["clip_similarity"],
+        regression_note=note,
+        inventory=format_inventory(inventory),
+        layout_feedback=layout_feedback,
+        rules=rn_rules(component, canvas),
+        code=code,
+    )
 
 
 def refine(args):
@@ -203,17 +262,26 @@ def refine(args):
         if not backup_path.exists():
             shutil.copy2(source_path, backup_path)
 
+        from layout_analysis import comparison_image, logical_size
+
         code = source_path.read_text(encoding="utf-8")
         prompt = build_prompt(
             component,
             code,
-            item["ssim"],
-            item["clip_similarity"],
-            spatial_metadata=load_spatial_metadata(target_path),
+            item,
+            logical_size(target_path),
+            layout_feedback=build_layout_feedback(
+                target_path, rendered_path, item.get("worst_regions")
+            ),
         )
         response = client.models.generate_content(
             model=args.model,
-            contents=[prompt, image_part(target_path), image_part(rendered_path)],
+            contents=[
+                prompt,
+                image_part(target_path),
+                image_part(rendered_path),
+                png_part(comparison_image(target_path, rendered_path)),
+            ],
         )
         refined_code = strip_code_fence(response.text or "")
         if not refined_code:

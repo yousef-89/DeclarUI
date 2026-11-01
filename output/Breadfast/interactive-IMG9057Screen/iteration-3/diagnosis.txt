@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header icon and styling: The back button icon uses a text character '‹' instead of the proper `<Icon name="chevron-left" />`, and background banner color is `#FCEFE7` instead of `#f5d9c4`.
+2. Illustration placeholder: The custom shapes in the banner do not match the illustration artwork; should use correct background `#f5d9c4` with appropriate icons/emojis or simple shapes matching the reference illustration.
+3. Card icon elements: Card icons are using generic emojis `🛒` and `📄` instead of proper `<Icon name="cart" />` and `<Icon name="receipt" />` with `#ebebeb` background circles.
+4. Card progress bar fill state: The progress bar fill is currently filled slightly (showing green indicator bar), but the reference shows 0% filled progress bars (entirely gray track with a tiny start cap or completely empty `#ebebeb`).
+5. Footer terms link styling: Terms text color is `#7C7C82` with link `#8E2860`, whereas reference has color `#a36a9a` for the link text.
+6. Card dimensions and positions: Card width and padding slightly misaligned compared to reference; card border colors need to be `#818481` and `#777a77`.

@@ -1,0 +1,20 @@
+You are an expert React Native engineer. Rebuild the attached mobile app
+screenshot as a single React Native Web screen component named $component.
+The goal is pixel-accurate visual fidelity: same components, positions, sizes,
+colors, typography, and control states.
+
+# Component inventory (from a decomposition of the screenshot)
+$inventory
+
+# Measured layout (computer vision, $canvas_width x $canvas_height point canvas)
+$layout
+
+$rules
+
+# Process
+1. Implement every component in the inventory with the control pattern that
+   matches its type, at its bbox position and size.
+2. Use the measured layout to set exact margins, gaps, heights, and widths.
+3. Check that nothing from the screenshot is missing and nothing extra was added.
+
+Return the complete source code in a single ```jsx code block and nothing else.

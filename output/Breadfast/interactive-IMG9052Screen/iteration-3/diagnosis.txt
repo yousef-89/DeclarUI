@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header icon buttons (`c4`, `c5`) layout: currently using custom borders and gray styles; reference shows clean white circular buttons with subtle icons and no harsh grey border. Fix: update `iconButton` style to match reference background and shadows.
+2. Banner carousel content (`c6`): currently text-only placeholders; reference shows realistic banner look with cans/artwork approximation or specific text positioning matching the rich promotion banner.
+3. Category card emojis / illustrations (`c8` through `c23`): current emojis don't match the specific visual style/items of the reference (e.g. supermarket bags, iced coffee, teddy in box, lunchbox). Fix: update emojis to more accurately represent the reference items (`🛒`, `🍔`, `🍱`, `🧸`, `🥤`, `🧴`, `🍳`, `🏖️`, `📦`, `🖨️`).
+4. Category badge positioning and styling (`c10`, `c13`, etc.): currently slightly misaligned or missing on some cards; reference badges are purple, rounded pills precisely positioned at the top-right overlapping the card edge.
+5. Tab bar (`c24` - `c28`): reference tab bar is floating with a slight shadow, specific active item styling, and the floating search button (`c29`) positioned correctly overlapping the top-right of the tab area or floating above it. Fix: adjust absolute positioning of `floatingSearchButton` and `floatingTabContainer`.
+6. Header location font color and spacing (`c1`, `c2`): Deliver to label color and title bolding need precise alignment matching reference.

@@ -1,0 +1,6 @@
+DIAGNOSIS:
+1. Header icon button: using text `‹` instead of `<Icon name="chevron-left" ... />` with a rounded circle and proper border.
+2. Banner background color: currently `#FCEFE7`, reference is `#f5d9c4`.
+3. Card icons: using emojis (`🛒`, `📄`) instead of `<Icon name="cart" />` and `<Icon name="receipt" />` with `#ebebeb` background circle.
+4. Progress bar fill: currently green `#00A86B` with 8% width, reference has `#272727` with 0% width (just a thin vertical marker or fully empty track).
+5. Footer terms and conditions color & position: positioned at absolute bottom 56px, reference color is `#a36a9a` (purple link style).

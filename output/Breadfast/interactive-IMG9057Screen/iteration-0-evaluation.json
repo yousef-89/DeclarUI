@@ -6,8 +6,9 @@
   "successful_renders": 1,
   "failed_renders": 0,
   "metric_evaluated_components": 1,
-  "mean_ssim": 0.8621,
-  "mean_clip_similarity": 0.8423,
+  "mean_ssim": 0.7839,
+  "mean_content_ssim": 0.5757,
+  "mean_clip_similarity": 0.8538,
   "detailed_results": [
     {
       "component": "IMG9057Screen",
@@ -18,12 +19,35 @@
       "target_exists": true,
       "target_match": "IMG_9057.PNG",
       "metric_status": "evaluated",
-      "ssim": 0.8621,
-      "clip_similarity": 0.8423,
+      "ssim": 0.7839,
+      "content_ssim": 0.5757,
+      "clip_similarity": 0.8538,
+      "worst_regions": [
+        {
+          "y_start": 737,
+          "y_end": 804,
+          "ssim": 0.192
+        },
+        {
+          "y_start": 268,
+          "y_end": 335,
+          "ssim": 0.2976
+        },
+        {
+          "y_start": 469,
+          "y_end": 536,
+          "ssim": 0.3776
+        },
+        {
+          "y_start": 402,
+          "y_end": 469,
+          "ssim": 0.4058
+        }
+      ],
       "resized_for_ssim": true,
       "evaluation_size": {
-        "width": 1179,
-        "height": 2432
+        "width": 390,
+        "height": 804
       }
     }
   ]

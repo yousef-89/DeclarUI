@@ -1,0 +1,445 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "Delivery app home screen featuring promotional banners, category cards, and bottom navigation."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "text",
+      "text": "Deliver to",
+      "icon": "",
+      "style": "font size small, color #373737",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        30,
+        60,
+        11
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "title",
+      "text": "Hyde Park Damac Compound",
+      "icon": "",
+      "style": "font size medium, bold, color #973d88",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        52,
+        212,
+        14
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "icon",
+      "text": "",
+      "icon": "chevron-down",
+      "style": "color #973d88",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        235,
+        54,
+        11,
+        7
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "icon_button",
+      "text": "",
+      "icon": "chat bubble",
+      "style": "color #95247b",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        290,
+        37,
+        21,
+        20
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "icon_button",
+      "text": "",
+      "icon": "gift box",
+      "style": "color #963486",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        342,
+        37,
+        21,
+        21
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "carousel",
+      "text": "",
+      "icon": "",
+      "style": "rounded corners, promotional banner image",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        23,
+        98,
+        344,
+        193
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "title",
+      "text": "Explore Breadfast",
+      "icon": "",
+      "style": "font size large, bold, color #212121",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        319,
+        155,
+        20
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "card",
+      "text": "Supermarket",
+      "icon": "supermarket bags",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        354,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "card",
+      "text": "Restaurants Up to 50% off",
+      "icon": "burger",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        354,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c9",
+      "bbox": [
+        327,
+        347,
+        39,
+        55
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "card",
+      "text": "Lunchbox Essentials",
+      "icon": "lunchbox",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        421,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "card",
+      "text": "Shops",
+      "icon": "teddy bear in box",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        421,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        321,
+        415,
+        50,
+        57
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "card",
+      "text": "Coffee",
+      "icon": "coffee cup",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        489,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "card",
+      "text": "Beauty",
+      "icon": "perfume bottle",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        489,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "card",
+      "text": "Chef on-Demand",
+      "icon": "chef hat and spoon",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        557,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c16",
+      "bbox": [
+        145,
+        550,
+        38,
+        58
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "card",
+      "text": "Hotels with Journeys",
+      "icon": "beach chair and umbrella",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        557,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c18",
+      "bbox": [
+        328,
+        550,
+        35,
+        56
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "card",
+      "text": "Buddy Get errands done",
+      "icon": "delivery person with boxes",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        625,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c20",
+      "bbox": [
+        138,
+        617,
+        48,
+        64
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "card",
+      "text": "Print",
+      "icon": "printer",
+      "style": "background #f8f8f8, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        625,
+        175,
+        56
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c22",
+      "bbox": [
+        329,
+        617,
+        36,
+        50
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "floating tab bar, white background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        715,
+        375,
+        78
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "home",
+      "style": "color purple",
+      "state": "selected",
+      "parent": "c24",
+      "bbox": [
+        50,
+        725,
+        31,
+        35
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "tab_item",
+      "text": "Cart",
+      "icon": "cart",
+      "style": "color grey",
+      "state": "",
+      "parent": "c24",
+      "bbox": [
+        116,
+        725,
+        25,
+        35
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "tab_item",
+      "text": "Pay",
+      "icon": "wallet",
+      "style": "color grey",
+      "state": "",
+      "parent": "c24",
+      "bbox": [
+        181,
+        725,
+        20,
+        36
+      ]
+    },
+    {
+      "id": "c28",
+      "type": "tab_item",
+      "text": "More",
+      "icon": "menu",
+      "style": "color grey",
+      "state": "",
+      "parent": "c24",
+      "bbox": [
+        239,
+        725,
+        28,
+        35
+      ]
+    },
+    {
+      "id": "c29",
+      "type": "floating_action_button",
+      "text": "",
+      "icon": "search",
+      "style": "circular, white background with green border, green icon",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        306,
+        711,
+        63,
+        63
+      ]
+    }
+  ]
+}

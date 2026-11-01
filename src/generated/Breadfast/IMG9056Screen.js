@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
+import Icon from '../generated-icon';
 
 export default function IMG9056Screen() {
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <View style={styles.container}>
       <Text style={styles.headerTitle}>Search</Text>
 
       <View style={styles.footerContainer}>
         <View style={styles.menuButton}>
-          <View style={styles.menuLine} />
-          <View style={styles.menuLine} />
-          <View style={styles.menuLine} />
+          <Icon name="menu" size={22} color="#717171" />
         </View>
 
         <View style={styles.searchBar}>
-          <Text style={styles.searchIcon}>🔍</Text>
+          <Icon name="search" size={16} color="#969696" style={styles.searchIconStyle} />
           <TextInput
             style={styles.input}
             placeholder="What are you looking for?"
-            placeholderTextColor="#9CA3AF"
+            placeholderTextColor="#969696"
+            value={searchQuery}
+            onChangeText={setSearchQuery}
           />
         </View>
       </View>
@@ -31,58 +34,51 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
-    paddingTop: 60,
-    justifyContent: 'space-between',
+    paddingTop: 32,
   },
   headerTitle: {
-    fontSize: 20,
-    fontWeight: '600',
-    color: '#000000',
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#050505',
   },
   footerContainer: {
+    position: 'absolute',
+    bottom: 28,
+    left: 23,
+    right: 23,
+    height: 48,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 24,
-    paddingBottom: 40,
-    width: '100%',
-    gap: 12,
+    gap: 16,
   },
   menuButton: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     borderWidth: 1,
-    borderColor: '#E5E7EB',
+    borderColor: '#dadada',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-  },
-  menuLine: {
-    width: 18,
-    height: 2,
-    backgroundColor: '#374151',
-    marginVertical: 2,
-    borderRadius: 1,
+    backgroundColor: '#ffffff',
   },
   searchBar: {
     flex: 1,
-    height: 52,
+    height: 48,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 26,
+    backgroundColor: '#ffffff',
+    borderRadius: 24,
     borderWidth: 1,
-    borderColor: '#E5E7EB',
+    borderColor: '#dadada',
     paddingHorizontal: 16,
   },
-  searchIcon: {
-    fontSize: 16,
+  searchIconStyle: {
     marginRight: 8,
   },
   input: {
     flex: 1,
-    fontSize: 16,
-    color: '#1F2937',
+    fontSize: 14,
+    color: '#050505',
     paddingVertical: 0,
   },
 });

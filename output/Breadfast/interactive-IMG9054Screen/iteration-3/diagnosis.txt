@@ -1,0 +1,7 @@
+DIAGNOSIS:
+1. Header positioning: Top header is vertically shifted down due to container paddingTop. Fix: change `container` style `paddingTop` from `26` to `16`.
+2. Card dimensions and chip position: The large card banner height is set incorrectly and its internal chip/contactless elements are misplaced to the center instead of top-right. Fix: update `banner` height to `582` and position chip/contactless at `bannerTopRow`.
+3. Banner text layout & spacing: Title and subtitle are pushed too low inside the card. Fix: adjust spacing inside `banner` or use absolute/flex positioning to match reference vertical rhythm.
+4. Bottom nav and search button layout: Floating bottom navigation bar and search FAB are positioned too low or overlapping the bottom edge. Fix: adjust `bottomNavContainer` `bottom` position to `19`.
+5. Action buttons vertical alignment: "Add to balance" and "Saved cards" buttons are vertically misaligned with wallet balance text block. Fix: align `walletSection` items properly.
+6. Card gradient/background color tone: The purple gradient on the card needs slight adjustment to match `#5a2551` and deeper top/bottom tones.

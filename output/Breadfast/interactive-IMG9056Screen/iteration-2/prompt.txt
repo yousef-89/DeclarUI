@@ -1,0 +1,218 @@
+You are an expert React Native engineer performing one visual refinement pass
+on the screen component IMG9056Screen. Make the render match the reference
+screenshot more closely.
+
+# Images
+1. The reference screenshot (the goal).
+2. The current render of the code below.
+3. A side-by-side comparison (reference left, render right) on the same
+   390 x 804 point canvas, with a y-axis ruler and grid lines
+   every 50 points, so you can measure vertical offsets and sizes.
+
+# Current scores
+SSIM: 0.9708 (structural layout similarity, 1.0 = identical)
+Content SSIM: 0.539 (SSIM over regions containing UI elements only)
+CLIP: 0.9581 (perceptual similarity)
+
+# Component inventory of the reference
+Screen: Search screen with a bottom navigation bar containing a menu button and search input. Background #ffffff, light theme, status bar not shown.
+- c1 title bbox=[166, 32, 56, 14]; text: Search; style: font-size: 18px; font-weight: bold; color: #050505;
+- c2 tab_bar bbox=[23, 728, 342, 51]; style: background: #ffffff; padding: 10px;
+- c3 icon_button bbox=[27, 728, 49, 48]; icon: menu; style: background: #dadada; border-radius: 50%;; in c2
+- c4 search_bar bbox=[86, 728, 277, 48]; text: What are you looking for?; icon: magnifier; style: background: #ffffff; border: 1px solid #dadada; border-radius: 24px; color: #969696;; state: placeholder text shown; in c2
+
+# Measured layout on the shared canvas
+Target screenshot layout (measured):
+Canvas: 390x804 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (166, 32, 56, 14) #050505
+- (27, 733, 10, 38) #dadada
+- (352, 734, 11, 39) #dadada
+- (86, 737, 10, 35) #dcdcdc
+- (65, 738, 11, 35) #dadada
+- (41, 744, 21, 17) #717171
+- (100, 744, 17, 17) #6f6f6f
+- (126, 746, 185, 16) #969696
+
+Current render layout (measured on the same canvas):
+Canvas: 390x804 points, background #ffffff.
+Detected blocks (x, y, width, height, dominant color), top to bottom:
+- (167, 38, 56, 14) #050505
+- (23, 728, 48, 48) #878787
+- (83, 728, 282, 48) #a5acac
+- (39, 745, 16, 14) #717171
+- (100, 746, 13, 13) #9e9e9e
+- (122, 747, 160, 14) #9fa1a2
+
+Regions with the largest visual mismatch (lowest SSIM):
+- y 0-67: SSIM 0.3576
+- y 737-804: SSIM 0.4921
+- y 670-737: SSIM 0.759
+
+# React Native Web implementation rules
+
+Code
+- Export the screen as `export default function IMG9056Screen() { ... }`.
+- Import only from 'react', 'react-native', and the local icon component:
+  `import Icon from '../generated-icon';`
+- Use React state (useState) so controls are interactive: switches toggle,
+  sliders move, tabs and segmented controls change selection, inputs accept text.
+- No navigation libraries, native-only APIs, external packages, or network calls.
+
+Canvas
+- The screen renders in a fixed 390 x 804 point canvas with the
+  same aspect ratio as the screenshot. All coordinates are in these points.
+- The root View uses `flex: 1` and the screenshot's background color.
+- Lay out content with flexbox. Use `position: 'absolute'` only for elements
+  that overlay other content: floating buttons, floating or fixed bottom bars,
+  badges, and elements pinned to the bottom of the screen.
+- Content that is cut off at the bottom of the screenshot must also be cut off
+  in the render; do not shrink content to make it fit.
+- If the screenshot shows the phone status bar (time, signal, battery),
+  reproduce it with a Text for the time and small Views for the indicators.
+
+Typography
+- fontSize is roughly 0.75 x the measured height of a single text line.
+- Match font weight (400 regular, 500 medium, 600 semibold, 700 bold), color,
+  alignment, and letter case exactly as shown. Copy all visible text verbatim.
+
+Images and icons
+- Never load remote or local image files (no `uri`, no `require`).
+- Photos and banners: a View with the region's dominant color (or two stacked
+  Views to approximate a gradient), the same size and corner radius, with any
+  text that is printed on the image reproduced as Text on top.
+- Small illustrations of objects (food, gifts, products): a single emoji with
+  a fontSize matching the illustration size.
+- Pictograms and UI icons: `<Icon name="..." size={..} color=".." />`.
+  Available names: search, chevron-left, chevron-right, chevron-up, chevron-down, arrow-left, arrow-right, arrow-up, arrow-down, menu, more-horizontal, more-vertical, close, plus, minus, check, home, heart, star, user, users, bell, cart, bag, settings, filter, sliders, share, download, upload, refresh, play, pause, skip-forward, skip-back, shuffle, repeat, volume, mic, camera, image, calendar, clock, location, globe, chat, mail, phone, send, lock, eye, edit, trash, grid, list, bookmark, gift, credit-card, wallet, tag, info, help, logout, scan, qr-code, printer, car, truck, diamond, briefcase, book, music, headphones, video, wifi, battery, signal, sun, moon, flag, thumbs-up, comment, link, circle.
+  Add `filled` for solid icons. Pick the closest name; never draw icons as letters.
+- Avatars: a circular View with the dominant color (and initials if shown).
+
+Controls (build these from Views so they match the screenshot exactly)
+- Button / icon button: TouchableOpacity with the exact background, border,
+  radius, padding, and label or icon.
+- Text input / search bar: View container with icon(s) + TextInput with
+  `placeholder` and `placeholderTextColor` matching the screenshot.
+- Switch / toggle: a rounded track View with a circular thumb View on the
+  left (off) or right (on), using the screenshot's colors.
+- Slider / seek bar / progress bar: a thin track View, a filled View whose width
+  is the shown fraction, and (for sliders) a circular thumb at that position.
+- Checkbox / radio: bordered square / circle View, filled with a check icon or
+  inner dot when selected.
+- Segmented control / chips / tags: a row of rounded Views; the selected item
+  has the distinct background shown in the screenshot.
+- Tab bar: a row of icon + label items. If it floats (rounded, inset from the
+  edges, shadow), make it an absolutely positioned rounded View at the same
+  position; otherwise a full-width bar at the bottom with a top border.
+- Carousel: a horizontal ScrollView; if neighbouring cards peek in at the
+  screen edges, reproduce the peeking cards at those positions.
+- Badges / counters: small absolutely positioned rounded Views.
+- Lists and grids: map over a data array; keep row heights, gaps, and column
+  widths equal to the measured values.
+
+# How to refine
+1. Compare the reference and the render component by component, using the
+   inventory as a checklist.
+2. Fix the most important differences first, in this order:
+   a. missing, extra, or wrong-type components (e.g. a flat tab bar where the
+      reference has a floating one, a plain View where it has a slider);
+   b. position and size errors: heights, widths, margins, gaps, alignment,
+      anything shifted vertically (check the ruler);
+   c. colors, corner radii, borders, shadows;
+   d. typography: font size, weight, color, text content.
+3. Leave components that already match unchanged. Do not rewrite the screen
+   from scratch; edit the specific styles and elements that cause differences.
+
+# Output format
+First a section starting with `DIAGNOSIS:` listing at most 6 concrete
+differences, most impactful first, each with the exact fix (property, old
+value, new value). Then the complete updated source code in a single ```jsx
+code block.
+
+# Current source
+```jsx
+import React, { useState } from 'react';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
+import Icon from '../generated-icon';
+
+export default function IMG9056Screen() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.headerTitle}>Search</Text>
+
+      <View style={styles.footerContainer}>
+        <View style={styles.menuButton}>
+          <Icon name="menu" size={22} color="#717171" />
+        </View>
+
+        <View style={styles.searchBar}>
+          <Icon name="search" size={16} color="#969696" style={styles.searchIconStyle} />
+          <TextInput
+            style={styles.input}
+            placeholder="What are you looking for?"
+            placeholderTextColor="#969696"
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+          />
+        </View>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    paddingTop: 32,
+  },
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#050505',
+  },
+  footerContainer: {
+    position: 'absolute',
+    bottom: 28,
+    left: 23,
+    right: 25,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  menuButton: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: '#dadada',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
+  },
+  searchBar: {
+    flex: 1,
+    height: 48,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: '#dadada',
+    paddingHorizontal: 14,
+  },
+  searchIconStyle: {
+    marginRight: 8,
+  },
+  input: {
+    flex: 1,
+    fontSize: 14,
+    color: '#050505',
+    paddingVertical: 0,
+  },
+});
+
+```

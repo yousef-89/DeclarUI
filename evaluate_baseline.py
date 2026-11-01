@@ -6,7 +6,6 @@ import re
 import sys
 from pathlib import Path
 
-import cv2
 import numpy as np
 
 
@@ -72,26 +71,21 @@ def find_target(targets, component):
 
 
 def load_ssim(target_path, render_path):
-    target = cv2.imread(str(target_path), cv2.IMREAD_GRAYSCALE)
-    rendered = cv2.imread(str(render_path), cv2.IMREAD_GRAYSCALE)
+    """Compare both images on the target's logical canvas.
 
-    if target is None:
-        raise ValueError(f"Could not read target image: {target_path}")
-    if rendered is None:
-        raise ValueError(f"Could not read rendered image: {render_path}")
+    Returns global SSIM, content-region SSIM, the lowest-scoring screen regions,
+    and the logical evaluation size.
+    """
+    from layout_analysis import load_pair, region_report, ssim_metrics
 
-    resized = target.shape != rendered.shape
-    if resized:
-        rendered = cv2.resize(
-            rendered,
-            (target.shape[1], target.shape[0]),
-            interpolation=cv2.INTER_AREA,
-        )
-
-    from skimage.metrics import structural_similarity
-
-    score = structural_similarity(target, rendered, data_range=255)
-    return float(score), resized, list(target.shape[::-1])
+    target, rendered = load_pair(target_path, render_path)
+    score, content_score, ssim_map, mask = ssim_metrics(target, rendered)
+    return (
+        score,
+        content_score,
+        region_report(ssim_map, mask),
+        [target.shape[1], target.shape[0]],
+    )
 
 
 def load_clip_scores(target_paths, render_paths, device):
@@ -104,8 +98,20 @@ def load_clip_scores(target_paths, render_paths, device):
     model = CLIPModel.from_pretrained(model_name).to(device)
     model.eval()
 
-    target_images = [Image.open(path).convert("RGB") for path in target_paths]
-    render_images = [Image.open(path).convert("RGB") for path in render_paths]
+    from layout_analysis import background_color, pad_to_square
+
+    def letterboxed(path):
+        # CLIPProcessor center-crops to a square, which would discard the top
+        # and bottom of a phone screenshot; pad to a square instead.
+        image = Image.open(path).convert("RGB")
+        blue, green, red = (
+            int(channel)
+            for channel in background_color(np.asarray(image)[:, :, ::-1])
+        )
+        return pad_to_square(image, (red, green, blue))
+
+    target_images = [letterboxed(path) for path in target_paths]
+    render_images = [letterboxed(path) for path in render_paths]
 
     target_inputs = processor(
         images=target_images,
@@ -173,7 +179,9 @@ def run_evaluation(target_dir, baseline_dir, output_path):
             "target_match": target_path.name if target_path else None,
             "metric_status": "not_evaluated",
             "ssim": None,
+            "content_ssim": None,
             "clip_similarity": None,
+            "worst_regions": None,
             "resized_for_ssim": None,
             "evaluation_size": None,
         }
@@ -200,12 +208,14 @@ def run_evaluation(target_dir, baseline_dir, output_path):
         for (result, target_path, rendered_path), clip_score in zip(
             metric_pairs, clip_scores
         ):
-            ssim_score, resized, evaluation_size = load_ssim(
+            ssim_score, content_score, worst_regions, evaluation_size = load_ssim(
                 target_path, rendered_path
             )
             result["ssim"] = round(ssim_score, 4)
+            result["content_ssim"] = round(content_score, 4)
             result["clip_similarity"] = round(clip_score, 4)
-            result["resized_for_ssim"] = resized
+            result["worst_regions"] = worst_regions
+            result["resized_for_ssim"] = True
             result["evaluation_size"] = {
                 "width": evaluation_size[0],
                 "height": evaluation_size[1],
@@ -216,8 +226,9 @@ def run_evaluation(target_dir, baseline_dir, output_path):
     successful = [item for item in results if item["render_success"]]
     report = {
         "protocol_stage": (
-            "Refined Evaluation (Iteration 1)"
-            if "refined" in baseline_dir.name.lower()
+            f"Refinement Evaluation ({baseline_dir.name})"
+            if baseline_dir.name.startswith("iteration-")
+            and baseline_dir.name != "iteration-0"
             else "Baseline Evaluation (Iteration 0)"
         ),
         "targets_directory": str(target_dir),
@@ -228,6 +239,11 @@ def run_evaluation(target_dir, baseline_dir, output_path):
         "metric_evaluated_components": len(evaluated),
         "mean_ssim": round(
             float(np.mean([item["ssim"] for item in evaluated])), 4
+        )
+        if evaluated
+        else None,
+        "mean_content_ssim": round(
+            float(np.mean([item["content_ssim"] for item in evaluated])), 4
         )
         if evaluated
         else None,
@@ -251,6 +267,7 @@ def run_evaluation(target_dir, baseline_dir, output_path):
         f"{report['metric_evaluated_components']}"
     )
     print(f"[Baseline Evaluation] Mean SSIM: {report['mean_ssim']}")
+    print(f"[Baseline Evaluation] Mean content SSIM: {report['mean_content_ssim']}")
     print(f"[Baseline Evaluation] Mean CLIP: {report['mean_clip_similarity']}")
     print(f"[Baseline Evaluation] Report: {output_path}")
     return report
