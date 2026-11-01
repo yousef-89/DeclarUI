@@ -21,6 +21,8 @@ STATUS_LABELS = {
     "accepted": "🔵 accepted",
     "user_edit": "🟢 user edit",
     "rejected": "🔴 rejected (rolled back)",
+    "discarded": "🟡 discarded (no gain)",
+    "no_change": "⚪ edits not applied",
     "render_failed": "🔴 render failed",
 }
 
@@ -62,7 +64,7 @@ def show_image(path, caption, width=260):
 
 
 def trajectory_chart(iterations, mode):
-    """Line chart of the metrics per iteration; rejected points are crosses."""
+    """Line chart of the metrics per iteration; rejected/discarded points are crosses."""
     series = (
         [("SSIM", "ssim"), ("Content SSIM", "content_ssim"), ("CLIP", "clip")]
         if mode == "fidelity"
@@ -104,8 +106,9 @@ def trajectory_chart(iterations, mode):
         shape=alt.Shape(
             "Status:N",
             scale=alt.Scale(
-                domain=["rejected", "render_failed"],
-                range=["cross", "cross"],
+                domain=["baseline", "improved", "accepted", "user_edit",
+                        "rejected", "discarded", "render_failed"],
+                range=["circle", "circle", "circle", "circle", "cross", "cross", "cross"],
             ),
             legend=None,
         )

@@ -70,9 +70,53 @@ def strip_code_fence(text):
     return text.strip()
 
 
+EDIT_PATTERN = re.compile(
+    r"<<<<<<< SEARCH[ \t]*\n(.*?)\n?=======[ \t]*\n(.*?)\n?>>>>>>> REPLACE", re.DOTALL
+)
+
+
+def parse_edits(text):
+    """Return (search, replace) pairs from SEARCH/REPLACE blocks in a response."""
+    return EDIT_PATTERN.findall(text.replace("\r\n", "\n"))
+
+
+def apply_edits(code, edits):
+    """Apply SEARCH/REPLACE edits in order.
+
+    Returns (code, applied count, failed search texts). An exact match is tried
+    first, then a line-by-line match that ignores indentation, because models
+    often re-indent the snippets they copy.
+    """
+    applied, failed = 0, []
+    for search, replace in edits:
+        if search.strip() and search in code:
+            code = code.replace(search, replace, 1)
+            applied += 1
+            continue
+        wanted = [line.strip() for line in search.strip("\n").split("\n")]
+        lines = code.split("\n")
+        stripped = [line.strip() for line in lines]
+        start = next(
+            (index for index in range(len(lines) - len(wanted) + 1)
+             if any(wanted) and stripped[index:index + len(wanted)] == wanted),
+            None,
+        )
+        if start is None:
+            failed.append(search)
+            continue
+        indent = lines[start][: len(lines[start]) - len(lines[start].lstrip())]
+        replacement = replace.split("\n") if replace else []
+        if replacement:
+            replacement[0] = indent + replacement[0].lstrip()
+        lines[start:start + len(wanted)] = replacement
+        code = "\n".join(lines)
+        applied += 1
+    return code, applied, failed
+
+
 def response_notes(text):
-    """Return the model's reasoning text that precedes the code block."""
-    return text.split("```", 1)[0].strip()
+    """Return the model's reasoning text that precedes the code or edits."""
+    return re.split(r"```|<<<<<<< SEARCH", text, maxsplit=1)[0].strip()
 
 
 def load_prompt(name, **values):
@@ -154,25 +198,24 @@ def load_spatial_metadata(target_path):
     return json.dumps(metadata, indent=2, ensure_ascii=True)
 
 
-def build_layout_feedback(target_path, rendered_path, worst_regions=None):
-    """Describe measured layout differences between target and render."""
-    from pipeline.layout_analysis import describe_layout, load_pair
+def build_layout_feedback(target_path, rendered_path, worst_regions=None, inventory=None):
+    """Describe measured layout differences between target and render.
+
+    Blocks are detected in both images and matched, so the model receives
+    explicit corrections ("card c12: move up 18, make 7 taller") instead of
+    two block lists it would have to compare itself.
+    """
+    from pipeline.layout_analysis import geometry_report, load_pair
 
     target, rendered = load_pair(target_path, rendered_path)
-    sections = [
-        "Target screenshot layout (measured):",
-        describe_layout(target),
-        "",
-        "Current render layout (measured on the same canvas):",
-        describe_layout(rendered),
-    ]
+    sections = [geometry_report(target, rendered, inventory)]
     if worst_regions:
-        sections.extend(["", "Regions with the largest visual mismatch (lowest SSIM):"])
-        sections.extend(
+        sections.append("Horizontal bands with the largest visual mismatch (lowest SSIM):")
+        sections.append("\n".join(
             f"- y {region['y_start']}-{region['y_end']}: SSIM {region['ssim']}"
             for region in worst_regions
-        )
-    return "\n".join(sections)
+        ))
+    return "\n\n".join(sections)
 
 
 def format_inventory(inventory):

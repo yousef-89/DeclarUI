@@ -453,24 +453,33 @@ def refine_component(
     regression_note="",
     notes_path=None,
 ):
-    """Run one diagnose-then-fix refinement pass against the target."""
+    """Run one diagnose-then-fix refinement pass against the target.
+
+    The model answers with SEARCH/REPLACE edits, so only the parts it means to
+    fix change; a full ```jsx file is still accepted as a fallback. Returns
+    None on success, or a problem description when no edit could be applied
+    (the source is then left unchanged).
+    """
     from pipeline.layout_analysis import comparison_image
     from pipeline.visual_refine import (
+        apply_edits,
         build_layout_feedback,
         build_prompt,
         image_part,
+        parse_edits,
         png_part,
         strip_code_fence,
     )
 
+    code = source_path.read_text(encoding="utf-8")
     prompt = build_prompt(
         component,
-        source_path.read_text(encoding="utf-8"),
+        code,
         item,
         canvas,
         inventory=inventory,
         layout_feedback=build_layout_feedback(
-            target_path, rendered_path, item.get("worst_regions")
+            target_path, rendered_path, item.get("worst_regions"), inventory
         ),
         regression_note=regression_note,
     )
@@ -484,11 +493,25 @@ def refine_component(
             png_part(comparison_image(target_path, rendered_path)),
         ],
     )
-    refined_code = strip_code_fence(response.text or "")
-    if not refined_code:
-        raise RuntimeError(f"Gemini returned empty refinement for {component}.")
-    save_notes(notes_path, prompt, response.text)
-    source_path.write_text(f"{refined_code}\n", encoding="utf-8")
+    text = response.text or ""
+    save_notes(notes_path, prompt, text)
+    edits = parse_edits(text)
+    if edits:
+        refined_code, applied, failed = apply_edits(code, edits)
+        summary = f"Edits applied: {applied} of {len(edits)}."
+        if failed:
+            summary += " Not found in the code:\n" + "\n---\n".join(failed)
+        if notes_path is not None:
+            with notes_path.open("a", encoding="utf-8") as notes:
+                notes.write(f"\n\n{summary}\n")
+        if not applied:
+            return "none of the SEARCH blocks matched the current code"
+    else:
+        refined_code = strip_code_fence(text)
+        if not refined_code or refined_code == text.strip():
+            return "the response contained neither SEARCH/REPLACE edits nor code"
+    source_path.write_text(f"{refined_code.rstrip()}\n", encoding="utf-8")
+    return None
 
 
 def edit_component(
@@ -632,68 +655,30 @@ def run_fidelity_loop(client, model, recorder, source_path, target_path, viewpor
 
     Iteration 0 evaluates the current source; iterations 1..max_iterations each
     evaluate one refinement pass (max_iterations=0 is the one-shot baseline).
-    A candidate that drops SSIM by more than MAX_SSIM_REGRESSION relative to
-    the best accepted version is rejected, the best version is restored, and
-    refinement continues from it. With guardrail=False (ablation) every
-    candidate that renders is kept and the last one is the final result.
+    Every pass starts from the best version so far: a candidate that drops
+    SSIM by more than MAX_SSIM_REGRESSION is rejected by the guardrail, and one
+    that does not improve on the best version is discarded. With
+    guardrail=False (ablation) every candidate that renders is kept, the next
+    pass starts from it, and the last one is the final result.
     """
     component = recorder.component
     inventory = build_inventory(client, model, recorder.app, component, target_path, viewport)
-    baseline = None
-    best_result = None
-    best_source = None
-    best_iteration = None
-    current_result = None
+    result, best_source, error = evaluate_candidate(
+        client, model, recorder, source_path, 0, viewport
+    )
+    if result is None:
+        log_metrics(recorder, 0, None, "render_failed", error=error)
+        raise RuntimeError(f"{component} could not be rendered: {error}")
+    log_metrics(recorder, 0, result, "baseline")
+    baseline = best_result = current_result = result
+    best_iteration = 0
     regression_note = ""
-    for iteration in range(max_iterations + 1):
-        result, source_snapshot, error = evaluate_candidate(
-            client, model, recorder, source_path, iteration, viewport
-        )
-        if result is None:
-            log_metrics(recorder, iteration, None, "render_failed", error=error)
-            if best_result is None:
-                raise RuntimeError(f"{component} could not be rendered: {error}")
-            source_path.write_bytes(best_source)
-            current_result = best_result
-            regression_note = (
-                f"the previous refinement failed to render ({error}) and was "
-                "discarded. Start again from this source."
-            )
-            print(f"[Pipeline] Rejected {component} iteration {iteration}: {error}")
-        elif best_result is None:
-            baseline = best_result = current_result = result
-            best_source, best_iteration = source_snapshot, iteration
-            log_metrics(recorder, iteration, result, "baseline")
-        elif guardrail and regressed(result, best_result):
-            log_metrics(recorder, iteration, result, "rejected")
-            source_path.write_bytes(best_source)
-            current_result = best_result
-            regression_note = (
-                f"the previous refinement attempt was rolled back because it "
-                f"lowered SSIM from {best_result['ssim']:.4f} to "
-                f"{result['ssim']:.4f}. Its diagnosis was probably wrong or the "
-                "edits were too broad; try different, targeted fixes."
-            )
-            print(
-                f"[Pipeline] Rejected {component} iteration {iteration}: "
-                f"SSIM {best_result['ssim']:.4f} -> {result['ssim']:.4f}."
-            )
-        else:
-            improved = (result["ssim"], result["clip_similarity"]) > (
-                best_result["ssim"],
-                best_result["clip_similarity"],
-            )
-            if improved or not guardrail:
-                best_result, best_source, best_iteration = result, source_snapshot, iteration
-            current_result = result
-            regression_note = ""
-            log_metrics(recorder, iteration, result, "improved" if improved else "accepted")
 
-        if iteration == max_iterations or converged(best_result):
+    for iteration in range(1, max_iterations + 1):
+        if converged(best_result):
             break
-
-        print(f"[Pipeline] Refining {component} (iteration {iteration + 1})...")
-        refine_component(
+        print(f"[Pipeline] Refining {component} (iteration {iteration})...")
+        problem = refine_component(
             client,
             model,
             component,
@@ -704,8 +689,59 @@ def run_fidelity_loop(client, model, recorder, source_path, target_path, viewpor
             viewport,
             inventory=inventory,
             regression_note=regression_note,
-            notes_path=recorder.iteration_dir(iteration + 1) / "diagnosis.txt",
+            notes_path=recorder.iteration_dir(iteration) / "diagnosis.txt",
         )
+        if problem:
+            log_metrics(recorder, iteration, None, "no_change", error=problem)
+            regression_note = (
+                f"the previous answer could not be applied: {problem}. Copy the "
+                "SEARCH lines exactly from the current source."
+            )
+            print(f"[Pipeline] {component} iteration {iteration}: {problem}.")
+            continue
+
+        result, source_snapshot, error = evaluate_candidate(
+            client, model, recorder, source_path, iteration, viewport
+        )
+        if result is None:
+            status = "render_failed"
+            regression_note = (
+                f"the previous refinement failed to render ({error}) and was "
+                "discarded. Start again from this source."
+            )
+        elif not guardrail:
+            status = "improved" if result["ssim"] > best_result["ssim"] else "accepted"
+            best_result = current_result = result
+            best_source, best_iteration = source_snapshot, iteration
+            regression_note = ""
+        elif regressed(result, best_result):
+            status = "rejected"
+            regression_note = (
+                f"the previous refinement attempt was rolled back because it "
+                f"lowered SSIM from {best_result['ssim']:.4f} to "
+                f"{result['ssim']:.4f}. Its diagnosis was probably wrong or the "
+                "edits were too broad; try different, targeted fixes."
+            )
+        elif (result["ssim"], result["clip_similarity"]) > (
+            best_result["ssim"], best_result["clip_similarity"]
+        ):
+            status = "improved"
+            best_result = current_result = result
+            best_source, best_iteration = source_snapshot, iteration
+            regression_note = ""
+        else:
+            status = "discarded"
+            regression_note = (
+                f"the previous refinement attempt did not improve SSIM "
+                f"({best_result['ssim']:.4f} -> {result['ssim']:.4f}) and was "
+                "discarded. Fix other differences from the measured list."
+            )
+        log_metrics(recorder, iteration, result, status, error=error)
+        if status in {"render_failed", "rejected", "discarded"}:
+            # Continue from the best version, never from a worse candidate.
+            source_path.write_bytes(best_source)
+            current_result = best_result
+            print(f"[Pipeline] {component} iteration {iteration}: {status}.")
 
     print(
         f"[Pipeline] {component} final: SSIM {best_result['ssim']:.4f}, "
