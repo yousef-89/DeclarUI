@@ -1,0 +1,955 @@
+{
+  "screen": {
+    "background": "#121212",
+    "theme": "dark",
+    "has_status_bar": true,
+    "summary": "Music streaming app library screen showing user's playlists and artists with filter chips and bottom navigation."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "header",
+      "text": "Your Library",
+      "icon": "",
+      "style": "background #121212, text color #ffffff",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        21,
+        359,
+        36
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "avatar",
+      "text": "",
+      "icon": "Y profile icon",
+      "style": "background purple, rounded",
+      "state": "",
+      "parent": "c1",
+      "bbox": [
+        15,
+        21,
+        33,
+        33
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "title",
+      "text": "Your Library",
+      "icon": "",
+      "style": "font-size 24px, bold, color #ffffff",
+      "state": "",
+      "parent": "c1",
+      "bbox": [
+        55,
+        26,
+        124,
+        26
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "icon_button",
+      "text": "",
+      "icon": "magnifying glass search icon",
+      "style": "color #ffffff",
+      "state": "",
+      "parent": "c1",
+      "bbox": [
+        303,
+        27,
+        22,
+        21
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "icon_button",
+      "text": "",
+      "icon": "plus add icon",
+      "style": "color #ffffff",
+      "state": "",
+      "parent": "c1",
+      "bbox": [
+        351,
+        26,
+        23,
+        23
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "carousel",
+      "text": "",
+      "icon": "",
+      "style": "horizontal scrollable chips",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        69,
+        374,
+        31
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "chip",
+      "text": "Playlists",
+      "icon": "",
+      "style": "background #2a2a2a, text #ffffff, rounded pill",
+      "state": "",
+      "parent": "c6",
+      "bbox": [
+        16,
+        69,
+        77,
+        31
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "chip",
+      "text": "Podcasts",
+      "icon": "",
+      "style": "background #2a2a2a, text #ffffff, rounded pill",
+      "state": "",
+      "parent": "c6",
+      "bbox": [
+        101,
+        69,
+        82,
+        31
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "chip",
+      "text": "Albums",
+      "icon": "",
+      "style": "background #2a2a2a, text #ffffff, rounded pill",
+      "state": "",
+      "parent": "c6",
+      "bbox": [
+        191,
+        69,
+        74,
+        31
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "chip",
+      "text": "Artists",
+      "icon": "",
+      "style": "background #2a2a2a, text #ffffff, rounded pill",
+      "state": "",
+      "parent": "c6",
+      "bbox": [
+        273,
+        69,
+        70,
+        31
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "chip",
+      "text": "Downloads",
+      "icon": "",
+      "style": "background #2a2a2a, text #ffffff, rounded pill",
+      "state": "",
+      "parent": "c6",
+      "bbox": [
+        350,
+        69,
+        40,
+        31
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "text",
+      "text": "Recents",
+      "icon": "sort arrows icon",
+      "style": "color #b3b3b3, font-size 14px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        48,
+        127,
+        43,
+        10
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "icon_button",
+      "text": "",
+      "icon": "grid view icon",
+      "style": "color #b3b3b3",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        359,
+        125,
+        15,
+        14
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "grid",
+      "text": "",
+      "icon": "",
+      "style": "3 column grid of library items",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        151,
+        360,
+        493
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "card",
+      "text": "Liked Songs\nPlaylist \u2022 Yousa...",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        15,
+        151,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "image",
+      "text": "",
+      "icon": "Liked songs gradient cover with heart",
+      "style": "rounded",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        15,
+        151,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "text",
+      "text": "Liked Songs",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        16,
+        272,
+        66,
+        12
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "text",
+      "text": "Playlist \u2022 Yousa...",
+      "icon": "pin icon",
+      "style": "color #aab2aa, font-size 12px",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        15,
+        289,
+        107,
+        13
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "card",
+      "text": "Your Episodes\nPlaylist \u2022 Saved...",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        140,
+        151,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "image",
+      "text": "",
+      "icon": "Your episodes green cover with bookmark",
+      "style": "rounded",
+      "state": "",
+      "parent": "c19",
+      "bbox": [
+        140,
+        151,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "text",
+      "text": "Your Episodes",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c19",
+      "bbox": [
+        140,
+        272,
+        78,
+        12
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "text",
+      "text": "Playlist \u2022 Saved...",
+      "icon": "pin icon",
+      "style": "color #a7b1a7, font-size 12px",
+      "state": "",
+      "parent": "c19",
+      "bbox": [
+        140,
+        289,
+        108,
+        13
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "card",
+      "text": "Offline Backup\nPlaylist",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        265,
+        151,
+        109,
+        110
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "image",
+      "text": "",
+      "icon": "Offline backup cover",
+      "style": "rounded",
+      "state": "",
+      "parent": "c23",
+      "bbox": [
+        265,
+        151,
+        109,
+        110
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "text",
+      "text": "Offline Backup",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c23",
+      "bbox": [
+        265,
+        272,
+        81,
+        12
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "text",
+      "text": "Playlist",
+      "icon": "",
+      "style": "color #a5a5a5, font-size 12px",
+      "state": "",
+      "parent": "c23",
+      "bbox": [
+        266,
+        290,
+        39,
+        12
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "card",
+      "text": "Marwan Pablo\nArtist",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        15,
+        319,
+        110,
+        109
+      ]
+    },
+    {
+      "id": "c28",
+      "type": "image",
+      "text": "",
+      "icon": "Marwan Pablo circular artist photo",
+      "style": "circular",
+      "state": "",
+      "parent": "c27",
+      "bbox": [
+        15,
+        319,
+        110,
+        109
+      ]
+    },
+    {
+      "id": "c29",
+      "type": "text",
+      "text": "Marwan Pablo",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c27",
+      "bbox": [
+        16,
+        440,
+        79,
+        10
+      ]
+    },
+    {
+      "id": "c30",
+      "type": "text",
+      "text": "Artist",
+      "icon": "",
+      "style": "color #ababab, font-size 12px",
+      "state": "",
+      "parent": "c27",
+      "bbox": [
+        16,
+        458,
+        31,
+        10
+      ]
+    },
+    {
+      "id": "c31",
+      "type": "card",
+      "text": "Abyusif\nArtist",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        140,
+        319,
+        110,
+        109
+      ]
+    },
+    {
+      "id": "c32",
+      "type": "image",
+      "text": "",
+      "icon": "Abyusif circular artist photo",
+      "style": "circular",
+      "state": "",
+      "parent": "c31",
+      "bbox": [
+        140,
+        319,
+        110,
+        109
+      ]
+    },
+    {
+      "id": "c33",
+      "type": "text",
+      "text": "Abyusif",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c31",
+      "bbox": [
+        140,
+        440,
+        43,
+        12
+      ]
+    },
+    {
+      "id": "c34",
+      "type": "text",
+      "text": "Artist",
+      "icon": "",
+      "style": "color #acacac, font-size 12px",
+      "state": "",
+      "parent": "c31",
+      "bbox": [
+        140,
+        458,
+        32,
+        10
+      ]
+    },
+    {
+      "id": "c35",
+      "type": "card",
+      "text": "ElGrandeToto\nArtist",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        265,
+        319,
+        110,
+        111
+      ]
+    },
+    {
+      "id": "c36",
+      "type": "image",
+      "text": "",
+      "icon": "ElGrandeToto circular artist photo",
+      "style": "circular",
+      "state": "",
+      "parent": "c35",
+      "bbox": [
+        265,
+        319,
+        110,
+        111
+      ]
+    },
+    {
+      "id": "c37",
+      "type": "text",
+      "text": "ElGrandeToto",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c35",
+      "bbox": [
+        266,
+        440,
+        73,
+        10
+      ]
+    },
+    {
+      "id": "c38",
+      "type": "text",
+      "text": "Artist",
+      "icon": "",
+      "style": "color #adadad, font-size 12px",
+      "state": "",
+      "parent": "c35",
+      "bbox": [
+        265,
+        458,
+        32,
+        10
+      ]
+    },
+    {
+      "id": "c39",
+      "type": "card",
+      "text": "Kanye West\nArtist",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        15,
+        487,
+        110,
+        109
+      ]
+    },
+    {
+      "id": "c40",
+      "type": "image",
+      "text": "",
+      "icon": "Kanye West circular artist photo",
+      "style": "circular",
+      "state": "",
+      "parent": "c39",
+      "bbox": [
+        15,
+        487,
+        110,
+        109
+      ]
+    },
+    {
+      "id": "c41",
+      "type": "text",
+      "text": "Kanye West",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c39",
+      "bbox": [
+        16,
+        608,
+        65,
+        11
+      ]
+    },
+    {
+      "id": "c42",
+      "type": "text",
+      "text": "Artist",
+      "icon": "",
+      "style": "color #737373, font-size 12px",
+      "state": "",
+      "parent": "c39",
+      "bbox": [
+        16,
+        626,
+        31,
+        10
+      ]
+    },
+    {
+      "id": "c43",
+      "type": "card",
+      "text": "TUL8TE\nArtist",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        140,
+        487,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c44",
+      "type": "image",
+      "text": "",
+      "icon": "TUL8TE circular artist photo",
+      "style": "circular",
+      "state": "",
+      "parent": "c43",
+      "bbox": [
+        140,
+        487,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c45",
+      "type": "text",
+      "text": "TUL8TE",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c43",
+      "bbox": [
+        140,
+        608,
+        43,
+        9
+      ]
+    },
+    {
+      "id": "c46",
+      "type": "text",
+      "text": "Artist",
+      "icon": "",
+      "style": "color #747474, font-size 12px",
+      "state": "",
+      "parent": "c43",
+      "bbox": [
+        140,
+        626,
+        32,
+        10
+      ]
+    },
+    {
+      "id": "c47",
+      "type": "card",
+      "text": "This Is Baby Gang\nPlaylist \u2022 Spotify",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "c14",
+      "bbox": [
+        265,
+        487,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c48",
+      "type": "image",
+      "text": "",
+      "icon": "This Is Baby Gang playlist cover",
+      "style": "rounded",
+      "state": "",
+      "parent": "c47",
+      "bbox": [
+        265,
+        487,
+        110,
+        110
+      ]
+    },
+    {
+      "id": "c49",
+      "type": "text",
+      "text": "This Is Baby Gang",
+      "icon": "",
+      "style": "color #ffffff, font-weight bold, font-size 14px",
+      "state": "",
+      "parent": "c47",
+      "bbox": [
+        265,
+        608,
+        95,
+        11
+      ]
+    },
+    {
+      "id": "c50",
+      "type": "text",
+      "text": "Playlist \u2022 Spotify",
+      "icon": "",
+      "style": "color #747474, font-size 12px",
+      "state": "",
+      "parent": "c47",
+      "bbox": [
+        266,
+        626,
+        88,
+        12
+      ]
+    },
+    {
+      "id": "c51",
+      "type": "card",
+      "text": "Muqattel\nWegz, Amaka Jaji",
+      "icon": "Now playing mini player",
+      "style": "background dark red, rounded, floating above tab bar",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        7,
+        655,
+        375,
+        56
+      ]
+    },
+    {
+      "id": "c52",
+      "type": "image",
+      "text": "",
+      "icon": "Album artwork",
+      "style": "rounded",
+      "state": "",
+      "parent": "c51",
+      "bbox": [
+        16,
+        663,
+        40,
+        40
+      ]
+    },
+    {
+      "id": "c53",
+      "type": "text",
+      "text": "Muqattel",
+      "icon": "",
+      "style": "color #ffffff, font-size 14px, bold",
+      "state": "",
+      "parent": "c51",
+      "bbox": [
+        63,
+        670,
+        51,
+        11
+      ]
+    },
+    {
+      "id": "c54",
+      "type": "text",
+      "text": "Wegz, Amaka Jaji",
+      "icon": "",
+      "style": "color #b3b2b3, font-size 12px",
+      "state": "",
+      "parent": "c51",
+      "bbox": [
+        63,
+        686,
+        97,
+        12
+      ]
+    },
+    {
+      "id": "c55",
+      "type": "icon_button",
+      "text": "",
+      "icon": "Devices icon",
+      "style": "color #ffffff",
+      "state": "",
+      "parent": "c51",
+      "bbox": [
+        252,
+        671,
+        26,
+        22
+      ]
+    },
+    {
+      "id": "c56",
+      "type": "icon_button",
+      "text": "",
+      "icon": "Plus / save icon",
+      "style": "color #ffffff",
+      "state": "",
+      "parent": "c51",
+      "bbox": [
+        297,
+        671,
+        23,
+        23
+      ]
+    },
+    {
+      "id": "c57",
+      "type": "icon_button",
+      "text": "",
+      "icon": "Play icon",
+      "style": "color #ffffff",
+      "state": "",
+      "parent": "c51",
+      "bbox": [
+        345,
+        672,
+        17,
+        21
+      ]
+    },
+    {
+      "id": "c58",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "height 2px, progress track",
+      "state": "20% filled",
+      "parent": "c51",
+      "bbox": [
+        16,
+        710,
+        4,
+        2
+      ]
+    },
+    {
+      "id": "c59",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "background #000000, bottom navigation",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        7,
+        715,
+        376,
+        62
+      ]
+    },
+    {
+      "id": "c60",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "Home outline icon",
+      "style": "color #b3b3b3, font-size 10px",
+      "state": "inactive",
+      "parent": "c59",
+      "bbox": [
+        38,
+        724,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "c61",
+      "type": "tab_item",
+      "text": "Search",
+      "icon": "Magnifying glass icon",
+      "style": "color #b3b3b3, font-size 10px",
+      "state": "inactive",
+      "parent": "c59",
+      "bbox": [
+        135,
+        724,
+        22,
+        23
+      ]
+    },
+    {
+      "id": "c62",
+      "type": "tab_item",
+      "text": "Your Library",
+      "icon": "Library bars icon",
+      "style": "color #ffffff, font-size 10px",
+      "state": "active",
+      "parent": "c59",
+      "bbox": [
+        233,
+        724,
+        21,
+        23
+      ]
+    },
+    {
+      "id": "c63",
+      "type": "tab_item",
+      "text": "Create",
+      "icon": "Plus icon",
+      "style": "color #b3b3b3, font-size 10px",
+      "state": "inactive",
+      "parent": "c59",
+      "bbox": [
+        330,
+        724,
+        23,
+        23
+      ]
+    }
+  ]
+}

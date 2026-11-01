@@ -1,0 +1,55 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "A search screen with a title, a bottom menu button, and a search input bar."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "header",
+      "text": "Search",
+      "icon": "",
+      "style": "font size 18px, bold, black text",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        164,
+        19,
+        61,
+        41
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "icon_button",
+      "text": "",
+      "icon": "hamburger menu",
+      "style": "circular background, border #dadada",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        27,
+        728,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "search_bar",
+      "text": "What are you looking for?",
+      "icon": "magnifying glass",
+      "style": "rounded pill, light gray border, placeholder text",
+      "state": "placeholder text shown",
+      "parent": "",
+      "bbox": [
+        86,
+        728,
+        277,
+        49
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "User profile and account management screen with explore options and bottom navigation."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "title",
+      "text": "yousef Samy",
+      "icon": "",
+      "style": "bold font, large, dark color",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        37,
+        178,
+        29
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "icon_button",
+      "text": "",
+      "icon": "qr code / grid icon",
+      "style": "rounded square, white background, purple icon",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        336,
+        30,
+        35,
+        38
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "banner",
+      "text": "Get Free Delivery on orders above EGP 200\nTap to apply for your Breadfast Card",
+      "icon": "delivery bag and card illustration",
+      "style": "purple background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        92,
+        359,
+        72
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "card",
+      "text": "Order history",
+      "icon": "receipt icon",
+      "style": "white background, rounded corners, shadow",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        176,
+        173,
+        107
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "card",
+      "text": "Breadfast Rewards\nShop to earn points",
+      "icon": "reward logo icon",
+      "style": "white background, rounded corners, shadow",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        201,
+        176,
+        173,
+        107
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "text",
+      "text": "EXPLORE",
+      "icon": "",
+      "style": "uppercase, small, gray",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        309,
+        51,
+        10
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "white background, rounded card container",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        334,
+        358,
+        159
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "list_item",
+      "text": "Favorites",
+      "icon": "heart, chevron right",
+      "style": "",
+      "state": "",
+      "parent": "c7",
+      "bbox": [
+        28,
+        344,
+        334,
+        33
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "list_item",
+      "text": "Invite a friend",
+      "icon": "gift, chevron right",
+      "style": "",
+      "state": "",
+      "parent": "c7",
+      "bbox": [
+        28,
+        394,
+        334,
+        34
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "list_item",
+      "text": "BundleUp",
+      "icon": "layers, chevron right",
+      "style": "",
+      "state": "",
+      "parent": "c7",
+      "bbox": [
+        28,
+        445,
+        334,
+        37
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "text",
+      "text": "ACCOUNT",
+      "icon": "",
+      "style": "uppercase, small, gray",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        519,
+        58,
+        9
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "white background, rounded card container",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        542,
+        358,
+        160
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "list_item",
+      "text": "Settings",
+      "icon": "gear, chevron right",
+      "style": "",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        28,
+        553,
+        334,
+        34
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "list_item",
+      "text": "Chat with us",
+      "icon": "chat bubble, chevron right",
+      "style": "",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        28,
+        602,
+        334,
+        34
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "list_item",
+      "text": "Help",
+      "icon": "question mark circle, chevron right",
+      "style": "",
+      "state": "",
+      "parent": "c12",
+      "bbox": [
+        28,
+        653,
+        334,
+        35
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "white background, floating bottom bar",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        20,
+        718,
+        350,
+        62
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "home outline",
+      "style": "gray",
+      "state": "unselected",
+      "parent": "c16",
+      "bbox": [
+        44,
+        721,
+        42,
+        52
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "tab_item",
+      "text": "Cart",
+      "icon": "cart outline",
+      "style": "gray",
+      "state": "unselected",
+      "parent": "c16",
+      "bbox": [
+        112,
+        721,
+        35,
+        52
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "tab_item",
+      "text": "Pay",
+      "icon": "wallet outline",
+      "style": "gray",
+      "state": "unselected",
+      "parent": "c16",
+      "bbox": [
+        176,
+        721,
+        32,
+        52
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "tab_item",
+      "text": "More",
+      "icon": "hamburger menu",
+      "style": "pill background, selected",
+      "state": "selected",
+      "parent": "c16",
+      "bbox": [
+        213,
+        721,
+        87,
+        55
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "icon_button",
+      "text": "",
+      "icon": "magnifying glass",
+      "style": "circle, white background, border",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        307,
+        718,
+        63,
+        62
+      ]
+    }
+  ]
+}

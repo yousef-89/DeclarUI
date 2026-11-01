@@ -1,0 +1,37 @@
+{
+  "batch_id": "20261101-220454-gemini-3.5-flash-lite-test",
+  "started_at": "2026-11-01T22:04:54",
+  "model": "gemini-3.5-flash-lite",
+  "apps": [
+    "Breadfast",
+    "Spotify"
+  ],
+  "screens": null,
+  "conditions": [
+    "oneshot",
+    "loop"
+  ],
+  "repeats": 1,
+  "max_iterations": 3,
+  "commit": "d9002fd92eb44c9b72818efcccd2703a93d63819",
+  "branch": "cleanup-organize",
+  "code_dirty": false,
+  "prompts_hash": "8854545f5abb",
+  "parameters": {
+    "ssim_threshold": 0.9,
+    "content_ssim_threshold": 0.75,
+    "max_ssim_regression": 0.02,
+    "temperature": "model default for code generation, 0 for JSON (inventory)",
+    "inventory_cache": "output/<app>/inventory/<model>/ (shared across batches)",
+    "logical_canvas_width": 390
+  },
+  "environment": {
+    "python": "3.10.6",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "commit_note": "commit messages rewritten on 2026-11-01 (trailer removed); was 4f10b24b5e5f188467cceee576a101feb3a337ed",
+  "resumed_at": [
+    "2026-11-01T22:48:46"
+  ],
+  "resume_commit": "85326c1f0b4e407ecc96dde5ea0e3dc3e0f8efbb"
+}

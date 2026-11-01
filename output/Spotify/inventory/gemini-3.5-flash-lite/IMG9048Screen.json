@@ -1,0 +1,415 @@
+{
+  "screen": {
+    "background": "#121212",
+    "theme": "dark",
+    "has_status_bar": false,
+    "summary": "Music streaming app home screen with playlists, albums, and recent tracks."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "avatar",
+      "text": "Y",
+      "icon": "",
+      "style": "background: #b19cc5, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        22,
+        33,
+        34
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "chip",
+      "text": "All",
+      "icon": "",
+      "style": "background: #65d46e, rounded pill, dark text",
+      "state": "selected",
+      "parent": "",
+      "bbox": [
+        59,
+        22,
+        100,
+        34
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "chip",
+      "text": "Music",
+      "icon": "",
+      "style": "background: #616061, rounded pill, light text",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        107,
+        22,
+        52,
+        34
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "chip",
+      "text": "Podcasts",
+      "icon": "",
+      "style": "background: #616061, rounded pill, light text",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        168,
+        22,
+        164,
+        34
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "chip",
+      "text": "Audiobooks",
+      "icon": "",
+      "style": "background: #616061, rounded pill, light text",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        246,
+        22,
+        86,
+        34
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "card",
+      "text": "Liked Songs",
+      "icon": "heart icon",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        63,
+        177,
+        48
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "card",
+      "text": "AQAREB (Deluxe Editi...",
+      "icon": "thumbnail image, ellipsis",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        198,
+        63,
+        176,
+        48
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "card",
+      "text": "\u0627\u0644\u062a\u0648\u0628",
+      "icon": "thumbnail image",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        118,
+        177,
+        49
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "card",
+      "text": "\u0645\u0644\u0648\u0643 \u0627\u0644\u0633\u064a\u0646",
+      "icon": "thumbnail image",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        198,
+        118,
+        176,
+        49
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "card",
+      "text": "This Is Wegz",
+      "icon": "thumbnail image",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        174,
+        177,
+        49
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "card",
+      "text": "Marwan Pablo",
+      "icon": "thumbnail image",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        198,
+        174,
+        176,
+        49
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "card",
+      "text": "\u0639\u0627\u064a\u0634 | \u0631\u064a\u062f \u0628\u0644 \u0645\u0632\u064a\u0643\u0627 \u0635\u0627\u0644\u0648\u0646\u0627\u062a",
+      "icon": "thumbnail image",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        230,
+        177,
+        47
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "card",
+      "text": "Abyusif",
+      "icon": "thumbnail image",
+      "style": "background: #2a2a2a, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        198,
+        230,
+        176,
+        47
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "title",
+      "text": "Albums featuring songs you like",
+      "icon": "",
+      "style": "font-size: large, bold",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        305,
+        265,
+        18
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "card",
+      "text": "Sadeek El Bernameg\nTUL8TE",
+      "icon": "album artwork",
+      "style": "background: transparent",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        17,
+        342,
+        145,
+        187
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "card",
+      "text": "MAHFOOM\nOmar Keif, Lege-Cy",
+      "icon": "album artwork",
+      "style": "background: transparent",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        182,
+        342,
+        144,
+        187
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "title",
+      "text": "Recents",
+      "icon": "",
+      "style": "font-size: large, bold",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        559,
+        67,
+        15
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "link",
+      "text": "Show all",
+      "icon": "",
+      "style": "color: gray, font-size: small",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        328,
+        562,
+        46,
+        10
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "card",
+      "text": "",
+      "icon": "recent item thumbnail",
+      "style": "background: transparent",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        0,
+        595,
+        57,
+        116
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "card",
+      "text": "",
+      "icon": "recent item thumbnail",
+      "style": "background: transparent",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        76,
+        595,
+        92,
+        60
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "card",
+      "text": "",
+      "icon": "recent item thumbnail",
+      "style": "background: transparent",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        186,
+        595,
+        92,
+        60
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "card",
+      "text": "",
+      "icon": "recent item thumbnail",
+      "style": "background: transparent",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        296,
+        595,
+        92,
+        60
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "banner",
+      "text": "Muqattel\nWegz, Amaka Jaji",
+      "icon": "thumbnail, connect devices, plus, play",
+      "style": "background: #8b1e1b, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        8,
+        655,
+        374,
+        56
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "tab_bar",
+      "text": "Home",
+      "icon": "home icon",
+      "style": "background: #121212",
+      "state": "selected",
+      "parent": "",
+      "bbox": [
+        34,
+        724,
+        30,
+        40
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "tab_bar",
+      "text": "Search",
+      "icon": "search icon",
+      "style": "background: #121212",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        129,
+        724,
+        34,
+        40
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "tab_bar",
+      "text": "Your Library",
+      "icon": "library icon",
+      "style": "background: #121212",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        213,
+        724,
+        62,
+        42
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "tab_bar",
+      "text": "Create",
+      "icon": "plus icon",
+      "style": "background: #121212",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        324,
+        724,
+        34,
+        40
+      ]
+    }
+  ]
+}

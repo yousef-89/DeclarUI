@@ -1,0 +1,610 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "Delivery app home screen displaying promotional banner, category grid, and bottom navigation bar."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "text",
+      "text": "Deliver to",
+      "icon": "",
+      "style": "font size 12px, color #373737",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        30,
+        60,
+        11
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "title",
+      "text": "Hyde Park Damac Compound",
+      "icon": "",
+      "style": "font size 16px, font weight bold, color #973d88",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        52,
+        212,
+        14
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "icon",
+      "text": "",
+      "icon": "chevron-down",
+      "style": "color #973d88",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        235,
+        52,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "icon_button",
+      "text": "",
+      "icon": "chat bubble",
+      "style": "background #fcfcfc, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        290,
+        37,
+        21,
+        20
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "icon_button",
+      "text": "",
+      "icon": "gift box",
+      "style": "background #fcfcfc, rounded",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        342,
+        37,
+        21,
+        21
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "carousel",
+      "text": "",
+      "icon": "",
+      "style": "border-radius 16px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        23,
+        98,
+        344,
+        193
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "title",
+      "text": "Explore Breadfast",
+      "icon": "",
+      "style": "font size 20px, font weight bold, color #212121",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        319,
+        155,
+        20
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "card",
+      "text": "Supermarket",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        354,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c8",
+      "bbox": [
+        148,
+        361,
+        33,
+        43
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "card",
+      "text": "Restaurants Up to 50% off",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        354,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background #99207d, color white, rounded",
+      "state": "",
+      "parent": "c10",
+      "bbox": [
+        327,
+        347,
+        39,
+        55
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c10",
+      "bbox": [
+        327,
+        361,
+        39,
+        41
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "card",
+      "text": "Lunchbox Essentials",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        421,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c13",
+      "bbox": [
+        143,
+        429,
+        40,
+        42
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "card",
+      "text": "Shops",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        421,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background #9a207e, color white, rounded",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        321,
+        415,
+        50,
+        57
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        321,
+        429,
+        50,
+        43
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "card",
+      "text": "Coffee",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        488,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c18",
+      "bbox": [
+        147,
+        497,
+        33,
+        42
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "card",
+      "text": "Beauty",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        488,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c20",
+      "bbox": [
+        334,
+        498,
+        23,
+        40
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "card",
+      "text": "Chef on-Demand",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        556,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background #9b1f7f, color white, rounded",
+      "state": "",
+      "parent": "c22",
+      "bbox": [
+        145,
+        550,
+        38,
+        58
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c22",
+      "bbox": [
+        145,
+        550,
+        38,
+        58
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "card",
+      "text": "Hotels with Journeys",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        556,
+        174,
+        56
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background #9a1f7f, color white, rounded",
+      "state": "",
+      "parent": "c25",
+      "bbox": [
+        328,
+        550,
+        35,
+        56
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c25",
+      "bbox": [
+        328,
+        550,
+        35,
+        56
+      ]
+    },
+    {
+      "id": "c28",
+      "type": "card",
+      "text": "Buddy Get errands done",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        623,
+        174,
+        58
+      ]
+    },
+    {
+      "id": "c29",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background #9a1f7c, color white, rounded",
+      "state": "",
+      "parent": "c28",
+      "bbox": [
+        138,
+        617,
+        48,
+        64
+      ]
+    },
+    {
+      "id": "c30",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c28",
+      "bbox": [
+        138,
+        617,
+        48,
+        64
+      ]
+    },
+    {
+      "id": "c31",
+      "type": "card",
+      "text": "Print",
+      "icon": "",
+      "style": "background #f8f9fa, border-radius 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        199,
+        623,
+        174,
+        58
+      ]
+    },
+    {
+      "id": "c32",
+      "type": "badge",
+      "text": "New",
+      "icon": "",
+      "style": "background #9a1f7f, color white, rounded",
+      "state": "",
+      "parent": "c31",
+      "bbox": [
+        329,
+        617,
+        36,
+        50
+      ]
+    },
+    {
+      "id": "c33",
+      "type": "image",
+      "text": "",
+      "icon": "",
+      "style": "",
+      "state": "",
+      "parent": "c31",
+      "bbox": [
+        329,
+        617,
+        36,
+        50
+      ]
+    },
+    {
+      "id": "c34",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "background white, floating, border-radius 36px, shadow",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        20,
+        711,
+        280,
+        62
+      ]
+    },
+    {
+      "id": "c35",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "home",
+      "style": "color #9b1f7f, background light purple rounded pill",
+      "state": "selected",
+      "parent": "c34",
+      "bbox": [
+        23,
+        715,
+        83,
+        56
+      ]
+    },
+    {
+      "id": "c36",
+      "type": "tab_item",
+      "text": "Cart",
+      "icon": "cart",
+      "style": "color gray",
+      "state": "",
+      "parent": "c34",
+      "bbox": [
+        107,
+        715,
+        44,
+        56
+      ]
+    },
+    {
+      "id": "c37",
+      "type": "tab_item",
+      "text": "Pay",
+      "icon": "wallet",
+      "style": "color gray",
+      "state": "",
+      "parent": "c34",
+      "bbox": [
+        166,
+        715,
+        51,
+        56
+      ]
+    },
+    {
+      "id": "c38",
+      "type": "tab_item",
+      "text": "More",
+      "icon": "menu",
+      "style": "color gray",
+      "state": "",
+      "parent": "c34",
+      "bbox": [
+        229,
+        715,
+        51,
+        56
+      ]
+    },
+    {
+      "id": "c39",
+      "type": "button",
+      "text": "",
+      "icon": "search",
+      "style": "background white, rounded circle, shadow",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        307,
+        711,
+        64,
+        62
+      ]
+    },
+    {
+      "id": "c40",
+      "type": "banner",
+      "text": "GAME ON",
+      "icon": "",
+      "style": "background dark blue, promotional",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        755,
+        375,
+        38
+      ]
+    }
+  ]
+}

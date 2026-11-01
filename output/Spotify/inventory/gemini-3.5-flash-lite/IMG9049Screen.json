@@ -1,0 +1,355 @@
+{
+  "screen": {
+    "background": "#121212",
+    "theme": "dark",
+    "has_status_bar": true,
+    "summary": "Search and explore screen of a music streaming app with categories, recommended episodes, and a mini player above the bottom navigation bar."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "status_bar",
+      "text": "",
+      "icon": "",
+      "style": "dark status bar",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        20,
+        109,
+        32
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "header",
+      "text": "",
+      "icon": "",
+      "style": "dark background",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        71,
+        360,
+        49
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "avatar",
+      "text": "",
+      "icon": "Y profile icon",
+      "style": "circular",
+      "state": "",
+      "parent": "c2",
+      "bbox": [
+        15,
+        20,
+        33,
+        32
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "title",
+      "text": "Search",
+      "icon": "",
+      "style": "white, bold, large font",
+      "state": "",
+      "parent": "c2",
+      "bbox": [
+        55,
+        26,
+        69,
+        21
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "icon_button",
+      "text": "",
+      "icon": "camera icon",
+      "style": "white icon",
+      "state": "",
+      "parent": "c2",
+      "bbox": [
+        342,
+        26,
+        25,
+        21
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "search_bar",
+      "text": "What do you want to listen to?",
+      "icon": "magnifier icon",
+      "style": "white background, rounded, dark text",
+      "state": "placeholder text shown",
+      "parent": "",
+      "bbox": [
+        15,
+        71,
+        360,
+        49
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "card",
+      "text": "Music",
+      "icon": "",
+      "style": "pink background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        143,
+        172,
+        65
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "card",
+      "text": "Podcasts",
+      "icon": "",
+      "style": "teal background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        143,
+        172,
+        65
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "card",
+      "text": "Audiobooks",
+      "icon": "",
+      "style": "blue background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        223,
+        172,
+        65
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "card",
+      "text": "Live Events",
+      "icon": "",
+      "style": "purple background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        223,
+        172,
+        65
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "title",
+      "text": "Explore episodes for you",
+      "icon": "",
+      "style": "white text, bold",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        303,
+        205,
+        18
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "card",
+      "text": "14 WAS TUN MIT unerwartet viel Deutsch. Geld?",
+      "icon": "",
+      "style": "yellow gradient background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        337,
+        132,
+        198
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "card",
+      "text": "Die Macht des Verbs \u201egeben\u201c",
+      "icon": "",
+      "style": "dark background with person portrait, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        166,
+        337,
+        132,
+        198
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "card",
+      "text": "w German For Begi Deutsch im Alltag traini",
+      "icon": "",
+      "style": "light brown background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        317,
+        337,
+        73,
+        198
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "card",
+      "text": "Made For You",
+      "icon": "",
+      "style": "purple background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        558,
+        172,
+        97
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "card",
+      "text": "Upcoming releases",
+      "icon": "",
+      "style": "green background, rounded corners",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        558,
+        172,
+        97
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "card",
+      "text": "Muqattel Wegz, Amaka Jaji",
+      "icon": "play, connect, plus icons",
+      "style": "dark red background, rounded, mini player",
+      "state": "40% filled progress bar",
+      "parent": "",
+      "bbox": [
+        7,
+        653,
+        375,
+        58
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "white track indicator",
+      "state": "",
+      "parent": "c17",
+      "bbox": [
+        38,
+        723,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "dark background bottom bar",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        0,
+        723,
+        390,
+        67
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "home outline icon",
+      "style": "white text and icon",
+      "state": "selected",
+      "parent": "c19",
+      "bbox": [
+        34,
+        723,
+        29,
+        40
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "tab_item",
+      "text": "Search",
+      "icon": "magnifier outline icon",
+      "style": "grey text and icon",
+      "state": "",
+      "parent": "c19",
+      "bbox": [
+        129,
+        723,
+        34,
+        40
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "tab_item",
+      "text": "Your Library",
+      "icon": "library outline icon",
+      "style": "grey text and icon",
+      "state": "",
+      "parent": "c19",
+      "bbox": [
+        213,
+        723,
+        62,
+        42
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "tab_item",
+      "text": "Create",
+      "icon": "plus outline icon",
+      "style": "grey text and icon",
+      "state": "",
+      "parent": "c19",
+      "bbox": [
+        324,
+        723,
+        34,
+        40
+      ]
+    }
+  ]
+}

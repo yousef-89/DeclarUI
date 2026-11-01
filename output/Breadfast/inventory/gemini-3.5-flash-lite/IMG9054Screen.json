@@ -1,0 +1,310 @@
+{
+  "screen": {
+    "background": "#ffffff",
+    "theme": "light",
+    "has_status_bar": false,
+    "summary": "Digital wallet and payment app screen showing zero balance, action buttons, promo card, and bottom navigation bar."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "image",
+      "text": "",
+      "icon": "App logo with Pay text",
+      "style": "color: #4c3a4c",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        26,
+        57,
+        26
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "icon_button",
+      "text": "",
+      "icon": "chat bubble icon",
+      "style": "background: #fae6f2, border-radius: 50%, color: #b73d86",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        339,
+        21,
+        32,
+        34
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "text",
+      "text": "Wallet balance",
+      "icon": "",
+      "style": "color: #7c7c7c, font-size: 14px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        16,
+        104,
+        87,
+        10
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "title",
+      "text": "EGP 0.00",
+      "icon": "",
+      "style": "color: #212121, font-size: 32px, font-weight: bold",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        17,
+        127,
+        83,
+        30
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "button",
+      "text": "",
+      "icon": "plus icon",
+      "style": "background: #9b1d7e, border-radius: 50%",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        257,
+        93,
+        48,
+        48
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "text",
+      "text": "Add to\nbalance",
+      "icon": "",
+      "style": "color: #a0418b, font-size: 12px, text-align: center",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        261,
+        148,
+        41,
+        23
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "button",
+      "text": "",
+      "icon": "credit card icon",
+      "style": "background: #f7e3ef, border-radius: 50%",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        321,
+        93,
+        48,
+        48
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "text",
+      "text": "Saved\ncards",
+      "icon": "",
+      "style": "color: #9e3e89, font-size: 12px, text-align: center",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        328,
+        148,
+        32,
+        23
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "background: linear-gradient(#5a2551, #1a1a1a), border-radius: 24px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        24,
+        190,
+        342,
+        525
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "image",
+      "text": "",
+      "icon": "Abstract logo watermark",
+      "style": "",
+      "state": "",
+      "parent": "c9",
+      "bbox": [
+        44,
+        210,
+        34,
+        63
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "image",
+      "text": "",
+      "icon": "Credit card chip and contactless icon",
+      "style": "",
+      "state": "",
+      "parent": "c9",
+      "bbox": [
+        158,
+        294,
+        47,
+        65
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "title",
+      "text": "Save on purchases with the Breadfast Card",
+      "icon": "",
+      "style": "color: #ffffff, font-size: 24px, font-weight: bold, text-align: center",
+      "state": "",
+      "parent": "c9",
+      "bbox": [
+        58,
+        448,
+        272,
+        57
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "text",
+      "text": "Get cashback and discounts whenever you shop with the card.",
+      "icon": "",
+      "style": "color: #dcdcdc, font-size: 14px, text-align: center",
+      "state": "",
+      "parent": "c9",
+      "bbox": [
+        72,
+        526,
+        245,
+        33
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "button",
+      "text": "Get started",
+      "icon": "",
+      "style": "background: #ffffff, border-radius: 24px, color: #752d7f, font-weight: bold",
+      "state": "",
+      "parent": "c9",
+      "bbox": [
+        145,
+        583,
+        100,
+        49
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "background: #ffffff, border-radius: 32px, box-shadow: 0 4px 12px rgba(0,0,0,0.1)",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        20,
+        717,
+        281,
+        61
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "home outline icon",
+      "style": "color: #292929, font-size: 12px",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        50,
+        728,
+        32,
+        35
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "tab_item",
+      "text": "Cart",
+      "icon": "shopping cart icon",
+      "style": "color: #363636, font-size: 12px",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        117,
+        728,
+        24,
+        35
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "tab_item",
+      "text": "Pay",
+      "icon": "wallet icon",
+      "style": "background: #dadada, border-radius: 20px, color: #972d7f, font-size: 12px",
+      "state": "selected",
+      "parent": "c15",
+      "bbox": [
+        180,
+        729,
+        22,
+        34
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "tab_item",
+      "text": "More",
+      "icon": "hamburger menu icon",
+      "style": "color: #2e2e2e, font-size: 12px",
+      "state": "",
+      "parent": "c15",
+      "bbox": [
+        240,
+        728,
+        28,
+        35
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "icon_button",
+      "text": "",
+      "icon": "magnifying glass icon",
+      "style": "background: #ffffff, border-radius: 50%, box-shadow: 0 4px 12px rgba(0,0,0,0.1), color: #717171",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        307,
+        717,
+        63,
+        61
+      ]
+    }
+  ]
+}

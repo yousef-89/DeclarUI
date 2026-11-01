@@ -1,0 +1,265 @@
+{
+  "screen": {
+    "background": "#121212",
+    "theme": "dark",
+    "has_status_bar": false,
+    "summary": "Music streaming app search and categories view with bottom navigation and mini player."
+  },
+  "components": [
+    {
+      "id": "search_bar",
+      "type": "search_bar",
+      "text": "What do you want to listen to?",
+      "icon": "magnifying glass",
+      "style": "background #ffffff, border-radius 8px, font-size 16px, dark text",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        11,
+        360,
+        48
+      ]
+    },
+    {
+      "id": "card_1",
+      "type": "card",
+      "text": "Made For You",
+      "icon": "",
+      "style": "background #8769a7, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        91,
+        172,
+        107
+      ]
+    },
+    {
+      "id": "card_2",
+      "type": "card",
+      "text": "Upcoming releases",
+      "icon": "",
+      "style": "background #296251, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        91,
+        172,
+        107
+      ]
+    },
+    {
+      "id": "card_3",
+      "type": "card",
+      "text": "New Releases",
+      "icon": "",
+      "style": "background #677f27, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        212,
+        172,
+        106
+      ]
+    },
+    {
+      "id": "card_4",
+      "type": "card",
+      "text": "Arab",
+      "icon": "",
+      "style": "background #d2373b, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        212,
+        172,
+        106
+      ]
+    },
+    {
+      "id": "card_5",
+      "type": "card",
+      "text": "Pop",
+      "icon": "",
+      "style": "background #537c92, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        333,
+        172,
+        106
+      ]
+    },
+    {
+      "id": "card_6",
+      "type": "card",
+      "text": "K-pop",
+      "icon": "",
+      "style": "background #d2373b, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        333,
+        172,
+        106
+      ]
+    },
+    {
+      "id": "card_7",
+      "type": "card",
+      "text": "Indie",
+      "icon": "",
+      "style": "background #d63334, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        454,
+        172,
+        106
+      ]
+    },
+    {
+      "id": "card_8",
+      "type": "card",
+      "text": "Charts",
+      "icon": "",
+      "style": "background #8769a7, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        454,
+        172,
+        106
+      ]
+    },
+    {
+      "id": "card_9",
+      "type": "card",
+      "text": "Comedy",
+      "icon": "",
+      "style": "background #c4357c, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        15,
+        575,
+        172,
+        75
+      ]
+    },
+    {
+      "id": "card_10",
+      "type": "card",
+      "text": "Educational",
+      "icon": "",
+      "style": "background #c4357c, border-radius 8px",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        202,
+        575,
+        172,
+        75
+      ]
+    },
+    {
+      "id": "mini_player",
+      "type": "card",
+      "text": "Muqattel\nWegz, Amaka Jaji",
+      "icon": "devices, plus, play",
+      "style": "background dark red, border-radius 8px",
+      "state": "active playback",
+      "parent": "",
+      "bbox": [
+        7,
+        650,
+        375,
+        56
+      ]
+    },
+    {
+      "id": "tab_bar",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "background #121212",
+      "state": "",
+      "parent": "",
+      "bbox": [
+        7,
+        718,
+        375,
+        47
+      ]
+    },
+    {
+      "id": "tab_home",
+      "type": "tab_item",
+      "text": "Home",
+      "icon": "home",
+      "style": "color grey",
+      "state": "unselected",
+      "parent": "tab_bar",
+      "bbox": [
+        34,
+        718,
+        29,
+        40
+      ]
+    },
+    {
+      "id": "tab_search",
+      "type": "tab_item",
+      "text": "Search",
+      "icon": "search",
+      "style": "color white",
+      "state": "selected",
+      "parent": "tab_bar",
+      "bbox": [
+        129,
+        718,
+        34,
+        40
+      ]
+    },
+    {
+      "id": "tab_library",
+      "type": "tab_item",
+      "text": "Your Library",
+      "icon": "library",
+      "style": "color grey",
+      "state": "unselected",
+      "parent": "tab_bar",
+      "bbox": [
+        213,
+        718,
+        62,
+        42
+      ]
+    },
+    {
+      "id": "tab_create",
+      "type": "tab_item",
+      "text": "Create",
+      "icon": "plus",
+      "style": "color grey",
+      "state": "unselected",
+      "parent": "tab_bar",
+      "bbox": [
+        324,
+        718,
+        34,
+        40
+      ]
+    }
+  ]
+}
