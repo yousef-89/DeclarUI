@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\OnlineCourseAppUI",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\OnlineCourseAppUI\\interactive-CourseDetailScreen\\iteration-1",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.5585,
+  "mean_clip_similarity": 0.8813,
+  "detailed_results": [
+    {
+      "component": "CourseDetailScreen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\OnlineCourseAppUI\\CourseDetail.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\OnlineCourseAppUI\\interactive-CourseDetailScreen\\iteration-1\\CourseDetailScreen.png",
+      "target_exists": true,
+      "target_match": "CourseDetail.png",
+      "metric_status": "evaluated",
+      "ssim": 0.5585,
+      "clip_similarity": 0.8813,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 428,
+        "height": 926
+      }
+    }
+  ]
+}

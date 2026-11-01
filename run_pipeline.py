@@ -1,6 +1,7 @@
 """Run the syntax, rendering, evaluation, and visual-refinement pipeline."""
 
 import argparse
+import csv
 import json
 import os
 import subprocess
@@ -12,7 +13,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 SSIM_THRESHOLD = 0.90
-MAX_SSIM_REGRESSION = 0.08
+MAX_SSIM_REGRESSION = 0.02
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 
@@ -306,15 +307,39 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
                 ],
                 f"Evaluating {component}",
             )
-            report = json.loads(evaluation_path.read_text(encoding="utf-8"))
-            result = next(
-                (
-                    item
-                    for item in report.get("detailed_results", [])
-                    if item.get("component") == component
-                ),
-                None,
-            )
+            metrics_tracker_path = PROJECT_ROOT / "metrics_tracker.csv"
+            tracker_exists = metrics_tracker_path.exists()
+            with metrics_tracker_path.open(
+                "a", newline="", encoding="utf-8"
+            ) as tracker_file:
+                writer = csv.writer(tracker_file)
+                if not tracker_exists:
+                    writer.writerow(
+                        ["App", "Component", "Iteration Number", "SSIM", "CLIP"]
+                    )
+                report = json.loads(evaluation_path.read_text(encoding="utf-8"))
+                tracked_result = next(
+                    (
+                        item
+                        for item in report.get("detailed_results", [])
+                        if item.get("component") == component
+                    ),
+                    None,
+                )
+                if tracked_result is None:
+                    raise RuntimeError(
+                        f"No metrics found for {component} in {evaluation_path}."
+                    )
+                writer.writerow(
+                    [
+                        app_name,
+                        component,
+                        iteration,
+                        tracked_result["ssim"],
+                        tracked_result["clip_similarity"],
+                    ]
+                )
+            result = tracked_result
             if not result or result.get("metric_status") != "evaluated":
                 raise RuntimeError(f"No usable evaluation result for {component}.")
             source_snapshot = source_path.read_bytes()

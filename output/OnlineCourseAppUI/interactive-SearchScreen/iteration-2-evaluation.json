@@ -1,0 +1,30 @@
+{
+  "protocol_stage": "Baseline Evaluation (Iteration 0)",
+  "targets_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\OnlineCourseAppUI",
+  "baseline_directory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\OnlineCourseAppUI\\interactive-SearchScreen\\iteration-2",
+  "total_components": 1,
+  "successful_renders": 1,
+  "failed_renders": 0,
+  "metric_evaluated_components": 1,
+  "mean_ssim": 0.6791,
+  "mean_clip_similarity": 0.9117,
+  "detailed_results": [
+    {
+      "component": "SearchScreen",
+      "render_success": true,
+      "render_error": null,
+      "target": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\Dataset\\targets\\OnlineCourseAppUI\\Search.png",
+      "render": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\OnlineCourseAppUI\\interactive-SearchScreen\\iteration-2\\SearchScreen.png",
+      "target_exists": true,
+      "target_match": "Search.png",
+      "metric_status": "evaluated",
+      "ssim": 0.6791,
+      "clip_similarity": 0.9117,
+      "resized_for_ssim": true,
+      "evaluation_size": {
+        "width": 428,
+        "height": 926
+      }
+    }
+  ]
+}

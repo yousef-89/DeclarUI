@@ -58,6 +58,7 @@ export default function IMG9054Screen() {
             <View style={styles.chip}>
               <View style={styles.chipLineHorizontal} />
               <View style={styles.chipLineVertical} />
+              <View style={styles.chipInnerBox} />
             </View>
             <View style={styles.contactlessWaves}>
               <View style={styles.wave1} />
@@ -81,28 +82,40 @@ export default function IMG9054Screen() {
       <View style={styles.bottomNavContainer}>
         <View style={styles.bottomNav}>
           <View style={styles.navItem}>
-            <View style={styles.navIconHome} />
+            <View style={styles.homeHouseRoof} />
+            <View style={styles.homeHouseBase} />
             <Text style={styles.navText}>Home</Text>
           </View>
 
           <View style={styles.navItem}>
-            <View style={styles.navIconCart} />
-            <Text style={styles.navTextActive}>Cart</Text>
+            <View style={styles.cartContainer}>
+              <View style={styles.cartWheel1} />
+              <View style={styles.cartWheel2} />
+              <View style={styles.cartBody} />
+            </View>
+            <Text style={styles.navText}>Cart</Text>
           </View>
 
           <View style={[styles.navItem, styles.navItemActive]}>
-            <View style={styles.navIconPay} />
+            <View style={styles.payWallet}>
+              <View style={styles.payWalletClasp} />
+            </View>
             <Text style={styles.navTextActive}>Pay</Text>
           </View>
 
           <View style={styles.navItem}>
-            <View style={styles.navIconMore} />
+            <View style={styles.moreLine} />
+            <View style={styles.moreLine} />
+            <View style={styles.moreLine} />
             <Text style={styles.navText}>More</Text>
           </View>
         </View>
 
         <View style={styles.searchFab}>
-          <View style={styles.searchMagnifier} />
+          <View style={styles.searchMagnifier}>
+            <View style={styles.magnifierCircle} />
+            <View style={styles.magnifierHandle} />
+          </View>
         </View>
       </View>
     </View>
@@ -120,7 +133,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 24,
+    marginBottom: 20,
   },
   logoContainer: {
     flexDirection: 'row',
@@ -128,7 +141,8 @@ const styles = StyleSheet.create({
   },
   logoSymbol: {
     fontSize: 32,
-    color: '#8B005D',
+    color: '#9C0A73',
+    fontStyle: 'italic',
     fontWeight: 'bold',
     marginRight: 2,
   },
@@ -148,14 +162,14 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: '#FFF0F5',
+    backgroundColor: '#FFF5F8',
     justifyContent: 'center',
     alignItems: 'center',
   },
   chatBubble: {
-    width: 22,
-    height: 16,
-    borderRadius: 4,
+    width: 20,
+    height: 14,
+    borderRadius: 3,
     borderWidth: 2,
     borderColor: '#FF2D85',
     position: 'relative',
@@ -174,65 +188,66 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 28,
+    marginBottom: 20,
   },
   walletLabel: {
-    fontSize: 15,
+    fontSize: 14,
     color: '#717171',
     marginBottom: 4,
   },
   balanceRow: {
     flexDirection: 'row',
-    alignItems: 'flex-baseline',
+    alignItems: 'flex-end',
   },
   currency: {
-    fontSize: 20,
-    fontWeight: '600',
+    fontSize: 18,
+    fontWeight: '700',
     color: '#1A1A1A',
     marginRight: 4,
-    alignSelf: 'center',
+    marginBottom: 8,
   },
   balanceAmount: {
-    fontSize: 42,
+    fontSize: 44,
     fontWeight: 'bold',
     color: '#1A1A1A',
-    lineHeight: 46,
+    lineHeight: 48,
   },
   balanceDecimals: {
     fontSize: 32,
     fontWeight: 'bold',
     color: '#1A1A1A',
-    lineHeight: 46,
+    lineHeight: 44,
   },
   actionsContainer: {
     flexDirection: 'row',
   },
   actionItem: {
     alignItems: 'center',
-    marginLeft: 16,
+    marginLeft: 12,
   },
   actionCirclePurple: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 52,
+    height: 52,
+    borderRadius: 26,
     backgroundColor: '#9C0A73',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 6,
   },
   actionCirclePink: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 52,
+    height: 52,
+    borderRadius: 26,
     backgroundColor: '#FFF0F5',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 6,
   },
   plusIcon: {
-    fontSize: 28,
+    fontSize: 30,
     color: '#FFFFFF',
     fontWeight: '300',
+    marginTop: -2,
   },
   cardIconBox: {
     width: 22,
@@ -248,18 +263,20 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   actionText: {
-    fontSize: 12,
+    fontSize: 11,
     color: '#1A1A1A',
     textAlign: 'center',
     lineHeight: 14,
+    fontWeight: '500',
   },
   banner: {
-    flex: 1,
+    height: 530,
     backgroundColor: '#4A1535',
-    borderRadius: 24,
+    borderRadius: 32,
     padding: 24,
     justifyContent: 'space-between',
     marginBottom: 90,
+    backgroundImage: 'linear-gradient(135deg, #7A1054 0%, #3D0D2B 100%)',
   },
   bannerTopRow: {
     flexDirection: 'row',
@@ -267,100 +284,116 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   bannerLogoSymbol: {
-    fontSize: 48,
+    fontSize: 64,
     color: '#FFFFFF',
+    fontStyle: 'italic',
     fontWeight: 'bold',
     opacity: 0.9,
+    marginTop: -8,
   },
   cardRepresentation: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: 12,
   },
   chip: {
-    width: 36,
-    height: 28,
-    borderRadius: 4,
-    backgroundColor: '#D1D1D1',
+    width: 48,
+    height: 38,
+    borderRadius: 6,
+    backgroundColor: '#DCDCDC',
     borderWidth: 1,
-    borderColor: '#A0A0A0',
+    borderColor: '#C0C0C0',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 16,
     position: 'relative',
+    overflow: 'hidden',
   },
   chipLineHorizontal: {
     position: 'absolute',
     width: '100%',
-    height: 1,
+    height: 1.5,
     backgroundColor: '#A0A0A0',
   },
   chipLineVertical: {
     position: 'absolute',
     height: '100%',
-    width: 1,
+    width: 1.5,
     backgroundColor: '#A0A0A0',
   },
+  chipInnerBox: {
+    width: 20,
+    height: 16,
+    borderWidth: 1,
+    borderColor: '#A0A0A0',
+    backgroundColor: '#E8E8E8',
+    borderRadius: 2,
+  },
   contactlessWaves: {
-    width: 16,
-    height: 20,
+    width: 18,
+    height: 24,
     justifyContent: 'space-between',
     alignItems: 'flex-end',
+    position: 'relative',
   },
   wave1: {
-    width: 4,
-    height: 18,
-    borderRightWidth: 2,
+    width: 5,
+    height: 24,
+    borderRightWidth: 2.5,
     borderColor: '#FFFFFF',
-    borderRadius: 10,
+    borderTopRightRadius: 12,
+    borderBottomRightRadius: 12,
   },
   wave2: {
-    width: 8,
-    height: 13,
-    borderRightWidth: 2,
+    width: 10,
+    height: 16,
+    borderRightWidth: 2.5,
     borderColor: '#FFFFFF',
-    borderRadius: 10,
+    borderTopRightRadius: 8,
+    borderBottomRightRadius: 8,
     position: 'absolute',
-    right: 3,
-    top: 2,
+    right: 4,
+    top: 4,
   },
   wave3: {
-    width: 12,
+    width: 15,
     height: 8,
-    borderRightWidth: 2,
+    borderRightWidth: 2.5,
     borderColor: '#FFFFFF',
-    borderRadius: 10,
+    borderTopRightRadius: 4,
+    borderBottomRightRadius: 4,
     position: 'absolute',
-    right: 6,
-    top: 5,
+    right: 8,
+    top: 8,
   },
   bannerContent: {
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 20,
   },
   bannerTitle: {
-    fontSize: 22,
+    fontSize: 26,
     fontWeight: 'bold',
     color: '#FFFFFF',
     textAlign: 'center',
-    marginBottom: 10,
-    lineHeight: 28,
+    marginBottom: 12,
+    lineHeight: 32,
   },
   bannerSubtitle: {
-    fontSize: 13,
-    color: '#E0E0E0',
+    fontSize: 14,
+    color: '#E0CCD7',
     textAlign: 'center',
-    marginBottom: 24,
-    lineHeight: 18,
+    marginBottom: 28,
+    lineHeight: 20,
   },
   getStartedButton: {
     backgroundColor: '#FFFFFF',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 24,
+    paddingVertical: 14,
+    paddingHorizontal: 40,
+    borderRadius: 30,
   },
   getStartedText: {
     color: '#8B005D',
-    fontSize: 15,
+    fontSize: 16,
     fontWeight: 'bold',
   },
   bottomNavContainer: {
@@ -370,17 +403,17 @@ const styles = StyleSheet.create({
     right: 0,
     flexDirection: 'row',
     paddingHorizontal: 16,
-    paddingBottom: 24,
+    paddingBottom: 20,
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
   },
   bottomNav: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#F5F5F7',
     borderRadius: 36,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
+    paddingVertical: 6,
+    paddingHorizontal: 8,
     justifyContent: 'space-around',
     alignItems: 'center',
     marginRight: 12,
@@ -390,68 +423,134 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 4,
-    paddingHorizontal: 12,
+    paddingHorizontal: 10,
+    width: 64,
   },
   navItemActive: {
-    backgroundColor: '#EAEAEA',
+    backgroundColor: '#E5D6E1',
     borderRadius: 24,
   },
-  navIconHome: {
-    width: 22,
-    height: 22,
-    borderWidth: 2,
-    borderColor: '#888888',
-    borderRadius: 4,
-    marginBottom: 2,
+  homeHouseRoof: {
+    width: 0,
+    height: 0,
+    borderLeftWidth: 9,
+    borderRightWidth: 9,
+    borderBottomWidth: 7,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderBottomColor: '#666666',
+    marginBottom: 1,
   },
-  navIconCart: {
-    width: 22,
-    height: 22,
-    borderWidth: 2,
-    borderColor: '#888888',
-    borderRadius: 4,
-    marginBottom: 2,
+  homeHouseBase: {
+    width: 12,
+    height: 9,
+    backgroundColor: '#666666',
+    marginBottom: 3,
   },
-  navIconPay: {
-    width: 22,
-    height: 22,
-    borderWidth: 2,
-    borderColor: '#9C0A73',
-    borderRadius: 4,
-    marginBottom: 2,
+  cartContainer: {
+    width: 20,
+    height: 16,
+    position: 'relative',
+    marginBottom: 4,
   },
-  navIconMore: {
-    width: 22,
-    height: 22,
+  cartBody: {
+    width: 16,
+    height: 11,
     borderWidth: 2,
-    borderColor: '#888888',
-    borderRadius: 4,
-    marginBottom: 2,
+    borderColor: '#666666',
+    borderTopWidth: 0,
+    borderBottomLeftRadius: 3,
+    borderBottomRightRadius: 3,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  },
+  cartWheel1: {
+    width: 3,
+    height: 3,
+    borderRadius: 1.5,
+    backgroundColor: '#666666',
+    position: 'absolute',
+    bottom: 0,
+    left: 3,
+  },
+  cartWheel2: {
+    width: 3,
+    height: 3,
+    borderRadius: 1.5,
+    backgroundColor: '#666666',
+    position: 'absolute',
+    bottom: 0,
+    right: 3,
+  },
+  payWallet: {
+    width: 18,
+    height: 13,
+    backgroundColor: '#9C0A73',
+    borderRadius: 3,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    marginBottom: 3,
+    paddingRight: 2,
+  },
+  payWalletClasp: {
+    width: 4,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: '#FFFFFF',
+  },
+  moreLine: {
+    width: 14,
+    height: 2,
+    backgroundColor: '#666666',
+    borderRadius: 1,
+    marginVertical: 1.5,
   },
   navText: {
-    fontSize: 11,
-    color: '#888888',
+    fontSize: 10,
+    color: '#666666',
+    marginTop: 1,
   },
   navTextActive: {
-    fontSize: 11,
+    fontSize: 10,
     color: '#1A1A1A',
     fontWeight: '600',
+    marginTop: 1,
   },
   searchFab: {
     width: 64,
     height: 64,
     borderRadius: 32,
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#F5F5F7',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#EAEAEA',
+    borderColor: '#EFEFEF',
   },
   searchMagnifier: {
     width: 20,
     height: 20,
-    borderRadius: 10,
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  magnifierCircle: {
+    width: 14,
+    height: 14,
+    borderRadius: 7,
     borderWidth: 2,
     borderColor: '#555555',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  },
+  magnifierHandle: {
+    width: 7,
+    height: 2,
+    backgroundColor: '#555555',
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    transform: [{ rotate: '45deg' }],
   },
 });

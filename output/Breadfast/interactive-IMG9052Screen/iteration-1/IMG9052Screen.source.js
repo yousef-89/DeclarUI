@@ -176,35 +176,32 @@ const IMG9052Screen = () => {
         </View>
 
         {/* Extra bottom spacing */}
-        <View style={{ height: 120 }} />
+        <View style={{ height: 130 }} />
       </ScrollView>
 
-      {/* Floating Search Button */}
+      {/* Floating Search & Bottom Navigation */}
       <View style={styles.floatingSearchContainer}>
         <View style={styles.searchButton}>
           <Text style={styles.searchIcon}>🔍</Text>
         </View>
       </View>
 
-      {/* Floating Bottom Navigation */}
-      <View style={styles.bottomNavWrapper}>
-        <View style={styles.bottomNav}>
-          <View style={[styles.navItem, styles.activeNavItem]}>
-            <Text style={styles.navIconActive}>🏠</Text>
-            <Text style={styles.navTextActive}>Home</Text>
-          </View>
-          <View style={styles.navItem}>
-            <Text style={styles.navIcon}>🛒</Text>
-            <Text style={styles.navText}>Cart</Text>
-          </View>
-          <View style={styles.navItem}>
-            <Text style={styles.navIcon}>💳</Text>
-            <Text style={styles.navText}>Pay</Text>
-          </View>
-          <View style={styles.navItem}>
-            <Text style={styles.navIcon}>☰</Text>
-            <Text style={styles.navText}>More</Text>
-          </View>
+      <View style={styles.bottomNav}>
+        <View style={[styles.navItem, styles.activeNavItem]}>
+          <Text style={styles.navIconActive}>🏠</Text>
+          <Text style={styles.navTextActive}>Home</Text>
+        </View>
+        <View style={styles.navItem}>
+          <Text style={styles.navIcon}>🛒</Text>
+          <Text style={styles.navText}>Cart</Text>
+        </View>
+        <View style={styles.navItem}>
+          <Text style={styles.navIcon}>💳</Text>
+          <Text style={styles.navText}>Pay</Text>
+        </View>
+        <View style={styles.navItem}>
+          <Text style={styles.navIcon}>☰</Text>
+          <Text style={styles.navText}>More</Text>
         </View>
       </View>
     </View>
@@ -219,49 +216,49 @@ const styles = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     position: 'relative',
-    overflow: 'hidden',
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingTop: 16,
     paddingBottom: 12,
   },
   deliverTo: {
     fontSize: 12,
-    color: '#888',
+    color: '#777',
     marginBottom: 2,
+    fontWeight: '500',
   },
   locationRow: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   locationText: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: '#650033',
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#5C0632',
+    letterSpacing: -0.2,
   },
   chevron: {
     fontSize: 14,
-    color: '#650033',
+    color: '#5C0632',
     fontWeight: 'bold',
   },
   headerIcons: {
     flexDirection: 'row',
-    alignItems: 'center',
   },
   iconButton: {
     width: 42,
     height: 42,
     borderRadius: 21,
-    backgroundColor: '#F7F8FA',
+    backgroundColor: '#F9F9FA',
     justifyContent: 'center',
     alignItems: 'center',
     marginLeft: 10,
     borderWidth: 1,
-    borderColor: '#ECEFF4',
+    borderColor: '#F0F0F0',
   },
   iconText: {
     fontSize: 18,
@@ -273,10 +270,10 @@ const styles = StyleSheet.create({
     marginVertical: 4,
   },
   bannerCard: {
-    width: 360,
+    width: 380,
     height: 190,
-    backgroundColor: '#260511',
-    borderRadius: 24,
+    backgroundColor: '#230710',
+    borderRadius: 22,
     padding: 18,
     overflow: 'hidden',
     position: 'relative',
@@ -286,13 +283,13 @@ const styles = StyleSheet.create({
     top: 14,
     left: 14,
     backgroundColor: '#fff',
-    paddingHorizontal: 10,
+    paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 6,
   },
   bannerBadgeText: {
     fontSize: 10,
-    fontWeight: '800',
+    fontWeight: '900',
     color: '#000',
     letterSpacing: 0.5,
   },
@@ -300,20 +297,21 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 4,
   },
   bannerTitle: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: '900',
     letterSpacing: 0.8,
-    marginBottom: 18,
+    marginBottom: 16,
     textAlign: 'center',
   },
   cansRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    paddingHorizontal: 8,
+    paddingHorizontal: 12,
   },
   canLeft: {
     alignItems: 'flex-start',
@@ -322,35 +320,36 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   canSub: {
-    color: '#bbf246',
-    fontSize: 9,
-    fontWeight: '700',
-    letterSpacing: 0.5,
+    color: '#a3e635',
+    fontSize: 10,
+    fontWeight: '800',
+    letterSpacing: 0.3,
   },
   canMain: {
-    color: '#bbf246',
-    fontSize: 19,
+    color: '#a3e635',
+    fontSize: 20,
     fontWeight: '900',
     letterSpacing: 0.5,
   },
   canSubRight: {
     color: '#f472b6',
-    fontSize: 9,
-    fontWeight: '700',
-    letterSpacing: 0.5,
+    fontSize: 10,
+    fontWeight: '800',
+    letterSpacing: 0.3,
   },
   canMainRight: {
     color: '#f472b6',
-    fontSize: 19,
+    fontSize: 20,
     fontWeight: '900',
     letterSpacing: 0.5,
   },
   sectionTitle: {
     fontSize: 22,
-    fontWeight: '800',
+    fontWeight: 'bold',
     color: '#111',
-    marginTop: 20,
+    marginTop: 22,
     marginBottom: 14,
+    letterSpacing: -0.3,
   },
   gridContainer: {
     flexDirection: 'column',
@@ -361,11 +360,11 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   card: {
-    width: '48.5%',
-    backgroundColor: '#F7F8FA',
-    borderRadius: 24,
+    width: '48%',
+    backgroundColor: '#F8F9FB',
+    borderRadius: 20,
     padding: 16,
-    height: 96,
+    height: 100,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
@@ -374,20 +373,20 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 15,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: '#111',
-    letterSpacing: 0.2,
+    letterSpacing: -0.2,
   },
   cardSubtitle: {
     fontSize: 11,
-    color: '#777',
-    marginTop: 2,
+    color: '#666',
+    marginTop: 3,
     fontWeight: '500',
   },
   cardImagePlaceholder: {
     position: 'absolute',
     right: 12,
-    bottom: 6,
+    bottom: 8,
   },
   emojiImg: {
     fontSize: 38,
@@ -404,19 +403,19 @@ const styles = StyleSheet.create({
   },
   newBadgeText: {
     color: '#fff',
-    fontSize: 9,
-    fontWeight: '700',
+    fontSize: 10,
+    fontWeight: 'bold',
   },
   floatingSearchContainer: {
     position: 'absolute',
     right: 20,
-    bottom: 90,
+    bottom: 85,
     zIndex: 20,
   },
   searchButton: {
-    width: 54,
-    height: 54,
-    borderRadius: 27,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
@@ -424,77 +423,61 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.15,
     shadowRadius: 8,
-    elevation: 8,
+    elevation: 6,
     borderWidth: 1,
-    borderColor: '#ECEFF4',
+    borderColor: '#eee',
   },
   searchIcon: {
     fontSize: 22,
   },
-  bottomNavWrapper: {
+  bottomNav: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingBottom: 20,
-    backgroundColor: 'transparent',
-    zIndex: 15,
-  },
-  bottomNav: {
-    width: '100%',
-    maxWidth: 420,
-    height: 64,
+    height: 72,
     backgroundColor: '#fff',
-    borderRadius: 32,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.12,
-    shadowRadius: 12,
-    elevation: 10,
-    borderWidth: 1,
-    borderColor: '#ECEFF4',
-    paddingHorizontal: 6,
+    borderTopWidth: 1,
+    borderTopColor: '#EFEFEF',
+    paddingBottom: 12,
+    paddingHorizontal: 12,
+    zIndex: 15,
   },
   navItem: {
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    height: '100%',
   },
   activeNavItem: {
     backgroundColor: '#f3e8ff',
     borderRadius: 24,
     marginHorizontal: 4,
+    paddingVertical: 8,
     flexDirection: 'row',
     paddingHorizontal: 16,
-    paddingVertical: 8,
-    flex: 1.3,
-    justifyContent: 'center',
   },
   navIcon: {
-    fontSize: 18,
-    color: '#999',
+    fontSize: 20,
+    color: '#888',
     marginBottom: 2,
   },
   navText: {
-    fontSize: 10,
-    color: '#999',
-    fontWeight: '600',
+    fontSize: 11,
+    color: '#888',
+    fontWeight: '500',
   },
   navIconActive: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#7c3aed',
     marginRight: 6,
   },
   navTextActive: {
     fontSize: 12,
     color: '#7c3aed',
-    fontWeight: '700',
+    fontWeight: 'bold',
   },
 });
 

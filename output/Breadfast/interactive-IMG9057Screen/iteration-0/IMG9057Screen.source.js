@@ -40,7 +40,7 @@ export default function IMG9057Screen() {
             
             <View style={styles.progressContainer}>
               <View style={styles.progressBarBackground}>
-                <View style={[styles.progressBarFill, { width: '5%' }]} />
+                <View style={[styles.progressBarFill, { width: '8%' }]} />
               </View>
             </View>
             <Text style={styles.cardFooter}>5 orders left</Text>
@@ -55,7 +55,7 @@ export default function IMG9057Screen() {
             
             <View style={styles.progressContainer}>
               <View style={styles.progressBarBackground}>
-                <View style={[styles.progressBarFill, { width: '5%' }]} />
+                <View style={[styles.progressBarFill, { width: '8%' }]} />
               </View>
             </View>
             <Text style={styles.cardFooter}>EGP 1,000.00 left</Text>
@@ -82,22 +82,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
-    paddingVertical: 14,
+    paddingVertical: 12,
     backgroundColor: '#FFFFFF',
     borderBottomWidth: 1,
     borderBottomColor: '#F2F2F2',
   },
   backButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 38,
+    height: 38,
+    borderRadius: 19,
     borderWidth: 1,
-    borderColor: '#E5E5E5',
+    borderColor: '#EAEAEA',
     justifyContent: 'center',
     alignItems: 'center',
   },
   backArrow: {
-    fontSize: 26,
+    fontSize: 24,
     color: '#1C1C1E',
     marginTop: -2,
     fontWeight: '300',
@@ -105,14 +105,15 @@ const styles = StyleSheet.create({
   headerTitle: {
     flex: 1,
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 17,
     fontWeight: '600',
-    color: '#1A1A1A',
-    marginRight: 40, // Offset back button width to center accurately
+    color: '#111111',
+    marginRight: 38,
+    letterSpacing: -0.2,
   },
   banner: {
-    height: 220,
-    backgroundColor: '#FCEBDD',
+    height: 180,
+    backgroundColor: '#FDECE1',
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
@@ -124,33 +125,33 @@ const styles = StyleSheet.create({
   },
   circleAvatar1: {
     position: 'absolute',
-    top: 25,
+    top: 18,
     left: '38%',
-    width: 55,
-    height: 55,
-    borderRadius: 28,
+    width: 52,
+    height: 52,
+    borderRadius: 26,
     backgroundColor: '#D18BC0',
     borderWidth: 2,
     borderColor: '#FFFFFF',
   },
   circleAvatar2: {
     position: 'absolute',
-    top: 25,
+    top: 18,
     right: '32%',
-    width: 55,
-    height: 55,
-    borderRadius: 28,
+    width: 52,
+    height: 52,
+    borderRadius: 26,
     backgroundColor: '#A3D2C2',
     borderWidth: 2,
     borderColor: '#FFFFFF',
   },
   circleAvatar3: {
     position: 'absolute',
-    bottom: 30,
+    bottom: 12,
     left: '28%',
-    width: 60,
-    height: 60,
-    borderRadius: 30,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     backgroundColor: '#8698C4',
     borderWidth: 2,
     borderColor: '#FFFFFF',
@@ -158,28 +159,29 @@ const styles = StyleSheet.create({
   mainFigure: {
     position: 'absolute',
     bottom: 0,
-    right: '25%',
-    width: 90,
-    height: 110,
+    right: '27%',
+    width: 84,
+    height: 100,
     backgroundColor: '#8E3870',
-    borderTopLeftRadius: 40,
-    borderTopRightRadius: 40,
+    borderTopLeftRadius: 42,
+    borderTopRightRadius: 42,
   },
   content: {
-    paddingHorizontal: 20,
+    paddingHorizontal: 16,
     paddingTop: 24,
     alignItems: 'center',
   },
   title: {
     fontSize: 22,
-    fontWeight: 'bold',
-    color: '#1C1C1E',
+    fontWeight: '700',
+    color: '#111111',
     textAlign: 'center',
     marginBottom: 10,
+    letterSpacing: -0.4,
   },
   subtitle: {
     fontSize: 14,
-    color: '#6B6B70',
+    color: '#555555',
     textAlign: 'center',
     marginBottom: 24,
     paddingHorizontal: 10,
@@ -195,20 +197,20 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: '#E5E5EA',
+    borderColor: '#E2E2E6',
     padding: 16,
     alignItems: 'center',
     justifyContent: 'space-between',
-    minHeight: 190,
+    minHeight: 184,
   },
   iconContainer: {
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: '#F2F2F7',
+    backgroundColor: '#F5F5F7',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: 8,
   },
   iconSymbol: {
     fontSize: 18,
@@ -218,24 +220,24 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#1C1C1E',
     textAlign: 'center',
-    lineHeight: 18,
-    marginBottom: 16,
+    lineHeight: 19,
+    marginBottom: 12,
   },
   progressContainer: {
     width: '100%',
     marginBottom: 8,
   },
   progressBarBackground: {
-    height: 6,
+    height: 5,
     backgroundColor: '#E5E5EA',
-    borderRadius: 3,
+    borderRadius: 2.5,
     overflow: 'hidden',
     width: '100%',
   },
   progressBarFill: {
     height: '100%',
     backgroundColor: '#00A86B',
-    borderRadius: 3,
+    borderRadius: 2.5,
   },
   cardFooter: {
     fontSize: 12,
@@ -245,14 +247,14 @@ const styles = StyleSheet.create({
   },
   footerContainer: {
     position: 'absolute',
-    bottom: 30,
+    bottom: 28,
     left: 0,
     right: 0,
     alignItems: 'center',
   },
   termsText: {
     fontSize: 13,
-    color: '#8E8E93',
+    color: '#7C7C82',
   },
   termsLink: {
     color: '#8E2860',

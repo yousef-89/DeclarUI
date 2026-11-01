@@ -58,7 +58,6 @@ export default function IMG9054Screen() {
             <View style={styles.chip}>
               <View style={styles.chipLineHorizontal} />
               <View style={styles.chipLineVertical} />
-              <View style={styles.chipInner} />
             </View>
             <View style={styles.contactlessWaves}>
               <View style={styles.wave1} />
@@ -82,45 +81,39 @@ export default function IMG9054Screen() {
       <View style={styles.bottomNavContainer}>
         <View style={styles.bottomNav}>
           <View style={styles.navItem}>
-            <View style={styles.navIconHomeContainer}>
-              <View style={styles.homeRoof} />
-              <View style={styles.homeBase} />
-            </View>
+            <View style={styles.homeHouseRoof} />
+            <View style={styles.homeHouseBase} />
             <Text style={styles.navText}>Home</Text>
           </View>
 
           <View style={styles.navItem}>
-            <View style={styles.navIconCartContainer}>
-              <View style={styles.cartBasket} />
-              <View style={styles.cartHandle} />
-              <View style={styles.cartWheelLeft} />
-              <View style={styles.cartWheelRight} />
+            <View style={styles.cartContainer}>
+              <View style={styles.cartWheel1} />
+              <View style={styles.cartWheel2} />
+              <View style={styles.cartBody} />
             </View>
             <Text style={styles.navText}>Cart</Text>
           </View>
 
           <View style={[styles.navItem, styles.navItemActive]}>
-            <View style={styles.navIconPayContainer}>
-              <View style={styles.walletBody} />
-              <View style={styles.walletClasp} />
+            <View style={styles.payWallet}>
+              <View style={styles.payWalletClasp} />
             </View>
             <Text style={styles.navTextActive}>Pay</Text>
           </View>
 
           <View style={styles.navItem}>
-            <View style={styles.navIconMoreContainer}>
-              <View style={styles.moreLine} />
-              <View style={styles.moreLine} />
-              <View style={styles.moreLine} />
-            </View>
+            <View style={styles.moreLine} />
+            <View style={styles.moreLine} />
+            <View style={styles.moreLine} />
             <Text style={styles.navText}>More</Text>
           </View>
         </View>
 
         <View style={styles.searchFab}>
           <View style={styles.searchMagnifier}>
-            <View style={styles.searchCircle} />
-            <View style={styles.searchHandle} />
+            <View style={styles.magnifierCircle} />
+            <View style={styles.magnifierHandle} />
           </View>
         </View>
       </View>
@@ -139,7 +132,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 24,
+    marginBottom: 20,
   },
   logoContainer: {
     flexDirection: 'row',
@@ -147,10 +140,10 @@ const styles = StyleSheet.create({
   },
   logoSymbol: {
     fontSize: 32,
-    color: '#B80075',
+    color: '#9C0A73',
+    fontStyle: 'italic',
     fontWeight: 'bold',
     marginRight: 2,
-    fontFamily: 'serif',
   },
   logoText: {
     fontSize: 28,
@@ -168,14 +161,14 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: '#FFF0F5',
+    backgroundColor: '#FFF5F8',
     justifyContent: 'center',
     alignItems: 'center',
   },
   chatBubble: {
-    width: 22,
-    height: 16,
-    borderRadius: 4,
+    width: 20,
+    height: 14,
+    borderRadius: 3,
     borderWidth: 2,
     borderColor: '#FF2D85',
     position: 'relative',
@@ -184,9 +177,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   dot: {
-    width: 3,
-    height: 3,
-    borderRadius: 1.5,
+    width: 2,
+    height: 2,
+    borderRadius: 1,
     backgroundColor: '#FF2D85',
     marginHorizontal: 1,
   },
@@ -194,10 +187,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 28,
+    marginBottom: 20,
   },
   walletLabel: {
-    fontSize: 15,
+    fontSize: 14,
     color: '#717171',
     marginBottom: 4,
   },
@@ -207,7 +200,7 @@ const styles = StyleSheet.create({
   },
   currency: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: '700',
     color: '#1A1A1A',
     marginRight: 4,
     marginBottom: 8,
@@ -222,14 +215,14 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     color: '#1A1A1A',
-    lineHeight: 42,
+    lineHeight: 44,
   },
   actionsContainer: {
     flexDirection: 'row',
   },
   actionItem: {
     alignItems: 'center',
-    marginLeft: 16,
+    marginLeft: 12,
   },
   actionCirclePurple: {
     width: 52,
@@ -250,7 +243,7 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   plusIcon: {
-    fontSize: 28,
+    fontSize: 30,
     color: '#FFFFFF',
     fontWeight: '300',
     marginTop: -2,
@@ -262,7 +255,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#9C0A73',
     justifyContent: 'center',
-    alignItems: 'center',
   },
   cardIconLine: {
     height: 3,
@@ -270,18 +262,20 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   actionText: {
-    fontSize: 12,
+    fontSize: 11,
     color: '#1A1A1A',
     textAlign: 'center',
-    lineHeight: 15,
+    lineHeight: 14,
+    fontWeight: '500',
   },
   banner: {
-    flex: 1,
+    height: 440,
     backgroundColor: '#4A1535',
     borderRadius: 28,
     padding: 24,
     justifyContent: 'space-between',
-    marginBottom: 100,
+    marginBottom: 90,
+    backgroundImage: 'linear-gradient(135deg, #7A1054 0%, #3D0D2B 100%)',
   },
   bannerTopRow: {
     flexDirection: 'row',
@@ -289,11 +283,12 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   bannerLogoSymbol: {
-    fontSize: 52,
+    fontSize: 56,
     color: '#FFFFFF',
+    fontStyle: 'italic',
     fontWeight: 'bold',
     opacity: 0.9,
-    fontFamily: 'serif',
+    marginTop: -8,
   },
   cardRepresentation: {
     flexDirection: 'row',
@@ -301,15 +296,15 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   chip: {
-    width: 42,
-    height: 32,
+    width: 44,
+    height: 34,
     borderRadius: 6,
-    backgroundColor: '#E2E2E2',
+    backgroundColor: '#D1D1D1',
     borderWidth: 1,
-    borderColor: '#C0C0C0',
+    borderColor: '#B0B0B0',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 16,
+    marginRight: 12,
     position: 'relative',
     overflow: 'hidden',
   },
@@ -325,50 +320,43 @@ const styles = StyleSheet.create({
     width: 1,
     backgroundColor: '#A0A0A0',
   },
-  chipInner: {
-    width: 14,
-    height: 10,
-    borderWidth: 1,
-    borderColor: '#A0A0A0',
-    borderRadius: 2,
-  },
   contactlessWaves: {
-    width: 18,
-    height: 24,
-    justifyContent: 'center',
+    width: 14,
+    height: 20,
+    justifyContent: 'space-between',
     alignItems: 'flex-end',
     position: 'relative',
   },
   wave1: {
     width: 4,
-    height: 24,
+    height: 20,
     borderRightWidth: 2.5,
     borderColor: '#FFFFFF',
-    borderRadius: 12,
+    borderRadius: 10,
   },
   wave2: {
     width: 8,
-    height: 16,
+    height: 14,
     borderRightWidth: 2.5,
     borderColor: '#FFFFFF',
     borderRadius: 10,
     position: 'absolute',
-    right: 4,
-    top: 4,
+    right: 3,
+    top: 3,
   },
   wave3: {
     width: 12,
     height: 8,
     borderRightWidth: 2.5,
     borderColor: '#FFFFFF',
-    borderRadius: 8,
+    borderRadius: 10,
     position: 'absolute',
-    right: 8,
-    top: 8,
+    right: 6,
+    top: 6,
   },
   bannerContent: {
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 12,
   },
   bannerTitle: {
     fontSize: 24,
@@ -380,7 +368,7 @@ const styles = StyleSheet.create({
   },
   bannerSubtitle: {
     fontSize: 13,
-    color: '#D8C5D2',
+    color: '#E0CCD7',
     textAlign: 'center',
     marginBottom: 24,
     lineHeight: 18,
@@ -389,7 +377,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     paddingVertical: 14,
     paddingHorizontal: 36,
-    borderRadius: 24,
+    borderRadius: 30,
   },
   getStartedText: {
     color: '#8B005D',
@@ -403,7 +391,7 @@ const styles = StyleSheet.create({
     right: 0,
     flexDirection: 'row',
     paddingHorizontal: 16,
-    paddingBottom: 24,
+    paddingBottom: 20,
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
   },
@@ -412,178 +400,145 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#F5F5F7',
     borderRadius: 36,
-    paddingVertical: 8,
+    paddingVertical: 6,
     paddingHorizontal: 8,
     justifyContent: 'space-around',
     alignItems: 'center',
     marginRight: 12,
-    height: 68,
+    height: 64,
   },
   navItem: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 6,
-    paddingHorizontal: 14,
+    paddingVertical: 4,
+    paddingHorizontal: 10,
+    width: 64,
   },
   navItemActive: {
-    backgroundColor: '#E5E5EA',
+    backgroundColor: '#E5D6E1',
     borderRadius: 24,
   },
-  navIconHomeContainer: {
-    width: 24,
-    height: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 3,
-  },
-  homeRoof: {
+  homeHouseRoof: {
     width: 0,
     height: 0,
-    backgroundColor: 'transparent',
-    borderStyle: 'solid',
-    borderLeftWidth: 10,
-    borderRightWidth: 10,
-    borderBottomWidth: 8,
+    borderLeftWidth: 9,
+    borderRightWidth: 9,
+    borderBottomWidth: 7,
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
-    borderBottomColor: '#717171',
+    borderBottomColor: '#666666',
     marginBottom: 1,
   },
-  homeBase: {
+  homeHouseBase: {
     width: 12,
-    height: 10,
-    backgroundColor: '#717171',
-    borderRadius: 1,
-  },
-  navIconCartContainer: {
-    width: 24,
-    height: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
+    height: 9,
+    backgroundColor: '#666666',
     marginBottom: 3,
   },
-  cartBasket: {
-    width: 14,
-    height: 10,
-    borderWidth: 2,
-    borderColor: '#717171',
-    borderTopWidth: 0,
-    borderRadius: 2,
-    marginTop: 6,
-  },
-  cartHandle: {
-    position: 'absolute',
-    top: 4,
-    left: 4,
-    width: 8,
-    height: 4,
-    borderWidth: 2,
-    borderColor: '#717171',
-    borderBottomWidth: 0,
-    borderTopLeftRadius: 4,
-    borderTopRightRadius: 4,
-  },
-  cartWheelLeft: {
-    position: 'absolute',
-    bottom: 2,
-    left: 5,
-    width: 3,
-    height: 3,
-    borderRadius: 1.5,
-    backgroundColor: '#717171',
-  },
-  cartWheelRight: {
-    position: 'absolute',
-    bottom: 2,
-    right: 5,
-    width: 3,
-    height: 3,
-    borderRadius: 1.5,
-    backgroundColor: '#717171',
-  },
-  navIconPayContainer: {
-    width: 24,
-    height: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
-    marginBottom: 3,
-  },
-  walletBody: {
-    width: 16,
-    height: 12,
-    borderRadius: 3,
-    borderWidth: 2,
-    borderColor: '#9C0A73',
-  },
-  walletClasp: {
-    position: 'absolute',
-    top: 8,
-    right: 5,
-    width: 3,
-    height: 2,
-    backgroundColor: '#9C0A73',
-    borderRadius: 1,
-  },
-  navIconMoreContainer: {
-    width: 24,
-    height: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 3,
-  },
-  moreLine: {
-    width: 14,
-    height: 2,
-    backgroundColor: '#717171',
-    borderRadius: 1,
-    marginVertical: 2,
-  },
-  navText: {
-    fontSize: 11,
-    color: '#717171',
-  },
-  navTextActive: {
-    fontSize: 11,
-    color: '#1A1A1A',
-    fontWeight: '600',
-  },
-  searchFab: {
-    width: 68,
-    height: 68,
-    borderRadius: 34,
-    backgroundColor: '#F5F5F7',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: '#E5E5EA',
-  },
-  searchMagnifier: {
-    width: 24,
-    height: 24,
-    position: 'relative',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  searchCircle: {
-    width: 16,
+  cartContainer: {
+    width: 20,
     height: 16,
-    borderRadius: 8,
+    position: 'relative',
+    marginBottom: 4,
+  },
+  cartBody: {
+    width: 16,
+    height: 11,
     borderWidth: 2,
-    borderColor: '#717171',
+    borderColor: '#666666',
+    borderTopWidth: 0,
+    borderBottomLeftRadius: 3,
+    borderBottomRightRadius: 3,
     position: 'absolute',
     top: 0,
     left: 0,
   },
-  searchHandle: {
+  cartWheel1: {
+    width: 3,
+    height: 3,
+    borderRadius: 1.5,
+    backgroundColor: '#666666',
     position: 'absolute',
-    bottom: 1,
-    right: 1,
-    width: 8,
-    height: 2.5,
-    backgroundColor: '#717171',
-    transform: [{ rotate: '45deg' }],
+    bottom: 0,
+    left: 3,
+  },
+  cartWheel2: {
+    width: 3,
+    height: 3,
+    borderRadius: 1.5,
+    backgroundColor: '#666666',
+    position: 'absolute',
+    bottom: 0,
+    right: 3,
+  },
+  payWallet: {
+    width: 18,
+    height: 13,
+    backgroundColor: '#9C0A73',
+    borderRadius: 3,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    marginBottom: 3,
+    paddingRight: 2,
+  },
+  payWalletClasp: {
+    width: 4,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: '#FFFFFF',
+  },
+  moreLine: {
+    width: 14,
+    height: 2,
+    backgroundColor: '#666666',
     borderRadius: 1,
+    marginVertical: 1.5,
+  },
+  navText: {
+    fontSize: 10,
+    color: '#666666',
+    marginTop: 1,
+  },
+  navTextActive: {
+    fontSize: 10,
+    color: '#1A1A1A',
+    fontWeight: '600',
+    marginTop: 1,
+  },
+  searchFab: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: '#F5F5F7',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#EFEFEF',
+  },
+  searchMagnifier: {
+    width: 20,
+    height: 20,
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  magnifierCircle: {
+    width: 14,
+    height: 14,
+    borderRadius: 7,
+    borderWidth: 2,
+    borderColor: '#555555',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  },
+  magnifierHandle: {
+    width: 7,
+    height: 2,
+    backgroundColor: '#555555',
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    transform: [{ rotate: '45deg' }],
   },
 });

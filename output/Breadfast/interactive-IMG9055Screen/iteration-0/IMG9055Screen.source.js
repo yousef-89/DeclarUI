@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Svg, Path, Rect, Circle } from 'react-native-svg';
 
 export default function IMG9055Screen() {
   return (
@@ -10,13 +9,23 @@ export default function IMG9055Screen() {
         <View style={styles.header}>
           <Text style={styles.headerTitle}>yousef Samy</Text>
           <View style={styles.qrButton}>
-            <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
-              <Path
-                d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z"
-                stroke="#d32f54"
-                strokeWidth={1.5}
-              />
-            </Svg>
+            <View style={styles.qrIconGrid}>
+              <View style={styles.qrRow}>
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+              </View>
+              <View style={styles.qrRow}>
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { backgroundColor: '#d32f54', borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+              </View>
+              <View style={styles.qrRow}>
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+                <View style={[styles.qrCell, { borderColor: '#d32f54' }]} />
+              </View>
+            </View>
           </View>
         </View>
 
@@ -28,7 +37,9 @@ export default function IMG9055Screen() {
             <Text style={styles.bannerSubtitle}>Tap to apply for your Breadfast Card</Text>
           </View>
           <View style={styles.bannerGraphic}>
-            <View style={styles.cardMockup} />
+            <View style={styles.cardMockup}>
+              <Text style={styles.cardText}>Breadfast Pay</Text>
+            </View>
             <View style={styles.bagMockup}>
               <View style={styles.bagLogo}>
                 <Text style={styles.bagLogoText}>8</Text>
@@ -63,13 +74,7 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-                  <Path
-                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                  />
-                </Svg>
+                <Text style={styles.glyphText}>♡</Text>
               </View>
               <Text style={styles.menuItemText}>Favorites</Text>
             </View>
@@ -81,15 +86,7 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-                  <Path
-                    d="M20 12v10H4V12M2 7h20v5H2V7zm10-4v4m-5 0h10"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </Svg>
+                <Text style={styles.glyphText}>🎁</Text>
               </View>
               <Text style={styles.menuItemText}>Invite a friend</Text>
             </View>
@@ -101,15 +98,7 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-                  <Path
-                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </Svg>
+                <Text style={styles.glyphText}>📦</Text>
               </View>
               <Text style={styles.menuItemText}>BundleUp</Text>
             </View>
@@ -123,18 +112,7 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-                  <Path
-                    d="M12 15a3 3 0 100-6 3 3 0 000 6z"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                  />
-                  <Path
-                    d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                  />
-                </Svg>
+                <Text style={styles.glyphText}>⚙</Text>
               </View>
               <Text style={styles.menuItemText}>Settings</Text>
             </View>
@@ -146,15 +124,7 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-                  <Path
-                    d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </Svg>
+                <Text style={styles.glyphText}>💬</Text>
               </View>
               <Text style={styles.menuItemText}>Chat with us</Text>
             </View>
@@ -166,16 +136,7 @@ export default function IMG9055Screen() {
           <View style={styles.menuItem}>
             <View style={styles.menuItemLeft}>
               <View style={styles.iconCircle}>
-                <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-                  <Circle cx={12} cy={12} r={9} stroke="#111" strokeWidth={1.8} />
-                  <Path
-                    d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3m.08 4h.01"
-                    stroke="#111"
-                    strokeWidth={1.8}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </Svg>
+                <Text style={styles.glyphText}>?</Text>
               </View>
               <Text style={styles.menuItemText}>Help</Text>
             </View>
@@ -186,67 +147,32 @@ export default function IMG9055Screen() {
         <View style={styles.bottomSpacer} />
       </ScrollView>
 
-      {/* Bottom Navigation */}
-      <View style={styles.bottomNav}>
-        <View style={styles.navItem}>
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
-            <Path
-              d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-              stroke="#666"
-              strokeWidth={1.8}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <Path
-              d="M9 22V12h6v10"
-              stroke="#666"
-              strokeWidth={1.8}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </Svg>
-          <Text style={styles.navLabel}>Home</Text>
-        </View>
+      {/* Floating Bottom Navigation */}
+      <View style={styles.floatingNavWrapper}>
+        <View style={styles.bottomNav}>
+          <View style={styles.navItem}>
+            <Text style={styles.navIconText}>🏠</Text>
+            <Text style={styles.navLabel}>Home</Text>
+          </View>
 
-        <View style={styles.navItem}>
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
-            <Path
-              d="M9 20a1 1 0 100 2 1 1 0 000-2zm7 0a1 1 0 100 2 1 1 0 000-2zm-9.5-4h13.24a1 1 0 00.97-.76l1.52-6.5A1 1 0 0021.28 8H6.51M5.5 4H2"
-              stroke="#666"
-              strokeWidth={1.8}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </Svg>
-          <Text style={styles.navLabel}>Cart</Text>
-        </View>
+          <View style={styles.navItem}>
+            <Text style={styles.navIconText}>🛒</Text>
+            <Text style={styles.navLabel}>Cart</Text>
+          </View>
 
-        <View style={styles.navItem}>
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
-            <Rect x={2} y={5} width={20} height={14} rx={2} stroke="#666" strokeWidth={1.8} />
-            <Path d="M2 10h20" stroke="#666" strokeWidth={1.8} />
-          </Svg>
-          <Text style={styles.navLabel}>Pay</Text>
-        </View>
+          <View style={styles.navItem}>
+            <Text style={styles.navIconText}>💳</Text>
+            <Text style={styles.navLabel}>Pay</Text>
+          </View>
 
-        <View style={styles.activeNavItem}>
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
-            <Path
-              d="M3 12h18M3 6h18M3 18h18"
-              stroke="#d32f54"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </Svg>
-          <Text style={styles.activeNavLabel}>More</Text>
-        </View>
+          <View style={styles.activeNavItem}>
+            <Text style={styles.activeNavIconText}>≡</Text>
+            <Text style={styles.activeNavLabel}>More</Text>
+          </View>
 
-        <View style={styles.navItem}>
-          <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
-            <Circle cx={11} cy={11} r={8} stroke="#666" strokeWidth={1.8} />
-            <Path d="M21 21l-4.35-4.35" stroke="#666" strokeWidth={1.8} strokeLinecap="round" />
-          </Svg>
+          <View style={styles.searchNavItem}>
+            <Text style={styles.searchNavIconText}>🔍</Text>
+          </View>
         </View>
       </View>
     </View>
@@ -256,45 +182,62 @@ export default function IMG9055Screen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f7f7f8',
+    backgroundColor: '#f8f8f9',
   },
   scrollContent: {
-    paddingHorizontal: 16,
-    paddingTop: 20,
-    paddingBottom: 100,
+    paddingHorizontal: 20,
+    paddingTop: 36,
+    paddingBottom: 110,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 24,
   },
   headerTitle: {
-    fontSize: 28,
-    fontWeight: '700',
+    fontSize: 32,
+    fontWeight: '800',
     color: '#111',
+    letterSpacing: -0.5,
   },
   qrButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 44,
+    height: 44,
+    borderRadius: 22,
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.06,
+    shadowRadius: 4,
     elevation: 2,
   },
-  banner: {
-    backgroundColor: '#5b2d49',
-    borderRadius: 16,
+  qrIconGrid: {
+    width: 18,
+    height: 18,
+    justifyContent: 'space-between',
+  },
+  qrRow: {
     flexDirection: 'row',
-    padding: 16,
+    justifyContent: 'space-between',
+    height: 4.5,
+  },
+  qrCell: {
+    width: 4.5,
+    height: 4.5,
+    borderWidth: 1.5,
+    borderRadius: 1,
+  },
+  banner: {
+    backgroundColor: '#582b48',
+    borderRadius: 20,
+    flexDirection: 'row',
+    padding: 18,
     overflow: 'hidden',
-    height: 120,
-    marginBottom: 16,
+    height: 124,
+    marginBottom: 20,
     alignItems: 'center',
     justifyContent: 'space-between',
   },
@@ -304,14 +247,14 @@ const styles = StyleSheet.create({
   bannerTitle: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: '750',
+    fontWeight: '800',
     lineHeight: 22,
   },
   bannerSubtitle: {
-    color: '#e0b3cd',
+    color: '#eca6d1',
     fontSize: 11,
     marginTop: 8,
-    fontWeight: '500',
+    fontWeight: '600',
   },
   bannerGraphic: {
     width: 110,
@@ -322,91 +265,102 @@ const styles = StyleSheet.create({
   },
   cardMockup: {
     position: 'absolute',
-    width: 60,
-    height: 38,
-    backgroundColor: '#333',
+    width: 64,
+    height: 40,
+    backgroundColor: '#2b292c',
     borderRadius: 6,
-    left: 0,
-    top: 25,
-    transform: [{ rotate: '-10deg' }],
+    left: 2,
+    top: 30,
+    transform: [{ rotate: '-12deg' }],
     borderWidth: 1,
-    borderColor: '#555',
+    borderColor: '#444',
+    padding: 4,
+    justifyContent: 'flex-end',
+  },
+  cardText: {
+    color: '#aaa',
+    fontSize: 6,
+    fontWeight: 'bold',
   },
   bagMockup: {
     position: 'absolute',
-    width: 55,
-    height: 65,
-    backgroundColor: '#d946a0',
-    borderRadius: 6,
-    right: 5,
-    top: 10,
+    width: 60,
+    height: 70,
+    backgroundColor: '#d842a2',
+    borderRadius: 8,
+    right: 4,
+    top: 6,
     justifyContent: 'center',
     alignItems: 'center',
     transform: [{ rotate: '8deg' }],
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
   },
   bagLogo: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
   },
   bagLogoText: {
-    color: '#d946a0',
-    fontWeight: 'bold',
-    fontSize: 14,
+    color: '#d842a2',
+    fontWeight: '900',
+    fontSize: 15,
   },
   topCardsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 24,
+    marginBottom: 28,
   },
   topCard: {
     backgroundColor: '#fff',
-    borderRadius: 16,
+    borderRadius: 20,
     padding: 16,
     width: '48%',
-    height: 100,
+    height: 108,
     justifyContent: 'space-between',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.03,
-    shadowRadius: 3,
-    elevation: 1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.04,
+    shadowRadius: 6,
+    elevation: 2,
   },
   cardIconBox: {
-    width: 28,
-    height: 34,
+    width: 32,
+    height: 38,
     backgroundColor: '#fbece8',
-    borderRadius: 6,
-    padding: 5,
+    borderRadius: 8,
+    padding: 6,
     justifyContent: 'space-around',
   },
   receiptLine: {
-    height: 2,
+    height: 2.5,
     backgroundColor: '#e65c3b',
     borderRadius: 1,
     width: '100%',
   },
   receiptLineShort: {
-    height: 2,
+    height: 2.5,
     backgroundColor: '#e65c3b',
     borderRadius: 1,
-    width: '60%',
+    width: '65%',
   },
   rewardsIconBox: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     backgroundColor: '#fcd3e1',
     justifyContent: 'center',
     alignItems: 'center',
   },
   rewardsIconText: {
     color: '#d32f54',
-    fontWeight: 'bold',
-    fontSize: 16,
+    fontWeight: '900',
+    fontSize: 17,
   },
   topCardTitle: {
     fontSize: 14,
@@ -417,31 +371,32 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: '#888',
     marginTop: 2,
+    fontWeight: '500',
   },
   sectionHeader: {
     fontSize: 12,
     fontWeight: '700',
     color: '#888',
-    marginBottom: 8,
+    marginBottom: 10,
     marginLeft: 4,
-    letterSpacing: 0.5,
+    letterSpacing: 0.8,
   },
   sectionContainer: {
     backgroundColor: '#fff',
-    borderRadius: 16,
-    marginBottom: 20,
+    borderRadius: 20,
+    marginBottom: 24,
     overflow: 'hidden',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.03,
-    shadowRadius: 3,
-    elevation: 1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.04,
+    shadowRadius: 6,
+    elevation: 2,
   },
   menuItem: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 14,
+    paddingVertical: 15,
     paddingHorizontal: 16,
   },
   menuItemLeft: {
@@ -449,13 +404,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   iconCircle: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#f7f7f8',
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: '#f8f8f9',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 12,
+    marginRight: 14,
+  },
+  glyphText: {
+    fontSize: 16,
+    color: '#111',
   },
   menuItemText: {
     fontSize: 15,
@@ -463,54 +422,93 @@ const styles = StyleSheet.create({
     color: '#111',
   },
   chevron: {
-    fontSize: 20,
+    fontSize: 22,
     color: '#c7c7cc',
     fontWeight: '300',
   },
   menuDivider: {
     height: 1,
-    backgroundColor: '#f0f0f2',
-    marginLeft: 60,
+    backgroundColor: '#f1f1f3',
+    marginLeft: 66,
   },
   bottomSpacer: {
     height: 20,
   },
-  bottomNav: {
+  floatingNavWrapper: {
     position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
+    bottom: 20,
+    left: 16,
+    right: 16,
+    alignItems: 'center',
+  },
+  bottomNav: {
     backgroundColor: '#fff',
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: 10,
-    borderTopWidth: 1,
-    borderTopColor: '#eee',
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 36,
+    width: '100%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.1,
+    shadowRadius: 12,
+    elevation: 6,
+    borderWidth: 1,
+    borderColor: '#f0f0f2',
   },
   navItem: {
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
+    paddingVertical: 4,
+  },
+  navIconText: {
+    fontSize: 18,
   },
   navLabel: {
     fontSize: 10,
     color: '#666',
-    marginTop: 4,
+    marginTop: 3,
+    fontWeight: '500',
   },
   activeNavItem: {
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1,
-    backgroundColor: '#f3e6ea',
-    paddingVertical: 6,
-    borderRadius: 20,
-    marginHorizontal: 6,
+    flex: 1.3,
+    backgroundColor: '#f4e7ec',
+    paddingVertical: 8,
+    borderRadius: 24,
+    flexDirection: 'row',
+  },
+  activeNavIconText: {
+    fontSize: 16,
+    color: '#d32f54',
+    marginRight: 4,
+    fontWeight: 'bold',
   },
   activeNavLabel: {
-    fontSize: 10,
+    fontSize: 11,
     color: '#d32f54',
     fontWeight: 'bold',
-    marginTop: 2,
+  },
+  searchNavItem: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#eee',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  searchNavIconText: {
+    fontSize: 16,
   },
 });

@@ -1,0 +1,18 @@
+{
+  "generatedDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\OnlineCourseAppUI",
+  "outputDirectory": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\OnlineCourseAppUI\\interactive-CourseDetailScreen\\iteration-1",
+  "appName": "OnlineCourseAppUI",
+  "port": 3000,
+  "total": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "results": [
+    {
+      "component": "CourseDetailScreen",
+      "source": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\src\\generated\\OnlineCourseAppUI\\CourseDetailScreen.js",
+      "screenshot": "C:\\Users\\youse\\Desktop\\Bachelor thesis\\DeclarUI\\output\\OnlineCourseAppUI\\interactive-CourseDetailScreen\\iteration-1\\CourseDetailScreen.png",
+      "success": true,
+      "error": null
+    }
+  ]
+}

@@ -6,8 +6,8 @@
   "successful_renders": 1,
   "failed_renders": 0,
   "metric_evaluated_components": 1,
-  "mean_ssim": 0.6444,
-  "mean_clip_similarity": 0.8272,
+  "mean_ssim": 0.6413,
+  "mean_clip_similarity": 0.8417,
   "detailed_results": [
     {
       "component": "IMG9052Screen",
@@ -18,8 +18,8 @@
       "target_exists": true,
       "target_match": "IMG_9052.PNG",
       "metric_status": "evaluated",
-      "ssim": 0.6444,
-      "clip_similarity": 0.8272,
+      "ssim": 0.6413,
+      "clip_similarity": 0.8417,
       "resized_for_ssim": true,
       "evaluation_size": {
         "width": 1178,

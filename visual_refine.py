@@ -66,7 +66,45 @@ def image_part(path):
     )
 
 
-def build_prompt(component, code, ssim, clip, tweak=""):
+def _normalized_name(value):
+    return re.sub(r"[^a-z0-9]+", "", value.lower().replace("screen", ""))
+
+
+def load_spatial_metadata(target_path):
+    """Load target-specific GroundingDINO/SAM metadata when available."""
+    extraction_dir = Path(__file__).resolve().parent / "Dataset" / "extractions"
+    if not extraction_dir.is_dir():
+        return "{}"
+
+    target_names = {
+        _normalized_name(target_path.stem),
+        _normalized_name(target_path.name),
+    }
+    matches = []
+    for metadata_path in sorted(extraction_dir.rglob("*.json")):
+        searchable_names = {
+            _normalized_name(metadata_path.stem),
+            _normalized_name(metadata_path.parent.name),
+        }
+        if target_names.intersection(searchable_names):
+            matches.append(metadata_path)
+
+    if not matches:
+        return "{}"
+
+    metadata = {}
+    for metadata_path in matches:
+        try:
+            content = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as error:
+            raise RuntimeError(
+                f"Could not load spatial metadata from {metadata_path}: {error}"
+            ) from error
+        metadata[str(metadata_path.relative_to(extraction_dir))] = content
+    return json.dumps(metadata, indent=2, ensure_ascii=True)
+
+
+def build_prompt(component, code, ssim, clip, tweak="", spatial_metadata="{}"):
     tweak_section = ""
     if tweak.strip():
         tweak_section = f"""
@@ -96,6 +134,18 @@ Current CLIP similarity: {clip}
 
 The first image is the original reference screenshot.
 The second image is the current rendered screenshot.
+CRITICAL RULE: Before making any changes, identify which elements in the current render already match the target screenshot. You are strictly forbidden from altering the styling, layout, or structure of those matching elements. Only modify the specific code blocks causing the visual delta.
+The following GroundingDINO/SAM spatial metadata describes detected regions and
+bounding boxes in the reference screenshot:
+
+{spatial_metadata}
+
+Use this metadata as a coordinate guide. Align each detected region's position
+and dimensions before changing visual details. Use it to correct flexbox
+direction and alignment, margins, padding, widths, heights, and absolute
+positioning. Treat coordinates as reference-image measurements and preserve
+the target aspect ratio; do not invent regions that are absent from the
+metadata or screenshot.
 Compare them and improve the generated component to reduce visible differences.
 When a user-directed edit is provided below, the user request takes priority
 over matching the original reference. Make progressive, cumulative edits: start
@@ -159,6 +209,7 @@ def refine(args):
             code,
             item["ssim"],
             item["clip_similarity"],
+            spatial_metadata=load_spatial_metadata(target_path),
         )
         response = client.models.generate_content(
             model=args.model,
