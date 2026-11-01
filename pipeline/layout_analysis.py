@@ -17,6 +17,7 @@ MAX_BLOCKS = 40
 CONTAINER_TOLERANCE = 4
 MIN_CONTAINER_AREA = 0.004
 MIN_GEOMETRY_ERROR = 4
+MAX_SIZE_RATIO = 1.4
 
 
 def read_color(path):
@@ -179,7 +180,17 @@ def match_blocks(target_blocks, render_blocks, canvas):
             color = 0 if colors[0] is None else np.abs(colors[0] - colors[1]).max() / 255
             cost[i, j] = 4 * position + size + 0.5 * color
     rows, cols = linear_sum_assignment(cost)
-    pairs = [(i, j) for i, j in zip(rows, cols) if cost[i, j] < 1.6]
+    # A pair whose width or height differs by more than MAX_SIZE_RATIO is
+    # usually two different things (e.g. a bar matched to merged content);
+    # reporting it as a resize would send the model a wrong instruction.
+    pairs = [
+        (i, j) for i, j in zip(rows, cols)
+        if cost[i, j] < 1.6 and all(
+            max(a, b) <= MAX_SIZE_RATIO * min(a, b) + MIN_GEOMETRY_ERROR
+            for a, b in ((target_blocks[i]["w"], render_blocks[j]["w"]),
+                         (target_blocks[i]["h"], render_blocks[j]["h"]))
+        )
+    ]
     matched_target = {i for i, _ in pairs}
     matched_render = {j for _, j in pairs}
     return (
@@ -229,7 +240,7 @@ def geometry_report(target, render, inventory=None, limit=10):
     canvas = (target.shape[1], target.shape[0])
     items = [item for item in (inventory or {}).get("components", []) if item.get("bbox")]
     sections = []
-    shifts = []  # vertical offsets of all matched pairs
+    shifts = []  # vertical offsets of matched containers
     reported = []  # container boxes, so elements do not repeat them
     for title, detect in (("Containers (cards, bars, banners)", detect_containers),
                           ("Elements (text, icons, images)", detect_blocks)):
@@ -243,7 +254,8 @@ def geometry_report(target, render, inventory=None, limit=10):
         for i, j in pairs:
             a, b = target_blocks[i], render_blocks[j]
             dx, dy, dw, dh = a["x"] - b["x"], a["y"] - b["y"], a["w"] - b["w"], a["h"] - b["h"]
-            shifts.append(dy)
+            if detect is detect_containers:
+                shifts.append(dy)
             fixes = [
                 text for value, text in (
                     (dy, f"move {'down' if dy > 0 else 'up'} {abs(dy)}"),
