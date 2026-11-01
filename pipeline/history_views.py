@@ -1,6 +1,9 @@
 """Streamlit views for refinement runs: run detail, history, and overview."""
 
 import json
+import os
+import shutil
+import subprocess
 from pathlib import Path
 from urllib.parse import quote
 
@@ -9,6 +12,11 @@ import pandas as pd
 import streamlit as st
 
 from pipeline import run_store
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# Live previews render a stored version from here, so the preview always shows
+# exactly the code of the run being viewed (src/generated/<app> may differ).
+PREVIEW_APP = "_preview"
 
 # Categorical slots 1-3 (validated for CVD separation in light and dark mode).
 SERIES_COLORS = {
@@ -24,6 +32,16 @@ STATUS_LABELS = {
     "discarded": "🟡 discarded (no gain)",
     "no_change": "⚪ edits not applied",
     "render_failed": "🔴 render failed",
+}
+CONDITION_LABELS = {
+    "oneshot": "One-shot (no refinement)",
+    "loop": "Refinement loop",
+    "loop-noguard": "Loop without guardrail",
+}
+SOURCES = {
+    "Dashboard runs": "dashboard",
+    "Evaluation batches": "evaluation",
+    "Legacy imports": "legacy",
 }
 
 
@@ -41,7 +59,7 @@ def existing(path):
 
 
 def fmt(value, digits=4):
-    return "–" if value is None else f"{value:.{digits}f}"
+    return "–" if value is None or pd.isna(value) else f"{value:.{digits}f}"
 
 
 def delta(final, baseline, digits=4):
@@ -55,12 +73,57 @@ def read_text(path):
     return Path(path).read_text(encoding="utf-8") if existing(path) else None
 
 
+def run_kind(run):
+    """Human-readable description of what a run did."""
+    if run.get("condition"):
+        return CONDITION_LABELS.get(run["condition"], run["condition"])
+    return "Apply a change" if run.get("mode") == "edit" else "Match the screenshot"
+
+
 def show_image(path, caption, width=260):
     """Show a phone screenshot at a phone-like width so a page fits several."""
     if existing(path):
         st.image(str(path), caption=caption, width=width)
     else:
         st.caption(f"{caption}: no image stored for this run.")
+
+
+def start_render_server():
+    """Start the React render host in the background (it keeps running)."""
+    npm = "npm.cmd" if os.name == "nt" else "npm"
+    subprocess.Popen(
+        [npm, "start"],
+        cwd=PROJECT_ROOT,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+        env={**os.environ, "BROWSER": "none"},
+        creationflags=getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0),
+    )
+
+
+def preview_section(run, item, key):
+    """Copy one stored version into the preview slot and link to it."""
+    from run_pipeline import server_is_ready
+
+    if not existing(item.get("source_path")):
+        st.caption("No code is stored for this version, so it cannot be previewed.")
+        return
+    if not server_is_ready():
+        st.warning("The render server (port 3000) is not running, so the live preview is unavailable.")
+        if st.button("Start render server", key=f"{key}-start"):
+            start_render_server()
+            st.info("Starting... this takes about 20-40 seconds. Then open the preview again.")
+        return
+    if st.button("Prepare live preview", key=f"{key}-prepare",
+                 help="Loads exactly this version's code into the render server."):
+        target = PROJECT_ROOT / "src" / "generated" / PREVIEW_APP / f"{run['component']}.js"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(item["source_path"], target)
+        st.session_state[f"{key}-ready"] = item["source_path"]
+    if st.session_state.get(f"{key}-ready") == item["source_path"]:
+        st.link_button("Open live preview ↗", preview_url(PREVIEW_APP, run["component"]))
+        st.caption("If the page shows a load error, wait a few seconds for the server to "
+                   "compile and reload it.")
 
 
 def trajectory_chart(iterations, mode):
@@ -199,23 +262,32 @@ def render_run(run_id, key_prefix="run"):
     baseline_item = by_iteration.get(0, {})
     best_item = by_iteration.get(run["best_iteration"], {})
     editing = run["mode"] == "edit"
+    passes = len([item for item in iterations if item["iteration"] > 0])
 
     st.subheader(f"{run['component']} · {run['app']}")
     st.caption(
         " · ".join(
             part
             for part in [
-                "User edit" if editing else "Fidelity refinement",
+                run_kind(run),
+                f"batch {run['batch_id']}" if run.get("batch_id") else None,
                 run["model"] or "model unknown",
                 (run["started_at"] or "imported from metrics_tracker.csv").replace("T", " "),
-                f"best: iteration {run['best_iteration']}" if run["best_iteration"] is not None else None,
+                f"{passes} of {run['max_iterations']} refinement passes" if run["max_iterations"] else None,
                 run["status"],
             ]
             if part
         )
     )
-    if run["status"] == "failed":
-        st.error(f"Run failed: {run['error']}")
+    if run.get("condition") == "oneshot":
+        st.info("One-shot condition of an evaluation batch: the screen was generated and "
+                "scored once, with no refinement passes. Compare it with the loop run of "
+                "the same screen in the same batch.")
+    if run_store.run_source(run) == "legacy":
+        st.warning("Imported from the old metrics CSV. These scores were measured before the "
+                   "render fixes and are kept for reference only.")
+    if run["status"] in {"failed", "interrupted"}:
+        st.error(f"Run {run['status']}: {run['error']}")
     if editing and run["instruction"]:
         st.info(f"**Requested change:** {run['instruction']}")
 
@@ -238,9 +310,9 @@ def render_run(run_id, key_prefix="run"):
         columns[2].metric("CLIP", fmt(run["final_clip"]),
                           delta(run["final_clip"], run["baseline_clip"]),
                           help="Perceptual / semantic similarity to the target.")
-    accepted = sum(item["status"] in {"improved", "accepted", "user_edit"} for item in iterations)
-    columns[3].metric("Passes kept", f"{accepted} / {max(len(iterations) - 1, 0)}",
-                      help="Refinement passes that passed the guardrail.")
+    kept = sum(item["status"] in {"improved", "accepted", "user_edit"} for item in iterations)
+    columns[3].metric("Passes kept", f"{kept} / {passes}",
+                      help="Refinement passes whose result was kept.")
 
     target_path = run["target_path"]
     if not existing(target_path):
@@ -275,18 +347,18 @@ def render_run(run_id, key_prefix="run"):
 
     final_code = read_text(best_item.get("source_path"))
     if final_code:
-        st.markdown("##### Final code")
-        action_columns = st.columns([1, 1, 4])
-        action_columns[0].download_button(
-            "Download .js",
-            final_code,
-            file_name=f"{run['component']}.js",
-            mime="text/javascript",
-            key=f"{key_prefix}-download-{run_id}",
-        )
-        action_columns[1].link_button(
-            "Open interactive preview", preview_url(run["app"], run["component"])
-        )
+        st.markdown(f"##### Final code (iteration {run['best_iteration']})")
+        action_columns = st.columns([1, 3])
+        with action_columns[0]:
+            st.download_button(
+                "Download .js",
+                final_code,
+                file_name=f"{run['component']}.js",
+                mime="text/javascript",
+                key=f"{key_prefix}-download-{run_id}",
+            )
+        with action_columns[1]:
+            preview_section(run, best_item, key=f"{key_prefix}-preview-{run_id}")
         st.code(final_code, language="jsx", line_numbers=True)
 
 
@@ -296,41 +368,79 @@ def runs_frame(runs):
         return frame
     frame["delta_ssim"] = frame["final_ssim"] - frame["baseline_ssim"]
     frame["started"] = frame["started_at"].fillna("imported").str.replace("T", " ")
+    frame["source"] = [run_store.run_source(run) for run in runs]
+    frame["kind"] = [run_kind(run) for run in runs]
     return frame
+
+
+NUMBER = {
+    "baseline_ssim": st.column_config.NumberColumn("Before SSIM", format="%.4f"),
+    "final_ssim": st.column_config.NumberColumn("Final SSIM", format="%.4f"),
+    "delta_ssim": st.column_config.NumberColumn("Δ SSIM", format="%+.4f"),
+    "final_clip": st.column_config.NumberColumn("Final CLIP", format="%.4f"),
+    "final_edit_compliance": st.column_config.NumberColumn("Edit compliance", format="%.2f"),
+}
+LABELS = {
+    "started": "Started", "app": "App", "component": "Screen", "kind": "What it did",
+    "batch_id": "Batch", "model": "Model", "max_iterations": "Max passes",
+    "best_iteration": "Kept iteration", "status": "Status",
+}
 
 
 def history_view():
     runs = run_store.list_runs()
     if not runs:
         st.info("No runs recorded yet. Runs appear here as soon as you refine a screen.")
-        if st.button("Import metrics_tracker.csv"):
-            imported = run_store.import_tracker_csv(Path("metrics_tracker.csv"))
-            st.success(f"Imported {imported} runs.")
-            st.rerun()
         return
 
     frame = runs_frame(runs)
-    filters = st.columns([2, 2, 1, 1, 2])
-    apps = filters[0].multiselect("App", sorted(frame["app"].unique()))
-    models = filters[1].multiselect("Model", sorted(frame["model"].dropna().unique()))
-    mode = filters[2].selectbox("Mode", ["All", "fidelity", "edit"])
-    status = filters[3].selectbox("Status", ["All", *sorted(frame["status"].dropna().unique())])
-    search = filters[4].text_input("Search component", placeholder="e.g. IMG9052")
-    if apps:
-        frame = frame[frame["app"].isin(apps)]
-    if models:
-        frame = frame[frame["model"].isin(models)]
-    if mode != "All":
-        frame = frame[frame["mode"] == mode]
-    if status != "All":
-        frame = frame[frame["status"] == status]
+    choice = st.segmented_control(
+        "Show", list(SOURCES), default="Dashboard runs", key="history-source"
+    ) or "Dashboard runs"
+    source = SOURCES[choice]
+    frame = frame[frame["source"] == source]
+    st.caption({
+        "dashboard": "Screens you refined or edited from the Refine tab.",
+        "evaluation": "Runs from evaluate_batch.py. Each screen has a one-shot run "
+                      "(generation only, 0 passes) and a loop run (up to 3 passes) "
+                      "that start from the same code.",
+        "legacy": "Imported from the old metrics CSV, measured before the render fixes. "
+                  "Kept for reference only.",
+    }[source])
+    if frame.empty:
+        st.info("No runs of this kind yet.")
+        return
+
+    filters = st.columns([2, 2, 2])
+    if source == "evaluation":
+        batches = sorted(frame["batch_id"].unique(), reverse=True)
+        batch = filters[0].selectbox("Batch", batches)
+        frame = frame[frame["batch_id"] == batch]
+        kinds = filters[1].multiselect("Condition", sorted(frame["kind"].unique()))
+    else:
+        apps = filters[0].multiselect("App", sorted(frame["app"].unique()))
+        if apps:
+            frame = frame[frame["app"].isin(apps)]
+        kinds = filters[1].multiselect("Goal", sorted(frame["kind"].unique()))
+    if kinds:
+        frame = frame[frame["kind"].isin(kinds)]
+    search = filters[2].text_input("Search screen", placeholder="e.g. IMG9052")
     if search:
         frame = frame[frame["component"].str.contains(search, case=False)]
 
-    table = frame[
-        ["started", "app", "component", "mode", "model", "baseline_ssim",
-         "final_ssim", "delta_ssim", "final_clip", "final_edit_compliance", "status"]
-    ].reset_index(drop=True)
+    columns = (
+        ["app", "component", "kind", "max_iterations", "best_iteration", "baseline_ssim",
+         "final_ssim", "delta_ssim", "final_clip", "status"]
+        if source == "evaluation"
+        else ["started", "app", "component", "kind", "model", "max_iterations",
+              "best_iteration", "baseline_ssim", "final_ssim", "delta_ssim",
+              "final_edit_compliance", "status"]
+    )
+    frame = frame.sort_values(
+        ["app", "component", "kind"] if source == "evaluation" else "started",
+        ascending=source == "evaluation",
+    )
+    table = frame[columns].reset_index(drop=True)
     st.caption(f"{len(table)} run(s). Select a row to see its details.")
     event = st.dataframe(
         table,
@@ -338,20 +448,8 @@ def history_view():
         width="stretch",
         on_select="rerun",
         selection_mode="single-row",
-        key="history-table",
-        column_config={
-            "started": "Started",
-            "app": "App",
-            "component": "Screen",
-            "mode": "Mode",
-            "model": "Model",
-            "baseline_ssim": st.column_config.NumberColumn("Baseline SSIM", format="%.4f"),
-            "final_ssim": st.column_config.NumberColumn("Final SSIM", format="%.4f"),
-            "delta_ssim": st.column_config.NumberColumn("Δ SSIM", format="%+.4f"),
-            "final_clip": st.column_config.NumberColumn("Final CLIP", format="%.4f"),
-            "final_edit_compliance": st.column_config.NumberColumn("Edit compliance", format="%.2f"),
-            "status": "Status",
-        },
+        key=f"history-table-{source}",
+        column_config={**LABELS, **NUMBER},
     )
     rows = event.selection.rows if event else []
     if not rows:
@@ -366,6 +464,39 @@ def history_view():
             run_store.delete_run(run_id)
             st.success("Run deleted.")
             st.rerun()
+
+
+def batch_comparison(frame):
+    """Per-screen final SSIM of each condition in one batch, paired with one-shot."""
+    table = frame.pivot_table(
+        index=["app", "component"], columns="condition", values="final_ssim", aggfunc="last"
+    ).reset_index()
+    order = ["app", "component", "oneshot"]
+    for condition in ("loop", "loop-noguard"):
+        if condition in table:
+            order.append(condition)
+            if "oneshot" in table:
+                table[f"Δ {condition}"] = table[condition] - table["oneshot"]
+                order.append(f"Δ {condition}")
+    table = table[[column for column in order if column in table]]
+    table.columns.name = None
+    return table.rename(columns={"app": "App", "component": "Screen", "oneshot": "One-shot",
+                                 "loop": "Loop", "loop-noguard": "Loop, no guardrail"})
+
+
+def batch_summary(frame):
+    rows = []
+    for batch, part in frame.groupby("batch_id"):
+        table = batch_comparison(part)
+        row = {"Batch": batch, "Model": part["model"].iloc[0], "Screens": len(table)}
+        for column in ("One-shot", "Loop", "Loop, no guardrail"):
+            if column in table:
+                row[f"Mean SSIM: {column}"] = table[column].mean()
+        if "Δ loop" in table:
+            row["Mean Δ (loop vs one-shot)"] = table["Δ loop"].mean()
+            row["Loop improved"] = f"{(table['Δ loop'] > 0.0005).sum()} / {table['Δ loop'].notna().sum()}"
+        rows.append(row)
+    return pd.DataFrame(rows).sort_values("Batch", ascending=False)
 
 
 def summary_table(frame, group):
@@ -390,35 +521,43 @@ def overview_view():
     if frame.empty:
         st.info("No runs recorded yet.")
         return
-    # One-shot batch runs have no refinement passes (Δ = 0 by construction).
-    fidelity = frame[
-        (frame["mode"] == "fidelity")
-        & frame["final_ssim"].notna()
-        & (frame["condition"] != "oneshot")
-    ]
-    edits = frame[(frame["mode"] == "edit") & frame["final_edit_compliance"].notna()]
+    number = st.column_config.NumberColumn(format="%.4f")
+    signed = st.column_config.NumberColumn(format="%+.4f")
 
-    columns = st.columns(4)
-    columns[0].metric("Runs recorded", len(frame))
-    if not fidelity.empty:
-        columns[1].metric("Mean Δ SSIM (fidelity)", f"{fidelity['delta_ssim'].mean():+.4f}")
-        columns[2].metric("Screens improved", f"{(fidelity['delta_ssim'] > 0).sum()} / {len(fidelity)}")
-    if not edits.empty:
-        columns[3].metric("Mean edit compliance", f"{edits['final_edit_compliance'].mean():.2f}")
+    evaluation = frame[(frame["source"] == "evaluation") & (frame["status"] == "completed")]
+    st.markdown("##### Evaluation batches (thesis results)")
+    if evaluation.empty:
+        st.caption("No evaluation batches yet. Run `python evaluate_batch.py --apps <app> ...`.")
+    else:
+        summary = batch_summary(evaluation)
+        st.dataframe(summary, hide_index=True, width="stretch", column_config={
+            column: signed if column.startswith("Mean Δ") else number
+            for column in summary.columns if column.startswith("Mean")
+        })
+        batch = st.selectbox("Per-screen results for batch", list(summary["Batch"]))
+        table = batch_comparison(evaluation[evaluation["batch_id"] == batch])
+        st.dataframe(table, hide_index=True, width="stretch", column_config={
+            column: signed if column.startswith("Δ") else number
+            for column in table.columns if column not in {"App", "Screen"}
+        })
+        st.caption("Full rows with setup details (commit, prompt hash, API calls): "
+                   "output/evaluation/results.csv")
 
-    number_format = {
-        column: st.column_config.NumberColumn(format="%+.4f" if "Δ" in column else "%.4f")
-        for column in ["Mean baseline SSIM", "Mean final SSIM", "Mean Δ SSIM", "Mean Δ CLIP"]
-    }
+    dashboard = frame[frame["source"] == "dashboard"]
+    fidelity = dashboard[(dashboard["mode"] == "fidelity") & dashboard["final_ssim"].notna()]
+    edits = dashboard[(dashboard["mode"] == "edit") & dashboard["final_edit_compliance"].notna()]
+    st.markdown("##### Dashboard runs")
+    if fidelity.empty and edits.empty:
+        st.caption("No completed dashboard runs yet.")
+    columns = st.columns(3)
     if not fidelity.empty:
-        st.markdown("##### Fidelity refinement by model")
-        st.dataframe(summary_table(fidelity, "model"), hide_index=True, width="stretch",
-                     column_config=number_format)
-        st.markdown("##### Fidelity refinement by app")
+        columns[0].metric("Mean Δ SSIM (match screenshot)", f"{fidelity['delta_ssim'].mean():+.4f}")
+        columns[1].metric("Screens improved", f"{(fidelity['delta_ssim'] > 0).sum()} / {len(fidelity)}")
         st.dataframe(summary_table(fidelity, "app"), hide_index=True, width="stretch",
-                     column_config=number_format)
+                     column_config={"Mean Δ SSIM": signed, "Mean Δ CLIP": signed,
+                                    "Mean baseline SSIM": number, "Mean final SSIM": number})
     if not edits.empty:
-        st.markdown("##### User edits")
+        columns[2].metric("Mean edit compliance", f"{edits['final_edit_compliance'].mean():.2f}")
         st.dataframe(
             edits[["started", "app", "component", "instruction", "model",
                    "final_edit_compliance", "final_preservation"]],

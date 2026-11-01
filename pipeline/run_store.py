@@ -179,6 +179,27 @@ class RunRecorder:
             )
 
 
+def run_source(run):
+    """Where a run came from: the dashboard, an evaluation batch, or the old CSV."""
+    if run.get("batch_id"):
+        return "evaluation"
+    if str(run.get("run_id", "")).startswith("imported-") or run.get("status") == "imported":
+        return "legacy"
+    return "dashboard"
+
+
+def mark_interrupted_runs(max_age_hours=2, db_path=DB_PATH):
+    """Close runs left 'running' by a process that stopped (e.g. a closed app)."""
+    cutoff = datetime.fromtimestamp(datetime.now().timestamp() - max_age_hours * 3600)
+    with connect(db_path) as connection:
+        connection.execute(
+            "UPDATE runs SET status = 'interrupted', error = COALESCE(error,"
+            " 'The run stopped before finishing (app closed or process killed).')"
+            " WHERE status = 'running' AND started_at < ?",
+            (cutoff.isoformat(timespec="seconds"),),
+        )
+
+
 def list_runs(db_path=DB_PATH):
     with connect(db_path) as connection:
         return [dict(row) for row in connection.execute(

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from pipeline import history_views
+from pipeline import history_views, run_store
 from run_pipeline import (
     PROJECT_ROOT,
     component_name_from_target,
@@ -119,7 +119,10 @@ def sidebar():
         if server_is_ready():
             st.success("Render server running on port 3000")
         else:
-            st.info("Render server will start automatically on the first run.")
+            st.info("Render server is off. Runs start it automatically; live previews need it running.")
+            if st.button("Start render server"):
+                history_views.start_render_server()
+                st.caption("Starting... refresh in about 30 seconds.")
         st.divider()
         st.markdown("### Metrics")
         st.caption(
@@ -239,6 +242,7 @@ st.caption(
     "Screenshot → React Native code, refined in a closed loop (render, measure, fix) "
     "for up to 3 passes."
 )
+run_store.mark_interrupted_runs()
 sidebar()
 refine, history, overview = st.tabs(["Refine", "History", "Overview"])
 with refine:

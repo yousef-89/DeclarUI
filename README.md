@@ -127,9 +127,13 @@ output/<app>/runs/<run_id>/iteration-<n>/
 output/<app>/inventory/<model>/<Component>.json   cached component inventory
 ```
 
-The dashboard's **History** tab shows every run with its screenshots, metric
-trajectory, prompts, model notes, and code; **Overview** aggregates results by
-model and app and exports runs/iterations as CSV. `metrics_tracker.csv` is
+The dashboard's **History** tab separates your dashboard runs, evaluation
+batches (one-shot vs. loop per screen), and legacy imports, and shows each run
+with its screenshots, metric trajectory, prompts, model notes, and code.
+**Live preview** copies that run's final code to `src/generated/_preview/` and
+opens it in the render server, so the preview always matches the run.
+**Overview** shows the evaluation results per batch and screen and exports
+runs/iterations as CSV. `metrics_tracker.csv` is
 still appended for compatibility. Results from before the history store are in
 `output/legacy/`.
 
