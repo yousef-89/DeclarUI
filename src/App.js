@@ -47,15 +47,17 @@ class RenderErrorBoundary extends Component {
 }
 
 export default function App() {
-  const appName = getQueryParam('app') || 'default';
-  const targetComponent = getQueryParam('component') || 'TestScreen';
+  const appName = getQueryParam('app') || '';
+  const targetComponent = getQueryParam('component') || '';
   const width = getDimension('width', 390);
   const height = getDimension('height', 844);
 
   const ComponentToRender = useMemo(() => {
     const loadComponent = () => {
-      if (appName === 'user_uploads' && targetComponent === 'UserUploadScreen') {
-        return import('./generated/user_uploads/UserUploadScreen');
+      if (!appName || !targetComponent) {
+        return Promise.reject(
+          new Error('Open a screen with ?app=<App>&component=<Screen>, e.g. ?app=Breadfast&component=IMG9052Screen.')
+        );
       }
       return import(`./generated/${appName}/${targetComponent}`);
     };

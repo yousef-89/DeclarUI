@@ -1,5 +1,6 @@
 """Streamlit views for refinement runs: run detail, history, and overview."""
 
+import hashlib
 import json
 import os
 import shutil
@@ -442,17 +443,21 @@ def history_view():
     )
     table = frame[columns].reset_index(drop=True)
     st.caption(f"{len(table)} run(s). Select a row to see its details.")
+    # The selection is a row position, so the table key depends on the runs it
+    # shows: after a delete or a filter change the old position would point to
+    # another run (or past the end), so the selection is reset instead.
+    shown = hashlib.sha1("|".join(frame["run_id"]).encode()).hexdigest()[:10]
     event = st.dataframe(
         table,
         hide_index=True,
         width="stretch",
         on_select="rerun",
         selection_mode="single-row",
-        key=f"history-table-{source}",
+        key=f"history-table-{source}-{shown}",
         column_config={**LABELS, **NUMBER},
     )
     rows = event.selection.rows if event else []
-    if not rows:
+    if not rows or rows[0] >= len(frame):
         return
     run_id = frame.iloc[rows[0]]["run_id"]
     st.divider()

@@ -65,12 +65,16 @@ code and refines it visually without human intervention:
 4. **Dual-metric evaluation** - SSIM (structure/layout) and CLIP (perceptual
    similarity) against the screenshot; content SSIM is logged in addition.
 5. **Iterative refinement** - up to 3 diagnose-then-fix passes using the target,
-   the render, a side-by-side comparison with a coordinate ruler, and the
-   mismatch regions.
+   the render, a side-by-side comparison with a coordinate ruler, and a
+   measured-differences report: blocks are detected in both images, matched,
+   and reported as exact corrections ("card c12: move up 18, make 7 taller").
+   The model answers with SEARCH/REPLACE edits, so only the lines it means to
+   fix change.
 6. **Guardrail and rollback** - a pass that lowers SSIM by more than 0.02
-   relative to the best version so far is rejected, the best version is
-   restored, and refinement continues from it. Syntax and runtime errors get
-   one automatic repair attempt.
+   relative to the best version so far is rejected; a pass that does not
+   improve on it is discarded. Either way the best version is restored and the
+   next pass starts from it. Syntax and runtime errors get one automatic
+   repair attempt.
 
 **User edits.** A natural-language change ("make the tab bar dark") is applied
 by a separate loop and scored with **Edit Compliance** (a Gemini judge's 0-1

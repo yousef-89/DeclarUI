@@ -1,0 +1,490 @@
+{
+  "screen": {
+    "background": "#4b7dbb",
+    "theme": "dark",
+    "has_status_bar": false,
+    "summary": "Weather forecast screen for Cairo displaying current conditions, hourly forecast, and a multi-day forecast."
+  },
+  "components": [
+    {
+      "id": "c1",
+      "type": "text",
+      "text": "MY LOCATION",
+      "icon": "",
+      "style": "font-size: 14px, font-weight: 600, color: #ffffff, text-transform: uppercase",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        151,
+        62,
+        87,
+        12
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "title",
+      "text": "Cairo",
+      "icon": "",
+      "style": "font-size: 32px, font-weight: 500, color: #ffffff",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        156,
+        85,
+        77,
+        25
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "text",
+      "text": "19\u00b0",
+      "icon": "",
+      "style": "font-size: 96px, font-weight: 200, color: #ffffff",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        140,
+        127,
+        131,
+        80
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "text",
+      "text": "Mostly Sunny",
+      "icon": "",
+      "style": "font-size: 19px, font-weight: 600, color: #ffffff",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        135,
+        226,
+        121,
+        21
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "text",
+      "text": "H:25\u00b0 L:16\u00b0",
+      "icon": "",
+      "style": "font-size: 17px, font-weight: 600, color: #ffffff",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        142,
+        252,
+        107,
+        14
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "background: rgba(30, 80, 140, 0.5), border-radius: 16px, backdrop-filter: blur",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        20,
+        339,
+        351,
+        183
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "title",
+      "text": "Conditions",
+      "icon": "",
+      "style": "font-size: 17px, font-weight: 700, color: #ffffff",
+      "state": "default",
+      "parent": "c6",
+      "bbox": [
+        36,
+        357,
+        87,
+        14
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "text",
+      "text": "Temperature (\u00b0C)",
+      "icon": "",
+      "style": "font-size: 13px, font-weight: 400, color: #b8e2f8",
+      "state": "default",
+      "parent": "c6",
+      "bbox": [
+        36,
+        379,
+        101,
+        13
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "segmented_control",
+      "text": "",
+      "icon": "",
+      "style": "background: rgba(10, 45, 90, 0.4), border-radius: 20px, padding: 3px",
+      "state": "default",
+      "parent": "c6",
+      "bbox": [
+        228,
+        357,
+        127,
+        34
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "button",
+      "text": "",
+      "icon": "cloud",
+      "style": "background: rgba(255, 255, 255, 0.25), border-radius: 16px, color: #ffffff",
+      "state": "selected",
+      "parent": "c9",
+      "bbox": [
+        231,
+        361,
+        40,
+        26
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "button",
+      "text": "",
+      "icon": "water_drop",
+      "style": "color: #ffffff",
+      "state": "unselected",
+      "parent": "c9",
+      "bbox": [
+        275,
+        361,
+        31,
+        26
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "button",
+      "text": "",
+      "icon": "air",
+      "style": "color: #ffffff",
+      "state": "unselected",
+      "parent": "c9",
+      "bbox": [
+        314,
+        361,
+        35,
+        26
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "carousel",
+      "text": "",
+      "icon": "",
+      "style": "display: flex, flex-direction: row, justify-content: space-between",
+      "state": "default",
+      "parent": "c6",
+      "bbox": [
+        31,
+        402,
+        328,
+        113
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "list_item",
+      "text": "Now\n19\u00b0",
+      "icon": "sunny",
+      "style": "text-align: center, color: #ffffff",
+      "state": "default",
+      "parent": "c13",
+      "bbox": [
+        34,
+        406,
+        39,
+        102
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "list_item",
+      "text": "9AM\n20\u00b0",
+      "icon": "sunny",
+      "style": "text-align: center, color: #ffffff",
+      "state": "default",
+      "parent": "c13",
+      "bbox": [
+        91,
+        406,
+        38,
+        102
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "list_item",
+      "text": "10AM\n22\u00b0",
+      "icon": "partly_cloudy_day",
+      "style": "text-align: center, color: #ffffff",
+      "state": "default",
+      "parent": "c13",
+      "bbox": [
+        143,
+        406,
+        44,
+        102
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "list_item",
+      "text": "11AM\n24\u00b0",
+      "icon": "partly_cloudy_day",
+      "style": "text-align: center, color: #ffffff",
+      "state": "default",
+      "parent": "c13",
+      "bbox": [
+        200,
+        406,
+        43,
+        102
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "list_item",
+      "text": "12PM\n24\u00b0",
+      "icon": "cloud",
+      "style": "text-align: center, color: #ffffff",
+      "state": "default",
+      "parent": "c13",
+      "bbox": [
+        257,
+        406,
+        44,
+        102
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "list_item",
+      "text": "1PM\n25\u00b0",
+      "icon": "cloud",
+      "style": "text-align: center, color: #ffffff",
+      "state": "default",
+      "parent": "c13",
+      "bbox": [
+        317,
+        406,
+        35,
+        102
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "card",
+      "text": "",
+      "icon": "",
+      "style": "background: rgba(30, 80, 140, 0.5), border-radius: 16px, backdrop-filter: blur",
+      "state": "default",
+      "parent": "",
+      "bbox": [
+        20,
+        531,
+        351,
+        248
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "list_item",
+      "text": "Today 16\u00b0 25\u00b0",
+      "icon": "partly_cloudy_day",
+      "style": "color: #ffffff, display: flex, align-items: center",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        31,
+        540,
+        328,
+        37
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "background: linear-gradient(to right, #4a82b8, #ffa000), border-radius: 4px",
+      "state": "current temp dot indicator",
+      "parent": "c21",
+      "bbox": [
+        214,
+        554,
+        99,
+        6
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "list_item",
+      "text": "Wed 16\u00b0 25\u00b0",
+      "icon": "sunny",
+      "style": "color: #ffffff, display: flex, align-items: center",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        31,
+        590,
+        328,
+        36
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "background: linear-gradient(to right, #4a82b8, #ffa000), border-radius: 4px",
+      "state": "default",
+      "parent": "c23",
+      "bbox": [
+        214,
+        603,
+        99,
+        6
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "list_item",
+      "text": "Thu 16\u00b0 24\u00b0",
+      "icon": "sunny",
+      "style": "color: #ffffff, display: flex, align-items: center",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        31,
+        638,
+        328,
+        37
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "background: linear-gradient(to right, #4a82b8, #ffa000), border-radius: 4px",
+      "state": "default",
+      "parent": "c25",
+      "bbox": [
+        214,
+        653,
+        99,
+        6
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "list_item",
+      "text": "Fri 14\u00b0 23\u00b0",
+      "icon": "sunny",
+      "style": "color: #ffffff, display: flex, align-items: center",
+      "state": "default",
+      "parent": "c20",
+      "bbox": [
+        31,
+        689,
+        328,
+        37
+      ]
+    },
+    {
+      "id": "c28",
+      "type": "progress_bar",
+      "text": "",
+      "icon": "",
+      "style": "background: linear-gradient(to right, #4a82b8, #ffa000), border-radius: 4px",
+      "state": "default",
+      "parent": "c27",
+      "bbox": [
+        214,
+        703,
+        99,
+        6
+      ]
+    },
+    {
+      "id": "c29",
+      "type": "tab_bar",
+      "text": "",
+      "icon": "",
+      "style": "display: flex, justify-content: space-between, align-items: center",
+      "state": "floating",
+      "parent": "",
+      "bbox": [
+        24,
+        718,
+        341,
+        55
+      ]
+    },
+    {
+      "id": "c30",
+      "type": "icon_button",
+      "text": "",
+      "icon": "map",
+      "style": "background: rgba(255, 255, 255, 0.2), border-radius: 50%, color: #ffffff",
+      "state": "default",
+      "parent": "c29",
+      "bbox": [
+        27,
+        720,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "c31",
+      "type": "chip",
+      "text": "",
+      "icon": "navigation_dot_indicators",
+      "style": "background: rgba(255, 255, 255, 0.2), border-radius: 24px, display: flex, align-items: center",
+      "state": "page 1 active",
+      "parent": "c29",
+      "bbox": [
+        135,
+        723,
+        121,
+        45
+      ]
+    },
+    {
+      "id": "c32",
+      "type": "icon_button",
+      "text": "",
+      "icon": "menu_list",
+      "style": "background: rgba(255, 255, 255, 0.2), border-radius: 50%, color: #ffffff",
+      "state": "default",
+      "parent": "c29",
+      "bbox": [
+        314,
+        720,
+        49,
+        50
+      ]
+    }
+  ]
+}

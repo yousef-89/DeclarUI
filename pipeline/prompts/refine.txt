@@ -37,6 +37,8 @@ $rules
    components (e.g. a flat tab bar where the reference has a floating one),
    colors, corner radii, borders, and typography.
 3. Change only what causes a difference. Leave every other line untouched.
+   Never add a component that is not in the inventory (e.g. a status bar when
+   the inventory says none is shown): it shifts everything below it.
 
 # Output format
 First a section starting with `DIAGNOSIS:` listing at most 6 concrete

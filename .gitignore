@@ -10,3 +10,6 @@ output/history.db
 __pycache__/
 *.pyc
 src/generated/_preview/
+# Per-run artifacts (renders, code snapshots, prompts); indexed by output/history.db
+output/*/runs/
+output/*/generation/
