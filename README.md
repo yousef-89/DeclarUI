@@ -124,7 +124,7 @@ output/<app>/runs/<run_id>/iteration-<n>/
     <Component>.source.js    code of this iteration
     prompt.txt               prompt sent to Gemini
     diagnosis.txt / plan.txt Gemini's diagnosis (refinement) or plan (edit)
-output/<app>/inventory/<Component>.json   cached component inventory
+output/<app>/inventory/<model>/<Component>.json   cached component inventory
 ```
 
 The dashboard's **History** tab shows every run with its screenshots, metric
@@ -133,11 +133,30 @@ model and app and exports runs/iterations as CSV. `metrics_tracker.csv` is
 still appended for compatibility. Results from before the history store are in
 `output/legacy/`.
 
+### Batch evaluation (ablation)
+
+```bash
+python evaluate_batch.py --apps Breadfast Spotify                 # oneshot + loop
+python evaluate_batch.py --conditions oneshot loop loop-noguard   # all apps, with guardrail ablation
+python evaluate_batch.py --resume <batch_id>                      # continue after a quota stop
+```
+
+Each screen is generated once from its screenshot; every condition starts from
+that same code, so results are paired per screen. `oneshot` is generation
+only, `loop` is the full loop, and `loop-noguard` is the loop without the
+rollback guardrail. One row per screen and condition, with the model, git
+commit, prompt hash, and thresholds, is appended to
+`output/evaluation/results.csv`; each batch also gets
+`output/evaluation/<batch_id>/manifest.json`. The existing code in
+`src/generated/<app>/` is backed up and restored after the batch. When the
+Gemini quota runs out, the batch stops cleanly and can be resumed.
+
 ### Project layout
 
 ```text
 app.py                  Streamlit dashboard
 run_pipeline.py         refinement loop and command-line entry point
+evaluate_batch.py       batch evaluation (one-shot vs. loop ablation)
 pipeline/
     visual_refine.py    prompt building and Gemini helpers
     prompts/            prompt templates (inventory, generate, refine, edit, judge, repair)

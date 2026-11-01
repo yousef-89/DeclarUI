@@ -40,7 +40,9 @@ CREATE TABLE IF NOT EXISTS runs (
     final_content_ssim REAL,
     final_clip REAL,
     final_edit_compliance REAL,
-    final_preservation REAL
+    final_preservation REAL,
+    condition TEXT,
+    batch_id TEXT
 );
 CREATE TABLE IF NOT EXISTS iterations (
     run_id TEXT NOT NULL REFERENCES runs(run_id) ON DELETE CASCADE,
@@ -62,8 +64,12 @@ CREATE TABLE IF NOT EXISTS iterations (
 );
 """
 
+# Columns added after the first release; connect() adds them to older databases.
+ADDED_RUN_COLUMNS = {"condition": "TEXT", "batch_id": "TEXT"}
+
 RUN_COLUMNS = [
-    "run_id", "app", "component", "mode", "model", "instruction", "started_at",
+    "run_id", "app", "component", "mode", "condition", "batch_id", "model",
+    "instruction", "started_at",
     "finished_at", "status", "max_iterations", "best_iteration",
     "baseline_ssim", "baseline_content_ssim", "baseline_clip",
     "final_ssim", "final_content_ssim", "final_clip",
@@ -80,6 +86,11 @@ def connect(db_path=DB_PATH):
     connection = sqlite3.connect(db_path)
     connection.row_factory = sqlite3.Row
     connection.execute("PRAGMA foreign_keys = ON")
+    existing = {row["name"] for row in connection.execute("PRAGMA table_info(runs)")}
+    if existing:
+        for column, column_type in ADDED_RUN_COLUMNS.items():
+            if column not in existing:
+                connection.execute(f"ALTER TABLE runs ADD COLUMN {column} {column_type}")
     connection.executescript(SCHEMA)
     return connection
 
@@ -88,23 +99,27 @@ class RunRecorder:
     """Records one refinement run while it executes."""
 
     def __init__(self, app, component, mode, model, target_path, max_iterations,
-                 instruction="", judge_model=None, db_path=DB_PATH):
+                 instruction="", judge_model=None, condition=None, batch_id=None,
+                 db_path=DB_PATH):
         stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-        self.run_id = f"{stamp}-{component}"
+        self.run_id = f"{stamp}-{component}" + (f"-{condition}" if condition else "")
         self.app = app
         self.component = component
         self.mode = mode
         self.model = model
+        self.condition = condition
+        self.batch_id = batch_id
         self.run_dir = PROJECT_ROOT / "output" / app / "runs" / self.run_id
         self.db_path = db_path
         with connect(db_path) as connection:
             connection.execute(
                 "INSERT INTO runs (run_id, app, component, mode, model, judge_model,"
-                " instruction, target_path, run_dir, started_at, status, max_iterations)"
-                " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'running', ?)",
+                " instruction, target_path, run_dir, started_at, status, max_iterations,"
+                " condition, batch_id)"
+                " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'running', ?, ?, ?)",
                 (self.run_id, app, component, mode, model, judge_model,
                  instruction or None, str(target_path), str(self.run_dir), now(),
-                 max_iterations),
+                 max_iterations, condition, batch_id),
             )
 
     @property

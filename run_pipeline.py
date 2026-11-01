@@ -35,6 +35,8 @@ METRICS_COLUMNS = [
     "Status",
     "Model",
     "Run ID",
+    "Condition",
+    "Batch ID",
 ]
 
 
@@ -134,6 +136,8 @@ def ensure_dev_server(port=3000):
 
 
 GEMINI_RETRY_DELAYS = (10, 30, 60, 120)
+# Number of Gemini requests made by this process (read by evaluate_batch.py).
+GEMINI_CALLS = {"count": 0}
 
 
 def generate(client, model, contents, json_output=False):
@@ -149,6 +153,7 @@ def generate(client, model, contents, json_output=False):
     )
     for delay in (*GEMINI_RETRY_DELAYS, None):
         try:
+            GEMINI_CALLS["count"] += 1
             return client.models.generate_content(
                 model=model, contents=contents, config=config
             )
@@ -327,6 +332,8 @@ def log_metrics(recorder, iteration, result, status, error=None):
                 status,
                 recorder.model,
                 recorder.run_id,
+                recorder.condition or "",
+                recorder.batch_id or "",
             ]
         )
 
@@ -401,11 +408,11 @@ def normalize_inventory(inventory, canvas):
 
 
 def build_inventory(client, model, app_name, component, target_path, canvas):
-    """Decompose the target screenshot into typed UI components (cached)."""
+    """Decompose the target screenshot into typed UI components (cached per model)."""
     from pipeline.layout_analysis import describe_layout, read_color, to_logical
     from pipeline.visual_refine import image_part, load_prompt, load_spatial_metadata
 
-    cache_path = PROJECT_ROOT / "output" / app_name / "inventory" / f"{component}.json"
+    cache_path = PROJECT_ROOT / "output" / app_name / "inventory" / model / f"{component}.json"
     if cache_path.exists():
         return json.loads(cache_path.read_text(encoding="utf-8"))
 
@@ -549,7 +556,7 @@ def judge_edit(client, model, before_path, after_path, instruction, canvas):
     }
 
 
-def create_component_from_target(app_name, target_path):
+def create_component_from_target(app_name, target_path, model=None):
     """Generate an initial component: decompose the screenshot, then code it."""
     try:
         from google import genai
@@ -575,8 +582,9 @@ def create_component_from_target(app_name, target_path):
     source_dir.mkdir(parents=True, exist_ok=True)
     source_path = source_dir / f"{component}.js"
     canvas = logical_size(target_path)
+    model = model or MODEL
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    inventory = build_inventory(client, MODEL, app_name, component, target_path, canvas)
+    inventory = build_inventory(client, model, app_name, component, target_path, canvas)
     prompt = load_prompt(
         "generate",
         component=component,
@@ -586,7 +594,7 @@ def create_component_from_target(app_name, target_path):
         layout=describe_layout(to_logical(read_color(target_path), canvas)),
         rules=rn_rules(component, canvas),
     )
-    response = generate(client, MODEL, [prompt, image_part(target_path)])
+    response = generate(client, model, [prompt, image_part(target_path)])
     generated_code = strip_code_fence(response.text or "")
     if not generated_code:
         raise RuntimeError(f"Gemini returned empty code for {target_path.name}.")
@@ -612,13 +620,16 @@ def evaluate_candidate(client, model, recorder, source_path, iteration, viewport
     return result, source_snapshot, error
 
 
-def run_fidelity_loop(client, model, recorder, source_path, target_path, viewport, max_iterations):
+def run_fidelity_loop(client, model, recorder, source_path, target_path, viewport,
+                      max_iterations, guardrail=True):
     """Refine the screen towards the target screenshot.
 
     Iteration 0 evaluates the current source; iterations 1..max_iterations each
-    evaluate one refinement pass. A candidate that drops SSIM by more than
-    MAX_SSIM_REGRESSION relative to the best accepted version is rejected, the
-    best version is restored, and refinement continues from it.
+    evaluate one refinement pass (max_iterations=0 is the one-shot baseline).
+    A candidate that drops SSIM by more than MAX_SSIM_REGRESSION relative to
+    the best accepted version is rejected, the best version is restored, and
+    refinement continues from it. With guardrail=False (ablation) every
+    candidate that renders is kept and the last one is the final result.
     """
     component = recorder.component
     inventory = build_inventory(client, model, recorder.app, component, target_path, viewport)
@@ -647,7 +658,7 @@ def run_fidelity_loop(client, model, recorder, source_path, target_path, viewpor
             baseline = best_result = current_result = result
             best_source, best_iteration = source_snapshot, iteration
             log_metrics(recorder, iteration, result, "baseline")
-        elif regressed(result, best_result):
+        elif guardrail and regressed(result, best_result):
             log_metrics(recorder, iteration, result, "rejected")
             source_path.write_bytes(best_source)
             current_result = best_result
@@ -666,7 +677,7 @@ def run_fidelity_loop(client, model, recorder, source_path, target_path, viewpor
                 best_result["ssim"],
                 best_result["clip_similarity"],
             )
-            if improved:
+            if improved or not guardrail:
                 best_result, best_source, best_iteration = result, source_snapshot, iteration
             current_result = result
             regression_note = ""
@@ -813,12 +824,15 @@ def run_edit_loop(client, model, recorder, source_path, viewport, max_iterations
     return baseline, best_result, best_source, best_iteration
 
 
-def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
+def run_selected_refinement(app_name, component, max_iterations=3, tweak="",
+                            model=None, guardrail=True, condition=None, batch_id=None):
     """Refine one generated screen and return its best result and source.
 
     Without a tweak the screen is refined towards its target screenshot. With
     a tweak, the user's requested change is applied and scored instead. Every
     run is recorded in the history database (run_store) under its own folder.
+    `model`, `guardrail`, `condition`, and `batch_id` are used by the batch
+    evaluation (evaluate_batch.py); interactive runs keep the defaults.
     """
     try:
         from google import genai
@@ -833,8 +847,9 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
 
     if "GEMINI_API_KEY" not in os.environ:
         raise RuntimeError("GEMINI_API_KEY is not set.")
-    if max_iterations < 1:
-        raise ValueError("max_iterations must be at least 1.")
+    editing = bool(tweak.strip())
+    if max_iterations < (1 if editing else 0):
+        raise ValueError("max_iterations is too small.")
 
     generated_dir = PROJECT_ROOT / "src" / "generated" / app_name
     source_path = next(
@@ -852,29 +867,31 @@ def run_selected_refinement(app_name, component, max_iterations=3, tweak=""):
         raise FileNotFoundError(f"No target screenshot found for {component}.")
     viewport = logical_size(target_path)
 
+    model = model or MODEL
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    editing = bool(tweak.strip())
     recorder = RunRecorder(
         app_name,
         component,
         "edit" if editing else "fidelity",
-        MODEL,
+        model,
         target_path,
         max_iterations,
         instruction=tweak.strip(),
         judge_model=JUDGE_MODEL if editing else None,
+        condition=condition,
+        batch_id=batch_id,
     )
     original_source = source_path.read_bytes()
     try:
         with ensure_dev_server():
             if editing:
                 baseline, best, best_source, best_iteration = run_edit_loop(
-                    client, MODEL, recorder, source_path, viewport, max_iterations, tweak,
+                    client, model, recorder, source_path, viewport, max_iterations, tweak,
                 )
             else:
                 baseline, best, best_source, best_iteration = run_fidelity_loop(
-                    client, MODEL, recorder, source_path, target_path, viewport,
-                    max_iterations,
+                    client, model, recorder, source_path, target_path, viewport,
+                    max_iterations, guardrail=guardrail,
                 )
     except BaseException as error:
         # Never leave a rejected or half-refined candidate on disk.

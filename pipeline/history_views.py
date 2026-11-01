@@ -387,7 +387,12 @@ def overview_view():
     if frame.empty:
         st.info("No runs recorded yet.")
         return
-    fidelity = frame[(frame["mode"] == "fidelity") & frame["final_ssim"].notna()]
+    # One-shot batch runs have no refinement passes (Δ = 0 by construction).
+    fidelity = frame[
+        (frame["mode"] == "fidelity")
+        & frame["final_ssim"].notna()
+        & (frame["condition"] != "oneshot")
+    ]
     edits = frame[(frame["mode"] == "edit") & frame["final_edit_compliance"].notna()]
 
     columns = st.columns(4)
