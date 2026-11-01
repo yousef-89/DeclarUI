@@ -141,7 +141,8 @@ GEMINI_CALLS = {"count": 0}
 
 
 def generate(client, model, contents, json_output=False):
-    """Call Gemini, retrying temporary overload and rate-limit errors."""
+    """Call Gemini, retrying overload, rate-limit, and dropped-connection errors."""
+    import httpx
     from google.genai import errors, types
 
     config = (
@@ -161,6 +162,11 @@ def generate(client, model, contents, json_output=False):
             if delay is None or error.code not in {429, 500, 503, 504}:
                 raise
             print(f"[Pipeline] Gemini returned {error.code}; retrying in {delay}s...")
+            time.sleep(delay)
+        except httpx.TransportError as error:
+            if delay is None:
+                raise
+            print(f"[Pipeline] Gemini connection failed ({error}); retrying in {delay}s...")
             time.sleep(delay)
 
 
